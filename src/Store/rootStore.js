@@ -15,7 +15,7 @@ import {
   formsDomainStore,
   notificationDomainStore,
   crudDomainStore
-} from "@markab.io/react";
+} from "../react-services";
 import Store from "./Store";
 const rootStore = new Store({
   authDomainStore,

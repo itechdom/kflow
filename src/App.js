@@ -23,16 +23,16 @@ import {
 } from "@material-ui/core";
 import MainWrapper from "./orbital-templates/Material/Wrappers/MainWrapper";
 import LoginWrapper from "./orbital-templates/Material/Wrappers/LoginWrapper";
+import { Wikipedia } from "./react-services/wikipedia-service/wikipedia-service";
+import { LoginWithAuth } from "./react-services/auth-service/auth-service";
 import {
+  Crud, 
   RegisterWithAuth,
   Media,
   Forms,
   Auth,
-  Notification,
-} from "@markab.io/react";
-import { Wikipedia } from "./react-services/wikipedia-service/wikipedia-service";
-import { LoginWithAuth } from "./react-services/auth-service/auth-service";
-import { Crud } from "./react-services/crud-service/crud-service";
+  Notification
+} from "./react-services";
 import config from "./config/index";
 import ReactGA from "react-ga";
 import rootStore from "./Store/rootStore";
@@ -568,7 +568,7 @@ class App extends React.Component {
                   );
                 }}
               ></Route>
-               <Route
+              <Route
                 path={`${this.props.match.path}knowledge/view/:id`}
                 render={(routeProps) => {
                   const {
@@ -610,7 +610,7 @@ class App extends React.Component {
                             ]}
                             drawerRouteList={
                               this.state.currentUser &&
-                              this.state.currentUser.isAdmin
+                                this.state.currentUser.isAdmin
                                 ? [...mainRouteList, adminRoute, logoutRoute]
                                 : [...mainRouteList, logoutRoute]
                             }
@@ -675,7 +675,7 @@ class App extends React.Component {
                   );
                 }}
               />
-               <Route
+              <Route
                 path={`${this.props.match.path}knowledge`}
                 render={(routeProps) => {
                   const {
@@ -699,8 +699,8 @@ class App extends React.Component {
                         //   props.knowledge_undoManager.history
                         // );
                         let knowledge =
-                          props.knowledge_queryResult 
-                          
+                          props.knowledge_queryResult
+
                         if (!knowledge || props.knowledge_loading) {
                           return <Loading></Loading>;
                         }
@@ -716,7 +716,7 @@ class App extends React.Component {
                             ]}
                             drawerRouteList={
                               this.state.currentUser &&
-                              this.state.currentUser.isAdmin
+                                this.state.currentUser.isAdmin
                                 ? [...mainRouteList, adminRoute, logoutRoute]
                                 : [...mainRouteList, logoutRoute]
                             }
@@ -888,8 +888,8 @@ class App extends React.Component {
                             });
                           const newRoutes = Array.isArray(routes)
                             ? routes.reduce((prev, cur) => {
-                                return [...prev, ...cur];
-                              }, [])
+                              return [...prev, ...cur];
+                            }, [])
                             : [];
                           filteredRoutes = newRoutes.filter((r, i) => {
                             return (
@@ -906,11 +906,11 @@ class App extends React.Component {
                           knowledge =
                             props.knowledge && props.knowledge.data
                               ? {
-                                  data: props.knowledge.data.filter(
-                                    (k) => k.tags.indexOf(tag) !== -1
-                                  ),
-                                  count: props.knowledge.count,
-                                }
+                                data: props.knowledge.data.filter(
+                                  (k) => k.tags.indexOf(tag) !== -1
+                                ),
+                                count: props.knowledge.count,
+                              }
                               : props.knowledge;
                         }
                         return (
@@ -925,7 +925,7 @@ class App extends React.Component {
                             ]}
                             drawerRouteList={
                               this.state.currentUser &&
-                              this.state.currentUser.isAdmin
+                                this.state.currentUser.isAdmin
                                 ? [...mainRouteList, adminRoute, logoutRoute]
                                 : [...mainRouteList, logoutRoute]
                             }
@@ -956,7 +956,7 @@ class App extends React.Component {
                               routeList={filteredRoutes}
                               drawerRouteList={
                                 this.state.currentUser &&
-                                this.state.currentUser.isAdmin
+                                  this.state.currentUser.isAdmin
                                   ? [...mainRouteList, adminRoute, logoutRoute]
                                   : [...mainRouteList, logoutRoute]
                               }
@@ -1038,6 +1038,6 @@ class App extends React.Component {
       </ThemeProvider>
     );
   }
-  componentWillReceiveProps(nextProps) {}
+  componentWillReceiveProps(nextProps) { }
 }
 export default withStyles(styles, { defaultTheme: theme })(App);

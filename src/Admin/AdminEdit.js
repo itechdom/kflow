@@ -1,5 +1,5 @@
 import React from "react";
-import { withCrud, Forms, Notification } from "@markab.io/react";
+import { withCrud, Forms, Notification } from "../react-services";
 import { Route, withRouter } from "react-router-dom";
 import { MainWrapper } from "../orbital-templates/Material/Wrappers/MainWrapper";
 import { compose, withPropsOnChange } from "recompose";
