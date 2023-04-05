@@ -26,12 +26,12 @@ const Another = memo((props) => {
   return <> </>
 })
 
-const KnowledgeCrud = props => <Crud
+const KnowledgeCrud = prop => <Crud
   modelName="knowledge"
   SERVER={config.SERVER}
   offlineStorage={offlineStorage}
   render={(props) => {
-    console.log("PROPS", props);
+    console.log(props, "PROP");
     return <>
       <Another {...props} />
       <Another {...props} />
