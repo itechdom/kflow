@@ -59,7 +59,6 @@
     "yup": "^1.0.2"
   },
   "devDependencies": {
-    "mobx-devtools-mst": "^0.9.30",
     "mobx-react-devtools": "^6.1.1",
     "normalize.css": "^8.0.1",
     "serverless": "^1.47.0",
@@ -78,10 +77,6 @@
       "react-app",
       "react-app/jest"
     ]
-  },
-  "resolutions": {
-    "mobx": "^6.9.0",
-    "mobx-react": "^7.6.0"
   },
   "browserslist": {
     "production": [
