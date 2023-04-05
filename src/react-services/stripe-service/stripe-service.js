@@ -19,13 +19,13 @@ export class stripeDomainStore {
     }
     this.SERVER = SERVER;
   }
-  @action
+  //@action
   forceUpdate(modelName) {
     let current = this.mapStore.get(modelName);
     this.mapStore.set(modelName, []);
     this.mapStore.set(modelName, current);
   }
-  @action
+  //@action
   getModel(query, modelName, refresh, transform) {
     //cached data, you don't have to hit up he end point
     if (this.mapStore.get(modelName) && !refresh) {
@@ -55,7 +55,7 @@ export class stripeDomainStore {
         return this.setError(modelName, err);
       });
   }
-  @action
+  //@action
   createModel(modelName, model) {
     return this.offlineStorage.getItem("jwtToken").then(token => {
       return axios
@@ -75,7 +75,7 @@ export class stripeDomainStore {
         });
     });
   }
-  @action
+  //@action
   updateModel(modelName, model, updateValues) {
     let extractedModel = toJS(model);
     Object.keys(updateValues).map(key => {
@@ -100,7 +100,7 @@ export class stripeDomainStore {
         });
     });
   }
-  @action
+  //@action
   deleteModel(modelName, model) {
     model.deleted = true;
     this.forceUpdate(modelName);
@@ -121,7 +121,7 @@ export class stripeDomainStore {
         });
     });
   }
-  @action
+  //@action
   searchModel(modelName, query) {
     return this.offlineStorage.getItem("jwtToken").then(token => {
       return axios
@@ -137,7 +137,7 @@ export class stripeDomainStore {
         });
     });
   }
-  @action
+  //@action
   setError(modelName, err) {
     if (this.notificationDomainStore) {
       this.notificationDomainStore.saveNotification(modelName, {
@@ -146,7 +146,7 @@ export class stripeDomainStore {
       });
     }
   }
-  @action
+  //@action
   setSuccess(modelName, successMessage) {
     if (this.notificationDomainStore) {
       this.notificationDomainStore.saveNotification(modelName, {
@@ -155,7 +155,7 @@ export class stripeDomainStore {
       });
     }
   }
-  @action
+  //@action
   getAppSettings() {
     return this.offlineStorage.getItem("jwtToken").then(token => {
       return axios
@@ -230,7 +230,7 @@ const injectProps = (
 };
 
 //determine the theme here and load the right login information?
-@observer
+//@observer
 export class Stripe extends React.Component {
   constructor(props) {
     super(props);
@@ -266,7 +266,7 @@ export class Stripe extends React.Component {
 }
 
 export function withStripe(WrappedComponent) {
-  @observer
+  //@observer
   class WithStripe extends React.Component {
     constructor(props) {
       super(props);

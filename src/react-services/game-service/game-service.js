@@ -4,9 +4,9 @@ import React from "react";
 
 //export store
 export class gameDomainStore {
-  @observable
+  //@observable
   characterPosition = { x: 0, y: 0 };
-  @observable
+  //@observable
   stageX = 0;
   modelName;
   mapStore = observable.map();
@@ -24,12 +24,12 @@ export class gameDomainStore {
     this.setStageX = this.setStageX.bind(this);
   }
 
-  @action
+  //@action
   setCharacterPosition(position) {
     this.characterPosition = position;
   }
 
-  @action
+  //@action
   setStageX(x) {
     if (x > 0) {
       this.stageX = 0;
@@ -42,7 +42,7 @@ export class gameDomainStore {
 }
 
 //determine the theme here and load the right login information?
-@observer
+//@observer
 export class Game extends React.Component {
   constructor(props) {
     super(props);

@@ -6,7 +6,7 @@ import io from "socket.io-client";
 
 //export store
 export class socketDomainStore {
-  @observable
+  //@observable
   isConnected = false;
   socket;
   rootStore;
@@ -16,7 +16,7 @@ export class socketDomainStore {
     this.rootStore = rootStore;
     this.SERVER = SERVER;
   }
-  @action
+  //@action
   subscribe({ onInit, onConnect, onEvent, onDisconnect, channel, port }) {
     const domainName = `${this.SERVER.socket}:${port}/${channel}`;
     let newSocket = io(domainName);
@@ -36,7 +36,7 @@ export class socketDomainStore {
     });
     this.socket = newSocket;
   }
-  @action
+  //@action
   publish({ channel, value }) {
     console.log(channel, value);
     return new Promise((resolve, reject) => {
@@ -45,7 +45,7 @@ export class socketDomainStore {
       });
     });
   }
-  @action
+  //@action
   publishUpdate({ channel, value }) {
     return new Promise((resolve, reject) => {
       this.socket.emit(`${channel}-update`, value, data => {
@@ -53,7 +53,7 @@ export class socketDomainStore {
       });
     });
   }
-  @action
+  //@action
   publishDelete({ channel, value }) {
     console.log("publish delete", channel, value);
     return new Promise((resolve, reject) => {
@@ -89,7 +89,7 @@ const injectProps = (socketDomainStore, channel, props, child) => {
 };
 
 //determine the theme here and load the right login information?
-@observer
+//@observer
 export class Socket extends React.Component {
   constructor(props) {
     super(props);

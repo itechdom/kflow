@@ -18,7 +18,7 @@ export class mediaDomainStore {
     }
     this.SERVER = SERVER;
   }
-  @action
+  //@action
   uploadMedia({ modelName, extension, files, modelId, isMultiple, subRoute }) {
     let formData = new FormData();
     files.map((file, i) => {
@@ -72,7 +72,7 @@ export class mediaDomainStore {
         });
     });
   }
-  @action
+  //@action
   setError(err) {
     console.error(err);
   }
@@ -121,7 +121,7 @@ const injectProps = ({
 };
 
 //determine the theme here and load the right login information?
-@observer
+//@observer
 export class Media extends React.Component {
   constructor(props) {
     super(props);

@@ -22,13 +22,13 @@ export class crudDomainStore {
     }
     this.SERVER = SERVER;
   }
-  @action
+  //@action
   forceUpdate(modelName) {
     let current = this.mapStore.get(modelName);
     this.mapStore.set(modelName, []);
     this.mapStore.set(modelName, current);
   }
-  @action
+  //@action
   getModel(query, modelName, refresh) {
     //cached data, you don't have to hit up he end point
     if (this.mapStore.get(modelName) && !refresh) {
@@ -49,7 +49,7 @@ export class crudDomainStore {
         });
     });
   }
-  @action
+  //@action
   createModel(modelName, model) {
     return this.offlineStorage.getItem("jwtToken").then(token => {
       return axios
@@ -69,7 +69,7 @@ export class crudDomainStore {
         });
     });
   }
-  @action
+  //@action
   updateModel(modelName, model, updateValues) {
     let extractedModel = toJS(model);
     Object.keys(updateValues).map(key => {
@@ -94,7 +94,7 @@ export class crudDomainStore {
         });
     });
   }
-  @action
+  //@action
   deleteModel(modelName, model) {
     model.deleted = true;
     return this.offlineStorage.getItem("jwtToken").then(token => {
@@ -114,7 +114,7 @@ export class crudDomainStore {
         });
     });
   }
-  @action
+  //@action
   searchModel(modelName, query) {
     return axios
       .post(`${this.SERVER.host}:${this.SERVER.port}/${modelName}`, query)
@@ -125,18 +125,18 @@ export class crudDomainStore {
         return this.setError(modelName, err);
       });
   }
-  @action
+  //@action
   setModelEdit(modelName, model, isEdit) {
     let { editedModel, isEditing } = this.rootStore.crudDomainStore;
     editedModel.set(modelName, model);
     isEditing.set(modelName, isEdit);
   }
-  @action
+  //@action
   setIsEditing(modelName, isEdit) {
     let { editedModel, isEditing } = this.rootStore.crudDomainStore;
     isEditing.set(modelName, isEdit);
   }
-  @action
+  //@action
   setError(modelName, err) {
     if (this.notificationDomainStore) {
       this.notificationDomainStore.saveNotification(modelName, {
@@ -145,7 +145,7 @@ export class crudDomainStore {
       });
     }
   }
-  @action
+  //@action
   setSuccess(modelName, successMessage) {
     if (this.notificationDomainStore) {
       this.notificationDomainStore.saveNotification(modelName, {
@@ -154,7 +154,7 @@ export class crudDomainStore {
       });
     }
   }
-  @action
+  //@action
   getAppSettings() {
     return this.offlineStorage.getItem("jwtToken").then(token => {
       return axios
@@ -219,7 +219,7 @@ const injectProps = (crudDomainStore, modelName, props, child, query) => {
 };
 
 //determine the theme here and load the right login information?
-@observer
+//@observer
 export class Crud extends React.Component {
   constructor(props) {
     super(props);
@@ -253,7 +253,7 @@ export class Crud extends React.Component {
 }
 
 export function withCrud(WrappedComponent) {
-  @observer
+  //@observer
   class WithCrud extends React.Component {
     constructor(props) {
       super(props);

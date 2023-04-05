@@ -12,7 +12,7 @@ export class adminDomainStore {
     this.rootStore = rootStore;
     this.SERVER = SERVER;
   }
-  @action
+  //@action
   getSchemas(refresh) {
     //cached data, you don't have to hit up he end point
     // console.log(this.schemas.length);
@@ -40,7 +40,7 @@ export class adminDomainStore {
         runInAction(() => {});
       });
   }
-  @action
+  //@action
   setError(err) {
     console.error(err);
   }
@@ -56,7 +56,7 @@ const injectProps = (adminDomainStore, props, child) => {
 };
 
 //this creates admin components with Modal Editing
-@observer
+//@observer
 export class Admin extends React.Component {
   constructor(props) {
     super(props);
@@ -76,7 +76,7 @@ export class Admin extends React.Component {
 }
 
 export function withAdmin(WrappedComponent) {
-  @observer
+  //@observer
   class WithAdmin extends React.Component {
     constructor(props) {
       super(props);

@@ -26,7 +26,7 @@ export class unsplashDomainStore {
     this.accessKey = accessKey;
     this.mapStore = { brand: 0 };
   }
-  @action
+  //@action
   getUnsplash(query, modelName, refresh) {
     if (this.mapStore[query] && !refresh) {
       return new Promise((resolve, reject) => {
@@ -48,7 +48,7 @@ export class unsplashDomainStore {
         this.setError(modelName, err);
       });
   }
-  @action
+  //@action
   setError(modelName, err) {
     if (this.notificationDomainStore) {
       this.notificationDomainStore.saveNotification(modelName, {
@@ -57,7 +57,7 @@ export class unsplashDomainStore {
       });
     }
   }
-  @action
+  //@action
   setSuccess(modelName, successMessage) {
     if (this.notificationDomainStore) {
       this.notificationDomainStore.saveNotification(modelName, {
@@ -81,7 +81,7 @@ const injectProps = (unsplashDomainStore, modelName, props, child) => {
 };
 
 //determine the theme here and load the right login information?
-@observer
+//@observer
 export class Unsplash extends React.Component {
   constructor(props) {
     super(props);
@@ -104,7 +104,7 @@ export class Unsplash extends React.Component {
   }
 }
 export function withUnsplash(WrappedComponent) {
-  @observer
+  //@observer
   class WithUnsplash extends React.Component {
     constructor(props) {
       super(props);

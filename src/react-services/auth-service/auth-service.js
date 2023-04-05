@@ -6,7 +6,7 @@ import axios from "axios";
 //export store
 export class authDomainStore {
   token;
-  // @observable
+  // //@observable
   user;
   isLoggedIn = false;
   offlineStorage;
@@ -165,15 +165,15 @@ export class authDomainStore {
 }
 
 export class authUiStore {
-  // @observable
+  // //@observable
   username;
-  // @observable
+  // //@observable
   password;
-  // @observable
+  // //@observable
   email;
-  // @observable
+  // //@observable
   firstname;
-  // @observable
+  // //@observable
   lastname;
   constructor(rootStore) {
     this.rootStore = rootStore;
@@ -251,7 +251,7 @@ const injectProps = (authDomainStore, props, child) => {
 };
 
 //determine the theme here and load the right login information?
-// @observer
+// //@observer
 export class Auth extends React.Component {
   constructor(props) {
     super(props);
@@ -273,7 +273,7 @@ export class Auth extends React.Component {
 }
 
 export function withAuth(WrappedComponent) {
-  // @observer
+  // //@observer
   class WithAuth extends React.Component {
     constructor(props) {
       super(props);

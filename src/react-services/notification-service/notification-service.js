@@ -17,13 +17,13 @@ export class notificationDomainStore {
     }
     this.SERVER = SERVER;
   }
-  @action
+  //@action
   forceUpdate(modelName) {
     let current = this.mapStore.get(modelName);
     this.mapStore.set(modelName, []);
     this.mapStore.set(modelName, current);
   }
-  @action
+  //@action
   subscribe({
     onInit,
     onConnect,
@@ -51,7 +51,7 @@ export class notificationDomainStore {
     });
     this.socket = newSocket;
   }
-  @action
+  //@action
   publish({ channel, value }) {
     return new Promise((resolve, reject) => {
       this.socket.emit(`${channel}`, value, data => {
@@ -59,7 +59,7 @@ export class notificationDomainStore {
       });
     });
   }
-  @action
+  //@action
   saveNotification(modelName, notificationObject) {
     let notifications = this.mapStore.get(modelName);
     if (!notifications) {
@@ -69,7 +69,7 @@ export class notificationDomainStore {
     let current = this.mapStore.get(modelName);
     this.mapStore.set(modelName, [...current, notificationObject]);
   }
-  @action
+  //@action
   removeNotification(modelName, notificationObject) {
     notificationObject.deleted = true;
     this.forceUpdate(modelName);
@@ -77,7 +77,7 @@ export class notificationDomainStore {
 }
 
 //determine the theme here and load the right login information?
-@observer
+//@observer
 export class Notification extends React.Component {
   constructor(props) {
     super(props);

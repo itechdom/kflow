@@ -17,7 +17,7 @@ export class formsDomainStore {
     }
     this.SERVER = SERVER;
   }
-  @action
+  //@action
   getModel(modelName, refresh) {
     //cached data, you don't have to hit up he end point
     if (this.mapStore.get(modelName) && !refresh) {
@@ -38,7 +38,7 @@ export class formsDomainStore {
         });
     });
   }
-  @action
+  //@action
   setError(err) {
     console.error(err);
   }
@@ -55,7 +55,7 @@ const injectProps = (formsDomainStore, modelName, props, child) => {
   return injected;
 };
 //determine the theme here and load the right login information?
-@observer
+//@observer
 export class Forms extends React.Component {
   constructor(props) {
     super(props);

@@ -18,13 +18,13 @@ export class kbDomainStore {
     }
     this.SERVER = SERVER;
   }
-  @action
+  //@action
   createKnowledge(modelName, model) {}
-  @action
+  //@action
   updateKnowledge(modelName, model, updateValues) {}
-  @action
+  //@action
   deleteKnowledge(modelName, model) {}
-  @action
+  //@action
   searchKnowledge(modelName, model, query) {
     let results = [];
     function recur(modelName, model, query) {
@@ -40,7 +40,7 @@ export class kbDomainStore {
     recur(modelName, model, query);
     return results;
   }
-  @action
+  //@action
   setError(modelName, err) {
     if (this.notificationDomainStore) {
       this.notificationDomainStore.saveNotification(modelName, {
@@ -49,7 +49,7 @@ export class kbDomainStore {
       });
     }
   }
-  @action
+  //@action
   setSuccess(modelName, successMessage) {
     if (this.notificationDomainStore) {
       this.notificationDomainStore.saveNotification(modelName, {
@@ -58,7 +58,7 @@ export class kbDomainStore {
       });
     }
   }
-  @action
+  //@action
   getAppSettings() {
     return this.offlineStorage.getItem("jwtToken").then(token => {
       return axios
@@ -105,7 +105,7 @@ const injectProps = (kbDomainStore, modelName, props, child, query) => {
 };
 
 //determine the theme here and load the right login information?
-@observer
+//@observer
 export class Kb extends React.Component {
   constructor(props) {
     super(props);
