@@ -5,7 +5,7 @@ import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import MomentUtils from "@date-io/moment";
 // import Loadable from "react-loadable";
 // import Loading from "./src/orbital-templates/Material/_shared/Loading/Loading";
-import App from "./App";
+import App from "./AppTest";
 // const App = Loadable({
 //   loader: () => import(/* webpackChunkName: "App" */ "./src/App"),
 //   loading: err => <Loading err={err} />

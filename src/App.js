@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Switch, HashRouter as Router } from "react-router-dom";
 import {
   mainRouteList,
-  mainFilterRouteList,
   editableSchemas,
   adminRoute,
   logoutRoute,
@@ -15,11 +14,8 @@ import {
   DialogTitle,
   Button,
   CardContent,
-  CardActions,
-  CardHeader,
   Card,
-  Grid,
-  Typography,
+  Grid
 } from "@material-ui/core";
 import MainWrapper from "./orbital-templates/Material/Wrappers/MainWrapper";
 import LoginWrapper from "./orbital-templates/Material/Wrappers/LoginWrapper";
@@ -46,9 +42,7 @@ import World from "./World/World";
 import theme from "./theme";
 import { styles } from "./App.styles.js";
 import { withStyles, ThemeProvider } from "@material-ui/core/styles";
-import Camera from "./Camera/Camera";
 import "./global.css";
-import { Formik } from "formik";
 import Loading from "./orbital-templates/Material/_shared/Loading/Loading";
 import Knowledge from "./Knowledge/Knowledge";
 import KnowledgePreview from "./Knowledge/ModelPreview/ModelPreview";
@@ -74,7 +68,6 @@ const offlineStorage = {
     });
   },
 };
-const tertiary = "#1ABCFE";
 const Logout = ({ onLogout }) => {
   React.useEffect(() => {
     onLogout();
