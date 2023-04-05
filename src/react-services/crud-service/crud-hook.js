@@ -51,8 +51,8 @@ export const useGetModel = (offlineStorage, SERVER, query, modelName) => {
 export const useInjectProps = (
   offlineStorage,
   SERVER,
-  modelName,
-  query
+  query,
+  modelName
 ) => {
   const [model, error, isLoading] = useGetModel(offlineStorage, SERVER, query, modelName);
   const [injected, setInjected] = useState({});
@@ -86,7 +86,7 @@ export const CrudContainerFP = (props) => {
     query,
     render
   } = props;
-  const injected = useInjectProps(offlineStorage, SERVER, modelName, props, query);
+  const injected = useInjectProps(offlineStorage, SERVER, query, modelName);
   const childrenWithProps = render
     ? render(
       injected

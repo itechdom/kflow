@@ -26,6 +26,16 @@ const Another = memo((props) => {
   return <> </>
 })
 
+const UserCrud = prop => <Crud
+  modelName="knowledge"
+  SERVER={config.SERVER}
+  offlineStorage={offlineStorage}
+  render={(props) => {
+    return <>
+    </>
+  }}
+/>
+
 const KnowledgeCrud = prop => <Crud
   modelName="knowledge"
   SERVER={config.SERVER}
@@ -37,6 +47,7 @@ const KnowledgeCrud = prop => <Crud
       <Another {...props} />
       <Another {...props} />
       <Another {...props} />
+      <UserCrud know={props.knowledge} />
     </>
   }}
 />
@@ -44,6 +55,7 @@ const KnowledgeCrud = prop => <Crud
 const App = () => {
   return (
     <div className="App">
+      <KnowledgeCrud />
       <KnowledgeCrud />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
