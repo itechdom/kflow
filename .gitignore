@@ -21,3 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# package directories
+lib
+client
+server/data/
+
+# Serverless directories
+.serverless
+node_modules/

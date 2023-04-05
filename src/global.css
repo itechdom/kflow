@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+
+  src: url(https://celebrateapp.s3.amazonaws.com/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://celebrateapp.s3.amazonaws.com/fonts/MaterialIcons-Regular.woff2)
+      format("woff2"),
+    url(https://celebrateapp.s3.amazonaws.com/fonts/MaterialIcons-Regular.woff)
+      format("woff"),
+    url(https://celebrateapp.s3.amazonaws.com/fonts/MaterialIcons-Regular.ttf)
+      format("truetype");
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+.game {
+  font-family: "Press Start 2P", "Bangers", cursive !important;
+}
+.game h1 {
+  padding: 2px;
+  color: white;
+  text-shadow: black 0px 1px 1px;
+  z-index: 400;
+  text-align: center;
+}
+.game_button {
+  background-color: #a681b5 !important;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 35px,
+    rgba(255, 255, 255, 0.5) 35px,
+    rgba(255, 255, 255, 0.5) 70px
+  );
+  padding: 0px !important;
+  margin-left: 2em !important;
+  border-radius: 50px !important;
+}
+.game_button_cancel {
+  background-color: #e97b33 !important;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 35px,
+    rgba(255, 255, 255, 0.5) 35px,
+    rgba(255, 255, 255, 0.5) 70px
+  );
+}
+.move-right {
+  animation: 0.25s ease-out 0s 1 right;
+}
+.game_character {
+  animation-name: character;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes character {
+  from {
+    bottom: 24px;
+  }
+  to {
+    bottom: 48px;
+  }
+}
+@keyframes right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
