@@ -26,12 +26,12 @@ export class crudDomainStore {
       this.mapStore.set(modelName, current);
     });
   }
-  getModel(query, modelName, refresh, transform) {
+  getModel = action((query, modelName, refresh, transform) => {
     //cached data, you don't have to hit up he end point
     if (this.mapStore.get(modelName) && !refresh) {
       return;
     }
-    return action(() => this.offlineStorage
+    return this.offlineStorage
       .getItem("jwtToken")
       .then((token) => {
         return axios
@@ -43,10 +43,6 @@ export class crudDomainStore {
           )
           .then((res) => {
             runInAction(() => {
-              if (transform) {
-                let transformedModel = transform(res.data);
-                return this.mapStore.set(modelName, transformedModel);
-              }
               this.mapStore.set(modelName, res.data);
             });
           })
@@ -56,8 +52,8 @@ export class crudDomainStore {
       })
       .catch((err) => {
         return this.setError(modelName, err);
-      }));
-  }
+      })
+  });
   createModel(modelName, model) {
     return action(() => this.offlineStorage.getItem("jwtToken").then((token) => {
       return axios
@@ -179,12 +175,11 @@ const injectProps = (
   modelName,
   props,
   child,
-  query,
-  transform
+  query
 ) => {
   let injected = {
     getModel: (query) =>
-      crudDomainStore.getModel(query, modelName, true, transform),
+      crudDomainStore.getModel(query, modelName, true),
     createModel: (model) => crudDomainStore.createModel(modelName, model),
     updateModel: (model, updateValues) =>
       crudDomainStore.updateModel(modelName, model, updateValues),
@@ -194,11 +189,9 @@ const injectProps = (
     ...child.props,
   };
 
-  injected[modelName] = transform
-    ? transform(crudDomainStore.mapStore.get(modelName))
-    : crudDomainStore.mapStore.get(modelName);
+  injected[modelName] = crudDomainStore.mapStore.get(modelName);
   injected[`${modelName}_getModel`] = (query) => {
-    crudDomainStore.getModel(query, modelName, true, transform);
+    crudDomainStore.getModel(query, modelName, true);
   };
   injected[`${modelName}_createModel`] = (model) =>
     crudDomainStore.createModel(modelName, model);
@@ -257,10 +250,63 @@ class CrudCl extends React.Component {
       );
       return React.cloneElement(child, injectedProps);
     });
+    return <>{childrenWithProps}</>;
+  }
+}
+export const CrudOld = observer(CrudCl);
+
+class CrudContainer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.stores = {};
+  }
+  componentDidMount() { }
+  componentWillReceiveProps(nextProps) {
+  }
+  componentDidUpdate() { }
+  render() {
+    let {
+      modelName,
+      url,
+      children,
+      skipLoadOnInit,
+      crudDomainStore,
+      offlineStorage,
+      SERVER,
+      notificationDomainStore,
+      query,
+      paginate,
+      render,
+    } = this.props;
+    if (modelName && !skipLoadOnInit) {
+      crudDomainStore.getModel(query, modelName, false);
+    }
+    const childrenWithProps = render
+      ? render(
+        injectProps(
+          crudDomainStore,
+          modelName,
+          this.props,
+          {},
+          null,
+          query
+        )
+      )
+      : React.Children.map(children, (child) => {
+        let injectedProps = injectProps(
+          crudDomainStore,
+          modelName,
+          this.props,
+          child,
+          query
+        );
+        return React.cloneElement(child, { ...injectedProps });
+      });
     return <React.Fragment>{childrenWithProps}</React.Fragment>;
   }
 }
-export const Crud = observer(CrudCl);
+
+export const Crud = observer(CrudContainer);
 
 export function withCrud(WrappedComponent) {
   class WithCrud extends React.Component {

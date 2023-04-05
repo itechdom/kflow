@@ -54,6 +54,7 @@ const Knowledge = ({
   knowledge_loading,
   ...rest
 }) => {
+  console.log(knowledge, "here");
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

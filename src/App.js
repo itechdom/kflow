@@ -119,11 +119,6 @@ class App extends React.Component {
       });
   };
   componentDidMount = () => {
-    offlineStorage.getItem("onboardingStep").then((value) => {
-      if (value !== "final") {
-        return this.props.history(`/onboarding/${value}`);
-      }
-    });
     !disableAuth && this.onRouteChanged();
   };
   onLogout() {
@@ -694,13 +689,9 @@ class App extends React.Component {
                       paginate={false}
                       query={query}
                       render={(props) => {
-                        // console.log(
-                        //   "PROPS",
-                        //   props.knowledge_undoManager.history
-                        // );
+                        console.log(props,"Here");
                         let knowledge =
                           props.knowledge_queryResult
-
                         if (!knowledge || props.knowledge_loading) {
                           return <Loading></Loading>;
                         }
