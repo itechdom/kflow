@@ -24,6 +24,7 @@ const offlineStorage = {
 }
 
 const Another = memo((props) => {
+  console.log(props,"PORPS");
   return <>
     <button onClick={() => props.knowledge_createModel({ title: "hello" })}>create</button>
     <button onClick={() => props.knowledge_updateModel({
@@ -33,7 +34,7 @@ const Another = memo((props) => {
       resource: "knowledge",
       tags: [],
       title: "hello",
-      _id: "642f15e403b8593144632737"
+      _id: "642f21d6b4e24846b9e48c69"
     }, { title: "updatedHello" })}>update</button>
     <button onClick={() => props.knowledge_deleteModel({
       createdAt: "2023-04-06T18:56:36.906Z",
@@ -42,7 +43,7 @@ const Another = memo((props) => {
       resource: "knowledge",
       tags: [],
       title: "hello",
-      _id: "642f15e403b8593144632737"
+      _id: "642f2212b4e24846b9e48c70"
     })}>delete</button>
   </>
 })

@@ -25,7 +25,7 @@ export const useDeleteModel = (offlineStorage, SERVER, query, modelName) => {
           }
         )
         .then((res) => {
-          dispatch(deleteModel({ data: model }));
+          dispatch(deleteModel({ data: model, modelName }));
           setIsLoading(false);
         })
         .catch((err) => {
