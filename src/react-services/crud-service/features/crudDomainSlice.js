@@ -27,11 +27,12 @@ export const crudDomainSlice = createSlice({
             // doesn't actually mutate the state because it uses the Immer library,
             // which detects changes to a "draft state" and produces a brand new
             // immutable state based off those changes
-            let model = state.model[action.payload.modelName].data.find((model) => model._id === action.payload.data._id);
-            Object.keys(action.payload.updatedValues).map((key) => {
-                model[key] = action.payload.updateValues[key];
+            let model = state.model[action.payload.modelName].data.find((model) => {
+                return model._id === action.payload.data._id
             });
-            model = action.payload.data;
+            Object.keys(action.payload.updatedValues).map((key) => {
+                model[key] = action.payload.updatedValues[key];
+            });
         }
     },
 })
