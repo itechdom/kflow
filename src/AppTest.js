@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import { Crud } from './react-services/crud-service/crud-hook';
 import config from './config';
@@ -23,31 +24,29 @@ const offlineStorage = {
 }
 
 const Another = memo((props) => {
-  return <> </>
+  console.log(props);
+  return <>
+    <button onClick={() => props.knowledge_Create({ title: "hello" })}>create</button>
+    <button onClick={() => props.knowledge_Update({
+      createdAt: "2023-04-06T18:56:36.906Z",
+      gallery: [],
+      isASeed: false,
+      resource: "knowledge",
+      tags: [],
+      title: "hello",
+      _id: "642f15e403b8593144632737"
+    }, { title: "updatedHello" })}>update</button>
+  </>
 })
-
-const UserCrud = prop => <Crud
-  modelName="knowledge"
-  SERVER={config.SERVER}
-  offlineStorage={offlineStorage}
-  render={(props) => {
-    return <>
-    </>
-  }}
-/>
 
 const KnowledgeCrud = prop => <Crud
   modelName="knowledge"
   SERVER={config.SERVER}
   offlineStorage={offlineStorage}
   render={(props) => {
-    console.log(props, "PROP");
+    console.log(props);
     return <>
       <Another {...props} />
-      <Another {...props} />
-      <Another {...props} />
-      <Another {...props} />
-      <UserCrud know={props.knowledge} />
     </>
   }}
 />
@@ -55,7 +54,6 @@ const KnowledgeCrud = prop => <Crud
 const App = () => {
   return (
     <div className="App">
-      <KnowledgeCrud />
       <KnowledgeCrud />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

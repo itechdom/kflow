@@ -5,6 +5,8 @@ import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import MomentUtils from "@date-io/moment";
 // import Loadable from "react-loadable";
 // import Loading from "./src/orbital-templates/Material/_shared/Loading/Loading";
+import store from './Store/reduxStore'
+import { Provider } from 'react-redux'
 import App from "./AppTest";
 // const App = Loadable({
 //   loader: () => import(/* webpackChunkName: "App" */ "./src/App"),
@@ -17,7 +19,9 @@ const FireApp = props => {
         <Route
           path="/"
           render={routeProps => {
-            return <App {...props} {...routeProps} />;
+            return <Provider store={store}>
+              <App {...props} {...routeProps} />
+            </Provider>;
           }}
         />
       </Router>
@@ -46,7 +50,7 @@ const FireApp = props => {
  */
 var app = {
   // Application Constructor
-  initialize: function() {
+  initialize: function () {
     document.addEventListener(
       "deviceready",
       this.onDeviceReady.bind(this),
@@ -57,7 +61,7 @@ var app = {
   //
   // Bind any cordova events here. Common events are:
   // 'pause', 'resume', etc.
-  onDeviceReady: function() {
+  onDeviceReady: function () {
     FireApp();
   }
 };
