@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { action } from 'mobx';
 
 export const crudDomainSlice = createSlice({
     name: 'crud',
@@ -33,11 +34,20 @@ export const crudDomainSlice = createSlice({
             Object.keys(action.payload.updatedValues).map((key) => {
                 model[key] = action.payload.updatedValues[key];
             });
+        },
+        deleteModel: (state, action) => {
+            // Redux Toolkit allows us to write "mutating" logic in reducers. It
+            // doesn't actually mutate the state because it uses the Immer library,
+            // which detects changes to a "draft state" and produces a brand new
+            // immutable state based off those changes
+            state.model[action.payload.modelName].data = state.model[action.payload.modelName].data.filter((model) => {
+                return model._id !== action.payload.data._id
+            });
         }
     },
 })
 
 // Action creators are generated for each case reducer function
-export const { setModel, updateModel, createModel } = crudDomainSlice.actions
+export const { setModel, updateModel, createModel, deleteModel } = crudDomainSlice.actions
 
 export default crudDomainSlice.reducer 

@@ -24,10 +24,9 @@ const offlineStorage = {
 }
 
 const Another = memo((props) => {
-  console.log(props);
   return <>
-    <button onClick={() => props.knowledge_Create({ title: "hello" })}>create</button>
-    <button onClick={() => props.knowledge_Update({
+    <button onClick={() => props.knowledge_createModel({ title: "hello" })}>create</button>
+    <button onClick={() => props.knowledge_updateModel({
       createdAt: "2023-04-06T18:56:36.906Z",
       gallery: [],
       isASeed: false,
@@ -36,6 +35,15 @@ const Another = memo((props) => {
       title: "hello",
       _id: "642f15e403b8593144632737"
     }, { title: "updatedHello" })}>update</button>
+    <button onClick={() => props.knowledge_deleteModel({
+      createdAt: "2023-04-06T18:56:36.906Z",
+      gallery: [],
+      isASeed: false,
+      resource: "knowledge",
+      tags: [],
+      title: "hello",
+      _id: "642f15e403b8593144632737"
+    })}>delete</button>
   </>
 })
 
