@@ -6,7 +6,8 @@ import {
   withAuth,
   Auth
 } from "./auth-service/auth-service";
-import { crudDomainStore, Crud, withCrud } from "./crud-service/crud-service";
+import { crudDomainStore, withCrud } from "./crud-service/crud-service";
+import { Crud } from "./crud-service/crud-container";
 import {
   Event,
   EventWithCrud,
@@ -22,7 +23,8 @@ import {
   adminDomainStore
 } from "./admin-service/admin-service";
 import { Media, mediaDomainStore } from "./media-service/media-service";
-import { Forms, formsDomainStore } from "./forms-service/forms-service";
+import { formsDomainStore } from "./forms-service/forms-service";
+import { Forms } from "./forms-service/forms-container";
 import {
   Settings,
   settingsDomainStore

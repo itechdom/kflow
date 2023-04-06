@@ -52,6 +52,7 @@ const Knowledge = ({
   deleting,
   setDeleting,
   knowledge_loading,
+  loading,
   ...rest
 }) => {
   console.log(knowledge, "here");
@@ -114,7 +115,7 @@ const Knowledge = ({
       gridSizes={{ xl: 3, lg: 3, md: 3, sm: 12, xs: 12 }}
       ModelListActions={ModelListActions}
       justify={"center"}
-      loading={knowledge_loading}
+      loading={loading}
       getUnsplash={getUnsplash}
       onAdd={() => {
         history.push(`${match.path}/add`);

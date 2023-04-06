@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import { Crud } from './react-services/crud-service/crud-hook';
+import { Crud } from './react-services/crud-service/crud-container';
 import config from './config';
 import { memo } from 'react';
 
@@ -24,7 +24,6 @@ const offlineStorage = {
 }
 
 const Another = memo((props) => {
-  console.log(props,"PORPS");
   return <>
     <button onClick={() => props.knowledge_createModel({ title: "hello" })}>create</button>
     <button onClick={() => props.knowledge_updateModel({

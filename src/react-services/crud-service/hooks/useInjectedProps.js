@@ -26,7 +26,7 @@ export const useInjectProps = (
         setInjected({
             [modelName]: model,
             [`${modelName}_Error`]: error,
-            [`${modelName}_Loading`]: isLoading,
+            [`${modelName}_loading`]: isLoading,
             [`${modelName}_createModel`]: createModelFn,
             [`${modelName}_updateModel`]: updateModelFn,
             [`${modelName}_deleteModel`]: deleteModelFn

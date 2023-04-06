@@ -22,7 +22,7 @@ import LoginWrapper from "./orbital-templates/Material/Wrappers/LoginWrapper";
 import { Wikipedia } from "./react-services/wikipedia-service/wikipedia-service";
 import { LoginWithAuth } from "./react-services/auth-service/auth-service";
 import {
-  Crud, 
+  Crud,
   RegisterWithAuth,
   Media,
   Forms,
@@ -48,7 +48,7 @@ import Knowledge from "./Knowledge/Knowledge";
 import KnowledgePreview from "./Knowledge/ModelPreview/ModelPreview";
 const loginBG = "";
 const registerBG = "";
-const logo = "assets/images/logo-no-background.svg";
+const logo = "images/logo-no-background.svg";
 const gaTrackingCode = "UA-46023413-2";
 const disableAuth = true;
 const offlineStorage = {
@@ -580,9 +580,7 @@ class App extends React.Component {
                         //   props.knowledge_undoManager.history
                         // );
                         let knowledge =
-                          props.knowledge_queryResult &&
-                          props.knowledge_queryResult.data &&
-                          props.knowledge_queryResult.data[0];
+                          props.knowledge;
                         if (!knowledge || props.knowledge_loading) {
                           return <Loading></Loading>;
                         }
@@ -622,13 +620,13 @@ class App extends React.Component {
                               },
                             }}
                           >
-                            <Wikipedia
+                            {/* <Wikipedia
                               SERVER={config.SERVER}
                               offlineStorage={offlineStorage}
                               notificationDomainStore={
                                 rootStore.notificationDomainStore
                               }
-                            >
+                            > */}
                               <KnowledgePreview
                                 onEdit={(model) => {
                                   routeProps.history.push(
@@ -655,7 +653,7 @@ class App extends React.Component {
                                   this.renderDialog(props)
                                 }
                               />
-                            </Wikipedia>
+                            {/* </Wikipedia> */}
                           </MainWrapper>
                         );
                       }}
@@ -682,9 +680,8 @@ class App extends React.Component {
                       paginate={false}
                       query={query}
                       render={(props) => {
-                        console.log(props,"Here");
                         let knowledge =
-                          props.knowledge_queryResult
+                          props.knowledge
                         if (!knowledge || props.knowledge_loading) {
                           return <Loading></Loading>;
                         }
@@ -724,43 +721,44 @@ class App extends React.Component {
                               },
                             }}
                           >
-                            <Wikipedia
+                            {/* <Wikipedia
                               SERVER={config.SERVER}
                               offlineStorage={offlineStorage}
                               notificationDomainStore={
                                 rootStore.notificationDomainStore
                               }
-                            >
-                              <Knowledge
-                                onEdit={(model) => {
-                                  routeProps.history.push(
-                                    `//edit/${model._id}`
-                                  );
-                                }}
-                                onDelete={() => {
-                                  routeProps.history.goBack();
-                                }}
-                                match={routeProps.match}
-                                history={routeProps.history}
-                                classes={classes}
-                                location={this.props.location}
-                                currentTags={this.state.tags}
-                                selected={this.state.selected}
-                                currentUser={this.state.currentUser}
-                                setState={(props) => this.setState(props)}
-                                model={knowledge}
-                                knowledge={knowledge}
-                                knowledge_updateModel={
-                                  props.knowledge_updateModel
-                                }
-                                knowledge_deleteModel={
-                                  props.knowledge_deleteModel
-                                }
-                                renderDialog={(props) =>
-                                  this.renderDialog(props)
-                                }
-                              />
-                            </Wikipedia>
+                            > */}
+                            <Knowledge
+                              onEdit={(model) => {
+                                routeProps.history.push(
+                                  `//edit/${model._id}`
+                                );
+                              }}
+                              onDelete={() => {
+                                routeProps.history.goBack();
+                              }}
+                              match={routeProps.match}
+                              history={routeProps.history}
+                              classes={classes}
+                              location={this.props.location}
+                              currentTags={this.state.tags}
+                              selected={this.state.selected}
+                              currentUser={this.state.currentUser}
+                              setState={(props) => this.setState(props)}
+                              model={knowledge}
+                              loading={props.knowledge_loading}
+                              knowledge={knowledge}
+                              knowledge_updateModel={
+                                props.knowledge_updateModel
+                              }
+                              knowledge_deleteModel={
+                                props.knowledge_deleteModel
+                              }
+                              renderDialog={(props) =>
+                                this.renderDialog(props)
+                              }
+                            />
+                            {/* </Wikipedia> */}
                           </MainWrapper>
                         );
                       }}
@@ -966,14 +964,14 @@ class App extends React.Component {
                                 formsDomainStore={rootStore.formsDomainStore}
                                 modelName="knowledge"
                               >
-                                <Wikipedia
+                                {/* <Wikipedia
                                   SERVER={config.SERVER}
                                   offlineStorage={offlineStorage}
                                   notificationDomainStore={
                                     rootStore.notificationDomainStore
                                   }
-                                >
-                                  {/* <Grid
+                                > */}
+                                {/* <Grid
                                     container
                                     justify="center"
                                     style={{ marginBottom: "5em" }}
@@ -993,20 +991,20 @@ class App extends React.Component {
                                       </Typography>
                                     </Grid>
                                   </Grid> */}
-                                  <Knowledge
-                                    {...routeProps}
-                                    {...props}
-                                    location={this.props.location}
-                                    currentTags={this.state.tags}
-                                    selected={this.state.selected}
-                                    currentUser={this.state.currentUser}
-                                    setState={(props) => this.setState(props)}
-                                    renderDialog={(props) =>
-                                      this.renderDialog(props)
-                                    }
-                                    knowledge={knowledge}
-                                  />
-                                </Wikipedia>
+                                <Knowledge
+                                  {...routeProps}
+                                  {...props}
+                                  location={this.props.location}
+                                  currentTags={this.state.tags}
+                                  selected={this.state.selected}
+                                  currentUser={this.state.currentUser}
+                                  setState={(props) => this.setState(props)}
+                                  renderDialog={(props) =>
+                                    this.renderDialog(props)
+                                  }
+                                  knowledge={knowledge}
+                                />
+                                {/* </Wikipedia> */}
                               </Forms>
                             </MainWrapper>
                           </MainWrapper>
