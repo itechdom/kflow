@@ -13,12 +13,13 @@ export const useUpdateModel = (offlineStorage, SERVER, query, modelName) => {
   const dispatch = useDispatch();
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+
   const updateModelFn = (model, updatedValues) => offlineStorage
     .getItem("jwtToken")
     .then((token) => {
       return axios
         .put(`${SERVER.host}:${SERVER.port}/${modelName}`, {
-          model,
+          model: { ...model, ...updatedValues },
           token,
         })
         .then((res) => {
