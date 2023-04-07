@@ -7,7 +7,7 @@ import MomentUtils from "@date-io/moment";
 // import Loading from "./src/orbital-templates/Material/_shared/Loading/Loading";
 import store from './Store/reduxStore'
 import { Provider } from 'react-redux'
-import App from "./App";
+import App from "./AppTest";
 // const App = Loadable({
 //   loader: () => import(/* webpackChunkName: "App" */ "./src/App"),
 //   loading: err => <Loading err={err} />

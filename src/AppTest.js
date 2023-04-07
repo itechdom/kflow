@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import { Crud } from './react-services/crud-service/crud-container';
+import { Wikipedia } from './react-services/wikipedia-service/wikipedia-container';
 import config from './config';
 import { memo } from 'react';
 
@@ -47,18 +48,28 @@ const Another = memo((props) => {
   </>
 })
 
-const KnowledgeCrud = prop => <Crud
-  modelName="knowledge"
+const KnowledgeCrud = prop => <Wikipedia
+  modelName="wiki"
   SERVER={config.SERVER}
   offlineStorage={offlineStorage}
-  render={(props) => {
-    console.log(props);
-    return <>
-      <Another {...props} />
-    </>
-  }}
-/>
+  render={(wikiProps) => {
+    console.log(wikiProps,"WIKI");
+    return <Crud
+      modelName="knowledge"
+      SERVER={config.SERVER}
+      offlineStorage={offlineStorage}
+      render={(props) => {
+        console.log(props);
+        return <>
+          <Another {...props} />
+        </>
+      }}
+    />
+  }
+  }
+>
 
+</Wikipedia>
 const App = () => {
   return (
     <div className="App">
