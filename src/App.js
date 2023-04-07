@@ -580,10 +580,12 @@ class App extends React.Component {
                         //   props.knowledge_undoManager.history
                         // );
                         let knowledge =
-                          props.knowledge;
+                          props.knowledge && props.knowledge.data[0];
+
                         if (!knowledge || props.knowledge_loading) {
                           return <Loading></Loading>;
                         }
+                        let knowledgeMutable = JSON.parse(JSON.stringify(knowledge));
                         return (
                           <MainWrapper
                             logo={logo}
@@ -627,32 +629,32 @@ class App extends React.Component {
                                 rootStore.notificationDomainStore
                               }
                             > */}
-                              <KnowledgePreview
-                                onEdit={(model) => {
-                                  routeProps.history.push(
-                                    `//edit/${model._id}`
-                                  );
-                                }}
-                                onDelete={() => {
-                                  routeProps.history.goBack();
-                                }}
-                                classes={classes}
-                                location={this.props.location}
-                                currentTags={this.state.tags}
-                                selected={this.state.selected}
-                                currentUser={this.state.currentUser}
-                                setState={(props) => this.setState(props)}
-                                model={knowledge}
-                                knowledge_updateModel={
-                                  props.knowledge_updateModel
-                                }
-                                knowledge_deleteModel={
-                                  props.knowledge_deleteModel
-                                }
-                                renderDialog={(props) =>
-                                  this.renderDialog(props)
-                                }
-                              />
+                            <KnowledgePreview
+                              onEdit={(model) => {
+                                routeProps.history.push(
+                                  `//edit/${model._id}`
+                                );
+                              }}
+                              onDelete={() => {
+                                routeProps.history.goBack();
+                              }}
+                              classes={classes}
+                              location={this.props.location}
+                              currentTags={this.state.tags}
+                              selected={this.state.selected}
+                              currentUser={this.state.currentUser}
+                              setState={(props) => this.setState(props)}
+                              model={knowledgeMutable}
+                              knowledge_updateModel={
+                                props.knowledge_updateModel
+                              }
+                              knowledge_deleteModel={
+                                props.knowledge_deleteModel
+                              }
+                              renderDialog={(props) =>
+                                this.renderDialog(props)
+                              }
+                            />
                             {/* </Wikipedia> */}
                           </MainWrapper>
                         );

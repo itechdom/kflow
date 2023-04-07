@@ -137,19 +137,19 @@ const ModelPreview = (props) => {
     ...rest
   } = props;
   React.useEffect(() => {
-    setTimeout(() => {
-      const container = document.getElementById("scrollContainer");
-      if (store[model.title]) {
-        document.getElementById("scrollContainer").scrollTop =
-          store[model.title];
-      } else {
-        container.onscroll = function () {
-          let scrollPos = this.scrollTop; //check the number in console
-          store[model.title] = scrollPos;
-        }
-      }
-    }, 1000);
-    props.fetchPageByTopic(model.title);
+    // setTimeout(() => {
+    //   const container = document.getElementById("scrollContainer");
+    //   if (store[model.title]) {
+    //     document.getElementById("scrollContainer").scrollTop =
+    //       store[model.title];
+    //   } else {
+    //     container.onscroll = function () {
+    //       let scrollPos = this.scrollTop; //check the number in console
+    //       store[model.title] = scrollPos;
+    //     }
+    //   }
+    // }, 1000);
+    // props.fetchPageByTopic(model.title);
   }, []);
   if (!mindmapByKeys && model && model.body) {
     setMindmapByKeys(model.body);
@@ -324,7 +324,7 @@ const ModelPreview = (props) => {
                 </Grid>
               </Grid>
               <Paper>
-                <List>
+                {/* <List>
                   {wikipedia.map((link) => (
                     <ListItem>
                       <a target="_blank" href={link}>
@@ -332,7 +332,7 @@ const ModelPreview = (props) => {
                       </a>
                     </ListItem>
                   ))}
-                </List>
+                </List> */}
                 {/* <List>
                   {wikipediaImages.map((image) => (
                     <ListItem>
