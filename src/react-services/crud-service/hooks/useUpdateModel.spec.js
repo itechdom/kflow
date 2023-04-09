@@ -2,6 +2,15 @@ import React from 'react';
 import { renderHook } from '@testing-library/react';
 import { useUpdateModel } from './useUpdateModel';
 
+jest.mock('axios');
+
+const mockDispatch = jest.fn();
+
+jest.mock('react-redux', () => ({
+  useDispatch: () => mockDispatch,
+  useSelector: jest.fn(),
+}));
+
 describe('useUpdateModel', () => {
   const offlineStorage = {};
   const SERVER = {

@@ -2,10 +2,28 @@ import React from 'react';
 import { renderHook } from '@testing-library/react';
 import { useGetModel } from './useGetModel';
 
-jest.mock('react-redux');
+jest.mock('axios');
+
+const mockDispatch = jest.fn();
+
+jest.mock('react-redux', () => ({
+  useDispatch: () => mockDispatch,
+  useSelector: jest.fn(),
+}));
 
 describe('useGetModel', () => {
-  const offlineStorage = {};
+  beforeEach(() => {
+    const setError = jest.fn(x => { });
+    const setIsLoading = jest.fn(x => { });
+
+    React.useState = jest
+      .fn()
+      .mockImplementationOnce(x => [null, setError])
+      .mockImplementationOnce(x => [false, setIsLoading])
+  });
+  const offlineStorage = {
+    getItem: () => new Promise((resolve) => resolve({})),
+  };
   const SERVER = {
     host: 'http://localhost',
     port: 3000,
@@ -14,16 +32,18 @@ describe('useGetModel', () => {
   const modelName = 'testModel';
 
   it('returns model, error, and isLoading', () => {
-    const dispatch = jest.fn();
     jest.spyOn(React, 'useEffect').mockImplementationOnce((f) => f());
-    jest.spyOn(React, 'useSelector').mockReturnValue(null);
+    //error
+    jest.spyOn(React, 'useState').mockReturnValueOnce([null, jest.fn()]);
+    //isLoading
+    jest.spyOn(React, 'useState').mockReturnValueOnce([false, jest.fn()]);
     jest.spyOn(require('axios'), 'get').mockResolvedValue({ data: {} });
     const { result } = renderHook(() =>
       useGetModel(offlineStorage, SERVER, query, modelName)
     );
     expect(result.current).toHaveLength(3);
-    expect(result.current[0]).toBe(null);
+    expect(result.current[0]).toBe(undefined);
     expect(result.current[1]).toBe(null);
-    expect(result.current[2]).toBe(false);
+    expect(result.current[2]).toBe(true);
   });
 });

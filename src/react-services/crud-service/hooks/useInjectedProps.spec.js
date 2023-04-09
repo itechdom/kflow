@@ -2,10 +2,24 @@ import React from 'react';
 import { renderHook } from '@testing-library/react';
 import { useInjectProps } from './useInjectedProps';
 
-jest.mock('./useGetModel');
-jest.mock('./useCreateModel');
-jest.mock('./useUpdateModel');
-jest.mock('./useDeleteModel');
+const mockModel = { "hello": true };
+
+jest.mock('./useGetModel', () => {
+  return { useGetModel: () => ([mockModel, null, true]) };
+});
+jest.mock('./useCreateModel', () => {
+  return { useCreateModel: () => ([jest.fn(), null, null, true]) };
+});
+jest.mock('./useUpdateModel',
+  () => {
+    return { useUpdateModel: () => ([jest.fn(), null, true]) };
+  }
+);
+jest.mock('./useDeleteModel',
+  () => {
+    return { useDeleteModel: () => ([jest.fn(), null, true]) };
+  }
+);
 
 describe('useInjectProps', () => {
   const offlineStorage = {};
@@ -21,7 +35,7 @@ describe('useInjectProps', () => {
       useInjectProps(offlineStorage, SERVER, query, modelName)
     );
     expect(result.current).toEqual({
-      testModel: null,
+      testModel: mockModel,
       testModel_Error: null,
       testModel_loading: true,
       testModel_createModel: expect.any(Function),

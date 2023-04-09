@@ -2,7 +2,14 @@ import React from 'react';
 import { renderHook } from '@testing-library/react';
 import { useDeleteModel } from './useDeleteModel';
 
-jest.mock('react-redux');
+jest.mock('axios');
+
+const mockDispatch = jest.fn();
+
+jest.mock('react-redux', () => ({
+  useDispatch: () => mockDispatch,
+  useSelector: jest.fn(),
+}));
 
 describe('useDeleteModel', () => {
     const offlineStorage = {};
@@ -16,7 +23,6 @@ describe('useDeleteModel', () => {
     it('returns deleteModelFn, error, and isLoading', () => {
         jest.spyOn(React, 'useState').mockReturnValueOnce([null, jest.fn()]);
         jest.spyOn(React, 'useState').mockReturnValueOnce([true, jest.fn()]);
-        const dispatch = jest.fn();
         jest.spyOn(require('axios'), 'delete').mockResolvedValue({});
         const { result } = renderHook(() =>
             useDeleteModel(offlineStorage, SERVER, query, modelName)

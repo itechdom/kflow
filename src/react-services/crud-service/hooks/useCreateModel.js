@@ -11,7 +11,6 @@ import { createModel } from '../features/crudDomainSlice';
 // ) => [any, any, any];
 export const useCreateModel = (offlineStorage, SERVER, query, modelName) => {
   const dispatch = useDispatch();
-  const updatedModel = useSelector((state) => state.crudDomainStore.model[modelName]);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const createModelFn = (model) => offlineStorage
@@ -34,5 +33,5 @@ export const useCreateModel = (offlineStorage, SERVER, query, modelName) => {
     .catch((err) => {
       return setError(modelName, err);
     });
-  return [createModelFn, updatedModel, error, isLoading];
+  return [createModelFn, error, isLoading];
 };
