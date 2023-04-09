@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { CrudContainerFP } from '../crud-container';
+import { CrudContainerFP } from './crud-container';
 
 describe('CrudContainerFP', () => {
   const props = {
