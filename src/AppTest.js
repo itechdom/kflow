@@ -45,6 +45,7 @@ const Another = memo((props) => {
       title: "hello",
       _id: "642f2212b4e24846b9e48c70"
     })}>delete</button>
+    <button onClick={() => props.fetchTopicByPage("Physics")}>get wikipedia</button>
   </>
 })
 
@@ -52,23 +53,18 @@ const KnowledgeCrud = prop => <Wikipedia
   modelName="wiki"
   SERVER={config.SERVER}
   offlineStorage={offlineStorage}
-  render={(wikiProps) => {
-    console.log(wikiProps,"WIKI");
-    return <Crud
-      modelName="knowledge"
-      SERVER={config.SERVER}
-      offlineStorage={offlineStorage}
-      render={(props) => {
-        console.log(props);
-        return <>
-          <Another {...props} />
-        </>
-      }}
-    />
-  }
-  }
 >
-
+  <Crud
+    modelName="knowledge"
+    SERVER={config.SERVER}
+    offlineStorage={offlineStorage}
+    render={(props) => {
+      console.log("PROPS", props);
+      return <>
+        <Another fetchTopicByPage={props.wiki_fetchWikipediaPageByTopic} {...props} />
+      </>
+    }}
+  />
 </Wikipedia>
 const App = () => {
   return (

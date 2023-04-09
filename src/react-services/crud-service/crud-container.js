@@ -25,10 +25,10 @@ export const CrudContainerFP = (props) => {
   const injected = useInjectProps(offlineStorage, SERVER, query, modelName);
   const childrenWithProps = render
     ? render(
-      injected
+      { ...injected, ...props }
     )
     : React.Children.map(children, (child) => {
-      return React.cloneElement(child, { ...injected });
+      return React.cloneElement(child, { ...injected, ...props, ...child.props });
     });
   return <React.Fragment>{childrenWithProps}</React.Fragment>;
 }

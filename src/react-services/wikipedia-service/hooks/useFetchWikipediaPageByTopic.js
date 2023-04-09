@@ -18,8 +18,9 @@ export const useFetchWikipediaPageByTopic = (offlineStorage, SERVER, query, mode
     const dispatch = useDispatch();
     const model = useSelector((state) => state.wikiDomainStore.model[modelName]);
     const [error, setError] = useState(null);
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
     const fetchWikipediaPageByTopic = (topic) => offlineStorage.getItem("jwtToken").then((token) => {
+        setIsLoading(true);
         return axios({
             url: `${SERVER.wikipedia.host}`,
             method: "get",
