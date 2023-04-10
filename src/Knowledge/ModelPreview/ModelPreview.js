@@ -133,7 +133,8 @@ const ModelPreview = (props) => {
     onDelete,
     onCreate,
     onView,
-    wikipedia,
+    wiki,
+    fetchWikipediaPageByTopic,
     ...rest
   } = props;
   React.useEffect(() => {
@@ -149,7 +150,8 @@ const ModelPreview = (props) => {
     //     }
     //   }
     // }, 1000);
-    // props.fetchPageByTopic(model.title);
+    console.log(props,"PROPS")
+    fetchWikipediaPageByTopic(model.title);
   }, []);
   if (!mindmapByKeys && model && model.body) {
     setMindmapByKeys(model.body);
@@ -324,24 +326,15 @@ const ModelPreview = (props) => {
                 </Grid>
               </Grid>
               <Paper>
-                {/* <List>
-                  {wikipedia.map((link) => (
+                <List>
+                  {wiki && wiki.map((link) => (
                     <ListItem>
                       <a target="_blank" href={link}>
                         {link}
                       </a>
                     </ListItem>
                   ))}
-                </List> */}
-                {/* <List>
-                  {wikipediaImages.map((image) => (
-                    <ListItem>
-                      <a target="_blank" href={image}>
-                        <img src={image} />
-                      </a>
-                    </ListItem>
-                  ))}
-                </List> */}
+                </List>
               </Paper>
             </Grid>
           </Grid>

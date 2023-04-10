@@ -14,9 +14,9 @@ const testHtml = (title) => {
     var regex = new RegExp(expression);
     return title && title.match(regex);
 };
-export const useFetchWikipediaPageByTopic = (offlineStorage, SERVER, query, modelName) => {
+export const useFetchWikipediaPageByTopic = (offlineStorage, SERVER, query) => {
     const dispatch = useDispatch();
-    const model = useSelector((state) => state.wikiDomainStore.model[modelName]);
+    const model = useSelector((state) => state.wikiDomainStore.data);
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     const fetchWikipediaPageByTopic = (topic) => offlineStorage.getItem("jwtToken").then((token) => {
@@ -43,7 +43,7 @@ export const useFetchWikipediaPageByTopic = (offlineStorage, SERVER, query, mode
                     })
                     .filter((d) => d)[0];
                 setIsLoading(false);
-                dispatch(setModel({ data: formattedData, modelName }));
+                dispatch(setModel({ data: formattedData }));
             })
             .catch((err) => {
                 setIsLoading(false);

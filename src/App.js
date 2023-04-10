@@ -19,7 +19,7 @@ import {
 } from "@material-ui/core";
 import MainWrapper from "./orbital-templates/Material/Wrappers/MainWrapper";
 import LoginWrapper from "./orbital-templates/Material/Wrappers/LoginWrapper";
-import { Wikipedia } from "./react-services/wikipedia-service/wikipedia-service";
+import { Wikipedia } from "./react-services/wikipedia-service/wikipedia-container";
 import { LoginWithAuth } from "./react-services/auth-service/auth-service";
 import {
   Crud,
@@ -564,105 +564,102 @@ class App extends React.Component {
                   } = routeProps;
                   let query = { _id: params.id };
                   return (
-                    <Crud
-                      modelName="knowledge"
+                    <Wikipedia
                       SERVER={config.SERVER}
                       offlineStorage={offlineStorage}
-                      notificationDomainStore={
-                        rootStore.notificationDomainStore
-                      }
-                      crudDomainStore={rootStore.crudDomainStore}
-                      paginate={false}
-                      query={query}
-                      render={(props) => {
-                        // console.log(
-                        //   "PROPS",
-                        //   props.knowledge_undoManager.history
-                        // );
-                        let knowledge =
-                          props.knowledge && props.knowledge.data[0];
-
-                        if (!knowledge || props.knowledge_loading) {
-                          return <Loading></Loading>;
+                    >
+                      <Crud
+                        modelName="knowledge"
+                        SERVER={config.SERVER}
+                        offlineStorage={offlineStorage}
+                        notificationDomainStore={
+                          rootStore.notificationDomainStore
                         }
-                        let knowledgeMutable = JSON.parse(JSON.stringify(knowledge));
-                        return (
-                          <MainWrapper
-                            logo={logo}
-                            routeList={[
-                              {
-                                url: "all",
-                                name: "All",
-                                icon: "",
-                              },
-                            ]}
-                            drawerRouteList={
-                              this.state.currentUser &&
-                                this.state.currentUser.isAdmin
-                                ? [...mainRouteList, adminRoute, logoutRoute]
-                                : [...mainRouteList, logoutRoute]
-                            }
-                            user={this.state.currentUser}
-                            {...routeProps}
-                            {...this.props}
-                            onRouteClick={(route) => {
-                              this.setState({
-                                tags: new Set([]),
-                              });
-                              if (route.indexOf("http") !== -1) {
-                                return window.open(route);
+                        crudDomainStore={rootStore.crudDomainStore}
+                        paginate={false}
+                        query={query}
+                        render={(props) => {
+                          let knowledge =
+                            props.knowledge && props.knowledge.data[0];
+
+                          if (!knowledge || props.knowledge_loading) {
+                            return <Loading></Loading>;
+                          }
+                          let knowledgeMutable = JSON.parse(JSON.stringify(knowledge));
+                          return (
+                            <MainWrapper
+                              logo={logo}
+                              routeList={[
+                                {
+                                  url: "all",
+                                  name: "All",
+                                  icon: "",
+                                },
+                              ]}
+                              drawerRouteList={
+                                this.state.currentUser &&
+                                  this.state.currentUser.isAdmin
+                                  ? [...mainRouteList, adminRoute, logoutRoute]
+                                  : [...mainRouteList, logoutRoute]
                               }
-                              return routeProps.history.push(`${route}`);
-                            }}
-                            classes={{
-                              ...classes,
-                              tabMenu: `${classes["white"]}`,
-                              menuTabsClasses: {
-                                flexContainer: `${classes["center"]}`,
-                              },
-                            }}
-                          >
-                            {/* <Wikipedia
-                              SERVER={config.SERVER}
-                              offlineStorage={offlineStorage}
-                              notificationDomainStore={
-                                rootStore.notificationDomainStore
-                              }
-                            > */}
-                            <KnowledgePreview
-                              onEdit={(model) => {
-                                routeProps.history.push(
-                                  `//edit/${model._id}`
-                                );
+                              user={this.state.currentUser}
+                              {...routeProps}
+                              {...this.props}
+                              onRouteClick={(route) => {
+                                this.setState({
+                                  tags: new Set([]),
+                                });
+                                if (route.indexOf("http") !== -1) {
+                                  return window.open(route);
+                                }
+                                return routeProps.history.push(`${route}`);
                               }}
-                              onDelete={() => {
-                                routeProps.history.goBack();
+                              classes={{
+                                ...classes,
+                                tabMenu: `${classes["white"]}`,
+                                menuTabsClasses: {
+                                  flexContainer: `${classes["center"]}`,
+                                },
                               }}
-                              classes={classes}
-                              location={this.props.location}
-                              currentTags={this.state.tags}
-                              selected={this.state.selected}
-                              currentUser={this.state.currentUser}
-                              setState={(props) => this.setState(props)}
-                              model={knowledgeMutable}
-                              knowledge_updateModel={
-                                props.knowledge_updateModel
-                              }
-                              knowledge_deleteModel={
-                                props.knowledge_deleteModel
-                              }
-                              renderDialog={(props) =>
-                                this.renderDialog(props)
-                              }
-                            />
-                            {/* </Wikipedia> */}
-                          </MainWrapper>
-                        );
-                      }}
-                    />
+                            >
+
+                              <KnowledgePreview
+                                onEdit={(model) => {
+                                  routeProps.history.push(
+                                    `//edit/${model._id}`
+                                  );
+                                }}
+                                onDelete={() => {
+                                  routeProps.history.goBack();
+                                }}
+                                classes={classes}
+                                location={this.props.location}
+                                currentTags={this.state.tags}
+                                selected={this.state.selected}
+                                currentUser={this.state.currentUser}
+                                setState={(props) => this.setState(props)}
+                                model={knowledgeMutable}
+                                knowledge_updateModel={
+                                  props.knowledge_updateModel
+                                }
+                                knowledge_deleteModel={
+                                  props.knowledge_deleteModel
+                                }
+                                renderDialog={(props) =>
+                                  this.renderDialog(props)
+                                }
+                                {...props}
+                              />
+                            </MainWrapper>
+                          );
+                        }}
+                      />
+                    </Wikipedia>
                   );
                 }}
+
               />
+
               <Route
                 path={`${this.props.match.path}knowledge`}
                 render={(routeProps) => {
@@ -723,44 +720,44 @@ class App extends React.Component {
                               },
                             }}
                           >
-                            {/* <Wikipedia
+                            <Wikipedia
                               SERVER={config.SERVER}
                               offlineStorage={offlineStorage}
                               notificationDomainStore={
                                 rootStore.notificationDomainStore
                               }
-                            > */}
-                            <Knowledge
-                              onEdit={(model) => {
-                                routeProps.history.push(
-                                  `//edit/${model._id}`
-                                );
-                              }}
-                              onDelete={() => {
-                                routeProps.history.goBack();
-                              }}
-                              match={routeProps.match}
-                              history={routeProps.history}
-                              classes={classes}
-                              location={this.props.location}
-                              currentTags={this.state.tags}
-                              selected={this.state.selected}
-                              currentUser={this.state.currentUser}
-                              setState={(props) => this.setState(props)}
-                              model={knowledge}
-                              loading={props.knowledge_loading}
-                              knowledge={knowledge}
-                              knowledge_updateModel={
-                                props.knowledge_updateModel
-                              }
-                              knowledge_deleteModel={
-                                props.knowledge_deleteModel
-                              }
-                              renderDialog={(props) =>
-                                this.renderDialog(props)
-                              }
-                            />
-                            {/* </Wikipedia> */}
+                            >
+                              <Knowledge
+                                onEdit={(model) => {
+                                  routeProps.history.push(
+                                    `//edit/${model._id}`
+                                  );
+                                }}
+                                onDelete={() => {
+                                  routeProps.history.goBack();
+                                }}
+                                match={routeProps.match}
+                                history={routeProps.history}
+                                classes={classes}
+                                location={this.props.location}
+                                currentTags={this.state.tags}
+                                selected={this.state.selected}
+                                currentUser={this.state.currentUser}
+                                setState={(props) => this.setState(props)}
+                                model={knowledge}
+                                loading={props.knowledge_loading}
+                                knowledge={knowledge}
+                                knowledge_updateModel={
+                                  props.knowledge_updateModel
+                                }
+                                knowledge_deleteModel={
+                                  props.knowledge_deleteModel
+                                }
+                                renderDialog={(props) =>
+                                  this.renderDialog(props)
+                                }
+                              />
+                            </Wikipedia>
                           </MainWrapper>
                         );
                       }}

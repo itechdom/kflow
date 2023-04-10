@@ -50,7 +50,6 @@ const Another = memo((props) => {
 })
 
 const KnowledgeCrud = prop => <Wikipedia
-  modelName="wiki"
   SERVER={config.SERVER}
   offlineStorage={offlineStorage}
 >
@@ -61,7 +60,7 @@ const KnowledgeCrud = prop => <Wikipedia
     render={(props) => {
       console.log("PROPS", props);
       return <>
-        <Another fetchTopicByPage={props.wiki_fetchWikipediaPageByTopic} {...props} />
+        <Another fetchTopicByPage={props.fetchWikipediaPageByTopic} {...props} />
       </>
     }}
   />

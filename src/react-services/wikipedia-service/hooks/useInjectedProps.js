@@ -12,17 +12,17 @@ import { useFetchWikipediaPageByTopic } from "./useFetchWikipediaPageByTopic";
 export const useInjectProps = (
     offlineStorage,
     SERVER,
-    query,
-    modelName
+    query
 ) => {
-    const [fetchWikipediaPageByTopic, model, error, isLoading] = useFetchWikipediaPageByTopic(offlineStorage, SERVER, query, modelName);
+    const [fetchWikipediaPageByTopic, model, error, isLoading] = useFetchWikipediaPageByTopic(offlineStorage, SERVER, query);
     const [injected, setInjected] = useState({});
     useEffect(() => {
+        console.log("WIKI", model);
         setInjected({
-            [modelName]: model,
-            [`${modelName}_fetchWikipediaPageByTopic`]: fetchWikipediaPageByTopic,
-            [`${modelName}_Error`]: error,
-            [`${modelName}_loading`]: isLoading
+            [`wiki`]: model,
+            [`fetchWikipediaPageByTopic`]: fetchWikipediaPageByTopic,
+            [`wiki_Error`]: error,
+            [`wiki_loading`]: isLoading
         });
     }, [model, error, isLoading]);
     return injected;
