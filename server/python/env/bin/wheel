@@ -1,4 +1,4 @@
-#!/home/sam/markab.io/src/python/env/bin/python
+#!/Users/osamaalghanmi/knowledgeflow-v2/server/python/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
