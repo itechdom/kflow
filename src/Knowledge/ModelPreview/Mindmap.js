@@ -3,7 +3,7 @@ import MindmapTree from "react-d3-tree";
 
 export const convertToMindmap = (currentNode, mindmapByKeys) => {
   currentNode.name = currentNode.title;
-  currentNode._collapsed = false;
+  currentNode._collapsed = true;
   currentNode.children = currentNode.children.map((child) => {
     let nchild = Object.assign({}, mindmapByKeys[child]);
     let { x, ...rest } = nchild;
@@ -47,7 +47,7 @@ class Tree extends React.Component {
   render() {
     return (
       <div style={{ width: "50em", height: "20em" }}>
-        {this.state.data.length > 0 && <MindmapTree data={this.state.data} />}
+        {this.state.data.length > 0 && <MindmapTree enableLegacyTransitions={true} data={this.state.data} />}
       </div>
     );
   }

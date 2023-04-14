@@ -36,6 +36,7 @@ import {
   handleNodeSearch,
   isVisible,
 } from "./Model.Preview.state";
+import { ReactMindmap } from "./ReactMindmap";
 
 const enhance = compose(
   withState("edit", "setEdit", false),
@@ -150,7 +151,7 @@ const ModelPreview = (props) => {
     //     }
     //   }
     // }, 1000);
-    console.log(props,"PROPS")
+    console.log(props, "PROPS")
     fetchWikipediaPageByTopic(model.title);
   }, []);
   if (!mindmapByKeys && model && model.body) {
@@ -366,7 +367,7 @@ const ModelPreview = (props) => {
               </div>
             </Paper>
           </Grid>
-          {/* <Grid {...graphTreeSizes} item>
+          <Grid {...graphTreeSizes} item>
             <Grid container justify="center" style={{ marginBottom: "10px" }}>
               <Grid item md={4}>
                 <Typography variant="h5" style={{ fontWeight: "300" }}>
@@ -393,7 +394,7 @@ const ModelPreview = (props) => {
                 ></Mindmap>
               </div>
             </Paper>
-          </Grid> */}
+          </Grid>
         </Grid>
       )}
       {!mindmapByKeys && (
