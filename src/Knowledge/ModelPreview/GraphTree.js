@@ -99,6 +99,7 @@ class Tree extends React.Component {
         }}
         nodeAutoColorBy="group"
         linkAutoColorBy="group"
+        showNavInfo={true}
       />
     );
   }
