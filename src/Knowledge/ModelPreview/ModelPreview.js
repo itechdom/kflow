@@ -15,8 +15,6 @@ import {
   Typography,
 } from "@material-ui/core";
 import Autocomplete from "../../orbital-templates/Material/_shared/Autocomplete/Autocomplete";
-import Loading from "../../orbital-templates/Material/_shared/Loading/Loading";
-import Markdown from "../../orbital-templates/Material/_shared/Forms/Inputs/Forms.MarkdownInput";
 import ListTree from "./ListTree.js";
 import DeleteIcon from "@material-ui/icons/Delete";
 import EditIcon from "@material-ui/icons/Edit";
@@ -36,7 +34,6 @@ import {
   handleNodeSearch,
   isVisible,
 } from "./Model.Preview.state";
-import { ReactMindmap } from "./ReactMindmap";
 
 const enhance = compose(
   withState("edit", "setEdit", false),
