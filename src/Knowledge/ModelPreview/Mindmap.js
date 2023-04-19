@@ -3,7 +3,7 @@ import MindmapTree from "react-d3-tree";
 
 export const convertToMindmap = (currentNode, mindmapByKeys) => {
   currentNode.name = currentNode.title;
-  currentNode._collapsed = true;
+  currentNode.collapsed = true;
   currentNode.children = currentNode.children.map((child) => {
     let nchild = Object.assign({}, mindmapByKeys[child]);
     let { x, ...rest } = nchild;
