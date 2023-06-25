@@ -8,12 +8,6 @@ import {
 } from "./auth-service/auth-service";
 import { crudDomainStore, withCrud } from "./crud-service/crud-service";
 import { Crud } from "./crud-service/crud-container";
-import {
-  Event,
-  EventWithCrud,
-  getRecurringInstances,
-  saveRecurringRule
-} from "./event-service/event-service";
 import { Viz } from "./viz-service/viz-service";
 import { Kb } from "./kb-service/kb-service";
 import { Socket, socketDomainStore } from "./socket-service/socket-service";
@@ -57,10 +51,6 @@ export {
   notificationDomainStore,
   Game,
   gameDomainStore,
-  Event,
-  EventWithCrud,
-  getRecurringInstances,
-  saveRecurringRule,
   Viz,
   Kb
 };
