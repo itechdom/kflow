@@ -435,8 +435,8 @@ const ModelList = enhance(
                               onSearchSelect || disableViewPage
                                 ? onSearchSelect(suggestion)
                                 : history.push(
-                                    `${match.path}/view/${suggestion._id}`
-                                  );
+                                  `${match.path}/view/${suggestion._id}`
+                                );
                             }}
                             loadSuggestions={(text) => {
                               let query = {
@@ -447,8 +447,9 @@ const ModelList = enhance(
                               }
                               return new Promise((resolve, reject) => {
                                 searchModel(query).then((res) => {
-                                  console.log("RESULT", res);
-                                  return resolve(res.data);
+                                  if (res) {
+                                    return resolve(res.data);
+                                  }
                                 });
                               });
                             }}

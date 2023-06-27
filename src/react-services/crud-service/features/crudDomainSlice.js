@@ -29,7 +29,7 @@ export const crudDomainSlice = createSlice({
             });
         },
         searchModel: (state, action) => {
-            state.model[`${action.payload.modelName}_search`] = action.payload.data;
+            state.model[`${action.payload.modelName}_searchModel`] = action.payload.data;
         },
     },
 })

@@ -24,10 +24,12 @@ export const useSearchModel = (offlineStorage, SERVER, query, modelName) => {
         .then((res) => {
           dispatch(searchModel({ data: res.data, modelName }));
           setIsLoading(false);
+          return res.data;
         })
         .catch((err) => {
           setError(modelName, err);
           setIsLoading(false);
+          return err;
         });
     })
     .catch((err) => {

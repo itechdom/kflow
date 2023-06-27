@@ -135,7 +135,7 @@ const ModelListItemFP = ({
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        {model.tags.map((tag, index) => (
+                        {model?.tags?.map((tag, index) => (
                             <Chip
                                 key={index}
                                 size="small"
