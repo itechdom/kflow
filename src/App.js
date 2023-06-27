@@ -12,10 +12,7 @@ import {
   DialogContent,
   DialogContentText,
   DialogTitle,
-  Button,
-  CardContent,
-  Card,
-  Grid
+  Button
 } from "@material-ui/core";
 import MainWrapper from "./orbital-templates/Material/Wrappers/MainWrapper";
 import LoginWrapper from "./orbital-templates/Material/Wrappers/LoginWrapper";
@@ -38,7 +35,6 @@ import Register from "./Register/Register";
 import Login from "./Login/Login";
 import Profile from "./Profile/Profile";
 import Admin from "./Admin/Admin";
-import World from "./World/World";
 import theme from "./theme";
 import { styles } from "./App.styles.js";
 import { withStyles, ThemeProvider } from "@material-ui/core/styles";
@@ -452,111 +448,6 @@ class App extends React.Component {
                 }}
               ></Route>
               <Route
-                path={`${this.props.match.path}record`}
-                render={(routeProps) => {
-                  return (
-                    <MainWrapper
-                      routeList={
-                        this.state.currentUser && this.state.currentUser.isAdmin
-                          ? [...mainRouteList, adminRoute]
-                          : [...mainRouteList]
-                      }
-                      drawerRouteList={
-                        this.state.currentUser && this.state.currentUser.isAdmin
-                          ? [...mainRouteList, adminRoute, logoutRoute]
-                          : [...mainRouteList, logoutRoute]
-                      }
-                      onDrawerRouteClick={(route) => {
-                        if (route.indexOf("http") !== -1) {
-                          return window.open(route);
-                        }
-                        return routeProps.history.push(`${route}`);
-                      }}
-                      onRouteClick={(route) => {
-                        if (route.indexOf("http") !== -1) {
-                          return window.open(route);
-                        }
-                        return routeProps.history.push(`${route}`);
-                      }}
-                      logo={logo}
-                      {...routeProps}
-                      {...this.props}
-                      isTabMenu={true}
-                      classes={{
-                        ...classes,
-                        tabMenu: `${classes["white"]}`,
-                        hasPadding: `${classes["top50"]} ${classes["bottom50"]}`,
-                        title: `${classes["white"]}`,
-                        menuTabsClasses: {
-                          flexContainer: `${classes["center"]}`,
-                        },
-                      }}
-                    >
-                      <Grid
-                        style={{ marginTop: "6em", height: "100vh" }}
-                        container
-                        justify="center"
-                      >
-                        {[
-                          {
-                            title: "I Saw someting!",
-                            icon: "panorama_fish_eye",
-                          },
-                          {
-                            title: "I want to say something!",
-                            icon: "audiotrack",
-                          },
-                        ].map(({ title, icon }) => (
-                          <Grid xs={12} md={6} item>
-                            <Card>
-                              <Grid container justify="center">
-                                <Grid item xs={6} md={6}>
-                                  <CardContent style={{ textAlign: "center" }}>
-                                    <Button color="primary" variant="contained">
-                                      <i class="material-icons">{icon}</i>
-                                    </Button>
-                                    <p
-                                      style={{
-                                        fontWeight: "bold",
-                                        fontSize:
-                                          title === "I Saw someting!" ? 20 : 16,
-                                      }}
-                                    >
-                                      {title}
-                                    </p>
-                                  </CardContent>
-                                </Grid>
-                              </Grid>
-                            </Card>
-                          </Grid>
-                        ))}
-                      </Grid>
-                      {/* <Route
-                        path={`${this.props.match.path}record`}
-                        render={(routeProps) => {
-                          return (
-                            <Camera
-                              onData={(data) => {
-                                this.setState({
-                                  currentImage: `data:image/png;base64,${data}`,
-                                });
-                                this.setState({
-                                  showConfirmModal: true,
-                                });
-                              }}
-                              onError={(err) => {
-                                console.error("ERROR!", err);
-                              }}
-                              {...props}
-                            ></Camera>
-                          );
-                        }}
-                      ></Route> */}
-                    </MainWrapper>
-                  );
-                }}
-              ></Route>
-              <Route
                 path={`${this.props.match.path}knowledge/view/:id`}
                 render={(routeProps) => {
                   const {
@@ -622,7 +513,6 @@ class App extends React.Component {
                                 },
                               }}
                             >
-
                               <KnowledgePreview
                                 onEdit={(model) => {
                                   routeProps.history.push(
@@ -657,11 +547,9 @@ class App extends React.Component {
                     </Wikipedia>
                   );
                 }}
-
               />
-
               <Route
-                path={`${this.props.match.path}knowledge`}
+                path={`${this.props.match.path}`}
                 render={(routeProps) => {
                   const {
                     match: { params },
@@ -758,254 +646,6 @@ class App extends React.Component {
                                 }
                               />
                             </Wikipedia>
-                          </MainWrapper>
-                        );
-                      }}
-                    />
-                  );
-                }}
-              />
-              <Route
-                path={`${this.props.match.path}`}
-                render={(routeProps) => {
-                  return (
-                    <MainWrapper
-                      logo={logo}
-                      user={this.state.currentUser}
-                      {...routeProps}
-                      {...this.props}
-                      routeList={
-                        this.state.currentUser && this.state.currentUser.isAdmin
-                          ? [...mainRouteList, adminRoute]
-                          : [...mainRouteList]
-                      }
-                      drawerRouteList={
-                        this.state.currentUser && this.state.currentUser.isAdmin
-                          ? [...mainRouteList, adminRoute, logoutRoute]
-                          : [...mainRouteList, logoutRoute]
-                      }
-                      onRouteClick={(route) => {
-                        if (route.indexOf("http") !== -1) {
-                          return window.open(route);
-                        }
-                        return routeProps.history.push(`${route}`);
-                      }}
-                      classes={{
-                        ...classes,
-                        tabMenu: `${classes["white"]}`,
-                        content: `${classes.noScroll}`,
-                        menuTabsClasses: {
-                          flexContainer: `${classes["center"]}`,
-                        },
-                      }}
-                      render={(currentProps) => (
-                        <Switch>
-                          <Route
-                            path={`${routeProps.match.path}`}
-                            render={(props) => {
-                              return (
-                                <Crud
-                                  modelName="knowledge"
-                                  SERVER={config.SERVER}
-                                  offlineStorage={offlineStorage}
-                                  notificationDomainStore={
-                                    rootStore.notificationDomainStore
-                                  }
-                                  crudDomainStore={rootStore.crudDomainStore}
-                                  render={(props) => {
-                                    return (
-                                      <World
-                                        location={this.props.location}
-                                        currentTags={this.state.tags}
-                                        selected={this.state.selected}
-                                        currentUser={this.state.currentUser}
-                                        setState={(props) =>
-                                          this.setState(props)
-                                        }
-                                        renderDialog={(props) =>
-                                          this.renderDialog(props)
-                                        }
-                                        knowledge={props.knowledge}
-                                      />
-                                    );
-                                  }}
-                                />
-                              );
-                            }}
-                          ></Route>
-                        </Switch>
-                      )}
-                    />
-                  );
-                }}
-              />
-              {/* View knowledge, since it's an independent page */}
-              <Route
-                path={`${this.props.match.path}:tag?`}
-                render={(routeProps) => {
-                  let tag = routeProps.match.params.tag;
-                  return (
-                    <Crud
-                      modelName="knowledge"
-                      SERVER={config.SERVER}
-                      offlineStorage={offlineStorage}
-                      notificationDomainStore={
-                        rootStore.notificationDomainStore
-                      }
-                      crudDomainStore={rootStore.crudDomainStore}
-                      paginate={true}
-                      query={{}}
-                      render={(props) => {
-                        let knowledge = props.knowledge;
-                        let filteredRoutes = [];
-                        if (props.knowledge && props.knowledge.data) {
-                          let routes = props.knowledge.data
-                            .map((kn) => kn.tags)
-                            .map((t) => {
-                              const routes = t.map((tag) => {
-                                return { url: tag, name: tag, icon: "" };
-                              });
-                              return routes;
-                            });
-                          const newRoutes = Array.isArray(routes)
-                            ? routes.reduce((prev, cur) => {
-                              return [...prev, ...cur];
-                            }, [])
-                            : [];
-                          filteredRoutes = newRoutes.filter((r, i) => {
-                            return (
-                              newRoutes.map((ro) => ro.name).indexOf(r.name) ===
-                              i
-                            );
-                          });
-                          filteredRoutes = [
-                            { url: "", name: "All", icon: "" },
-                            ...filteredRoutes,
-                          ];
-                        }
-                        if (tag) {
-                          knowledge =
-                            props.knowledge && props.knowledge.data
-                              ? {
-                                data: props.knowledge.data.filter(
-                                  (k) => k.tags.indexOf(tag) !== -1
-                                ),
-                                count: props.knowledge.count,
-                              }
-                              : props.knowledge;
-                        }
-                        return (
-                          <MainWrapper
-                            logo={logo}
-                            routeList={[
-                              {
-                                url: "all",
-                                name: "All",
-                                icon: "",
-                              },
-                            ]}
-                            drawerRouteList={
-                              this.state.currentUser &&
-                                this.state.currentUser.isAdmin
-                                ? [...mainRouteList, adminRoute, logoutRoute]
-                                : [...mainRouteList, logoutRoute]
-                            }
-                            user={this.state.currentUser}
-                            {...routeProps}
-                            {...this.props}
-                            onRouteClick={(route) => {
-                              this.setState({
-                                tags: new Set([]),
-                              });
-                              if (route.indexOf("http") !== -1) {
-                                return window.open(route);
-                              }
-                              return routeProps.history.push(`${route}`);
-                            }}
-                            classes={{
-                              ...classes,
-                              tabMenu: `${classes["white"]}`,
-                              menuTabsClasses: {
-                                flexContainer: `${classes["center"]}`,
-                              },
-                            }}
-                          >
-                            <MainWrapper
-                              isTabMenu={true}
-                              hideAppBar={true}
-                              logo={logo}
-                              routeList={filteredRoutes}
-                              drawerRouteList={
-                                this.state.currentUser &&
-                                  this.state.currentUser.isAdmin
-                                  ? [...mainRouteList, adminRoute, logoutRoute]
-                                  : [...mainRouteList, logoutRoute]
-                              }
-                              user={this.state.currentUser}
-                              {...routeProps}
-                              {...this.props}
-                              length={[]}
-                              onRouteClick={(route) => {
-                                return routeProps.history.push({
-                                  pathname: `${this.props.match.path}${route}`,
-                                });
-                              }}
-                              tabMenuPosition="top"
-                              classes={{
-                                ...classes,
-                                listContainer: `${classes["top100"]}`,
-                                menuTabsClasses: {
-                                  flexContainer: `${classes["center"]}`,
-                                },
-                              }}
-                            >
-                              <Forms
-                                formsDomainStore={rootStore.formsDomainStore}
-                                modelName="knowledge"
-                              >
-                                {/* <Wikipedia
-                                  SERVER={config.SERVER}
-                                  offlineStorage={offlineStorage}
-                                  notificationDomainStore={
-                                    rootStore.notificationDomainStore
-                                  }
-                                > */}
-                                {/* <Grid
-                                    container
-                                    justify="center"
-                                    style={{ marginBottom: "5em" }}
-                                  >
-                                    <Grid
-                                      item
-                                      style={{
-                                        borderRadius: "150px",
-                                        background: "white",
-                                        boxShadow: "black 0px 1px 3px",
-                                        padding: "3em",
-                                      }}
-                                    >
-                                      <Typography variant="h4" component="h1">
-                                        {JSON.stringify(this.state.currentUser)}
-                                        's Knowledge
-                                      </Typography>
-                                    </Grid>
-                                  </Grid> */}
-                                <Knowledge
-                                  {...routeProps}
-                                  {...props}
-                                  location={this.props.location}
-                                  currentTags={this.state.tags}
-                                  selected={this.state.selected}
-                                  currentUser={this.state.currentUser}
-                                  setState={(props) => this.setState(props)}
-                                  renderDialog={(props) =>
-                                    this.renderDialog(props)
-                                  }
-                                  knowledge={knowledge}
-                                />
-                                {/* </Wikipedia> */}
-                              </Forms>
-                            </MainWrapper>
                           </MainWrapper>
                         );
                       }}
