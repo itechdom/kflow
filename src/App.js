@@ -569,6 +569,7 @@ class App extends React.Component {
                       render={(props) => {
                         let knowledge =
                           props.knowledge
+                        console.log("KNowldge search model", props);
                         if (!knowledge || props.knowledge_loading) {
                           return <Loading></Loading>;
                         }
@@ -640,6 +641,9 @@ class App extends React.Component {
                                 }
                                 knowledge_deleteModel={
                                   props.knowledge_deleteModel
+                                }
+                                knowledge_searchModel={
+                                  props.knowledge_searchModel
                                 }
                                 renderDialog={(props) =>
                                   this.renderDialog(props)

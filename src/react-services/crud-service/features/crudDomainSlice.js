@@ -27,11 +27,14 @@ export const crudDomainSlice = createSlice({
             state.model[action.payload.modelName].data = state.model[action.payload.modelName].data.filter((model) => {
                 return model._id !== action.payload.data._id
             });
-        }
+        },
+        searchModel: (state, action) => {
+            state.model[`${action.payload.modelName}_search`] = action.payload.data;
+        },
     },
 })
 
 // Action creators are generated for each case reducer function
-export const { setModel, updateModel, createModel, deleteModel } = crudDomainSlice.actions
+export const { setModel, updateModel, createModel, deleteModel, searchModel } = crudDomainSlice.actions
 
 export default crudDomainSlice.reducer 
