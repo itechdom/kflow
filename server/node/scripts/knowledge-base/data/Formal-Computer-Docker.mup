@@ -6,7 +6,12 @@
       "id": 1,
       "title": "Docker",
       "attr": {
-        "style": {}
+        "style": {},
+        "position": [
+          -27,
+          -15,
+          1
+        ]
       },
       "ideas": {
         "0.5": {
@@ -322,6 +327,19 @@
                 "1": {
                   "title": "Specify what's in an image using a Dockerfile, you also can build images out of other images",
                   "id": "93.2a3966463272967b"
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "18": {
+              "title": "Alternative",
+              "id": "94.1df7.a0abe45fc-40d0.8134ac2d9",
+              "ideas": {
+                "1": {
+                  "title": "https://dev.to/arafetki/podman-the-docker-alternative-or-fierce-competitor-4n3h",
+                  "id": "95.1df7.a0abe45fc-40d0.8134ac2d9"
                 }
               },
               "attr": {

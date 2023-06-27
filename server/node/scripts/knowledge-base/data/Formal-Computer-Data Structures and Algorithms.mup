@@ -6,7 +6,12 @@
       "id": 1,
       "title": "Data Structures and Algorithms",
       "attr": {
-        "style": {}
+        "style": {},
+        "position": [
+          -79,
+          -24,
+          1
+        ]
       },
       "ideas": {
         "0.5": {
@@ -88,8 +93,8 @@
                     }
                   },
                   "attr": {
-                    "collapsed": true,
-                    "style": {}
+                    "style": {},
+                    "collapsed": true
                   }
                 },
                 "2": {
@@ -147,8 +152,7 @@
                 }
               },
               "attr": {
-                "style": {},
-                "collapsed": true
+                "style": {}
               }
             },
             "13": {
@@ -390,8 +394,7 @@
                           "title": "Complexity",
                           "id": 477,
                           "attr": {
-                            "style": {},
-                            "collapsed": true
+                            "style": {}
                           },
                           "ideas": {
                             "1": {
@@ -424,15 +427,11 @@
                                         }
                                       }
                                     }
-                                  },
-                                  "attr": {
-                                    "collapsed": true
                                   }
                                 }
                               },
                               "attr": {
-                                "style": {},
-                                "collapsed": true
+                                "style": {}
                               }
                             },
                             "2": {
@@ -448,8 +447,7 @@
                           77,
                           -71.1875,
                           1
-                        ],
-                        "collapsed": true
+                        ]
                       }
                     },
                     "2": {
@@ -462,8 +460,7 @@
                     }
                   },
                   "attr": {
-                    "style": {},
-                    "collapsed": true
+                    "style": {}
                   }
                 },
                 "2": {
@@ -480,14 +477,12 @@
                     }
                   },
                   "attr": {
-                    "style": {},
-                    "collapsed": true
+                    "style": {}
                   }
                 }
               },
               "attr": {
-                "style": {},
-                "collapsed": true
+                "style": {}
               }
             }
           },
@@ -510,9 +505,6 @@
                     "style": {}
                   }
                 }
-              },
-              "attr": {
-                "collapsed": true
               }
             },
             "7": {
@@ -522,6 +514,16 @@
                 "1": {
                   "title": "http://algo-visualizer.jasonpark.me/#path=backtracking/knight's_tour/basic",
                   "id": "511.3627827ce37f1e56"
+                }
+              }
+            },
+            "8": {
+              "title": "George Hotz",
+              "id": "530.55de.1e7f0c72d-9e3c.5b9859798",
+              "ideas": {
+                "1": {
+                  "title": "https://www.youtube.com/watch?v=N2bXEUSAiTI",
+                  "id": "531.55de.1e7f0c72d-9e3c.5b9859798"
                 }
               }
             }

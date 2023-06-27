@@ -147,6 +147,9 @@
                       "title": "triangle meshes",
                       "id": "50.2e09b6facfa40a26"
                     }
+                  },
+                  "attr": {
+                    "collapsed": true
                   }
                 },
                 "2": {
@@ -183,9 +186,6 @@
                       "title": "slow but better images",
                       "id": "36.2e09b6facfa40a26"
                     }
-                  },
-                  "attr": {
-                    "collapsed": true
                   }
                 }
               },
@@ -344,6 +344,9 @@
                                     }
                                   }
                                 }
+                              },
+                              "attr": {
+                                "collapsed": true
                               }
                             }
                           },
@@ -417,7 +420,8 @@
                           170,
                           48,
                           1
-                        ]
+                        ],
+                        "collapsed": true
                       }
                     }
                   },
@@ -517,79 +521,6 @@
                           "id": "201.708f717902f199ba"
                         }
                       }
-                    }
-                  },
-                  "attr": {
-                    "collapsed": true
-                  }
-                },
-                "18": {
-                  "title": "operations",
-                  "id": "207.708f717902f199ba",
-                  "ideas": {
-                    "1": {
-                      "title": "summation",
-                      "id": "208.708f717902f199ba",
-                      "ideas": {
-                        "1": {
-                          "title": "a + b",
-                          "id": "209.708f717902f199ba",
-                          "ideas": {
-                            "1": {
-                              "title": "add each dimension",
-                              "id": "210.708f717902f199ba"
-                            }
-                          }
-                        },
-                        "2": {
-                          "title": "commutative",
-                          "id": "211.708f717902f199ba"
-                        }
-                      },
-                      "attr": {
-                        "collapsed": true
-                      }
-                    },
-                    "2": {
-                      "title": "multiplying",
-                      "id": "212.708f717902f199ba",
-                      "ideas": {
-                        "1": {
-                          "title": "by scalar",
-                          "id": "213.708f717902f199ba",
-                          "ideas": {
-                            "1": {
-                              "title": "3 * [2\n1]",
-                              "id": "214.708f717902f199ba",
-                              "ideas": {
-                                "1": {
-                                  "title": "[6\n3]",
-                                  "id": "215.708f717902f199ba"
-                                }
-                              }
-                            }
-                          }
-                        },
-                        "2": {
-                          "title": "https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/vectors/v/adding-vectors",
-                          "id": "217.708f717902f199ba",
-                          "ideas": {
-                            "1": {
-                              "title": "has a nice visualization of it",
-                              "id": "218.708f717902f199ba"
-                            }
-                          }
-                        },
-                        "3": {
-                          "title": "remember they don't have to start at the origin",
-                          "id": "219.708f717902f199ba"
-                        }
-                      },
-                      "attr": {}
-                    },
-                    "3": {
-                      "title": "multiplication",
-                      "id": "263.708f717902f199ba"
                     }
                   },
                   "attr": {
@@ -719,13 +650,16 @@
                           "id": "132.2e09b6facfa40a26"
                         }
                       }
+                    },
+                    "4": {
+                      "title": "https://www.youtube.com/watch?v=fNk_zzaMoSs",
+                      "id": "350.834f.088dc2e06-65bb.565b4227d"
                     }
                   },
                   "attr": {
                     "style": {
                       "background": "#008080"
-                    },
-                    "collapsed": true
+                    }
                   }
                 },
                 "0.5": {
@@ -776,12 +710,84 @@
                     ],
                     "collapsed": true
                   }
+                },
+                "14.5": {
+                  "title": "operations",
+                  "id": "207.708f717902f199ba",
+                  "ideas": {
+                    "1": {
+                      "title": "summation",
+                      "id": "208.708f717902f199ba",
+                      "ideas": {
+                        "1": {
+                          "title": "a + b",
+                          "id": "209.708f717902f199ba",
+                          "ideas": {
+                            "1": {
+                              "title": "add each dimension",
+                              "id": "210.708f717902f199ba"
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "commutative",
+                          "id": "211.708f717902f199ba"
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "2": {
+                      "title": "multiplying",
+                      "id": "212.708f717902f199ba",
+                      "ideas": {
+                        "1": {
+                          "title": "by scalar",
+                          "id": "213.708f717902f199ba",
+                          "ideas": {
+                            "1": {
+                              "title": "3 * [2\n1]",
+                              "id": "214.708f717902f199ba",
+                              "ideas": {
+                                "1": {
+                                  "title": "[6\n3]",
+                                  "id": "215.708f717902f199ba"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/vectors/v/adding-vectors",
+                          "id": "217.708f717902f199ba",
+                          "ideas": {
+                            "1": {
+                              "title": "has a nice visualization of it",
+                              "id": "218.708f717902f199ba"
+                            }
+                          }
+                        },
+                        "3": {
+                          "title": "remember they don't have to start at the origin",
+                          "id": "219.708f717902f199ba"
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "3": {
+                      "title": "multiplication",
+                      "id": "263.708f717902f199ba"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
                 }
               },
-              "id": "62.2e09b6facfa40a26",
-              "attr": {
-                "collapsed": true
-              }
+              "id": "62.2e09b6facfa40a26"
             },
             "18": {
               "title": "Coordinate systems",
@@ -1169,9 +1175,6 @@
                             }
                           }
                         }
-                      },
-                      "attr": {
-                        "collapsed": true
                       }
                     },
                     "2": {
@@ -1327,9 +1330,6 @@
                         }
                       }
                     }
-                  },
-                  "attr": {
-                    "collapsed": true
                   }
                 }
               },

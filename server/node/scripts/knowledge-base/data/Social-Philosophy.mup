@@ -29,6 +29,9 @@
                     }
                   }
                 }
+              },
+              "attr": {
+                "collapsed": true
               }
             },
             "3": {
@@ -43,6 +46,9 @@
                   "title": "Ethics",
                   "id": "10.895631f43d10e35"
                 }
+              },
+              "attr": {
+                "collapsed": true
               }
             },
             "4": {
@@ -87,6 +93,9 @@
                     }
                   }
                 }
+              },
+              "attr": {
+                "collapsed": true
               }
             },
             "5": {
@@ -149,6 +158,9 @@
                     }
                   }
                 }
+              },
+              "attr": {
+                "collapsed": true
               }
             }
           }

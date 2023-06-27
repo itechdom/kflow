@@ -1,0 +1,181 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Natural-Botany",
+      "id": 1,
+      "attr": {
+        "position": [
+          -52,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Concepts",
+          "id": "2.0d63.1dcd0ae6-2d59.7660f8762",
+          "ideas": {
+            "1": {
+              "title": "Autoflowering",
+              "id": "4.0d63.1dcd0ae6-2d59.7660f8762",
+              "ideas": {
+                "1": {
+                  "title": "smaller less yield",
+                  "id": "5.0d63.1dcd0ae6-2d59.7660f8762"
+                },
+                "2": {
+                  "title": "flowers automatically",
+                  "id": "17.0d63.1dcd0ae6-2d59.7660f8762"
+                }
+              }
+            },
+            "3": {
+              "title": "Germination",
+              "id": "14.0d63.1dcd0ae6-2d59.7660f8762",
+              "ideas": {
+                "1": {
+                  "title": "Potentially using hydrogen pyroxide ",
+                  "id": "18.0d63.1dcd0ae6-2d59.7660f8762",
+                  "ideas": {
+                    "1": {
+                      "title": "https://www.youtube.com/watch?v=KPzfZ_xFXtE",
+                      "id": "19.0d63.1dcd0ae6-2d59.7660f8762"
+                    }
+                  },
+                  "attr": {}
+                },
+                "2": {
+                  "title": "Soak seed in water for 24 hours",
+                  "id": "23.0d63.1dcd0ae6-2d59.7660f8762"
+                },
+                "3": {
+                  "title": "then put it in tissue and store it in a container",
+                  "id": "24.0d63.1dcd0ae6-2d59.7660f8762",
+                  "ideas": {
+                    "1": {
+                      "title": "for 48 hours",
+                      "id": "25.0d63.1dcd0ae6-2d59.7660f8762"
+                    }
+                  }
+                }
+              }
+            },
+            "4": {
+              "title": "Photoperiod",
+              "id": "15.0d63.1dcd0ae6-2d59.7660f8762",
+              "ideas": {}
+            },
+            "5": {
+              "title": "Ph Levels",
+              "id": "20.0d63.1dcd0ae6-2d59.7660f8762",
+              "ideas": {
+                "1": {
+                  "title": "Between 6.5 and 7",
+                  "id": "37.0d63.1dcd0ae6-2d59.7660f8762"
+                }
+              }
+            },
+            "6": {
+              "title": "How to not overwater",
+              "id": "21.0d63.1dcd0ae6-2d59.7660f8762",
+              "ideas": {
+                "1": {
+                  "title": "only water when the top layer is dry",
+                  "id": "26.0d63.1dcd0ae6-2d59.7660f8762"
+                }
+              }
+            },
+            "7": {
+              "title": "How to not overfeed",
+              "id": "22.0d63.1dcd0ae6-2d59.7660f8762"
+            },
+            "8": {
+              "title": "Nutrients",
+              "id": "27.0d63.1dcd0ae6-2d59.7660f8762",
+              "ideas": {
+                "1": {
+                  "title": "For different stages",
+                  "id": "28.0d63.1dcd0ae6-2d59.7660f8762",
+                  "ideas": {
+                    "1": {
+                      "title": "Fegatitive ",
+                      "id": "30.0d63.1dcd0ae6-2d59.7660f8762",
+                      "ideas": {}
+                    },
+                    "2": {
+                      "title": "Flowring",
+                      "id": "31.0d63.1dcd0ae6-2d59.7660f8762"
+                    },
+                    "3": {
+                      "title": "NPK?",
+                      "id": "33.0d63.1dcd0ae6-2d59.7660f8762",
+                      "ideas": {
+                        "1": {
+                          "title": "Niturogen",
+                          "id": "34.0d63.1dcd0ae6-2d59.7660f8762"
+                        },
+                        "2": {
+                          "title": "Phosophorous",
+                          "id": "35.0d63.1dcd0ae6-2d59.7660f8762"
+                        },
+                        "3": {
+                          "title": "Potassium",
+                          "id": "36.0d63.1dcd0ae6-2d59.7660f8762"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "0.5": {
+              "title": "Equipments",
+              "id": "6.0d63.1dcd0ae6-2d59.7660f8762",
+              "ideas": {
+                "1": {
+                  "title": "Perlite",
+                  "id": "7.0d63.1dcd0ae6-2d59.7660f8762",
+                  "ideas": {
+                    "1": {
+                      "title": "for drainage",
+                      "id": "8.0d63.1dcd0ae6-2d59.7660f8762"
+                    },
+                    "2": {
+                      "title": "keeps humidity?",
+                      "id": "9.0d63.1dcd0ae6-2d59.7660f8762"
+                    },
+                    "3": {
+                      "title": "ratio is 1:4",
+                      "id": "39.93fc.3157f078d-a785.103ea235"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Soil",
+                  "id": "10.0d63.1dcd0ae6-2d59.7660f8762",
+                  "ideas": {}
+                },
+                "3": {
+                  "title": "Nutrients",
+                  "id": "12.0d63.1dcd0ae6-2d59.7660f8762"
+                },
+                "4": {
+                  "title": "Pesticide ",
+                  "id": "13.0d63.1dcd0ae6-2d59.7660f8762"
+                }
+              },
+              "attr": {}
+            }
+          }
+        },
+        "-1": {
+          "title": "Resources",
+          "id": "3.0d63.1dcd0ae6-2d59.7660f8762"
+        }
+      }
+    }
+  },
+  "title": ""
+}

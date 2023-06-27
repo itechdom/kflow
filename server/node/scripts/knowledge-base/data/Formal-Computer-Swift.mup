@@ -6,7 +6,12 @@
       "id": 1,
       "title": "Swift",
       "attr": {
-        "style": {}
+        "style": {},
+        "position": [
+          -21,
+          -15,
+          1
+        ]
       },
       "ideas": {
         "14": {
@@ -22,7 +27,7 @@
                   "id": 283,
                   "ideas": {
                     "1": {
-                      "title": "http://www.tutorialspoint.com/swift/swift_functions.htm",
+                      "title": "https://www.tutorialspoint.com/swift/swift_functions.htm",
                       "id": 284
                     }
                   },
@@ -193,9 +198,6 @@
                               "title": "var someOptionalString: String? = \"optional\" // Can be nil",
                               "id": "326.5bd456f00c29b976"
                             }
-                          },
-                          "attr": {
-                            "collapsed": true
                           }
                         },
                         "3": {
@@ -250,7 +252,8 @@
               "attr": {
                 "style": {
                   "width": 50
-                }
+                },
+                "collapsed": true
               },
               "ideas": {
                 "1": {
@@ -285,8 +288,7 @@
                 }
               },
               "attr": {
-                "style": {},
-                "collapsed": true
+                "style": {}
               }
             },
             "2": {
@@ -379,8 +381,7 @@
                 }
               },
               "attr": {
-                "style": {},
-                "collapsed": true
+                "style": {}
               }
             },
             "10": {

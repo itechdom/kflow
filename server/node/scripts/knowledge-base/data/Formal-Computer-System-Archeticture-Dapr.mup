@@ -1,0 +1,222 @@
+{
+  "id": "root",
+  "formatVersion": 3,
+  "ideas": {
+    "1": {
+      "id": 1,
+      "title": "Dapr",
+      "attr": {
+        "position": [
+          -67,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Concepts",
+          "id": "2.7b8f637586df806d",
+          "ideas": {
+            "4": {
+              "title": "Actors",
+              "id": "25.13a7.41653f225-6ec8.f0ef869e2",
+              "ideas": {
+                "1": {
+                  "title": "https://docs.dapr.io/developing-applications/building-blocks/actors/actors-overview/",
+                  "id": "30.13a7.41653f225-6ec8.f0ef869e2"
+                },
+                "2": {
+                  "title": "Piece of code that needs to be run in multiple threads",
+                  "id": "38.13a7.41653f225-6ec8.f0ef869e2"
+                },
+                "3": {
+                  "title": "Actors have inherent locks in them. However, they are effecient",
+                  "id": "39.13a7.41653f225-6ec8.f0ef869e2"
+                },
+                "4": {
+                  "title": "Page 103 dapr e-book",
+                  "id": "40.13a7.41653f225-6ec8.f0ef869e2",
+                  "ideas": {}
+                },
+                "6": {
+                  "title": "Concurrency",
+                  "id": "44.5e61.13538e593-f76d.abf765cb2",
+                  "ideas": {
+                    "1": {
+                      "title": "The Dapr actor runtime provides a simple turn-based access model for accessing actor methods. This means that no more than one thread can be active inside an actor object’s code at any time",
+                      "id": "45.5e61.13538e593-f76d.abf765cb2"
+                    },
+                    "2": {
+                      "title": "A single actor instance cannot process more than one request at a time. An actor instance can cause a throughput bottleneck if it is expected to handle concurrent requests.",
+                      "id": "48.5e61.13538e593-f76d.abf765cb2"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "11": {
+                  "title": "Each actor \"type\" retains its own locks",
+                  "id": "50.5e61.13538e593-f76d.abf765cb2",
+                  "attr": {
+                    "position": [
+                      74,
+                      171,
+                      3
+                    ]
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "https://docs.dapr.io/developing-applications/building-blocks/actors/actors-overview/#turn-based-access",
+                      "id": "51.5e61.13538e593-f76d.abf765cb2"
+                    }
+                  }
+                },
+                "16": {
+                  "title": "Resources",
+                  "id": "43.5e61.13538e593-f76d.abf765cb2",
+                  "ideas": {
+                    "1": {
+                      "title": "Dapr e-Book",
+                      "id": "36.13a7.41653f225-6ec8.f0ef869e2",
+                      "ideas": {
+                        "1": {
+                          "title": "https://dotnet.microsoft.com/en-us/download/e-book/dapr/pdf",
+                          "id": "37.13a7.41653f225-6ec8.f0ef869e2"
+                        }
+                      },
+                      "attr": {}
+                    },
+                    "3": {
+                      "title": "Docs",
+                      "id": "47.5e61.13538e593-f76d.abf765cb2",
+                      "ideas": {
+                        "1": {
+                          "title": "https://docs.dapr.io/developing-applications/building-blocks/actors/actors-overview/",
+                          "id": "46.5e61.13538e593-f76d.abf765cb2",
+                          "attr": {}
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true,
+                    "position": [
+                      86,
+                      248,
+                      1
+                    ]
+                  }
+                },
+                "3.5": {
+                  "title": "Actors contain timers/reminders",
+                  "id": "49.5e61.13538e593-f76d.abf765cb2",
+                  "attr": {
+                    "position": [
+                      81,
+                      11,
+                      2
+                    ]
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "5": {
+              "title": "Pub/Sub",
+              "id": "27.13a7.41653f225-6ec8.f0ef869e2"
+            },
+            "6": {
+              "title": "Identity",
+              "id": "28.13a7.41653f225-6ec8.f0ef869e2",
+              "ideas": {}
+            },
+            "7": {
+              "title": "Dapr Client",
+              "id": "31.13a7.41653f225-6ec8.f0ef869e2",
+              "ideas": {
+                "1": {
+                  "title": "Interact with other services",
+                  "id": "32.13a7.41653f225-6ec8.f0ef869e2"
+                }
+              }
+            },
+            "8": {
+              "title": "Api Gateway",
+              "id": "34.13a7.41653f225-6ec8.f0ef869e2",
+              "ideas": {
+                "1": {
+                  "title": "in eShop example, Envoy is used as an API gateway",
+                  "id": "35.13a7.41653f225-6ec8.f0ef869e2"
+                }
+              }
+            },
+            "9": {
+              "title": "State Management",
+              "id": "42.13a7.41653f225-6ec8.f0ef869e2"
+            },
+            "10": {
+              "title": "Service Invocation",
+              "id": "52.5e61.13538e593-f76d.abf765cb2",
+              "ideas": {
+                "1": {
+                  "title": "https://docs.dapr.io/developing-applications/building-blocks/service-invocation/howto-invoke-services-grpc/",
+                  "id": "53.5e61.13538e593-f76d.abf765cb2"
+                }
+              }
+            },
+            "5.5": {
+              "title": "Event Bus",
+              "id": "33.13a7.41653f225-6ec8.f0ef869e2",
+              "attr": {}
+            }
+          }
+        },
+        "-1": {
+          "title": "Resources",
+          "id": "3.7b8f637586df806d",
+          "ideas": {
+            "1": {
+              "title": "Examples",
+              "id": "23.13a7.41653f225-6ec8.f0ef869e2",
+              "ideas": {
+                "1": {
+                  "title": "https://github.com/dotnet-architecture/eShopOnDapr",
+                  "id": "24.13a7.41653f225-6ec8.f0ef869e2"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "attr": {},
+  "title": "System Archeticture",
+  "links": [
+    {
+      "ideaIdFrom": "33.13a7.41653f225-6ec8.f0ef869e2",
+      "ideaIdTo": "27.13a7.41653f225-6ec8.f0ef869e2",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": "40.13a7.41653f225-6ec8.f0ef869e2",
+      "ideaIdTo": "36.13a7.41653f225-6ec8.f0ef869e2",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    }
+  ]
+}

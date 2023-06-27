@@ -10,7 +10,12 @@
           "contentType": "text/html",
           "content": "Welcome to GDI's intro to Javascript. My name is \"Sam\" it's Osama Alghanmi and with me is Pedro Meza. We work for Charter communication doing Javascript.&nbsp;<div><br></div><div><br></div><div><b>Figure out a group activity that breaks the ice: I think that introduction first and then for 15 mins we talk to each other in a group of (a number here depending on the number of students).&nbsp;</b></div><div><b><br></b></div><div><b>\"This will enable us to break that first barrier\"</b></div><div><b><br></b></div><div><b><br></b></div>"
         },
-        "style": {}
+        "style": {},
+        "position": [
+          -37,
+          -24,
+          1
+        ]
       },
       "ideas": {
         "14": {
@@ -71,8 +76,8 @@
                   "attr": {
                     "style": {},
                     "position": [
-                      60,
-                      -104,
+                      56,
+                      -27,
                       2
                     ],
                     "collapsed": true
@@ -92,8 +97,7 @@
                         }
                       },
                       "attr": {
-                        "style": {},
-                        "collapsed": true
+                        "style": {}
                       }
                     },
                     "2": {
@@ -146,7 +150,6 @@
                                 }
                               },
                               "attr": {
-                                "collapsed": true,
                                 "style": {}
                               }
                             },
@@ -178,7 +181,8 @@
                               "contentType": "text/html",
                               "content": "<span style=\"color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;\">Angular creates, updates, and destroys components as the user moves through the application. The developer can take action at each moment in this lifecycle through optional&nbsp;</span><a href=\"https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html\" style=\"box-sizing: border-box; outline: 0px; color: rgb(2, 98, 194); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: 0px 0px; background-repeat: initial;\">Lifecycle Hooks</a><span style=\"color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;\">.</span>"
                             },
-                            "style": {}
+                            "style": {},
+                            "collapsed": true
                           }
                         },
                         "3": {
@@ -327,6 +331,45 @@
                             "collapsed": true
                           }
                         },
+                        "7": {
+                          "title": "Imports vs Declarations Vs Providers",
+                          "id": "347.2e13.ee14c0119-2db2.c478f2085",
+                          "ideas": {
+                            "2": {
+                              "title": "https://stackoverflow.com/questions/39062930/what-is-the-difference-between-declarations-providers-and-import-in-ngmodule",
+                              "id": "349.2e13.ee14c0119-2db2.c478f2085",
+                              "ideas": {
+                                "1": {
+                                  "title": "imports makes the exported declarations of other modules available in the current module\ndeclarations are to make directives (including components and pipes) from the current module available to other directives in the current module. Selectors of directives, components or pipes are only matched against the HTML if they are declared or imported.\nproviders are to make services and values known to DI (dependency injection). They are added to the root scope and they are injected to other services or directives that have them as dependency.",
+                                  "id": "348.2e13.ee14c0119-2db2.c478f2085"
+                                }
+                              },
+                              "attr": {
+                                "collapsed": true
+                              }
+                            },
+                            "3": {
+                              "title": "Providers are to make services available to DI",
+                              "id": "350.2e13.ee14c0119-2db2.c478f2085"
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        },
+                        "8": {
+                          "title": "Form Group",
+                          "id": "364.2e13.ee14c0119-2db2.c478f2085",
+                          "ideas": {
+                            "1": {
+                              "title": "https://angular.io/api/forms/FormGroup",
+                              "id": "365.2e13.ee14c0119-2db2.c478f2085"
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        },
                         "2.5": {
                           "title": "template",
                           "id": 233,
@@ -410,13 +453,14 @@
                                     }
                                   },
                                   "attr": {
-                                    "collapsed": true,
-                                    "style": {}
+                                    "style": {},
+                                    "collapsed": true
                                   }
                                 }
                               },
                               "attr": {
-                                "style": {}
+                                "style": {},
+                                "collapsed": true
                               }
                             }
                           }
@@ -425,7 +469,8 @@
                           "title": "Handling Changes",
                           "id": 345,
                           "attr": {
-                            "style": {}
+                            "style": {},
+                            "collapsed": true
                           },
                           "ideas": {
                             "1": {
@@ -440,28 +485,136 @@
                       "title": "angular core",
                       "id": 223,
                       "attr": {
-                        "attachment": {
-                          "contentType": "text/html",
-                          "content": "<span style=\"color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;\">The&nbsp;</span><code style=\"box-sizing: border-box; font-family: Monaco, 'Lucida Console', monospace; font-size: 14.4px; border-radius: 2px; color: rgb(92, 112, 122); padding-top: 0px; padding-bottom: 0px; line-height: 28px; white-space: normal; background: rgb(245, 246, 247);\">angular2/core</code><span style=\"color: rgb(26, 35, 38); font-family: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 28px;\">&nbsp;library is the primary Angular library module from which we get most of what we need.&nbsp;</span>"
+                        "style": {},
+                        "note": {
+                          "text": "The&nbsp;angular2/core&nbsp;library is the primary Angular library module from which we get most of what we need.&nbsp;"
+                        }
+                      }
+                    },
+                    "4": {
+                      "title": "Tests",
+                      "id": "351.2e13.ee14c0119-2db2.c478f2085",
+                      "ideas": {
+                        "2": {
+                          "title": "How to test injected services",
+                          "id": "353.2e13.ee14c0119-2db2.c478f2085",
+                          "ideas": {
+                            "1": {
+                              "title": "https://angular.io/guide/testing-services",
+                              "id": "352.2e13.ee14c0119-2db2.c478f2085",
+                              "attr": {}
+                            }
+                          }
                         },
-                        "style": {}
+                        "3": {
+                          "title": "How to test HTTP Requests",
+                          "id": "354.2e13.ee14c0119-2db2.c478f2085",
+                          "ideas": {
+                            "1": {
+                              "title": "https://angular.io/guide/http#testing-http-requests",
+                              "id": "355.2e13.ee14c0119-2db2.c478f2085"
+                            }
+                          }
+                        },
+                        "4": {
+                          "title": "How to test components",
+                          "id": "356.2e13.ee14c0119-2db2.c478f2085",
+                          "ideas": {
+                            "1": {
+                              "title": "https://angular.io/guide/testing-components-basics",
+                              "id": "357.2e13.ee14c0119-2db2.c478f2085"
+                            }
+                          }
+                        },
+                        "5": {
+                          "title": "How to test directives",
+                          "id": "358.2e13.ee14c0119-2db2.c478f2085",
+                          "ideas": {
+                            "1": {
+                              "title": "https://angular.io/guide/testing-attribute-directives",
+                              "id": "359.2e13.ee14c0119-2db2.c478f2085"
+                            }
+                          }
+                        },
+                        "6": {
+                          "title": "How to test pipes",
+                          "id": "360.2e13.ee14c0119-2db2.c478f2085",
+                          "ideas": {
+                            "1": {
+                              "title": "https://angular.io/guide/testing-attribute-directives",
+                              "id": "361.2e13.ee14c0119-2db2.c478f2085"
+                            }
+                          }
+                        },
+                        "7": {
+                          "title": "How to test NG Store?",
+                          "id": "362.2e13.ee14c0119-2db2.c478f2085",
+                          "ideas": {
+                            "1": {
+                              "title": "https://v7.ngrx.io/guide/store/testing",
+                              "id": "363.2e13.ee14c0119-2db2.c478f2085"
+                            }
+                          }
+                        },
+                        "8": {
+                          "title": "Testing Rxjs",
+                          "id": "366.2e13.ee14c0119-2db2.c478f2085",
+                          "ideas": {
+                            "1": {
+                              "title": "test rxjs angular",
+                              "id": "367.2e13.ee14c0119-2db2.c478f2085"
+                            },
+                            "3": {
+                              "title": "Marble testing",
+                              "id": "369.7a37.ae463d5c8-323c.dda8ad344",
+                              "ideas": {
+                                "1": {
+                                  "title": "https://mokkapps.de/blog/how-i-write-marble-tests-for-rxjs-observables-in-angular/",
+                                  "id": "368.7a37.ae463d5c8-323c.dda8ad344",
+                                  "attr": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "5": {
+                      "title": "Component Libraries",
+                      "id": "370.8f32.50b8c2b66-6696.5e121f62",
+                      "ideas": {
+                        "1": {
+                          "title": "Ionic",
+                          "id": "371.8f32.50b8c2b66-6696.5e121f62",
+                          "ideas": {
+                            "1": {
+                              "title": "https://drive.mindmup.com/map/1RmWJ60Dc5rGT6mWNmhKcYYYgracU8u46",
+                              "id": "373.8f32.50b8c2b66-6696.5e121f62"
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "Material",
+                          "id": "372.8f32.50b8c2b66-6696.5e121f62"
+                        }
                       }
                     }
                   },
                   "attr": {
                     "style": {},
                     "position": [
-                      58,
-                      97,
-                      1
-                    ],
-                    "collapsed": true
+                      68,
+                      43,
+                      3
+                    ]
                   }
                 }
               },
               "attr": {
-                "style": {},
-                "collapsed": true
+                "style": {}
               }
             },
             "2": {
@@ -713,7 +866,8 @@
                 }
               },
               "attr": {
-                "style": {}
+                "style": {},
+                "collapsed": true
               }
             }
           },

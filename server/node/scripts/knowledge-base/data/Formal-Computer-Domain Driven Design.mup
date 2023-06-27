@@ -10,7 +10,12 @@
         "attachment": {
           "contentType": "text/html",
           "content": "<ul style=\"margin-top: 0.3em; margin-bottom: 0px; margin-left: 1.6em; list-style-image: url(&quot;data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%225%22%20height%3D%2213%22%3E%0A%3Ccircle%20cx%3D%222.5%22%20cy%3D%229.5%22%20r%3D%222.5%22%20fill%3D%22%2300528c%22%2F%3E%0A%3C%2Fsvg%3E%0A&quot;); color: rgb(37, 37, 37); font-family: sans-serif; line-height: 22.4px;\"><li style=\"margin-bottom: 0.1em;\">placing the project's primary focus on the core&nbsp;<a href=\"https://en.wikipedia.org/wiki/Domain_(software_engineering)\" title=\"Domain (software engineering)\" style=\"color: rgb(11, 0, 128); background: none;\">domain</a>&nbsp;and domain logic;</li><li style=\"margin-bottom: 0.1em;\">basing complex designs on a model of the domain;</li><li style=\"margin-bottom: 0.1em;\">initiating a creative collaboration between technical and&nbsp;<a href=\"https://en.wikipedia.org/wiki/Domain_expert\" title=\"Domain expert\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); background: none;\">domain experts</a>&nbsp;to iteratively refine a conceptual model that addresses particular domain problems.</li></ul>"
-        }
+        },
+        "position": [
+          -73,
+          -24,
+          1
+        ]
       },
       "ideas": {
         "1": {
@@ -35,7 +40,7 @@
               "ideas": {}
             },
             "3": {
-              "title": "Establishing common terminology within the model that avoids going into to many technecalitites",
+              "title": "Establishing common terminology within the model that avoids going into to many technicalities",
               "id": 6
             },
             "4": {
@@ -138,8 +143,7 @@
                     }
                   },
                   "attr": {
-                    "style": {},
-                    "collapsed": true
+                    "style": {}
                   }
                 },
                 "5": {

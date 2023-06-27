@@ -6,9 +6,19 @@
       "id": 1,
       "title": "Integration Testing",
       "attr": {
-        "style": {}
+        "style": {},
+        "position": [
+          -64,
+          -15,
+          1
+        ]
       },
-      "ideas": {}
+      "ideas": {
+        "1": {
+          "title": "e2e",
+          "id": "2.2bde.e1d04526c-733e.159f3039d"
+        }
+      }
     }
   },
   "links": [],

@@ -25,8 +25,7 @@
                   "contentType": "text/html",
                   "content": "<div><span style=\"color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 31.5px; font-weight: bold; line-height: 24px;\">Introduction</span><br></div><div><p style=\"color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 24px;\"></p><aside style=\"font-size: small; left: 780px; position: absolute; width: 180px; color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, sans-serif; line-height: 24px;\">Read&nbsp;<a href=\"https://github.com/mbostock/d3/wiki/Tutorials\" style=\"color: steelblue;\" target=\"_blank\">more tutorials</a>.</aside><p style=\"color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 24px;\"><b>D3</b>&nbsp;allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document. For example, you can use D3 to generate an HTML table from an array of numbers. Or, use the same data to create an interactive SVG bar chart with smooth transitions and interaction.</p><p style=\"color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 24px;\">D3 is not a monolithic framework that seeks to provide every conceivable feature. Instead, D3 solves the crux of the problem: efficient manipulation of documents based on data. This avoids proprietary representation and affords extraordinary flexibility, exposing the full capabilities of web standards such as HTML, SVG, and CSS. With minimal overhead, D3 is extremely fast, supporting large datasets and dynamic behaviors for interaction and animation. D3’s functional style allows code reuse through a diverse collection of&nbsp;<a href=\"https://github.com/mbostock/d3/wiki/API-Reference\" style=\"color: steelblue;\" target=\"_blank\">components</a>&nbsp;and&nbsp;<a href=\"https://github.com/d3/d3-plugins\" style=\"color: steelblue;\" target=\"_blank\">plugins</a>.</p><p style=\"color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 24px;\"><br></p><p style=\"color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 24px;\"><br></p><p style=\"color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 24px;\">D3 lets you transform documents based on data; this includes both creating and destroying elements. D3 allows you to change an existing document in response to user interaction, animation over time, or even asynchronous notification from a third-party. A hybrid approach is even possible, where the document is initially rendered on the server, and updated on the client via D3<br></p></div>"
                 },
-                "style": {},
-                "collapsed": true
+                "style": {}
               },
               "ideas": {
                 "1": {
@@ -94,7 +93,7 @@
               "id": 39,
               "ideas": {
                 "1": {
-                  "title": "add data on exit and on enter?",
+                  "title": "add data on enter",
                   "id": 40,
                   "attr": {
                     "style": {
@@ -128,11 +127,10 @@
                               "title": "example",
                               "id": 76,
                               "attr": {
-                                "attachment": {
-                                  "contentType": "text/html",
-                                  "content": "<pre style=\"font-family: Menlo, monospace; border-left-width: 2px; border-left-color: rgb(204, 204, 204); padding-left: 18px; margin-top: 2em; margin-bottom: 2em; margin-left: -20px; font-size: medium; line-height: normal;\"><code class=\"javascript\" style=\"font-family: Menlo, monospace; line-height: 1em;\"><span class=\"keyword\" style=\"color: rgb(49, 130, 189);\">var</span> svg = d3.select(<span class=\"string\" style=\"color: rgb(117, 107, 177);\">\"svg\"</span>);\n\n<span class=\"keyword\" style=\"color: rgb(49, 130, 189);\">var</span> circle = svg.selectAll(<span class=\"string\" style=\"color: rgb(117, 107, 177);\">\"circle\"</span>)\n    .data([<span class=\"number\" style=\"color: rgb(49, 163, 84);\">32</span>, <span class=\"number\" style=\"color: rgb(49, 163, 84);\">57</span>, <span class=\"number\" style=\"color: rgb(49, 163, 84);\">112</span>, <span class=\"number\" style=\"color: rgb(49, 163, 84);\">293</span>]);\n\n<span class=\"keyword\" style=\"color: rgb(49, 130, 189);\">var</span> circleEnter = circle.enter().append(<span class=\"string\" style=\"color: rgb(117, 107, 177);\">\"circle\"</span>);</code></pre><pre style=\"font-family: Menlo, monospace; border-left-width: 2px; border-left-color: rgb(204, 204, 204); padding-left: 18px; margin-top: 2em; margin-bottom: 2em; margin-left: -20px; font-size: medium; line-height: normal;\"><code class=\"javascript\" style=\"font-family: Menlo, monospace; line-height: 1em;\">In the previous example, we entered the dat and appended a circle based on that data</code></pre>"
-                                },
-                                "style": {}
+                                "style": {},
+                                "note": {
+                                  "text": "var svg = d3.select(\"svg\"); \nvar circle = svg.selectAll(\"circle\").data([32, 57, 112, 293]); \nvar circleEnter = circle.enter().append(\"circle\");\n\n\nHTML would be:\n<svg width=\"720\" height=\"120\">\n  <circle cx=\"40\" cy=\"60\" r=\"10\"></circle>\n  <circle cx=\"80\" cy=\"60\" r=\"10\"></circle>\n  <circle cx=\"120\" cy=\"60\" r=\"10\"></circle>\n</svg>\n\n\n\nIn the previous example, we entered the dat and appended a circle based on that data"
+                                }
                               }
                             }
                           }
@@ -150,6 +148,26 @@
                       "id": 73
                     }
                   }
+                },
+                "3": {
+                  "title": "Exiting",
+                  "id": "104.f046.c6a7642e4-7137.64f86cc8c",
+                  "ideas": {
+                    "1": {
+                      "title": "to remove some elements",
+                      "id": "105.f046.c6a7642e4-7137.64f86cc8c",
+                      "attr": {
+                        "note": {
+                          "index": 23,
+                          "text": "var circle = svg.selectAll(\"circle\")\n    .data([32, 57]);\ncircle.exit().remove();"
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "Exiting is to keep only the data bound in the .data()",
+                      "id": "106.f046.c6a7642e4-7137.64f86cc8c"
+                    }
+                  }
                 }
               },
               "attr": {
@@ -164,9 +182,6 @@
                   "title": "https://bost.ocks.org/mike/transition/",
                   "id": 78
                 }
-              },
-              "attr": {
-                "collapsed": true
               }
             },
             "8": {

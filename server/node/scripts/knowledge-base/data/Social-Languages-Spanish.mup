@@ -5,19 +5,4251 @@
     "1": {
       "id": 1,
       "title": "Spanish",
-      "attr": {},
+      "attr": {
+        "position": [
+          -29,
+          -40,
+          1
+        ],
+        "style": {
+          "textAlign": "left"
+        }
+      },
       "ideas": {
         "1": {
           "title": "Concepts",
-          "id": "2.6a920fca0383c5a2"
+          "id": "2.6a920fca0383c5a2",
+          "ideas": {
+            "28": {
+              "title": "Pronouns",
+              "id": "69.45ec.9787c427a-fa9a.a0f83ce4f",
+              "ideas": {
+                "1": {
+                  "title": "I am",
+                  "id": "70.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "Yo Soy",
+                      "id": "71.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "You",
+                  "id": "72.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "Tu",
+                      "id": "73.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "He",
+                  "id": "74.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "Elle",
+                      "id": "75.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  }
+                },
+                "4": {
+                  "title": "She",
+                  "id": "76.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "Ella",
+                      "id": "77.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  }
+                },
+                "5": {
+                  "title": "You Are",
+                  "id": "86.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "Tu Eres",
+                      "id": "87.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  }
+                },
+                "7": {
+                  "title": "Yo Soy",
+                  "id": "28.cbcc.476ae4d0c-ff97.6145c874a",
+                  "ideas": {
+                    "1": {
+                      "title": "I am",
+                      "id": "29.cbcc.476ae4d0c-ff97.6145c874a"
+                    }
+                  },
+                  "attr": {}
+                },
+                "8": {
+                  "title": "Have",
+                  "id": "95.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "Tengo",
+                      "id": "96.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  }
+                },
+                "9": {
+                  "title": "It Is",
+                  "id": "99.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "Esta",
+                      "id": "100.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  },
+                  "attr": {}
+                },
+                "10": {
+                  "title": "Your",
+                  "id": "103.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "Tu",
+                      "id": "104.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  }
+                },
+                "11": {
+                  "title": "Para",
+                  "id": "122.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "For",
+                      "id": "123.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  }
+                },
+                "12": {
+                  "title": "O",
+                  "id": "136.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "or",
+                      "id": "137.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  }
+                },
+                "13": {
+                  "title": "A",
+                  "id": "138.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "in",
+                      "id": "139.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  }
+                },
+                "14": {
+                  "title": "Us",
+                  "id": "169.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "Nosotros",
+                      "id": "170.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "15": {
+                  "title": "Este",
+                  "id": "288.0545.ea6d47067-c279.fb23fb8a6",
+                  "ideas": {
+                    "1": {
+                      "title": "this",
+                      "id": "289.0545.ea6d47067-c279.fb23fb8a6"
+                    }
+                  }
+                },
+                "16": {
+                  "title": "Esos",
+                  "id": "381.d711.e820a3cbb-4130.e0400982f",
+                  "ideas": {
+                    "1": {
+                      "title": "Those",
+                      "id": "385.d711.e820a3cbb-4130.e0400982f"
+                    }
+                  }
+                },
+                "17": {
+                  "title": "Estos",
+                  "id": "383.d711.e820a3cbb-4130.e0400982f",
+                  "ideas": {
+                    "1": {
+                      "title": "Theses",
+                      "id": "386.d711.e820a3cbb-4130.e0400982f"
+                    }
+                  }
+                },
+                "18": {
+                  "title": "I Will be",
+                  "id": "537.6300.21cd4d90b-bb4f.935b8de0b",
+                  "ideas": {
+                    "1": {
+                      "title": "Yo Sere",
+                      "id": "538.6300.21cd4d90b-bb4f.935b8de0b"
+                    }
+                  }
+                },
+                "19": {
+                  "title": "You are sad",
+                  "id": "596.f106.5f4934205-8d9c.4c682cdb3",
+                  "ideas": {
+                    "1": {
+                      "title": "Tu estas triste",
+                      "id": "597.f106.5f4934205-8d9c.4c682cdb3",
+                      "ideas": {
+                        "1": {
+                          "title": "you are sad",
+                          "id": "604.0577.3cc1eb49e-3b4b.50e68a396"
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "they are sad",
+                      "id": "598.f106.5f4934205-8d9c.4c682cdb3",
+                      "ideas": {
+                        "1": {
+                          "title": "ellos estan triste",
+                          "id": "599.f106.5f4934205-8d9c.4c682cdb3"
+                        }
+                      }
+                    },
+                    "3": {
+                      "title": "I am sad",
+                      "id": "600.f106.5f4934205-8d9c.4c682cdb3",
+                      "ideas": {
+                        "1": {
+                          "title": "yo estoy triste",
+                          "id": "601.f106.5f4934205-8d9c.4c682cdb3"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "20": {
+                  "title": "I was sad",
+                  "id": "602.f106.5f4934205-8d9c.4c682cdb3",
+                  "ideas": {
+                    "1": {
+                      "title": "Yo estaba triste",
+                      "id": "603.f106.5f4934205-8d9c.4c682cdb3"
+                    }
+                  }
+                },
+                "21": {
+                  "title": "Era",
+                  "id": "690.f91f.a3b5048f1-0d07.b4f2d6df",
+                  "ideas": {
+                    "1": {
+                      "title": "was",
+                      "id": "691.f91f.a3b5048f1-0d07.b4f2d6df"
+                    }
+                  }
+                },
+                "22": {
+                  "title": "Tuyo",
+                  "id": "740.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                  "ideas": {
+                    "1": {
+                      "title": "yours",
+                      "id": "742.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                    }
+                  }
+                },
+                "23": {
+                  "title": "Suya",
+                  "id": "741.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                  "ideas": {
+                    "1": {
+                      "title": "its",
+                      "id": "743.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                    }
+                  }
+                },
+                "24": {
+                  "title": "nuestro",
+                  "id": "745.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                  "ideas": {
+                    "1": {
+                      "title": "nestro",
+                      "id": "746.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "30": {
+              "title": "Colors",
+              "id": "159.234b.fea03e472-bbb3.c41037ee",
+              "ideas": {
+                "1": {
+                  "title": "Azul",
+                  "id": "160.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "Blue",
+                      "id": "161.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Rojo",
+                  "id": "162.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "Red",
+                      "id": "163.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "Marron",
+                  "id": "164.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "Brown?",
+                      "id": "165.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "4": {
+                  "title": "Verde ",
+                  "id": "166.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "Green",
+                      "id": "167.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "5": {
+                  "title": "Gris",
+                  "id": "277.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "Grey",
+                      "id": "278.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "6": {
+                  "title": "Negra",
+                  "id": "460.b915.fe787421a-12d5.274a2787e",
+                  "ideas": {
+                    "1": {
+                      "title": "Black",
+                      "id": "461.b915.fe787421a-12d5.274a2787e"
+                    }
+                  }
+                },
+                "7": {
+                  "title": "Amarillo",
+                  "id": "462.b915.fe787421a-12d5.274a2787e",
+                  "ideas": {
+                    "1": {
+                      "title": "Yellow",
+                      "id": "463.b915.fe787421a-12d5.274a2787e"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "31": {
+              "title": "Expressions",
+              "id": "198.234b.fea03e472-bbb3.c41037ee",
+              "ideas": {
+                "1": {
+                  "title": "Hay Que Esperar",
+                  "id": "199.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "We have to wait",
+                      "id": "200.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Tranquila",
+                  "id": "201.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "Relax",
+                      "id": "202.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "se hace lo que se puede",
+                  "id": "206.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "you do what you can",
+                      "id": "207.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "4": {
+                  "title": "Por Que no",
+                  "id": "212.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": " why not",
+                      "id": "213.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "5": {
+                  "title": "Sabe que",
+                  "id": "216.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "you know what",
+                      "id": "217.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "6": {
+                  "title": "lo quieres",
+                  "id": "236.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "I wanted it",
+                      "id": "237.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "7": {
+                  "title": "grosso modo",
+                  "id": "240.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "more or less",
+                      "id": "241.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "8": {
+                  "title": "No creo\n\n",
+                  "id": "256.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": " I don't think so",
+                      "id": "258.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "9": {
+                  "title": "cual seral tu color",
+                  "id": "257.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "which is your color",
+                      "id": "259.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "10": {
+                  "title": "porque lo dices",
+                  "id": "260.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "because you said so",
+                      "id": "261.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "11": {
+                  "title": "no tenga miedo",
+                  "id": "264.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "don't be afraid",
+                      "id": "265.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "12": {
+                  "title": "abra su corazon",
+                  "id": "266.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "open your heart",
+                      "id": "267.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "13": {
+                  "title": "Digo si",
+                  "id": "268.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "I say yes",
+                      "id": "269.234b.fea03e472-bbb3.c41037ee",
+                      "ideas": {
+                        "1": {
+                          "title": "correcting yourself",
+                          "id": "270.234b.fea03e472-bbb3.c41037ee"
+                        }
+                      }
+                    }
+                  }
+                },
+                "14": {
+                  "title": "No es para el",
+                  "id": "304.0545.ea6d47067-c279.fb23fb8a6",
+                  "ideas": {
+                    "1": {
+                      "title": "not for him",
+                      "id": "305.0545.ea6d47067-c279.fb23fb8a6"
+                    }
+                  }
+                },
+                "15": {
+                  "title": "miel de colmenda",
+                  "id": "348.7a46.0d4da43e5-51b4.a83c0df49",
+                  "ideas": {
+                    "1": {
+                      "title": "Hive honey",
+                      "id": "349.7a46.0d4da43e5-51b4.a83c0df49"
+                    }
+                  }
+                },
+                "16": {
+                  "title": "vuelvete un capitan",
+                  "id": "403.d711.e820a3cbb-4130.e0400982f",
+                  "ideas": {
+                    "1": {
+                      "title": "become a capitan",
+                      "id": "404.d711.e820a3cbb-4130.e0400982f"
+                    }
+                  }
+                },
+                "17": {
+                  "title": "Poco a poco",
+                  "id": "410.d711.e820a3cbb-4130.e0400982f",
+                  "ideas": {
+                    "1": {
+                      "title": "little by little",
+                      "id": "411.d711.e820a3cbb-4130.e0400982f"
+                    }
+                  }
+                },
+                "18": {
+                  "title": "a ver",
+                  "id": "412.d711.e820a3cbb-4130.e0400982f",
+                  "ideas": {
+                    "1": {
+                      "title": "let's see",
+                      "id": "413.d711.e820a3cbb-4130.e0400982f"
+                    }
+                  }
+                },
+                "19": {
+                  "title": "casi nunca te lo digo",
+                  "id": "414.d711.e820a3cbb-4130.e0400982f",
+                  "ideas": {
+                    "1": {
+                      "title": "I almost never tell you",
+                      "id": "415.d711.e820a3cbb-4130.e0400982f"
+                    }
+                  }
+                },
+                "20": {
+                  "title": "estaba furioso",
+                  "id": "416.d711.e820a3cbb-4130.e0400982f",
+                  "ideas": {
+                    "1": {
+                      "title": "I was furious",
+                      "id": "417.d711.e820a3cbb-4130.e0400982f"
+                    }
+                  }
+                },
+                "21": {
+                  "title": "puta madre",
+                  "id": "420.d711.e820a3cbb-4130.e0400982f",
+                  "ideas": {
+                    "1": {
+                      "title": "motherfucker",
+                      "id": "421.d711.e820a3cbb-4130.e0400982f"
+                    }
+                  }
+                },
+                "22": {
+                  "title": "Para aqui o para illevar",
+                  "id": "432.2798.229b6f36e-9a29.e83a30bfd",
+                  "ideas": {
+                    "1": {
+                      "title": "For here or to go ",
+                      "id": "433.2798.229b6f36e-9a29.e83a30bfd"
+                    }
+                  }
+                },
+                "23": {
+                  "title": "Mas o menos",
+                  "id": "489.658a.b3ab36c1b-fb69.2b1e76634",
+                  "ideas": {
+                    "1": {
+                      "title": "more or less",
+                      "id": "490.658a.b3ab36c1b-fb69.2b1e76634"
+                    }
+                  }
+                },
+                "24": {
+                  "title": "en la medida en que",
+                  "id": "500.658a.b3ab36c1b-fb69.2b1e76634",
+                  "ideas": {
+                    "1": {
+                      "title": "in the extent that",
+                      "id": "504.658a.b3ab36c1b-fb69.2b1e76634"
+                    }
+                  }
+                },
+                "25": {
+                  "title": "Siento que puedo expresarme mejor en otros idiomas",
+                  "id": "555.1c18.c2d9a782d-3a7e.e927c85fa",
+                  "attr": {},
+                  "ideas": {
+                    "1": {
+                      "title": "I feel that I can express myself better in other languages",
+                      "id": "556.1c18.c2d9a782d-3a7e.e927c85fa"
+                    }
+                  }
+                },
+                "26": {
+                  "title": "que te passa",
+                  "id": "557.1c18.c2d9a782d-3a7e.e927c85fa",
+                  "ideas": {
+                    "1": {
+                      "title": "\n\nwhat's wrong with you",
+                      "id": "558.1c18.c2d9a782d-3a7e.e927c85fa"
+                    }
+                  }
+                },
+                "27": {
+                  "title": "quiero llegar al siguiente nivel",
+                  "id": "559.1c18.c2d9a782d-3a7e.e927c85fa",
+                  "ideas": {
+                    "1": {
+                      "title": "I want to reach the next level",
+                      "id": "560.1c18.c2d9a782d-3a7e.e927c85fa"
+                    }
+                  }
+                },
+                "28": {
+                  "title": "Sin embargo",
+                  "id": "605.628c.35ea1246c-5da3.68a1df72",
+                  "ideas": {
+                    "1": {
+                      "title": "However",
+                      "id": "606.628c.35ea1246c-5da3.68a1df72"
+                    }
+                  }
+                },
+                "29": {
+                  "title": "evitar al dano",
+                  "id": "697.f91f.a3b5048f1-0d07.b4f2d6df",
+                  "ideas": {
+                    "1": {
+                      "title": "avoid the harm",
+                      "id": "698.f91f.a3b5048f1-0d07.b4f2d6df"
+                    }
+                  }
+                },
+                "30": {
+                  "title": "Perdido contigo",
+                  "id": "703.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                  "ideas": {
+                    "1": {
+                      "title": "lost with you",
+                      "id": "704.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                    }
+                  }
+                },
+                "31": {
+                  "title": "Maria es tan responsible como sara",
+                  "id": "710.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                  "ideas": {
+                    "1": {
+                      "title": "Maria is as responsible as Sara",
+                      "id": "711.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                    }
+                  }
+                },
+                "32": {
+                  "title": "O te peinas o te vas!",
+                  "id": "788.ce80.ee85355fb-7e70.bc6d8766",
+                  "ideas": {
+                    "1": {
+                      "title": "either you comb your hair or you leave",
+                      "id": "789.ce80.ee85355fb-7e70.bc6d8766"
+                    }
+                  }
+                },
+                "33": {
+                  "title": "que sea su economia",
+                  "id": "792.ce80.ee85355fb-7e70.bc6d8766",
+                  "ideas": {
+                    "1": {
+                      "title": "whatever your economy is",
+                      "id": "793.ce80.ee85355fb-7e70.bc6d8766"
+                    }
+                  }
+                },
+                "34": {
+                  "title": "\n\nes la esclavitud moderna",
+                  "id": "796.ce80.ee85355fb-7e70.bc6d8766",
+                  "ideas": {
+                    "1": {
+                      "title": "it's modern slavery",
+                      "id": "797.ce80.ee85355fb-7e70.bc6d8766"
+                    }
+                  }
+                },
+                "35": {
+                  "title": "estoy en una cafeteria",
+                  "id": "804.e926.c0baa9626-9cf3.500934767",
+                  "ideas": {
+                    "1": {
+                      "title": "I am in a coffee shop",
+                      "id": "805.e926.c0baa9626-9cf3.500934767"
+                    }
+                  }
+                },
+                "36": {
+                  "title": "pedir permiso",
+                  "id": "810.8330.58193f09a-e2f5.fa2277e01",
+                  "ideas": {
+                    "1": {
+                      "title": "ask permission",
+                      "id": "811.8330.58193f09a-e2f5.fa2277e01"
+                    }
+                  }
+                },
+                "37": {
+                  "title": "salir en una imagen",
+                  "id": "812.8330.58193f09a-e2f5.fa2277e01",
+                  "ideas": {
+                    "1": {
+                      "title": "to appear in an image",
+                      "id": "813.8330.58193f09a-e2f5.fa2277e01"
+                    }
+                  }
+                },
+                "38": {
+                  "title": "difundir una imagen",
+                  "id": "814.8330.58193f09a-e2f5.fa2277e01",
+                  "ideas": {
+                    "1": {
+                      "title": "display an image",
+                      "id": "815.8330.58193f09a-e2f5.fa2277e01"
+                    }
+                  }
+                },
+                "39": {
+                  "title": "retratar",
+                  "id": "816.8330.58193f09a-e2f5.fa2277e01",
+                  "ideas": {
+                    "1": {
+                      "title": "\n\nto portray",
+                      "id": "863.1adb.3e44dd1ba-50ab.9567af88"
+                    }
+                  }
+                },
+                "40": {
+                  "title": "A su vez",
+                  "id": "831.4465.5bcef7bcf-0b46.54445684",
+                  "ideas": {
+                    "1": {
+                      "title": "at the same time",
+                      "id": "832.4465.5bcef7bcf-0b46.54445684"
+                    }
+                  }
+                },
+                "41": {
+                  "title": "va a acabar",
+                  "id": "848.5876.71a542fed-7c02.cdedccd72",
+                  "ideas": {
+                    "1": {
+                      "title": "it's going to end",
+                      "id": "849.5876.71a542fed-7c02.cdedccd72"
+                    }
+                  }
+                },
+                "42": {
+                  "title": "Fuertes Vinculos",
+                  "id": "855.1adb.3e44dd1ba-50ab.9567af88",
+                  "ideas": {
+                    "1": {
+                      "title": "Strong links",
+                      "id": "856.1adb.3e44dd1ba-50ab.9567af88"
+                    }
+                  }
+                },
+                "43": {
+                  "title": "índice se ha caído en forma importante",
+                  "id": "861.1adb.3e44dd1ba-50ab.9567af88",
+                  "ideas": {
+                    "1": {
+                      "title": "index has falling significantly ",
+                      "id": "864.1adb.3e44dd1ba-50ab.9567af88"
+                    }
+                  }
+                },
+                "44": {
+                  "title": "Dejan de cotizar",
+                  "id": "869.1adb.3e44dd1ba-50ab.9567af88"
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "32": {
+              "title": "Days",
+              "id": "282.0545.ea6d47067-c279.fb23fb8a6",
+              "ideas": {
+                "1": {
+                  "title": "Lunes",
+                  "id": "283.0545.ea6d47067-c279.fb23fb8a6",
+                  "ideas": {}
+                },
+                "2": {
+                  "title": "Martes",
+                  "id": "285.0545.ea6d47067-c279.fb23fb8a6"
+                },
+                "3": {
+                  "title": "Miercoles",
+                  "id": "291.0545.ea6d47067-c279.fb23fb8a6"
+                },
+                "4": {
+                  "title": "Jueves",
+                  "id": "292.0545.ea6d47067-c279.fb23fb8a6"
+                },
+                "5": {
+                  "title": "Varnes",
+                  "id": "293.0545.ea6d47067-c279.fb23fb8a6",
+                  "ideas": {}
+                },
+                "6": {
+                  "title": "Sabado",
+                  "id": "298.0545.ea6d47067-c279.fb23fb8a6"
+                },
+                "7": {
+                  "title": "Domingo",
+                  "id": "299.0545.ea6d47067-c279.fb23fb8a6"
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "33": {
+              "title": "Slangs",
+              "id": "364.7a46.0d4da43e5-51b4.a83c0df49",
+              "ideas": {
+                "1": {
+                  "title": "Mexican",
+                  "id": "365.7a46.0d4da43e5-51b4.a83c0df49",
+                  "ideas": {
+                    "1": {
+                      "title": "Orale",
+                      "id": "366.7a46.0d4da43e5-51b4.a83c0df49"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "34": {
+              "title": "Geography",
+              "id": "394.d711.e820a3cbb-4130.e0400982f",
+              "ideas": {
+                "1": {
+                  "title": "otan",
+                  "id": "395.d711.e820a3cbb-4130.e0400982f",
+                  "ideas": {
+                    "1": {
+                      "title": "NATO",
+                      "id": "396.d711.e820a3cbb-4130.e0400982f"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Mercosur, ",
+                  "id": "866.1adb.3e44dd1ba-50ab.9567af88",
+                  "ideas": {
+                    "1": {
+                      "title": "or the Southern Common Market, is an economic and political bloc originally comprising Argentina, Brazil, Paraguay, and Uruguay",
+                      "id": "867.1adb.3e44dd1ba-50ab.9567af88",
+                      "attr": {},
+                      "ideas": {}
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "35": {
+              "title": "Verb endings",
+              "id": "465.b915.fe787421a-12d5.274a2787e",
+              "ideas": {
+                "1": {
+                  "title": "El como",
+                  "id": "466.b915.fe787421a-12d5.274a2787e"
+                },
+                "2": {
+                  "title": "Ella coma",
+                  "id": "467.b915.fe787421a-12d5.274a2787e"
+                },
+                "3": {
+                  "title": "Ellos commen",
+                  "id": "468.b915.fe787421a-12d5.274a2787e"
+                },
+                "4": {
+                  "title": "Tu come",
+                  "id": "469.b915.fe787421a-12d5.274a2787e"
+                },
+                "5": {
+                  "title": "Usted come",
+                  "id": "471.b915.fe787421a-12d5.274a2787e"
+                },
+                "6": {
+                  "title": "Nosotros comemos",
+                  "id": "475.b915.fe787421a-12d5.274a2787e"
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "36": {
+              "title": "Quotes",
+              "id": "477.e5ba.a7de0a662-826b.61db888ee",
+              "ideas": {
+                "1": {
+                  "title": "Una sociedad es democrática en la medida en que\nsus ciudadanos desempeñan un papel significativo\nen la gestión de los asuntos públicos",
+                  "id": "478.e5ba.a7de0a662-826b.61db888ee"
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "37": {
+              "title": "Verbs",
+              "id": "505.658a.b3ab36c1b-fb69.2b1e76634",
+              "ideas": {
+                "1": {
+                  "title": "Ir",
+                  "id": "506.658a.b3ab36c1b-fb69.2b1e76634",
+                  "ideas": {
+                    "1": {
+                      "title": "Fui",
+                      "id": "507.658a.b3ab36c1b-fb69.2b1e76634",
+                      "ideas": {
+                        "1": {
+                          "title": "https://www.spanishdict.com/conjugate/ir",
+                          "id": "514.658a.b3ab36c1b-fb69.2b1e76634"
+                        }
+                      }
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Viajar",
+                  "id": "509.658a.b3ab36c1b-fb69.2b1e76634",
+                  "ideas": {
+                    "1": {
+                      "title": "Viaje",
+                      "id": "510.658a.b3ab36c1b-fb69.2b1e76634"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "Ver",
+                  "id": "511.658a.b3ab36c1b-fb69.2b1e76634",
+                  "ideas": {
+                    "1": {
+                      "title": "Vi",
+                      "id": "512.658a.b3ab36c1b-fb69.2b1e76634",
+                      "ideas": {
+                        "1": {
+                          "title": "https://www.spanishdict.com/conjugate/viendo",
+                          "id": "513.658a.b3ab36c1b-fb69.2b1e76634"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {
+                      "width": 41
+                    }
+                  }
+                },
+                "4": {
+                  "title": "Leer",
+                  "id": "515.658a.b3ab36c1b-fb69.2b1e76634",
+                  "ideas": {
+                    "1": {
+                      "title": "Lei",
+                      "id": "516.658a.b3ab36c1b-fb69.2b1e76634"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "38": {
+              "title": "Uknown words",
+              "id": "517.658a.b3ab36c1b-fb69.2b1e76634",
+              "ideas": {
+                "1": {
+                  "title": "He",
+                  "id": "518.658a.b3ab36c1b-fb69.2b1e76634",
+                  "ideas": {
+                    "1": {
+                      "title": "I have",
+                      "id": "548.6300.21cd4d90b-bb4f.935b8de0b"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "39": {
+              "title": "italki notes",
+              "id": "616.f91f.a3b5048f1-0d07.b4f2d6df",
+              "attr": {
+                "note": {
+                  "index": 514,
+                  "text": "hola Osama! gracias por contratar una clase conmigo! cuál es tu nivel de español?\n\n\nDOS PAÍSES\nDIME ALGO MÁS SOBRE TI\nPROGRAMADOR DE ORDENADORES\nHE VIVIDO EN ESTADOS UNIDOS 10 AÑOS\n¿POR QUÉ?\nME GUSTA CÓMO SUENA EL ESPAÑOL\nSE PARECE AL ÁRABE\n¿CUÁNTOS IDIOMAS SABES HABLAR?\nSU TAMAÑO\nNO ERA MUY GRANDE\nBUENA GENTE\nMUY BONITA\nESTABAN LAS FALLAS\nYO ERA MUY FELIZ ALLÍ\n¿QUÉ TE GUSTA HACER EN TU TIEMPO LIBRE?\nLIBROS SOBRE PROGRAMACIÓN\nLOS VIDEOJUEGOS\nVIAJAR A MUCHOS LUGARES\nCASI\nCOREA\nTAILANDIA\nEN EUROPA\nBÉLGICA\nHOLANDA / PÁISES BAJOS\nPAÍSES*\nYO VIVÍA\nI LIVED\nYO VOY TODOS LOS AÑOS\nUNA VEZ AL AÑO\nMUY DIFERENTE\nMUCHO RESPETO\nPARECE UN PLANETA DIFERENTE\nLA COMIDA ES DELICIOSA\nHE VISTO MUCHAS PELÍCULAS EN JAPONÉS\nYO QUIERO VOLVER A JAPÓN\n¿PUEDES HABLARME DE TU FAMILIA?\nTENGO\nHERMANOS\nMI MADRE NO TRABAJA\nMI PADRE ES CONTABLE\nLAS MONTAÑAS\nES RARO QUE SE HAYAN CASADO\nMI HERMANO MAYOR\nTRABAJA EN LO MISMO QUE YO\nMI HERMANO MAYOR TAMBIÉN ES PROGRAMADOR\nMI HERMANO MENOR /PEQUEÑO\nTRABAJA EN LO MISMO QUE MI PADRE\nMIS DOS HERMANAS\nELLAS\nESTÁN EN LA UNIVERSIDAD\nNO TRABAJAN\nELLAS HAN TERMINADO LA UNIVERSIDAD\nVOY A JUGAR A VIDEOJUEGOS\nPROGRAMAR\nCORRER EN EL GIMNASIO\nNADAR\nDe mí para todos 11:01 AM\nA VECES\nJUEGO AL FÚTBOL CON MIS AMIGOS\n¿QUÉ HICISTE AYER?\nES RAMADÁN\nCOMIDAS DELICIOSAS\nPASAMOS MUCHO TIEMPO CON LA FAMILIA\nMAÑANA TERMINA EL RAMADÁN\nVACACIONES\nUNA CELEBRACIÓN MUY GRANDE\nHISTORY BOOK ABOUT SPAIN FOR LEARNERS\ntoday's chat :)\n\n\nmuchos gracias Dee!\n\n\nde nada! :)\n\n\nHola! Zoom\n?\n\n\n¿qué has hecho esta semana?\na la costa este\npara celebrar\ndespués\nvamos a la playa\nvisitamos a la familia\nhace calor\nnos quedamos en...\nun centro comercial\nporque hacía mucho calor\nlo pasamos muy bien\ndespués volvimos a la capital\njueves\nel fin de semana empieza el jueves\ny termina el sábado\nel domingo tienes que trabajar\npelículas en español\nun libro en español\nhay un libro\nhe encontrado un libro\nque se llama\nes gratis\nyo quiero leerlo\nhe buscado\n¿sobre qué trata?\nél trabaja con inmigrantes ilegales\nél tiene problemas\nél tiene muchos problemas\nél tiene un hermano muy malo\nmuchos problemas psicológicos\nestá intentando\n(verbo estar)\nél está intentando\nestá = is\nyo estoy\nconseguir algo\nél se está muriendo\nes una película muy buena\nyo he intentado\nescribir palabras\nque he escuchado\nyo tengo dificultad\nme parece difícil\ntraducir\nyo intento\nyo intento traducir\nesto no te hace\nesto no te hace entender\neso es todo\npor eso = por esta razón\naclarar = clear up\ncada = each\nincluir = to include\nlos griegos = the Greeks\nusar = to use\nreferirse = to refer (to sth)\ndefine = defines\nreinos = kingdoms\nrey = king\nrío = river\nreyes = the kings\ndeber = must\nse debe utilizar = must be used\nencontrar = to find\npor tanto = so\npertenecer = to belong\nXIX = 19\ndiecinueve\ndecadencia = decadence\nhistoriador = historian\nnacer = to be born\nparecer = to seem\naunque = even though\nXX = 20\nmediados = la mitad\nes más = moreover\nsin embargo = however\ninsistir = to insist\nopinión\nA1 / A2\nB1 / B2\nC1 / C2\nhttps://hablacultura.com/cultura-textos-aprender-espanol/curiosidades/iberoamerica-hispanoamerica-y-latinoamerica-no-son-sinonimos/\n--------------------------------------------------\nmi semana fue buena\nme siento cansado\ndespués\nbien\nseries de televisión\nvkingos\nD = de\nW = uve doble\nyo leí\ncomentarios\nfue interesante para mí\nmuchos países\nmuchas opiniones\nporque son de países diferentes\nsobre la guerra de Rusia\nnunca había visto noticias en español\n(I had never seen)\nhoy\nhoy termina el fin de semana\nhe pasado\nhe pasado tiempo\nyo dije\ntópicos falsos\nestereotipos\nequivocado = wrong\ncorridas de toros = bullfights\nal igual que = just like\ndeber / deberían = should\na ellos les gusta\na él le gusta\nallí = there\nahí\nyo creo que lo entiendo\nel examen es menos difícil de lo que pensaba\nmi casa es más bonita que la de Luis\nque se haga (subjuntivo)\nhogares = homes\nfrase = phrase\nresumir = to summarise\nsoler = verbo, explicar lo que haces normalmente\nYo suelo ver la televisión los fines de semana\n(I usually watch TV on the weekends)\nlas mujeres son tímidas\npero no es verdad\nes falso\notros países a veces piensan\npaíses árabes\nla gente es religiosa\nla gente joven no es muy religiosa\nlos hombres no son machistas\nellos pueden serlo\n(they can be it)\nno todos los hombres\na veces la gente piensa\nvago = lazy\nla gente piensa que las personas aquí son vagas\nnecesitan trabajar mucho\ncreo que está mal\ncreo que es malo\nmal (estar)\nmalo (ser)\nbien (estar)\nbueno (ser)\nes bueno\nestá bueno\n¿cómo estás?\nestoy bien\n¿cómo está la comida?\nestá buena\nuna persona es buena\nuna persona está bien = a person is feeling fine\nuna persona es buena = a person is good\nuna persona se siente bien\nestoy bien\nla gramática en español\nyo puedo expresarme\nque te permite\npermitir = to allow\nexpresarlo\nexpresarte\nexpresarlo (express it)\nexpresarte (express yourself)\nes verdad\nnos vemos la próxima semana\n\nmis compañeros\ntener fiebre\nnaturaleza\nneandertal\nhacer\ndecir\nellos dijeron\nigual que nosotros\npensamientos\nideas\ntú tenías\nno quiero vivir en el pasado\nestábamos\nnosotros estábamos\nen el desierto\nvivir en menos lugares\ntambién teníamos\nmenos pensamientos\n¿piensas que en el futuro el mundo será mejor que ahora o peor?\nnosotros tenemos que\nresolver\nguerras mundiales\ndisfraces\n(costumes)\nuna canción para reírse de otra persona\nesperar = to wait\nya = already\nalegría = joy\nlleno = full\ndiecisiete\nnúmero\nX = 10\nV = 5\nI = 1\nXVII\npropio = own\nMi propia casa = my own house\nlos nacidos allí = those born there\nfrente a = in front of\nademás = moreover\nconcurso = contest\nagrupación = group\ncuatro\ncuarteto = group of 4 people\nla actualidad = the present moment\ntodo = all, whole\nestilo = style\nquince 15\nletras = lyrics\nsin embargo = however\nuna ciudad\nhay algo parecido\ndel sur\nellos hacen algo parecido\ncien personas\npoemas\ndonde\ndecía\n¿qué tipo de disfraces utilizan en esta fiesta?\ndisfraz = costume\nropa normal\nen el oeste\nmucha gente\nmucha gente baila\nnormalmente\nveo como bailan\na veces bailo un poco\nhttps://hablacultura.com/cultura-textos-aprender-espanol/costumbres/carnaval-de-cadiz/\n\n¿qué has hecho esta semana?\nnosotros tenemos\nel próximo viernes\nen otra ciudad\ndepende de la ciudad\n8 horas menos\nhombres y mujeres juntos\nyo voy a Estados Unidos\nla deuda de estudiante\nen comparación\n¿tú estás estudiando?\nestudio un máster\nincluso más caro\npor esta razón yo vivo aquí\nestá hecho\nreconectar\nya veremos\nyo vivo solo\nno es\nhay desventajas\nnacionalista\nyo me libré de...\nno puedo elegir uno\nla calidad de vida\ntodas las cosas son baratas\nexcesivo\nestresante\nmulticultural\nmás libre\nextranjeros\nmás abiertos con los extranjeros\nsuerte\nayudarte\nsolo\npareja = partner\nelegir\npienso que los amigos\nla pareja\nlo más importante\nno es complicado\nno es tan complicado como con la familia\nhablo con ellos\na veces viajo con mis amigos\ncuando yo viajo a españa\nhacer ejercicio = to exercise\nla nieve = snow\nesquiar = to skii\ndisponer de = tener\naprovechar = to make the most of\ndentro = inside\nllover = to rain\nparque de diversiones = theme park\nparque de atracciones\nen realidad, me gustan todas\nlos sábados tengo tiempo libre\npor la tarde\n¿si tuvieses más tiempo libre, qué harías?\nsiempre viajo a otros países\nviajar a China\nFilipinas\nla naturaleza\nno sé\nyo no paso\nno paso bastante tiempo\nmuy humilde\nhttps://lingua.com/es/espanol/lectura/tiempo-libre/\n\nnosotros llamamos\nalcazar\nalcázar\nal final de la boda\nal terminar la boda\ndulces\ndátiles\ncarne de cabra\nmiel\nmi madre cocina\nGee\nGhee\nmantequilla\nes muy graso\ntailandia\nlas comidas orientales\nla comida asiática\nLíbano\nMarruecos\nel imperio\nel imperio otomano\nellos traen\nlos intestinos\nhervido\nsangre\nsangría\nsangre hervida\nno me gusta\nberenjena\nyo llamaba a mi madre\nella me enseñaba\nvivir\nbeber\nun apartamento\nun edificio\nun apartamento en este edificio\nedificios del gobierno\nyo dependía\nyo dependía de mí mismo\nmuchas cosas\nla gente piensa\nel individuo\nyo dependo de la comunidad\nmis elecciones están limitadas\nautenticidad\nen las decisiones\nuna comunidad pequeña\ndonde pueden ser auténticos\nel tamaño es diferente\nla elección está ahí\nincluso sí\nno puedo hablar de cualquier cosa\ntienes que tener cuidado\nespecialmente sobre ciertas cosas\nel gobierno\nla religión debe\ndebe ser abierta porque no lo es\nmi generación\nhace 2 años\nno tiene mucho poder\ntienen más fuerza\nyo siento\nojos\na los ojos de mi país\nque yo soy extranjero\n\nla semana pasada\nal final del trabajo siempre quedan cosas por hacer\nmi familia y yo\nviajaremos a\nuna isla\nocéano\nel océano índico\nMauricio\nnos preparamos para este viaje\nel mar está un poco lejos\nno es malo\natmósfera\ndecorado\ncon decoración japonesa\ntwitter\nel guapo\ngracioso\nla gente se ríe de los políticos\nun área\ncontigo\nAFIRMATIVO:\nME GUSTA EL CINE\nME GUSTAN LAS CANCIONES EN ESPAÑOL\nGUSTA = SING\nGUSTAN = PLURAL\nME ENCANTA / ME ENCANTAN\nME ENCANTAN LOS PERROS\nME ENCANTA LEER\nME FASCINAN LOS VIDEOJUEGOS\nME GUSTA EL COLOR ROJO\nPELI\n(PELÍCULA)\nME MOLESTAN LAS PELIS DE MIEDO\nME CHIFLA = ME ENCANTA\nES MUY FUERTE\nODIO LAS PELÍCULAS DE MIEDO\nODIO LA MÚSICA PUNK\nME GUSTA EL FÚTBOL\nME FLIPA = ME ENCANTA = ME CHIFLA\nME FLIPA VIAJAR EN METRO\nCHATEAR = TO CHAT\nME DIVIERTE\nME DIVIERTE CHATEAR\nHACER COLA = TO BE IN LINE, TO BE IN A QUEUE\nME INDIGNA HACER COLA\nJUEGO DE TRONOS = GAME OF THRONES\nES MUY CONTROVERTIDA\nODIO JUEGO DE TRONOS\nME DA RABIA = IT MAKES ME MAD\nME DAN RABIA LOS TOROS\nME CHIFLAN LAS MATEMÁTICAS\nME MOLA = ME GUSTA\nME MOLA INSTAGRAM\nME VUELVEN LOCO LOS VIAJES DE FIN DE SEMANA\nME INTERESA BAILAR ZUMBA\nME GUSTA EL CHILE\nPROFE = PROFESOR\nME ENCANTA MI PROFE DE ESPAÑOL\nME ENCANTA LA NIEVE\nME PONE NERVIOSO CANTAR EN VOZ ALTA\nMADRUGAR = LEVANTARSE MUY TEMPRANO\nME ENTUSIASMA = I FEEL ENTHUSIASTIC ABOUT\nME ENTUSIASMA MADRUGAR\nCERDO = PORK\nME INTERESAN LOS CALLOS\nME VUELVE LOCO TOMAR EL SOL\nME ENCANTAN LOS ESPAÑOLES\nME HORRORIZA LEVANTARME MÁS TARDE\nVERGÜENZA\n(SHAME)\nME AVERGÜENZA = I AM ASHAMED OF\nME AVERGÜENZA ESTAR ENFADADO\nESP: ENFADADO\nLATAM: ENOJADO\nFASTIDIAR = TO BOTHER\nME FASTIDIA = IT BOTHERS ME\nME FASTIDIAN LAS IDEOLOGÍAS\nME ENTRISTECE = ME PONE TRISTE\nME ENTRISTECE LA POBREZA\nPOVERTY SADDENS ME\nME DA IGUAL = I DON'T CARE\nME DA IGUAL EL PODER\nADORO = I ADORE\nME PONE CONTENTO = IT MAKES ME HAPPY\nME PONE DE BUEN HUMOR = IT PUTS ME IN A GOOD MOOD\nDISFRUTO = I ENJOY\nME APASIONA = I AM PASSIONATE ABOUT\nME IRRITA = ME MOLESTA (IT BOTHERS ME)\nNO SOPORTO = I CAN'T STAND\nME DISGUSTA = IT DISGUSTS ME\nESTOY HARTO DE = I AM SICK OF\nNO AGUANTO = I CAN'T STAND\nME DA MAL ROLLO = IT GIVES ME THE CREEPS\nEMOCIONES\nESPERO QUE PASES UN BUEN DÍA\nAHORA TE ENVÍO TODO = NOW I'LL SEND YOU EVERYTHIN\n\n\nlas islas mauricio\nmi jefe me dio\nactividades en el mar\nmontar en moto acuática\nbucear\nlo contrario de\nes invierno\nen el sur\n18 grados celsius\nhindú y china\nInglaterra colonizó esta isla\nprincipal\nestá\nyo estoy seguro\nuna mezcla de culturas\nquiero saber cómo viven en comunidad\nJesús\nsalud\n(health)\nestornudar\nExtremadura\ncuando era pequeño\nhe aprendido de adulto\nel próximo año\nla ley contra el aborto\nel tribunal supremo\nes de derechas\nellos se vuelven\npersonas árabes\nmejicanos\nvotan a la izquierda\nes bueno\nno es para el estado\nte gustaría\nla revista = magazine\nme gusta el flamenco\nellos son de Españ\nEspaña*\nos gusta (a vosotros=\nhip hop clásico\nhip hop de los noventa\nrecientemente\ntardo mucho tiempo en llegar al trabajo\nmi trabajo está lejos de mi casa\ncuando era más joven\ngustar / encantar / interesar\nA MÍ ME GUSTA\nA TI TE GUSTA\nA ÉL/ELLA/USTED LE GUSTA\nA NOSOTROS NOS GUSTA\nA VOSOTROS OS GUSTA\nA MÍ ME GUSTA BAILAR\nA MÍ ME ENCANTA COMER\nA MÍ ME INTERESA EL CINE\nME GUSTA\nTE GUSTA\nLE GUSTA\nNOS GUSTA\nOS GUSTA\nLES GUSTA\n¿VAIS A VENIR A LA FIESTA?\n¿TIENES ALGUNA DUDA?\n¿TE GUSTA HACER ESTE TIPO DE ACTIVIDAD?\nDe mí para todos 10:58 AM\nANTES DE VIAJAR\nla isla\ncolonizaron\nno había gente\nmucha gente vivía allí\ncomida india\ncomida fría\nternera\n(beef)\nno es más popular\ntemplos\ntemplos hinduístas\nmusulmanes\nellos son\nellos son hindúes\nchinos (personas de china)\npero son una minoría\ncriollo\nno hay nada muy grande\nla pobreza\nla gente es feliz\nlos delfines\nfuimos a bucear\npeces\nlos peces están vivos\nlos pescados están muertos\nal final del viaje\nbusy\nmessy\nno está muy ocupado\nno hay muchos turistas\ncon quién\nmi sobrino\ntodo el tiempo\nél no quería salir mucho\ncomprado\nyo he comprado\nuna bufanda\nno está mal\nyo planeo\na finales de agosto\nen el oeste\nBarcelona está muy lejos\nno planeo quedarme en barcelona\nexcepto\nsolo 2 o 3 días\nla mayor parte del tiempo\nel parque del Retiro\nmuseo del Prado\ncuatro plantas\nMuseo Reina Sofía\nun puente\nun puente entre los dos edificios\nel museo más bonito de mi viaje\nyo voy a visitar\nconsentimiento = consent\nterceras personas = los demás\nredes sociales = social media\nperfil = profile\ncontar = to count, to tell\na través de = through\nperder = to lose\nDe mí para todos 12:35 PM\nantes = before\ndespués = after\npedir permiso = to ask for permission\na favor = for\nen contra = against\nsalir en una imagen = to appear in a picture\ndifundir una imagen = to put a picture in a place where it can be seen\nintimidad = privacy\nmostrar = to show\nmostrarla = mostrar la imagen\nedad = age\nmenores de edad = minors, children\ndelito = crimen\ndiario = todos los días\ndiariamente = daily\nmalamente = badly\nsuavemente = softly\nretratar = to portrait\nportray*\ndarse cuenta de algo = to notice something\nperjudicar = to damage\nqué mas da = what does it matter, why do we care\nmedios de comunicación = the media\nusuario = user\nprevalecer = to prevail\npedir permiso a la gente\nla inteligencia artificial\nsi la imagen es comprometida\npreguntar si se puede difundir la imagen\nlos programadores\ntienen mucho cuidado\ncuando la inteligencia artifical ve\nyo estoy en contra de este punto\nahora no es eso\nyo no difundo mis imágenes\nme gusta el tema\n----------------------------------------------------\nuna fiesta religiosa\nperegrinaje\nel foco de atención\nel punto de atención\nla Meca\nla gente está muy ocupada\nme siento unido\nlargo = long\nyo dormía en una tienda de campaña\naire acondicionado\nahora no es\ninstalaciones\nservicios\nel gobierno provee\nyo compro\nproveía\njugo\nzumo\nno es complicada\ndepende de\nlujoso\nmedio\nmediano\nla gente muy rica\nhay un mínimo\nel gobierno aporta un mínimo\npara alcanzar el lugar sagrado\nrezar\ntiras una piedra\nla mezquita\nvan alrededor\nla casa negra\nla religión cree\nel profeta Abraham\nconstruyó esta casa\nuna orden de dios\nel ancestro más antiguo\nsu ancestro es Abraham\neste hijo murió\neste hijo se casó con una mujer\nuna mujer árabe\nhebreo\nlos árabes y los judíos están relacionados\nesta historia\nuna construcción de piedra\nencima\n8 horas en coche\nla gente no sale\nen todas las habitaciones\nuna ciudad histórica\ncasas de barro\nel desierto es muy tranquilo\nhay mucha calma\nmucha paz\nhacemos un fuego\ncaminamos\npor la noche\nperderse\nel GPS\nel GPS funciona allí\nun valle\ncuando llueve\nno llueve mucho\nhuraymila\nmuchas casas\nparece muy diferente\nuna ciudad muy práctica\nme gusta meditar\nestrés\nsentarse = to sit\nver las estrellas\nno hay luces de la ciudad\nyo reflexiono\ncon frecuencia\nantes de dormir\nyo medito\nno tengo que sentarme\nhago una cosa\nyo absorbo\nobservo\nun nivel superior\n¿te consideras una persona muy relajada?\nel budismo\nvivo en el presente\n¿qué piensas del futuro?\nun pensamiento\nno es ahora\nyo no lo sé\ntú no lo sabes\nla sorpresa\nla vida es algo extraño\nforeign\naburrida\nestoy vivo\nun extra\nlo mejor que te ha pasado recientemente\nen tu sueño\ncuando me levanté\nyo lo encontré\nmuy raro\nno sé cómo\nespero que disfrutes de tu viaje\n------------------------------------------------------------------------------\nSintra\nlos castillos\nmás amables\nmás amables que los portugueses\ngenuinos\nson amables de forma natural\nson más cercanos\nmi estado de humor\ntienen el mismo estado de humor que yo\nse enfadan fácilmente\nen poco tiempo\nestaban contentos porque yo intentaba hablar español\nyo me uno\nes más fácil conocer a españoles en internet\nmás difícil\nlos españoles sienten\ntienen más cuidado\ndepende\n¿qué quieres decir?\nun poco de cuidado\nlas citas\nseguro = safe\nuna persona no es mala\nveo señales de que esta persona es mala\npor interés\ntenemos intereses en común\nnos gustan las mismas cosas\nFilipinas\nella trabaja\nme cae bien = I like this person\nme gusta alguien = I like somebody (romantic)\nyo conozco este libro\nrecientemente = recently\nhemos leído = we have read\ndar la vuelta al mundo = to go around the world\nlectores = personas que leen\n(readers)\nya que = since\nhablar\nentretenido = entertaining\nsorpresa = surprise\nsorprendente = surprising\naficionarse = to get into something\nafición = hobby\ncalidad = quality\nvalor = value\ntratar = to treat\nhay puntos con los que estoy de acuerdo\nestoy de acuerdo con algunos puntos\nyo estoy de acuerdo con ambas\npor un lado\ncomida rápida\nno es bueno\nes / no es\nyo estoy de acuerdo\nhe leído\nun libro llamado\nuna chica\nuna adolescente\ntiene poderes\npoder de quemar las cosas\nesta chica está cansada\nla tratan mal\nque he leído\nentrevistas\nla ciencia ficción\nuna serie de televisión\nThe Catcher in the Rye\nhe oído hablar de este libro\nlo he puesto en mi lista\nlo pondré en mi lista\n1984\nBrave New World\napocalíptico\nel apocalipsis\nThe Unbearable Lightness of Being\nla semana próxima\n------------------------------------------------------------------------------\nlas últimas semanas de este trabajo\n¿cuál va a ser tu otro trabajo?\nordenadores\nsi vuelvo a EEUU\nlibros\nlibertades\nme siento yo mismo\ntengo que mostrar otra cara\nser un poco religioso\nla mezquita\nno es malo\ncuando era más joven\nno estoy seguro\n¿cómo te ves a ti mismo dentro de 5 años?\na lo largo del tiempo\nun desafío\nun reto\nuna cultura muy creativ a\nmucho respeto\nquiero aprender cómo piensan\nson muy serios\nmuy específico\nla gente sigue haciendo cosas divertidas\na lo mejor no tengo razón\nprobablemente no tengo razón\nintegrarse en la cultura\nsientes que eres de allí\ncuando voy allí\ntrabajan en lo mismo que yo\ntienen el mismo trabajo\nnos ponemos al día\nera difícil para ti aprender ingle´s\ninglés*\ncuando yo era más joven\nyo tenía\nmi padre iba a EEUU\nhe vivido allí 4 años\ncuando era joven\n2009\nlos noventas\nel once de septiembre\nviolentos\nlos negros\nla primera impresión\ncuando conoces a una persona\nuna entrevista de trabajo\ncuando estaba allí\nun movimiento político\nextrema derecha\nlos derechos = rights\neste movimiento ha influído\nlas personas que tienen una opinión diferente\nflexibilidad\npuedes razonar con ellos\nuna cultura abierta\nafecta a los demás países\nno es una coincidencia\nevitar = to avoid\nte sientes molesto\nlos movimientos de extrema derecha\nsienten que son una minoría\nesta idea\nnosotros somos una minoría\nson la mayoría\nesta gente no se siente cómoda\nconmigo\nno dice nada\npreguntas incómodas\nhablo menos con esta persona\nleer\nleer de más fuentes\nno es mi responsabilidad cambiar a estas personas\nnormalmente digo\ntienes razón\nno tiene sentido discutir\n------------------------------------------------------------------------------\n24 de agosto\ndespués de mi viaje\nvuelvo aquí\ncompañía de negocios\nellos dan préstamos = they give loans\nun banco\n¿qué vas a hacer?\nsiempre paso tiempo con mi familia\nvoy con mis amigos\nsalgo con mis amigos\ndocumentos = documents\ndocumentales = documentaries\nla ciencia ficción\nesta palabra\nlas series de televisión\nal mismo tiempo\nla política en EEUU\nsuperhéroes\nla gente en la vida real\nen la serie, puedes ver cómo la gente actuaría si tuviesen superpoderes\nes muy malo\nLeche Materna\npublicidad = advertising\nuna empresa de publicidad = an advertising company\nsuperhéroes\nuna compañía que lleva a los superéroes\nsuperhéroes*\npersonas famosas\nun artista de hip hop\nyo entiendo por qué\nella quiere parecer guapa\ntiene mucho talento\nno quiero hacer spoiler\nla primera temporada\nse ríen de los superhéroes de Marvel\nes muy gráfica\nla serie cubre todos los problemas en Estados Unidos\nla serie me hace\nme hace pensar mucho\nel autor\nhay 3 temporadas\nla inteligencia artificial\nlos robots\nellos son como los humanos\nun parque de atracciones\nlos robots son esclavos\nde los humanos\nlos robots se dan cuenta de esto\nellos se rebelan\nun compañero\nel robot se puede mover\nsoy programador\ncómo este robot piensa y trabaja\ncuando los programadores hacen un robot\nno saben cómo va a reaccionar\ncontrolar\nuna rutina\npara que el robot no haga daño a nadie\nvan a tener límites\nvan a tener más límites que los humanos\nnosotros no entendemos\nel cerebro\ncómo los cerebros funcionan\nno pueden ser igual que los humanos\npensamos en esto\nyo recomiendo\nSix Feet Under\nFleabag\n¿sobre qué trata esta serie?\nla actriz habla con la cámara\nmi amigo me ha hablado\nes muy vieja\nva a terapia\nme siento aburrido\nmuy lenta\ntodos dicen esto\ncuando traducen un libro\ntiene sentido\nestá bien\npalabras cotidianas\nla otra semana\nserá en España"
+                },
+                "collapsed": true
+              },
+              "ideas": {
+                "1": {
+                  "title": "por eso = por esta razón",
+                  "id": "618.f91f.a3b5048f1-0d07.b4f2d6df",
+                  "attr": {}
+                },
+                "2": {
+                  "title": "resumir = to summarise\n\n",
+                  "id": "624.f91f.a3b5048f1-0d07.b4f2d6df",
+                  "ideas": {}
+                }
+              }
+            },
+            "40": {
+              "title": "Rules",
+              "id": "714.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+              "ideas": {
+                "1": {
+                  "title": "Yo voy a estados unidos",
+                  "id": "715.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                  "ideas": {
+                    "1": {
+                      "title": "I am going to estados unidos",
+                      "id": "716.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                    },
+                    "2": {
+                      "title": "you add an a after voy",
+                      "id": "719.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "2": {
+                  "title": "me gusta, me encanta, me llama, me interesa",
+                  "id": "720.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                  "ideas": {
+                    "1": {
+                      "title": "for plural nouns",
+                      "id": "721.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                      "ideas": {
+                        "1": {
+                          "title": "me gustan",
+                          "id": "722.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "me gustan los sandwiches",
+                              "id": "724.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "also",
+                      "id": "734.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                      "ideas": {
+                        "1": {
+                          "title": "levantas",
+                          "id": "735.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                        },
+                        "2": {
+                          "title": "ducha",
+                          "id": "736.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "3": {
+                  "title": "remove the \"s\" from the verb to make it an \"order verb\"",
+                  "id": "727.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                  "ideas": {
+                    "1": {
+                      "title": "habla in espanol por favor",
+                      "id": "729.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                      "ideas": {
+                        "1": {
+                          "title": "speak in spanish please",
+                          "id": "730.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "in formal situations, you will convert this \"a\" to \"e\" and vice versa",
+                      "id": "731.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                      "ideas": {
+                        "1": {
+                          "title": "tu prueba",
+                          "id": "732.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "4": {
+                  "title": "for lava (wash)",
+                  "id": "737.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                  "ideas": {
+                    "1": {
+                      "title": "you add el, la, los or las before the body part",
+                      "id": "738.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                    },
+                    "2": {
+                      "title": "nos lavamos las manos a menudo",
+                      "id": "739.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "5": {
+                  "title": "Continuous present",
+                  "id": "748.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                  "ideas": {
+                    "1": {
+                      "title": "you add endo or iendo",
+                      "id": "749.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "6": {
+                  "title": "Around 10 years ago",
+                  "id": "754.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                  "ideas": {
+                    "1": {
+                      "title": "hace unos diez anos",
+                      "id": "755.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "7": {
+                  "title": "Era instead of Fue",
+                  "id": "767.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                  "ideas": {
+                    "1": {
+                      "title": "era mas joven",
+                      "id": "768.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                      "ideas": {
+                        "1": {
+                          "title": "when I was much younger",
+                          "id": "770.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "“Era” is the imperfect tense of the Spanish verb “ser” while “fue” is its preterite tense. 2. “Era” is used to describe how things were or how a person was while “fue” is used to narrate an event that happened in the past and how it happened.",
+                      "id": "771.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "28.5": {
+              "title": "Possesives",
+              "id": "79.45ec.9787c427a-fa9a.a0f83ce4f",
+              "ideas": {
+                "1": {
+                  "title": "My",
+                  "id": "80.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "Mi",
+                      "id": "81.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Tiene",
+                  "id": "186.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "Has",
+                      "id": "187.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "Tengo",
+                  "id": "188.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "Have",
+                      "id": "189.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "28.75": {
+              "title": "Questions",
+              "id": "91.45ec.9787c427a-fa9a.a0f83ce4f",
+              "ideas": {
+                "1": {
+                  "title": "Que",
+                  "id": "92.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "what",
+                      "id": "94.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Donde",
+                  "id": "97.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {
+                    "1": {
+                      "title": "Where",
+                      "id": "98.45ec.9787c427a-fa9a.a0f83ce4f"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "Cuando",
+                  "id": "172.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "When",
+                      "id": "173.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "4": {
+                  "title": "Como se llama",
+                  "id": "230.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "what is it called?",
+                      "id": "231.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  }
+                },
+                "3.5": {
+                  "title": "Cuanta",
+                  "id": "279.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {
+                    "1": {
+                      "title": "How much",
+                      "id": "280.234b.fea03e472-bbb3.c41037ee"
+                    },
+                    "2": {
+                      "title": "Cuanto",
+                      "id": "281.234b.fea03e472-bbb3.c41037ee"
+                    }
+                  },
+                  "attr": {
+                    "position": [
+                      104,
+                      9,
+                      1
+                    ]
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "28.875": {
+              "title": "Numbers",
+              "id": "113.45ec.9787c427a-fa9a.a0f83ce4f",
+              "ideas": {
+                "1": {
+                  "title": "Uno",
+                  "id": "114.45ec.9787c427a-fa9a.a0f83ce4f",
+                  "ideas": {}
+                },
+                "2": {
+                  "title": "Dos",
+                  "id": "116.45ec.9787c427a-fa9a.a0f83ce4f"
+                },
+                "3": {
+                  "title": "Tres",
+                  "id": "117.45ec.9787c427a-fa9a.a0f83ce4f"
+                },
+                "4": {
+                  "title": "Quatro",
+                  "id": "118.45ec.9787c427a-fa9a.a0f83ce4f"
+                },
+                "5": {
+                  "title": "Cinqo",
+                  "id": "119.45ec.9787c427a-fa9a.a0f83ce4f"
+                },
+                "6": {
+                  "title": "Sies",
+                  "id": "120.45ec.9787c427a-fa9a.a0f83ce4f"
+                },
+                "7": {
+                  "title": "Sito",
+                  "id": "232.234b.fea03e472-bbb3.c41037ee",
+                  "ideas": {}
+                },
+                "8": {
+                  "title": "Ocho",
+                  "id": "234.234b.fea03e472-bbb3.c41037ee"
+                },
+                "9": {
+                  "title": "Nueve",
+                  "id": "439.b915.fe787421a-12d5.274a2787e"
+                },
+                "10": {
+                  "title": "Diez",
+                  "id": "440.b915.fe787421a-12d5.274a2787e"
+                },
+                "11": {
+                  "title": "Once",
+                  "id": "442.b915.fe787421a-12d5.274a2787e"
+                },
+                "12": {
+                  "title": "Doce",
+                  "id": "443.b915.fe787421a-12d5.274a2787e",
+                  "ideas": {}
+                },
+                "13": {
+                  "title": "Trece",
+                  "id": "445.b915.fe787421a-12d5.274a2787e",
+                  "ideas": {
+                    "1": {
+                      "title": "13",
+                      "id": "476.b915.fe787421a-12d5.274a2787e"
+                    }
+                  }
+                },
+                "14": {
+                  "title": "Catorce",
+                  "id": "446.b915.fe787421a-12d5.274a2787e",
+                  "ideas": {}
+                },
+                "15": {
+                  "title": "Quince",
+                  "id": "448.b915.fe787421a-12d5.274a2787e",
+                  "ideas": {
+                    "1": {
+                      "title": "15",
+                      "id": "449.b915.fe787421a-12d5.274a2787e"
+                    }
+                  }
+                },
+                "16": {
+                  "title": "Dieciseis",
+                  "id": "452.b915.fe787421a-12d5.274a2787e"
+                },
+                "17": {
+                  "title": "Diecisiete",
+                  "id": "453.b915.fe787421a-12d5.274a2787e"
+                },
+                "18": {
+                  "title": "Dieciocho",
+                  "id": "454.b915.fe787421a-12d5.274a2787e"
+                },
+                "19": {
+                  "title": "Diecinueve",
+                  "id": "455.b915.fe787421a-12d5.274a2787e"
+                },
+                "20": {
+                  "title": "Veintinueve",
+                  "id": "456.b915.fe787421a-12d5.274a2787e",
+                  "ideas": {
+                    "1": {
+                      "title": "29",
+                      "id": "458.b915.fe787421a-12d5.274a2787e"
+                    }
+                  }
+                },
+                "21": {
+                  "title": "Cinquenta",
+                  "id": "497.658a.b3ab36c1b-fb69.2b1e76634",
+                  "ideas": {
+                    "1": {
+                      "title": "Fifty",
+                      "id": "498.658a.b3ab36c1b-fb69.2b1e76634"
+                    }
+                  }
+                },
+                "22": {
+                  "title": "Trienta y tres",
+                  "id": "499.658a.b3ab36c1b-fb69.2b1e76634"
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "28.890625": {
+              "title": "Vocabulary",
+              "id": "1053.29c5.30f744d99-cb1c.a7898677b",
+              "attr": {
+                "collapsed": true
+              },
+              "ideas": {
+                "1": {
+                  "title": "Basic",
+                  "id": "1052.29c5.30f744d99-cb1c.a7898677b",
+                  "attr": {
+                    "collapsed": true
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "Basic 1",
+                      "id": "905.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "Creciendo",
+                          "id": "901.29c5.30f744d99-cb1c.a7898677b",
+                          "ideas": {
+                            "1": {
+                              "title": "Growing",
+                              "id": "902.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "Atraviesa",
+                          "id": "904.29c5.30f744d99-cb1c.a7898677b",
+                          "ideas": {
+                            "1": {
+                              "title": "Traverses",
+                              "id": "903.29c5.30f744d99-cb1c.a7898677b",
+                              "attr": {}
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "Mi Reserva",
+                          "ideas": {
+                            "1": {
+                              "title": "My reservations",
+                              "id": "85.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "id": "84.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "Necisito",
+                          "id": "67.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Need",
+                              "id": "68.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "la maleta",
+                          "id": "65.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "suit case",
+                              "id": "66.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "6": {
+                          "title": "Disculpe",
+                          "id": "63.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Excuse me",
+                              "id": "64.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {
+                            "style": {
+                              "width": 51
+                            }
+                          }
+                        },
+                        "7": {
+                          "title": "Hablo",
+                          "id": "61.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Speak",
+                              "id": "62.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "8": {
+                          "title": "buenos noches",
+                          "id": "57.cbcc.476ae4d0c-ff97.6145c874a",
+                          "ideas": {
+                            "1": {
+                              "title": "good night",
+                              "id": "58.cbcc.476ae4d0c-ff97.6145c874a"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "9": {
+                          "title": "buenos dias",
+                          "id": "54.cbcc.476ae4d0c-ff97.6145c874a",
+                          "ideas": {
+                            "1": {
+                              "title": "good morning",
+                              "id": "55.cbcc.476ae4d0c-ff97.6145c874a"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "10": {
+                          "title": "adios",
+                          "id": "51.cbcc.476ae4d0c-ff97.6145c874a",
+                          "ideas": {
+                            "1": {
+                              "title": "good bye",
+                              "id": "52.cbcc.476ae4d0c-ff97.6145c874a"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "11": {
+                          "title": "come",
+                          "id": "46.cbcc.476ae4d0c-ff97.6145c874a",
+                          "ideas": {
+                            "1": {
+                              "title": "eat",
+                              "id": "47.cbcc.476ae4d0c-ff97.6145c874a"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "12": {
+                          "title": "bebe",
+                          "id": "42.cbcc.476ae4d0c-ff97.6145c874a",
+                          "ideas": {
+                            "1": {
+                              "title": "drink",
+                              "id": "43.cbcc.476ae4d0c-ff97.6145c874a",
+                              "ideas": {}
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "13": {
+                          "title": "mucho gusto",
+                          "id": "41.cbcc.476ae4d0c-ff97.6145c874a",
+                          "attr": {}
+                        },
+                        "14": {
+                          "title": "Tu Eres",
+                          "id": "39.cbcc.476ae4d0c-ff97.6145c874a",
+                          "ideas": {
+                            "1": {
+                              "title": "You are",
+                              "id": "40.cbcc.476ae4d0c-ff97.6145c874a"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "15": {
+                          "title": "una mujer",
+                          "id": "34.cbcc.476ae4d0c-ff97.6145c874a",
+                          "attr": {},
+                          "ideas": {
+                            "1": {
+                              "title": "a woman",
+                              "id": "88.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          }
+                        },
+                        "16": {
+                          "title": "una nina",
+                          "id": "33.cbcc.476ae4d0c-ff97.6145c874a",
+                          "attr": {}
+                        },
+                        "17": {
+                          "title": "el mujer",
+                          "id": "26.cbcc.476ae4d0c-ff97.6145c874a",
+                          "ideas": {
+                            "1": {
+                              "title": "woman",
+                              "id": "27.cbcc.476ae4d0c-ff97.6145c874a"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "18": {
+                          "title": "el hombre",
+                          "ideas": {
+                            "1": {
+                              "title": "man",
+                              "id": "90.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "id": "89.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "attr": {}
+                        },
+                        "19": {
+                          "title": "Boleto",
+                          "id": "101.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Ticket",
+                              "id": "102.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "20": {
+                          "title": "El Museo",
+                          "id": "105.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Mueseum",
+                              "id": "106.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "21": {
+                          "title": "Cerrado",
+                          "id": "107.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Closed",
+                              "id": "108.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "22": {
+                          "title": "Supermarcado",
+                          "id": "109.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Supermarket",
+                              "id": "110.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "23": {
+                          "title": "Calle",
+                          "id": "111.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Street",
+                              "id": "112.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "24": {
+                          "title": "El jugo",
+                          "id": "124.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "a juice",
+                              "id": "125.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "25": {
+                          "title": "el Vaso",
+                          "id": "126.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "glass",
+                              "id": "127.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "26": {
+                          "title": "la naranja",
+                          "id": "128.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "orange",
+                              "id": "129.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "27": {
+                          "title": "una Taza",
+                          "id": "130.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "a cup",
+                              "id": "131.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "28": {
+                          "title": "Sal",
+                          "id": "132.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "salt",
+                              "id": "133.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "29": {
+                          "title": "Quiero",
+                          "id": "134.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Want",
+                              "id": "135.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "30": {
+                          "title": "Cuenta",
+                          "id": "140.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Check",
+                              "id": "141.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "31": {
+                          "title": "Pagar",
+                          "id": "142.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Pay",
+                              "id": "143.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "32": {
+                          "title": "El Carro",
+                          "id": "144.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "The car",
+                              "id": "145.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "33": {
+                          "title": "Esposa",
+                          "id": "146.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Wife",
+                              "id": "147.45ec.9787c427a-fa9a.a0f83ce4f",
+                              "ideas": {}
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "34": {
+                          "title": "Esposo",
+                          "id": "150.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Husband",
+                              "id": "151.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "35": {
+                          "title": "Saber",
+                          "id": "152.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "to know",
+                              "id": "153.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "36": {
+                          "title": "Hace",
+                          "id": "155.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "to do",
+                              "id": "156.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "37": {
+                          "title": "Creer",
+                          "id": "157.45ec.9787c427a-fa9a.a0f83ce4f",
+                          "ideas": {
+                            "1": {
+                              "title": "Believe",
+                              "id": "158.45ec.9787c427a-fa9a.a0f83ce4f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "38": {
+                          "title": "No Lo Se",
+                          "id": "174.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "I don't know",
+                              "id": "175.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "39": {
+                          "title": "Por Ahi",
+                          "id": "176.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Over there",
+                              "id": "177.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "40": {
+                          "title": "Mirame",
+                          "id": "178.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "look at me",
+                              "id": "179.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "41": {
+                          "title": "Mira ",
+                          "id": "180.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "look",
+                              "id": "181.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "42": {
+                          "title": "Cabrones",
+                          "id": "182.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Bastards",
+                              "id": "183.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "43": {
+                          "title": "Hasta",
+                          "id": "184.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Until",
+                              "id": "185.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "2": {
+                      "title": "Basic 2",
+                      "id": "908.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "Hijo",
+                          "id": "190.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "son",
+                              "id": "191.234b.fea03e472-bbb3.c41037ee"
+                            },
+                            "2": {
+                              "title": "Hija",
+                              "id": "192.234b.fea03e472-bbb3.c41037ee",
+                              "ideas": {
+                                "1": {
+                                  "title": "Daughter",
+                                  "id": "193.234b.fea03e472-bbb3.c41037ee"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "Esperar",
+                          "id": "196.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Wait",
+                              "id": "197.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "Pude",
+                          "id": "203.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Can",
+                              "id": "204.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "Seguro",
+                          "id": "210.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Sure",
+                              "id": "211.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "Venga",
+                          "id": "214.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Come",
+                              "id": "215.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "6": {
+                          "title": "mismo",
+                          "id": "220.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "same",
+                              "id": "221.234b.fea03e472-bbb3.c41037ee"
+                            },
+                            "2": {
+                              "title": "self",
+                              "id": "610.f91f.a3b5048f1-0d07.b4f2d6df"
+                            },
+                            "3": {
+                              "title": "mi mismo",
+                              "id": "611.f91f.a3b5048f1-0d07.b4f2d6df",
+                              "ideas": {
+                                "1": {
+                                  "title": "myself",
+                                  "id": "612.f91f.a3b5048f1-0d07.b4f2d6df"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "7": {
+                          "title": "Vale",
+                          "id": "222.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Ok",
+                              "id": "223.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "8": {
+                          "title": "Dicho",
+                          "ideas": {
+                            "1": {
+                              "title": "Saying",
+                              "id": "910.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "909.29c5.30f744d99-cb1c.a7898677b",
+                          "attr": {}
+                        },
+                        "9": {
+                          "title": "Tarde",
+                          "ideas": {
+                            "1": {
+                              "title": "Late",
+                              "id": "912.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "911.29c5.30f744d99-cb1c.a7898677b",
+                          "attr": {}
+                        },
+                        "10": {
+                          "title": "Dicho",
+                          "ideas": {
+                            "1": {
+                              "title": "Saying",
+                              "id": "914.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "913.29c5.30f744d99-cb1c.a7898677b",
+                          "attr": {}
+                        },
+                        "11": {
+                          "title": "Siempre",
+                          "ideas": {
+                            "1": {
+                              "title": "Forever",
+                              "id": "916.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "915.29c5.30f744d99-cb1c.a7898677b",
+                          "attr": {}
+                        },
+                        "12": {
+                          "title": "Sigo",
+                          "ideas": {
+                            "1": {
+                              "title": "I follow",
+                              "id": "918.29c5.30f744d99-cb1c.a7898677b"
+                            },
+                            "2": {
+                              "title": "sigamos",
+                              "ideas": {
+                                "1": {
+                                  "title": "\"let's keep going\"",
+                                  "id": "920.29c5.30f744d99-cb1c.a7898677b"
+                                }
+                              },
+                              "id": "919.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "917.29c5.30f744d99-cb1c.a7898677b",
+                          "attr": {}
+                        },
+                        "13": {
+                          "title": "Hoy",
+                          "ideas": {
+                            "1": {
+                              "title": "Today",
+                              "ideas": {},
+                              "id": "922.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "921.29c5.30f744d99-cb1c.a7898677b",
+                          "attr": {}
+                        },
+                        "14": {
+                          "title": "Buscar",
+                          "ideas": {
+                            "1": {
+                              "title": "Search for",
+                              "id": "924.29c5.30f744d99-cb1c.a7898677b"
+                            },
+                            "2": {
+                              "title": "Past ",
+                              "ideas": {
+                                "1": {
+                                  "title": "Buscado",
+                                  "id": "926.29c5.30f744d99-cb1c.a7898677b"
+                                }
+                              },
+                              "id": "925.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "923.29c5.30f744d99-cb1c.a7898677b",
+                          "attr": {}
+                        },
+                        "15": {
+                          "title": "Algo",
+                          "ideas": {
+                            "1": {
+                              "title": "Something",
+                              "id": "928.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "927.29c5.30f744d99-cb1c.a7898677b",
+                          "attr": {}
+                        },
+                        "16": {
+                          "title": "niveles",
+                          "ideas": {
+                            "1": {
+                              "title": "Levels",
+                              "id": "930.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "929.29c5.30f744d99-cb1c.a7898677b",
+                          "attr": {}
+                        },
+                        "17": {
+                          "title": "Mes",
+                          "ideas": {
+                            "1": {
+                              "title": "Month",
+                              "id": "932.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "931.29c5.30f744d99-cb1c.a7898677b",
+                          "attr": {}
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "3": {
+                      "title": "Basic 3",
+                      "attr": {
+                        "collapsed": true
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "Nunca",
+                          "ideas": {
+                            "1": {
+                              "title": "Never",
+                              "id": "1023.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1022.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "2": {
+                          "title": "Razon",
+                          "ideas": {
+                            "1": {
+                              "title": "reason",
+                              "id": "1025.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1024.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "3": {
+                          "title": "Pensaba",
+                          "ideas": {
+                            "1": {
+                              "title": "thought",
+                              "id": "1027.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1026.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "4": {
+                          "title": "Bajar",
+                          "ideas": {
+                            "1": {
+                              "title": "Go Down (Verb)",
+                              "ideas": {},
+                              "id": "1029.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1028.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "5": {
+                          "title": "Arriba",
+                          "ideas": {
+                            "1": {
+                              "title": "Up",
+                              "id": "1031.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1030.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "6": {
+                          "title": "sobrevivir",
+                          "ideas": {
+                            "1": {
+                              "title": "Survive",
+                              "id": "1033.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1032.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "7": {
+                          "title": "Juntos",
+                          "ideas": {
+                            "1": {
+                              "title": "Together",
+                              "id": "1035.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1034.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "8": {
+                          "title": "Esquina",
+                          "ideas": {
+                            "1": {
+                              "title": "Corner",
+                              "id": "1037.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1036.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "9": {
+                          "title": "Joder",
+                          "ideas": {
+                            "1": {
+                              "title": "Fuck",
+                              "id": "1039.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1038.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "10": {
+                          "title": "Vencer",
+                          "ideas": {
+                            "1": {
+                              "title": "Overcome",
+                              "id": "1041.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1040.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "11": {
+                          "title": "Entonces",
+                          "ideas": {
+                            "1": {
+                              "title": "Then",
+                              "id": "1043.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1042.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "12": {
+                          "title": "Mensaje",
+                          "ideas": {
+                            "1": {
+                              "title": "Message",
+                              "id": "1045.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1044.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "13": {
+                          "title": "Palabra",
+                          "ideas": {
+                            "1": {
+                              "title": "Word",
+                              "id": "1047.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1046.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "14": {
+                          "title": "Viaje",
+                          "ideas": {
+                            "1": {
+                              "title": "Travel",
+                              "id": "1049.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1048.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "15": {
+                          "title": "Esperame",
+                          "ideas": {
+                            "1": {
+                              "title": "Wait for me",
+                              "id": "1051.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1050.29c5.30f744d99-cb1c.a7898677b"
+                        }
+                      },
+                      "id": "1021.29c5.30f744d99-cb1c.a7898677b"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Complex",
+                  "id": "906.29c5.30f744d99-cb1c.a7898677b",
+                  "ideas": {
+                    "10": {
+                      "title": "Complex 1",
+                      "id": "1016.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "Malamadre ",
+                          "id": "194.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Bad mother",
+                              "id": "195.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "Cojones",
+                          "id": "208.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Balls",
+                              "id": "209.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "llevar",
+                          "id": "218.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "bring",
+                              "id": "219.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "Aguantado",
+                          "id": "242.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "endured",
+                              "id": "243.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "Tomen",
+                          "id": "244.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Take",
+                              "id": "245.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "6": {
+                          "title": "Jefe",
+                          "id": "248.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Chief/boss?",
+                              "id": "249.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "7": {
+                          "title": "Boludo",
+                          "id": "252.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Asshole",
+                              "id": "253.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "8": {
+                          "title": "Casato",
+                          "id": "262.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Surname",
+                              "id": "263.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "9": {
+                          "title": "Pibitas",
+                          "id": "273.234b.fea03e472-bbb3.c41037ee",
+                          "ideas": {
+                            "1": {
+                              "title": "Girls",
+                              "id": "274.234b.fea03e472-bbb3.c41037ee"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "10": {
+                          "title": "Llegado",
+                          "id": "312.0545.ea6d47067-c279.fb23fb8a6",
+                          "ideas": {
+                            "1": {
+                              "title": "Arrived",
+                              "id": "313.0545.ea6d47067-c279.fb23fb8a6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "11": {
+                          "title": "Hagalo",
+                          "id": "320.0545.ea6d47067-c279.fb23fb8a6",
+                          "ideas": {
+                            "1": {
+                              "title": "Do it",
+                              "id": "321.0545.ea6d47067-c279.fb23fb8a6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "12": {
+                          "title": "Carcel",
+                          "id": "330.0545.ea6d47067-c279.fb23fb8a6",
+                          "ideas": {
+                            "1": {
+                              "title": "Jail",
+                              "id": "331.0545.ea6d47067-c279.fb23fb8a6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "13": {
+                          "title": "Te Mato",
+                          "id": "336.0545.ea6d47067-c279.fb23fb8a6",
+                          "ideas": {
+                            "1": {
+                              "title": "I will kill you",
+                              "id": "337.0545.ea6d47067-c279.fb23fb8a6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "14": {
+                          "title": "Aguanta",
+                          "id": "344.0545.ea6d47067-c279.fb23fb8a6",
+                          "ideas": {
+                            "1": {
+                              "title": "Hold",
+                              "id": "345.0545.ea6d47067-c279.fb23fb8a6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "15": {
+                          "title": "Baja",
+                          "id": "350.7a46.0d4da43e5-51b4.a83c0df49",
+                          "ideas": {
+                            "1": {
+                              "title": "short",
+                              "id": "351.7a46.0d4da43e5-51b4.a83c0df49",
+                              "ideas": {}
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "16": {
+                          "title": "Corre",
+                          "id": "353.7a46.0d4da43e5-51b4.a83c0df49",
+                          "ideas": {
+                            "1": {
+                              "title": "Run",
+                              "id": "354.7a46.0d4da43e5-51b4.a83c0df49"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "17": {
+                          "title": "Sonrier",
+                          "id": "357.7a46.0d4da43e5-51b4.a83c0df49",
+                          "ideas": {
+                            "1": {
+                              "title": "smile",
+                              "id": "615.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "18": {
+                          "title": "Lindo",
+                          "ideas": {
+                            "1": {
+                              "title": "Cute",
+                              "id": "1018.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1017.29c5.30f744d99-cb1c.a7898677b",
+                          "attr": {}
+                        },
+                        "19": {
+                          "title": "Andale",
+                          "ideas": {
+                            "1": {
+                              "title": "Come on",
+                              "id": "1020.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1019.29c5.30f744d99-cb1c.a7898677b",
+                          "attr": {}
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "20": {
+                      "title": "Complex 2",
+                      "id": "978.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "Nadar",
+                          "id": "368.7a46.0d4da43e5-51b4.a83c0df49",
+                          "ideas": {
+                            "1": {
+                              "title": "Swim",
+                              "id": "369.7a46.0d4da43e5-51b4.a83c0df49"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "Fe ",
+                          "id": "370.7a46.0d4da43e5-51b4.a83c0df49",
+                          "ideas": {
+                            "1": {
+                              "title": "Faith",
+                              "id": "371.7a46.0d4da43e5-51b4.a83c0df49"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "Ventana",
+                          "id": "373.7a46.0d4da43e5-51b4.a83c0df49",
+                          "ideas": {
+                            "1": {
+                              "title": "Window",
+                              "id": "374.7a46.0d4da43e5-51b4.a83c0df49"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "Voz",
+                          "id": "375.7a46.0d4da43e5-51b4.a83c0df49",
+                          "ideas": {
+                            "1": {
+                              "title": "Voice",
+                              "id": "376.7a46.0d4da43e5-51b4.a83c0df49"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "Pieza",
+                          "id": "377.7a46.0d4da43e5-51b4.a83c0df49",
+                          "ideas": {
+                            "1": {
+                              "title": "Part",
+                              "id": "378.7a46.0d4da43e5-51b4.a83c0df49"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "6": {
+                          "title": "Hostia",
+                          "id": "379.7a46.0d4da43e5-51b4.a83c0df49",
+                          "ideas": {
+                            "1": {
+                              "title": "Host",
+                              "id": "380.7a46.0d4da43e5-51b4.a83c0df49"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "7": {
+                          "title": "Guerra",
+                          "id": "387.d711.e820a3cbb-4130.e0400982f",
+                          "ideas": {
+                            "1": {
+                              "title": "War",
+                              "id": "388.d711.e820a3cbb-4130.e0400982f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "8": {
+                          "title": "Dispuesto",
+                          "id": "389.d711.e820a3cbb-4130.e0400982f",
+                          "ideas": {
+                            "1": {
+                              "title": "Ready",
+                              "id": "390.d711.e820a3cbb-4130.e0400982f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "9": {
+                          "title": "Listo",
+                          "id": "407.d711.e820a3cbb-4130.e0400982f",
+                          "ideas": {
+                            "1": {
+                              "title": "Ready",
+                              "id": "408.d711.e820a3cbb-4130.e0400982f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "10": {
+                          "title": "Papel",
+                          "id": "391.d711.e820a3cbb-4130.e0400982f",
+                          "ideas": {
+                            "1": {
+                              "title": "Paper",
+                              "id": "392.d711.e820a3cbb-4130.e0400982f"
+                            }
+                          },
+                          "attr": {}
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "21": {
+                      "title": "Complex 3",
+                      "id": "979.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "Lado",
+                          "id": "397.d711.e820a3cbb-4130.e0400982f",
+                          "ideas": {
+                            "1": {
+                              "title": "Side",
+                              "id": "398.d711.e820a3cbb-4130.e0400982f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "vuelvete",
+                          "id": "401.d711.e820a3cbb-4130.e0400982f",
+                          "ideas": {
+                            "1": {
+                              "title": "Come back",
+                              "id": "402.d711.e820a3cbb-4130.e0400982f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "Equipo",
+                          "id": "405.d711.e820a3cbb-4130.e0400982f",
+                          "ideas": {
+                            "1": {
+                              "title": "Equipment",
+                              "id": "406.d711.e820a3cbb-4130.e0400982f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "quejaron",
+                          "id": "418.d711.e820a3cbb-4130.e0400982f",
+                          "ideas": {
+                            "1": {
+                              "title": "Complained",
+                              "id": "419.d711.e820a3cbb-4130.e0400982f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "Chingue",
+                          "id": "422.d711.e820a3cbb-4130.e0400982f",
+                          "ideas": {
+                            "1": {
+                              "title": "Shit",
+                              "id": "423.d711.e820a3cbb-4130.e0400982f"
+                            },
+                            "2": {
+                              "title": "Mierda",
+                              "id": "980.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "6": {
+                          "title": "Falta",
+                          "id": "424.d711.e820a3cbb-4130.e0400982f",
+                          "ideas": {
+                            "1": {
+                              "title": "lack",
+                              "id": "425.d711.e820a3cbb-4130.e0400982f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "7": {
+                          "title": "Siento",
+                          "id": "426.d711.e820a3cbb-4130.e0400982f",
+                          "ideas": {
+                            "1": {
+                              "title": "Feel",
+                              "id": "427.d711.e820a3cbb-4130.e0400982f"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "8": {
+                          "title": "Abajo",
+                          "id": "430.2798.229b6f36e-9a29.e83a30bfd",
+                          "ideas": {
+                            "1": {
+                              "title": "Down",
+                              "id": "431.2798.229b6f36e-9a29.e83a30bfd"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "9": {
+                          "title": "Empezar",
+                          "id": "435.b915.fe787421a-12d5.274a2787e",
+                          "ideas": {
+                            "1": {
+                              "title": "Begin",
+                              "id": "436.b915.fe787421a-12d5.274a2787e"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "10": {
+                          "title": "Nombre",
+                          "id": "459.b915.fe787421a-12d5.274a2787e",
+                          "ideas": {
+                            "1": {
+                              "title": "Name",
+                              "id": "482.658a.b3ab36c1b-fb69.2b1e76634"
+                            }
+                          },
+                          "attr": {}
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "22": {
+                      "title": "Complex 4",
+                      "id": "981.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "Lectores",
+                          "id": "479.658a.b3ab36c1b-fb69.2b1e76634",
+                          "ideas": {
+                            "1": {
+                              "title": "Readers",
+                              "id": "480.658a.b3ab36c1b-fb69.2b1e76634"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "Conocer",
+                          "id": "483.658a.b3ab36c1b-fb69.2b1e76634",
+                          "ideas": {
+                            "1": {
+                              "title": "Know",
+                              "id": "484.658a.b3ab36c1b-fb69.2b1e76634"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "Escasa ",
+                          "id": "486.658a.b3ab36c1b-fb69.2b1e76634",
+                          "ideas": {
+                            "1": {
+                              "title": "Scarce ",
+                              "id": "487.658a.b3ab36c1b-fb69.2b1e76634"
+                            },
+                            "2": {
+                              "title": "Rare",
+                              "id": "488.658a.b3ab36c1b-fb69.2b1e76634"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "Demas",
+                          "id": "491.658a.b3ab36c1b-fb69.2b1e76634",
+                          "ideas": {
+                            "1": {
+                              "title": "Others",
+                              "id": "492.658a.b3ab36c1b-fb69.2b1e76634"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "Alimento",
+                          "id": "493.658a.b3ab36c1b-fb69.2b1e76634",
+                          "ideas": {
+                            "1": {
+                              "title": "Food",
+                              "id": "494.658a.b3ab36c1b-fb69.2b1e76634"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "6": {
+                          "title": "Durante",
+                          "id": "495.658a.b3ab36c1b-fb69.2b1e76634",
+                          "ideas": {
+                            "1": {
+                              "title": "During",
+                              "id": "496.658a.b3ab36c1b-fb69.2b1e76634"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "7": {
+                          "title": "Poner",
+                          "id": "519.6300.21cd4d90b-bb4f.935b8de0b",
+                          "ideas": {
+                            "1": {
+                              "title": "Put",
+                              "id": "520.6300.21cd4d90b-bb4f.935b8de0b"
+                            },
+                            "2": {
+                              "title": "yo pongo",
+                              "id": "725.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                              "attr": {},
+                              "ideas": {
+                                "1": {
+                                  "title": "tu pones",
+                                  "id": "726.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "8": {
+                          "title": "Recuerdo",
+                          "id": "521.6300.21cd4d90b-bb4f.935b8de0b",
+                          "ideas": {
+                            "1": {
+                              "title": "Remember",
+                              "id": "522.6300.21cd4d90b-bb4f.935b8de0b"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "9": {
+                          "title": "Granja",
+                          "id": "524.6300.21cd4d90b-bb4f.935b8de0b",
+                          "ideas": {
+                            "1": {
+                              "title": "Farm",
+                              "id": "525.6300.21cd4d90b-bb4f.935b8de0b"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "10": {
+                          "title": "Debe",
+                          "id": "526.6300.21cd4d90b-bb4f.935b8de0b",
+                          "ideas": {
+                            "1": {
+                              "title": "Must",
+                              "id": "527.6300.21cd4d90b-bb4f.935b8de0b"
+                            }
+                          },
+                          "attr": {}
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "23": {
+                      "title": "Complex 5",
+                      "id": "982.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "Cierto",
+                          "id": "528.6300.21cd4d90b-bb4f.935b8de0b",
+                          "ideas": {
+                            "1": {
+                              "title": "Correct",
+                              "id": "529.6300.21cd4d90b-bb4f.935b8de0b"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "Boda",
+                          "id": "530.6300.21cd4d90b-bb4f.935b8de0b",
+                          "ideas": {
+                            "1": {
+                              "title": "Wedding",
+                              "id": "531.6300.21cd4d90b-bb4f.935b8de0b"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "Quizo",
+                          "id": "532.6300.21cd4d90b-bb4f.935b8de0b",
+                          "ideas": {
+                            "1": {
+                              "title": "Perhaps",
+                              "id": "533.6300.21cd4d90b-bb4f.935b8de0b"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "Reinos",
+                          "id": "534.6300.21cd4d90b-bb4f.935b8de0b",
+                          "ideas": {
+                            "1": {
+                              "title": "Kingdoms",
+                              "id": "535.6300.21cd4d90b-bb4f.935b8de0b"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "Enojada",
+                          "id": "539.6300.21cd4d90b-bb4f.935b8de0b",
+                          "ideas": {
+                            "1": {
+                              "title": "Angry",
+                              "id": "540.6300.21cd4d90b-bb4f.935b8de0b"
+                            },
+                            "2": {
+                              "title": "Enfadado",
+                              "id": "774.83b0.61426721f-b6b9.7d8bd1b8c"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "6": {
+                          "title": "Rey",
+                          "id": "541.6300.21cd4d90b-bb4f.935b8de0b",
+                          "ideas": {
+                            "1": {
+                              "title": "King",
+                              "id": "542.6300.21cd4d90b-bb4f.935b8de0b"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "7": {
+                          "title": "divertido",
+                          "id": "543.6300.21cd4d90b-bb4f.935b8de0b",
+                          "ideas": {
+                            "1": {
+                              "title": "funny",
+                              "id": "544.6300.21cd4d90b-bb4f.935b8de0b"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "8": {
+                          "title": "en Cada",
+                          "id": "549.1c18.c2d9a782d-3a7e.e927c85fa",
+                          "ideas": {
+                            "1": {
+                              "title": "in each",
+                              "id": "550.1c18.c2d9a782d-3a7e.e927c85fa"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "9": {
+                          "title": "Como",
+                          "id": "551.1c18.c2d9a782d-3a7e.e927c85fa",
+                          "ideas": {
+                            "1": {
+                              "title": "as/like",
+                              "id": "552.1c18.c2d9a782d-3a7e.e927c85fa"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "10": {
+                          "title": "Siquente",
+                          "id": "553.1c18.c2d9a782d-3a7e.e927c85fa",
+                          "ideas": {
+                            "1": {
+                              "title": "Next",
+                              "id": "554.1c18.c2d9a782d-3a7e.e927c85fa"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "11": {
+                          "title": "Paremos",
+                          "id": "563.1c18.c2d9a782d-3a7e.e927c85fa",
+                          "ideas": {
+                            "1": {
+                              "title": "we stop",
+                              "id": "564.1c18.c2d9a782d-3a7e.e927c85fa"
+                            }
+                          },
+                          "attr": {}
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "24": {
+                      "title": "Complex 6",
+                      "id": "983.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "Traducir",
+                          "id": "565.1c18.c2d9a782d-3a7e.e927c85fa",
+                          "ideas": {
+                            "2": {
+                              "title": "Translate",
+                              "id": "577.4202.e1ae790fe-27dd.e34fdeca3"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "Subtitulos",
+                          "id": "567.1c18.c2d9a782d-3a7e.e927c85fa",
+                          "ideas": {
+                            "1": {
+                              "title": "subtitles",
+                              "id": "568.1c18.c2d9a782d-3a7e.e927c85fa"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "Vuelvo",
+                          "id": "571.4202.e1ae790fe-27dd.e34fdeca3",
+                          "ideas": {
+                            "1": {
+                              "title": "go back",
+                              "id": "572.4202.e1ae790fe-27dd.e34fdeca3"
+                            },
+                            "2": {
+                              "title": "Past",
+                              "id": "573.4202.e1ae790fe-27dd.e34fdeca3",
+                              "ideas": {
+                                "1": {
+                                  "title": "Volvi",
+                                  "id": "574.4202.e1ae790fe-27dd.e34fdeca3"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "Sangre",
+                          "id": "575.4202.e1ae790fe-27dd.e34fdeca3",
+                          "ideas": {
+                            "1": {
+                              "title": "Blood",
+                              "id": "576.4202.e1ae790fe-27dd.e34fdeca3"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "Elegir",
+                          "id": "578.c0cb.e48e7befc-4955.a52f9caa1",
+                          "ideas": {
+                            "1": {
+                              "title": "Choose",
+                              "id": "579.c0cb.e48e7befc-4955.a52f9caa1"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "6": {
+                          "title": "\n\nEjercicio",
+                          "id": "580.c0cb.e48e7befc-4955.a52f9caa1",
+                          "ideas": {
+                            "1": {
+                              "title": "Excercise",
+                              "id": "581.c0cb.e48e7befc-4955.a52f9caa1"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "7": {
+                          "title": "suerte",
+                          "id": "586.e4d9.2ed4c5189-5f2e.654a81a69",
+                          "ideas": {
+                            "1": {
+                              "title": "Luck",
+                              "id": "587.e4d9.2ed4c5189-5f2e.654a81a69"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "8": {
+                          "title": "Alegria",
+                          "id": "588.e4d9.2ed4c5189-5f2e.654a81a69",
+                          "ideas": {
+                            "1": {
+                              "title": "Happiness",
+                              "id": "589.e4d9.2ed4c5189-5f2e.654a81a69"
+                            }
+                          }
+                        },
+                        "9": {
+                          "title": "Mientra",
+                          "id": "591.e4d9.2ed4c5189-5f2e.654a81a69",
+                          "ideas": {
+                            "1": {
+                              "title": "While",
+                              "id": "592.e4d9.2ed4c5189-5f2e.654a81a69"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "10": {
+                          "title": "Practico",
+                          "id": "593.f106.5f4934205-8d9c.4c682cdb3",
+                          "ideas": {
+                            "1": {
+                              "title": "Past",
+                              "id": "594.f106.5f4934205-8d9c.4c682cdb3",
+                              "ideas": {
+                                "1": {
+                                  "title": "Practique",
+                                  "id": "595.f106.5f4934205-8d9c.4c682cdb3"
+                                }
+                              }
+                            },
+                            "2": {
+                              "title": "Practical",
+                              "id": "984.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "attr": {}
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "25": {
+                      "title": "Complex 7",
+                      "id": "985.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "Olvido",
+                          "id": "608.628c.35ea1246c-5da3.68a1df72",
+                          "ideas": {
+                            "1": {
+                              "title": "forgot",
+                              "id": "609.628c.35ea1246c-5da3.68a1df72"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "Dija",
+                          "id": "619.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "Dejo",
+                              "id": "620.f91f.a3b5048f1-0d07.b4f2d6df",
+                              "ideas": {
+                                "1": {
+                                  "title": "leave",
+                                  "id": "621.f91f.a3b5048f1-0d07.b4f2d6df"
+                                }
+                              }
+                            },
+                            "3": {
+                              "title": "Dijo",
+                              "id": "623.f91f.a3b5048f1-0d07.b4f2d6df",
+                              "ideas": {
+                                "1": {
+                                  "title": "speak",
+                                  "id": "622.f91f.a3b5048f1-0d07.b4f2d6df",
+                                  "attr": {}
+                                }
+                              }
+                            },
+                            "4": {
+                              "title": "decía",
+                              "id": "638.f91f.a3b5048f1-0d07.b4f2d6df",
+                              "ideas": {
+                                "1": {
+                                  "title": "he said",
+                                  "id": "639.f91f.a3b5048f1-0d07.b4f2d6df"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "Suelo",
+                          "id": "626.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "Usually",
+                              "id": "627.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "reirse",
+                          "id": "628.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "make fun of",
+                              "id": "629.f91f.a3b5048f1-0d07.b4f2d6df",
+                              "ideas": {}
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "Propio ",
+                          "id": "630.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "Own",
+                              "id": "633.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "6": {
+                          "title": "la actualidad",
+                          "id": "634.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "the present moment",
+                              "id": "635.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "7": {
+                          "title": "\n\nyo estaba revisando",
+                          "id": "636.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "I was checking",
+                              "id": "775.83b0.61426721f-b6b9.7d8bd1b8c"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "8": {
+                          "title": "la calidad de vida\n\n",
+                          "id": "640.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "the quality of life",
+                              "id": "641.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "9": {
+                          "title": "parque de diversiones \nparque de atracciones",
+                          "id": "642.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "theme park",
+                              "id": "644.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "10": {
+                          "title": "la deuda de estudiante",
+                          "id": "645.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "attr": {}
+                        },
+                        "11": {
+                          "title": "muy humilde",
+                          "id": "646.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "very humble",
+                              "id": "647.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "12": {
+                          "title": "Berenjena",
+                          "id": "648.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "attr": {},
+                          "ideas": {
+                            "1": {
+                              "title": "Eggplant",
+                              "id": "986.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "26": {
+                      "title": "Complex 8",
+                      "id": "987.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "Ensenaba",
+                          "id": "649.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "incluso sí\n\n",
+                          "id": "651.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "even if",
+                              "id": "652.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "Cualquier",
+                          "id": "653.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "any",
+                              "id": "654.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "Cuidado",
+                          "id": "655.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "watch out",
+                              "id": "656.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "Gracioso",
+                          "id": "658.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "funny",
+                              "id": "897.7d08.612b0969d-7ea5.46f03d107"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "6": {
+                          "title": "Chatear",
+                          "id": "659.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "to chat",
+                              "id": "660.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "7": {
+                          "title": "hacer cola",
+                          "id": "661.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "be in line",
+                              "id": "662.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "8": {
+                          "title": "Controvertida",
+                          "id": "663.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "controversial",
+                              "id": "664.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "9": {
+                          "title": "vuelven loco",
+                          "id": "665.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "go crazy",
+                              "id": "666.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "10": {
+                          "title": "Odio",
+                          "id": "668.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "hate",
+                              "id": "669.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "11": {
+                          "title": "Madrugar",
+                          "id": "670.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "Levantarse muy temprano",
+                              "id": "671.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "12": {
+                          "title": "Verguenza",
+                          "id": "672.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "shame",
+                              "id": "673.f91f.a3b5048f1-0d07.b4f2d6df"
+                            },
+                            "2": {
+                              "title": "me averguenaza",
+                              "id": "674.f91f.a3b5048f1-0d07.b4f2d6df",
+                              "ideas": {
+                                "1": {
+                                  "title": "I feel shame",
+                                  "id": "675.f91f.a3b5048f1-0d07.b4f2d6df"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {}
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "27": {
+                      "title": "Complex 9",
+                      "id": "988.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "Enfadado",
+                          "id": "676.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "in Spain",
+                              "id": "677.f91f.a3b5048f1-0d07.b4f2d6df"
+                            },
+                            "2": {
+                              "title": "Enojado",
+                              "id": "678.f91f.a3b5048f1-0d07.b4f2d6df",
+                              "ideas": {
+                                "1": {
+                                  "title": "Latam",
+                                  "id": "679.f91f.a3b5048f1-0d07.b4f2d6df"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "Poberza",
+                          "id": "680.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "Poverty",
+                              "id": "681.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "Volvio a intentarlo",
+                          "id": "682.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "tried again",
+                              "id": "683.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "Confienza",
+                          "id": "684.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "trust",
+                              "id": "685.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "carceleros",
+                          "id": "686.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "jail",
+                              "id": "687.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          }
+                        },
+                        "6": {
+                          "title": "pentajas",
+                          "id": "693.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "advantages",
+                              "id": "694.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "7": {
+                          "title": "rompa",
+                          "id": "695.f91f.a3b5048f1-0d07.b4f2d6df",
+                          "ideas": {
+                            "1": {
+                              "title": "break",
+                              "id": "696.f91f.a3b5048f1-0d07.b4f2d6df"
+                            }
+                          }
+                        },
+                        "8": {
+                          "title": "Despues",
+                          "id": "699.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "After",
+                              "id": "700.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "9": {
+                          "title": "Lucha",
+                          "id": "701.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "Fight",
+                              "id": "702.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "10": {
+                          "title": "tan",
+                          "id": "705.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "as",
+                              "id": "706.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            }
+                          },
+                          "attr": {
+                            "style": {
+                              "width": 21
+                            }
+                          }
+                        },
+                        "11": {
+                          "title": "Vuelvete",
+                          "id": "707.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "come back",
+                              "id": "708.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            },
+                            "2": {
+                              "title": "or become",
+                              "id": "709.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            },
+                            "3": {
+                              "title": "Vuelvo",
+                              "id": "871.d16c.99c057673-8fe7.fbd3259c8",
+                              "ideas": {
+                                "1": {
+                                  "title": "I come back",
+                                  "id": "872.d16c.99c057673-8fe7.fbd3259c8"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "12": {
+                          "title": "Peor",
+                          "id": "712.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "worst",
+                              "id": "713.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            }
+                          },
+                          "attr": {}
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "28": {
+                      "title": "Complex 10",
+                      "id": "989.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "Semana",
+                          "id": "717.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "week",
+                              "id": "718.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "Giro",
+                          "id": "750.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "turn",
+                              "id": "751.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "Gana",
+                          "id": "752.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "win",
+                              "id": "753.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            },
+                            "2": {
+                              "title": "earn",
+                              "id": "898.7d08.612b0969d-7ea5.46f03d107"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "Tuve",
+                          "id": "756.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "had",
+                              "id": "757.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "Estuve",
+                          "id": "758.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "was",
+                              "id": "759.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "6": {
+                          "title": "Casi",
+                          "id": "761.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "Around",
+                              "id": "762.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "7": {
+                          "title": "Imagen",
+                          "id": "763.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "image",
+                              "id": "764.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "8": {
+                          "title": "\n\ngobierno",
+                          "id": "765.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "government",
+                              "id": "766.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "9": {
+                          "title": "Ingreso",
+                          "id": "772.9c2c.fe45fc2c2-58f5.deb6dc0f6",
+                          "ideas": {
+                            "1": {
+                              "title": "enter",
+                              "id": "773.9c2c.fe45fc2c2-58f5.deb6dc0f6"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "10": {
+                          "title": "Rotos",
+                          "id": "776.83b0.61426721f-b6b9.7d8bd1b8c",
+                          "ideas": {
+                            "1": {
+                              "title": "broken",
+                              "id": "777.83b0.61426721f-b6b9.7d8bd1b8c"
+                            }
+                          },
+                          "attr": {}
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "29": {
+                      "title": "Complex 11",
+                      "id": "990.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "Lentos",
+                          "id": "778.83b0.61426721f-b6b9.7d8bd1b8c",
+                          "ideas": {
+                            "1": {
+                              "title": "Slow",
+                              "id": "779.83b0.61426721f-b6b9.7d8bd1b8c"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "Proveedor",
+                          "id": "780.83b0.61426721f-b6b9.7d8bd1b8c",
+                          "ideas": {
+                            "1": {
+                              "title": "Supplier",
+                              "id": "781.83b0.61426721f-b6b9.7d8bd1b8c"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "maravillosa",
+                          "id": "782.83b0.61426721f-b6b9.7d8bd1b8c",
+                          "ideas": {
+                            "1": {
+                              "title": "Marvelous",
+                              "id": "783.83b0.61426721f-b6b9.7d8bd1b8c"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "Vamos a ver",
+                          "id": "784.83b0.61426721f-b6b9.7d8bd1b8c",
+                          "ideas": {
+                            "1": {
+                              "title": "we will see",
+                              "id": "785.83b0.61426721f-b6b9.7d8bd1b8c"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "Sencilla",
+                          "id": "786.ce80.ee85355fb-7e70.bc6d8766",
+                          "ideas": {
+                            "1": {
+                              "title": "Simple",
+                              "id": "787.ce80.ee85355fb-7e70.bc6d8766"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "6": {
+                          "title": "Amenaza",
+                          "id": "790.ce80.ee85355fb-7e70.bc6d8766",
+                          "ideas": {
+                            "1": {
+                              "title": "Threat",
+                              "id": "791.ce80.ee85355fb-7e70.bc6d8766"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "7": {
+                          "title": "Frontera",
+                          "id": "794.ce80.ee85355fb-7e70.bc6d8766",
+                          "ideas": {
+                            "1": {
+                              "title": "Border",
+                              "id": "795.ce80.ee85355fb-7e70.bc6d8766"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "8": {
+                          "title": "desarrollo",
+                          "id": "798.ce80.ee85355fb-7e70.bc6d8766",
+                          "ideas": {
+                            "1": {
+                              "title": "Developing",
+                              "id": "799.ce80.ee85355fb-7e70.bc6d8766"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "9": {
+                          "title": "Caida",
+                          "id": "800.ce80.ee85355fb-7e70.bc6d8766",
+                          "ideas": {
+                            "1": {
+                              "title": "Fall",
+                              "id": "801.ce80.ee85355fb-7e70.bc6d8766"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "10": {
+                          "title": "Cuerpo",
+                          "id": "802.ce80.ee85355fb-7e70.bc6d8766",
+                          "ideas": {
+                            "1": {
+                              "title": "Body",
+                              "id": "803.ce80.ee85355fb-7e70.bc6d8766"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "11": {
+                          "title": "Ruido",
+                          "id": "806.e926.c0baa9626-9cf3.500934767",
+                          "ideas": {
+                            "1": {
+                              "title": "noisy",
+                              "id": "807.e926.c0baa9626-9cf3.500934767"
+                            }
+                          },
+                          "attr": {}
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "30": {
+                      "title": "Complex 12",
+                      "id": "991.29c5.30f744d99-cb1c.a7898677b",
+                      "ideas": {
+                        "1": {
+                          "title": "redes",
+                          "id": "808.8330.58193f09a-e2f5.fa2277e01",
+                          "ideas": {
+                            "1": {
+                              "title": "Networks",
+                              "id": "809.8330.58193f09a-e2f5.fa2277e01"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "parada",
+                          "id": "818.f8ab.56bef8c26-3e78.384cbe546",
+                          "ideas": {
+                            "1": {
+                              "title": "stop",
+                              "id": "819.f8ab.56bef8c26-3e78.384cbe546",
+                              "ideas": {}
+                            },
+                            "2": {
+                              "title": "parada de autobús",
+                              "id": "821.f8ab.56bef8c26-3e78.384cbe546"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "3": {
+                          "title": "parece",
+                          "id": "822.f8ab.56bef8c26-3e78.384cbe546",
+                          "ideas": {
+                            "1": {
+                              "title": "seems",
+                              "id": "824.f8ab.56bef8c26-3e78.384cbe546"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "4": {
+                          "title": "ola",
+                          "id": "825.f8ab.56bef8c26-3e78.384cbe546",
+                          "ideas": {
+                            "1": {
+                              "title": "wave",
+                              "id": "826.f8ab.56bef8c26-3e78.384cbe546"
+                            },
+                            "2": {
+                              "title": "ola de calor",
+                              "id": "827.f8ab.56bef8c26-3e78.384cbe546",
+                              "ideas": {
+                                "1": {
+                                  "title": "wave of heat",
+                                  "id": "828.f8ab.56bef8c26-3e78.384cbe546"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "5": {
+                          "title": "aprovechar",
+                          "id": "829.f8ab.56bef8c26-3e78.384cbe546",
+                          "ideas": {
+                            "1": {
+                              "title": "take advantage of",
+                              "id": "830.f8ab.56bef8c26-3e78.384cbe546"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "6": {
+                          "title": "asuntos",
+                          "id": "833.4465.5bcef7bcf-0b46.54445684",
+                          "ideas": {
+                            "1": {
+                              "title": "affairs",
+                              "id": "834.4465.5bcef7bcf-0b46.54445684"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "7": {
+                          "title": "Buques",
+                          "id": "835.4465.5bcef7bcf-0b46.54445684",
+                          "ideas": {
+                            "1": {
+                              "title": "ship",
+                              "id": "836.4465.5bcef7bcf-0b46.54445684"
+                            }
+                          }
+                        },
+                        "8": {
+                          "title": "Alcanzar",
+                          "id": "837.4465.5bcef7bcf-0b46.54445684",
+                          "ideas": {
+                            "1": {
+                              "title": "Attain/Achieve",
+                              "id": "838.4465.5bcef7bcf-0b46.54445684"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "9": {
+                          "title": "Acostarse",
+                          "id": "839.4465.5bcef7bcf-0b46.54445684",
+                          "ideas": {
+                            "1": {
+                              "title": "go to bed",
+                              "id": "840.4465.5bcef7bcf-0b46.54445684"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "11": {
+                          "title": "Envio",
+                          "id": "843.acde.eff5313be-db7f.223e32d8b",
+                          "ideas": {
+                            "1": {
+                              "title": "Send",
+                              "id": "844.acde.eff5313be-db7f.223e32d8b"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "12": {
+                          "title": "Acaba",
+                          "id": "845.5876.71a542fed-7c02.cdedccd72",
+                          "ideas": {
+                            "1": {
+                              "title": "just",
+                              "id": "847.5876.71a542fed-7c02.cdedccd72"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "13": {
+                          "title": "Desbancar",
+                          "id": "850.1adb.3e44dd1ba-50ab.9567af88",
+                          "ideas": {
+                            "1": {
+                              "title": "Unseat",
+                              "id": "851.1adb.3e44dd1ba-50ab.9567af88"
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "31": {
+                      "title": "Complex 13",
+                      "id": "992.29c5.30f744d99-cb1c.a7898677b"
+                    },
+                    "32": {
+                      "title": "Complex 14",
+                      "ideas": {
+                        "1": {
+                          "title": "Vinculos",
+                          "ideas": {
+                            "1": {
+                              "title": "Links",
+                              "id": "995.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "994.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "2": {
+                          "title": "Tratado",
+                          "ideas": {
+                            "1": {
+                              "title": "Treaty",
+                              "id": "997.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "996.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "3": {
+                          "title": "certidumbre",
+                          "ideas": {
+                            "1": {
+                              "title": "Certainty",
+                              "id": "999.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "998.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "4": {
+                          "title": "Piedra",
+                          "ideas": {
+                            "1": {
+                              "title": "Stone",
+                              "id": "1001.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1000.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "5": {
+                          "title": "Bosque",
+                          "ideas": {
+                            "1": {
+                              "title": "Forest",
+                              "id": "1003.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1002.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "6": {
+                          "title": "Defendiendo",
+                          "ideas": {
+                            "1": {
+                              "title": "Defending",
+                              "ideas": {},
+                              "id": "1005.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1004.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "7": {
+                          "title": "Lagos",
+                          "ideas": {
+                            "1": {
+                              "title": "Lake",
+                              "id": "1007.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1006.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "8": {
+                          "title": "Borracha",
+                          "ideas": {
+                            "1": {
+                              "title": "Drunk",
+                              "id": "1009.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1008.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "9": {
+                          "title": "Contable",
+                          "ideas": {
+                            "1": {
+                              "title": "Accountant",
+                              "id": "1011.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1010.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "10": {
+                          "title": "Fabrica",
+                          "ideas": {
+                            "1": {
+                              "title": "Factory",
+                              "id": "1013.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1012.29c5.30f744d99-cb1c.a7898677b"
+                        },
+                        "11": {
+                          "title": "Cirugia",
+                          "ideas": {
+                            "1": {
+                              "title": "Surgery",
+                              "id": "1015.29c5.30f744d99-cb1c.a7898677b"
+                            }
+                          },
+                          "id": "1014.29c5.30f744d99-cb1c.a7898677b"
+                        }
+                      },
+                      "id": "993.29c5.30f744d99-cb1c.a7898677b",
+                      "attr": {
+                        "collapsed": true
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                }
+              }
+            }
+          }
         },
         "-1": {
           "title": "Resources",
-          "id": "3.6a920fca0383c5a2"
+          "id": "3.6a920fca0383c5a2",
+          "ideas": {
+            "1": {
+              "title": "https://www.duolingo.com/course/es/en/Learn-Spanish",
+              "id": "19.cbcc.476ae4d0c-ff97.6145c874a"
+            }
+          }
         }
       }
     }
   },
   "attr": {},
-  "title": "Spanish"
+  "title": "Spanish",
+  "links": []
 }

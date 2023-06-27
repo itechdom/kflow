@@ -219,7 +219,8 @@
                           "title": "*Serverless",
                           "id": "74.50af.01d1ef40c-7387.f0cadee59"
                         }
-                      }
+                      },
+                      "attr": {}
                     }
                   },
                   "attr": {
@@ -233,8 +234,46 @@
                 "9": {
                   "title": "AWS Kinesis",
                   "id": "72.1627.b5ba6e2a7-b487.7df4efb88"
+                },
+                "10": {
+                  "title": "Serverless ",
+                  "id": "75.bc1f.4724b1f3a-efa6.57ee9bc13",
+                  "ideas": {
+                    "1": {
+                      "title": "https://github.com/aws-samples/lambda-refarch-mobilebackend",
+                      "id": "76.bc1f.4724b1f3a-efa6.57ee9bc13"
+                    },
+                    "2": {
+                      "title": "SAM",
+                      "id": "77.bc1f.4724b1f3a-efa6.57ee9bc13",
+                      "ideas": {
+                        "1": {
+                          "title": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html",
+                          "id": "78.bc1f.4724b1f3a-efa6.57ee9bc13"
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "3": {
+                      "title": "Serverless Framework",
+                      "id": "79.bfa2.30e8782ce-49ee.04d9fa2f6",
+                      "ideas": {
+                        "1": {
+                          "title": "https://www.serverless.com/framework/docs/providers/aws/guide/intro/#functions",
+                          "id": "80.bfa2.30e8782ce-49ee.04d9fa2f6"
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    }
+                  },
+                  "attr": {}
                 }
-              }
+              },
+              "attr": {}
             },
             "4": {
               "title": "Cost",
@@ -249,7 +288,8 @@
                 "collapsed": true
               }
             }
-          }
+          },
+          "attr": {}
         },
         "-1": {
           "title": "Resources",

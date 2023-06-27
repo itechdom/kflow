@@ -112,9 +112,6 @@
                               "title": "A layer where the game object will stop upon",
                               "id": "103.6308d6a6b272174a"
                             }
-                          },
-                          "attr": {
-                            "collapsed": true
                           }
                         },
                         "4": {
@@ -125,9 +122,6 @@
                               "title": "for z-index type of levels",
                               "id": "105.6308d6a6b272174a"
                             }
-                          },
-                          "attr": {
-                            "collapsed": true
                           }
                         }
                       }
@@ -157,9 +151,6 @@
                           "title": "put it in the animations folder",
                           "id": "70.6308d6a6b272174a"
                         }
-                      },
-                      "attr": {
-                        "collapsed": true
                       }
                     },
                     "2": {
@@ -234,6 +225,14 @@
                         "1": {
                           "title": "the concept that there is a class controlling the component",
                           "id": "75.6308d6a6b272174a"
+                        },
+                        "2": {
+                          "title": "You can still write a script and attach it to an object, so you don't really need to use this component?",
+                          "id": "120.723a.b743f4d4a-6c94.eace05523"
+                        },
+                        "3": {
+                          "title": "If you use this component then you can't use collider or rigidbody",
+                          "id": "121.723a.b743f4d4a-6c94.eace05523"
                         }
                       },
                       "attr": {
@@ -266,11 +265,11 @@
                                 }
                               }
                             }
-                          },
-                          "attr": {
-                            "collapsed": true
                           }
                         }
+                      },
+                      "attr": {
+                        "collapsed": true
                       }
                     },
                     "6": {
@@ -295,9 +294,6 @@
                                 }
                               }
                             }
-                          },
-                          "attr": {
-                            "collapsed": true
                           }
                         }
                       },
@@ -379,9 +375,6 @@
                     "collapsed": true
                   }
                 }
-              },
-              "attr": {
-                "collapsed": true
               }
             },
             "7.5": {
@@ -476,8 +469,7 @@
                   46,
                   79,
                   1
-                ],
-                "collapsed": true
+                ]
               }
             },
             "8": {
@@ -650,9 +642,6 @@
                     }
                   }
                 }
-              },
-              "attr": {
-                "collapsed": true
               }
             },
             "12": {
@@ -661,8 +650,7 @@
               "attr": {
                 "style": {
                   "background": "#008080"
-                },
-                "collapsed": true
+                }
               },
               "ideas": {
                 "2": {
@@ -670,9 +658,8 @@
                   "id": "46.6308d6a6b272174a",
                   "ideas": {
                     "1": {
-                      "title": "https://drive.google.com/file/d/0B9tPYCpuqoIrX0lGRWVQRWxGN2M/view?usp=sharing",
-                      "id": "45.6308d6a6b272174a",
-                      "attr": {}
+                      "title": "https://drive.mindmup.com/map/1U-QG_m16elVvU4yCySdb3NHXHAYLr6VL",
+                      "id": "119.ae58.0c5657ab6-52cb.58ae4d946"
                     }
                   }
                 },

@@ -6,7 +6,12 @@
       "id": 1,
       "title": "OS",
       "attr": {
-        "style": {}
+        "style": {},
+        "position": [
+          -14,
+          -15,
+          1
+        ]
       },
       "ideas": {
         "1": {
@@ -186,13 +191,49 @@
                   "contentType": "text/html",
                   "content": "Everything is handled usually by mapping. There are two main concepts:<div><br></div><div>guest OS: whatever you install on your virutal box</div><div><br></div><div>Host OS: your main OS.</div>"
                 },
-                "style": {},
-                "collapsed": true
+                "style": {}
               }
             },
             "2": {
               "title": "Kernel",
-              "id": 426
+              "id": 426,
+              "ideas": {
+                "1": {
+                  "title": "Unikernel",
+                  "id": "462.abe0.c1901ab48-1aee.17ce4d2d5",
+                  "ideas": {
+                    "1": {
+                      "title": "single address space",
+                      "id": "463.abe0.c1901ab48-1aee.17ce4d2d5"
+                    },
+                    "2": {
+                      "title": "Library operating system",
+                      "id": "465.abe0.c1901ab48-1aee.17ce4d2d5"
+                    },
+                    "3": {
+                      "title": "only the necessary libraries are included",
+                      "id": "466.abe0.c1901ab48-1aee.17ce4d2d5"
+                    },
+                    "4": {
+                      "title": "protection mechanisms are pushed down ? ",
+                      "id": "467.abe0.c1901ab48-1aee.17ce4d2d5"
+                    },
+                    "5": {
+                      "title": "no need to copy from user space to kernel space",
+                      "id": "468.abe0.c1901ab48-1aee.17ce4d2d5"
+                    },
+                    "6": {
+                      "title": "The tools for packaging applications into unikernels, such as UniK, MirageOS, and Clive, combine the app's source code with dependencies, device drivers, and OS libraries. The final product is a lightweight operating system capable of performing a single function - running the packaged application.",
+                      "id": "470.abe0.c1901ab48-1aee.17ce4d2d5",
+                      "attr": {}
+                    },
+                    "7": {
+                      "title": "Package the OS components as well",
+                      "id": "471.abe0.c1901ab48-1aee.17ce4d2d5"
+                    }
+                  }
+                }
+              }
             },
             "5": {
               "title": "OS Abstracts a lot of services",
@@ -666,11 +707,21 @@
                   }
                 }
               }
+            },
+            "3.5": {
+              "title": "Hypervisor",
+              "id": "469.abe0.c1901ab48-1aee.17ce4d2d5",
+              "attr": {
+                "position": [
+                  103,
+                  293,
+                  3
+                ]
+              }
             }
           },
           "attr": {
-            "style": {},
-            "collapsed": true
+            "style": {}
           }
         },
         "2": {

@@ -368,9 +368,6 @@
                     "3": {
                       "title": "a type of rule where you control the cost only?",
                       "id": "102.49c0c056a7348db0",
-                      "attr": {
-                        "collapsed": true
-                      },
                       "ideas": {
                         "1": {
                           "title": "https://en.wikipedia.org/wiki/Thalassocracy",
@@ -1350,9 +1347,13 @@
                       120,
                       551,
                       1
-                    ]
+                    ],
+                    "collapsed": true
                   }
                 }
+              },
+              "attr": {
+                "collapsed": true
               }
             },
             "10": {

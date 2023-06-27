@@ -112,7 +112,6 @@
                 }
               },
               "attr": {
-                "collapsed": true,
                 "style": {}
               }
             },
@@ -133,7 +132,6 @@
                 }
               },
               "attr": {
-                "collapsed": true,
                 "style": {}
               }
             },
@@ -157,8 +155,8 @@
                 }
               },
               "attr": {
-                "collapsed": true,
-                "style": {}
+                "style": {},
+                "collapsed": true
               }
             },
             "6": {
@@ -171,8 +169,7 @@
             }
           },
           "attr": {
-            "style": {},
-            "collapsed": true
+            "style": {}
           }
         },
         "2": {

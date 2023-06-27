@@ -659,9 +659,6 @@
                       "title": "Believed to have appeared 3.5 Billion years ago",
                       "id": "83.35e2b394aabca66f"
                     }
-                  },
-                  "attr": {
-                    "collapsed": true
                   }
                 },
                 "3": {
@@ -782,6 +779,33 @@
                     "1": {
                       "title": "Wikipedia link",
                       "id": "96.35e2b394aabca66f"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "6": {
+                  "title": "Humanoid",
+                  "id": "176.1cd2.72aa3668e-6d32.250646f6d",
+                  "ideas": {
+                    "1": {
+                      "title": "Denisovan",
+                      "id": "177.1cd2.72aa3668e-6d32.250646f6d",
+                      "ideas": {
+                        "1": {
+                          "title": "closely related to neanderthals",
+                          "id": "180.1cd2.72aa3668e-6d32.250646f6d"
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "Neanderthals",
+                      "id": "178.1cd2.72aa3668e-6d32.250646f6d"
+                    },
+                    "3": {
+                      "title": "Homo Sapien",
+                      "id": "179.1cd2.72aa3668e-6d32.250646f6d"
                     }
                   },
                   "attr": {
@@ -941,6 +965,9 @@
                     }
                   }
                 }
+              },
+              "attr": {
+                "collapsed": true
               }
             }
           }

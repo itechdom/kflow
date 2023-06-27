@@ -6,7 +6,12 @@
       "id": 1,
       "title": "CGI\n\n",
       "attr": {
-        "style": {}
+        "style": {},
+        "position": [
+          -16,
+          -15,
+          1
+        ]
       },
       "ideas": {
         "1": {
@@ -76,6 +81,10 @@
             }
           },
           "id": 413
+        },
+        "-1": {
+          "title": "Resources",
+          "id": "421.34d3.55f961306-e3af.d26d65f6c"
         }
       }
     }

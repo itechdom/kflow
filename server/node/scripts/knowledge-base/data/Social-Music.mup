@@ -31,28 +31,6 @@
               },
               "ideas": {}
             },
-            "3": {
-              "title": "History",
-              "id": "9.dea0e0eed802c98",
-              "ideas": {
-                "1": {
-                  "title": "Western",
-                  "id": "10.dea0e0eed802c98",
-                  "ideas": {
-                    "1": {
-                      "title": "Started with a choir, had the pipe pianon in the middle and ended with classical music 1700 - 1820",
-                      "id": "11.dea0e0eed802c98"
-                    }
-                  },
-                  "attr": {
-                    "collapsed": true
-                  }
-                }
-              },
-              "attr": {
-                "collapsed": true
-              }
-            },
             "4": {
               "title": "Notes",
               "id": "12.dea0e0eed802c98"
@@ -140,6 +118,10 @@
                     "6": {
                       "title": "D",
                       "id": "26.6cbc684121e17bfe"
+                    },
+                    "7": {
+                      "title": "Composed of multiple notes",
+                      "id": "64.ab5d.9643d072f-6f0c.ead5e687e"
                     }
                   },
                   "attr": {
@@ -202,6 +184,140 @@
               "attr": {
                 "collapsed": true
               }
+            },
+            "11": {
+              "title": "Piano",
+              "id": "65.ab5d.9643d072f-6f0c.ead5e687e",
+              "attr": {
+                "note": {
+                  "index": 47,
+                  "text": "sheets of music:\nthe center of the piano is middle C4\nspace is every set of notes (Face, EGBDF, ACEG ... etc)\ntrebleclef\nto the right of the keyboard\nledgerLines:\nspaces: are what is in between the lines of the sheet of music\nfrom bottom to top space:\nF A C E\nfrom bottom to top line:\nEvery good boy deserves fries\nE G B D F\nto the left of the keyboard:\nAll cows eat grass\nA C E G"
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "Notes are grouped",
+                  "id": "66.ab5d.9643d072f-6f0c.ead5e687e"
+                },
+                "2": {
+                  "title": "Every Good Boy Deserves Fun",
+                  "id": "67.ab5d.9643d072f-6f0c.ead5e687e",
+                  "ideas": {
+                    "1": {
+                      "title": "E G B D F",
+                      "id": "68.ab5d.9643d072f-6f0c.ead5e687e"
+                    }
+                  },
+                  "attr": {}
+                }
+              }
+            },
+            "16": {
+              "title": "History",
+              "id": "9.dea0e0eed802c98",
+              "ideas": {
+                "1": {
+                  "title": "Western",
+                  "id": "10.dea0e0eed802c98",
+                  "ideas": {
+                    "1": {
+                      "title": "Started with a choir, had the pipe pianon in the middle and ended with classical music 1700 - 1820",
+                      "id": "11.dea0e0eed802c98"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "17": {
+              "title": "db",
+              "id": "61.57c2.03e5a7ac9-6c14.463e72be5",
+              "ideas": {
+                "1": {
+                  "title": "decibles",
+                  "id": "62.57c2.03e5a7ac9-6c14.463e72be5"
+                },
+                "2": {
+                  "title": "sounds levels",
+                  "id": "63.57c2.03e5a7ac9-6c14.463e72be5",
+                  "attr": {}
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "0.5": {
+              "title": "Audio Engineering",
+              "id": "49.d4ff.4fe9087e7-7e2b.d348a1a28",
+              "attr": {
+                "position": [
+                  87,
+                  -172,
+                  1
+                ],
+                "collapsed": true
+              },
+              "ideas": {
+                "1": {
+                  "title": "Oscilator",
+                  "id": "50.d4ff.4fe9087e7-7e2b.d348a1a28",
+                  "ideas": {
+                    "1": {
+                      "title": "Square ",
+                      "id": "51.d4ff.4fe9087e7-7e2b.d348a1a28"
+                    },
+                    "2": {
+                      "title": "Sine",
+                      "id": "52.d4ff.4fe9087e7-7e2b.d348a1a28"
+                    },
+                    "3": {
+                      "title": "Triangle",
+                      "id": "53.d4ff.4fe9087e7-7e2b.d348a1a28"
+                    },
+                    "4": {
+                      "title": "Shape of the wave",
+                      "id": "54.d4ff.4fe9087e7-7e2b.d348a1a28"
+                    },
+                    "5": {
+                      "title": "https://tonejs.github.io/examples/oscillator.html",
+                      "id": "60.d4ff.4fe9087e7-7e2b.d348a1a28",
+                      "attr": {}
+                    },
+                    "3.5": {
+                      "title": "Sawtooth",
+                      "id": "55.d4ff.4fe9087e7-7e2b.d348a1a28",
+                      "attr": {}
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "2": {
+                  "title": "Envelop",
+                  "id": "56.d4ff.4fe9087e7-7e2b.d348a1a28",
+                  "ideas": {
+                    "1": {
+                      "title": "Envelopes ramp amplitude, frequency or any other parameter over time. Tone.Envelope and the classes that extend it implement an ADSR envelope type which splits its ramp into four distinct phases: Attack, Decay, Sustain, Release.",
+                      "id": "57.d4ff.4fe9087e7-7e2b.d348a1a28"
+                    },
+                    "2": {
+                      "title": "it has points in the wave that you can control",
+                      "id": "58.d4ff.4fe9087e7-7e2b.d348a1a28"
+                    },
+                    "3": {
+                      "title": "https://tonejs.github.io/examples/envelope.html",
+                      "id": "59.d4ff.4fe9087e7-7e2b.d348a1a28"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                }
+              }
             }
           }
         },
@@ -237,6 +353,13 @@
             }
           }
         }
+      },
+      "attr": {
+        "position": [
+          -23,
+          -15,
+          1
+        ]
       }
     }
   },

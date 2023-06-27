@@ -109,7 +109,42 @@
             "2": {
               "title": "Communication Protocols",
               "id": "120.51a6b71e38edad08",
-              "ideas": {},
+              "ideas": {
+                "1": {
+                  "title": "HTTP",
+                  "id": "314.b63e.f06351706-2944.590b3974b",
+                  "ideas": {
+                    "1": {
+                      "title": "HTTP/2",
+                      "id": "317.b63e.f06351706-2944.590b3974b"
+                    },
+                    "2": {
+                      "title": "gRPC",
+                      "id": "318.b63e.f06351706-2944.590b3974b",
+                      "ideas": {
+                        "1": {
+                          "title": "Resources",
+                          "id": "319.b63e.f06351706-2944.590b3974b",
+                          "ideas": {
+                            "1": {
+                              "title": "https://www.youtube.com/watch?v=RoXT_Rkg8LA",
+                              "id": "320.b63e.f06351706-2944.590b3974b"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "2": {
+                  "title": "TCP",
+                  "id": "315.b63e.f06351706-2944.590b3974b"
+                },
+                "3": {
+                  "title": "UDP",
+                  "id": "316.b63e.f06351706-2944.590b3974b"
+                }
+              },
               "attr": {}
             },
             "3": {

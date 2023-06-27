@@ -73,7 +73,8 @@
                 }
               },
               "attr": {
-                "style": {}
+                "style": {},
+                "collapsed": true
               }
             },
             "2": {
@@ -94,8 +95,7 @@
                     }
                   },
                   "attr": {
-                    "style": {},
-                    "collapsed": true
+                    "style": {}
                   }
                 }
               },
@@ -480,14 +480,12 @@
                 }
               },
               "attr": {
-                "style": {},
-                "collapsed": true
+                "style": {}
               }
             }
           },
           "attr": {
-            "style": {},
-            "collapsed": true
+            "style": {}
           }
         },
         "33": {

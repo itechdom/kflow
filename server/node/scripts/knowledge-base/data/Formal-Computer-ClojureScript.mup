@@ -6,13 +6,171 @@
       "id": 1,
       "title": "ClojureScript",
       "attr": {
-        "style": {}
+        "style": {},
+        "position": [
+          -45,
+          -15,
+          1
+        ]
       },
       "ideas": {
         "14": {
           "title": "Concepts",
           "id": 176,
-          "ideas": {}
+          "ideas": {
+            "1": {
+              "title": "Frameworks",
+              "id": "250.0af3.26978cd83-6885.3bcd34fd",
+              "ideas": {
+                "1": {
+                  "title": "Reframe",
+                  "id": "251.0af3.26978cd83-6885.3bcd34fd",
+                  "ideas": {
+                    "5": {
+                      "title": "Flow",
+                      "id": "266.0af3.26978cd83-6885.3bcd34fd",
+                      "ideas": {
+                        "1": {
+                          "title": "event dispatch",
+                          "id": "258.0af3.26978cd83-6885.3bcd34fd",
+                          "ideas": {
+                            "1": {
+                              "title": "dispatch an event",
+                              "id": "259.0af3.26978cd83-6885.3bcd34fd"
+                            },
+                            "2": {
+                              "title": "event handlers",
+                              "id": "256.0af3.26978cd83-6885.3bcd34fd",
+                              "ideas": {
+                                "1": {
+                                  "title": "run on a particular event",
+                                  "id": "257.0af3.26978cd83-6885.3bcd34fd"
+                                },
+                                "2": {
+                                  "title": "return an effect",
+                                  "id": "265.0af3.26978cd83-6885.3bcd34fd",
+                                  "attr": {}
+                                },
+                                "3": {
+                                  "title": "State change",
+                                  "id": "260.0af3.26978cd83-6885.3bcd34fd",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "extractors",
+                                      "id": "254.0af3.26978cd83-6885.3bcd34fd",
+                                      "ideas": {
+                                        "1": {
+                                          "title": "Selectors of data",
+                                          "id": "255.0af3.26978cd83-6885.3bcd34fd"
+                                        },
+                                        "2": {
+                                          "title": "view",
+                                          "id": "262.0af3.26978cd83-6885.3bcd34fd",
+                                          "ideas": {
+                                            "1": {
+                                              "title": "then",
+                                              "id": "263.0af3.26978cd83-6885.3bcd34fd",
+                                              "ideas": {
+                                                "1": {
+                                                  "title": "dom",
+                                                  "id": "264.0af3.26978cd83-6885.3bcd34fd"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "attr": {}
+                                    },
+                                    "0.5": {
+                                      "title": "called when event whe an effect is returned",
+                                      "id": "261.0af3.26978cd83-6885.3bcd34fd",
+                                      "attr": {}
+                                    },
+                                    "0.75": {
+                                      "title": "app-db",
+                                      "id": "252.0af3.26978cd83-6885.3bcd34fd",
+                                      "ideas": {
+                                        "1": {
+                                          "title": "state (store)",
+                                          "id": "253.0af3.26978cd83-6885.3bcd34fd"
+                                        }
+                                      },
+                                      "attr": {}
+                                    }
+                                  }
+                                },
+                                "4": {
+                                  "title": "coeffects",
+                                  "id": "277.6832.423e2a2e6-846a.6e1587fad",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "run after an effect",
+                                      "id": "278.6832.423e2a2e6-846a.6e1587fad"
+                                    }
+                                  }
+                                }
+                              },
+                              "attr": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "6": {
+                      "title": "Resources",
+                      "id": "267.0af3.26978cd83-6885.3bcd34fd",
+                      "ideas": {
+                        "1": {
+                          "title": "https://day8.github.io/re-frame/EffectfulHandlers/",
+                          "id": "268.0af3.26978cd83-6885.3bcd34fd",
+                          "ideas": {
+                            "1": {
+                              "title": "stopped here",
+                              "id": "270.0af3.26978cd83-6885.3bcd34fd"
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "How to make http requests",
+                          "id": "271.3522.f62c4d787-ed73.6e72a2192",
+                          "ideas": {
+                            "1": {
+                              "title": "https://github.com/day8/re-frame-http-fx",
+                              "id": "272.3522.f62c4d787-ed73.6e72a2192"
+                            }
+                          }
+                        },
+                        "3": {
+                          "title": "Regent Views",
+                          "id": "273.3522.f62c4d787-ed73.6e72a2192",
+                          "ideas": {
+                            "1": {
+                              "title": "https://reagent-project.github.io/",
+                              "id": "274.3522.f62c4d787-ed73.6e72a2192"
+                            }
+                          }
+                        },
+                        "4": {
+                          "title": "Good project",
+                          "id": "275.6832.423e2a2e6-846a.6e1587fad",
+                          "ideas": {
+                            "1": {
+                              "title": "https://github.com/jacekschae/conduit/blob/master/src/conduit/events.cljs",
+                              "id": "276.6832.423e2a2e6-846a.6e1587fad"
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         },
         "-20": {
           "title": "Resources",
@@ -30,6 +188,9 @@
                   "id": "240.8922e45159b10b0",
                   "attr": {}
                 }
+              },
+              "attr": {
+                "collapsed": true
               }
             },
             "3": {
@@ -46,6 +207,9 @@
                     }
                   }
                 }
+              },
+              "attr": {
+                "collapsed": true
               }
             },
             "4": {
@@ -56,6 +220,22 @@
                   "title": "https://github.com/clojure/clojurescript/wiki/Quick-Start",
                   "id": "247.3f7e49e460d99e99"
                 }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "5": {
+              "title": "Reframe",
+              "id": "248.0af3.26978cd83-6885.3bcd34fd",
+              "ideas": {
+                "1": {
+                  "title": "https://day8.github.io/re-frame/subscriptions/",
+                  "id": "249.0af3.26978cd83-6885.3bcd34fd"
+                }
+              },
+              "attr": {
+                "collapsed": true
               }
             }
           }

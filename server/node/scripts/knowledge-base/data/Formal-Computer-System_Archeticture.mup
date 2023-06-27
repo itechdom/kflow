@@ -4,14 +4,51 @@
   "ideas": {
     "1": {
       "id": 1,
-      "title": "System Archeticture",
-      "attr": {},
+      "title": "System Architecture",
+      "attr": {
+        "position": [
+          -67,
+          -15,
+          1
+        ]
+      },
       "ideas": {
         "1": {
           "title": "Concepts",
           "id": "2.7b8f637586df806d",
           "ideas": {
-            "1": {
+            "2": {
+              "title": "Cloud",
+              "id": "19.47f3fb8794b3006c",
+              "ideas": {
+                "1": {
+                  "title": "AWS",
+                  "id": "20.47f3fb8794b3006c",
+                  "ideas": {}
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "3": {
+              "title": "Event buses",
+              "id": "21.53c9.93ead6bb3-b373.670df6929",
+              "ideas": {
+                "1": {
+                  "title": "gRPC",
+                  "id": "22.53c9.93ead6bb3-b373.670df6929"
+                },
+                "2": {
+                  "title": "RabbitMQ",
+                  "id": "23.53c9.93ead6bb3-b373.670df6929"
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "13": {
               "title": "LMAX",
               "id": "4.7b8f637586df806d",
               "ideas": {
@@ -23,6 +60,9 @@
                       "title": "http://martinfowler.com/articles/lmax.html",
                       "id": "6.7b8f637586df806d"
                     }
+                  },
+                  "attr": {
+                    "collapsed": true
                   }
                 },
                 "2": {
@@ -72,26 +112,340 @@
                         }
                       }
                     }
+                  },
+                  "attr": {
+                    "collapsed": true
                   }
                 }
               },
               "attr": {
-                "collapsed": true,
-                "position": [
-                  97,
-                  -86,
-                  1
-                ]
+                "collapsed": true
               }
             },
-            "2": {
-              "title": "Cloud",
-              "id": "19.47f3fb8794b3006c",
+            "14": {
+              "title": "DAPR",
+              "id": "24.6c1f.d173d25d4-0499.e879444cf"
+            },
+            "15": {
+              "title": "Kubernetes",
+              "id": "25.1e6b.8c814d29f-6582.82f3cd39",
               "ideas": {
-                "1": {
-                  "title": "AWS",
-                  "id": "20.47f3fb8794b3006c",
-                  "ideas": {}
+                "2": {
+                  "title": "Resources",
+                  "id": "27.1e6b.8c814d29f-6582.82f3cd39",
+                  "ideas": {
+                    "1": {
+                      "title": "https://kubernetes.io/",
+                      "id": "28.1e6b.8c814d29f-6582.82f3cd39"
+                    },
+                    "2": {
+                      "title": "Tutorial",
+                      "id": "75.1e6b.8c814d29f-6582.82f3cd39",
+                      "ideas": {
+                        "1": {
+                          "title": "https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/",
+                          "id": "76.1e6b.8c814d29f-6582.82f3cd39"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "1.9375": {
+                  "title": "Features",
+                  "id": "38.1e6b.8c814d29f-6582.82f3cd39",
+                  "ideas": {
+                    "1": {
+                      "title": "Secret the configuration management",
+                      "id": "37.1e6b.8c814d29f-6582.82f3cd39"
+                    },
+                    "2": {
+                      "title": "Service discovery",
+                      "id": "30.1e6b.8c814d29f-6582.82f3cd39",
+                      "ideas": {
+                        "1": {
+                          "title": "it gives pods a DNS name",
+                          "id": "33.1e6b.8c814d29f-6582.82f3cd39"
+                        }
+                      },
+                      "attr": {}
+                    },
+                    "3": {
+                      "title": "Load Balancing",
+                      "id": "29.1e6b.8c814d29f-6582.82f3cd39"
+                    },
+                    "4": {
+                      "title": "Manage containers",
+                      "id": "26.1e6b.8c814d29f-6582.82f3cd39",
+                      "attr": {}
+                    },
+                    "5": {
+                      "title": "Structure of kubernetes",
+                      "id": "79.0cc2.1534d3153-90c6.157e7833e",
+                      "ideas": {
+                        "2": {
+                          "title": "cluster",
+                          "id": "85.0cc2.1534d3153-90c6.157e7833e",
+                          "ideas": {
+                            "1": {
+                              "title": "deployments",
+                              "id": "81.0cc2.1534d3153-90c6.157e7833e",
+                              "ideas": {
+                                "1": {
+                                  "title": "services",
+                                  "id": "82.0cc2.1534d3153-90c6.157e7833e",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "pods",
+                                      "id": "83.0cc2.1534d3153-90c6.157e7833e",
+                                      "ideas": {
+                                        "1": {
+                                          "title": "nodes",
+                                          "id": "84.0cc2.1534d3153-90c6.157e7833e"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "attr": {}
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "1.99609375": {
+                  "title": "Components",
+                  "id": "49.1e6b.8c814d29f-6582.82f3cd39",
+                  "attr": {
+                    "position": [
+                      113,
+                      -19,
+                      1
+                    ]
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "Cluster",
+                      "ideas": {
+                        "1": {
+                          "title": "Worker Machines (Nodes)",
+                          "ideas": {
+                            "1": {
+                              "title": "Pods",
+                              "id": "52.1e6b.8c814d29f-6582.82f3cd39",
+                              "ideas": {
+                                "1": {
+                                  "title": "each pod gets its own DNS",
+                                  "id": "69.1e6b.8c814d29f-6582.82f3cd39"
+                                },
+                                "2": {
+                                  "title": "pods can communicate with all other pods on any other node without NAT\nagents on a node (e.g. system daemons, kubelet) can communicate with all pods on that node",
+                                  "id": "70.1e6b.8c814d29f-6582.82f3cd39"
+                                },
+                                "4": {
+                                  "title": "Service",
+                                  "id": "74.1e6b.8c814d29f-6582.82f3cd39",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "Service: A Kubernetes Service that identifies a set of Pods using label selectors. Unless mentioned otherwise, Services are assumed to have virtual IPs only routable within the cluster network.\n\n",
+                                      "id": "73.1e6b.8c814d29f-6582.82f3cd39",
+                                      "attr": {}
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "id": "51.1e6b.8c814d29f-6582.82f3cd39"
+                        }
+                      },
+                      "id": "50.1e6b.8c814d29f-6582.82f3cd39",
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "2": {
+                      "title": "Control Panel",
+                      "id": "43.1e6b.8c814d29f-6582.82f3cd39",
+                      "ideas": {
+                        "1": {
+                          "title": "Makes global decisions about the cluster",
+                          "id": "44.1e6b.8c814d29f-6582.82f3cd39",
+                          "ideas": {
+                            "1": {
+                              "title": "Control plane components can be run on any machine in the cluster. However, for simplicity, set up scripts typically start all control plane components on the same machine, and do not run user containers on this machine. See Creating Highly Available clusters with kubeadm for an example control plane setup that runs across multiple machines.\n\n\n\n",
+                              "id": "45.1e6b.8c814d29f-6582.82f3cd39"
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        },
+                        "2": {
+                          "title": "kube-apiserver",
+                          "id": "46.1e6b.8c814d29f-6582.82f3cd39",
+                          "ideas": {
+                            "1": {
+                              "title": "The API server is a component of the Kubernetes control plane that exposes the Kubernetes API. The API server is the front end for the Kubernetes control plane.\n\n\nThe main implementation of a Kubernetes API server is kube-apiserver. kube-apiserver is designed to scale horizontally—that is, it scales by deploying more instances. You can run several instances of kube-apiserver and balance traffic between those instances.\n\n\n\n",
+                              "id": "47.1e6b.8c814d29f-6582.82f3cd39"
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        },
+                        "3": {
+                          "title": "kube-scheduler ",
+                          "id": "54.1e6b.8c814d29f-6582.82f3cd39",
+                          "ideas": {
+                            "1": {
+                              "title": "Control plane component that watches for newly created Pods with no assigned node, and selects a node for them to run on.\n\n\nFactors taken into account for scheduling decisions include: individual and collective resource requirements, hardware/software/policy constraints, affinity and anti-affinity specifications, data locality, inter-workload interference, and deadlines.\n\n\n\n",
+                              "id": "55.1e6b.8c814d29f-6582.82f3cd39"
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        },
+                        "4": {
+                          "title": "Etcd",
+                          "id": "48.1e6b.8c814d29f-6582.82f3cd39",
+                          "attr": {
+                            "collapsed": true
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "Consistent and highly-available key value store used as Kubernetes' backing store for all cluster data.\n\n\nIf your Kubernetes cluster uses etcd as its backing store, make sure you have a back up plan for those data.\n\n\nYou can find in-depth information about etcd in the official documentation.\n\n\n\n",
+                              "id": "53.1e6b.8c814d29f-6582.82f3cd39"
+                            }
+                          }
+                        },
+                        "5": {
+                          "title": "kube-controller-manager",
+                          "id": "56.1e6b.8c814d29f-6582.82f3cd39",
+                          "ideas": {
+                            "2": {
+                              "title": "kube-controller-manager \nControl plane component that runs controller processes.\n\n\nLogically, each controller is a separate process, but to reduce complexity, they are all compiled into a single binary and run in a single process.\n\n\nSome types of these controllers are:\n\n\nNode controller: Responsible for noticing and responding when nodes go down.\nJob controller: Watches for Job objects that represent one-off tasks, then creates Pods to run those tasks to completion.\nEndpoints controller: Populates the Endpoints object (that is, joins Services & Pods).\nService Account & Token controllers: Create default accounts and API access tokens for new namespaces.\n\n",
+                              "id": "58.1e6b.8c814d29f-6582.82f3cd39"
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "3": {
+                      "title": "Node Components",
+                      "id": "59.1e6b.8c814d29f-6582.82f3cd39",
+                      "ideas": {
+                        "1": {
+                          "title": "Kubelet",
+                          "id": "60.1e6b.8c814d29f-6582.82f3cd39",
+                          "ideas": {
+                            "1": {
+                              "title": "An agent that runs on each node in the cluster. It makes sure that containers are running in a Pod.\n\n\nThe kubelet takes a set of PodSpecs that are provided through various mechanisms and ensures that the containers described in those PodSpecs are running and healthy. The kubelet doesn't manage containers which were not created by Kubernetes.\n\n\n\n",
+                              "id": "63.1e6b.8c814d29f-6582.82f3cd39"
+                            },
+                            "2": {
+                              "title": "Kubelet, which is an agent for managing the node and communicating with the Kubernetes control plane",
+                              "id": "77.1e6b.8c814d29f-6582.82f3cd39"
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        },
+                        "2": {
+                          "title": "Kube Proxy",
+                          "id": "61.1e6b.8c814d29f-6582.82f3cd39",
+                          "ideas": {
+                            "1": {
+                              "title": "kube-proxy is a network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept.\n\n\nkube-proxy maintains network rules on nodes. These network rules allow network communication to your Pods from network sessions inside or outside of your cluster.\n\n\nkube-proxy uses the operating system packet filtering layer if there is one and it's available. Otherwise, kube-proxy forwards the traffic itself.\n\n\n\n",
+                              "id": "64.1e6b.8c814d29f-6582.82f3cd39"
+                            },
+                            "2": {
+                              "title": "handles communication between nodes",
+                              "id": "65.1e6b.8c814d29f-6582.82f3cd39"
+                            },
+                            "3": {
+                              "title": "Allow communication with the pods ",
+                              "id": "78.1e6b.8c814d29f-6582.82f3cd39"
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        },
+                        "3": {
+                          "title": "Container Runtime",
+                          "id": "62.1e6b.8c814d29f-6582.82f3cd39",
+                          "ideas": {
+                            "1": {
+                              "title": "The container runtime is the software that is responsible for running containers.",
+                              "id": "66.1e6b.8c814d29f-6582.82f3cd39",
+                              "attr": {}
+                            },
+                            "2": {
+                              "title": "Kubernetes supports container runtimes such as containerd, CRI-O, and any other implementation of the Kubernetes CRI (Container Runtime Interface).",
+                              "id": "67.1e6b.8c814d29f-6582.82f3cd39",
+                              "attr": {}
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "4": {
+                      "title": "Addons",
+                      "id": "68.1e6b.8c814d29f-6582.82f3cd39",
+                      "ideas": {
+                        "1": {
+                          "title": "Ingress?",
+                          "id": "71.1e6b.8c814d29f-6582.82f3cd39",
+                          "ideas": {
+                            "1": {
+                              "title": "Ingress exposes HTTP and HTTPS routes from outside the cluster to services within the cluster. Traffic routing is controlled by rules defined on the Ingress resource.",
+                              "id": "72.1e6b.8c814d29f-6582.82f3cd39"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "5": {
+                      "title": "Helm",
+                      "id": "86.0cc2.1534d3153-90c6.157e7833e",
+                      "ideas": {
+                        "1": {
+                          "title": "package manager for kubernetes",
+                          "id": "87.0cc2.1534d3153-90c6.157e7833e"
+                        },
+                        "2": {
+                          "title": "Helm chart",
+                          "id": "88.0cc2.1534d3153-90c6.157e7833e",
+                          "ideas": {
+                            "1": {
+                              "title": " a group of yaml files that can be deployed together",
+                              "id": "89.0cc2.1534d3153-90c6.157e7833e"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -109,9 +463,6 @@
                   "title": "https://lmax-exchange.github.io/disruptor/",
                   "id": "18.7b8f637586df806d"
                 }
-              },
-              "attr": {
-                "collapsed": true
               }
             }
           }
@@ -120,5 +471,6 @@
     }
   },
   "attr": {},
-  "title": "System Archeticture"
+  "title": "System Archeticture",
+  "links": []
 }

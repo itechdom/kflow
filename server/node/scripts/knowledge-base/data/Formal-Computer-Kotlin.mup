@@ -4,7 +4,7 @@
   "ideas": {
     "1": {
       "id": 1,
-      "title": "Java",
+      "title": "Kotlin",
       "attr": {
         "style": {},
         "position": [
@@ -308,8 +308,7 @@
                     }
                   },
                   "attr": {
-                    "style": {},
-                    "collapsed": true
+                    "style": {}
                   }
                 },
                 "2": {
@@ -1209,22 +1208,12 @@
               }
             },
             "28": {
-              "title": "Optional",
-              "id": "473.9cb5.40d91079a-badd.7f4b00fcc",
-              "ideas": {
-                "1": {
-                  "title": "prevents null pointer exception by making it explicit that this value may or may not be present",
-                  "id": "474.9cb5.40d91079a-badd.7f4b00fcc"
-                },
-                "2": {
-                  "title": "You have to unwrap to get the value",
-                  "id": "475.9cb5.40d91079a-badd.7f4b00fcc"
-                },
-                "3": {
-                  "title": "Don't use for POJOS, Serialization and DTOs",
-                  "id": "476.9cb5.40d91079a-badd.7f4b00fcc"
-                }
-              }
+              "title": "Extension functions",
+              "id": "473.4ef2.ceb4999f-7168.c8e6c46a3"
+            },
+            "29": {
+              "title": "data classes",
+              "id": "474.4ef2.ceb4999f-7168.c8e6c46a3"
             },
             "6.5": {
               "title": "Basics",
@@ -1455,9 +1444,6 @@
                     }
                   }
                 }
-              },
-              "attr": {
-                "collapsed": true
               }
             },
             "2": {
@@ -1532,23 +1518,12 @@
             }
           },
           "attr": {
-            "collapsed": true,
             "position": [
-              137,
-              368,
-              3
-            ]
-          }
-        },
-        "8.25": {
-          "title": "https://leetcode.com/",
-          "id": "439.b563.38396f61a-3c0f.c06daabcc",
-          "attr": {
-            "position": [
-              148,
-              288,
-              4
-            ]
+              146,
+              246,
+              1
+            ],
+            "collapsed": true
           }
         }
       }

@@ -47,6 +47,36 @@
                   }
                 }
               }
+            },
+            "2": {
+              "title": "Games",
+              "id": "13.5520.ab01aac9e-439e.97a49c2ca",
+              "ideas": {
+                "3": {
+                  "title": "PS1",
+                  "id": "16.5520.ab01aac9e-439e.97a49c2ca",
+                  "ideas": {
+                    "1": {
+                      "title": "Galerians",
+                      "id": "14.5520.ab01aac9e-439e.97a49c2ca",
+                      "attr": {}
+                    },
+                    "2": {
+                      "title": "Parasite Eve",
+                      "id": "15.5520.ab01aac9e-439e.97a49c2ca",
+                      "attr": {}
+                    },
+                    "3": {
+                      "title": "Silent Bomber",
+                      "id": "17.5520.ab01aac9e-439e.97a49c2ca"
+                    },
+                    "4": {
+                      "title": "Soul of the Samurai",
+                      "id": "18.5520.ab01aac9e-439e.97a49c2ca"
+                    }
+                  }
+                }
+              }
             }
           }
         },

@@ -292,7 +292,8 @@
                         }
                       },
                       "attr": {
-                        "style": {}
+                        "style": {},
+                        "collapsed": true
                       }
                     }
                   },
@@ -368,7 +369,8 @@
                         }
                       },
                       "attr": {
-                        "style": {}
+                        "style": {},
+                        "collapsed": true
                       }
                     },
                     "4": {
@@ -930,6 +932,9 @@
                       "title": "Singularity",
                       "id": "312.d3542940eb23d53"
                     }
+                  },
+                  "attr": {
+                    "collapsed": true
                   }
                 },
                 "2": {
@@ -946,6 +951,9 @@
                         }
                       }
                     }
+                  },
+                  "attr": {
+                    "collapsed": true
                   }
                 }
               },
@@ -990,6 +998,9 @@
                       "title": "https://en.wikipedia.org/wiki/Planck_constant",
                       "id": "323.1fd2e30dbb68fa76"
                     }
+                  },
+                  "attr": {
+                    "collapsed": true
                   }
                 },
                 "5": {
@@ -1005,6 +1016,9 @@
                       "title": "sub atomic particles exhibit both",
                       "id": "326.1fd2e30dbb68fa76"
                     }
+                  },
+                  "attr": {
+                    "collapsed": true
                   }
                 },
                 "7": {
@@ -1120,10 +1134,27 @@
                   "attr": {
                     "collapsed": true
                   }
+                },
+                "13": {
+                  "title": "Spacetime doom",
+                  "id": "470.e4ea.3105866c9-c849.608dd9221",
+                  "ideas": {
+                    "1": {
+                      "title": "the idea of spacetime is going extinct",
+                      "id": "471.e4ea.3105866c9-c849.608dd9221"
+                    }
+                  }
+                },
+                "14": {
+                  "title": "Quantum Field Theory",
+                  "id": "472.e4ea.3105866c9-c849.608dd9221",
+                  "ideas": {
+                    "1": {
+                      "title": "in order for us to probe the smallest space we need an amount of energy that will actually create a black hole",
+                      "id": "474.e4ea.3105866c9-c849.608dd9221"
+                    }
+                  }
                 }
-              },
-              "attr": {
-                "collapsed": true
               }
             },
             "12": {
@@ -1176,9 +1207,6 @@
                   "title": "particles decay to something else",
                   "id": "362.fca5.ee6ef25b8-9225.a2161c9d2"
                 }
-              },
-              "attr": {
-                "collapsed": true
               }
             },
             "16": {
@@ -1213,9 +1241,6 @@
                       "title": "radio waves",
                       "id": "393.ab9e.cbf5bd522-2ce0.9d9d49cc1"
                     }
-                  },
-                  "attr": {
-                    "collapsed": true
                   }
                 },
                 "5": {
@@ -1299,6 +1324,31 @@
                   "title": "Electromagnetic waves",
                   "id": "411.e132.e539d4096-6f03.bc76aa35",
                   "attr": {}
+                }
+              }
+            },
+            "17": {
+              "title": "Anti-matter",
+              "id": "463.56f3.eb1475fa3-784a.ae26aee06",
+              "ideas": {
+                "1": {
+                  "title": "https://en.wikipedia.org/wiki/Antimatter",
+                  "id": "464.56f3.eb1475fa3-784a.ae26aee06",
+                  "ideas": {}
+                },
+                "2": {
+                  "title": "Examples",
+                  "id": "466.56f3.eb1475fa3-784a.ae26aee06",
+                  "ideas": {
+                    "1": {
+                      "title": "Positron",
+                      "id": "467.56f3.eb1475fa3-784a.ae26aee06"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "the opposite of a matter",
+                  "id": "469.56f3.eb1475fa3-784a.ae26aee06"
                 }
               },
               "attr": {
@@ -1417,6 +1467,9 @@
                               "id": "448.9cb7.8d17a5a6b-da87.2b87ae81f",
                               "attr": {}
                             }
+                          },
+                          "attr": {
+                            "collapsed": true
                           }
                         }
                       },
@@ -1616,6 +1669,9 @@
                     "collapsed": true
                   }
                 }
+              },
+              "attr": {
+                "collapsed": true
               }
             }
           },
@@ -2025,8 +2081,7 @@
                             "note": {
                               "index": 203,
                               "text": "The theory of relativity is concerned with the description of phenomena that take place in a frame of reference that is in motion with respect to an observer"
-                            },
-                            "collapsed": true
+                            }
                           }
                         },
                         "8": {
@@ -2052,21 +2107,13 @@
                               "title": "Quantum gravity",
                               "id": "243.73a28e198fe10f08"
                             }
-                          },
-                          "attr": {
-                            "collapsed": true
                           }
                         }
-                      },
-                      "attr": {
-                        "collapsed": true
                       }
                     }
-                  }
+                  },
+                  "attr": {}
                 }
-              },
-              "attr": {
-                "collapsed": true
               }
             },
             "6": {

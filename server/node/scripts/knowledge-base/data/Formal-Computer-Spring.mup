@@ -11,47 +11,322 @@
           "id": "2.6cff5b0875f217ea",
           "ideas": {
             "1": {
-              "title": "beans",
-              "id": "5.13500c64cec130e",
+              "title": "Components",
+              "id": "5.1d35.b683028aa-5ed0.1e695f98a",
               "ideas": {
                 "1": {
-                  "title": "encapsulates many objects into a single one. They have zero arguments and setters and getters",
-                  "id": "6.13500c64cec130e"
-                },
-                "2": {
-                  "title": "Resources",
-                  "id": "7.13500c64cec130e",
+                  "title": "Data Access Layer",
+                  "id": "20.253a.932a30e11-722b.7bae2f0e4",
                   "ideas": {
                     "1": {
-                      "title": "https://en.wikipedia.org/wiki/JavaBeans",
-                      "id": "8.13500c64cec130e"
+                      "title": "JMS",
+                      "id": "21.253a.932a30e11-722b.7bae2f0e4"
+                    },
+                    "2": {
+                      "title": "Transaction",
+                      "id": "22.253a.932a30e11-722b.7bae2f0e4"
+                    },
+                    "3": {
+                      "title": "Hibernate",
+                      "id": "12.1d35.b683028aa-5ed0.1e695f98a",
+                      "ideas": {
+                        "1": {
+                          "title": "ORM",
+                          "id": "13.1d35.b683028aa-5ed0.1e695f98a",
+                          "ideas": {}
+                        },
+                        "2": {
+                          "title": "Data access Layer",
+                          "id": "15.1d35.b683028aa-5ed0.1e695f98a"
+                        },
+                        "3": {
+                          "title": "Entities",
+                          "id": "16.1d35.b683028aa-5ed0.1e695f98a"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "2": {
+                  "title": "MVC",
+                  "id": "23.253a.932a30e11-722b.7bae2f0e4",
+                  "ideas": {}
+                },
+                "3": {
+                  "title": "Infrastructure",
+                  "id": "25.253a.932a30e11-722b.7bae2f0e4",
+                  "ideas": {
+                    "1": {
+                      "title": "AOP",
+                      "id": "26.253a.932a30e11-722b.7bae2f0e4",
+                      "ideas": {}
+                    },
+                    "2": {
+                      "title": "Instrumentation",
+                      "id": "28.253a.932a30e11-722b.7bae2f0e4"
+                    },
+                    "3": {
+                      "title": "Messaging",
+                      "id": "29.253a.932a30e11-722b.7bae2f0e4"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "4": {
+                  "title": "Container",
+                  "id": "30.1df4.b519a448c-fb9e.570638b15",
+                  "ideas": {
+                    "1": {
+                      "title": "Generally known as ApplicationContext",
+                      "id": "32.1df4.b519a448c-fb9e.570638b15"
+                    },
+                    "3": {
+                      "title": "Bean",
+                      "id": "34.1df4.b519a448c-fb9e.570638b15",
+                      "ideas": {
+                        "1": {
+                          "title": "When Java Objects are created by a spring container",
+                          "id": "33.1df4.b519a448c-fb9e.570638b15",
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "Just think Java Objects",
+                          "id": "35.1df4.b519a448c-fb9e.570638b15"
+                        },
+                        "4": {
+                          "title": "types",
+                          "id": "39.8f44.652f4000e-75f8.38f63b5d8",
+                          "ideas": {
+                            "1": {
+                              "title": "Default scope is singleton",
+                              "id": "38.8f44.652f4000e-75f8.38f63b5d8",
+                              "attr": {}
+                            },
+                            "2": {
+                              "title": "Prototype",
+                              "id": "40.8f44.652f4000e-75f8.38f63b5d8",
+                              "ideas": {
+                                "1": {
+                                  "title": "A new object is created for each request",
+                                  "id": "44.8f44.652f4000e-75f8.38f63b5d8"
+                                },
+                                "2": {
+                                  "title": "isn't destroyed",
+                                  "id": "48.8f44.652f4000e-75f8.38f63b5d8",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "https://www.udemy.com/course/spring-hibernate-tutorial/learn/lecture/5809260#overview",
+                                      "id": "49.8f44.652f4000e-75f8.38f63b5d8"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "3": {
+                              "title": "Request",
+                              "id": "41.8f44.652f4000e-75f8.38f63b5d8"
+                            },
+                            "4": {
+                              "title": "Session",
+                              "id": "42.8f44.652f4000e-75f8.38f63b5d8"
+                            },
+                            "5": {
+                              "title": "Global Session",
+                              "id": "43.8f44.652f4000e-75f8.38f63b5d8"
+                            }
+                          }
+                        },
+                        "5": {
+                          "title": "Lifecycle",
+                          "id": "45.8f44.652f4000e-75f8.38f63b5d8",
+                          "ideas": {
+                            "1": {
+                              "title": "Init",
+                              "id": "46.8f44.652f4000e-75f8.38f63b5d8"
+                            },
+                            "2": {
+                              "title": "Destroy",
+                              "id": "47.8f44.652f4000e-75f8.38f63b5d8"
+                            }
+                          }
+                        },
+                        "6": {
+                          "title": "Annotations",
+                          "id": "50.8f44.652f4000e-75f8.38f63b5d8",
+                          "ideas": {
+                            "1": {
+                              "title": "Component",
+                              "id": "51.8f44.652f4000e-75f8.38f63b5d8",
+                              "attr": {
+                                "stickers": [
+                                  "emoji:1F600"
+                                ]
+                              }
+                            },
+                            "2": {
+                              "title": "Scope",
+                              "id": "52.8f44.652f4000e-75f8.38f63b5d8"
+                            },
+                            "3": {
+                              "title": "Autowired",
+                              "id": "53.8f44.652f4000e-75f8.38f63b5d8",
+                              "ideas": {
+                                "1": {
+                                  "title": "Injects dependency",
+                                  "id": "54.8f44.652f4000e-75f8.38f63b5d8"
+                                }
+                              }
+                            },
+                            "4": {
+                              "title": "@Value",
+                              "id": "55.8f44.652f4000e-75f8.38f63b5d8",
+                              "ideas": {
+                                "1": {
+                                  "title": "Inejcting properties through a file",
+                                  "id": "56.8f44.652f4000e-75f8.38f63b5d8",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "https://www.udemy.com/course/spring-hibernate-tutorial/learn/lecture/6449102#overview",
+                                      "id": "57.8f44.652f4000e-75f8.38f63b5d8"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "5": {
+                              "title": "Transactional",
+                              "id": "69.c1f6.254fd3a2c-5e2f.bba587b2b",
+                              "ideas": {
+                                "1": {
+                                  "title": "For Spring JPA to implement transactions and rollback",
+                                  "id": "70.c1f6.254fd3a2c-5e2f.bba587b2b"
+                                },
+                                "2": {
+                                  "title": "Resources",
+                                  "id": "71.c1f6.254fd3a2c-5e2f.bba587b2b",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "https://www.baeldung.com/transaction-configuration-with-jpa-and-spring",
+                                      "id": "72.c1f6.254fd3a2c-5e2f.bba587b2b"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "5": {
+                  "title": "Reactive",
+                  "id": "36.8f44.652f4000e-75f8.38f63b5d8",
+                  "ideas": {
+                    "1": {
+                      "title": "Asynchronous non-blocking ",
+                      "id": "37.8f44.652f4000e-75f8.38f63b5d8"
+                    }
+                  }
+                },
+                "6": {
+                  "title": "Spring REST",
+                  "id": "58.8f44.652f4000e-75f8.38f63b5d8",
+                  "ideas": {
+                    "1": {
+                      "title": "Handles Jackson integration automatically",
+                      "id": "59.8f44.652f4000e-75f8.38f63b5d8"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Spring Boot",
+              "id": "6.1d35.b683028aa-5ed0.1e695f98a",
+              "ideas": {
+                "1": {
+                  "title": "Removes boilerplate code out of Spring",
+                  "id": "7.1d35.b683028aa-5ed0.1e695f98a"
+                },
+                "2": {
+                  "title": "Difference between Spring and Spring Boot",
+                  "id": "8.1d35.b683028aa-5ed0.1e695f98a",
+                  "ideas": {
+                    "1": {
+                      "title": "https://www.baeldung.com/spring-vs-spring-boot",
+                      "id": "9.1d35.b683028aa-5ed0.1e695f98a"
                     }
                   }
                 },
                 "3": {
-                  "title": "Can be controlled by external application",
-                  "id": "9.13500c64cec130e"
-                },
-                "4": {
-                  "title": "It's almost an object that provides easy access to properties",
-                  "id": "10.13500c64cec130e",
+                  "title": "Spring initializer",
+                  "id": "10.1d35.b683028aa-5ed0.1e695f98a",
                   "ideas": {
                     "1": {
-                      "title": "http://stackoverflow.com/questions/3295496/what-is-a-javabean-exactly",
-                      "id": "11.13500c64cec130e"
+                      "title": "https://start.spring.io/",
+                      "id": "11.1d35.b683028aa-5ed0.1e695f98a"
                     }
                   }
                 }
-              },
-              "attr": {
-                "collapsed": true
               }
             },
-            "2": {
-              "title": "Annotations",
-              "id": "12.62c0826bc96f42d2"
+            "3": {
+              "title": "Zuul gateway",
+              "id": "60.0a04.7fd73ca2e-0bb4.f97fdcef5",
+              "ideas": {
+                "1": {
+                  "title": "Resources",
+                  "id": "61.0a04.7fd73ca2e-0bb4.f97fdcef5",
+                  "ideas": {
+                    "1": {
+                      "title": "https://github.com/Netflix/zuul",
+                      "id": "62.0a04.7fd73ca2e-0bb4.f97fdcef5"
+                    }
+                  }
+                },
+                "0.5": {
+                  "title": "Supports",
+                  "id": "63.0a04.7fd73ca2e-0bb4.f97fdcef5",
+                  "ideas": {
+                    "1": {
+                      "title": "Push messaging",
+                      "id": "64.0a04.7fd73ca2e-0bb4.f97fdcef5"
+                    }
+                  },
+                  "attr": {}
+                },
+                "0.75": {
+                  "title": "Filtering",
+                  "id": "65.0a04.7fd73ca2e-0bb4.f97fdcef5",
+                  "attr": {}
+                }
+              }
+            },
+            "4": {
+              "title": "Spring WebFlux",
+              "id": "66.6b76.44d5c8f94-43d8.f43c9e999",
+              "ideas": {
+                "1": {
+                  "title": "Mono: implements Publisher and returns 0 or 1 elements\n\n",
+                  "id": "67.6b76.44d5c8f94-43d8.f43c9e999"
+                },
+                "2": {
+                  "title": "Flux: implements Publisher and returns N elements.",
+                  "id": "68.6b76.44d5c8f94-43d8.f43c9e999"
+                }
+              }
             }
-          }
+          },
+          "attr": {}
         },
         "-1": {
           "title": "Resources",
@@ -60,11 +335,24 @@
             "1": {
               "title": "https://projects.spring.io/spring-framework/",
               "id": "4.6cff5b0875f217ea"
+            },
+            "2": {
+              "title": "https://www.udemy.com/course/spring-hibernate-tutorial/learn/lecture/5116952#overview",
+              "id": "17.253a.932a30e11-722b.7bae2f0e4"
             }
           }
         }
+      },
+      "attr": {
+        "position": [
+          -25,
+          -15,
+          1
+        ]
       }
     }
   },
-  "title": "Spring"
+  "title": "Spring",
+  "links": [],
+  "attr": {}
 }

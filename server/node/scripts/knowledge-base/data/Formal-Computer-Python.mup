@@ -10,7 +10,12 @@
         "attachment": {
           "contentType": "text/html",
           "content": "<p style=\"margin-top: 0.5em; margin-bottom: 0.5em; line-height: 22.4px; color: rgb(37, 37, 37); font-family: sans-serif;\"><b>Python</b>&nbsp;is a widely used&nbsp;<a href=\"https://en.wikipedia.org/wiki/General-purpose_programming_language\" title=\"General-purpose programming language\" style=\"color: rgb(11, 0, 128); background: none;\">general-purpose</a>,&nbsp;<a href=\"https://en.wikipedia.org/wiki/High-level_programming_language\" title=\"High-level programming language\" style=\"color: rgb(11, 0, 128); background: none;\">high-level programming language</a>.<sup id=\"cite_ref-AutoNT-34_20-0\" class=\"reference\" style=\"line-height: 1; font-size: 11.2px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/Python_(programming_language)#cite_note-AutoNT-34-20\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\">[20]</a></sup><sup id=\"cite_ref-21\" class=\"reference\" style=\"line-height: 1; font-size: 11.2px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/Python_(programming_language)#cite_note-21\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\">[21]</a></sup>&nbsp;Its design philosophy emphasizes code&nbsp;<a href=\"https://en.wikipedia.org/wiki/Readability\" title=\"Readability\" style=\"color: rgb(11, 0, 128); background: none;\">readability</a>, and its syntax allows programmers to express concepts in fewer&nbsp;<a href=\"https://en.wikipedia.org/wiki/Lines_of_code\" title=\"Lines of code\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); background: none;\">lines of code</a>&nbsp;than would be possible in languages such as&nbsp;<a href=\"https://en.wikipedia.org/wiki/C%2B%2B\" title=\"C++\" style=\"color: rgb(11, 0, 128); background: none;\">C++</a>&nbsp;or&nbsp;<a href=\"https://en.wikipedia.org/wiki/Java_(programming_language)\" title=\"Java (programming language)\" style=\"color: rgb(11, 0, 128); background: none;\">Java</a>.<sup id=\"cite_ref-Summerfield_22-0\" class=\"reference\" style=\"line-height: 1; font-size: 11.2px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/Python_(programming_language)#cite_note-Summerfield-22\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\">[22]</a></sup><sup id=\"cite_ref-23\" class=\"reference\" style=\"line-height: 1; font-size: 11.2px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/Python_(programming_language)#cite_note-23\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\">[23]</a></sup>&nbsp;The language provides constructs intended to enable clear programs on both a small and large scale.<sup id=\"cite_ref-AutoNT-7_24-0\" class=\"reference\" style=\"line-height: 1; font-size: 11.2px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/Python_(programming_language)#cite_note-AutoNT-7-24\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\">[24]</a></sup></p><p style=\"margin-top: 0.5em; margin-bottom: 0.5em; line-height: 22.4px; color: rgb(37, 37, 37); font-family: sans-serif;\">Python supports multiple&nbsp;<a href=\"https://en.wikipedia.org/wiki/Programming_paradigm\" title=\"Programming paradigm\" style=\"color: rgb(11, 0, 128); background: none;\">programming paradigms</a>, including&nbsp;<a href=\"https://en.wikipedia.org/wiki/Object-oriented_programming\" title=\"Object-oriented programming\" style=\"color: rgb(11, 0, 128); background: none;\">object-oriented</a>,&nbsp;<a href=\"https://en.wikipedia.org/wiki/Imperative_programming\" title=\"Imperative programming\" style=\"color: rgb(11, 0, 128); background: none;\">imperative</a>&nbsp;and&nbsp;<a href=\"https://en.wikipedia.org/wiki/Functional_programming\" title=\"Functional programming\" style=\"color: rgb(11, 0, 128); background: none;\">functional programming</a>&nbsp;or&nbsp;<a href=\"https://en.wikipedia.org/wiki/Procedural_programming\" title=\"Procedural programming\" style=\"color: rgb(11, 0, 128); background: none;\">procedural</a>&nbsp;styles. It features a&nbsp;<a href=\"https://en.wikipedia.org/wiki/Dynamic_type\" title=\"Dynamic type\" class=\"mw-redirect\" style=\"color: rgb(11, 0, 128); background: none;\">dynamic type</a>&nbsp;system and automatic&nbsp;<a href=\"https://en.wikipedia.org/wiki/Memory_management\" title=\"Memory management\" style=\"color: rgb(11, 0, 128); background: none;\">memory management</a>&nbsp;and has a large and comprehensive&nbsp;<a href=\"https://en.wikipedia.org/wiki/Standard_library\" title=\"Standard library\" style=\"color: rgb(11, 0, 128); background: none;\">standard library</a>.<sup id=\"cite_ref-About_25-0\" class=\"reference\" style=\"line-height: 1; font-size: 11.2px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/Python_(programming_language)#cite_note-About-25\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\">[25]</a></sup></p><p style=\"margin-top: 0.5em; margin-bottom: 0.5em; line-height: 22.4px; color: rgb(37, 37, 37); font-family: sans-serif;\">Python interpreters are available for installation on many operating systems, allowing Python code execution on a wide variety of systems. Using&nbsp;<a href=\"https://en.wikipedia.org/wiki/Third-party_software_component\" title=\"Third-party software component\" style=\"color: rgb(11, 0, 128); background: none;\">third-party</a>&nbsp;tools, such as&nbsp;<a href=\"https://en.wikipedia.org/wiki/Py2exe\" title=\"Py2exe\" style=\"color: rgb(11, 0, 128); background: none;\">Py2exe</a>&nbsp;or Pyinstaller,<sup id=\"cite_ref-26\" class=\"reference\" style=\"line-height: 1; font-size: 11.2px; unicode-bidi: -webkit-isolate;\"><a href=\"https://en.wikipedia.org/wiki/Python_(programming_language)#cite_note-26\" style=\"color: rgb(11, 0, 128); white-space: nowrap; background: none;\">[26]</a></sup>&nbsp;Python code can be packaged into stand-alone executable programs for some of the most popular operating systems, allowing the distribution of Python-based software for use on those environments without requiring the installation of a Python interpreter.</p><p style=\"margin-top: 0.5em; margin-bottom: 0.5em; line-height: 22.4px; color: rgb(37, 37, 37); font-family: sans-serif;\"><a href=\"https://en.wikipedia.org/wiki/CPython\" title=\"CPython\" style=\"color: rgb(11, 0, 128); background: none;\">CPython</a>, the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Reference_implementation\" title=\"Reference implementation\" style=\"color: rgb(11, 0, 128); background: none;\">reference implementation</a>&nbsp;of Python, is&nbsp;<a href=\"https://en.wikipedia.org/wiki/Free_and_open-source_software\" title=\"Free and open-source software\" style=\"color: rgb(11, 0, 128); background: none;\">free and open-source software</a>&nbsp;and has a community-based development model, as do nearly all of its alternative implementations. CPython is managed by the non-profit&nbsp;<a href=\"https://en.wikipedia.org/wiki/Python_Software_Foundation\" title=\"Python Software Foundation\" style=\"color: rgb(11, 0, 128); background: none;\">Python Software Foundation</a>.</p>"
-        }
+        },
+        "position": [
+          -27,
+          -24,
+          1
+        ]
       },
       "ideas": {
         "0.5": {
@@ -18,69 +23,1175 @@
           "id": 5,
           "ideas": {
             "1": {
-              "title": "Simplicity",
-              "id": 7
-            },
-            "3": {
-              "title": "Patterns",
-              "id": 39,
+              "title": "Python libraries",
               "ideas": {
                 "1": {
-                  "title": "Decorator",
-                  "id": 40,
+                  "title": "NumPy",
+                  "id": "60.484c.97149ea01-88c4.2429595a6"
+                },
+                "2": {
+                  "title": "Pandas",
+                  "id": "61.484c.97149ea01-88c4.2429595a6"
+                },
+                "3": {
+                  "title": "Matplotlib",
+                  "id": "62.484c.97149ea01-88c4.2429595a6"
+                },
+                "4": {
+                  "title": "Scikit-learn",
+                  "id": "63.484c.97149ea01-88c4.2429595a6"
+                }
+              },
+              "id": "59.484c.97149ea01-88c4.2429595a6",
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "2": {
+              "title": "Python frameworks",
+              "ideas": {
+                "1": {
+                  "title": "Django",
+                  "id": "70.484c.97149ea01-88c4.2429595a6"
+                },
+                "2": {
+                  "title": "Flask",
+                  "id": "71.484c.97149ea01-88c4.2429595a6"
+                },
+                "3": {
+                  "title": "Pyramid",
+                  "id": "72.484c.97149ea01-88c4.2429595a6"
+                }
+              },
+              "id": "69.484c.97149ea01-88c4.2429595a6",
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "0.5": {
+              "title": "Basics of Python",
+              "ideas": {
+                "2": {
+                  "title": "Data types",
+                  "id": "66.484c.97149ea01-88c4.2429595a6",
                   "ideas": {
                     "1": {
-                      "title": "Change behavior of an object with similar interface",
-                      "id": 41,
-                      "attr": {}
-                    },
-                    "2": {
-                      "title": "@",
-                      "id": 51,
+                      "title": "Numeric data types",
                       "ideas": {
                         "1": {
-                          "title": "http://stackoverflow.com/questions/6392739/what-does-the-at-symbol-do-in-python",
-                          "id": 53
+                          "title": "int: Integers",
+                          "id": "74.484c.97149ea01-88c4.2429595a6"
                         },
                         "2": {
-                          "title": "https://www.python.org/dev/peps/pep-0318/",
-                          "id": 54
+                          "title": "float: Floating-point numbers",
+                          "id": "75.484c.97149ea01-88c4.2429595a6"
                         },
                         "3": {
-                          "title": "Example",
-                          "id": 55,
+                          "title": "complex: Complex numbers",
+                          "id": "76.484c.97149ea01-88c4.2429595a6"
+                        }
+                      },
+                      "id": "73.484c.97149ea01-88c4.2429595a6",
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "2": {
+                      "title": "String data types",
+                      "ideas": {
+                        "1": {
+                          "title": "str: Unicode strings",
+                          "id": "78.484c.97149ea01-88c4.2429595a6",
                           "attr": {
-                            "attachment": {
-                              "contentType": "text/html",
-                              "content": "<h2 style=\"margin: 0px 0px 0.5em; padding: 0px; border: 0px; font-size: 19px; line-height: 1.3; font-weight: 400; word-wrap: break-word;\">Preamble</h2><h2 style=\"margin-top: 0px; margin-bottom: 0.5em; padding: 0px; border: 0px; font-size: 19px; line-height: 1.3; font-weight: 400; word-wrap: break-word; color: rgb(34, 36, 38); font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;\"><div class=\"post-text\" itemprop=\"text\" style=\"margin: 0px 0px 5px; padding: 0px; border: 0px; font-size: 15px; width: 660px; word-wrap: break-word; line-height: 1.3; color: rgb(34, 36, 38); font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);\"><p style=\"margin: 0px 0px 1em; padding: 0px; border: 0px; font-size: 15px; clear: both;\">I admit it took more than a few moments to fully grasp this concept for me, so I'll share what I've learned to save others the trouble.</p><p style=\"margin: 0px 0px 1em; padding: 0px; border: 0px; font-size: 15px; clear: both;\">The name&nbsp;<strong style=\"margin: 0px; padding: 0px; border: 0px; font-size: 15px; font-weight: bold;\">decorator</strong>&nbsp;- the thing we define using the&nbsp;<code style=\"margin: 0px; padding: 1px 5px; border: 0px; font-size: 13px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; white-space: pre-wrap; background-color: rgb(238, 238, 238);\">@</code>&nbsp;syntax before a function definition - was probably the main culprit here.</p></div></h2><h2 style=\"margin: 0px 0px 0.5em; padding: 0px; border: 0px; font-size: 19px; line-height: 1.3; font-weight: 400; word-wrap: break-word;\">Example</h2><h2 style=\"margin-top: 0px; margin-bottom: 0.5em; padding: 0px; border: 0px; font-size: 19px; line-height: 1.3; font-weight: 400; word-wrap: break-word; color: rgb(34, 36, 38); font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;\"><div class=\"post-text\" itemprop=\"text\" style=\"margin: 0px 0px 5px; padding: 0px; border: 0px; font-size: 15px; width: 660px; word-wrap: break-word; line-height: 1.3; color: rgb(34, 36, 38); font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);\"><pre class=\"lang-py prettyprint prettyprinted\" style=\"margin: 0px 0px 1em; padding: 5px; border: 0px; font-size: 13px; overflow: auto; width: auto; max-height: 600px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; display: block; color: rgb(57, 51, 24); word-wrap: normal; background-color: rgb(238, 238, 238);\"><code style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; white-space: inherit; background-color: rgb(238, 238, 238);\"><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: rgb(0, 0, 139);\">class</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\"> </span><span class=\"typ\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: rgb(43, 145, 175);\">Pizza</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">(</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">object</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">):</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n    </span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: rgb(0, 0, 139);\">def</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\"> __init__</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">(</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">self</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">):</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n        self</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">.</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">toppings </span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">=</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\"> </span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">[]</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n    </span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: rgb(0, 0, 139);\">def</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\"> __call__</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">(</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">self</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">,</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\"> topping</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">):</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n        </span><span class=\"com\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: gray;\"># when using '@instance_of_pizza' before a function def</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n        </span><span class=\"com\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: gray;\"># the function gets passed onto 'topping'</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n        self</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">.</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">toppings</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">.</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">append</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">(</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">topping</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">())</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n    </span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: rgb(0, 0, 139);\">def</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\"> __repr__</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">(</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">self</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">):</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n        </span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: rgb(0, 0, 139);\">return</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\"> str</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">(</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">self</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">.</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">toppings</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">)</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n\npizza </span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">=</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\"> </span><span class=\"typ\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: rgb(43, 145, 175);\">Pizza</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">()</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n\n</span><span class=\"lit\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: maroon;\">@pizza</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n</span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: rgb(0, 0, 139);\">def</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\"> cheese</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">():</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n    </span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: rgb(0, 0, 139);\">return</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\"> </span><span class=\"str\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: maroon;\">'cheese'</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n</span><span class=\"lit\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: maroon;\">@pizza</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n</span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: rgb(0, 0, 139);\">def</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\"> sauce</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">():</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n    </span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: rgb(0, 0, 139);\">return</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\"> </span><span class=\"str\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: maroon;\">'sauce'</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\">\n\n</span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: rgb(0, 0, 139);\">print</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: black;\"> pizza\n</span><span class=\"com\" style=\"margin: 0px; padding: 0px; border: 0px; font-size: 13px; color: gray;\"># ['cheese', 'sauce']</span></code></pre><p style=\"margin: 0px 0px 1em; padding: 0px; border: 0px; font-size: 15px; clear: both;\">What this shows is that the&nbsp;<code style=\"margin: 0px; padding: 1px 5px; border: 0px; font-size: 13px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; white-space: pre-wrap; background-color: rgb(238, 238, 238);\">function</code>/<code style=\"margin: 0px; padding: 1px 5px; border: 0px; font-size: 13px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; white-space: pre-wrap; background-color: rgb(238, 238, 238);\">method</code>/<code style=\"margin: 0px; padding: 1px 5px; border: 0px; font-size: 13px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; white-space: pre-wrap; background-color: rgb(238, 238, 238);\">class</code>&nbsp;you're defining after a&nbsp;<strong style=\"margin: 0px; padding: 0px; border: 0px; font-size: 15px; font-weight: bold;\">decorator</strong>&nbsp;is just basically passed on as an&nbsp;<code style=\"margin: 0px; padding: 1px 5px; border: 0px; font-size: 13px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; white-space: pre-wrap; background-color: rgb(238, 238, 238);\">argument</code>&nbsp;to the&nbsp;<code style=\"margin: 0px; padding: 1px 5px; border: 0px; font-size: 13px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; white-space: pre-wrap; background-color: rgb(238, 238, 238);\">function</code>/<code style=\"margin: 0px; padding: 1px 5px; border: 0px; font-size: 13px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; white-space: pre-wrap; background-color: rgb(238, 238, 238);\">method</code>&nbsp;immediatelly after the&nbsp;<code style=\"margin: 0px; padding: 1px 5px; border: 0px; font-size: 13px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; white-space: pre-wrap; background-color: rgb(238, 238, 238);\">@</code>&nbsp;sign.</p></div></h2><h2 style=\"margin: 0px 0px 0.5em; padding: 0px; border: 0px; font-size: 19px; line-height: 1.3; font-weight: 400; word-wrap: break-word;\">First sighting</h2><h2 style=\"margin-top: 0px; margin-bottom: 0.5em; padding: 0px; border: 0px; font-size: 19px; line-height: 1.3; font-weight: 400; word-wrap: break-word; color: rgb(34, 36, 38); font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;\"><div class=\"post-text\" itemprop=\"text\" style=\"margin: 0px 0px 5px; padding: 0px; border: 0px; font-size: 15px; width: 660px; word-wrap: break-word; line-height: 1.3;\"><p style=\"margin-bottom: 1em; padding: 0px; border: 0px; clear: both;\">The microframework&nbsp;<strong style=\"margin: 0px; padding: 0px; border: 0px;\">Flask</strong>&nbsp;introduces&nbsp;<strong style=\"margin: 0px; padding: 0px; border: 0px;\">decorators</strong>&nbsp;from the very beginning in the following format:</p><pre class=\"lang-py prettyprint prettyprinted\" style=\"margin-bottom: 1em; padding: 5px; border: 0px; overflow: auto; width: auto; max-height: 600px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; color: rgb(57, 51, 24); word-wrap: normal; background-color: rgb(238, 238, 238);\"><code style=\"margin: 0px; font-size: 13px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; white-space: inherit; background-color: rgb(238, 238, 238);\"><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; color: rgb(0, 0, 139);\">from</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\"> flask </span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; color: rgb(0, 0, 139);\">import</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\"> </span><span class=\"typ\" style=\"margin: 0px; padding: 0px; border: 0px; color: rgb(43, 145, 175);\">Flask</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">\napp </span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">=</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\"> </span><span class=\"typ\" style=\"margin: 0px; padding: 0px; border: 0px; color: rgb(43, 145, 175);\">Flask</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">(</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">__name__</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">)</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">\n\n</span><span class=\"lit\" style=\"margin: 0px; padding: 0px; border: 0px; color: maroon;\">@app</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">.</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">route</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">(</span><span class=\"str\" style=\"margin: 0px; padding: 0px; border: 0px; color: maroon;\">\"/\"</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">)</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">\n</span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; color: rgb(0, 0, 139);\">def</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\"> hello</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">():</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">\n    </span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; color: rgb(0, 0, 139);\">return</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\"> </span><span class=\"str\" style=\"margin: 0px; padding: 0px; border: 0px; color: maroon;\">\"Hello World!\"</span></code></pre><p style=\"margin-bottom: 1em; padding: 0px; border: 0px; clear: both;\">This in turn translates to:</p><pre class=\"lang-py prettyprint prettyprinted\" style=\"margin-bottom: 1em; padding: 5px; border: 0px; overflow: auto; width: auto; max-height: 600px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; color: rgb(57, 51, 24); word-wrap: normal; background-color: rgb(238, 238, 238);\"><code style=\"margin: 0px; font-size: 13px; font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif; white-space: inherit; background-color: rgb(238, 238, 238);\"><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">rule      </span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">=</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\"> </span><span class=\"str\" style=\"margin: 0px; padding: 0px; border: 0px; color: maroon;\">\"/\"</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">\nview_func </span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">=</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\"> hello\n</span><span class=\"com\" style=\"margin: 0px; padding: 0px; border: 0px; color: gray;\"># they go as arguments here in 'flask/app.py'</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">\n</span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; color: rgb(0, 0, 139);\">def</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\"> add_url_rule</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">(</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">self</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">,</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\"> rule</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">,</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\"> endpoint</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">=</span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; color: rgb(0, 0, 139);\">None</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">,</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\"> view_func</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">=</span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; color: rgb(0, 0, 139);\">None</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">,</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\"> </span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">**</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">options</span><span class=\"pun\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">):</span><span class=\"pln\" style=\"margin: 0px; padding: 0px; border: 0px; color: black;\">\n    </span><span class=\"kwd\" style=\"margin: 0px; padding: 0px; border: 0px; color: rgb(0, 0, 139);\">pass</span></code></pre><p style=\"margin-bottom: 1em; padding: 0px; border: 0px; clear: both;\">Realizing this finally allowed me to feel at peace with flask.</p></div><table class=\"fw\" style=\"margin: 0px 0px 4px; padding: 0px; border: 0px; font-size: 13px; width: 660px; line-height: 16.9px; background-color: rgb(255, 255, 255);\"><tbody style=\"margin: 0px; padding: 0px; border: 0px;\"><tr style=\"margin: 0px; padding: 0px; border: 0px;\"><td class=\"vt\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: top;\"><div class=\"post-menu\" style=\"margin: 0px; padding: 2px 0px 0px; border: 0px;\"><br></div></td><td align=\"right\" class=\"post-signature\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: top; width: 200px;\"><br></td></tr></tbody></table></h2>"
+                            "position": [
+                              149,
+                              -46,
+                              2
+                            ]
+                          }
+                        },
+                        "2": {
+                          "title": "we can also use the same stuff we use with the list",
+                          "id": "177.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "e.g. st[-1]",
+                              "id": "178.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "returns the last string",
+                                  "id": "179.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {
+                            "position": [
+                              140,
+                              17,
+                              1
+                            ]
+                          }
+                        },
+                        "3": {
+                          "title": "it's immutable",
+                          "id": "180.7a97.cb7e5a3db-5413.2941c38a7"
+                        },
+                        "4": {
+                          "title": "replace variables in string",
+                          "id": "186.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "\"hello world is %s\"",
+                              "id": "187.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "variable is string",
+                                  "id": "189.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
                             },
-                            "style": {}
+                            "2": {
+                              "title": "\"hello world is %d\"",
+                              "id": "190.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "variable is a digital",
+                                  "id": "191.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            },
+                            "3": {
+                              "title": "we can also just have {} as a place holder",
+                              "id": "192.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "\"hello world is {}\".format(variable)",
+                                  "id": "193.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        },
+                        "5": {
+                          "title": "3.6+",
+                          "id": "194.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "f_string",
+                              "id": "195.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "put f between the string",
+                                  "id": "196.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "f\"this is my string {variable}\"",
+                                      "id": "197.7a97.cb7e5a3db-5413.2941c38a7"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "id": "77.484c.97149ea01-88c4.2429595a6",
+                      "attr": {
+                        "note": {
+                          "index": 10,
+                          "text": "Python has a lot of string manipulation functions available. Here are some of the most common ones:\n\n\nstr.capitalize() - Capitalizes the first letter of a string.\nstr.lower() - Converts all letters in a string to lowercase.\nstr.upper() - Converts all letters in a string to uppercase.\nstr.replace() - Replaces all occurrences of a substring with another substring.\nstr.split() - Splits a string into a list of substrings based on a delimiter.\nstr.join() - Joins a list of substrings into a single string.\nstr.len() - Returns the length of a string.\nstr.find() - Finds the first occurrence of a substring in a string.\nstr.index() - Finds the first occurrence of a substring in a string, starting at a specific index.\nstr.slice() - Returns a part of a string.\nstr.format() - Creates a formatted string.\nstr.startswith() - Checks if a string starts with a specific substring.\nstr.endswith() - Checks if a string ends with a specific substring.\nThese are just a few of the many string manipulation functions available in Python. By understanding how to use these functions, you can manipulate strings in a variety of ways."
+                        },
+                        "collapsed": true
+                      }
+                    },
+                    "3": {
+                      "title": "Sequence data types",
+                      "ideas": {
+                        "1": {
+                          "title": "list: Lists",
+                          "id": "80.484c.97149ea01-88c4.2429595a6",
+                          "ideas": {
+                            "1": {
+                              "title": "to check existence",
+                              "id": "109.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "if \"value\" in list",
+                                  "id": "110.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            },
+                            "2": {
+                              "title": "sorted()",
+                              "id": "111.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "immutable operation which returns a new list",
+                                  "id": "112.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            },
+                            "3": {
+                              "title": "select a subset",
+                              "id": "113.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "list[a:b]",
+                                  "id": "114.7a97.cb7e5a3db-5413.2941c38a7"
+                                },
+                                "2": {
+                                  "title": "you can select a step",
+                                  "id": "115.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "list[1::1]",
+                                      "id": "116.7a97.cb7e5a3db-5413.2941c38a7",
+                                      "ideas": {
+                                        "1": {
+                                          "title": "move 1 element from index 1",
+                                          "id": "117.7a97.cb7e5a3db-5413.2941c38a7"
+                                        }
+                                      }
+                                    },
+                                    "2": {
+                                      "title": "to reverse a list",
+                                      "id": "118.7a97.cb7e5a3db-5413.2941c38a7",
+                                      "ideas": {
+                                        "1": {
+                                          "title": "list[::-1]",
+                                          "id": "119.7a97.cb7e5a3db-5413.2941c38a7"
+                                        }
+                                      }
+                                    },
+                                    "3": {
+                                      "title": "to copy the whole list",
+                                      "id": "126.7a97.cb7e5a3db-5413.2941c38a7",
+                                      "ideas": {
+                                        "1": {
+                                          "title": "list[:]",
+                                          "id": "127.7a97.cb7e5a3db-5413.2941c38a7"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "attr": {
+                                "collapsed": true
+                              }
+                            },
+                            "4": {
+                              "title": "mutable operations",
+                              "id": "120.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "insert",
+                                  "id": "121.7a97.cb7e5a3db-5413.2941c38a7"
+                                },
+                                "2": {
+                                  "title": "append",
+                                  "id": "122.7a97.cb7e5a3db-5413.2941c38a7"
+                                },
+                                "3": {
+                                  "title": "pop",
+                                  "id": "123.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              },
+                              "attr": {
+                                "collapsed": true
+                              }
+                            },
+                            "5": {
+                              "title": "we can use .copy method to copy the whole list",
+                              "id": "125.7a97.cb7e5a3db-5413.2941c38a7"
+                            },
+                            "6": {
+                              "title": "comprehensions",
+                              "id": "128.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "a = [i=i for i in list]",
+                                  "id": "129.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            },
+                            "7": {
+                              "title": "list[-1]",
+                              "id": "139.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "last element",
+                                  "id": "140.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        },
+                        "2": {
+                          "title": "tuple: Tuples",
+                          "id": "81.484c.97149ea01-88c4.2429595a6",
+                          "ideas": {
+                            "1": {
+                              "title": "ordered and immutable",
+                              "id": "130.7a97.cb7e5a3db-5413.2941c38a7"
+                            },
+                            "2": {
+                              "title": "used for objects that belong together",
+                              "id": "131.7a97.cb7e5a3db-5413.2941c38a7"
+                            },
+                            "3": {
+                              "title": "syntax",
+                              "id": "132.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "(1,2,\"hello\",4)",
+                                  "id": "133.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            },
+                            "4": {
+                              "title": "unpacking (destructuring)",
+                              "id": "141.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "name, age, city = tuple",
+                                  "id": "142.7a97.cb7e5a3db-5413.2941c38a7"
+                                },
+                                "2": {
+                                  "title": "a, *i2, i3",
+                                  "id": "143.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "tuple",
+                                      "id": "144.7a97.cb7e5a3db-5413.2941c38a7"
+                                    },
+                                    "2": {
+                                      "title": "i2 will include all items in the middle as a list",
+                                      "id": "145.7a97.cb7e5a3db-5413.2941c38a7"
+                                    }
+                                  }
+                                }
+                              },
+                              "attr": {
+                                "collapsed": true
+                              }
+                            },
+                            "5": {
+                              "title": "tuples can be more effecient",
+                              "id": "146.7a97.cb7e5a3db-5413.2941c38a7"
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        },
+                        "3": {
+                          "title": "range: Ranges",
+                          "id": "82.484c.97149ea01-88c4.2429595a6",
+                          "ideas": {
+                            "1": {
+                              "title": "creates a sequence of numbers",
+                              "id": "106.484c.97149ea01-88c4.2429595a6"
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        },
+                        "4": {
+                          "title": "Tuples are immutable and Lists are not",
+                          "id": "105.484c.97149ea01-88c4.2429595a6"
+                        },
+                        "5": {
+                          "title": "set: Sets",
+                          "id": "86.484c.97149ea01-88c4.2429595a6",
+                          "ideas": {
+                            "1": {
+                              "title": "frozenset: Frozen sets",
+                              "id": "87.484c.97149ea01-88c4.2429595a6",
+                              "attr": {}
+                            },
+                            "2": {
+                              "title": "unordered, mutable, no duplicates",
+                              "id": "169.7a97.cb7e5a3db-5413.2941c38a7"
+                            },
+                            "4": {
+                              "title": "creation",
+                              "id": "171.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "s = {1,2,3,4,5,6}",
+                                  "id": "170.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "attr": {}
+                                },
+                                "2": {
+                                  "title": "or using the set method",
+                                  "id": "173.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              },
+                              "attr": {
+                                "collapsed": true
+                              }
+                            },
+                            "5": {
+                              "title": "operations",
+                              "id": "174.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "symmetric difference",
+                                  "id": "175.7a97.cb7e5a3db-5413.2941c38a7"
+                                },
+                                "2": {
+                                  "title": "assymetric difference",
+                                  "id": "176.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              },
+                              "attr": {
+                                "collapsed": true
+                              }
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        }
+                      },
+                      "id": "79.484c.97149ea01-88c4.2429595a6",
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "4": {
+                      "title": "Mapping data types",
+                      "ideas": {
+                        "1": {
+                          "title": "dict: Dictionaries",
+                          "id": "84.484c.97149ea01-88c4.2429595a6",
+                          "attr": {
+                            "note": {
+                              "index": 19,
+                              "text": "len(): This function returns the number of items in the dictionary.\nget(): This function returns the value associated with a given key, or None if the key is not in the dictionary.\nitems(): This function returns a list of tuples, where each tuple contains a key and its associated value.\nkeys(): This function returns a list of all the keys in the dictionary.\nvalues(): This function returns a list of all the values in the dictionary.\nclear(): This function removes all the items from the dictionary.\ncopy(): This function returns a shallow copy of the dictionary.\npop(): This function removes the item with the given key from the dictionary and returns its value.\nsetdefault(): This function returns the value associated with a given key, or sets the key to the given value if it is not already in the dictionary.\nupdate(): This function updates the dictionary with the given items."
+                            },
+                            "collapsed": true
+                          },
+                          "ideas": {
+                            "2": {
+                              "title": "created with",
+                              "id": "149.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "dict()",
+                                  "id": "147.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "ideas": {},
+                                  "attr": {}
+                                },
+                                "2": {
+                                  "title": "or a = {\"key\":\"value\"}",
+                                  "id": "150.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              },
+                              "attr": {
+                                "collapsed": true
+                              }
+                            },
+                            "3": {
+                              "title": "unordered, mutable",
+                              "id": "153.7a97.cb7e5a3db-5413.2941c38a7"
+                            },
+                            "4": {
+                              "title": "update a dictionary with another",
+                              "id": "154.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "place dissimilar keys as a new key",
+                                  "id": "156.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            },
+                            "5": {
+                              "title": "iterating over dictionaries",
+                              "id": "107.484c.97149ea01-88c4.2429595a6",
+                              "ideas": {
+                                "1": {
+                                  "title": "for key, value in my_dict.items():\n  print(key, value)",
+                                  "id": "108.484c.97149ea01-88c4.2429595a6"
+                                }
+                              },
+                              "attr": {}
+                            },
+                            "6": {
+                              "title": "operations",
+                              "id": "151.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "pop",
+                                  "id": "152.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              },
+                              "attr": {
+                                "collapsed": true
+                              }
+                            },
+                            "2.5": {
+                              "title": "operations",
+                              "id": "157.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "len(): This function returns the number of items in the dictionary.",
+                                  "id": "159.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "attr": {}
+                                },
+                                "2": {
+                                  "title": "get(): This function returns the value associated with a given key, or None if the key is not in the dictionary.",
+                                  "id": "160.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "attr": {}
+                                },
+                                "3": {
+                                  "title": "items(): This function returns a list of tuples, where each tuple contains a key and its associated value.",
+                                  "id": "161.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "attr": {}
+                                },
+                                "4": {
+                                  "title": "keys(): This function returns a list of all the keys in the dictionary.",
+                                  "id": "162.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "attr": {}
+                                },
+                                "5": {
+                                  "title": "values(): This function returns a list of all the values in the dictionary.",
+                                  "id": "163.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "attr": {}
+                                },
+                                "6": {
+                                  "title": "clear(): This function removes all the items from the dictionary.",
+                                  "id": "164.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "attr": {}
+                                },
+                                "7": {
+                                  "title": "copy(): This function returns a shallow copy of the dictionary.",
+                                  "id": "165.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "attr": {}
+                                },
+                                "8": {
+                                  "title": "pop(): This function removes the item with the given key from the dictionary and returns its value.",
+                                  "id": "166.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "attr": {}
+                                },
+                                "9": {
+                                  "title": "setdefault(): This function returns the value associated with a given key, or sets the key to the given value if it is not already in the dictionary.",
+                                  "id": "167.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "attr": {}
+                                },
+                                "10": {
+                                  "title": "update(): This function updates the dictionary with the given items.",
+                                  "id": "168.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "attr": {}
+                                }
+                              },
+                              "attr": {
+                                "collapsed": true
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "id": "83.484c.97149ea01-88c4.2429595a6",
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "6": {
+                      "title": "Boolean data type",
+                      "ideas": {
+                        "1": {
+                          "title": "bool: Boolean values",
+                          "id": "89.484c.97149ea01-88c4.2429595a6"
+                        }
+                      },
+                      "id": "88.484c.97149ea01-88c4.2429595a6",
+                      "attr": {
+                        "position": [
+                          95,
+                          77,
+                          1
+                        ],
+                        "collapsed": true
+                      }
+                    },
+                    "7": {
+                      "title": "Custom Types",
+                      "id": "99.484c.97149ea01-88c4.2429595a6",
+                      "ideas": {
+                        "1": {
+                          "title": "class Point(object):\n  def __init__(self, x, y):\n    self.x = x\n    self.y = y\n\n\n  def __str__(self):\n    return \"({}, {})\".format(self.x, self.y)\n\n\n  def __add__(self, other):\n    return Point(self.x + other.x, self.y + other.y)",
+                          "id": "100.484c.97149ea01-88c4.2429595a6"
+                        },
+                        "2": {
+                          "title": "__add__",
+                          "id": "101.484c.97149ea01-88c4.2429595a6",
+                          "ideas": {
+                            "1": {
+                              "title": "how to add two objects of the same type together",
+                              "id": "102.484c.97149ea01-88c4.2429595a6"
+                            }
+                          }
+                        },
+                        "3": {
+                          "title": "__str__",
+                          "id": "103.484c.97149ea01-88c4.2429595a6",
+                          "ideas": {
+                            "1": {
+                              "title": "same as toString()",
+                              "id": "104.484c.97149ea01-88c4.2429595a6"
+                            }
                           }
                         }
                       },
                       "attr": {
-                        "style": {}
+                        "collapsed": true
+                      }
+                    },
+                    "8": {
+                      "title": "other collection types",
+                      "id": "198.7a97.cb7e5a3db-5413.2941c38a7",
+                      "ideas": {
+                        "1": {
+                          "title": "Counter",
+                          "id": "199.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "from collections import Counter",
+                              "id": "200.7a97.cb7e5a3db-5413.2941c38a7"
+                            },
+                            "2": {
+                              "title": "my_counter = Counter(string)",
+                              "id": "201.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "will return each character as a key and the value is the count of this character in the string",
+                                  "id": "202.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            },
+                            "3": {
+                              "title": "useful mehtods",
+                              "id": "203.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "most_common(1)",
+                                  "id": "204.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "most common element in this dict",
+                                      "id": "205.7a97.cb7e5a3db-5413.2941c38a7"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        },
+                        "2": {
+                          "title": "namedtuple",
+                          "id": "206.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "create a class",
+                              "id": "207.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "namedtype(ClassName, properties)",
+                                  "id": "208.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "3": {
+                          "title": "OrderedDict",
+                          "id": "209.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "in newer version normal dict remembers the order",
+                              "id": "210.7a97.cb7e5a3db-5413.2941c38a7"
+                            }
+                          }
+                        },
+                        "4": {
+                          "title": "defaultdict",
+                          "id": "211.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "it has a default value if a key hasn't been set yet",
+                              "id": "213.7a97.cb7e5a3db-5413.2941c38a7"
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "9": {
+                      "title": "Null is actuall \"None\"",
+                      "id": "266.7a97.cb7e5a3db-5413.2941c38a7",
+                      "ideas": {}
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "3": {
+                  "title": "Operators",
+                  "id": "67.484c.97149ea01-88c4.2429595a6",
+                  "ideas": {
+                    "1": {
+                      "title": "checking members of arrays",
+                      "id": "90.484c.97149ea01-88c4.2429595a6",
+                      "ideas": {
+                        "1": {
+                          "title": "if x in [1, 2, 3]:",
+                          "id": "93.484c.97149ea01-88c4.2429595a6",
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "print(\"x is a member of the list\")",
+                          "id": "94.484c.97149ea01-88c4.2429595a6",
+                          "attr": {}
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "Object equality operators",
+                      "id": "95.484c.97149ea01-88c4.2429595a6",
+                      "ideas": {
+                        "1": {
+                          "title": "if x is y:\n  print(\"x is the same object as y\")",
+                          "id": "96.484c.97149ea01-88c4.2429595a6"
+                        }
                       }
                     }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "4": {
+                  "title": "Control flow statements",
+                  "id": "68.484c.97149ea01-88c4.2429595a6",
+                  "ideas": {
+                    "2": {
+                      "title": "for loops",
+                      "id": "98.484c.97149ea01-88c4.2429595a6",
+                      "ideas": {
+                        "1": {
+                          "title": "for value in sequence:\n  code to be executed for each value in the sequence",
+                          "id": "97.484c.97149ea01-88c4.2429595a6",
+                          "attr": {}
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "5": {
+                  "title": "Functions",
+                  "id": "135.7a97.cb7e5a3db-5413.2941c38a7",
+                  "ideas": {
+                    "1": {
+                      "title": "lambdas",
+                      "id": "136.7a97.cb7e5a3db-5413.2941c38a7",
+                      "ideas": {
+                        "2": {
+                          "title": "syntax",
+                          "id": "138.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "lambda x : x * x",
+                              "id": "137.7a97.cb7e5a3db-5413.2941c38a7",
+                              "attr": {}
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "6": {
+                  "title": "Exceptions",
+                  "id": "233.7a97.cb7e5a3db-5413.2941c38a7",
+                  "ideas": {
+                    "2": {
+                      "title": "exception",
+                      "id": "235.7a97.cb7e5a3db-5413.2941c38a7",
+                      "ideas": {
+                        "1": {
+                          "title": "TypeError",
+                          "id": "237.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "trying to add string with number",
+                              "id": "241.7a97.cb7e5a3db-5413.2941c38a7"
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "ValueError",
+                          "id": "238.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "removing a value not there",
+                              "id": "240.7a97.cb7e5a3db-5413.2941c38a7"
+                            }
+                          }
+                        },
+                        "3": {
+                          "title": "IndexError",
+                          "id": "239.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "accessing out of bounds ",
+                              "id": "242.7a97.cb7e5a3db-5413.2941c38a7"
+                            }
+                          }
+                        },
+                        "4": {
+                          "title": "Custom",
+                          "id": "243.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "raise keyword",
+                              "id": "244.7a97.cb7e5a3db-5413.2941c38a7"
+                            },
+                            "2": {
+                              "title": "or assertion",
+                              "id": "245.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "with assert keyword",
+                                  "id": "246.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            },
+                            "3": {
+                              "title": "to catch",
+                              "id": "248.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "use the word try: {code_block} then except {Exception_Type}: ",
+                                  "id": "249.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            },
+                            "4": {
+                              "title": "they contain finally too",
+                              "id": "250.7a97.cb7e5a3db-5413.2941c38a7"
+                            },
+                            "5": {
+                              "title": "we can define new error classes by subclassing from the base Exception class",
+                              "id": "251.7a97.cb7e5a3db-5413.2941c38a7"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "7": {
+                  "title": "Logging",
+                  "id": "252.7a97.cb7e5a3db-5413.2941c38a7",
+                  "ideas": {
+                    "1": {
+                      "title": "you can define logging level and format",
+                      "id": "253.7a97.cb7e5a3db-5413.2941c38a7"
+                    },
+                    "2": {
+                      "title": "handlers",
+                      "id": "254.7a97.cb7e5a3db-5413.2941c38a7",
+                      "ideas": {
+                        "1": {
+                          "title": "rotating file handler",
+                          "id": "258.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "it will rotate through the logs",
+                              "id": "259.7a97.cb7e5a3db-5413.2941c38a7"
+                            },
+                            "2": {
+                              "title": "it will append the number after it",
+                              "id": "260.7a97.cb7e5a3db-5413.2941c38a7"
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "time rotating file handler",
+                          "id": "262.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "you can rotate based on time",
+                              "id": "263.7a97.cb7e5a3db-5413.2941c38a7"
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "3": {
+                      "title": "you can also separate logging.conf ",
+                      "id": "255.7a97.cb7e5a3db-5413.2941c38a7"
+                    },
+                    "4": {
+                      "title": "you can log the stack trace",
+                      "id": "256.7a97.cb7e5a3db-5413.2941c38a7",
+                      "ideas": {
+                        "1": {
+                          "title": "traceback.format_exc()",
+                          "id": "257.7a97.cb7e5a3db-5413.2941c38a7"
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "5": {
+                      "title": "Resources",
+                      "id": "264.7a97.cb7e5a3db-5413.2941c38a7",
+                      "ideas": {
+                        "1": {
+                          "title": "python_json_logger is the recommended library",
+                          "id": "265.7a97.cb7e5a3db-5413.2941c38a7"
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "8": {
+                  "title": "JSON",
+                  "id": "268.7a97.cb7e5a3db-5413.2941c38a7"
+                },
+                "9": {
+                  "title": "Decorators",
+                  "id": "269.7a97.cb7e5a3db-5413.2941c38a7",
+                  "ideas": {
+                    "2": {
+                      "title": "it's simply a function that does some operations and eventually return the decorated function",
+                      "id": "271.7a97.cb7e5a3db-5413.2941c38a7"
+                    },
+                    "12": {
+                      "title": "you can stack decoraters on top of each other",
+                      "id": "270.7a97.cb7e5a3db-5413.2941c38a7",
+                      "attr": {
+                        "position": [
+                          98,
+                          19,
+                          1
+                        ]
+                      }
+                    },
+                    "13": {
+                      "title": "two types",
+                      "id": "274.7a97.cb7e5a3db-5413.2941c38a7",
+                      "ideas": {
+                        "1": {
+                          "title": "class decorator",
+                          "id": "275.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "usually done to maintain a state",
+                              "id": "277.7a97.cb7e5a3db-5413.2941c38a7"
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "function decorator",
+                          "id": "276.7a97.cb7e5a3db-5413.2941c38a7"
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "14": {
+                      "title": "use cases",
+                      "id": "278.7a97.cb7e5a3db-5413.2941c38a7",
+                      "ideas": {
+                        "1": {
+                          "title": "debugging",
+                          "id": "279.7a97.cb7e5a3db-5413.2941c38a7"
+                        },
+                        "2": {
+                          "title": "timing",
+                          "id": "280.7a97.cb7e5a3db-5413.2941c38a7"
+                        },
+                        "3": {
+                          "title": "caching",
+                          "id": "281.7a97.cb7e5a3db-5413.2941c38a7"
+                        },
+                        "4": {
+                          "title": "add information",
+                          "id": "282.7a97.cb7e5a3db-5413.2941c38a7"
+                        },
+                        "5": {
+                          "title": "update states",
+                          "id": "283.7a97.cb7e5a3db-5413.2941c38a7"
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "10": {
+                  "title": "scope of variables",
+                  "id": "284.7a97.cb7e5a3db-5413.2941c38a7",
+                  "ideas": {
+                    "1": {
+                      "title": "we have global variables ",
+                      "id": "285.7a97.cb7e5a3db-5413.2941c38a7"
+                    },
+                    "2": {
+                      "title": "and variables scoped to a function",
+                      "id": "286.7a97.cb7e5a3db-5413.2941c38a7"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "2.5": {
+                  "title": "Itertools",
+                  "id": "214.7a97.cb7e5a3db-5413.2941c38a7",
+                  "ideas": {
+                    "1": {
+                      "title": "iterator",
+                      "id": "215.7a97.cb7e5a3db-5413.2941c38a7",
+                      "ideas": {
+                        "1": {
+                          "title": "product",
+                          "id": "216.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "2": {
+                              "title": "if we have list a and b",
+                              "id": "218.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "create a combination of each item in a with all items in b",
+                                  "id": "217.7a97.cb7e5a3db-5413.2941c38a7",
+                                  "attr": {}
+                                }
+                              }
+                            },
+                            "3": {
+                              "title": "cartesian product",
+                              "id": "219.7a97.cb7e5a3db-5413.2941c38a7"
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "permutations",
+                          "id": "220.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "combination with in the same list",
+                              "id": "221.7a97.cb7e5a3db-5413.2941c38a7"
+                            }
+                          }
+                        },
+                        "3": {
+                          "title": "combinations",
+                          "id": "222.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "with_replacement",
+                              "id": "223.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "keeps duplicate elements",
+                                  "id": "224.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "5": {
+                          "title": "accumlate",
+                          "id": "227.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "accumulated sum",
+                              "id": "225.7a97.cb7e5a3db-5413.2941c38a7",
+                              "ideas": {
+                                "1": {
+                                  "title": "you can also apply other accumulation functions",
+                                  "id": "228.7a97.cb7e5a3db-5413.2941c38a7"
+                                }
+                              },
+                              "attr": {}
+                            }
+                          }
+                        },
+                        "6": {
+                          "title": "groupby",
+                          "id": "229.7a97.cb7e5a3db-5413.2941c38a7",
+                          "ideas": {
+                            "1": {
+                              "title": "groups elements in a list or dict by a function",
+                              "id": "230.7a97.cb7e5a3db-5413.2941c38a7"
+                            }
+                          }
+                        },
+                        "7": {
+                          "title": "remember that a generator has a moving index, once it's done iterating you won't be able to find the values again",
+                          "id": "232.7a97.cb7e5a3db-5413.2941c38a7"
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
                   }
                 }
               },
+              "id": "64.484c.97149ea01-88c4.2429595a6",
               "attr": {
-                "style": {},
-                "collapsed": true
-              }
-            },
-            "4": {
-              "title": "Cheat Sheet",
-              "id": "57.608078fc61ae13d8",
-              "ideas": {
-                "1": {
-                  "title": "https://github.com/juliangaal/python-cheat-sheet",
-                  "id": "58.608078fc61ae13d8"
-                }
-              },
-              "attr": {
-                "collapsed": true
+                "position": [
+                  88,
+                  -67,
+                  1
+                ]
               }
             }
           },
@@ -175,7 +1286,8 @@
                     }
                   },
                   "attr": {
-                    "style": {}
+                    "style": {},
+                    "collapsed": true
                   }
                 },
                 "2": {
@@ -220,7 +1332,8 @@
                     }
                   },
                   "attr": {
-                    "style": {}
+                    "style": {},
+                    "collapsed": true
                   }
                 },
                 "6": {
@@ -301,6 +1414,19 @@
                     "style": {}
                   }
                 }
+              }
+            },
+            "9": {
+              "title": "Cheat Sheet",
+              "id": "57.608078fc61ae13d8",
+              "ideas": {
+                "1": {
+                  "title": "https://github.com/juliangaal/python-cheat-sheet",
+                  "id": "58.608078fc61ae13d8"
+                }
+              },
+              "attr": {
+                "collapsed": true
               }
             }
           },

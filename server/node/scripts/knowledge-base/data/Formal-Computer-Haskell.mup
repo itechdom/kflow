@@ -5,7 +5,13 @@
     "1": {
       "id": 1,
       "title": "Haskell",
-      "attr": {},
+      "attr": {
+        "position": [
+          -28,
+          -15,
+          1
+        ]
+      },
       "ideas": {
         "0.5": {
           "title": "Concepts",
@@ -66,6 +72,88 @@
                   },
                   "attr": {
                     "collapsed": true
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "11": {
+              "title": "Functors",
+              "id": "142.d940.d67fdce8c-4c0b.5de24fd95",
+              "ideas": {
+                "1": {
+                  "title": "contains two things unit and map",
+                  "id": "143.d940.d67fdce8c-4c0b.5de24fd95"
+                },
+                "2": {
+                  "title": "https://medium.com/beingprofessional/understanding-functor-and-monad-with-a-bag-of-peanuts-8fa702b3f69e",
+                  "id": "144.d940.d67fdce8c-4c0b.5de24fd95"
+                },
+                "3": {
+                  "title": "Can wrap a value",
+                  "id": "145.d940.d67fdce8c-4c0b.5de24fd95"
+                },
+                "4": {
+                  "title": "you use map to apply some operation to it then return the wrapped value back",
+                  "id": "146.d940.d67fdce8c-4c0b.5de24fd95"
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "12": {
+              "title": "Monads",
+              "id": "147.d940.d67fdce8c-4c0b.5de24fd95",
+              "ideas": {
+                "1": {
+                  "title": "Bag with unit, map and flatten",
+                  "id": "148.d940.d67fdce8c-4c0b.5de24fd95"
+                },
+                "2": {
+                  "title": "or unit and faltmap",
+                  "id": "149.d940.d67fdce8c-4c0b.5de24fd95"
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "13": {
+              "title": "Maps and Functors",
+              "id": "151.d940.d67fdce8c-4c0b.5de24fd95",
+              "ideas": {
+                "2": {
+                  "title": "My understanding",
+                  "id": "153.d940.d67fdce8c-4c0b.5de24fd95",
+                  "ideas": {
+                    "1": {
+                      "title": "they are just wrappers of computation that have unit and map custom operations",
+                      "id": "152.d940.d67fdce8c-4c0b.5de24fd95",
+                      "attr": {}
+                    },
+                    "2": {
+                      "title": "they are types but wrapped and viewed as functions ",
+                      "id": "154.d940.d67fdce8c-4c0b.5de24fd95",
+                      "ideas": {
+                        "1": {
+                          "title": "so they are types and functions at the same time",
+                          "id": "155.d940.d67fdce8c-4c0b.5de24fd95"
+                        }
+                      }
+                    },
+                    "3": {
+                      "title": "it's a way to write programs using pure functions and handle sequence and exceptions",
+                      "id": "156.8826.83a942d4b-8a03.3ea05fd26",
+                      "ideas": {
+                        "1": {
+                          "title": "https://stackoverflow.com/questions/28139259/why-do-we-need-monads#:~:text=Monads%20are%20just%20a%20convenient,an%20element%20type%20(%20return%20).",
+                          "id": "157.8826.83a942d4b-8a03.3ea05fd26"
+                        }
+                      }
+                    }
                   }
                 }
               },
@@ -140,7 +228,8 @@
                   "attr": {
                     "style": {
                       "width": 50
-                    }
+                    },
+                    "collapsed": true
                   }
                 },
                 "6": {
@@ -204,6 +293,9 @@
                         }
                       }
                     }
+                  },
+                  "attr": {
+                    "collapsed": true
                   }
                 },
                 "9": {
@@ -340,9 +432,6 @@
                                   "title": "will generate A - Z",
                                   "id": "99.2797623eb08492c1"
                                 }
-                              },
-                              "attr": {
-                                "collapsed": true
                               }
                             }
                           },
@@ -383,9 +472,6 @@
                           "title": "you can mix different types",
                           "id": "80.b2dafee72688b40"
                         }
-                      },
-                      "attr": {
-                        "collapsed": true
                       }
                     }
                   },
@@ -786,6 +872,16 @@
               "attr": {
                 "collapsed": true
               }
+            },
+            "14": {
+              "title": "Functors and Monads Simple tutorial",
+              "id": "140.d940.d67fdce8c-4c0b.5de24fd95",
+              "ideas": {
+                "1": {
+                  "title": "https://medium.com/beingprofessional/understanding-functor-and-monad-with-a-bag-of-peanuts-8fa702b3f69e",
+                  "id": "141.d940.d67fdce8c-4c0b.5de24fd95"
+                }
+              }
             }
           },
           "attr": {
@@ -805,11 +901,11 @@
                   "id": 3,
                   "attr": {}
                 }
+              },
+              "attr": {
+                "collapsed": true
               }
             }
-          },
-          "attr": {
-            "collapsed": true
           }
         }
       }

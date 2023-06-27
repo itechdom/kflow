@@ -784,6 +784,56 @@
                 "collapsed": true
               }
             },
+            "56": {
+              "title": "Suspense",
+              "id": "598.302e.97b3ea2ed-c54b.245d7afd2",
+              "ideas": {
+                "1": {
+                  "title": "Wait for data to load without rendering the component",
+                  "id": "599.302e.97b3ea2ed-c54b.245d7afd2",
+                  "ideas": {
+                    "1": {
+                      "title": "so wait for promises?",
+                      "id": "600.302e.97b3ea2ed-c54b.245d7afd2"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "57": {
+              "title": "Redux",
+              "id": "611.7584.bcce77d1d-2b7d.59b4e295b",
+              "ideas": {
+                "2": {
+                  "title": "new hooks changes",
+                  "id": "613.7584.bcce77d1d-2b7d.59b4e295b",
+                  "ideas": {
+                    "1": {
+                      "title": "useSelector",
+                      "id": "612.7584.bcce77d1d-2b7d.59b4e295b",
+                      "attr": {}
+                    },
+                    "2": {
+                      "title": "useDispatch",
+                      "id": "614.7584.bcce77d1d-2b7d.59b4e295b"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "RTK",
+                  "id": "615.2e92.a48ff1b9-8cda.e3702b1d1",
+                  "ideas": {
+                    "1": {
+                      "title": "same as react-query",
+                      "id": "616.2e92.a48ff1b9-8cda.e3702b1d1"
+                    }
+                  }
+                }
+              }
+            },
             "14.5": {
               "title": "Refs",
               "id": "490.5f225201abf452e4",
@@ -902,9 +952,6 @@
             "1.75": {
               "title": "HOC",
               "id": "564.d8e3.a8dc6d5e5-93ac.2ac2de7",
-              "attr": {
-                "collapsed": true
-              },
               "ideas": {
                 "1": {
                   "title": "HOC example: \"withStyles\"",
@@ -920,14 +967,14 @@
                   "title": "https://reactjs.org/docs/higher-order-components.html",
                   "id": "570.d8e3.a8dc6d5e5-93ac.2ac2de7"
                 }
+              },
+              "attr": {
+                "collapsed": true
               }
             },
             "0.875": {
               "title": "pureComponent",
               "id": "566.d8e3.a8dc6d5e5-93ac.2ac2de7",
-              "attr": {
-                "collapsed": true
-              },
               "ideas": {
                 "1": {
                   "title": "https://reactjs.org/docs/react-api.html#reactpurecomponent",
@@ -938,9 +985,6 @@
             "0.4375": {
               "title": "Hooks",
               "id": "572.4f13.762071768-8fc7.72fc29ca6",
-              "attr": {
-                "collapsed": true
-              },
               "ideas": {
                 "1": {
                   "title": "useState",
@@ -956,7 +1000,7 @@
                   }
                 },
                 "2": {
-                  "title": "useHooks",
+                  "title": "Guidelines",
                   "id": "574.4f13.762071768-8fc7.72fc29ca6",
                   "ideas": {
                     "1": {
@@ -993,9 +1037,6 @@
                         }
                       }
                     }
-                  },
-                  "attr": {
-                    "collapsed": true
                   }
                 },
                 "3": {
@@ -1024,9 +1065,6 @@
                 "2.5": {
                   "title": "useCallbacks",
                   "id": "587.4f13.762071768-8fc7.72fc29ca6",
-                  "attr": {
-                    "collapsed": true
-                  },
                   "ideas": {
                     "1": {
                       "title": "example",
@@ -1062,18 +1100,22 @@
                         "collapsed": true
                       }
                     }
+                  },
+                  "attr": {
+                    "collapsed": true
                   }
                 },
                 "2.75": {
                   "title": "useReducer",
                   "id": "594.4f13.762071768-8fc7.72fc29ca6",
-                  "attr": {
-                    "collapsed": true
-                  },
                   "ideas": {
                     "1": {
                       "title": "https://reactjs.org/docs/hooks-reference.html#usereducer",
                       "id": "595.4f13.762071768-8fc7.72fc29ca6"
+                    },
+                    "2": {
+                      "title": "this is not part of Redux, there is no global state, there is also no ability to use thunks",
+                      "id": "610.7584.bcce77d1d-2b7d.59b4e295b"
                     }
                   }
                 },
@@ -1089,7 +1131,47 @@
                       "id": "597.4f13.762071768-8fc7.72fc29ca6"
                     }
                   }
+                },
+                "3.5": {
+                  "title": "UseSyncExternalStore",
+                  "id": "602.302e.97b3ea2ed-c54b.245d7afd2",
+                  "attr": {},
+                  "ideas": {
+                    "1": {
+                      "title": "Sync backend with frontend",
+                      "id": "603.302e.97b3ea2ed-c54b.245d7afd2",
+                      "ideas": {}
+                    },
+                    "2": {
+                      "title": "Any external store",
+                      "id": "606.302e.97b3ea2ed-c54b.245d7afd2",
+                      "ideas": {
+                        "1": {
+                          "title": "even Redux",
+                          "id": "607.302e.97b3ea2ed-c54b.245d7afd2"
+                        }
+                      }
+                    },
+                    "3": {
+                      "title": "Resources",
+                      "id": "608.302e.97b3ea2ed-c54b.245d7afd2",
+                      "ideas": {
+                        "1": {
+                          "title": "https://www.youtube.com/watch?v=GMeQ51MCegI",
+                          "id": "609.302e.97b3ea2ed-c54b.245d7afd2"
+                        },
+                        "2": {
+                          "title": "https://www.youtube.com/watch?v=dtS98IHP7xc",
+                          "id": "604.302e.97b3ea2ed-c54b.245d7afd2",
+                          "attr": {}
+                        }
+                      }
+                    }
+                  }
                 }
+              },
+              "attr": {
+                "collapsed": true
               }
             }
           },
@@ -1127,8 +1209,7 @@
               "title": "Thrid Party",
               "id": 111,
               "attr": {
-                "style": {},
-                "collapsed": true
+                "style": {}
               },
               "ideas": {
                 "1": {
@@ -1204,7 +1285,6 @@
                 "6": {
                   "title": "State Management",
                   "attr": {
-                    "collapsed": true,
                     "style": {}
                   },
                   "ideas": {
@@ -1359,9 +1439,6 @@
                     "collapsed": true
                   }
                 }
-              },
-              "attr": {
-                "collapsed": true
               }
             },
             "16": {
@@ -1409,8 +1486,7 @@
             }
           },
           "attr": {
-            "style": {},
-            "collapsed": true
+            "style": {}
           }
         }
       }

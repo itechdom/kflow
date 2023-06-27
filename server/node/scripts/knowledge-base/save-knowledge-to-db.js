@@ -58,7 +58,14 @@ connectToDb((err, data) => {
         if (res) {
           //merge to existing mindmaps
           const diff = getDiff(res.body, knowledgeData.body);
-          knowledge.body = diff;
+          res.body = diff;
+          res.save((err) => {
+            if (err) {
+              console.log("err saving knowledge", err);
+              return;
+            }
+            console.log(`${titleSections} saved!`);
+          });
         } else {
           let knowledge = new knowledgeModel(knowledgeData);
           return knowledge.save((err) => {
