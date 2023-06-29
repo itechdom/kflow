@@ -1,6 +1,6 @@
 import React from "react";
 import { withStyles } from "@material-ui/styles";
-import theme from "../../../../theme";
+import theme from "theme";
 import { styles } from "./ForgotPassword.styles";
 import { CssBaseline } from "@material-ui/core";
 import {

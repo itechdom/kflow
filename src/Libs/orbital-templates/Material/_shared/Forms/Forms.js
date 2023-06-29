@@ -3,7 +3,7 @@ import { visibleWhenFilter } from "./VisibleWhenFilter";
 import { styles } from "./Forms.styles";
 import { withStyles } from "@material-ui/styles";
 import { withState, compose } from "recompose";
-import theme from "../../../../theme";
+import theme from "theme";
 import moment from "moment";
 import { Button, Typography, CircularProgress } from "@material-ui/core";
 import * as Inputs from "./Inputs";

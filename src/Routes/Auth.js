@@ -4,10 +4,10 @@ import { withStyles } from "@material-ui/core/styles";
 import {
   RegisterWithAuth,
   Auth
-} from "./react-services";
+} from "Libs/react-services";
 import { styles } from "../../App.styles";
-import LoginWrapper from "./orbital-templates/Material/Wrappers/LoginWrapper";
-import { LoginWithAuth } from "./react-services/auth-service/auth-service";
+import LoginWrapper from "Libs/orbital-templates/Material/Wrappers/LoginWrapper";
+import { LoginWithAuth } from "Libs/react-services/auth-service/auth-service";
 import ForgotPassword from "./ForgotPassword/ForgotPassword";
 import ResetPassword from "./ResetPassword/ResetPassword";
 import Register from "./Register/Register";

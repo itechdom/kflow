@@ -1,6 +1,6 @@
 import React from "react";
 import { withStyles } from "@material-ui/styles";
-import theme from "../../../../theme";
+import theme from "theme";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import LockIcon from "@material-ui/icons/LockOutlined";

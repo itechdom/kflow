@@ -12,7 +12,7 @@ import ModelPreview from "../ModelPreview/ModelPreview";
 import ModelListItems from "./ModelListItems";
 import ModelFilterList from "./ModelFilterList";
 //shared components
-import theme from "../../../../theme";
+import theme from "theme";
 import {
   Grid,
   Fade,

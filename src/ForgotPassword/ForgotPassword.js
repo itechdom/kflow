@@ -1,5 +1,5 @@
 import React from "react";
-import { ForgotPassword } from "../orbital-templates/Material/_shared/ForgotPassword/ForgotPassword";
+import { ForgotPassword } from "Libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPassword";
 
 const ForgotPasswordModule = ({
   classes,

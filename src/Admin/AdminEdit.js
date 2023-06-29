@@ -1,10 +1,10 @@
 import React from "react";
-import { withCrud, Forms, Notification } from "../react-services";
+import { withCrud, Forms, Notification } from "Libs/react-services";
 import { Route, withRouter } from "react-router-dom";
-import { MainWrapper } from "../orbital-templates/Material/Wrappers/MainWrapper";
+import { MainWrapper } from "Libs/orbital-templates/Material/Wrappers/MainWrapper";
 import { compose, withPropsOnChange } from "recompose";
 import { CircularProgress } from "@material-ui/core";
-import ModelList from "../orbital-templates/Material/_shared/ModelList/ModelList";
+import ModelList from "Libs/orbital-templates/Material/_shared/ModelList/ModelList";
 
 const AdminDetail = ({
   model,

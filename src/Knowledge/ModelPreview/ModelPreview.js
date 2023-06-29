@@ -14,11 +14,11 @@ import {
   Tab,
   Typography,
 } from "@material-ui/core";
-import Autocomplete from "../../orbital-templates/Material/_shared/Autocomplete/Autocomplete";
+import Autocomplete from "Libs/orbital-templates/Material/_shared/Autocomplete/Autocomplete";
 import ListTree from "./ListTree.js";
 import DeleteIcon from "@material-ui/icons/Delete";
 import EditIcon from "@material-ui/icons/Edit";
-import ConfirmDeleteModal from "../../orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal";
+import ConfirmDeleteModal from "Libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal";
 import GraphTree from "./GraphTree";
 import Mindmap from "./Mindmap";
 import { withState, compose } from "recompose";

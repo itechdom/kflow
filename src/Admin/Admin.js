@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Link } from "react-router-dom";
 import AdminEdit from "./AdminEdit";
-import MainWrapper from "../orbital-templates/Material/Wrappers/MainWrapper";
+import MainWrapper from "Libs/orbital-templates/Material/Wrappers/MainWrapper";
 import { CircularProgress } from "@material-ui/core";
 
 //this will take Admin from "admin-service"
@@ -44,7 +44,6 @@ const AdminPage = ({
         crudDomainStore={crudDomainStore}
         classes={classes}
         noMargin={true}
-        user={user}
         disableToggle={true}
       >
         <Route

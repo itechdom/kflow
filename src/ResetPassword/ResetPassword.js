@@ -1,5 +1,5 @@
 import React from "react";
-import ResetPassword from "../orbital-templates/Material/_shared/ResetPassword/ResetPassword";
+import ResetPassword from "Libs/orbital-templates/Material/_shared/ResetPassword/ResetPassword";
 
 const ResetPasswordModule = ({
   changePassword,

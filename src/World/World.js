@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "./World.styles.js";
-import theme from "../orbital-templates/theme";
+import theme from "Libs/orbital-templates/theme";
 import { withStyles, Button } from "@material-ui/core";
 import { Game as PhysicsGame } from "./Simulations/2DReality/GamePhysics";
 import { GameState as PhysicsGameState } from "./Simulations/2DReality/GamePhysics.state";

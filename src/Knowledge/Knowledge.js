@@ -1,8 +1,8 @@
 import React from "react";
 import { styles } from "./Knowledge.styles.js";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
-import theme from "../orbital-templates/theme";
-import ModelList from "../orbital-templates/Material/_shared/ModelList/ModelList";
+import theme from "Libs/orbital-templates/theme";
+import ModelList from "Libs/orbital-templates/Material/_shared/ModelList/ModelList";
 import ModelListItem from "./ModelList/ModelListItemFP";
 import ModelPreview from "./ModelPreview/ModelPreview";
 import { withStyles, Button } from "@material-ui/core";

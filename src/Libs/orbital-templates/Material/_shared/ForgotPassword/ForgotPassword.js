@@ -3,7 +3,7 @@ import { withStyles } from "@material-ui/styles";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import LockIcon from "@material-ui/icons/LockOutlined";
-import theme from "../../../../theme";
+import theme from "theme";
 import { styles } from "./ForgotPassword.styles";
 import { Route } from "react-router-dom";
 import ForgotPasswordConfirm from "./ForgotPasswordConfirm";

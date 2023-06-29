@@ -1,5 +1,5 @@
 import React from "react";
-import { Login } from "../orbital-templates/Material/_shared/Login/Login";
+import { Login } from "Libs/orbital-templates/Material/_shared/Login/Login";
 
 const LoginModule = ({
   onChange,

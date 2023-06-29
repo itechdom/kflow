@@ -14,14 +14,15 @@ import {
   DialogTitle,
   Button
 } from "@material-ui/core";
-import MainWrapper from "./orbital-templates/Material/Wrappers/MainWrapper";
-import { Wikipedia } from "./react-services/wikipedia-service/wikipedia-container";
+import MainWrapper from "Libs/orbital-templates/Material/Wrappers/MainWrapper";
+import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
+import { Wikipedia } from "Libs/react-services/wikipedia-service/wikipedia-container";
 import {
   Crud,
   Media,
   Forms,
   Notification
-} from "./react-services";
+} from "Libs/react-services";
 import config from "./config/index";
 import ReactGA from "react-ga";
 import rootStore from "./Store/rootStore";
@@ -31,7 +32,6 @@ import theme from "./theme";
 import { styles } from "./App.styles.js";
 import { withStyles, ThemeProvider } from "@material-ui/core/styles";
 import "./global.css";
-import Loading from "./orbital-templates/Material/_shared/Loading/Loading";
 import Knowledge from "./Knowledge/Knowledge";
 import KnowledgePreview from "./Knowledge/ModelPreview/ModelPreview";
 const logo = "images/logo-no-background.svg";

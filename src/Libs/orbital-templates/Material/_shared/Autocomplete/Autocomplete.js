@@ -1,5 +1,5 @@
 import React from "react";
-import theme from "../../../../theme";
+import theme from "theme";
 import PropTypes from "prop-types";
 import Autosuggest from "react-autosuggest";
 import match from "autosuggest-highlight/match";

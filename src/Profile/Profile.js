@@ -1,6 +1,6 @@
 import React from "react";
-import ModelEdit from "../orbital-templates/Material/_shared/ModelEdit/ModelEdit";
-import ClientNotification from "../orbital-templates/Material/_shared/ClientNotification/ClientNotification";
+import ModelEdit from "Libs/orbital-templates/Material/_shared/ModelEdit/ModelEdit";
+import ClientNotification from "Libs/orbital-templates/Material/_shared/ClientNotification/ClientNotification";
 
 const Profile = ({
   user,

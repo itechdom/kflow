@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import { Crud } from './react-services/crud-service/crud-container';
-import { Wikipedia } from './react-services/wikipedia-service/wikipedia-container';
+import { Crud } from 'Libs/react-services/crud-service/crud-container';
+import { Wikipedia } from 'Libs/react-services/wikipedia-service/wikipedia-container';
 import config from './config';
 import { memo } from 'react';
 

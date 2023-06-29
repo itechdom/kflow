@@ -15,7 +15,7 @@ import {
   formsDomainStore,
   notificationDomainStore,
   crudDomainStore
-} from "../react-services";
+} from "Libs/react-services";
 import Store from "./Store";
 const rootStore = new Store({
   authDomainStore,
