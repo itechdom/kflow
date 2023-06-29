@@ -15,24 +15,16 @@ import {
   Button
 } from "@material-ui/core";
 import MainWrapper from "./orbital-templates/Material/Wrappers/MainWrapper";
-import LoginWrapper from "./orbital-templates/Material/Wrappers/LoginWrapper";
 import { Wikipedia } from "./react-services/wikipedia-service/wikipedia-container";
-import { LoginWithAuth } from "./react-services/auth-service/auth-service";
 import {
   Crud,
-  RegisterWithAuth,
   Media,
   Forms,
-  Auth,
   Notification
 } from "./react-services";
 import config from "./config/index";
 import ReactGA from "react-ga";
 import rootStore from "./Store/rootStore";
-import ForgotPassword from "./ForgotPassword/ForgotPassword";
-import ResetPassword from "./ResetPassword/ResetPassword";
-import Register from "./Register/Register";
-import Login from "./Login/Login";
 import Profile from "./Profile/Profile";
 import Admin from "./Admin/Admin";
 import theme from "./theme";
@@ -42,8 +34,6 @@ import "./global.css";
 import Loading from "./orbital-templates/Material/_shared/Loading/Loading";
 import Knowledge from "./Knowledge/Knowledge";
 import KnowledgePreview from "./Knowledge/ModelPreview/ModelPreview";
-const loginBG = "";
-const registerBG = "";
 const logo = "images/logo-no-background.svg";
 const gaTrackingCode = "UA-46023413-2";
 const disableAuth = true;
@@ -153,106 +143,6 @@ class App extends React.Component {
     return (
       <ThemeProvider theme={theme}>
         <Router>
-          {!disableAuth && !this.state.isLoggedIn ? (
-            <Switch>
-              <Route
-                path="/auth/forgot-password"
-                render={({ location, history, match }) => {
-                  return (
-                    <LoginWrapper
-                      classes={classes}
-                      backgroundImage={registerBG}
-                    >
-                      <Auth authDomainStore={rootStore.authDomainStore}>
-                        <ForgotPassword
-                          onLogin={() => history.push("/auth/login")}
-                          location={location}
-                          history={history}
-                          match={match}
-                          classes={classes}
-                        />
-                      </Auth>
-                    </LoginWrapper>
-                  );
-                }}
-              />
-              <Route
-                path="/auth/reset-password"
-                render={({ location, history, match }) => {
-                  return (
-                    <LoginWrapper
-                      classes={classes}
-                      backgroundImage={registerBG}
-                    >
-                      <Auth authDomainStore={rootStore.authDomainStore}>
-                        <ResetPassword
-                          onLogin={() => history.push("/auth/login")}
-                          location={location}
-                          history={history}
-                          match={match}
-                          classes={classes}
-                        />
-                      </Auth>
-                    </LoginWrapper>
-                  );
-                }}
-              />
-              <Route
-                path="/auth/login"
-                render={({ location, history, match }) => {
-                  return (
-                    <LoginWrapper classes={classes} backgroundImage={loginBG}>
-                      <LoginWithAuth
-                        authUiStore={rootStore.authUiStore}
-                        authDomainStore={rootStore.authDomainStore}
-                        classes={classes}
-                      >
-                        <Login
-                          onRegister={() => history.push("/auth/register")}
-                          onForgotPassword={() =>
-                            history.push("/auth/forgot-password")
-                          }
-                          onSuccess={(values) => {
-                            this.setState({ isLoggedIn: true });
-                          }}
-                          location={location}
-                          history={history}
-                          match={match}
-                        />
-                      </LoginWithAuth>
-                    </LoginWrapper>
-                  );
-                }}
-              />
-              <Route
-                path={`${this.props.match.path}knowledge`}
-                render={({ location, history, match }) => {
-                  return (
-                    <LoginWrapper
-                      classes={classes}
-                      backgroundImage={registerBG}
-                    >
-                      <RegisterWithAuth
-                        authDomainStore={rootStore.authDomainStore}
-                        authUiStore={rootStore.authUiStore}
-                      >
-                        {!this.state.isLoggedIn && (
-                          <Register
-                            onLogin={() => history.push("/auth/login")}
-                            onSuccess={() => history.push("/onboarding/1")}
-                            location={location}
-                            history={history}
-                            match={match}
-                            classes={classes}
-                          />
-                        )}
-                      </RegisterWithAuth>
-                    </LoginWrapper>
-                  );
-                }}
-              />
-            </Switch>
-          ) : (
             <Switch>
               <Route
                 path="/profile"
@@ -658,11 +548,9 @@ class App extends React.Component {
                 }}
               />
             </Switch>
-          )}
         </Router>
       </ThemeProvider>
     );
   }
-  componentWillReceiveProps(nextProps) { }
 }
 export default withStyles(styles, { defaultTheme: theme })(App);

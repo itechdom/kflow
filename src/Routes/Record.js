@@ -1,9 +1,9 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import { MainWrapper } from "../Components";
-import { mainRouteList, adminRoute, logoutRoute } from "../../Routes";
+import { mainRouteList, adminRoute, logoutRoute } from "../Routes";
 import logo from "../Assets/logo.png";
-import { styles } from "../../App.styles";
+import { styles } from "../App.styles";
 import { withStyles } from "@material-ui/styles";
 
 const Record = (props) => (
