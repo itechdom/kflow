@@ -10,6 +10,13 @@
             "name": "Kotlin Launch",
             "projectRoot": "${workspaceFolder}",
             "mainClass": "markab.kflow.KflowApplication"
+        },
+        {
+            "type": "python",
+            "request": "launch",
+            "name": "Python: Current File",
+            "program": "${file}",
+            "console": "integratedTerminal"
         }
     ]
 }
