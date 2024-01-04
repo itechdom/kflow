@@ -79,6 +79,10 @@ list(model_1.parameters())
 print(model_1.state_dict())
 
 ### to correct these predictions we need to use a loss function (cost function) measure how wrong the model is
+### we take the average of the difference between the predictions and the actual values (mean absolute error, where error = prediction - actual)
+### L1 loss is less sensitive to outliers than the L2 loss (Mean Squared Error), making it a good choice when the dataset contains significant outliers.
+### The use of absolute values makes the L1 loss less influenced by large errors.
+### One disadvantage of L1 loss is that it is not differentiable at zero. However, subgradients can be used in optimization algorithms for non-differentiable functions.
 loss_fn = nn.L1Loss()
 ### optimizer takes into account the loss and adjust the model's parameters
 optimizer = torch.optim.SGD(params=model_1.parameters(),
@@ -95,9 +99,11 @@ for epoch in range(epochs):
   #3. optimizer zero grad (refresh the gradient descent value since it accumulates for each loop)
   optimizer.zero_grad()
   #4. performs backpropagation on the loss with respect to the parameters of the model
+  ## which means we correct based on the loss
   loss.backward()
   #5. Step the optimizer (perform gradient descent)
   optimizer.step()
+  
   ### testing loop
   model_1.eval()
   with torch.inference_mode():
