@@ -30,3 +30,4 @@ server/node/data/
 # Serverless directories
 .serverless
 node_modules/
+/server/node/infra/mongodb/data
