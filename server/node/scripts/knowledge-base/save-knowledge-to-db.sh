@@ -1,1 +1,1 @@
-babel-node ./src/OrbitalKb/scripts/save-knowledge-to-db.js
+node ./scripts/knowledge-base/save-knowledge-to-db.js
