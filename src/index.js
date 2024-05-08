@@ -4,6 +4,7 @@ import { Route, HashRouter as Router } from "react-router-dom";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import MomentUtils from "@date-io/moment";
 import { withStyles, ThemeProvider } from "@material-ui/core/styles";
+import { createRoot } from "react-dom/client";
 import theme from "./theme";
 // import Loadable from "react-loadable";
 // import Loading from "./src/orbital-templates/Material/_shared/Loading/Loading";
@@ -33,7 +34,9 @@ const FireApp = (props) => {
       </Router>
     </MuiPickersUtilsProvider>
   );
-  ReactDOM.render(<MyApp />, document.getElementById("root"));
+  const container = document.getElementById("root");
+  const root = createRoot(container);
+  root.render(<MyApp />, document.getElementById("root"));
 };
 
 /*
