@@ -3,25 +3,31 @@ import ReactDOM from "react-dom";
 import { Route, HashRouter as Router } from "react-router-dom";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import MomentUtils from "@date-io/moment";
+import { withStyles, ThemeProvider } from "@material-ui/core/styles";
+import theme from "./theme";
 // import Loadable from "react-loadable";
 // import Loading from "./src/orbital-templates/Material/_shared/Loading/Loading";
-import store from './Store/reduxStore'
-import { Provider } from 'react-redux'
+import store from "./Store/reduxStore";
+import { Provider } from "react-redux";
 import App from "./App";
 // const App = Loadable({
 //   loader: () => import(/* webpackChunkName: "App" */ "./src/App"),
 //   loading: err => <Loading err={err} />
 // });
-const FireApp = props => {
-  const MyApp = props => (
+const FireApp = (props) => {
+  const MyApp = (props) => (
     <MuiPickersUtilsProvider utils={MomentUtils}>
       <Router>
         <Route
           path="/"
-          render={routeProps => {
-            return <Provider store={store}>
-              <App {...props} {...routeProps} />
-            </Provider>;
+          render={(routeProps) => {
+            return (
+              <Provider store={store}>
+                <ThemeProvider theme={theme}>
+                  <App {...props} {...routeProps} />
+                </ThemeProvider>
+              </Provider>
+            );
           }}
         />
       </Router>
@@ -63,7 +69,7 @@ var app = {
   // 'pause', 'resume', etc.
   onDeviceReady: function () {
     FireApp();
-  }
+  },
 };
 
 app.onDeviceReady();
