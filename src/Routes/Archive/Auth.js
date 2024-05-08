@@ -1,10 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
-import {
-  RegisterWithAuth,
-  Auth
-} from "Libs/react-services";
+import { RegisterWithAuth, Auth } from "Libs/react-services";
 import { styles } from "../../App.styles";
 import LoginWrapper from "Libs/orbital-templates/Material/Wrappers/LoginWrapper";
 import { LoginWithAuth } from "Libs/react-services/auth-service/auth-service";
@@ -12,11 +9,19 @@ import ForgotPassword from "./ForgotPassword/ForgotPassword";
 import ResetPassword from "./ResetPassword/ResetPassword";
 import Register from "./Register/Register";
 import Login from "./Login/Login";
+import Logout from "./Logout/Logout";
 const loginBG = "";
 const registerBG = "";
 
-const AuthRoot = ({classes, rootStore}) => (
+const AuthRoot = ({ classes, rootStore }) => (
   <Switch>
+    <Route
+      path={`${this.props.match.path}logout`}
+      render={({ location, match, history }) => {
+        const routeProps = { location, match, history };
+        return <Logout {...routeProps} onLogout={() => this.onLogout()} />;
+      }}
+    />
     <Route
       path="/auth/forgot-password"
       render={({ location, history, match }) => {
