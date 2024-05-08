@@ -1,32 +1,32 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import { MainWrapper } from "../Components";
+import MainWrapper from "Libs/orbital-templates/Material/Wrappers/MainWrapper";
 import { mainRouteList, logoutRoute } from "../../Routes";
+import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 import {
   Crud,
   Forms,
   Media,
   Notification,
-  Profile as ProfileComponent,
 } from "Libs/orbital-templates/Material";
-import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
-import Wikipedia from "Libs/react-services/wikipedia-service/wikipedia-container";
-import Knowledge from "./Knowledge/Knowledge";
-import { config } from "../config";
+import { config } from "../../config";
 import { offlineStorage } from "../../offlineStorage";
 import { rootStore } from "../../Store/reduxStore";
+import { Wikipedia } from "Libs/react-services/wikipedia-service/wikipedia-container";
+import KnowledgePreview from "../Knowledge/ModelPreview/ModelPreview";
+
 const logo = "images/logo-no-background.svg";
 
-const KnowledgeList = ({ classes }) => {
-  return (
-    <Route
-      path={`${this.props.match.path}`}
-      render={(routeProps) => {
-        const {
-          match: { params },
-        } = routeProps;
-        let query = { _id: params.id };
-        return (
+const KnowledgeDetails = ({ classes }) => {
+  <Route
+    path={`${this.props.match.path}knowledge/view/:id`}
+    render={(routeProps) => {
+      const {
+        match: { params },
+      } = routeProps;
+      let query = { _id: params.id };
+      return (
+        <Wikipedia SERVER={config.SERVER} offlineStorage={offlineStorage}>
           <Crud
             modelName="knowledge"
             SERVER={config.SERVER}
@@ -36,11 +36,12 @@ const KnowledgeList = ({ classes }) => {
             paginate={false}
             query={query}
             render={(props) => {
-              let knowledge = props.knowledge;
-              console.log("KNowldge search model", props);
+              let knowledge = props.knowledge && props.knowledge.data[0];
+
               if (!knowledge || props.knowledge_loading) {
                 return <Loading></Loading>;
               }
+              let knowledgeMutable = JSON.parse(JSON.stringify(knowledge));
               return (
                 <MainWrapper
                   logo={logo}
@@ -76,40 +77,32 @@ const KnowledgeList = ({ classes }) => {
                     },
                   }}
                 >
-                  <Wikipedia
-                    SERVER={config.SERVER}
-                    offlineStorage={offlineStorage}
-                    notificationDomainStore={rootStore.notificationDomainStore}
-                  >
-                    <Knowledge
-                      onEdit={(model) => {
-                        routeProps.history.push(`//edit/${model._id}`);
-                      }}
-                      onDelete={() => {
-                        routeProps.history.goBack();
-                      }}
-                      match={routeProps.match}
-                      history={routeProps.history}
-                      classes={classes}
-                      location={this.props.location}
-                      currentTags={this.state.tags}
-                      selected={this.state.selected}
-                      currentUser={this.state.currentUser}
-                      setState={(props) => this.setState(props)}
-                      model={knowledge}
-                      loading={props.knowledge_loading}
-                      knowledge={knowledge}
-                      knowledge_updateModel={props.knowledge_updateModel}
-                      knowledge_deleteModel={props.knowledge_deleteModel}
-                      knowledge_searchModel={props.knowledge_searchModel}
-                    />
-                  </Wikipedia>
+                  <KnowledgePreview
+                    onEdit={(model) => {
+                      routeProps.history.push(`//edit/${model._id}`);
+                    }}
+                    onDelete={() => {
+                      routeProps.history.goBack();
+                    }}
+                    classes={classes}
+                    location={this.props.location}
+                    currentTags={this.state.tags}
+                    selected={this.state.selected}
+                    currentUser={this.state.currentUser}
+                    setState={(props) => this.setState(props)}
+                    model={knowledgeMutable}
+                    knowledge_updateModel={props.knowledge_updateModel}
+                    knowledge_deleteModel={props.knowledge_deleteModel}
+                    {...props}
+                  />
                 </MainWrapper>
               );
             }}
           />
-        );
-      }}
-    />
-  );
+        </Wikipedia>
+      );
+    }}
+  />;
 };
+
+export default KnowledgeDetails;
