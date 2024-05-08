@@ -6,14 +6,6 @@ import {
   adminRoute,
   logoutRoute,
 } from "./Routes";
-import {
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-  Button
-} from "@material-ui/core";
 import MainWrapper from "Libs/orbital-templates/Material/Wrappers/MainWrapper";
 import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 import { Wikipedia } from "Libs/react-services/wikipedia-service/wikipedia-container";
