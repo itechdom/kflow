@@ -2,6 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 import { MainWrapper } from "../Components";
 import { mainRouteList, logoutRoute } from "../../Routes";
+import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 import {
   Crud,
   Forms,
@@ -12,6 +13,9 @@ import { config } from "../../config";
 import { offlineStorage } from "../../offlineStorage";
 import { rootStore } from "../../Store/reduxStore";
 import { Wikipedia } from "Libs/react-services/wikipedia-service/wikipedia-container";
+import KnowledgePreview from "../Knowledge/ModelPreview/ModelPreview";
+
+const logo = "images/logo-no-background.svg";
 
 const KnowledgeDetails = ({ classes }) => {
   <Route
@@ -50,7 +54,7 @@ const KnowledgeDetails = ({ classes }) => {
                   ]}
                   drawerRouteList={
                     this.state.currentUser && this.state.currentUser.isAdmin
-                      ? [...mainRouteList, adminRoute, logoutRoute]
+                      ? [...mainRouteList, logoutRoute]
                       : [...mainRouteList, logoutRoute]
                   }
                   user={this.state.currentUser}

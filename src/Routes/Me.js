@@ -29,7 +29,7 @@ const Me = ({ classes }) => {
             }}
             drawerRouteList={
               this.state.currentUser && this.state.currentUser.isAdmin
-                ? [...mainRouteList, adminRoute, logoutRoute]
+                ? [...mainRouteList, logoutRoute]
                 : [...mainRouteList, logoutRoute]
             }
             {...routeProps}
@@ -43,7 +43,6 @@ const Me = ({ classes }) => {
               return routeProps.history.push(`${route}`);
             }}
           >
-            <Profile {...routeProps}></Profile>
           </MainWrapper>
         );
       }}
