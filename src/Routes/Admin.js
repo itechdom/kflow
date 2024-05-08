@@ -9,9 +9,6 @@ import {
   Notification,
   Profile as ProfileComponent,
 } from "Libs/orbital-templates/Material";
-import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
-import Wikipedia from "Libs/react-services/wikipedia-service/wikipedia-container";
-import Knowledge from "./Knowledge/Knowledge";
 import { config } from "../../config";
 import { offlineStorage } from "../../offlineStorage";
 import { rootStore } from "../../Store/reduxStore";

@@ -12,7 +12,7 @@ import {
 import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 import Wikipedia from "Libs/react-services/wikipedia-service/wikipedia-container";
 import Knowledge from "./Knowledge/Knowledge";
-import { config } from "../../config";
+import { config } from "../config";
 import { offlineStorage } from "../../offlineStorage";
 import { rootStore } from "../../Store/reduxStore";
 const logo = "images/logo-no-background.svg";
