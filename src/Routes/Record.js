@@ -5,8 +5,12 @@ import { mainRouteList, adminRoute, logoutRoute } from "../Routes";
 import logo from "../Assets/logo.png";
 import { styles } from "../App.styles";
 import { withStyles } from "@material-ui/styles";
+import { Grid } from "@material-ui/core";
+import { Card } from "@material-ui/core";
+import { CardContent } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 
-const Record = (props) => (
+const Record = ({classes}) => (
     <Route
         path={`${this.props.match.path}record`}
         render={(routeProps) => {

@@ -15,7 +15,7 @@ import Login from "./Login/Login";
 const loginBG = "";
 const registerBG = "";
 
-const Auth = (props) => (
+const AuthRoot = ({classes, rootStore}) => (
   <Switch>
     <Route
       path="/auth/forgot-password"
