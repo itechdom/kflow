@@ -20,7 +20,7 @@ const Waves = ({ initMatter, ...rest }) => {
           zIndex: 100,
           fillStyle: "red",
           sprite: {
-            // texture: "./assets/game/Tiles/dirt.png",
+            // texture: "./Assets/game/Tiles/dirt.png",
           },
         },
       }
@@ -54,7 +54,7 @@ const Waves = ({ initMatter, ...rest }) => {
   React.useEffect(() => {
     init({
       wireframes: false,
-      background: "url('/assets/game/starry-background.jpg')",
+      background: "url('/Assets/game/starry-background.jpg')",
       showAngleIndicator: false,
       width: window.innerWidth,
       height: window.innerHeight,
@@ -84,10 +84,10 @@ const Waves = ({ initMatter, ...rest }) => {
           if (!sampler) {
             // sampler = new Tone.Sampler(
             //   {
-            //     C1: "/assets/game/audio/loop/bass.mp3",
-            //     C2: "/assets/game/audio/loop/chords.mp3",
-            //     C3: "/assets/game/audio/loop/kick.mp3",
-            //     C4: "/assets/game/audio/loop/snare.mp3",
+            //     C1: "/Assets/game/audio/loop/bass.mp3",
+            //     C2: "/Assets/game/audio/loop/chords.mp3",
+            //     C3: "/Assets/game/audio/loop/kick.mp3",
+            //     C4: "/Assets/game/audio/loop/snare.mp3",
             //   },
             //   function () {
             //     sampler.triggerAttack("C1");

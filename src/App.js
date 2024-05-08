@@ -8,8 +8,8 @@ import theme from "./theme";
 import { styles } from "./App.styles.js";
 import { withStyles } from "@material-ui/core/styles";
 import "./global.css";
-import KnowledgeList from "./Routes/KnowledgeList";
-import KnowledgeDetails from "./Routes/KnowledgeDetails";
+import KnowledgeList from "./Pages/KnowledgeList";
+import KnowledgeDetails from "./Pages/KnowledgeDetails";
 const gaTrackingCode = "UA-46023413-2";
 const disableAuth = true;
 class App extends React.Component {

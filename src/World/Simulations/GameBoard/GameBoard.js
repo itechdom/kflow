@@ -14,7 +14,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import TextField from "Libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.TextFieldInput";
-import assets from "./assets";
+import assets from "./Assets";
 import KeyboardEventHandler from "react-keyboard-event-handler";
 let fpsInterval = 1000 / 60,
   then = Date.now();
@@ -206,13 +206,13 @@ export const Game = ({
           {assets.map((a) => (
             <Grid
               onClick={() => {
-                setCopied(`./assets/game/Tiles/${a}`);
+                setCopied(`./Assets/game/Tiles/${a}`);
               }}
               item
               xs="3"
             >
               <Tooltip title={a}>
-                <img src={`./assets/game/Tiles/${a}`} />
+                <img src={`./Assets/game/Tiles/${a}`} />
               </Tooltip>
             </Grid>
           ))}
