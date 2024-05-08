@@ -104,40 +104,6 @@ class App extends React.Component {
     rootStore.authDomainStore.logout();
     this.setState({ isLoggedIn: false });
   }
-  onDialogClose = () => {
-    this.props.history.goBack();
-    return this.setState({
-      showConfirmModal: false,
-    });
-  };
-  onDialogSave = () => {
-    this.props.history.goBack();
-    // this.props.celebrate_createModel();
-  };
-  renderDialog = ({ title, message, yes, no, onYes, onNo, extra }) => {
-    return (
-      <Dialog
-        open={true}
-        onClose={onNo}
-        aria-labelledby="form-dialog-title"
-        fullScreen
-      >
-        <DialogTitle id="form-dialog-title">{title}</DialogTitle>
-        <DialogContent>
-          <DialogContentText>{message}</DialogContentText>
-          <DialogContentText>{extra ? extra : <></>}</DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={onNo} variant="outlined" color="primary">
-            {no}
-          </Button>
-          <Button onClick={onYes} variant="contained" color="secondary">
-            {yes}
-          </Button>
-        </DialogActions>
-      </Dialog>
-    );
-  };
   render() {
     const { classes } = this.props;
     return (
@@ -425,9 +391,6 @@ class App extends React.Component {
                                 knowledge_deleteModel={
                                   props.knowledge_deleteModel
                                 }
-                                renderDialog={(props) =>
-                                  this.renderDialog(props)
-                                }
                                 {...props}
                               />
                             </MainWrapper>
@@ -534,9 +497,6 @@ class App extends React.Component {
                                 }
                                 knowledge_searchModel={
                                   props.knowledge_searchModel
-                                }
-                                renderDialog={(props) =>
-                                  this.renderDialog(props)
                                 }
                               />
                             </Wikipedia>
