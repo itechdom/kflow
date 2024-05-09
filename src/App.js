@@ -19,10 +19,10 @@ class App extends React.Component {
           <Route path="/profile">
             <Profile classes={classes} />
           </Route>
-          <Route path="/profile">
+          <Route path="/admin">
             <Admin classes={classes} />
           </Route>
-          <Route path="/knowledge">
+          <Route path="/:id">
             <KnowledgeDetails classes={classes} />
           </Route>
           <Route path="/">
