@@ -1,14 +1,14 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import { mainRouteList, logoutRoute } from "../../Routes";
 import { Crud } from "Libs/react-services/crud-service/crud-container";
 import MainWrapper from "Libs/orbital-templates/Material/Wrappers/MainWrapper";
 import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
-import Wikipedia from "Libs/react-services/wikipedia-service/wikipedia-container";
-import Knowledge from "./Knowledge/Knowledge";
+import { Wikipedia } from "Libs/react-services/wikipedia-service/wikipedia-container";
+import { mainRouteList, logoutRoute } from "../Routes";
+import Knowledge from "../Knowledge/Knowledge";
 import config from "../Config/index";
-import { offlineStorage } from "../../offlineStorage";
-import { rootStore } from "../../Store/reduxStore";
+import { offlineStorage } from "../OfflineStorage";
+import rootStore from "../Store/reduxStore";
 const logo = "images/logo-no-background.svg";
 
 const KnowledgeList = ({ classes }) => {

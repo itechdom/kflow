@@ -36,7 +36,7 @@ const FireApp = (props) => {
   );
   const container = document.getElementById("root");
   const root = createRoot(container);
-  root.render(<MyApp />, document.getElementById("root"));
+  root.render(<MyApp />);
 };
 
 /*
