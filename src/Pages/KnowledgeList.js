@@ -10,7 +10,7 @@ import { offlineStorage } from "../OfflineStorage";
 import rootStore from "../Store/reduxStore";
 const logo = "images/logo-no-background.svg";
 
-const KnowledgeList = ({ classes, routeProps }) => {
+const KnowledgeList = ({ classes, ...routeProps }) => {
   const {
     match: { params },
   } = routeProps;
