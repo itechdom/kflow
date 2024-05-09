@@ -29,7 +29,7 @@ class App extends React.Component {
           />
           <Route
             id="knowledge-details"
-            path="/:id"
+            path="/knowledge/view/:id"
             render={(routeProps) => {
               return <KnowledgeDetails {...routeProps} classes={classes} />;
             }}

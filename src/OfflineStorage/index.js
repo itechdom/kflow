@@ -1,9 +1,8 @@
-const offlineStorage = {
-  get: (key) => {
-    return localStorage.getItem(key);
+export const offlineStorage = {
+  getItem: (key) => {
+    return new Promise((resolve, reject) => resolve(localStorage.getItem(key)));
   },
-  set: (key, value) => {
-    return localStorage.setItem(key, value);
+  setItem: (key, value) => {
+    return new Promise((resolve, reject) => resolve(localStorage.setItem(key, value)));
   },
 };
-export default offlineStorage;

@@ -1,5 +1,4 @@
 import React from "react";
-import { Route } from "react-router-dom";
 import MainWrapper from "Libs/orbital-templates/Material/Wrappers/MainWrapper";
 import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 import { Wikipedia } from "Libs/react-services/wikipedia-service/wikipedia-container";
@@ -11,7 +10,7 @@ import { offlineStorage } from "../OfflineStorage";
 import rootStore from "../Store/reduxStore";
 const logo = "images/logo-no-background.svg";
 
-const KnowledgeDetails = ({ classes, routeProps }) => {
+const KnowledgeDetails = ({ classes, currentUser, tags, selected, ...routeProps }) => {
   const {
     match: { params },
   } = routeProps;
@@ -44,17 +43,13 @@ const KnowledgeDetails = ({ classes, routeProps }) => {
                 },
               ]}
               drawerRouteList={
-                this.state.currentUser && this.state.currentUser.isAdmin
+                currentUser && currentUser.isAdmin
                   ? [...mainRouteList, logoutRoute]
                   : [...mainRouteList, logoutRoute]
               }
-              user={this.state.currentUser}
+              user={currentUser}
               {...routeProps}
-              {...this.props}
               onRouteClick={(route) => {
-                this.setState({
-                  tags: new Set([]),
-                });
                 if (route.indexOf("http") !== -1) {
                   return window.open(route);
                 }
@@ -77,10 +72,10 @@ const KnowledgeDetails = ({ classes, routeProps }) => {
                 }}
                 classes={classes}
                 location={this.props.location}
-                currentTags={this.state.tags}
-                selected={this.state.selected}
-                currentUser={this.state.currentUser}
-                setState={(props) => this.setState(props)}
+                currentTags={tags}
+                selected={selected}
+                currentUser={currentUser}
+                // setState={(props) => this.setState(props)}
                 model={knowledgeMutable}
                 knowledge_updateModel={props.knowledge_updateModel}
                 knowledge_deleteModel={props.knowledge_deleteModel}

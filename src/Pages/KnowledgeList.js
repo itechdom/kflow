@@ -10,7 +10,7 @@ import { offlineStorage } from "../OfflineStorage";
 import rootStore from "../Store/reduxStore";
 const logo = "images/logo-no-background.svg";
 
-const KnowledgeList = ({ classes, ...routeProps }) => {
+const KnowledgeList = ({ classes, currentUser, tags, selected, ...routeProps }) => {
   const {
     match: { params },
   } = routeProps;
@@ -41,22 +41,11 @@ const KnowledgeList = ({ classes, ...routeProps }) => {
               },
             ]}
             drawerRouteList={
-              this.state.currentUser && this.state.currentUser.isAdmin
+              currentUser && currentUser.isAdmin
                 ? [...mainRouteList, logoutRoute]
                 : [...mainRouteList, logoutRoute]
             }
-            user={this.state.currentUser}
             {...routeProps}
-            {...this.props}
-            onRouteClick={(route) => {
-              this.setState({
-                tags: new Set([]),
-              });
-              if (route.indexOf("http") !== -1) {
-                return window.open(route);
-              }
-              return routeProps.history.push(`${route}`);
-            }}
             classes={{
               ...classes,
               tabMenu: `${classes["white"]}`,
@@ -80,11 +69,11 @@ const KnowledgeList = ({ classes, ...routeProps }) => {
                 match={routeProps.match}
                 history={routeProps.history}
                 classes={classes}
-                location={this.props.location}
-                currentTags={this.state.tags}
-                selected={this.state.selected}
-                currentUser={this.state.currentUser}
-                setState={(props) => this.setState(props)}
+                location={routeProps.location}
+                currentTags={tags}
+                selected={selected}
+                currentUser={currentUser}
+                // setState={(props) => this.setState(props)}
                 model={knowledge}
                 loading={props.knowledge_loading}
                 knowledge={knowledge}
