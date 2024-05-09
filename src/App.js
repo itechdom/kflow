@@ -16,18 +16,31 @@ class App extends React.Component {
     return (
       <Router>
         <Switch>
-          <Route path="/profile">
-            <Profile classes={classes} />
-          </Route>
-          <Route path="/admin">
-            <Admin classes={classes} />
-          </Route>
-          <Route path="/:id">
-            <KnowledgeDetails classes={classes} />
-          </Route>
-          <Route path="/">
-            <KnowledgeList classes={classes} />
-          </Route>
+          <Route
+            path="/profile"
+            render={(routeProps) => {
+              return <Profile id="profile" classes={classes} {...routeProps} />;
+            }}
+          />
+          <Route
+            id="admin"
+            path="/admin"
+            render={(routeProps) => <Admin {...routeProps} />}
+          />
+          <Route
+            id="knowledge-details"
+            path="/:id"
+            render={(routeProps) => {
+              return <KnowledgeDetails {...routeProps} classes={classes} />;
+            }}
+          />
+          <Route
+            id="knowledge"
+            path="/"
+            render={(routeProps) => (
+              <KnowledgeList {...routeProps} classes={classes} />
+            )}
+          />
         </Switch>
       </Router>
     );
