@@ -6,9 +6,9 @@ import { Wikipedia } from "Libs/react-services/wikipedia-service/wikipedia-conta
 import { Crud } from "Libs/react-services/crud-service/crud-container";
 import KnowledgePreview from "../Knowledge/ModelPreview/ModelPreview";
 import { mainRouteList, logoutRoute } from "../Routes";
-import { config } from "../Config";
+import config from "../Config";
 import { offlineStorage } from "../OfflineStorage";
-import { rootStore } from "../../Store/reduxStore";
+import rootStore from "../Store/reduxStore";
 const logo = "images/logo-no-background.svg";
 
 const KnowledgeDetails = ({ classes }) => {
