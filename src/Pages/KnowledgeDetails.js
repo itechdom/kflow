@@ -71,7 +71,7 @@ const KnowledgeDetails = ({ classes, currentUser, tags, selected, ...routeProps 
                   routeProps.history.goBack();
                 }}
                 classes={classes}
-                location={this.props.location}
+                location={routeProps.location}
                 currentTags={tags}
                 selected={selected}
                 currentUser={currentUser}
