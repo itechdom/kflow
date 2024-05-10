@@ -1,5 +1,7 @@
 import React from "react";
 import MindmapTree from "react-d3-tree";
+import CustomTreeNode from "./CustomTreeNode";
+import FantasyTreeNode from "./FantasyTreeNode";
 
 const getRadius = (nodeName) => {
   return Math.max(20, nodeName.length * 2);
@@ -53,9 +55,15 @@ class Tree extends React.Component {
       <div class="mindmap-container" style={{ height: "20em" }}>
         {this.state.data.length > 0 && (
           <MindmapTree
-            enableLegacyTransitions={true}
             data={this.state.data}
-            nodeSize={{ x: 400, y: 200 }}
+            enableLegacyTransitions
+            renderCustomNodeElement={(rd3tProps) =>
+              <CustomTreeNode {...rd3tProps} />
+            }
+            nodeSize={{ x: 500, y: 400 }}
+            translate={{ x: 250, y: 200 }}
+            orientation="vertical"
+            pathFunc="straight"
           />
         )}
       </div>

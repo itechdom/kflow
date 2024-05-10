@@ -179,3 +179,23 @@ transform: translate(-17px, 0px);
 .node__branch > .rd3t-label > .rd3t-label__title {
 transform: translate(-25px, 0px);
 }
+
+g.node {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+g.node:hover {
+  transform: scale(1.1);
+}
+
+rect {
+  fill: #ffffff; /* White background */
+  stroke: #000000; /* Black border */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+text {
+  fill: #333333; /* Dark grey for text for better readability */
+  font-family: 'Roboto', sans-serif; /* Material Design typeface */
+}
