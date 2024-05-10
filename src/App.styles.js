@@ -64,14 +64,11 @@ export const styles = (theme) => {
     },
     menu: {
       backgroundColor: "white",
-      boxShadow: "none!important",
-      backgroundColor: "white",
       color: "black",
       display: "flex",
       justifyContent: "space-between",
       alignItems: "left",
       boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-      color: "#000000",
     },
     menuButton: {
       // marginLeft: 30,
