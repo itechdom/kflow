@@ -148,7 +148,7 @@ const ModelPreview = (props) => {
     //     }
     //   }
     // }, 1000);
-    console.log(props, "PROPS")
+    console.log(props, "PROPS");
     fetchWikipediaPageByTopic(model.title);
   }, []);
   if (!mindmapByKeys && model && model.body) {
@@ -314,63 +314,9 @@ const ModelPreview = (props) => {
               </div>
             </Paper>
           </Grid>
-          <Grid {...graphTreeSizes} item>
-            <Grid item>
-              <Grid container justify="center" style={{ marginBottom: "10px" }}>
-                <Grid item md={4}>
-                  <Typography variant="h5" style={{ fontWeight: "300" }}>
-                    Wikipedia
-                  </Typography>
-                </Grid>
-              </Grid>
-              <Paper>
-                <List>
-                  {wiki && wiki.map((link) => (
-                    <ListItem>
-                      <a target="_blank" href={link}>
-                        {link}
-                      </a>
-                    </ListItem>
-                  ))}
-                </List>
-              </Paper>
-            </Grid>
-          </Grid>
-          <Grid {...graphTreeSizes} item>
-            <Grid container justify="center" style={{ marginBottom: "10px" }}>
-              <Grid item md={4}>
-                <Typography variant="h5" style={{ fontWeight: "300" }}>
-                  Force Directed Graph
-                </Typography>
-              </Grid>
-            </Grid>
-            <Paper>
-              <div
-                ref={(ref) => {
-                  if (!graphContainer) {
-                    measure.graphRefCallback(ref);
-                  }
-                }}
-              >
-                <GraphTree
-                  mindmapByKeys={mindmapByKeys}
-                  editedNode={editedNode}
-                  edit={edit}
-                  level={level}
-                  width={graphContainer && graphContainer.width}
-                  height={graphContainer && graphContainer.height}
-                  {...TreeOperations}
-                />
-              </div>
-            </Paper>
-          </Grid>
-          <Grid {...graphTreeSizes} item>
-            <Grid container justify="center" style={{ marginBottom: "10px" }}>
-              <Grid item md={4}>
-                <Typography variant="h5" style={{ fontWeight: "300" }}>
-                  Mindmap
-                </Typography>
-              </Grid>
+          <Grid xs={12} sm={12} md={12} lg={12} xl={12} item>
+            <Grid container justify="center" style={{ marginTop: "30px" }}>
+              <Grid item md={4}></Grid>
             </Grid>
             <Paper>
               <div
@@ -389,6 +335,46 @@ const ModelPreview = (props) => {
                   height={graphContainer && graphContainer.height}
                   {...TreeOperations}
                 ></Mindmap>
+              </div>
+            </Paper>
+          </Grid>
+          <Grid {...graphTreeSizes} item style={{ marginTop: "30px" }}>
+            <Grid item>
+              <Paper>
+                <List>
+                  {wiki &&
+                    wiki.map((link) => (
+                      <ListItem>
+                        <a target="_blank" href={link}>
+                          {link}
+                        </a>
+                      </ListItem>
+                    ))}
+                </List>
+              </Paper>
+            </Grid>
+          </Grid>
+          <Grid {...graphTreeSizes} item style={{ marginTop: "30px" }}>
+            <Grid container justify="center" style={{ marginBottom: "10px" }}>
+              <Grid item md={4}></Grid>
+            </Grid>
+            <Paper>
+              <div
+                ref={(ref) => {
+                  if (!graphContainer) {
+                    measure.graphRefCallback(ref);
+                  }
+                }}
+              >
+                <GraphTree
+                  mindmapByKeys={mindmapByKeys}
+                  editedNode={editedNode}
+                  edit={edit}
+                  level={level}
+                  width={graphContainer && graphContainer.width}
+                  height={graphContainer && graphContainer.height}
+                  {...TreeOperations}
+                />
               </div>
             </Paper>
           </Grid>
