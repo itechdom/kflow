@@ -14,6 +14,7 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
     //   nodeDatum.name = nodeDatum.name.substring(0, 30) + "...";
       setShowNote(true);
     }
+    toggleNode();
     return () => {
       console.log("Node unmounted:", nodeDatum.name);
     };
@@ -31,8 +32,8 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
         strokeWidth="1.5"
         onClick={handleClick}
       />
-      <foreignObject x="-30" y="-12.5" width="200" height="200">
-        <p xmlns="http://www.w3.org/1999/xhtml">{nodeDatum.name}</p>
+      <foreignObject onClick={handleClick} x="-30" y="-12.5" width="200" height="200">
+        <p style={{fontSize:"20px"}} xmlns="http://www.w3.org/1999/xhtml">{nodeDatum.name}</p>
       </foreignObject>
       <text
         fill="black"

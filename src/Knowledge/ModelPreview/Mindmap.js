@@ -52,14 +52,23 @@ class Tree extends React.Component {
 
   render() {
     return (
-      <div class="mindmap-container" style={{ height: "20em" }}>
+      <div
+        class="mindmap-container"
+        style={{
+          height: "30em",
+          backgroundImage: 'url("images/star-background-img.webp")',
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         {this.state.data.length > 0 && (
           <MindmapTree
             data={this.state.data}
             enableLegacyTransitions
-            renderCustomNodeElement={(rd3tProps) =>
+            renderCustomNodeElement={(rd3tProps) => (
               <CustomTreeNode {...rd3tProps} />
-            }
+            )}
             nodeSize={{ x: 250, y: 400 }}
             translate={{ x: 250, y: 200 }}
             orientation="vertical"
