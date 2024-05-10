@@ -118,7 +118,7 @@ const Knowledge = ({
       loading={loading}
       getUnsplash={getUnsplash}
       onAdd={() => {
-        history.push(`${match.path}/add`);
+        history.push(`${match.path}add`);
       }}
       onView={(model) => {
         history.push(`${match.path}knowledge/view/${model._id}`);
