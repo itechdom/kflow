@@ -1,11 +1,6 @@
 import React from "react";
 import MindmapTree from "react-d3-tree";
 import CustomTreeNode from "./CustomTreeNode";
-import FantasyTreeNode from "./FantasyTreeNode";
-
-const getRadius = (nodeName) => {
-  return Math.max(20, nodeName.length * 2);
-};
 
 export const convertToMindmap = (currentNode, mindmapByKeys) => {
   currentNode.name = currentNode.title;
@@ -56,10 +51,7 @@ class Tree extends React.Component {
         class="mindmap-container"
         style={{
           height: "50em",
-          backgroundImage: 'url("images/star-background-img-2.webp")',
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          background: "linear-gradient(to top, #e8d1c5 0%, #f4f1ea 100%)"
         }}
       >
         {this.state.data.length > 0 && (
@@ -69,7 +61,7 @@ class Tree extends React.Component {
             renderCustomNodeElement={(rd3tProps) => (
               <CustomTreeNode {...rd3tProps} />
             )}
-            nodeSize={{ x: 400, y: 400 }}
+            nodeSize={{ x: 400, y: 450 }}
             translate={{ x: 250, y: 200 }}
             orientation="vertical"
             pathFunc="straight"

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import SvgCircles from "./SvgCircles";
 
 const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
   const handleClick = () => {
@@ -35,9 +36,13 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
     if (nodeDatum.name.length > minimumTextLength) {
       setShowNote(true);
       const multiplier = nodeDatum.name.length / minimumTextLength;
-      setRadius(100);
+      setRadius(200);
       setCx(60);
       setCY(60);
+    }
+    else{
+        setCx(0);
+        setCY(20);
     }
     toggleNode();
     return () => {
@@ -46,14 +51,27 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
   }, [nodeDatum.name]);
   return (
     <g>
-      {/* Node shape (circle or rectangle) */}
-      <circle
+      <defs>
+        <filter id="dropshadow" height="130%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+          <feOffset dx="2" dy="2" result="offsetblur" />
+          <feComponentTransfer>
+            <feFuncA type="linear" slope="0.5" /> {/* Transparency */}
+          </feComponentTransfer>
+          <feMerge>
+            <feMergeNode /> 
+            <feMergeNode in="SourceGraphic" />{" "}
+          </feMerge>
+        </filter>
+      </defs>
+      <SvgCircles
         cx={cx} // Center x coordinate
         cy={cy} // Center y coordinate
         r={radius} // Radius of the circle
         fill="white" // Background color of the circle
         stroke="black" // Border color of the circle
         strokeWidth="1.5" // Width of the stroke
+        filter="url(#dropshadow)"
         onClick={handleClick} // Onclick event handler
         style={nodeStyles} // Additional styles if needed
       />
@@ -64,7 +82,7 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
         width="300"
         height="200"
       >
-        <p style={{ fontSize: "20px" }} xmlns="http://www.w3.org/1999/xhtml">
+        <p style={{ fontSize: "20px", color:"white" }} xmlns="http://www.w3.org/1999/xhtml">
           {nodeDatum.name}
         </p>
       </foreignObject>
