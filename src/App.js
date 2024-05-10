@@ -36,7 +36,7 @@ class App extends React.Component {
           />
           <Route
             id="knowledge"
-            path="/"
+            path=""
             render={(routeProps) => (
               <KnowledgeList {...routeProps} classes={classes} />
             )}

@@ -5,7 +5,7 @@ export const styles = (theme) => {
   return {
     root: {},
     hasPadding: {
-      padding: "2em",
+      padding: "1em 0em 1em 0em"
     },
     card: {
       width: "100%",
@@ -22,6 +22,7 @@ export const styles = (theme) => {
     },
     toolbar: {
       paddingRight: 24, // keep right padding when drawer closed
+      paddingLeft: 1,
       height: appBarHeight,
     },
     toolbarIcon: {
@@ -49,6 +50,7 @@ export const styles = (theme) => {
     },
     menu: {
       backgroundColor: "white",
+      boxShadow: "none!important",
       color: "#000000",
     },
     menuButton: {
