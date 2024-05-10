@@ -55,8 +55,8 @@ class Tree extends React.Component {
       <div
         class="mindmap-container"
         style={{
-          height: "30em",
-          backgroundImage: 'url("images/star-background-img.webp")',
+          height: "50em",
+          backgroundImage: 'url("images/star-background-img-2.webp")',
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -69,7 +69,7 @@ class Tree extends React.Component {
             renderCustomNodeElement={(rd3tProps) => (
               <CustomTreeNode {...rd3tProps} />
             )}
-            nodeSize={{ x: 250, y: 400 }}
+            nodeSize={{ x: 400, y: 400 }}
             translate={{ x: 250, y: 200 }}
             orientation="vertical"
             pathFunc="straight"

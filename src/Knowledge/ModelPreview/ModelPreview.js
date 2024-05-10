@@ -279,8 +279,33 @@ const ModelPreview = (props) => {
       />
       {mindmapByKeys && (
         <Grid container justify="space-between">
+          <Grid xs={12} sm={12} md={12} lg={12} xl={12} item>
+            <Grid container justify="center" style={{ marginBottom: "30px" }}>
+              <Grid item md={4}></Grid>
+            </Grid>
+            <Paper>
+              <div
+                ref={(ref) => {
+                  if (!graphContainer) {
+                    measure.graphRefCallback(ref);
+                  }
+                }}
+              >
+                <Mindmap
+                  mindmapByKeys={mindmapByKeys}
+                  editedNode={editedNode}
+                  edit={edit}
+                  level={level}
+                  width={graphContainer && graphContainer.width}
+                  height={graphContainer && graphContainer.height}
+                  {...TreeOperations}
+                ></Mindmap>
+              </div>
+            </Paper>
+          </Grid>
           <Grid
             style={{
+              marginTop: "30px",
               marginBottom: "6em",
             }}
             {...listTreeSizes}
@@ -314,30 +339,7 @@ const ModelPreview = (props) => {
               </div>
             </Paper>
           </Grid>
-          <Grid xs={12} sm={12} md={12} lg={12} xl={12} item>
-            <Grid container justify="center" style={{ marginTop: "30px" }}>
-              <Grid item md={4}></Grid>
-            </Grid>
-            <Paper>
-              <div
-                ref={(ref) => {
-                  if (!graphContainer) {
-                    measure.graphRefCallback(ref);
-                  }
-                }}
-              >
-                <Mindmap
-                  mindmapByKeys={mindmapByKeys}
-                  editedNode={editedNode}
-                  edit={edit}
-                  level={level}
-                  width={graphContainer && graphContainer.width}
-                  height={graphContainer && graphContainer.height}
-                  {...TreeOperations}
-                ></Mindmap>
-              </div>
-            </Paper>
-          </Grid>
+
           <Grid {...graphTreeSizes} item style={{ marginTop: "30px" }}>
             <Grid item>
               <Paper>
