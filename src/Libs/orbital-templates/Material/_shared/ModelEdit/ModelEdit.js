@@ -6,7 +6,7 @@ import {
   CardContent,
   CardActions,
   Button,
-  Icon
+  Icon,
 } from "@material-ui/core";
 import Forms from "../Forms/Forms";
 import FormsValidate from "../Forms/Forms.Validate";
@@ -58,7 +58,7 @@ export default class ModelEdit extends React.Component {
           handleSubmit,
           isSubmitting,
           setFieldValue,
-          setFieldTouched
+          setFieldTouched,
         }) => {
           return (
             <Card className={classes && classes.editContent}>
@@ -80,12 +80,12 @@ export default class ModelEdit extends React.Component {
                     tempGallery={gallery}
                     isSubmitting={isSubmitting}
                     onMediaDrop={(acceptedFiles, rejectedFiles) => {
-                      uploadMedia(model._id, acceptedFiles).then(res => {
+                      uploadMedia(model._id, acceptedFiles).then((res) => {
                         onMediaUploadComplete(model, res.data);
                       });
                     }}
                     onGalleryDrop={(acceptedFiles, rejectedFiles) => {
-                      uploadGallery(model._id, acceptedFiles).then(res => {
+                      uploadGallery(model._id, acceptedFiles).then((res) => {
                         onGalleryUploadComplete(model, res.data);
                       });
                     }}
@@ -105,22 +105,22 @@ export default class ModelEdit extends React.Component {
               <CardActions style={{ justifyContent: "flex-end" }}>
                 <Button
                   variant="contained"
+                  color="secondary"
+                  onClick={(event) => {
+                    onCancel(event);
+                  }}
+                >
+                  Cancel
+                </Button>
+                <Button
+                  variant="contained"
                   color="primary"
-                  onClick={event => {
+                  onClick={(event) => {
                     handleSubmit(event);
                   }}
                 >
                   <Icon>save</Icon>
                   <span style={{ marginLeft: "5px" }}>Save</span>
-                </Button>
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  onClick={event => {
-                    onCancel(event);
-                  }}
-                >
-                  Cancel
                 </Button>
               </CardActions>
               <ClientNotification

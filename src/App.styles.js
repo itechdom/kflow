@@ -5,7 +5,7 @@ export const styles = (theme) => {
   return {
     root: {},
     hasPadding: {
-      padding: "1em 0em 1em 0em"
+      padding: "2em"
     },
     card: {
       width: "100%",
