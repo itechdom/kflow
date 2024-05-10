@@ -1,6 +1,10 @@
 import React from "react";
 import MindmapTree from "react-d3-tree";
 
+const getRadius = (nodeName) => {
+  return Math.max(20, nodeName.length * 2);
+};
+
 export const convertToMindmap = (currentNode, mindmapByKeys) => {
   currentNode.name = currentNode.title;
   currentNode.collapsed = true;
@@ -46,8 +50,14 @@ class Tree extends React.Component {
 
   render() {
     return (
-      <div style={{ width: "50em", height: "20em" }}>
-        {this.state.data.length > 0 && <MindmapTree enableLegacyTransitions={true} data={this.state.data} />}
+      <div class="mindmap-container" style={{ width: "50em", height: "20em" }}>
+        {this.state.data.length > 0 && (
+          <MindmapTree
+            enableLegacyTransitions={true}
+            data={this.state.data}
+            nodeSize={{ x: 400, y: 200 }}
+          />
+        )}
       </div>
     );
   }
