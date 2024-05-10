@@ -9,6 +9,11 @@ export const styles = (theme) => {
     },
     card: {
       width: "100%",
+      backgroundColor: "white",
+      border: "1px solid #ccc",
+      boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+      borderRadius: "4px",
+      transition: "box-shadow 0.3s ease-in-out"
     },
     content: {
       marginTop: "3em",

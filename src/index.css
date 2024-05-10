@@ -11,3 +11,147 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*Widget*/
+.widget {
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  padding: 20px;
+  margin: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.widget:hover {
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-bar:focus {
+  border-color: black;
+  outline: none;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+  background-color: #f0f0f0;
+}
+
+.chart {
+  width: 100%;
+  height: 300px; /* Adjust based on your layout */
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.node {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.node:hover {
+  transform: scale(1.1);
+}
+/* Base button styling */
+.button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Primary button styles */
+.button-primary {
+  background-color: black;
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+
+/* Secondary button styles */
+.button-secondary {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.button-secondary:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Disable button styles */
+.button-disabled {
+  background-color: #e0e0e0;
+  color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+/* Add more specific styles based on your design requirements */
+
+.top-bar {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.top-bar .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.top-bar nav {
+  display: flex;
+}
+
+.top-bar nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.top-bar nav a:hover {
+  background-color: #f0f0f0;
+}
