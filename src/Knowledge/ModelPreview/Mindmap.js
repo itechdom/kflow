@@ -50,7 +50,7 @@ class Tree extends React.Component {
 
   render() {
     return (
-      <div class="mindmap-container" style={{ width: "50em", height: "20em" }}>
+      <div class="mindmap-container" style={{ height: "20em" }}>
         {this.state.data.length > 0 && (
           <MindmapTree
             enableLegacyTransitions={true}
