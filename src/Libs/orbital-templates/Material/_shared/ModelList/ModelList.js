@@ -154,7 +154,7 @@ const ModelList = enhance(
       <Router>
         <Switch>
           <Route
-            path={`${match.path}/add`}
+            path={`${match.path}add`}
             render={(props) => {
               return ModelAddPage ? (
                 <Grid container justify="center">
@@ -214,7 +214,7 @@ const ModelList = enhance(
 
           {!disableEditPage && (
             <Route
-              path={`${match.path}/edit/:id`}
+              path={`${match.path}edit/:id`}
               render={(props) => {
                 return ModelEditPage ? (
                   <Grid container justify="center">
@@ -344,7 +344,7 @@ const ModelList = enhance(
           )}
           {!disableViewPage && (
             <Route
-              path={`${match.path}/view/:id`}
+              path={`${match.path}view/:id`}
               render={(props) => {
                 let model =
                   models &&
@@ -427,7 +427,10 @@ const ModelList = enhance(
                       justify="flex-end"
                     >
                       <Grid item xs={12}>
-                        <Paper style={{ padding: "1em", borderRadius: "50px" }}>
+                        <Paper
+                          style={{ padding: "1em", borderRadius: "50px" }}
+                          className={classes.autocompleteContainer}
+                        >
                           <Autocomplete
                             inputClassName={classes.autocomplete}
                             placeholder={"Search…"}
@@ -435,8 +438,8 @@ const ModelList = enhance(
                               onSearchSelect || disableViewPage
                                 ? onSearchSelect(suggestion)
                                 : history.push(
-                                  `${match.path}/view/${suggestion._id}`
-                                );
+                                    `${match.path}/view/${suggestion._id}`
+                                  );
                             }}
                             loadSuggestions={(text) => {
                               let query = {

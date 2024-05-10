@@ -41,7 +41,7 @@ const World = ({
     <Grid
       container
       style={{
-        backgroundImage: `url("/assets/game/hexagonTiles/webb.png")`,
+        backgroundImage: `url("/Assets/game/hexagonTiles/webb.png")`,
         backgroundRepeat: "repeat",
         height: "100vh",
       }}

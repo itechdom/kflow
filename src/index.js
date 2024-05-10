@@ -5,16 +5,11 @@ import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import MomentUtils from "@date-io/moment";
 import { withStyles, ThemeProvider } from "@material-ui/core/styles";
 import { createRoot } from "react-dom/client";
+import './index.css';
 import theme from "./theme";
-// import Loadable from "react-loadable";
-// import Loading from "./src/orbital-templates/Material/_shared/Loading/Loading";
 import store from "./Store/reduxStore";
 import { Provider } from "react-redux";
 import App from "./App";
-// const App = Loadable({
-//   loader: () => import(/* webpackChunkName: "App" */ "./src/App"),
-//   loading: err => <Loading err={err} />
-// });
 const FireApp = (props) => {
   const MyApp = (props) => (
     <MuiPickersUtilsProvider utils={MomentUtils}>
@@ -36,7 +31,7 @@ const FireApp = (props) => {
   );
   const container = document.getElementById("root");
   const root = createRoot(container);
-  root.render(<MyApp />, document.getElementById("root"));
+  root.render(<MyApp />);
 };
 
 /*

@@ -17,6 +17,7 @@ export default class ModelAdd extends React.Component {
     initialValues: {}
   };
   componentDidMount() {
+    console.log("hello from model add", this);
     let formKeyVal = {};
     this.props.form &&
       this.props.form.fields.map(field => {
@@ -36,6 +37,7 @@ export default class ModelAdd extends React.Component {
       removeNotification,
       ...rest
     } = this.props;
+    console.log("model add", this.props);
     return (
       <Formik
         onSubmit={(values, actions) => {

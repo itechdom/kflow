@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import { Crud } from 'Libs/react-services/crud-service/crud-container';
 import { Wikipedia } from 'Libs/react-services/wikipedia-service/wikipedia-container';
-import config from './config';
+import config from './Config';
 import { memo } from 'react';
 
 //create typescript type for offlineStorage

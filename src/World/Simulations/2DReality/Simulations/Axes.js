@@ -80,7 +80,7 @@ const Axes = ({
           zIndex: 100,
           fillStyle: "red",
           sprite: {
-            // texture: "./assets/game/Tiles/dirt.png",
+            // texture: "./Assets/game/Tiles/dirt.png",
           },
         },
       }
@@ -90,7 +90,7 @@ const Axes = ({
       render: {
         zIndex: 9000,
         // sprite: {
-        //   // texture: "./assets/game/Tiles/alienBeige.png",
+        //   // texture: "./Assets/game/Tiles/alienBeige.png",
         // },
         // text: {
         //   content: "Test",

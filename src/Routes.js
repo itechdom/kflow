@@ -6,20 +6,16 @@ export const dateFilterRouteList = [
 
 export const mainFilterRouteList = [{ url: "all", name: "All", icon: "" }];
 
-export const mainRouteList = [
-  { url: "/", name: "Knowledge", icon: "memory" }
-];
+export const mainRouteList = [{ url: "/", name: "Knowledge" }];
 
 export const adminRoute = {
   url: "/admin",
   name: "Admin",
-  icon: "settings_applications",
 };
 
 export const logoutRoute = {
   url: "/logout",
   name: "Log Out",
-  icon: "exit_to_app",
 };
 
 export const editableSchemas = [

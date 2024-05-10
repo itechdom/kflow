@@ -5,10 +5,15 @@ export const styles = (theme) => {
   return {
     root: {},
     hasPadding: {
-      padding: "2em",
+      padding: "1em 0em 1em 0em"
     },
     card: {
       width: "100%",
+      backgroundColor: "white",
+      border: "1px solid #ccc",
+      boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+      borderRadius: "4px",
+      transition: "box-shadow 0.3s ease-in-out"
     },
     content: {
       marginTop: "3em",
@@ -16,12 +21,22 @@ export const styles = (theme) => {
       backgroundImage: "linear-gradient(to top, #fff1eb 0%, #e2eef6 100%)",
       minHeight: "100vh",
     },
-    autocomplete: {},
+    autocompleteContainer:{
+      marginTop:0,
+      position: "fixed",
+      right: "0px",
+      top: "0px",
+      zIndex: 999999
+    },
+    autocomplete: {
+
+    },
     suggestionsContainerOpen: {
       zIndex: 9999,
     },
     toolbar: {
       paddingRight: 24, // keep right padding when drawer closed
+      paddingLeft: 1,
       height: appBarHeight,
     },
     toolbarIcon: {
@@ -49,6 +64,13 @@ export const styles = (theme) => {
     },
     menu: {
       backgroundColor: "white",
+      boxShadow: "none!important",
+      backgroundColor: "white",
+      color: "black",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "left",
+      boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
       color: "#000000",
     },
     menuButton: {

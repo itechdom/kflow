@@ -1,5 +1,5 @@
 //Store config
-import config from "../config/index";
+import config from "../Config/index";
 // import { offlineStorage } from "Orbital";
 import {
   Crud,
