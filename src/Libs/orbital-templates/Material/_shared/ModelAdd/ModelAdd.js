@@ -6,7 +6,7 @@ import {
   CardContent,
   Button,
   Icon,
-  Typography
+  Typography,
 } from "@material-ui/core";
 import Forms from "../Forms/Forms";
 import ClientNotification from "../ClientNotification/ClientNotification";
@@ -14,13 +14,13 @@ import FormsValidate from "../Forms/Forms.Validate";
 
 export default class ModelAdd extends React.Component {
   state = {
-    initialValues: {}
+    initialValues: {},
   };
   componentDidMount() {
     console.log("hello from model add", this);
     let formKeyVal = {};
     this.props.form &&
-      this.props.form.fields.map(field => {
+      this.props.form.fields.map((field) => {
         formKeyVal[field.name] = field.value;
       });
     this.setState({ initialValues: formKeyVal });
@@ -58,7 +58,7 @@ export default class ModelAdd extends React.Component {
           handleSubmit,
           isSubmitting,
           setFieldValue,
-          setFieldTouched
+          setFieldTouched,
         }) => {
           return (
             <Card>
@@ -83,22 +83,22 @@ export default class ModelAdd extends React.Component {
               <CardActions style={{ justifyContent: "flex-end" }}>
                 <Button
                   variant="contained"
-                  color="primary"
-                  onClick={event => {
-                    onCancel(event);
-                  }}
-                >
-                  Cancel
-                </Button>
-                <Button
-                  variant="contained"
                   color="secondary"
-                  onClick={event => {
+                  onClick={(event) => {
                     handleSubmit(event);
                   }}
                 >
                   <Icon>save</Icon>
                   <span style={{ marginLeft: "3px" }}>Save</span>
+                </Button>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={(event) => {
+                    onCancel(event);
+                  }}
+                >
+                  Cancel
                 </Button>
               </CardActions>
               <ClientNotification
