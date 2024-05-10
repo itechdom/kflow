@@ -21,7 +21,16 @@ export const styles = (theme) => {
       backgroundImage: "linear-gradient(to top, #fff1eb 0%, #e2eef6 100%)",
       minHeight: "100vh",
     },
-    autocomplete: {},
+    autocompleteContainer:{
+      marginTop:0,
+      position: "fixed",
+      right: "0px",
+      top: "0px",
+      zIndex: 999999
+    },
+    autocomplete: {
+
+    },
     suggestionsContainerOpen: {
       zIndex: 9999,
     },
@@ -56,6 +65,12 @@ export const styles = (theme) => {
     menu: {
       backgroundColor: "white",
       boxShadow: "none!important",
+      backgroundColor: "white",
+      color: "black",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "left",
+      boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
       color: "#000000",
     },
     menuButton: {
