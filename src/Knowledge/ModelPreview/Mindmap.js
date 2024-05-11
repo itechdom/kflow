@@ -1,9 +1,6 @@
 import React from "react";
 import MindmapTree from "react-d3-tree";
-
-const getRadius = (nodeName) => {
-  return Math.max(20, nodeName.length * 2);
-};
+import CustomTreeNode from "./CustomTreeNode";
 
 export const convertToMindmap = (currentNode, mindmapByKeys) => {
   currentNode.name = currentNode.title;
@@ -50,12 +47,23 @@ class Tree extends React.Component {
 
   render() {
     return (
-      <div class="mindmap-container" style={{ height: "20em" }}>
+      <div
+        class="mindmap-container"
+        style={{
+          height: "50em",
+          background: "linear-gradient(to top, #e8d1c5 0%, #f4f1ea 100%)"
+        }}
+      >
         {this.state.data.length > 0 && (
           <MindmapTree
-            enableLegacyTransitions={true}
             data={this.state.data}
-            nodeSize={{ x: 400, y: 200 }}
+            renderCustomNodeElement={(rd3tProps) => (
+              <CustomTreeNode {...rd3tProps} />
+            )}
+            nodeSize={{ x: 450, y: 450 }}
+            translate={{ x: 250, y: 200 }}
+            orientation="vertical"
+            pathFunc="straight"
           />
         )}
       </div>
