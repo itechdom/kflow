@@ -36,6 +36,7 @@ class Tree extends React.Component {
 
   componentDidMount() {
     let data = this.formatData(Object.assign({}, this.props.mindmapByKeys));
+    console.log(data);
     this.setState({ data });
   }
 

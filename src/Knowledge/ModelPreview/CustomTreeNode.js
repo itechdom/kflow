@@ -42,8 +42,6 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
   };
   useEffect(() => {
     //truncate if length is greater than 30
-    console.log("PWidth", pWidth);
-    console.log("PHeight", pHeight); 
     if (nodeDatum.name.length > MIN_TEXT_LENGTH) {
       setRadius(200);
       setCx(0);
@@ -57,9 +55,6 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
       setCY(20);
     }
     toggleNode();
-    return () => {
-      console.log("Node unmounted:", nodeDatum.name);
-    };
   }, [nodeDatum, pWidth, pHeight, toggleNode]);
   // Measure the width of the <p> tag after component mounts
   useEffect(() => {
