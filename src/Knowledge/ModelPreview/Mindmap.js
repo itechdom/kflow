@@ -1,7 +1,6 @@
 import React from "react";
 import MindmapTree from "react-d3-tree";
 import CustomTreeNode from "./CustomTreeNode";
-import SpriteDisplay from "./SpriteDisplay";
 
 export const convertToMindmap = (currentNode, mindmapByKeys) => {
   currentNode.name = currentNode.title;
@@ -56,7 +55,6 @@ class Tree extends React.Component {
           background: "linear-gradient(to top, #e8d1c5 0%, #f4f1ea 100%)",
         }}
       >
-        <SpriteDisplay x={0} y={0} spriteWidth={170} spriteHeight={110} totalWidth={170} totalHeight={110} imageUrl="/images/planets-sprite-sheet.png" />
         {this.state.data.length > 0 && (
           <MindmapTree
             data={this.state.data}

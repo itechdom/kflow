@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import SvgCircles from "./SvgCircles";
+import SpriteDisplay from "./SpriteDisplay";
 
 function truncateText(text, maxLength) {
   if (text.length > maxLength) {
@@ -44,15 +45,15 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
     //truncate if length is greater than 30
     if (nodeDatum.name.length > MIN_TEXT_LENGTH) {
       setRadius(200);
-      setCx(0);
-      setCY(80);
-      if (nodeDatum.name.length > MAX_TEXT_LENGTH) {
-        nodeDatum.name = truncateText(nodeDatum.name, MAX_TEXT_LENGTH);
-      }
+      setCx(-300);
+      setCY(-30);
     } else {
       setRadius(150);
-      setCx(0);
-      setCY(20);
+      setCx(130);
+      setCY(-30);
+    }
+    if (nodeDatum.name.length > MAX_TEXT_LENGTH) {
+      nodeDatum.name = truncateText(nodeDatum.name, MAX_TEXT_LENGTH);
     }
     toggleNode();
   }, [nodeDatum, pWidth, pHeight, toggleNode]);
@@ -78,10 +79,14 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
           </feMerge>
         </filter>
       </defs>
-      <SvgCircles
-        cx={cx} // Center x coordinate
-        cy={cy} // Center y coordinate
-        r={radius} // Radius of the circle
+      <SpriteDisplay
+        x={cx}
+        y={cy}
+        spriteWidth={170}
+        spriteHeight={110}
+        totalWidth={170}
+        totalHeight={110}
+        imageUrl="/images/planets-sprite-sheet.png"
         fill="white" // Background color of the circle
         stroke="black" // Border color of the circle
         strokeWidth="1.5" // Width of the stroke
@@ -89,6 +94,11 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
         onClick={handleClick} // Onclick event handler
         style={nodeStyles} // Additional styles if needed
       />
+      {/* <SvgCircles
+        cx={cx} // Center x coordinate
+        cy={cy} // Center y coordinate
+        r={radius} // Radius of the circle
+      /> */}
       <foreignObject
         onClick={handleClick}
         x="-60"

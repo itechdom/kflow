@@ -9,19 +9,6 @@ const SpriteDisplay = ({
   totalHeight,
   imageUrl,
 }) => {
-  //image width
-  //1457
-  //image height
-  //1019
-  //sprite width
-  //170
-  //sprite height
-  //180
-  // Calculate the transform offset based on the given position
-  // The positions x and y are zero-based indices, so (1,1) means the second sprite horizontally and vertically.
-  const offsetX = -(x * spriteWidth);
-  const offsetY = -(y * spriteHeight);
-
   return (
     // <svg width="100%" height="100%" viewBox={`0 0 ${spriteWidth} ${spriteHeight}`}>
     //   <defs>
@@ -40,32 +27,36 @@ const SpriteDisplay = ({
     //from right to left
     //column 1
     <>
-      {/* <svg id="mySvg1" width="100%" height="100%" viewBox="0 0 200 180">
-        <defs>
-          <clipPath id="c">
-            <rect x="-170" y="0" width="100%" height="100%"></rect>
-          </clipPath>
-        </defs>
-        <image
-          width="100%"
-          height="100%"
-          href="/images/planets-sprite-sheet.png"
-          clip-path="url(#c)"
-        ></image>
-      </svg> */}
-      <svg id="mySvg2" width="100%" height="100%" viewBox="0 0 200 180">
-        <defs>
-          <clipPath id="c">
-            <rect x="-170" y="0" width="100%" height="100%"></rect>
-          </clipPath>
-        </defs>
-        <image
-          width="100%"
-          height="100%"
-          href="/images/planets-sprite-sheet.png"
-          clip-path="url(#c)"
-        ></image>
-      </svg>
+      <defs>
+        <clipPath id="c">
+          <rect x="193" y="0" width="170px" height="150px"></rect>
+        </clipPath>
+        <clipPath id="c">
+          <rect x="362" y="0" width="169px" height="150px"></rect>
+        </clipPath>
+        <clipPath id="c">
+          <rect x="510" y="0" width="160px" height="150px"></rect>
+        </clipPath>
+        <clipPath id="c">
+          <rect x="660" y="0" width="130px" height="150px"></rect>
+        </clipPath>
+        <clipPath id="c">
+          <rect x="785" y="0" width="165px" height="153px"></rect>
+        </clipPath>
+        <clipPath id="c">
+          <rect x="935" y="0" width="168px" height="150px"></rect>
+        </clipPath>
+        <clipPath id="c">
+          <rect x="1100" y="0" width="168px" height="150px"></rect>
+        </clipPath>
+      </defs>
+      <image
+        transform={`translate(${x}, ${y})`}
+        width="100%"
+        height="100%"
+        href="/images/planets-sprite-sheet.png"
+        clip-path="url(#c)"
+      ></image>
     </>
   );
 };
