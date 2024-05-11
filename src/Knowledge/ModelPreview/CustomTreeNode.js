@@ -2,15 +2,15 @@ import React, { useEffect, useRef } from "react";
 import SvgCircles from "./SvgCircles";
 
 function truncateText(text, maxLength) {
-    if (text.length > maxLength) {
-        return text.substring(0, maxLength - 3) + "...";
-    }
-    return text;
+  if (text.length > maxLength) {
+    return text.substring(0, maxLength - 3) + "...";
+  }
+  return text;
 }
 
 const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
   const MIN_TEXT_LENGTH = 20;
-  const MAX_TEXT_LENGTH= 95;
+  const MAX_TEXT_LENGTH = 95;
   const handleClick = () => {
     toggleNode(); // This function is provided by react-d3-tree to toggle the node
   };
@@ -46,7 +46,7 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
       setRadius(200);
       setCx(0);
       setCY(80);
-      if(nodeDatum.name.length > MAX_TEXT_LENGTH){
+      if (nodeDatum.name.length > MAX_TEXT_LENGTH) {
         nodeDatum.name = truncateText(nodeDatum.name, MAX_TEXT_LENGTH);
       }
     } else {
