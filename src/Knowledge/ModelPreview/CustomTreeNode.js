@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import SvgCircles from "./SvgCircles";
 
 const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
@@ -11,6 +11,7 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
   const [cy, setCY] = React.useState(30);
   const [radius, setRadius] = React.useState(100);
   const [minimumTextLength, setMinimumTextLength] = React.useState(20);
+  const pRef = useRef(null);
   const nodeStyles = {
     fill: "white",
     stroke: "#2196F3",
@@ -33,16 +34,17 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
   };
   useEffect(() => {
     //truncate if length is greater than 30
+    const multiplier = nodeDatum.name.length / minimumTextLength;
+    const pWidth = pRef.current.offsetWidth;
+    console.log("PWidth", pWidth);
+    setRadius(150);
+    setCx(30);
+    setCY(30);
     if (nodeDatum.name.length > minimumTextLength) {
       setShowNote(true);
-      const multiplier = nodeDatum.name.length / minimumTextLength;
-      setRadius(200);
-      setCx(60);
-      setCY(60);
-    }
-    else{
-        setCx(0);
-        setCY(20);
+    } else {
+      setCx(0);
+      setCY(20);
     }
     toggleNode();
     return () => {
@@ -59,7 +61,7 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
             <feFuncA type="linear" slope="0.5" /> {/* Transparency */}
           </feComponentTransfer>
           <feMerge>
-            <feMergeNode /> 
+            <feMergeNode />
             <feMergeNode in="SourceGraphic" />{" "}
           </feMerge>
         </filter>
@@ -82,7 +84,11 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
         width="300"
         height="200"
       >
-        <p style={{ fontSize: "20px", color:"white" }} xmlns="http://www.w3.org/1999/xhtml">
+        <p
+          ref={pRef}
+          style={{ fontSize: "20px", color: "white" }}
+          xmlns="http://www.w3.org/1999/xhtml"
+        >
           {nodeDatum.name}
         </p>
       </foreignObject>
