@@ -44,10 +44,10 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
     //truncate if length is greater than 30
     console.log("PWidth", pWidth);
     console.log("PHeight", pHeight); 
-    if (nodeDatum.name.length > MAX_TEXT_LENGTH) {
+    if (nodeDatum.name.length > MIN_TEXT_LENGTH) {
       setRadius(200);
-      setCx(-300);
-      setCY(0);
+      setCx(0);
+      setCY(80);
       if(nodeDatum.name.length > MAX_TEXT_LENGTH){
         nodeDatum.name = truncateText(nodeDatum.name, MAX_TEXT_LENGTH);
       }
