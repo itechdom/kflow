@@ -60,7 +60,7 @@ class Tree extends React.Component {
             renderCustomNodeElement={(rd3tProps) => (
               <CustomTreeNode {...rd3tProps} />
             )}
-            nodeSize={{ x: 400, y: 450 }}
+            nodeSize={{ x: 450, y: 450 }}
             translate={{ x: 250, y: 200 }}
             orientation="vertical"
             pathFunc="straight"

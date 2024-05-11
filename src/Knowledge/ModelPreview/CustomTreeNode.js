@@ -2,13 +2,13 @@ import React, { useEffect, useRef } from "react";
 import SvgCircles from "./SvgCircles";
 
 const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
+  const MAX_TEXT_LENGTH= 20;
   const handleClick = () => {
     toggleNode(); // This function is provided by react-d3-tree to toggle the node
   };
   const [cx, setCx] = React.useState(30);
   const [cy, setCY] = React.useState(30);
   const [radius, setRadius] = React.useState(100);
-  const [minimumTextLength, setMinimumTextLength] = React.useState(20);
   const [pWidth, setPWidth] = React.useState(0);
   const pRef = useRef(null);
   const nodeStyles = {
@@ -34,13 +34,14 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
   useEffect(() => {
     //truncate if length is greater than 30
     console.log("PWidth", pWidth);
-    if (nodeDatum.name.length > minimumTextLength) {
+    if (nodeDatum.name.length > MAX_TEXT_LENGTH) {
       setRadius(200);
       setCx(60);
       setCY(60);
-      const multiplier = nodeDatum.name.length / minimumTextLength;
+      const multiplier = nodeDatum.name.length / MAX_TEXT_LENGTH;
       const pWidth = pRef.current.offsetWidth;
     } else {
+      setRadius(150);
       setCx(0);
       setCY(20);
     }
@@ -48,7 +49,7 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
     return () => {
       console.log("Node unmounted:", nodeDatum.name);
     };
-  }, [nodeDatum.name, pWidth, minimumTextLength, toggleNode]);
+  }, [nodeDatum.name, pWidth, toggleNode]);
   // Measure the width of the <p> tag after component mounts
   useEffect(() => {
     if (pRef.current) {
