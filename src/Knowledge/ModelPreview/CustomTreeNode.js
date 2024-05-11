@@ -3,14 +3,13 @@ import SvgCircles from "./SvgCircles";
 
 const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
   const handleClick = () => {
-    console.log("Node clicked:", nodeDatum.name);
     toggleNode(); // This function is provided by react-d3-tree to toggle the node
   };
-  const [showNote, setShowNote] = React.useState(false);
   const [cx, setCx] = React.useState(30);
   const [cy, setCY] = React.useState(30);
   const [radius, setRadius] = React.useState(100);
   const [minimumTextLength, setMinimumTextLength] = React.useState(20);
+  const [pWidth, setPWidth] = React.useState(0);
   const pRef = useRef(null);
   const nodeStyles = {
     fill: "white",
@@ -34,14 +33,13 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
   };
   useEffect(() => {
     //truncate if length is greater than 30
-    const multiplier = nodeDatum.name.length / minimumTextLength;
-    const pWidth = pRef.current.offsetWidth;
     console.log("PWidth", pWidth);
-    setRadius(150);
-    setCx(30);
-    setCY(30);
     if (nodeDatum.name.length > minimumTextLength) {
-      setShowNote(true);
+      setRadius(200);
+      setCx(60);
+      setCY(60);
+      const multiplier = nodeDatum.name.length / minimumTextLength;
+      const pWidth = pRef.current.offsetWidth;
     } else {
       setCx(0);
       setCY(20);
@@ -50,7 +48,13 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
     return () => {
       console.log("Node unmounted:", nodeDatum.name);
     };
-  }, [nodeDatum.name]);
+  }, [nodeDatum.name, pWidth, minimumTextLength, toggleNode]);
+  // Measure the width of the <p> tag after component mounts
+  useEffect(() => {
+    if (pRef.current) {
+      setPWidth(pRef.current.getBoundingClientRect().width);
+    }
+  }, []);
   return (
     <g>
       <defs>
@@ -81,11 +85,11 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
         onClick={handleClick}
         x="-60"
         y="-12.5"
-        width="300"
+        width="200"
         height="200"
+        ref={pRef}
       >
         <p
-          ref={pRef}
           style={{ fontSize: "20px", color: "white" }}
           xmlns="http://www.w3.org/1999/xhtml"
         >
