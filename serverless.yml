@@ -1,3 +1,5 @@
+org: itechdom
+app: knowledgeflow
 service: knowledgeflow-v2  # This names your service
 provider:
   name: aws
