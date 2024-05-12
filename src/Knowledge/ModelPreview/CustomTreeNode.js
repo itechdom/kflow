@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import SvgCircles from "./SvgCircles";
-import SpriteDisplay from "./SpriteDisplay";
 
 function truncateText(text, maxLength) {
     if (text.length > maxLength) {
@@ -9,10 +8,11 @@ function truncateText(text, maxLength) {
     return text;
 }
 
-const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
+const CustomTreeNode = ({ nodeDatum, toggleNode, onClick }) => {
   const MIN_TEXT_LENGTH = 20;
   const MAX_TEXT_LENGTH= 95;
   const handleClick = () => {
+    onClick(nodeDatum); // This function is provided by react-d3-tree to handle click events
     toggleNode(); // This function is provided by react-d3-tree to toggle the node
   };
   const [cx, setCx] = React.useState(30);
@@ -92,8 +92,8 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
       />
       <foreignObject
         onClick={handleClick}
-        x="-60"
-        y="50"
+        x="-70"
+        y="0"
         width="200"
         height="200"
         ref={pRef}
@@ -105,7 +105,7 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
           {nodeDatum.name}
         </p>
       </foreignObject>
-      <SpriteDisplay position={4} x={-350} y={-100} spriteWidth={100} spriteHeight={100} totalWidth={100} totalHeight={100} imageUrl="/images/planets-sprite-sheet.png" />
+      {/* <SpriteDisplay position={3} x={-250} y={-100} spriteWidth={100} spriteHeight={100} totalWidth={100} totalHeight={100} imageUrl="/images/planets-sprite-sheet.png" /> */}
     </g>
   );
 };
