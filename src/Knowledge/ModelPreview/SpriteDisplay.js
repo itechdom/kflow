@@ -8,6 +8,7 @@ const SpriteDisplay = ({
   totalWidth,
   totalHeight,
   imageUrl,
+  position
 }) => {
   return (
     // <svg width="100%" height="100%" viewBox={`0 0 ${spriteWidth} ${spriteHeight}`}>
@@ -28,25 +29,25 @@ const SpriteDisplay = ({
     //column 1
     <>
       <defs>
-        <clipPath id="c">
+        {/* <clipPath id="c">
           <rect x="220" y="0" width="170px" height="150px"></rect>
+        </clipPath> */}
+        {/* <clipPath id="c">
+          <rect x={(220*2)-10} y="0" width="60px" height="140px"></rect>
+        </clipPath> */}
+        <clipPath id="c">
+          <rect x={(220*position)} y="0" width="100px" height="150"></rect>
         </clipPath>
         {/* <clipPath id="c">
-          <rect x="362" y="0" width="169px" height="150px"></rect>
-        </clipPath>
-        <clipPath id="c">
-          <rect x="510" y="0" width="160px" height="150px"></rect>
-        </clipPath>
-        <clipPath id="c">
           <rect x="660" y="0" width="130px" height="150px"></rect>
-        </clipPath>
-        <clipPath id="c">
+        </clipPath> */}
+        {/* <clipPath id="c">
           <rect x="785" y="0" width="165px" height="153px"></rect>
-        </clipPath>
-        <clipPath id="c">
+        </clipPath> */}
+        {/* <clipPath id="c">
           <rect x="935" y="0" width="168px" height="150px"></rect>
-        </clipPath>
-        <clipPath id="c">
+        </clipPath> */}
+        {/* <clipPath id="c">
           <rect x="1100" y="0" width="168px" height="150px"></rect>
         </clipPath> */}
       </defs>

@@ -105,7 +105,7 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
           {nodeDatum.name}
         </p>
       </foreignObject>
-      <SpriteDisplay x={-350} y={-100} spriteWidth={100} spriteHeight={100} totalWidth={100} totalHeight={100} imageUrl="/images/planets-sprite-sheet.png" />
+      <SpriteDisplay position={3} spriteWidth={100} spriteHeight={100} totalWidth={100} totalHeight={100} imageUrl="/images/planets-sprite-sheet.png" />
     </g>
   );
 };

@@ -58,6 +58,7 @@ class Tree extends React.Component {
         {this.state.data.length > 0 && (
           <MindmapTree
             data={this.state.data}
+            enableLegacyTransitions
             renderCustomNodeElement={(rd3tProps) => (
               <CustomTreeNode {...rd3tProps} />
             )}
