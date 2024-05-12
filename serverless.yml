@@ -1,8 +1,0 @@
-custom:
-  client:
-    bucketName: knowledgeflow-v2-frontend
-    distributionFolder: frontend/build
-
-plugins:
-  - serverless-finch
-  - serverless-single-page-app-plugin

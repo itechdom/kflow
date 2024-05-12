@@ -63,7 +63,7 @@
   "devDependencies": {
     "mobx-react-devtools": "^6.1.1",
     "normalize.css": "^8.0.1",
-    "serverless": "^1.47.0",
+    "serverless": "^3.38.0",
     "serverless-apig-s3": "^2.0.0",
     "serverless-finch": "^2.8.0",
     "serverless-single-page-app-plugin": "^1.0.4",
