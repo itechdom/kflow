@@ -21,6 +21,7 @@
     "matter-js": "^0.14.2",
     "mobx": "^6.9.0",
     "mobx-react": "^7.6.0",
+    "moment": "^2.30.1",
     "physijs-webpack": "^0.1.4",
     "prismjs": "^1.17.1",
     "prop-types": "^15.6.2",
@@ -55,8 +56,10 @@
     "recompose": "^0.30.0",
     "rrule": "^2.7.2",
     "showdown": "^1.9.0",
+    "socket.io-client": "^4.7.5",
     "three": "^0.112.1",
     "tone": "^13.8.25",
+    "uuid": "^9.0.1",
     "web-vitals": "^2.1.4",
     "yup": "^1.0.2"
   },
