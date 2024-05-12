@@ -29,7 +29,7 @@ const SpriteDisplay = ({
     <>
       <defs>
         <clipPath id="c">
-          <rect x="220" y="0" width="170px" height="150px"></rect>
+          <rect x="193" y="0" width="170px" height="150px"></rect>
         </clipPath>
         {/* <clipPath id="c">
           <rect x="362" y="0" width="169px" height="150px"></rect>

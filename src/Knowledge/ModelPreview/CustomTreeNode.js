@@ -3,15 +3,15 @@ import SvgCircles from "./SvgCircles";
 import SpriteDisplay from "./SpriteDisplay";
 
 function truncateText(text, maxLength) {
-  if (text.length > maxLength) {
-    return text.substring(0, maxLength - 3) + "...";
-  }
-  return text;
+    if (text.length > maxLength) {
+        return text.substring(0, maxLength - 3) + "...";
+    }
+    return text;
 }
 
 const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
   const MIN_TEXT_LENGTH = 20;
-  const MAX_TEXT_LENGTH = 95;
+  const MAX_TEXT_LENGTH= 95;
   const handleClick = () => {
     toggleNode(); // This function is provided by react-d3-tree to toggle the node
   };
@@ -45,15 +45,15 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
     //truncate if length is greater than 30
     if (nodeDatum.name.length > MIN_TEXT_LENGTH) {
       setRadius(200);
-      setCx(-300);
-      setCY(-30);
+      setCx(0);
+      setCY(80);
+      if(nodeDatum.name.length > MAX_TEXT_LENGTH){
+        nodeDatum.name = truncateText(nodeDatum.name, MAX_TEXT_LENGTH);
+      }
     } else {
       setRadius(150);
-      setCx(130);
-      setCY(-30);
-    }
-    if (nodeDatum.name.length > MAX_TEXT_LENGTH) {
-      nodeDatum.name = truncateText(nodeDatum.name, MAX_TEXT_LENGTH);
+      setCx(0);
+      setCY(20);
     }
     toggleNode();
   }, [nodeDatum, pWidth, pHeight, toggleNode]);
@@ -79,14 +79,10 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
           </feMerge>
         </filter>
       </defs>
-      <SpriteDisplay
-        x={cx}
-        y={cy}
-        spriteWidth={170}
-        spriteHeight={110}
-        totalWidth={170}
-        totalHeight={110}
-        imageUrl="/images/planets-sprite-sheet.png"
+      <SvgCircles
+        cx={cx} // Center x coordinate
+        cy={cy} // Center y coordinate
+        r={radius} // Radius of the circle
         fill="white" // Background color of the circle
         stroke="black" // Border color of the circle
         strokeWidth="1.5" // Width of the stroke
@@ -94,15 +90,10 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
         onClick={handleClick} // Onclick event handler
         style={nodeStyles} // Additional styles if needed
       />
-      {/* <SvgCircles
-        cx={cx} // Center x coordinate
-        cy={cy} // Center y coordinate
-        r={radius} // Radius of the circle
-      /> */}
       <foreignObject
         onClick={handleClick}
         x="-60"
-        y="-12.5"
+        y="50"
         width="200"
         height="200"
         ref={pRef}
@@ -114,29 +105,7 @@ const CustomTreeNode = ({ nodeDatum, toggleNode }) => {
           {nodeDatum.name}
         </p>
       </foreignObject>
-      <text
-        fill="black"
-        x="0"
-        y="0"
-        textAnchor="middle"
-        alignmentBaseline="middle"
-        fontSize="24px"
-        onClick={handleClick}
-        style={{ pointerEvents: "none" }}
-      ></text>
-      {nodeDatum.attributes && (
-        <text
-          fill="grey"
-          x="0"
-          y="20"
-          textAnchor="middle"
-          alignmentBaseline="middle"
-          fontSize="12px"
-          style={{ pointerEvents: "none" }}
-        >
-          {nodeDatum.attributes.description}
-        </text>
-      )}
+      <SpriteDisplay x={-350} y={-100} spriteWidth={100} spriteHeight={100} totalWidth={100} totalHeight={100} imageUrl="/images/planets-sprite-sheet.png" />
     </g>
   );
 };
