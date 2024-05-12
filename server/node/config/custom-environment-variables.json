@@ -34,6 +34,9 @@
       "clientSecret": "SLACK_CLIENT_SECRET",
       "signingSecret": "SLACK_SIGNING_SECRET",
       "verificationToken": "SLACK_VERIFICATION_TOKEN"
+    },
+    "openai": {
+      "key": "OPEN_AI_KEY"
     }
   }
 }
