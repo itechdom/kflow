@@ -47,10 +47,10 @@ class Tree extends React.Component {
     this.setState({ in: !this.state.in });
   };
 
-  handleNodeClick = (nodeData) => {
-    console.log("Clicked on Node with data: ", nodeData);
-    const x = -nodeData.vx * 0.5 + window.innerWidth / 2;
-    const y = -nodeData.y * 0.5 + window.innerHeight / 4;
+  handleNodeClick = (nodeData, {hierarchyPointNode}) => {
+    console.log("Clicked on Node with data: ", hierarchyPointNode.x, hierarchyPointNode.y);
+    const x = -hierarchyPointNode.x  + window.innerWidth / 2;
+    const y = -hierarchyPointNode.y  + window.innerHeight / 8;
     const newScale = 0.5; // Set fixed scale or calculate dynamically based on your needs
     this.setState({ translate: { x, y } });
     this.setState({ scale: newScale });
@@ -92,7 +92,7 @@ class Tree extends React.Component {
             nodeSize={{ x: 450, y: 450 }}
             orientation="vertical"
             pathFunc="straight"
-            d3={{ scale: this.state.scale, translate: this.state.translate }}
+            translate={this.state.translate}
             ref={this.treeContainerRef}
           />
         )}

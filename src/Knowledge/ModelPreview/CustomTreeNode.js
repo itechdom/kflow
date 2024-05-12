@@ -8,11 +8,11 @@ function truncateText(text, maxLength) {
     return text;
 }
 
-const CustomTreeNode = ({ nodeDatum, toggleNode, onClick }) => {
+const CustomTreeNode = ({ nodeDatum, toggleNode, onClick, ...rest }) => {
   const MIN_TEXT_LENGTH = 20;
   const MAX_TEXT_LENGTH= 95;
   const handleClick = () => {
-    onClick(nodeDatum); // This function is provided by react-d3-tree to handle click events
+    onClick(nodeDatum, rest); // This function is provided by react-d3-tree to handle click events
     toggleNode(); // This function is provided by react-d3-tree to toggle the node
   };
   const [cx, setCx] = React.useState(30);
