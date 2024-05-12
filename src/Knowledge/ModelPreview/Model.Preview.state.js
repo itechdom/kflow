@@ -1,12 +1,12 @@
 //move this to kb service
-import uuidv1 from "uuid/v1";
+import {v1} from "uuid";
 export const handleNodeAdd = (
   mindmapByKeys,
   setMindmapByKeys,
   nodeId,
   title
 ) => {
-  const _id = uuidv1();
+  const _id = v1();
   const parent = mindmapByKeys[nodeId];
   let group = parent && parseInt(parent.level.split(".").join(""));
   let size = 20 / (parent && parent.level.split(".").length);

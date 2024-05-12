@@ -1,7 +1,8 @@
 //the crud service creates [create, read, update, del] endpoints for a mongoose model
-const crudService = require("@markab.io/node/crud-service/crud-service");
+const crudService = require("../../../Libs/node-services/crud-service/crud-service");
 const mediaService = require("@markab.io/node/media-service/media-service");
 const vizService = require("@markab.io/node/viz-service/viz-service");
+const gptService = require("../../../Libs/node-services/gpt-service/gpt-service");
 const {
   formsService,
   registerForms,
@@ -31,14 +32,14 @@ const Knowledge = ({
       };
     },
     read: (user, req) => {
-      console.log("req", req.query);
+      console.log("request here ", req.query.query);
       return {
         isPermitted: isPermitted({ key: `${modelName}_read`, user }),
         criteria: {
-          query: req.query && req.query.query && JSON.parse(req.query.query),
+          query: req.query && req.query.query ,
         },
         exclude:
-          req.query && req.query.query && JSON.parse(req.query.query)._id
+          req.query && req.query.query && req.query.query._id
             ? []
             : ["body"],
       };
@@ -98,6 +99,7 @@ const Knowledge = ({
     domainLogic: vizDomainLogic,
   });
 
+  const gptApi = gptService(config);
   //file upload api
   let mediaDomainLogic = {
     getMedia: (user, req, res) => {
@@ -170,7 +172,7 @@ const Knowledge = ({
     formsModel,
   });
 
-  return [knowledgeApi, fileUploadApi, vizApi, formsApi];
+  return [knowledgeApi, fileUploadApi, vizApi, formsApi, gptApi];
 };
 
 module.exports = Knowledge;

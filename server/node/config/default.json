@@ -27,5 +27,8 @@
       "stripeId": "STRIPE_ID",
       "stripeSecret": "STRIPE_SECRET"
     }
+  },
+  "openai": {
+    "key": "OPEN_AI_KEY" 
   }
 }

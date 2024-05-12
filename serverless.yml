@@ -1,0 +1,15 @@
+org: itechdom
+app: knowledgeflow
+service: knowledgeflow-v2  # This names your service
+provider:
+  name: aws
+  runtime: nodejs14.x  # Assuming you're using Node.js 14.x
+  region: us-east-1
+custom:
+  client:
+    bucketName: knowledgeflow-v2-frontend
+    distributionFolder: frontend/build
+
+plugins:
+  - serverless-finch
+  - serverless-single-page-app-plugin

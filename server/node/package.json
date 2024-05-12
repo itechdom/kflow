@@ -27,7 +27,7 @@
   "homepage": "https://github.com/itechdom/playground#readme",
   "dependencies": {
     "@google/maps": "^1.0.2",
-    "@markab.io/node": "^6.0.1",
+    "@markab.io/node": "^7.0.0",
     "@markab.io/orbital-api": "^3.0.0",
     "aws-sdk": "^2.403.0",
     "config": "^1.25.1",
@@ -72,7 +72,7 @@
     "moxios": "^0.4.0",
     "nodemon": "^1.11.0",
     "regenerator-runtime": "^0.13.3",
-    "serverless": "^1.38.0",
+    "serverless": "^3.38.0",
     "serverless-http": "^2.3.0",
     "serverless-offline": "^5.11.0",
     "supertest": "^3.4.2"
