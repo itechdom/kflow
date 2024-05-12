@@ -606,4 +606,10 @@ router
  │         └── <anonymous>                         /                                                           GET
  │        
  │   
+ ├── router                                        /^\/knowledge\/?(?=\/|$)/                                   
+ │   router                                                                                                    
+ │    └── bound dispatch                           /chat                                                       POST
+ │         └── <anonymous>                         /                                                           POST
+ │        
+ │   
  └── <anonymous>                                   /^\/schemas\/?(?=\/|$)/                                     

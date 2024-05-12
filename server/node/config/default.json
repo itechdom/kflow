@@ -29,6 +29,6 @@
     }
   },
   "openai": {
-    "key": "OPEN_AI_KEY"
+    "key": "OPEN_AI_KEY" 
   }
 }
