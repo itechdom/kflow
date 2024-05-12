@@ -3,11 +3,6 @@ import React from "react";
 const SpriteDisplay = ({
   x,
   y,
-  spriteWidth,
-  spriteHeight,
-  totalWidth,
-  totalHeight,
-  imageUrl,
   position
 }) => {
   return (
@@ -25,8 +20,6 @@ const SpriteDisplay = ({
     //     clipPath={`url(#clip-${x}-${y})`}
     //   />
     // </svg>
-    //from right to left
-    //column 1
     <>
       <defs>
         {/* <clipPath id="c">
@@ -36,7 +29,7 @@ const SpriteDisplay = ({
           <rect x={(220*2)-10} y="0" width="60px" height="140px"></rect>
         </clipPath> */}
         <clipPath id="c">
-          <rect x={(220*position)} y="0" width="100px" height="150"></rect>
+          <rect x={(210*position)} y="0" width="100px" height="150"></rect>
         </clipPath>
         {/* <clipPath id="c">
           <rect x="660" y="0" width="130px" height="150px"></rect>
@@ -52,7 +45,7 @@ const SpriteDisplay = ({
         </clipPath> */}
       </defs>
       <image
-        transform={`translate(${x}, ${y})`}
+        transform={`translate(${x-(position*125)}, ${y})`}
         width="100%"
         height="100%"
         href="/images/plants-sprite-sheet-icons.webp"
