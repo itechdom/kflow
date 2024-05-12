@@ -23,8 +23,8 @@ class Tree extends React.Component {
     super(props);
     this.state = {
       data: [],
-      translate: { x: 0, y: 0 },
-      scale: 1,
+      translate: { x: 450, y: 450 },
+      scale: 0.1,
     };
   }
 
