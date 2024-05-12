@@ -608,7 +608,10 @@ router
  │   
  ├── router                                        /^\/knowledge\/?(?=\/|$)/                                   
  │   router                                                                                                    
- │    └── bound dispatch                           /chat                                                       POST
+ │    ├── bound dispatch                           /chat                                                       POST
+ │    │    └── <anonymous>                         /                                                           POST
+ │    │   
+ │    └── bound dispatch                           /image                                                      POST
  │         └── <anonymous>                         /                                                           POST
  │        
  │   

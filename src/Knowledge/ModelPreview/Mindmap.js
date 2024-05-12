@@ -48,6 +48,7 @@ class Tree extends React.Component {
   };
 
   handleNodeClick = (nodeData, {hierarchyPointNode}) => {
+    console.log(nodeData);
     console.log("Clicked on Node with data: ", hierarchyPointNode.x, hierarchyPointNode.y);
     const x = -hierarchyPointNode.x  + window.innerWidth / 2;
     const y = -hierarchyPointNode.y  + window.innerHeight / 8;
