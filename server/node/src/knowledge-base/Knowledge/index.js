@@ -3,7 +3,6 @@ const crudService = require("../../../Libs/node-services/crud-service/crud-servi
 const mediaService = require("@markab.io/node/media-service/media-service");
 const vizService = require("@markab.io/node/viz-service/viz-service");
 const gptService = require("../../../Libs/node-services/gpt-service/gpt-service");
-
 const {
   formsService,
   registerForms,
