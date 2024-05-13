@@ -1,3 +1,31 @@
+// const originalFormat = {
+//     title: "Use of attention",
+//     id: "853241d1-aae5-11ee-a6e5-15a006ddba47",
+//     _id: "853241d1-aae5-11ee-a6e5-15a006ddba47",
+//     size: 5,
+//     group: 1810,
+//     level: "0.1.8.10.0",
+//     children: [],
+//     parent: "853241d0-aae5-11ee-a6e5-15a006ddba47",
+//     links: {
+//         title: "Transformers",
+//         target: "853241d1-aae5-11ee-a6e5-15a006ddba47",
+//         source: "853241d0-aae5-11ee-a6e5-15a006ddba47",
+//         group: 1810
+//     },
+//     name: "Use of attention",
+//     collapsed: true,
+//     __rd3t: {
+//         id: "49d275c6-011a-4973-b695-d5503171d560",
+//         depth: 4,
+//         collapsed: false
+//     },
+//     label: "Use of attention"
+// };
+
+//converted to
+//{"Use of attention":{}}
+
 export function convertToNested(node) {
     const result = {};
     function traverse(currentNode, output) {
