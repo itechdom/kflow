@@ -9,16 +9,15 @@ import {
   theme3Light,
   theme3Dark,
 } from "./Themes";
-
+import { node } from "prop-types";
 
 //My Favorite Theme
 // const {background, baseStyle, textColor} = theme1Light;
 // const { background, baseStyle, textColor } = theme1Dark;
 // const {background, baseStyle, textColor} = theme2Light;
 // const {background, baseStyle, textColor} = theme2Dark;
-const {background, baseStyle, textColor} = theme3Light;
+const { background, baseStyle, textColor } = theme3Light;
 // const {background, baseStyle, textColor} = theme3Dark;
-
 
 export const convertToMindmap = (currentNode, mindmapByKeys) => {
   currentNode.name = currentNode.title;
@@ -114,6 +113,9 @@ class Tree extends React.Component {
                 nodeStyle={baseStyle}
                 textColor={textColor}
                 onClick={this.handleNodeClick}
+                onChatRequest={(nodeDatum) =>
+                  this.props.knowledge_chat(nodeDatum)
+                }
                 {...rd3tProps}
               />
             )}

@@ -36,6 +36,7 @@ const Knowledge = ({
   knowledge_page,
   knowledge_set_filter,
   knowledge_remove_filter,
+  knowledge_chat,
   location,
   match,
   history,
@@ -102,6 +103,7 @@ const Knowledge = ({
       removeFilter={knowledge_remove_filter}
       modelCount={knowledge_count}
       knowledgeSearch={knowledge_searchKnowledge}
+      knowledgeChat={knowledge_chat}
       location={location}
       match={match}
       history={history}

@@ -6,8 +6,10 @@ import {
   DialogContentText,
   DialogActions,
   Button,
+  IconButton,
   Tooltip,
 } from "@material-ui/core";
+import { Icon } from "../../Libs/orbital-templates/Material/_shared/Icon/Icon";
 
 const MIN_TEXT_LENGTH = 20;
 const MAX_TEXT_LENGTH = 70;
@@ -45,6 +47,7 @@ const CustomTreeNode = ({
   onClick,
   nodeStyle,
   textColor,
+  onChatRequest,
   ...rest
 }) => {
   const [openDialog, setOpenDialog] = useState(false);
@@ -166,6 +169,14 @@ const CustomTreeNode = ({
             >
               {nodeDatum.label}
             </p>
+          )}
+          {nodeDatum.children && nodeDatum.children.length === 0 && (
+            <IconButton
+              onClick={() => onChatRequest(nodeDatum)}
+              style={{ color: "black", zIndex: 99999999999 }}
+            >
+              <Icon>save</Icon>
+            </IconButton>
           )}
         </foreignObject>
       </g>
