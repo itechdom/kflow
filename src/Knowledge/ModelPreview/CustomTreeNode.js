@@ -6,6 +6,7 @@ import {
   DialogContentText,
   DialogActions,
   Button,
+  Tooltip,
 } from "@material-ui/core";
 
 function truncateText(text, maxLength) {
@@ -129,7 +130,9 @@ const CustomTreeNode = ({
                   color: textColor,
                 }}
               >
-                {truncateText(nodeDatum.name, 20)}
+                <Tooltip title={nodeDatum.name} placement="top">
+                  <span>{truncateText(nodeDatum.name, 10)}</span>
+                </Tooltip>
               </p>
             </a>
           ) : (
