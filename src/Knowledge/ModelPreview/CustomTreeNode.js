@@ -9,6 +9,9 @@ import {
   Tooltip,
 } from "@material-ui/core";
 
+const MIN_TEXT_LENGTH = 20;
+const MAX_TEXT_LENGTH = 70;
+
 function truncateText(text, maxLength) {
   //make copy of text to avoid mutation
   let mutatedText = text.slice();
@@ -17,6 +20,10 @@ function truncateText(text, maxLength) {
     mutatedText = mutatedText.substring(0, maxLength) + "...";
   }
   return mutatedText;
+}
+
+function isLargeText(text) {
+  return text.length > MAX_TEXT_LENGTH;
 }
 
 function isHttpLink(text) {
@@ -40,8 +47,6 @@ const CustomTreeNode = ({
   textColor,
   ...rest
 }) => {
-  const MIN_TEXT_LENGTH = 20;
-  const MAX_TEXT_LENGTH = 70;
   const [openDialog, setOpenDialog] = useState(false);
 
   const handleClick = () => {
@@ -135,6 +140,20 @@ const CustomTreeNode = ({
                 </Tooltip>
               </p>
             </a>
+          ) : isLargeText(nodeDatum.name) ? (
+            <Tooltip title={nodeDatum.name} placement="top">
+              <p
+                style={{
+                  fontSize: "36px",
+                  width: "300px",
+                  whiteSpace: "wrap",
+                  color: textColor,
+                }}
+                xmlns="http://www.w3.org/1999/xhtml"
+              >
+                {nodeDatum.label}
+              </p>
+            </Tooltip>
           ) : (
             <p
               style={{
