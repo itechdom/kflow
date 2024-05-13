@@ -14,10 +14,10 @@ import {
 //My Favorite Theme
 // const {background, baseStyle, textColor} = theme1Light;
 // const { background, baseStyle, textColor } = theme1Dark;
-const {background, baseStyle, textColor} = theme2Light;
+// const {background, baseStyle, textColor} = theme2Light;
 // const {background, baseStyle, textColor} = theme2Dark;
 // const {background, baseStyle, textColor} = theme3Light;
-// const {background, baseStyle, textColor} = theme3Dark;
+const {background, baseStyle, textColor} = theme3Dark;
 
 
 export const convertToMindmap = (currentNode, mindmapByKeys) => {
