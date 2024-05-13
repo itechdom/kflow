@@ -107,21 +107,35 @@ const CustomTreeNode = ({
           nodeStyle={nodeStyle}
           onClick={handleClick}
         />
-        <foreignObject
-          onClick={handleClick}
-          x="-70"
-          y="-70"
-          width="100%"
-          height="100%"
-          ref={pRef}
-        >
-          {isHttpLink(nodeDatum.name) ? (
-            <a
-              href={nodeDatum.name}
-              target="_blank"
-              rel="noopener noreferrer"
-              xmlns="http://www.w3.org/1999/xhtml"
-            >
+
+        <Tooltip title={nodeDatum.name} placement="top">
+          <foreignObject
+            onClick={handleClick}
+            x="-70"
+            y="-70"
+            width="100%"
+            height="100%"
+            ref={pRef}
+          >
+            {isHttpLink(nodeDatum.name) ? (
+              <a
+                href={nodeDatum.name}
+                target="_blank"
+                rel="noopener noreferrer"
+                xmlns="http://www.w3.org/1999/xhtml"
+              >
+                <p
+                  style={{
+                    fontSize: "36px",
+                    width: "300px",
+                    whiteSpace: "wrap",
+                    color: textColor,
+                  }}
+                >
+                  <span>{truncateText(nodeDatum.name, 10)}</span>
+                </p>
+              </a>
+            ) : (
               <p
                 style={{
                   fontSize: "36px",
@@ -129,26 +143,13 @@ const CustomTreeNode = ({
                   whiteSpace: "wrap",
                   color: textColor,
                 }}
+                xmlns="http://www.w3.org/1999/xhtml"
               >
-                <Tooltip title={nodeDatum.name} placement="top">
-                  <span>{truncateText(nodeDatum.name, 10)}</span>
-                </Tooltip>
+                {nodeDatum.label}
               </p>
-            </a>
-          ) : (
-            <p
-              style={{
-                fontSize: "36px",
-                width: "300px",
-                whiteSpace: "wrap",
-                color: textColor,
-              }}
-              xmlns="http://www.w3.org/1999/xhtml"
-            >
-              {nodeDatum.label}
-            </p>
-          )}
-        </foreignObject>
+            )}
+          </foreignObject>
+        </Tooltip>
       </g>
       <Dialog
         style={{ zIndex: 999999999999 }}
