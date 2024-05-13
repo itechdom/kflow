@@ -39,10 +39,7 @@ const SvgCircles = ({
 
   return (
     <>
-      <circle r={r} cx={cx} cy={cy} style={blueNodeStyle} stroke={stroke} strokeWidth={strokeWidth} filter={filter} onClick={onClick} />
-      {/* <circle cx="200" cy="100" style={orangeNodeStyle} /> */}
-      {/* <circle cx="300" cy="100" style={greyNodeStyle} /> */}
-      {/* <circle cx="400" cy="100" style={customNodeStyle} /> */}
+      <circle r={r} cx={cx} cy={cy} style={orangeNodeStyle} stroke={stroke} strokeWidth={strokeWidth} filter={filter} onClick={onClick} />
     </>
   );
 };

@@ -2,15 +2,15 @@ import React, { useEffect, useRef } from "react";
 import SvgCircles from "./SvgCircles";
 
 function truncateText(text, maxLength) {
-    if (text.length > maxLength) {
-        return text.substring(0, maxLength - 3) + "...";
-    }
-    return text;
+  if (text.length > maxLength) {
+    return text.substring(0, maxLength - 3) + "...";
+  }
+  return text;
 }
 
 const CustomTreeNode = ({ nodeDatum, toggleNode, onClick, ...rest }) => {
   const MIN_TEXT_LENGTH = 20;
-  const MAX_TEXT_LENGTH= 95;
+  const MAX_TEXT_LENGTH = 95;
   const handleClick = () => {
     onClick(nodeDatum, rest); // This function is provided by react-d3-tree to handle click events
     toggleNode(); // This function is provided by react-d3-tree to toggle the node
@@ -47,7 +47,7 @@ const CustomTreeNode = ({ nodeDatum, toggleNode, onClick, ...rest }) => {
       setRadius(200);
       setCx(0);
       setCY(80);
-      if(nodeDatum.name.length > MAX_TEXT_LENGTH){
+      if (nodeDatum.name.length > MAX_TEXT_LENGTH) {
         nodeDatum.name = truncateText(nodeDatum.name, MAX_TEXT_LENGTH);
       }
     } else {
@@ -93,13 +93,16 @@ const CustomTreeNode = ({ nodeDatum, toggleNode, onClick, ...rest }) => {
       <foreignObject
         onClick={handleClick}
         x="-70"
-        y="0"
+        y="-70"
         width="200"
         height="200"
         ref={pRef}
       >
         <p
-          style={{ fontSize: "20px", color: "white" }}
+          style={{
+            fontSize: "36px",
+            color: "white"
+          }}
           xmlns="http://www.w3.org/1999/xhtml"
         >
           {nodeDatum.name}
