@@ -12,12 +12,12 @@ import {
 
 
 //My Favorite Theme
-const {background, baseStyle} = theme1Light;
-// const { background, baseStyle } = theme1Dark;
-// const {background, baseStyle} = theme2Light;
-// const {background, baseStyle} = theme2Dark;
-// const {background, baseStyle} = theme3Light;
-// const {background, baseStyle} = theme3Dark;
+// const {background, baseStyle, textColor} = theme1Light;
+// const { background, baseStyle, textColor } = theme1Dark;
+const {background, baseStyle, textColor} = theme2Light;
+// const {background, baseStyle, textColor} = theme2Dark;
+// const {background, baseStyle, textColor} = theme3Light;
+// const {background, baseStyle, textColor} = theme3Dark;
 
 
 export const convertToMindmap = (currentNode, mindmapByKeys) => {
@@ -112,6 +112,7 @@ class Tree extends React.Component {
             renderCustomNodeElement={(rd3tProps) => (
               <CustomTreeNode
                 nodeStyle={baseStyle}
+                textColor={textColor}
                 onClick={this.handleNodeClick}
                 {...rd3tProps}
               />

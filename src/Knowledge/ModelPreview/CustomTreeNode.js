@@ -8,7 +8,7 @@ function truncateText(text, maxLength) {
   return text;
 }
 
-const CustomTreeNode = ({ nodeDatum, toggleNode, onClick, nodeStyle, ...rest }) => {
+const CustomTreeNode = ({ nodeDatum, toggleNode, onClick, nodeStyle, textColor, ...rest }) => {
   const MIN_TEXT_LENGTH = 20;
   const MAX_TEXT_LENGTH = 95;
   const handleClick = () => {
@@ -102,7 +102,7 @@ const CustomTreeNode = ({ nodeDatum, toggleNode, onClick, nodeStyle, ...rest }) 
         <p
           style={{
             fontSize: "36px",
-            color: "white"
+            color: textColor,
           }}
           xmlns="http://www.w3.org/1999/xhtml"
         >
