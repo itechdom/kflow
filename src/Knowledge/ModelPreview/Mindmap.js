@@ -114,7 +114,7 @@ class Tree extends React.Component {
                 textColor={textColor}
                 onClick={this.handleNodeClick}
                 onChatRequest={(nodeDatum) =>
-                  this.props.knowledge_chat(nodeDatum)
+                  this.props.knowledgeChat(this.state.data, nodeDatum)
                 }
                 {...rd3tProps}
               />
