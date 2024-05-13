@@ -8,7 +8,7 @@ function truncateText(text, maxLength) {
   return text;
 }
 
-const CustomTreeNode = ({ nodeDatum, toggleNode, onClick, ...rest }) => {
+const CustomTreeNode = ({ nodeDatum, toggleNode, onClick, nodeStyle, ...rest }) => {
   const MIN_TEXT_LENGTH = 20;
   const MAX_TEXT_LENGTH = 95;
   const handleClick = () => {
@@ -87,6 +87,7 @@ const CustomTreeNode = ({ nodeDatum, toggleNode, onClick, ...rest }) => {
         stroke="black" // Border color of the circle
         strokeWidth="1.5" // Width of the stroke
         filter="url(#dropshadow)"
+        nodeStyle={nodeStyle}
         onClick={handleClick} // Onclick event handler
         style={nodeStyles} // Additional styles if needed
       />

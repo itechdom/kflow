@@ -1,6 +1,24 @@
 import React from "react";
 import { Tree as DTree } from "react-d3-tree";
 import CustomTreeNode from "./CustomTreeNode";
+import {
+  theme1Light,
+  theme1Dark,
+  theme2Dark,
+  theme2Light,
+  theme3Light,
+  theme3Dark,
+} from "./Themes";
+
+
+//My Favorite Theme
+const {background, baseStyle} = theme1Light;
+// const { background, baseStyle } = theme1Dark;
+// const {background, baseStyle} = theme2Light;
+// const {background, baseStyle} = theme2Dark;
+// const {background, baseStyle} = theme3Light;
+// const {background, baseStyle} = theme3Dark;
+
 
 export const convertToMindmap = (currentNode, mindmapByKeys) => {
   currentNode.name = currentNode.title;
@@ -47,11 +65,15 @@ class Tree extends React.Component {
     this.setState({ in: !this.state.in });
   };
 
-  handleNodeClick = (nodeData, {hierarchyPointNode}) => {
+  handleNodeClick = (nodeData, { hierarchyPointNode }) => {
     console.log(nodeData);
-    console.log("Clicked on Node with data: ", hierarchyPointNode.x, hierarchyPointNode.y);
-    const x = -hierarchyPointNode.x  + window.innerWidth / 2;
-    const y = -hierarchyPointNode.y  + window.innerHeight / 8;
+    console.log(
+      "Clicked on Node with data: ",
+      hierarchyPointNode.x,
+      hierarchyPointNode.y
+    );
+    const x = -hierarchyPointNode.x + window.innerWidth / 2;
+    const y = -hierarchyPointNode.y + window.innerHeight / 8;
     const newScale = 0.5; // Set fixed scale or calculate dynamically based on your needs
     this.setState({ translate: { x, y } });
     this.setState({ scale: newScale });
@@ -80,7 +102,7 @@ class Tree extends React.Component {
         class="mindmap-container"
         style={{
           height: "50em",
-          background: "linear-gradient(to top, #e8d1c5 0%, #f4f1ea 100%)",
+          background: background,
         }}
       >
         {this.state.data.length > 0 && (
@@ -88,7 +110,11 @@ class Tree extends React.Component {
             data={this.state.data}
             enableLegacyTransitions
             renderCustomNodeElement={(rd3tProps) => (
-              <CustomTreeNode onClick={this.handleNodeClick} {...rd3tProps} />
+              <CustomTreeNode
+                nodeStyle={baseStyle}
+                onClick={this.handleNodeClick}
+                {...rd3tProps}
+              />
             )}
             nodeSize={{ x: 450, y: 450 }}
             orientation="vertical"
