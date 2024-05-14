@@ -9,7 +9,10 @@ export const convertToMindmap = (currentNode, mindmapByKeys) => {
 
   if (Array.isArray(currentNode.children)) {
     currentNode.children = currentNode.children.map((childId) => {
-      const childNode = mindmapByKeys[childId];
+      let childNode = mindmapByKeys[childId];
+      if(childId._id){
+        childNode = mindmapByKeys[childId._id];
+      }
       if (!childNode) {
         console.error("Missing child node in mindmapByKeys for key:", childId);
         return { name: "Missing Node", children: [] }; // Fallback node structure
