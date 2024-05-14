@@ -1,3 +1,23 @@
+/**
+ * 
+ * @module Forms
+ * @desc This module contains the implementation of a form component with various input fields.
+ * @requires React
+ * @requires visibleWhenFilter
+ * @requires styles
+ * @requires withStyles
+ * @requires withState
+ * @requires compose
+ * @requires theme
+ * @requires moment
+ * @requires Button
+ * @requires Typography
+ * @requires CircularProgress
+ * @requires Inputs
+ * @requires Autocomplete
+ * @requires KeyboardTimePicker
+ * @requires KeyboardDatePicker
+ */
 import React from "react";
 import { visibleWhenFilter } from "./VisibleWhenFilter";
 import { styles } from "./Forms.styles";

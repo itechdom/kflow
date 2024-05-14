@@ -1,3 +1,12 @@
+/**
+ * Renders a component for confirming a password reset.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.classes - The CSS classes for styling the component.
+ * @param {Function} props.onDone - The callback function to be called when the user is done with the password reset.
+ * @param {Object} props.history - The history object for navigation.
+ * @returns {JSX.Element} The JSX element representing the ForgotPasswordConfirm component.
+ */
 import React from "react";
 import { withStyles } from "@material-ui/styles";
 import theme from "theme";

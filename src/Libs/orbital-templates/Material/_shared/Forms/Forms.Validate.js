@@ -1,3 +1,10 @@
+/**
+ * Validates form values based on a model schema or field configurations.
+ * @param {Object} values - The form values to be validated.
+ * @param {Object} form - The form object containing field configurations.
+ * @param {Object} modelSchema - The Yup schema used for validation (optional).
+ * @returns {Object} - An object containing validation errors, if any.
+ */
 import * as yup from 'yup';
 const validate = (values, form, modelSchema) => {
   let errors = {};

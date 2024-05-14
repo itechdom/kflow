@@ -1,9 +1,20 @@
+/**
+ * ResetPassword component for resetting user password.
+ *
+ * @component
+ * @param {Function} changePassword - Function to change the password.
+ * @param {Function} onDone - Function to handle completion of password reset.
+ * @param {Object} classes - CSS classes for styling the component.
+ * @param {Object} location - Location object from react-router-dom.
+ * @param {Object} history - History object from react-router-dom.
+ * @param {Object} match - Match object from react-router-dom.
+ * @returns {JSX.Element} ResetPassword component.
+ */
 import React from "react";
 import { withStyles } from "@material-ui/styles";
 import theme from "theme";
 import { Formik } from "formik";
 import * as Yup from "yup";
-import LockIcon from "@material-ui/icons/LockOutlined";
 import { Route } from "react-router-dom";
 import { styles } from "./ResetPassword.styles";
 import ResetPasswordConfirm from "./ResetPasswordConfirm";

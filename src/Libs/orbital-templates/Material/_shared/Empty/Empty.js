@@ -1,3 +1,9 @@
+/**
+ * Renders an empty component with a placeholder SVG.
+ * @param {Object} props - The component props.
+ * @param {string} props.modelName - The name of the model.
+ * @returns {JSX.Element} The rendered component.
+ */
 import React from "react";
 import { withStyles } from "@material-ui/styles";
 import { styles } from "./Empty.styles";

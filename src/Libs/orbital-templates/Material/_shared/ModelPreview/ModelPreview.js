@@ -1,3 +1,23 @@
+/**
+ * Renders a preview of a model with various fields and actions.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {Object} props.model - The model object to preview.
+ * @param {Function} props.onEdit - The function to handle the edit action.
+ * @param {Object} props.form - The form object containing field configurations.
+ * @param {boolean} props.open - The state indicating whether the delete confirmation modal is open.
+ * @param {Function} props.setOpen - The function to set the state of the delete confirmation modal.
+ * @param {Function} props.deleteModel - The function to delete the model.
+ * @param {Function} props.onDelete - The function to handle the delete action.
+ * @param {Object} props.classes - The CSS classes for styling the component.
+ * @param {React.Component} props.ModelPreviewActions - The component for rendering additional actions.
+ * @param {React.Component} props.ModelPreviewAction - The component for rendering a specific action.
+ * @param {Function} props.onAction - The function to handle a specific action.
+ * @param {Array} props.notifications - The array of notifications to display.
+ * @param {Function} props.removeNotification - The function to remove a notification.
+ * @returns {React.Component} The rendered ModelPreview component.
+ */
 import React from "react";
 import DeleteIcon from "@material-ui/icons/Delete";
 import EditIcon from "@material-ui/icons/Edit";
@@ -21,7 +41,7 @@ import {
   TableCell,
   TableRow,
   IconButton,
-  Typography
+  Typography,
 } from "@material-ui/core";
 
 const enhance = compose(withState("open", "setOpen", false));
@@ -40,7 +60,7 @@ const ModelPreview = enhance(
     ModelPreviewAction,
     onAction,
     notifications,
-    removeNotification
+    removeNotification,
   }) => {
     if (form && model) {
       let previewList = form.fields.map((field, index) => {
@@ -167,7 +187,7 @@ const ModelPreview = enhance(
               <Grid container justify="flex-end">
                 {ModelPreviewAction && (
                   <ModelPreviewAction
-                    onAction={event => onAction(event, model)}
+                    onAction={(event) => onAction(event, model)}
                     model={model}
                   />
                 )}
@@ -232,10 +252,10 @@ const ModelPreview = enhance(
                 {/* <Typography>Gallery</Typography> */}
                 {model.gallery.length > 0 ? (
                   <ImageGallery
-                    items={model.gallery.map(image => {
+                    items={model.gallery.map((image) => {
                       return {
                         original: image,
-                        thumbnail: image
+                        thumbnail: image,
                       };
                     })}
                   />

@@ -1,3 +1,7 @@
+/**
+ * Represents a component for adding a model.
+ * @component
+ */
 import React from "react";
 import { Formik } from "formik";
 import {

@@ -6,16 +6,15 @@ import theme from "theme";
 import AddIcon from "@material-ui/icons/Add";
 import { Fab } from "@material-ui/core";
 
-const styles = theme => {
-  return {
-    fab: {
-      bottom: "0px",
-      right: theme && theme.spacing && theme.spacing(2)
-    }
-  };
-};
-
+/**
+ * FloatingAddButton component.
+ * Renders a floating add button using Material-UI's Fab component.
+ */
 class FloatingAddButton extends React.Component {
+  /**
+   * Renders the FloatingAddButton component.
+   * @returns {JSX.Element} The rendered component.
+   */
   render() {
     const { classes, onClick } = this.props;
     return (
@@ -32,7 +31,14 @@ class FloatingAddButton extends React.Component {
 }
 
 FloatingAddButton.propTypes = {
-  classes: PropTypes.object.isRequired
+  /**
+   * The classes object provided by the withStyles HOC.
+   */
+  classes: PropTypes.object.isRequired,
+  /**
+   * The click event handler for the button.
+   */
+  onClick: PropTypes.func.isRequired
 };
 
-export default withStyles(styles, { defaultTheme: theme })(FloatingAddButton);
+export default FloatingAddButton;

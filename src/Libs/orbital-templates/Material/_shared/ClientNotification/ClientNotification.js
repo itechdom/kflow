@@ -1,3 +1,52 @@
+/**
+ * 
+ * @module ClientNotification
+ * @desc A React component that displays client notifications using Material-UI.
+ * 
+ * @requires React
+ * @requires PropTypes
+ * @requires classNames
+ * @requires CheckCircleIcon
+ * @requires ErrorIcon
+ * @requires InfoIcon
+ * @requires CloseIcon
+ * @requires green
+ * @requires amber
+ * @requires WarningIcon
+ * @requires theme
+ * @requires withStyles
+ * @requires IconButton
+ * @requires Snackbar
+ * @requires SnackbarContent
+ * 
+ * @typedef {Object} variantIcon
+ * @property {React.Component} success - The success icon component.
+ * @property {React.Component} warning - The warning icon component.
+ * @property {React.Component} error - The error icon component.
+ * @property {React.Component} info - The info icon component.
+ * 
+ * @typedef {Object} styles1
+ * @property {Object} success - The styles for success variant.
+ * @property {Object} error - The styles for error variant.
+ * @property {Object} info - The styles for info variant.
+ * @property {Object} warning - The styles for warning variant.
+ * @property {Object} icon - The styles for the icon.
+ * @property {Object} iconVariant - The styles for the icon variant.
+ * @property {Object} message - The styles for the message.
+ * 
+ * @typedef {Object} MySnackbarContentProps
+ * @property {Object} classes - The classes object for styling.
+ * @property {string} className - The class name for the component.
+ * @property {React.ReactNode} message - The message to be displayed.
+ * @property {Function} onClose - The function to be called when the component is closed.
+ * @property {string} variant - The variant of the component.
+ * 
+ * @typedef {Object} styles2
+ * @property {Object} margin - The styles for the margin.
+ * 
+ * @classdesc A customized Snackbar component that displays client notifications.
+ * @extends React.Component
+ */
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";

@@ -1,3 +1,11 @@
+/**
+ * @file ModelList.js
+ * @desc This file contains the implementation of the ModelList component.
+ * The ModelList component is responsible for rendering a list of models,
+ * allowing users to add, edit, delete, and view individual models.
+ * It also provides pagination, search functionality, and various customization options.
+ * The component is built using React and Material-UI.
+ */
 import React from "react";
 //Routing
 import { Route, Switch, HashRouter as Router } from "react-router-dom";

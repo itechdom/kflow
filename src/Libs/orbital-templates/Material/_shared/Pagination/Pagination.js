@@ -1,3 +1,15 @@
+/**
+ * Pagination component for displaying and navigating through a paginated data set.
+ *
+ * @param {Object} props - The component props.
+ * @param {boolean} props.isSm - Indicates whether the screen size is small.
+ * @param {number} props.rowsPerPage - The number of rows per page.
+ * @param {function} props.onChangePage - The callback function to handle page change.
+ * @param {number} props.page - The current page number.
+ * @param {number} props.count - The total number of items.
+ * @param {function} props.onChangeRowsPerPage - The callback function to handle rows per page change.
+ * @returns {JSX.Element} The Pagination component.
+ */
 import React from "react";
 import TablePagination from "@material-ui/core/TablePagination";
 import { Paper, IconButton, Icon } from "@material-ui/core";

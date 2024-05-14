@@ -1,17 +1,19 @@
+/**
+ * Renders the component for displaying a confirmation message after resetting the password.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.classes - The CSS classes injected by the withStyles higher-order component.
+ * @param {Function} props.onDone - The callback function to be called when the password reset is done.
+ * @param {Object} props.history - The history object provided by React Router.
+ * @returns {JSX.Element} The JSX element representing the ResetPasswordConfirmation component.
+ */
 import React from "react";
 import { withStyles } from "@material-ui/styles";
 import theme from "theme";
 import { styles } from "./ResetPassword.styles";
-import { CssBaseline } from "@material-ui/core";
-import LockIcon from "@material-ui/icons/LockOutlined";
 import {
   Typography,
-  Button,
-  Card,
-  CardHeader,
-  CardContent,
-  Grid,
-  Avatar
+  Grid
 } from "@material-ui/core";
 
 export const ResetPasswordConfirmation = ({ classes, onDone, history }) => {
