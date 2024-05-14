@@ -4,9 +4,10 @@ export const handleNodeAdd = (
   mindmapByKeys,
   setMindmapByKeys,
   nodeId,
-  title
+  title,
+  id
 ) => {
-  const _id = v1();
+  const _id = id || v1();
   const parent = mindmapByKeys[nodeId];
   let group = parent && parseInt(parent.level.split(".").join(""));
   let size = 20 / (parent && parent.level.split(".").length);
@@ -14,16 +15,19 @@ export const handleNodeAdd = (
     ...mindmapByKeys,
     [nodeId]: {
       ...mindmapByKeys[nodeId],
-      children: [...mindmapByKeys[nodeId].children, _id],
+      children: mindmapByKeys[nodeId]
+        ? [...mindmapByKeys[nodeId].children, _id]
+        : [],
     },
     [_id]: {
       _id,
       id: _id,
       title,
-      level:
-        mindmapByKeys[nodeId].level +
-        "." +
-        mindmapByKeys[nodeId].children.length,
+      level: mindmapByKeys[nodeId]
+        ? mindmapByKeys[nodeId].level +
+          "." +
+          mindmapByKeys[nodeId].children.length
+        : "0",
       children: [],
       parent: nodeId,
       size,
@@ -36,6 +40,7 @@ export const handleNodeAdd = (
     },
   };
   setMindmapByKeys(newState);
+  return newState;
 };
 
 export const handleNodeEdit = (mindmapByKeys, setEditedNode, nodeId) => {
@@ -160,35 +165,26 @@ export const isVisible = (mindmapByKeys, visibleNodeKeys, nodeId) => {
 };
 
 // Initial function to convert the whole object
-export const convertObjectToMindmap = (obj, rootId, mindmapByKeys, setMindmapByKeys) => {
-  console.log("CONVERSION", obj, rootId, mindmapByKeys, setMindmapByKeys);
-  // Start traversing and adding nodes from the root
+export const convertObjectToMindmap = (
+  obj,
+  rootId,
+  mindmapByKeys,
+  setMindmapByKeys
+) => {
   traverseAndAddNodes(obj, rootId, mindmapByKeys, setMindmapByKeys);
 };
 
 export const traverseAndAddNodes = (
-  obj,
-  parentId,
   mindmapByKeys,
-  setMindmapByKeys
+  setMindmapByKeys,
+  obj,
+  parentId
 ) => {
   for (const key in obj) {
     if (obj.hasOwnProperty(key)) {
-      // Add the current key as a node
       const newNodeId = v1();
-      handleNodeAdd(mindmapByKeys, setMindmapByKeys, parentId, key);
-
-      // Traverse the children of the current node if it has any
-      if (typeof obj[key] === "object" && !Array.isArray(obj[key])) {
-        traverseAndAddNodes(
-          obj[key],
-          newNodeId,
-          mindmapByKeys,
-          setMindmapByKeys
-        );
-      }
+      handleNodeAdd(mindmapByKeys, setMindmapByKeys, parentId, key, newNodeId);
+      traverseAndAddNodes(mindmapByKeys, setMindmapByKeys, obj[key], newNodeId);
     }
   }
 };
-
-
