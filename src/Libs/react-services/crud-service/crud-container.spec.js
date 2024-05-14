@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import { CrudContainerFP } from './crud-container';
 
 describe('CrudContainerFP', () => {
@@ -13,7 +14,7 @@ describe('CrudContainerFP', () => {
   };
 
   it('renders children', () => {
-    const { getByText } = render(<CrudContainerFP {...props} />);
-    // expect(getByText('Test')).toBeInTheDocument();
+    const { view, util } = render(<CrudContainerFP {...props} />);
+    expect(screen.getByText('Test')).toBeInTheDocument();
   });
 });
