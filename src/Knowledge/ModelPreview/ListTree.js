@@ -22,7 +22,7 @@ class ListTree extends React.Component {
       handleNodeToggle: this.props.handleNodeToggle.bind(null, nodeId),
       handleNodeDelete: this.props.handleNodeDelete.bind(null, nodeId),
     };
-    return (
+    return mindmapByKeys[nodeId] && (
       <div key={nodeId}>
         <Node
           _id={nodeId}
@@ -30,10 +30,11 @@ class ListTree extends React.Component {
           rootTitle={title}
           title={mindmapByKeys[nodeId] && mindmapByKeys[nodeId].title}
           level={mindmapByKeys[nodeId] && mindmapByKeys[nodeId].level}
-          visible={mindmapByKeys[nodeId].visible}
+          visible={mindmapByKeys[nodeId] && mindmapByKeys[nodeId].visible}
           parent={parent}
           ref={this.references && this.references[nodeId]}
           note={
+            mindmapByKeys[nodeId] &&
             mindmapByKeys[nodeId].attr &&
             mindmapByKeys[nodeId].attr.note &&
             mindmapByKeys[nodeId].attr.note.text
@@ -45,7 +46,8 @@ class ListTree extends React.Component {
           isEditing={this.props.editedNode === nodeId}
           {...TreeOperations}
         />
-        {mindmapByKeys[nodeId].visible &&
+        {mindmapByKeys[nodeId] &&
+          mindmapByKeys[nodeId].visible &&
           mindmapByKeys[nodeId].children &&
           mindmapByKeys[nodeId].children.length > 0 && (
             <ul style={{ borderLeft: `1px solid lightgrey` }}>

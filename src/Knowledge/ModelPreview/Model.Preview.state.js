@@ -1,5 +1,5 @@
 //move this to kb service
-import {v1} from "uuid";
+import { v1 } from "uuid";
 export const handleNodeAdd = (
   mindmapByKeys,
   setMindmapByKeys,
@@ -10,6 +10,10 @@ export const handleNodeAdd = (
   const parent = mindmapByKeys[nodeId];
   let group = parent && parseInt(parent.level.split(".").join(""));
   let size = 20 / (parent && parent.level.split(".").length);
+  console.log("INFO", {
+    ...mindmapByKeys[nodeId],
+    children: [...mindmapByKeys[nodeId].children, _id],
+  });
   const newState = {
     ...mindmapByKeys,
     [nodeId]: {
@@ -35,6 +39,7 @@ export const handleNodeAdd = (
       },
     },
   };
+  console.log("NEW STATE", newState);
   setMindmapByKeys(newState);
 };
 

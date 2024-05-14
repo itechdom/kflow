@@ -10,36 +10,13 @@ import {
   Tooltip,
 } from "@material-ui/core";
 import { Icon } from "../../Libs/orbital-templates/Material/_shared/Icon/Icon";
-
-const MIN_TEXT_LENGTH = 20;
-const MAX_TEXT_LENGTH = 70;
-
-function truncateText(text, maxLength) {
-  //make copy of text to avoid mutation
-  let mutatedText = text.slice();
-  if (text.length > maxLength) {
-    //create a non mutating version of the below line
-    mutatedText = mutatedText.substring(0, maxLength) + "...";
-  }
-  return mutatedText;
-}
-
-function isLargeText(text) {
-  return text.length > MAX_TEXT_LENGTH;
-}
-
-function isHttpLink(text) {
-  const urlPattern = new RegExp(
-    "^(https?:\\/\\/)?" + // validate protocol
-      "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name and extension
-      "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
-      "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // port and path
-      "(\\?[;&amp;a-z\\d%_.~+=-]*)?" + // query string
-      "(\\#[-a-z\\d_]*)?$",
-    "i"
-  ); // fragment locator
-  return !!urlPattern.test(text);
-}
+import {
+  truncateText,
+  isLargeText,
+  isHttpLink,
+  MIN_TEXT_LENGTH,
+  MAX_TEXT_LENGTH,
+} from "./CustomTreeNode.utils";
 
 const CustomTreeNode = ({
   nodeDatum,
@@ -53,7 +30,11 @@ const CustomTreeNode = ({
   const [openDialog, setOpenDialog] = useState(false);
 
   const handleClick = () => {
-    if (nodeDatum.name.length > MAX_TEXT_LENGTH) {
+    if (
+      nodeDatum &&
+      nodeDatum.name &&
+      nodeDatum.name.length > MAX_TEXT_LENGTH
+    ) {
       handleOpenDialog();
     }
     onClick(nodeDatum, rest);
@@ -76,7 +57,11 @@ const CustomTreeNode = ({
   const pRef = useRef(null);
 
   useEffect(() => {
-    if (nodeDatum.name.length > MIN_TEXT_LENGTH) {
+    if (
+      nodeDatum &&
+      nodeDatum.name &&
+      nodeDatum.name.length > MIN_TEXT_LENGTH
+    ) {
       setRadius(200);
       setCx(40);
       setCY(80);
@@ -90,7 +75,11 @@ const CustomTreeNode = ({
   }, [nodeDatum, pWidth, pHeight, toggleNode]);
 
   useEffect(() => {
-    if (nodeDatum.name.length > MAX_TEXT_LENGTH) {
+    if (
+      nodeDatum &&
+      nodeDatum.name &&
+      nodeDatum.name.length > MAX_TEXT_LENGTH
+    ) {
       nodeDatum.label = truncateText(nodeDatum.name, 40);
     } else {
       nodeDatum.label = truncateText(nodeDatum.name, nodeDatum.name.length);
