@@ -4,6 +4,10 @@ import { styles } from "./User.styles";
 import userSchema from "../../../../Models/user";
 import { withStyles } from '@material-ui/core';
 
+/**
+ * The name of the model.
+ * @type {string}
+ */
 let ModelName = "user";
 
 const User = ({
