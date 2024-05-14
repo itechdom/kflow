@@ -165,6 +165,7 @@ export const isVisible = (mindmapByKeys, visibleNodeKeys, nodeId) => {
 };
 
 // Initial function to convert the whole object
+// Initial function to convert the whole object
 export const convertObjectToMindmap = (
   obj,
   rootId,
@@ -172,21 +173,38 @@ export const convertObjectToMindmap = (
   setMindmapByKeys
 ) => {
   const newMindmapByKeys = { ...mindmapByKeys };
-  bulkTraverseAndAddNodes(newMindmapByKeys, obj, rootId);
+  const nodesToAdd = bulkTraverseAndAddNodes(newMindmapByKeys, obj, rootId);
+  console.log("NODES TO ADD", nodesToAdd);
+  nodesToAdd.forEach((node) => {
+    handleNodeAdd(
+      newMindmapByKeys,
+      setMindmapByKeys,
+      node.parent,
+      node.title,
+      node.id
+    );
+  });
   setMindmapByKeys(newMindmapByKeys);
 };
 
 // Bulk traversal and addition of nodes
 export const bulkTraverseAndAddNodes = (mindmapByKeys, obj, parentId) => {
-  console.log("OBJ", obj);
-  for (const key in obj) {
-    if (obj.hasOwnProperty(key)) {
-      const newNodeId = v1();
-      console.log("KEY", key);
-      bulkHandleNodeAdd(mindmapByKeys, parentId, key, newNodeId);
-      bulkTraverseAndAddNodes(mindmapByKeys, obj[key], newNodeId);
-    }
+  let nodesToAdd = [];
+
+  //check if obj is of type Object
+  if (typeof obj !== "object") {
+    return nodesToAdd;
   }
+  Object.keys(obj).forEach((key) => {
+    const newNodeId = v1();
+    const node = bulkHandleNodeAdd(mindmapByKeys, parentId, key, newNodeId);
+    nodesToAdd.push(node);
+    nodesToAdd = nodesToAdd.concat(
+      bulkTraverseAndAddNodes(mindmapByKeys, obj[key], newNodeId)
+    );
+  });
+
+  return nodesToAdd;
 };
 
 // Handle node addition without setting state immediately
@@ -195,16 +213,12 @@ export const bulkHandleNodeAdd = (mindmapByKeys, nodeId, title, id) => {
   const parent = mindmapByKeys[nodeId];
   let group = parent && parseInt(parent.level.split(".").join(""));
   let size = 20 / (parent && parent.level.split(".").length);
-  mindmapByKeys[nodeId] = {
-    ...mindmapByKeys[nodeId],
-    children: mindmapByKeys[nodeId]
-      ? [...mindmapByKeys[nodeId].children, _id]
-      : [],
-  };
-  mindmapByKeys[_id] = {
+
+  const node = {
     _id,
     id: _id,
     title,
+    name: title,
     level: mindmapByKeys[nodeId]
       ? mindmapByKeys[nodeId].level +
         "." +
@@ -220,4 +234,6 @@ export const bulkHandleNodeAdd = (mindmapByKeys, nodeId, title, id) => {
       title: title,
     },
   };
+
+  return node;
 };
