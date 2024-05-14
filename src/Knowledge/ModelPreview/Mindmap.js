@@ -63,7 +63,6 @@ function moveToRoot(nodeId, nodes) {
     },
     {}
   );
-  console.log("FINAL PATH", path);
   return path;
 }
 
@@ -146,11 +145,8 @@ class Tree extends React.Component {
                 textColor={textColor}
                 onClick={this.handleNodeClick}
                 onChatRequest={(nodeDatum) => {
-                  console.log(
-                    moveToRoot(nodeDatum.id, this.props.mindmapByKeys),
-                    "PATH"
-                  );
-                  this.props.knowledgeChat(this.props.knowledge, nodeDatum);
+                  const path =  moveToRoot(nodeDatum.id, this.props.mindmapByKeys)
+                  this.props.knowledgeChat(this.props.knowledge, path);
                 }}
                 {...rd3tProps}
               />

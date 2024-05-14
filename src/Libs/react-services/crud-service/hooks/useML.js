@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useSelector, useDispatch } from 'react-redux';
-import { createModel } from '../features/crudDomainSlice';
+import { useSelector, useDispatch } from "react-redux";
+import { createModel } from "../features/crudDomainSlice";
 //create typescript type for the React hook useGetModel
 // type UseGetModel = (
 //   offlineStorage: OfflineStorage,
@@ -29,28 +29,33 @@ export const useML = (offlineStorage, SERVER, query, modelName) => {
    * @param {Object} model - The model object to be created.
    * @returns {Promise} - A promise that resolves when the model is created.
    */
-  const useMLFn = (model, currentNode) => offlineStorage
-    .getItem("jwtToken")
-    .then((token) => {
-      console.log(currentNode, "CURRENT NODE");
-      console.log(model, "MODEL");
-      return axios
-        .post(`${SERVER.host}:${SERVER.port}/${modelName}/chat`, {
-          model,
-          token,
-        })
-        .then((res) => {
-          dispatch(createModel({ data: model, modelName }));
-          setIsLoading(false);
-        })
-        .catch((err) => {
-          setError(modelName, err);
-          setIsLoading(false);
-        });
-    })
-    .catch((err) => {
-      return setError(modelName, err);
-    });
+  const useMLFn = (model, path) =>
+    offlineStorage
+      .getItem("jwtToken")
+      .then((token) => {
+        return axios
+          .post(`${SERVER.host}:${SERVER.port}/${modelName}/chat`, {
+            prompt: `complete this object with four levels of knowledge ${JSON.stringify(
+              path
+            )}`,
+            token,
+          })
+          .then((res) => {
+            dispatch(createModel({ data: model, modelName }));
+            //check nulls
+            if (res.data && res.data.choices[0] && res.data.choices[0].message.content) {
+              alert(res.data.choices[0].message.content);
+            }
+            setIsLoading(false);
+          })
+          .catch((err) => {
+            setError(modelName, err);
+            setIsLoading(false);
+          });
+      })
+      .catch((err) => {
+        return setError(modelName, err);
+      });
 
   return [useMLFn, error, isLoading];
 };
