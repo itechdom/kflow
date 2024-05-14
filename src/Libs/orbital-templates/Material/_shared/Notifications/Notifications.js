@@ -1,3 +1,20 @@
+/**
+ * Renders a card component for managing notifications.
+ *
+ * @param {Object} props - The component props.
+ * @param {Function} props.onChange - The callback function for handling change events.
+ * @param {Function} props.onSubmit - The callback function for handling form submission.
+ * @param {Function} props.onProviderAuth - The callback function for handling provider authentication.
+ * @param {Function} props.onSuccess - The callback function for handling successful form submission.
+ * @param {Function} props.onLogin - The callback function for handling login events.
+ * @param {Function} props.onForgotPassword - The callback function for handling forgot password events.
+ * @param {Object} props.classes - The CSS classes for styling the component.
+ * @param {Object} props.location - The location object from React Router.
+ * @param {Object} props.history - The history object from React Router.
+ * @param {Object} props.match - The match object from React Router.
+ * @param {string} props.logo - The URL of the logo image.
+ * @returns {JSX.Element} The rendered card component.
+ */
 import React from "react";
 import {
   Card,
@@ -101,7 +118,6 @@ export const Notifications = ({
                     <Button
                       color="secondary"
                       variant="contained"
-                      color="secondary"
                       onClick={handleSubmit}
                     >
                       Next

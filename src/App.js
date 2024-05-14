@@ -10,6 +10,11 @@ import "./global.css";
 import KnowledgeList from "./Pages/KnowledgeList";
 import KnowledgeDetails from "./Pages/KnowledgeDetails";
 
+/**
+ * Main component for the application.
+ * @class App
+ * @extends React.Component
+ */
 class App extends React.Component {
   render() {
     const { classes } = this.props;

@@ -9,6 +9,14 @@ import { useFetchWikipediaPageByTopic } from "./useFetchWikipediaPageByTopic";
 //   props: any,
 //   query: string
 // ) => any;
+/**
+ * Custom hook that injects props related to fetching Wikipedia page by topic.
+ *
+ * @param {Object} offlineStorage - The offline storage object.
+ * @param {string} SERVER - The server URL.
+ * @param {string} query - The query string.
+ * @returns {Object} - The injected props object.
+ */
 export const useInjectProps = (
     offlineStorage,
     SERVER,

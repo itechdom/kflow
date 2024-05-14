@@ -12,6 +12,18 @@ import { useInjectProps } from "./hooks/useInjectedProps";
 //   query: string;
 //   render: any;
 // };
+/**
+ * A container component for CRUD operations.
+ *
+ * @param {Object} props - The component props.
+ * @param {string} props.modelName - The name of the model.
+ * @param {React.ReactNode} props.children - The child components.
+ * @param {Object} props.offlineStorage - The offline storage object.
+ * @param {string} props.SERVER - The server URL.
+ * @param {Object} props.query - The query object.
+ * @param {Function} props.render - The render function.
+ * @returns {React.ReactNode} The rendered component.
+ */
 export const CrudContainerFP = (props) => {
   const {
     modelName,

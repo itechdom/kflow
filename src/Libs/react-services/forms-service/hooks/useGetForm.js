@@ -9,6 +9,15 @@ import { setModel } from '../features/formDomainSlice';
 //   query: string,
 //   modelName: string
 // ) => [any, any, any];
+/**
+ * Custom hook for fetching form data from the server.
+ *
+ * @param {Object} offlineStorage - The offline storage object.
+ * @param {Object} SERVER - The server configuration object.
+ * @param {string} query - The query string for filtering the form data.
+ * @param {string} modelName - The name of the model associated with the form.
+ * @returns {Array} - An array containing the form model, error, and loading state.
+ */
 export const useGetForm = (offlineStorage, SERVER, query, modelName) => {
     const dispatch = useDispatch();
     const model = useSelector((state) => state.formDomainStore.model[modelName]);

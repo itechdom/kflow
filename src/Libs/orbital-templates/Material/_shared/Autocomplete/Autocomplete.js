@@ -6,10 +6,15 @@ import match from "autosuggest-highlight/match";
 import parse from "autosuggest-highlight/parse";
 import { styles } from "./Autocomplete.styles";
 import { withStyles } from "@material-ui/styles";
-// import { throttle } from "lodash";
 import { MenuItem, Paper } from "@material-ui/core";
 import * as Inputs from "../Forms/Inputs";
 
+/**
+ * Renders the input component for the Autosuggest component.
+ *
+ * @param {Object} inputProps - The input props.
+ * @returns {JSX.Element} The rendered input component.
+ */
 function renderInputComponent(inputProps) {
   const {
     classes,
@@ -35,6 +40,13 @@ function renderInputComponent(inputProps) {
   );
 }
 
+/**
+ * Renders a suggestion item in the Autosuggest component.
+ *
+ * @param {Object} suggestion - The suggestion object.
+ * @param {Object} param1 - The parameters object.
+ * @returns {JSX.Element} The rendered suggestion item.
+ */
 function renderSuggestion(suggestion, { query, isHighlighted }) {
   const matches = match(suggestion.name || suggestion.title, query);
   const parts = parse(suggestion.name || suggestion.title, matches);
@@ -57,18 +69,42 @@ function renderSuggestion(suggestion, { query, isHighlighted }) {
   );
 }
 
+/**
+ * Gets the suggestion value for the Autosuggest component.
+ *
+ * @param {Object} suggestion - The suggestion object.
+ * @returns {string} The suggestion value.
+ */
 function getSuggestionValue(suggestion) {
   return suggestion.name || suggestion.title;
 }
 
+/**
+ * Renders the section title in the Autosuggest component.
+ *
+ * @param {Object} section - The section object.
+ * @returns {JSX.Element} The rendered section title.
+ */
 function renderSectionTitle(section) {
   return <strong>{section.modelName}</strong>;
 }
 
+/**
+ * Gets the suggestions for a section in the Autosuggest component.
+ *
+ * @param {Object} section - The section object.
+ * @returns {Array} The suggestions for the section.
+ */
 function getSectionSuggestions(section) {
   return section.res;
 }
 
+/**
+ * Autocomplete component for providing suggestions based on user input.
+ *
+ * @class Autocomplete
+ * @extends React.Component
+ */
 class Autocomplete extends React.Component {
   state = {
     single: "",
@@ -76,6 +112,11 @@ class Autocomplete extends React.Component {
     suggestions: [],
   };
 
+  /**
+   * Handles the fetch of suggestions based on the user input.
+   *
+   * @param {Object} param0 - The fetch request parameters.
+   */
   handleSuggestionsFetchRequested = ({ value }) => {
     const { loadSuggestions, isMultiple } = this.props;
     const updateSuggestions = (newState, prevState) =>
@@ -85,12 +126,21 @@ class Autocomplete extends React.Component {
     });
   };
 
+  /**
+   * Handles the clear of suggestions.
+   */
   handleSuggestionsClearRequested = () => {
     this.setState({
       suggestions: [],
     });
   };
 
+  /**
+   * Handles the change of the input value.
+   *
+   * @param {string} name - The name of the input field.
+   * @returns {Function} The event handler function.
+   */
   handleChange = (name) => (event, { newValue }) => {
     this.setState({
       [name]: newValue,
@@ -106,13 +156,6 @@ class Autocomplete extends React.Component {
       inputClassName,
       throttleSearch,
     } = this.props;
-
-    // if (throttleSearch) {
-    //   this.handleSuggestionsFetchRequested = throttle(
-    //     this.handleSuggestionsFetchRequested.bind(this),
-    //     500
-    //   );
-    // }
 
     const autosuggestProps = {
       renderInputComponent,

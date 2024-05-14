@@ -1,3 +1,21 @@
+/**
+ * Register component for user registration.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {Function} props.onChange - The function to handle input change.
+ * @param {Function} props.onSubmit - The function to handle form submission.
+ * @param {Function} props.onProviderAuth - The function to handle provider authentication.
+ * @param {Function} props.onSuccess - The function to handle successful registration.
+ * @param {Function} props.onLogin - The function to handle login.
+ * @param {Function} props.onForgotPassword - The function to handle forgot password.
+ * @param {Object} props.classes - The CSS classes for styling the component.
+ * @param {Object} props.location - The location object from React Router.
+ * @param {Object} props.history - The history object from React Router.
+ * @param {Object} props.match - The match object from React Router.
+ * @param {string} props.logo - The URL of the logo image.
+ * @returns {JSX.Element} The Register component.
+ */
 import React from "react";
 import {
   Card,
@@ -166,7 +184,6 @@ export const Register = ({
                   <Button
                     color="secondary"
                     variant="outlined"
-                    color="secondary"
                     onClick={onLogin}
                   >
                     <Typography

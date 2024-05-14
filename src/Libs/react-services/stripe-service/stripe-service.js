@@ -10,6 +10,10 @@ export class stripeDomainStore {
   rootStore;
   SERVER;
   offlineStorage;
+  /**
+   * Represents the notification domain store.
+   * @type {any}
+   */
   notificationDomainStore;
   constructor(rootStore, offlineStorage, SERVER, notificationDomainStore) {
     this.rootStore = rootStore;

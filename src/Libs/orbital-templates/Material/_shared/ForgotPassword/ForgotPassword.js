@@ -1,3 +1,12 @@
+/**
+ * Represents the ForgotPassword component.
+ * @param {Object} props - The component props.
+ * @param {Function} props.forgotPassword - The function to handle the forgot password action.
+ * @param {Object} props.history - The history object from react-router-dom.
+ * @param {Object} props.classes - The CSS classes object from @material-ui/styles.
+ * @param {Object} props.match - The match object from react-router-dom.
+ * @returns {JSX.Element} The JSX element representing the ForgotPassword component.
+ */
 import React from "react";
 import { withStyles } from "@material-ui/styles";
 import { Formik } from "formik";

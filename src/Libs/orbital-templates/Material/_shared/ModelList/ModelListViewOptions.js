@@ -1,3 +1,14 @@
+import React from "react";
+import { Grid, Paper, Button } from '@material-ui/core';
+/**
+ * Renders the view options for the model list view.
+ *
+ * @param {Object} props - The component props.
+ * @param {number} props.viewOption - The currently selected view option.
+ * @param {Function} props.setViewOption - The function to set the view option.
+ * @param {Object} props.classes - The CSS classes for styling the component.
+ * @returns {JSX.Element} The rendered view options.
+ */
 const ModelListViewOptions = ({ viewOption, setViewOption, classes }) => {
   return (
     <Grid

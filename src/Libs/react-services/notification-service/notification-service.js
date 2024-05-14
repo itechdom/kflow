@@ -4,6 +4,10 @@ import React from "react";
 import io from "socket.io-client";
 
 //export store
+/**
+ * Represents a notification domain store.
+ * @class
+ */
 export class notificationDomainStore {
   modelName;
   mapStore = observable.map();

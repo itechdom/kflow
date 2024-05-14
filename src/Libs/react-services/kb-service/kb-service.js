@@ -10,6 +10,14 @@ export class kbDomainStore {
   SERVER;
   offlineStorage;
   notificationDomainStore;
+  /**
+   * Represents the KBService class.
+   * @class
+   * @param {RootStore} rootStore - The root store object.
+   * @param {OfflineStorage} offlineStorage - The offline storage object.
+   * @param {string} SERVER - The server URL.
+   * @param {NotificationDomainStore} notificationDomainStore - The notification domain store object.
+   */
   constructor(rootStore, offlineStorage, SERVER, notificationDomainStore) {
     this.rootStore = rootStore;
     this.notificationDomainStore = notificationDomainStore;

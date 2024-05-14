@@ -4,12 +4,46 @@ import React from "react";
 import axios from "axios";
 
 //export store
+/**
+ * Represents a forms domain store.
+ */
 export class formsDomainStore {
+  /**
+   * The name of the model.
+   * @type {string}
+   */
   modelName;
+
+  /**
+   * A map to store form data.
+   * @type {observable.map}
+   */
   mapStore = observable.map();
+
+  /**
+   * The root store.
+   * @type {object}
+   */
   rootStore;
+
+  /**
+   * The server configuration.
+   * @type {object}
+   */
   SERVER;
+
+  /**
+   * The offline storage.
+   * @type {object}
+   */
   offlineStorage;
+
+  /**
+   * Constructs a new formsDomainStore object.
+   * @param {object} rootStore - The root store.
+   * @param {object} offlineStorage - The offline storage.
+   * @param {object} SERVER - The server configuration.
+   */
   constructor(rootStore, offlineStorage, SERVER) {
     this.rootStore = rootStore;
     if (offlineStorage) {
@@ -17,9 +51,16 @@ export class formsDomainStore {
     }
     this.SERVER = SERVER;
   }
+
+  /**
+   * Gets the model data.
+   * @param {string} modelName - The name of the model.
+   * @param {boolean} refresh - Whether to refresh the data.
+   * @returns {Promise} A promise that resolves with the model data.
+   */
   //@action
   getModel(modelName, refresh) {
-    //cached data, you don't have to hit up he end point
+    //cached data, you don't have to hit up the end point
     if (this.mapStore.get(modelName) && !refresh) {
       return;
     }
@@ -38,6 +79,11 @@ export class formsDomainStore {
         });
     });
   }
+
+  /**
+   * Sets the error.
+   * @param {Error} err - The error object.
+   */
   //@action
   setError(err) {
     console.error(err);

@@ -1,3 +1,22 @@
+/**
+ * Login component for user authentication.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {Function} props.onChange - The function to handle input change.
+ * @param {Function} props.onSubmit - The function to handle form submission.
+ * @param {Function} props.onProviderAuth - The function to handle authentication with external providers.
+ * @param {Function} props.onRegister - The function to handle user registration.
+ * @param {Function} props.onForgotPassword - The function to handle forgot password functionality.
+ * @param {Object} props.classes - The CSS classes for styling the component.
+ * @param {Object} props.location - The location object from React Router.
+ * @param {Object} props.history - The history object from React Router.
+ * @param {Object} props.match - The match object from React Router.
+ * @param {Function} props.onSuccess - The function to handle successful login.
+ * @param {string} props.logo - The URL of the logo image.
+ * @param {Any} props.rest - Additional props to be passed to the component.
+ * @returns {JSX.Element} The rendered Login component.
+ */
 import React from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";

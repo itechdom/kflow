@@ -14,6 +14,16 @@ const testHtml = (title) => {
 
 const store = {};
 
+/**
+ * Wikipedia service component.
+ * @param {Object} props - The component props.
+ * @param {Object} props.notificationDomainStore - The notification domain store.
+ * @param {Object} props.offlineStorage - The offline storage.
+ * @param {Object} props.SERVER - The server configuration.
+ * @param {Object} props.transform - The transformation configuration.
+ * @param {Object} rest - The remaining props.
+ * @returns {JSX.Element} The rendered WikipediaHOC component.
+ */
 export const Wikipedia = ({
   children,
   notificationDomainStore,
@@ -23,8 +33,19 @@ export const Wikipedia = ({
   ...rest
 }) => {
   const modelName = "wikipedia";
+
+  /**
+   * Returns the actions for the Wikipedia service.
+   * @param {Object} props - The component props.
+   * @returns {Object} The actions object.
+   */
   const myActions = (props) => {
     return {
+      /**
+       * Fetches a Wikipedia page by topic.
+       * @param {string} topic - The topic to search for.
+       * @returns {Promise} A promise that resolves with the fetched page data.
+       */
       fetchPageByTopic: (topic) => {
         if (store[topic]) {
           return props.self.setSuccess(store[topic]);
@@ -59,6 +80,12 @@ export const Wikipedia = ({
             });
         });
       },
+
+      /**
+       * Fetches images related to a Wikipedia topic.
+       * @param {string} topic - The topic to search for.
+       * @returns {Promise} A promise that resolves with the fetched images.
+       */
       fetchImagesByTopic: (topic) => {
         return offlineStorage.getItem("jwtToken").then((token) => {
           return axios({
@@ -90,26 +117,31 @@ export const Wikipedia = ({
       },
     };
   };
+
   const getWikipediaDomainStore = generateDomainStore({
     modelName,
     myActionGenerator: myActions,
   });
+
   const domainStore = getWikipediaDomainStore({
     notificationDomainStore,
     offlineStorage,
     SERVER,
     transform,
   });
+
   const WikipediaServiceInjector = getServiceInjector({
     modelName,
     domainStore,
     myActions: myActions(),
   });
+
   const WikipediaHOC = getServiceHOC({
     modelName,
     domainStore,
     serviceInjector: WikipediaServiceInjector,
     children,
   });
+
   return <WikipediaHOC {...rest} />;
 };

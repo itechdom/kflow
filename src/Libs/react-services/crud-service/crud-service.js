@@ -4,13 +4,53 @@ import React from "react";
 import axios from "axios";
 
 //export store
+/**
+ * Represents a CRUD domain store.
+ */
 export class crudDomainStore {
+  /**
+   * The name of the model.
+   * @type {string}
+   */
   modelName;
+
+  /**
+   * A map to store the data.
+   * @type {observable.map}
+   */
   mapStore = observable.map();
+
+  /**
+   * The root store.
+   * @type {any}
+   */
   rootStore;
+
+  /**
+   * The server configuration.
+   * @type {any}
+   */
   SERVER;
+
+  /**
+   * The offline storage.
+   * @type {any}
+   */
   offlineStorage;
+
+  /**
+   * The notification domain store.
+   * @type {any}
+   */
   notificationDomainStore;
+
+  /**
+   * Constructs a new CRUD domain store.
+   * @param {any} rootStore - The root store.
+   * @param {any} offlineStorage - The offline storage.
+   * @param {any} SERVER - The server configuration.
+   * @param {any} notificationDomainStore - The notification domain store.
+   */
   constructor(rootStore, offlineStorage, SERVER, notificationDomainStore) {
     this.rootStore = rootStore;
     this.notificationDomainStore = notificationDomainStore;
@@ -19,6 +59,12 @@ export class crudDomainStore {
     }
     this.SERVER = SERVER;
   }
+
+  /**
+   * Forces an update for the specified model.
+   * @param {string} modelName - The name of the model.
+   * @returns {Function} - The action function.
+   */
   forceUpdate(modelName) {
     return action(() => {
       let current = this.mapStore.get(modelName);
@@ -26,6 +72,15 @@ export class crudDomainStore {
       this.mapStore.set(modelName, current);
     });
   }
+
+  /**
+   * Gets the model data.
+   * @param {any} query - The query parameters.
+   * @param {string} modelName - The name of the model.
+   * @param {boolean} refresh - Indicates whether to refresh the data.
+   * @param {any} transform - The transformation function.
+   * @returns {Promise} - A promise that resolves with the model data.
+   */
   getModel = action((query, modelName, refresh, transform) => {
     //cached data, you don't have to hit up he end point
     if (this.mapStore.get(modelName) && !refresh) {
@@ -54,6 +109,13 @@ export class crudDomainStore {
         return this.setError(modelName, err);
       })
   });
+
+  /**
+   * Creates a new model.
+   * @param {string} modelName - The name of the model.
+   * @param {any} model - The model data.
+   * @returns {Function} - The action function.
+   */
   createModel(modelName, model) {
     return action(() => this.offlineStorage.getItem("jwtToken").then((token) => {
       return axios
@@ -73,6 +135,14 @@ export class crudDomainStore {
         });
     }));
   }
+
+  /**
+   * Updates an existing model.
+   * @param {string} modelName - The name of the model.
+   * @param {any} model - The model data.
+   * @param {any} updateValues - The updated values.
+   * @returns {Function} - The action function.
+   */
   updateModel(modelName, model, updateValues) {
     let extractedModel = toJS(model);
     console.log("here");
@@ -99,6 +169,13 @@ export class crudDomainStore {
         });
     }));
   }
+
+  /**
+   * Deletes a model.
+   * @param {string} modelName - The name of the model.
+   * @param {any} model - The model data.
+   * @returns {Function} - The action function.
+   */
   deleteModel(modelName, model) {
     model.deleted = true;
     this.forceUpdate(modelName);
@@ -119,6 +196,13 @@ export class crudDomainStore {
         });
     }));
   }
+
+  /**
+   * Searches for a model.
+   * @param {string} modelName - The name of the model.
+   * @param {any} query - The search query.
+   * @returns {Function} - The action function.
+   */
   searchModel(modelName, query) {
     return action(() => this.offlineStorage.getItem("jwtToken").then((token) => {
       return axios
@@ -134,6 +218,13 @@ export class crudDomainStore {
         });
     }));
   }
+
+  /**
+   * Sets an error for the specified model.
+   * @param {string} modelName - The name of the model.
+   * @param {any} err - The error object.
+   * @returns {Function} - The action function.
+   */
   setError(modelName, err) {
     console.log("ERROR", err);
     if (this.notificationDomainStore) {
@@ -143,6 +234,13 @@ export class crudDomainStore {
       }));
     }
   }
+
+  /**
+   * Sets a success message for the specified model.
+   * @param {string} modelName - The name of the model.
+   * @param {string} successMessage - The success message.
+   * @returns {Function} - The action function.
+   */
   setSuccess(modelName, successMessage) {
     if (this.notificationDomainStore) {
       return action(() => this.notificationDomainStore.saveNotification(modelName, {
@@ -151,6 +249,11 @@ export class crudDomainStore {
       }));
     }
   }
+
+  /**
+   * Gets the application settings.
+   * @returns {Function} - The action function.
+   */
   getAppSettings() {
     return action(() => this.offlineStorage.getItem("jwtToken").then((token) => {
       return axios

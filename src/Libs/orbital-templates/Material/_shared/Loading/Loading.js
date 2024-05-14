@@ -1,3 +1,12 @@
+/**
+ * Renders a loading component with an optional logo, title, and error message.
+ *
+ * @param {Object} props - The component props.
+ * @param {string} props.logo - The URL of the logo image.
+ * @param {string} props.title - The title to be displayed.
+ * @param {Object} props.err - The error object containing the error message and stack trace.
+ * @returns {JSX.Element} The rendered loading component.
+ */
 import React from "react";
 import theme from "theme";
 import { withStyles } from "@material-ui/styles";

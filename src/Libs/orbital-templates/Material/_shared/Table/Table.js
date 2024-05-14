@@ -1,3 +1,8 @@
+/**
+ * @file Table.js
+ * @desc A reusable table component with sorting, pagination, and selection functionality.
+ */
+
 import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
@@ -23,6 +28,13 @@ import {
   Tooltip
 } from "Templates";
 
+/**
+ * Sorts the array in descending order based on the specified property.
+ * @param {Object} a - The first object to compare.
+ * @param {Object} b - The second object to compare.
+ * @param {string} orderBy - The property to sort by.
+ * @returns {number} - The comparison result.
+ */
 function desc(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
     return -1;
@@ -33,6 +45,12 @@ function desc(a, b, orderBy) {
   return 0;
 }
 
+/**
+ * Sorts the array in a stable way based on the specified comparison function.
+ * @param {Array} array - The array to sort.
+ * @param {Function} cmp - The comparison function.
+ * @returns {Array} - The sorted array.
+ */
 function stableSort(array, cmp) {
   const stabilizedThis = array.map((el, index) => [el, index]);
   stabilizedThis.sort((a, b) => {
@@ -43,13 +61,27 @@ function stableSort(array, cmp) {
   return stabilizedThis.map(el => el[0]);
 }
 
+/**
+ * Returns the sorting function based on the order and orderBy parameters.
+ * @param {string} order - The sorting order ("asc" or "desc").
+ * @param {string} orderBy - The property to sort by.
+ * @returns {Function} - The sorting function.
+ */
 function getSorting(order, orderBy) {
   return order === "desc"
     ? (a, b) => desc(a, b, orderBy)
     : (a, b) => -desc(a, b, orderBy);
 }
 
+/**
+ * The table head component with sorting functionality.
+ */
 class EnhancedTableHead extends React.Component {
+  /**
+   * Creates a sort handler function for the specified property.
+   * @param {string} property - The property to sort by.
+   * @returns {Function} - The sort handler function.
+   */
   createSortHandler = property => event => {
     this.props.onRequestSort(event, property);
   };
@@ -115,6 +147,14 @@ EnhancedTableHead.propTypes = {
   rowCount: PropTypes.number.isRequired
 };
 
+/**
+ * The toolbar component for the table.
+ * @param {Object} props - The component props.
+ * @param {number} props.numSelected - The number of selected rows.
+ * @param {Object} props.classes - The CSS classes.
+ * @param {string} props.title - The title of the table.
+ * @returns {JSX.Element} - The JSX element representing the toolbar.
+ */
 let EnhancedTableToolbar = props => {
   const { numSelected, classes, title } = props;
 
@@ -162,6 +202,9 @@ EnhancedTableToolbar.propTypes = {
 
 EnhancedTableToolbar = withStyles(toolbarStyles)(EnhancedTableToolbar);
 
+/**
+ * The enhanced table component with sorting, pagination, and selection functionality.
+ */
 class EnhancedTable extends React.Component {
   state = {
     order: "asc",
@@ -171,6 +214,11 @@ class EnhancedTable extends React.Component {
     rowsPerPage: 5
   };
 
+  /**
+   * Handles the request to sort the table.
+   * @param {Object} event - The event object.
+   * @param {string} property - The property to sort by.
+   */
   handleRequestSort = (event, property) => {
     const orderBy = property;
     let order = "desc";
@@ -182,14 +230,11 @@ class EnhancedTable extends React.Component {
     this.setState({ order, orderBy });
   };
 
-  handleSelectAllClick = event => {
-    if (event.target.checked) {
-      this.setState(() => ({ selected: this.props.rows.map(n => n._id) }));
-      return;
-    }
-    this.setState({ selected: [] });
-  };
-
+  /**
+   * Handles the click event on a row.
+   * @param {Object} event - The event object.
+   * @param {string} id - The ID of the clicked row.
+   */
   handleClick = (event, id) => {
     const { selected } = this.state;
     const selectedIndex = selected.indexOf(id);
@@ -210,6 +255,11 @@ class EnhancedTable extends React.Component {
     this.setState({ selected: newSelected });
   };
 
+  /**
+   * Checks if a row is selected.
+   * @param {string} id - The ID of the row.
+   * @returns {boolean} - True if the row is selected, false otherwise.
+   */
   isSelected = id => this.state.selected.indexOf(id) !== -1;
 
   render() {

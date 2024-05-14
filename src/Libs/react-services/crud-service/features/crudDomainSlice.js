@@ -1,5 +1,19 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+/**
+ * Creates a slice for CRUD operations on a domain model.
+ *
+ * @typedef {Object} CrudDomainSlice
+ * @property {string} name - The name of the slice.
+ * @property {Object} initialState - The initial state of the slice.
+ * @property {Object} initialState.model - The initial model state.
+ * @property {Object} reducers - The reducers for the slice.
+ * @property {Function} reducers.setModel - Reducer function to set the model data.
+ * @property {Function} reducers.createModel - Reducer function to create a new model.
+ * @property {Function} reducers.updateModel - Reducer function to update an existing model.
+ * @property {Function} reducers.deleteModel - Reducer function to delete a model.
+ * @property {Function} reducers.searchModel - Reducer function to search for models.
+ */
 export const crudDomainSlice = createSlice({
     name: 'crud',
     initialState: {

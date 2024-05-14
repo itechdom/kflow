@@ -1,3 +1,6 @@
+/**
+ * A wrapper component for login pages.
+ */
 import React, { Children } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
@@ -17,8 +20,12 @@ import {
 } from "@material-ui/core";
 
 class LoginWrapper extends React.Component {
+  /**
+   * Render the LoginWrapper component.
+   * @returns {JSX.Element} The rendered component.
+   */
   render() {
-    const { classes, children, backgroundImage} = this.props;
+    const { classes, children, backgroundImage } = this.props;
     return (
       <React.Fragment>
         <main

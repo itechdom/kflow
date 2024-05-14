@@ -1,3 +1,14 @@
+/**
+ * Renders the Email Confirmation component.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {Object} props.classes - The CSS classes for styling the component.
+ * @param {Object} props.location - The location object containing the search query parameters.
+ * @param {Function} props.onDone - The callback function to be called when the user clicks on the "Back to App" button.
+ * @param {Function} props.confirmEmail - The function to confirm the email.
+ * @returns {JSX.Element} The rendered Email Confirmation component.
+ */
 import React from "react";
 import { withStyles } from "@material-ui/styles";
 import theme from "theme";

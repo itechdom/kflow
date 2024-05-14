@@ -12,6 +12,11 @@ import { setModel } from '../features/crudDomainSlice';
 export const useGetModel = (offlineStorage, SERVER, query, modelName) => {
     const dispatch = useDispatch();
     const model = useSelector((state) => state.crudDomainStore.model[modelName]);
+    /**
+     * Custom hook for getting a model.
+     *
+     * @returns {Array} An array containing the error state and the function to set the error state.
+     */
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {

@@ -12,6 +12,15 @@ import { useSearchModel } from "./useSearchModel";
 //   props: any,
 //   query: string
 // ) => any;
+/**
+ * Custom hook that injects props related to a specific model.
+ *
+ * @param {Object} offlineStorage - The offline storage object.
+ * @param {string} SERVER - The server URL.
+ * @param {Object} query - The query object.
+ * @param {string} modelName - The name of the model.
+ * @returns {Object} - The injected props object.
+ */
 export const useInjectProps = (
     offlineStorage,
     SERVER,

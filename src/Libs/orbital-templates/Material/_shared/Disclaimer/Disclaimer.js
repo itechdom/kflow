@@ -1,3 +1,21 @@
+/**
+ * Disclaimer component.
+ *
+ * @param {Object} props - The component props.
+ * @param {Function} props.onChange - The onChange event handler.
+ * @param {Function} props.onSubmit - The onSubmit event handler.
+ * @param {Function} props.onProviderAuth - The onProviderAuth event handler.
+ * @param {Function} props.onSuccess - The onSuccess event handler.
+ * @param {Function} props.onLogin - The onLogin event handler.
+ * @param {Function} props.onForgotPassword - The onForgotPassword event handler.
+ * @param {Object} props.classes - The CSS classes.
+ * @param {Object} props.location - The location object.
+ * @param {Object} props.history - The history object.
+ * @param {Object} props.match - The match object.
+ * @param {string} props.logo - The logo image source.
+ * @param {ReactNode} props.content - The additional content to be rendered.
+ * @returns {ReactNode} The rendered Disclaimer component.
+ */
 import React from "react";
 import {
   Card,
@@ -110,7 +128,6 @@ export const Disclaimer = ({
                     <Button
                       color="secondary"
                       variant="contained"
-                      color="secondary"
                       onClick={handleSubmit}
                       disabled={values.name ? false : true}
                     >

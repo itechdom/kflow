@@ -13,6 +13,12 @@ export const useSearchModel = (offlineStorage, SERVER, query, modelName) => {
   const dispatch = useDispatch();
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  /**
+   * Performs a search operation on the specified model.
+   *
+   * @param {string} query - The search query.
+   * @returns {Promise<any>} - A promise that resolves to the search results.
+   */
   const searchModelFn = (query) => offlineStorage
     .getItem("jwtToken")
     .then((token) => {

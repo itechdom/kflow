@@ -4,6 +4,10 @@ import React from "react";
 import axios from "axios";
 
 //export store
+/**
+ * Represents a CRUD domain store for managing models.
+ * @class
+ */
 export class crudDomainStore {
   modelName;
   isEditing = observable.map();
@@ -60,7 +64,6 @@ export class crudDomainStore {
         .then(res => {
           let current = this.mapStore.get(modelName);
           this.mapStore.set(modelName, [...current, res.data]);
-          this.mapStore.set(modelName, updatedModel);
           this.setSuccess(modelName, `${modelName} successfully created!`);
           return res.data;
         })

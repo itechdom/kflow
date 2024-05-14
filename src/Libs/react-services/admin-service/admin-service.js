@@ -1,7 +1,13 @@
-import { observer } from "mobx-react";
-import { observable, action, runInAction, toJS } from "mobx";
+import { observable, runInAction } from "mobx";
 import React from "react";
 import axios from "axios";
+
+/**
+ * @description This file contains the implementation of the adminDomainStore class, Admin component, and withAdmin function.
+ * The adminDomainStore class is responsible for managing the admin domain data and making API calls to retrieve schemas.
+ * The Admin component is a higher-order component that wraps its children components and provides them with the adminDomainStore data.
+ * The withAdmin function is a higher-order function that enhances a component by injecting the adminDomainStore data as props.
+ */
 
 //export store
 export class adminDomainStore {

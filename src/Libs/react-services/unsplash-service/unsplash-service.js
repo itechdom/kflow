@@ -10,6 +10,15 @@ export class unsplashDomainStore {
   offlineStorage;
   mapStore;
   notificationDomainStore;
+  /**
+   * Creates an instance of the UnsplashService class.
+   * @constructor
+   * @param {Object} rootStore - The root store object.
+   * @param {Object} offlineStorage - The offline storage object.
+   * @param {string} SERVER - The server URL.
+   * @param {string} accessKey - The access key for the Unsplash API.
+   * @param {Object} notificationDomainStore - The notification domain store object.
+   */
   constructor(
     rootStore,
     offlineStorage,

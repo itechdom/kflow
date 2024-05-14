@@ -1,3 +1,13 @@
+/**
+ * Renders a list of filters for a model.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {Object} props.form - The form object.
+ * @param {number} props.modelCount - The count of models.
+ * @param {Object} props.rest - Additional props.
+ * @returns {JSX.Element} The rendered component.
+ */
 import React from "react";
 import { Grid } from "@material-ui/core";
 import { Typography } from "@material-ui/core";

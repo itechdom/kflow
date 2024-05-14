@@ -1,3 +1,39 @@
+/**
+ * MainWrapper component is a wrapper component that provides a layout for the application.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {ReactNode} props.children - The content to be rendered inside the wrapper.
+ * @param {Object} props.location - The location object from React Router.
+ * @param {Object} props.match - The match object from React Router.
+ * @param {Object} props.history - The history object from React Router.
+ * @param {boolean} props.auth - Flag indicating if the user is authenticated.
+ * @param {Object} props.user - The user object.
+ * @param {string} props.logo - The URL of the logo image.
+ * @param {Function} props.onLogout - The callback function for logout action.
+ * @param {Array} props.routeList - The list of routes for the application.
+ * @param {Array} props.drawerRouteList - The list of routes for the drawer menu.
+ * @param {string} props.brand - The brand name for the application.
+ * @param {Object} props.anchorEl - The anchor element for the menu.
+ * @param {Function} props.setAnchorEl - The function to set the anchor element.
+ * @param {boolean} props.open - Flag indicating if the drawer menu is open.
+ * @param {Function} props.setOpen - The function to set the drawer menu open state.
+ * @param {boolean} props.setMenuOpen - Flag indicating if the menu is open.
+ * @param {Object} props.classes - The CSS classes for styling the component.
+ * @param {boolean} props.isTabMenu - Flag indicating if the tab menu is enabled.
+ * @param {boolean} props.isTagMenu - Flag indicating if the tag menu is enabled.
+ * @param {Array} props.tags - The list of tags for the tag menu.
+ * @param {Function} props.setState - The function to set the state.
+ * @param {string} props.tabMenuPosition - The position of the tab menu.
+ * @param {Function} props.onDrawerRouteClick - The callback function for drawer route click.
+ * @param {Function} props.onRouteClick - The callback function for route click.
+ * @param {number} props.selectedRoute - The index of the selected route.
+ * @param {boolean} props.hideDrawer - Flag indicating if the drawer menu should be hidden.
+ * @param {boolean} props.hideAppBar - Flag indicating if the app bar should be hidden.
+ * @param {Function} props.render - The render function for custom rendering.
+ * @param {Array} props.length - The list of lengths for the tab menu labels.
+ * @returns {JSX.Element} The rendered MainWrapper component.
+ */
 import React, { Children } from "react";
 import classNames from "classnames";
 import MenuIcon from "@material-ui/icons/Menu";
