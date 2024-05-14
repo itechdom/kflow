@@ -5,7 +5,7 @@ import {
   IconButton,
   Typography,
   Paper,
-  Grid
+  Grid,
 } from "@material-ui/core";
 import BackIcon from "@material-ui/icons/ArrowBack";
 import EditIcon from "@material-ui/icons/Edit";
@@ -29,7 +29,7 @@ const KnowledgeContainer = ({
   onEdit,
   onDelete,
   onAdd,
-  classes
+  classes,
 }) => {
   return (
     <>
@@ -56,16 +56,6 @@ const KnowledgeContainer = ({
           <Paper>
             {/* Mindmap or GraphTree depending on tab selection */}
             {viewOption === 0 ? (
-              <GraphTree
-                mindmapByKeys={mindmapByKeys}
-                editedNode={editedNode}
-                edit={edit}
-                level={level}
-                width={graphContainer && graphContainer.width}
-                height={graphContainer && graphContainer.height}
-                {...TreeOperations}
-              />
-            ) : (
               <Mindmap
                 mindmapByKeys={mindmapByKeys}
                 editedNode={editedNode}
@@ -76,6 +66,16 @@ const KnowledgeContainer = ({
                 height={graphContainer && graphContainer.height}
                 {...TreeOperations}
               ></Mindmap>
+            ) : (
+              <GraphTree
+                mindmapByKeys={mindmapByKeys}
+                editedNode={editedNode}
+                edit={edit}
+                level={level}
+                width={graphContainer && graphContainer.width}
+                height={graphContainer && graphContainer.height}
+                {...TreeOperations}
+              />
             )}
           </Paper>
         </Grid>
