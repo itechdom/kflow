@@ -10,10 +10,6 @@ export const handleNodeAdd = (
   const parent = mindmapByKeys[nodeId];
   let group = parent && parseInt(parent.level.split(".").join(""));
   let size = 20 / (parent && parent.level.split(".").length);
-  console.log("INFO", {
-    ...mindmapByKeys[nodeId],
-    children: [...mindmapByKeys[nodeId].children, _id],
-  });
   const newState = {
     ...mindmapByKeys,
     [nodeId]: {
@@ -39,7 +35,6 @@ export const handleNodeAdd = (
       },
     },
   };
-  console.log("NEW STATE", newState);
   setMindmapByKeys(newState);
 };
 
@@ -165,32 +160,12 @@ export const isVisible = (mindmapByKeys, visibleNodeKeys, nodeId) => {
 };
 
 // Initial function to convert the whole object
-// const convertObjectToMindmap = (obj, rootId, setMindmapByKeys) => {
-//   // Create an initial mindmap with the root node
-//   const mindmapByKeys = {
-//     [rootId]: {
-//       title: "Root", // You can change the root title as needed
-//       id: rootId,
-//       _id: rootId,
-//       size: null,
-//       group: null,
-//       level: "0",
-//       children: [],
-//       parent: null,
-//       links: {
-//         title: null,
-//         target: rootId,
-//         source: rootId,
-//         group: null,
-//       },
-//     },
-//   };
+export const convertObjectToMindmap = (obj, rootId, mindmapByKeys, setMindmapByKeys) => {
+  console.log("CONVERSION", obj, rootId, mindmapByKeys, setMindmapByKeys);
+  // Start traversing and adding nodes from the root
+  traverseAndAddNodes(obj, rootId, mindmapByKeys, setMindmapByKeys);
+};
 
-//   setMindmapByKeys(mindmapByKeys);
-
-//   // Start traversing and adding nodes from the root
-//   traverseAndAddNodes(obj, rootId, mindmapByKeys, setMindmapByKeys);
-// };
 export const traverseAndAddNodes = (
   obj,
   parentId,

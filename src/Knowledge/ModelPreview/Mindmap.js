@@ -3,6 +3,7 @@ import { Tree as DTree } from "react-d3-tree";
 import CustomTreeNode from "./CustomTreeNode";
 import { theme3Light } from "./Themes";
 import { convertToMindmap, moveToRoot } from "./Mindmap.utils"; // Replace "./utils" with the correct path to the module containing the convertToMindmap function
+import { convertObjectToMindmap } from "./Model.Preview.state";
 
 // Constants for themes, you can uncomment any theme you want to use
 // const { background, baseStyle, textColor } = theme1Light;
@@ -28,7 +29,6 @@ function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
     if (Object.keys(mindmapByKeys).length) {
       setData(formatData());
     }
-    console.log("MINDMAP BY KEYS", mindmapByKeys);
   }, [mindmapByKeys]);
 
   const handleNodeClick = (nodeData, { hierarchyPointNode }) => {
@@ -61,7 +61,23 @@ function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
                   if (nodeDatum.title) {
                     const path = moveToRoot(nodeDatum.id, mindmapByKeys);
                     knowledgeChat(knowledge, path, (response) => {
-                      handleNodeAdd(nodeDatum.id, response, mindmapByKeys);
+                      try {
+                        convertObjectToMindmap(
+                          JSON.parse(response),
+                          nodeDatum.id,
+                          mindmapByKeys,
+                          (converted) => {
+                            console.log("CONVERTED", converted);
+                            handleNodeAdd(
+                              nodeDatum.id,
+                              converted,
+                              mindmapByKeys
+                            );
+                          }
+                        );
+                      } catch (e) {
+                        console.log("ERROR", e);
+                      }
                     });
                   }
                 }}
