@@ -44,8 +44,6 @@ export const useML = (offlineStorage, SERVER, query, modelName) => {
             dispatch(createModel({ data: model, modelName }));
             //check nulls
             if (res.data && res.data.choices[0] && res.data.choices[0].message.content) {
-              console.log(res.data.choices[0].message.content);
-              // alert(res.data.choices[0].message.content);
               onResponse(res.data.choices[0].message.content);
             }
             setIsLoading(false);

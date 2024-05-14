@@ -53,7 +53,11 @@ const CustomTreeNode = ({
   const [openDialog, setOpenDialog] = useState(false);
 
   const handleClick = () => {
-    if (nodeDatum && nodeDatum.name && nodeDatum.name.length > MAX_TEXT_LENGTH) {
+    if (
+      nodeDatum &&
+      nodeDatum.name &&
+      nodeDatum.name.length > MAX_TEXT_LENGTH
+    ) {
       handleOpenDialog();
     }
     onClick(nodeDatum, rest);
@@ -76,7 +80,11 @@ const CustomTreeNode = ({
   const pRef = useRef(null);
 
   useEffect(() => {
-    if (nodeDatum && nodeDatum.name && nodeDatum.name.length > MIN_TEXT_LENGTH) {
+    if (
+      nodeDatum &&
+      nodeDatum.name &&
+      nodeDatum.name.length > MIN_TEXT_LENGTH
+    ) {
       setRadius(200);
       setCx(40);
       setCY(80);
@@ -90,7 +98,11 @@ const CustomTreeNode = ({
   }, [nodeDatum, pWidth, pHeight, toggleNode]);
 
   useEffect(() => {
-    if (nodeDatum && nodeDatum.name && nodeDatum.name.length > MAX_TEXT_LENGTH) {
+    if (
+      nodeDatum &&
+      nodeDatum.name &&
+      nodeDatum.name.length > MAX_TEXT_LENGTH
+    ) {
       nodeDatum.label = truncateText(nodeDatum.name, 40);
     } else {
       nodeDatum.label = truncateText(nodeDatum.name, nodeDatum.name.length);
