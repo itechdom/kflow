@@ -79,6 +79,7 @@ const KnowledgeDetails = ({ classes, currentUser, tags, selected, ...routeProps 
                 model={knowledgeMutable}
                 knowledge_updateModel={props.knowledge_updateModel}
                 knowledge_deleteModel={props.knowledge_deleteModel}
+                {...routeProps}
                 {...props}
               />
             </MainWrapper>

@@ -134,6 +134,7 @@ const ModelPreview = (props) => {
     onView,
     wiki,
     fetchWikipediaPageByTopic,
+    history,
     ...rest
   } = props;
   React.useEffect(() => {
@@ -208,6 +209,9 @@ const ModelPreview = (props) => {
   return (
     <>
       <header>
+        <Button onClick={() => history.push('/')} color="primary">
+          Back to Home
+        </Button>
         <h1>{model.title}</h1>
         <Paper style={{ padding: "1em", borderRadius: "50px" }}>
           <Grid style={{ marginBottom: "1em" }} container justify="flex-end">
