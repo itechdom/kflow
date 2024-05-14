@@ -25,7 +25,7 @@ function truncateText(text, maxLength) {
 }
 
 function isLargeText(text) {
-  return text.length > MAX_TEXT_LENGTH;
+  return text && text.length > MAX_TEXT_LENGTH;
 }
 
 function isHttpLink(text) {
@@ -53,7 +53,7 @@ const CustomTreeNode = ({
   const [openDialog, setOpenDialog] = useState(false);
 
   const handleClick = () => {
-    if (nodeDatum.name.length > MAX_TEXT_LENGTH) {
+    if (nodeDatum && nodeDatum.name && nodeDatum.name.length > MAX_TEXT_LENGTH) {
       handleOpenDialog();
     }
     onClick(nodeDatum, rest);
@@ -76,7 +76,7 @@ const CustomTreeNode = ({
   const pRef = useRef(null);
 
   useEffect(() => {
-    if (nodeDatum.name.length > MIN_TEXT_LENGTH) {
+    if (nodeDatum && nodeDatum.name && nodeDatum.name.length > MIN_TEXT_LENGTH) {
       setRadius(200);
       setCx(40);
       setCY(80);
@@ -90,7 +90,7 @@ const CustomTreeNode = ({
   }, [nodeDatum, pWidth, pHeight, toggleNode]);
 
   useEffect(() => {
-    if (nodeDatum.name.length > MAX_TEXT_LENGTH) {
+    if (nodeDatum && nodeDatum.name && nodeDatum.name.length > MAX_TEXT_LENGTH) {
       nodeDatum.label = truncateText(nodeDatum.name, 40);
     } else {
       nodeDatum.label = truncateText(nodeDatum.name, nodeDatum.name.length);

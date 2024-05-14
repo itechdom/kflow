@@ -11,24 +11,63 @@ import { theme3Light } from "./Themes";
 const { background, baseStyle, textColor } = theme3Light; // Using theme3Light for example
 
 export const convertToMindmap = (currentNode, mindmapByKeys) => {
-  currentNode.name = currentNode.title;
-  currentNode.collapsed = true;
-  if (currentNode.children) {
-    currentNode.children = currentNode.children.map(child => convertToMindmap(mindmapByKeys[child], mindmapByKeys));
+  if (!currentNode || typeof currentNode !== "object") {
+    console.error("Invalid currentNode:", currentNode);
+    return {}; // or any other fallback object structure
   }
+
+  // Ensuring currentNode has a title and children properties
+  const { title, children } = currentNode;
+  if (!title) {
+    console.error("currentNode missing title:", currentNode);
+    return {}; // or any other fallback object structure
+  }
+
+  currentNode.name = title;
+  currentNode.collapsed = true;
+
+  // Ensure children is an array and map through it safely
+  if (Array.isArray(children)) {
+    currentNode.children = children.map((child) => {
+      const childNode = mindmapByKeys[child];
+      if (!childNode) {
+        console.error("Missing child node in mindmapByKeys for key:", child);
+        return {}; // handle missing child node case
+      }
+      return convertToMindmap(childNode, mindmapByKeys);
+    });
+  } else {
+    currentNode.children = [];
+  }
+
   return currentNode;
 };
 
 function moveToRoot(nodeId, nodes) {
-  const path = [];
+  let path = {};
+  let track = [];
+
   function traverseUp(currentId) {
-    const node = nodes[currentId];
-    if (!node) return;
-    path.unshift(node.title);
-    if (node.parent) traverseUp(node.parent);
+    const currentNode = nodes[currentId];
+    if (!currentNode) {
+      console.error("Node not found for ID:", currentId);
+      return; // stop if the node is not found
+    }
+
+    track.unshift(currentNode.title); // safely add title because node exists
+    if (currentNode.parent) {
+      traverseUp(currentNode.parent);
+    }
   }
-  traverseUp(nodeId);
-  return path.reduceRight((acc, title) => ({ [title]: acc }), {});
+
+  if (nodes && nodes[nodeId]) {
+    traverseUp(nodeId);
+    path = track.reduceRight((acc, key) => ({ [key]: acc }), {});
+  } else {
+    console.error("Invalid nodeId or nodes structure:", nodeId, nodes);
+  }
+
+  return path;
 }
 
 function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
@@ -77,7 +116,7 @@ function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
               onClick={handleNodeClick}
               onChatRequest={(nodeDatum) => {
                 const path = moveToRoot(nodeDatum.id, mindmapByKeys);
-                knowledgeChat(knowledge, path, response => {
+                knowledgeChat(knowledge, path, (response) => {
                   handleNodeAdd(nodeDatum.id, response, mindmapByKeys);
                 });
               }}
