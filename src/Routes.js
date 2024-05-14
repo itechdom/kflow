@@ -14,8 +14,8 @@ export const adminRoute = {
 };
 
 export const logoutRoute = {
-  url: "/logout",
-  name: "Log Out",
+  // url: "/logout",
+  // name: "Log Out",
 };
 
 export const editableSchemas = [
