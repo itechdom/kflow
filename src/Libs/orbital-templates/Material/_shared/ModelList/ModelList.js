@@ -406,7 +406,7 @@ const ModelList = enhance(
                       {ModelPreviewAttachment && (
                         <ModelPreviewAttachment model={model} />
                       )}
-                      <FloatingAddButton onClick={onAddWrapper} />
+                      <FloatingAddButton classes={classes} onClick={onAddWrapper} />
                     </Grid>
                   </Grid>
                   // </Fade>
@@ -536,7 +536,9 @@ const ModelList = enhance(
                       removeNotification(notification);
                     }}
                   />
-                  <FloatingAddButton onClick={onAddWrapper} />
+                  <FloatingAddButton
+                  classes={classes} 
+                  onClick={onAddWrapper} />
                 </>
               );
             }}
