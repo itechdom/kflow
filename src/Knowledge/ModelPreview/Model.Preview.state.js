@@ -6,11 +6,14 @@ export const handleNodeAdd = (
   nodeId,
   title
 ) => {
-  console.log("handleNodeAdd", nodeId, title);
   const _id = v1();
   const parent = mindmapByKeys[nodeId];
   let group = parent && parseInt(parent.level.split(".").join(""));
   let size = 20 / (parent && parent.level.split(".").length);
+  console.log("INFO", {
+    ...mindmapByKeys[nodeId],
+    children: [...mindmapByKeys[nodeId].children, _id],
+  });
   const newState = {
     ...mindmapByKeys,
     [nodeId]: {
@@ -36,6 +39,7 @@ export const handleNodeAdd = (
       },
     },
   };
+  console.log("NEW STATE", newState);
   setMindmapByKeys(newState);
 };
 

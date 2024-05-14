@@ -4,27 +4,20 @@ export const convertToMindmap = (currentNode, mindmapByKeys) => {
     return {}; // or any other fallback object structure
   }
 
-  // Ensuring currentNode has a title and children properties
-  const { title, children } = currentNode;
-  if (!title) {
-    console.error("currentNode missing title:", currentNode);
-    return {}; // or any other fallback object structure
-  }
-
-  currentNode.name = title;
+  currentNode.name = currentNode.title || "No title available";
   currentNode.collapsed = true;
 
-  // Ensure children is an array and map through it safely
-  if (Array.isArray(children)) {
-    currentNode.children = children.map((child) => {
-      const childNode = mindmapByKeys[child];
+  if (Array.isArray(currentNode.children)) {
+    currentNode.children = currentNode.children.map((childId) => {
+      const childNode = mindmapByKeys[childId];
       if (!childNode) {
-        console.error("Missing child node in mindmapByKeys for key:", child);
-        return {}; // handle missing child node case
+        console.error("Missing child node in mindmapByKeys for key:", childId);
+        return { name: "Missing Node", children: [] }; // Fallback node structure
       }
       return convertToMindmap(childNode, mindmapByKeys);
     });
   } else {
+    console.warn("Children not an array or undefined:", currentNode);
     currentNode.children = [];
   }
 

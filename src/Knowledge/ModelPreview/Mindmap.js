@@ -51,20 +51,24 @@ function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
         <DTree
           data={data}
           enableLegacyTransitions
-          renderCustomNodeElement={(rd3tProps) => (
-            <CustomTreeNode
-              nodeStyle={baseStyle}
-              textColor={textColor}
-              onClick={handleNodeClick}
-              onChatRequest={(nodeDatum) => {
-                const path = moveToRoot(nodeDatum.id, mindmapByKeys);
-                knowledgeChat(knowledge, path, (response) => {
-                  handleNodeAdd(nodeDatum.id, response, mindmapByKeys);
-                });
-              }}
-              {...rd3tProps}
-            />
-          )}
+          renderCustomNodeElement={(rd3tProps) =>
+            rd3tProps.nodeDatum.title && (
+              <CustomTreeNode
+                nodeStyle={baseStyle}
+                textColor={textColor}
+                onClick={handleNodeClick}
+                onChatRequest={(nodeDatum) => {
+                  if (nodeDatum.title) {
+                    const path = moveToRoot(nodeDatum.id, mindmapByKeys);
+                    knowledgeChat(knowledge, path, (response) => {
+                      handleNodeAdd(nodeDatum.id, response, mindmapByKeys);
+                    });
+                  }
+                }}
+                {...rd3tProps}
+              />
+            )
+          }
           nodeSize={{ x: 450, y: 450 }}
           orientation="vertical"
           pathFunc="straight"
