@@ -1,10 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { screen } from "@testing-library/react";
 import { CrudContainerFP } from "./crud-container";
 import rootReducer from "../crud-service/features/crudDomainSlice";
 import { MockStore } from "../utils/test-utils";
-import { get } from "mobx";
 
 describe("CrudContainerFP", () => {
   const props = {
@@ -27,11 +25,12 @@ describe("CrudContainerFP", () => {
   };
 
   it("renders children", () => {
-    const { view, util } = render(
+    const { baseElement } = render(
       <MockStore rootReducer={rootReducer}>
         <CrudContainerFP {...props} />
       </MockStore>
     );
+    console.log("VIEW", baseElement);
     // expect(screen.getByText("Test")).toBeInTheDocument();
     expect(true).toBe(true);
   });
