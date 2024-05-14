@@ -29,7 +29,7 @@ export const useML = (offlineStorage, SERVER, query, modelName) => {
    * @param {Object} model - The model object to be created.
    * @returns {Promise} - A promise that resolves when the model is created.
    */
-  const createModelFn = (model) => offlineStorage
+  const useMLFn = (model) => offlineStorage
     .getItem("jwtToken")
     .then((token) => {
       return axios
@@ -50,5 +50,5 @@ export const useML = (offlineStorage, SERVER, query, modelName) => {
       return setError(modelName, err);
     });
 
-  return [createModelFn, error, isLoading];
+  return [useMLFn, error, isLoading];
 };
