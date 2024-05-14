@@ -43,7 +43,7 @@ const ModelPreview = (props) => {
     setLevel,
     knowledge_updateModel,
     knowledge_deleteModel,
-    knowledgeChat,
+    knowledge_chat,
     knowledge_loading,
     viewOption,
     classes,
@@ -103,7 +103,7 @@ const ModelPreview = (props) => {
         editedNode={editedNode}
         mindmapByKeys={mindmapByKeys}
         level={level}
-        knowledgeChat={knowledgeChat}
+        knowledgeChat={knowledge_chat}
         viewOption={viewOption}
         setReferences={setReferences}
         graphContainer={graphContainer}
