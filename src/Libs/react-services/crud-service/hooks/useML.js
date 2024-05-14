@@ -32,19 +32,20 @@ export const useML = (offlineStorage, SERVER, query, modelName) => {
   const useMLFn = (model) => offlineStorage
     .getItem("jwtToken")
     .then((token) => {
-      return axios
-        .post(`${SERVER.host}:${SERVER.port}/${modelName}/chat`, {
-          model,
-          token,
-        })
-        .then((res) => {
-          dispatch(createModel({ data: model, modelName }));
-          setIsLoading(false);
-        })
-        .catch((err) => {
-          setError(modelName, err);
-          setIsLoading(false);
-        });
+      console.log(model, "MODEL");
+      // return axios
+      //   .post(`${SERVER.host}:${SERVER.port}/${modelName}/chat`, {
+      //     model,
+      //     token,
+      //   })
+      //   .then((res) => {
+      //     dispatch(createModel({ data: model, modelName }));
+      //     setIsLoading(false);
+      //   })
+      //   .catch((err) => {
+      //     setError(modelName, err);
+      //     setIsLoading(false);
+      //   });
     })
     .catch((err) => {
       return setError(modelName, err);
