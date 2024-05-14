@@ -29,23 +29,24 @@ export const useML = (offlineStorage, SERVER, query, modelName) => {
    * @param {Object} model - The model object to be created.
    * @returns {Promise} - A promise that resolves when the model is created.
    */
-  const useMLFn = (model) => offlineStorage
+  const useMLFn = (model, currentNode) => offlineStorage
     .getItem("jwtToken")
     .then((token) => {
+      console.log(currentNode, "CURRENT NODE");
       console.log(model, "MODEL");
-      // return axios
-      //   .post(`${SERVER.host}:${SERVER.port}/${modelName}/chat`, {
-      //     model,
-      //     token,
-      //   })
-      //   .then((res) => {
-      //     dispatch(createModel({ data: model, modelName }));
-      //     setIsLoading(false);
-      //   })
-      //   .catch((err) => {
-      //     setError(modelName, err);
-      //     setIsLoading(false);
-      //   });
+      return axios
+        .post(`${SERVER.host}:${SERVER.port}/${modelName}/chat`, {
+          model,
+          token,
+        })
+        .then((res) => {
+          dispatch(createModel({ data: model, modelName }));
+          setIsLoading(false);
+        })
+        .catch((err) => {
+          setError(modelName, err);
+          setIsLoading(false);
+        });
     })
     .catch((err) => {
       return setError(modelName, err);

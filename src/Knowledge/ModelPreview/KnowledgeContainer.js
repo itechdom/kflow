@@ -18,6 +18,7 @@ const KnowledgeContainer = ({
   model,
   edit,
   editedNode,
+  knowledge,
   mindmapByKeys,
   level,
   knowledgeChat,
@@ -57,6 +58,7 @@ const KnowledgeContainer = ({
             {/* Mindmap or GraphTree depending on tab selection */}
             {viewOption === 0 ? (
               <Mindmap
+                knowledge={knowledge}
                 mindmapByKeys={mindmapByKeys}
                 editedNode={editedNode}
                 knowledgeChat={knowledgeChat}
@@ -68,6 +70,7 @@ const KnowledgeContainer = ({
               ></Mindmap>
             ) : (
               <GraphTree
+                knowledge={knowledge}
                 mindmapByKeys={mindmapByKeys}
                 editedNode={editedNode}
                 edit={edit}
@@ -83,6 +86,7 @@ const KnowledgeContainer = ({
           <Paper>
             {/* ListTree or additional details panel */}
             <ListTree
+              knowledge={knowledge}
               mindmapByKeys={mindmapByKeys}
               title={model.title}
               editedNode={editedNode}

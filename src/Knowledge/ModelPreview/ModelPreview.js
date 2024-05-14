@@ -41,6 +41,7 @@ const ModelPreview = (props) => {
     setMindmapByKeys,
     level,
     setLevel,
+    knowledge,
     knowledge_updateModel,
     knowledge_deleteModel,
     knowledge_chat,
@@ -99,6 +100,7 @@ const ModelPreview = (props) => {
     <div>
       <KnowledgeContainer
         model={model}
+        knowledge={knowledge}
         edit={edit}
         editedNode={editedNode}
         mindmapByKeys={mindmapByKeys}

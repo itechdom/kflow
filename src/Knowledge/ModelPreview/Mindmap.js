@@ -35,6 +35,38 @@ export const convertToMindmap = (currentNode, mindmapByKeys) => {
   }
   return currentNode;
 };
+
+function moveToRoot(nodeId, nodes) {
+  let path = {};
+  let track = [];
+
+  function traverseUp(nodeId) {
+    const currentNode = nodes[nodeId];
+    if (!currentNode) {
+      console.log("Node not found");
+      return;
+    }
+
+    // If there is a parent, recurse with the parent's ID
+    track.unshift(currentNode.title);
+    if (currentNode.parent && nodes[currentNode.parent]) {
+      traverseUp(currentNode.parent);
+    }
+  }
+
+  traverseUp(nodeId);
+  //envelop the current node in a new path object with the node id as the key
+  //first key
+  path = track.reduceRight(
+    (acc, key) => {
+      return { [key]: acc };
+    },
+    {}
+  );
+  console.log("FINAL PATH", path);
+  return path;
+}
+
 class Tree extends React.Component {
   constructor(props) {
     super(props);
@@ -113,9 +145,13 @@ class Tree extends React.Component {
                 nodeStyle={baseStyle}
                 textColor={textColor}
                 onClick={this.handleNodeClick}
-                onChatRequest={(nodeDatum) =>
-                  this.props.knowledgeChat(this.state.data, nodeDatum)
-                }
+                onChatRequest={(nodeDatum) => {
+                  console.log(
+                    moveToRoot(nodeDatum.id, this.props.mindmapByKeys),
+                    "PATH"
+                  );
+                  this.props.knowledgeChat(this.props.knowledge, nodeDatum);
+                }}
                 {...rd3tProps}
               />
             )}

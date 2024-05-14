@@ -77,6 +77,7 @@ const KnowledgeDetails = ({ classes, currentUser, tags, selected, ...routeProps 
                 currentUser={currentUser}
                 // setState={(props) => this.setState(props)}
                 model={knowledgeMutable}
+                knowledge={knowledge}
                 knowledge_updateModel={props.knowledge_updateModel}
                 knowledge_deleteModel={props.knowledge_deleteModel}
                 knowledge_chat={props.knowledge_chat}
