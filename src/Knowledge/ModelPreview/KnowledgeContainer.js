@@ -11,10 +11,10 @@ import BackIcon from "@material-ui/icons/ArrowBack";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
 import ListTree from "./ListTree.js";
-import GraphTree from "./GraphTree";
-import Mindmap from "./Mindmap";
+import GraphTree from "./GraphTree.js";
+import Mindmap from "./Mindmap.js";
 
-const ModelPreview = ({
+const KnowledgeContainer = ({
   model,
   edit,
   editedNode,
@@ -31,7 +31,6 @@ const ModelPreview = ({
   onAdd,
   classes
 }) => {
-
   return (
     <>
       <AppBar position="static" color="default" className={classes.header}>
@@ -101,4 +100,4 @@ const ModelPreview = ({
   );
 };
 
-export default ModelPreview;
+export default KnowledgeContainer;
