@@ -3,7 +3,6 @@ import React from "react";
 import axios from "axios";
 
 /**
- * @file FILEPATH: /Users/oalghanmi/kflow/src/Libs/react-services/admin-service/admin-service.js
  * @description This file contains the implementation of the adminDomainStore class, Admin component, and withAdmin function.
  * The adminDomainStore class is responsible for managing the admin domain data and making API calls to retrieve schemas.
  * The Admin component is a higher-order component that wraps its children components and provides them with the adminDomainStore data.

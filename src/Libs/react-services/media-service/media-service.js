@@ -11,6 +11,13 @@ export class mediaDomainStore {
   rootStore;
   SERVER;
   offlineStorage;
+  /**
+   * Represents a MediaService object.
+   * @constructor
+   * @param {RootStore} rootStore - The root store object.
+   * @param {OfflineStorage} offlineStorage - The offline storage object.
+   * @param {string} SERVER - The server URL.
+   */
   constructor(rootStore, offlineStorage, SERVER) {
     this.rootStore = rootStore;
     if (offlineStorage) {

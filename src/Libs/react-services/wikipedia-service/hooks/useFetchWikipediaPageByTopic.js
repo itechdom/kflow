@@ -14,6 +14,14 @@ const testHtml = (title) => {
     var regex = new RegExp(expression);
     return title && title.match(regex);
 };
+/**
+ * Custom hook to fetch Wikipedia page by topic.
+ *
+ * @param {Object} offlineStorage - The offline storage object.
+ * @param {string} SERVER - The server URL.
+ * @param {string} query - The search query.
+ * @returns {Array} - An array containing the fetch function, model data, error, and loading state.
+ */
 export const useFetchWikipediaPageByTopic = (offlineStorage, SERVER, query) => {
     const dispatch = useDispatch();
     const model = useSelector((state) => state.wikiDomainStore.data);

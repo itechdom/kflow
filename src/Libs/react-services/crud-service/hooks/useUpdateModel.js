@@ -9,6 +9,15 @@ import { updateModel } from '../features/crudDomainSlice';
 //   query: string,
 //   modelName: string
 // ) => [any, any, any];
+/**
+ * Custom hook for updating a model.
+ *
+ * @param {Object} offlineStorage - The offline storage object.
+ * @param {Object} SERVER - The server configuration object.
+ * @param {string} query - The query string.
+ * @param {string} modelName - The name of the model.
+ * @returns {[Function, Object, boolean]} - An array containing the updateModel function, error object, and isLoading boolean.
+ */
 export const useUpdateModel = (offlineStorage, SERVER, query, modelName) => {
   const dispatch = useDispatch();
   const [error, setError] = useState(null);

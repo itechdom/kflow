@@ -9,10 +9,26 @@ import { createModel } from '../features/crudDomainSlice';
 //   query: string,
 //   modelName: string
 // ) => [any, any, any];
+/**
+ * Custom hook for creating a model.
+ *
+ * @param {Object} offlineStorage - The offline storage object.
+ * @param {Object} SERVER - The server configuration object.
+ * @param {string} query - The query string.
+ * @param {string} modelName - The name of the model.
+ * @returns {Array} - An array containing the createModel function, error state, and isLoading state.
+ */
 export const useCreateModel = (offlineStorage, SERVER, query, modelName) => {
   const dispatch = useDispatch();
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+
+  /**
+   * Function for creating a model.
+   *
+   * @param {Object} model - The model object to be created.
+   * @returns {Promise} - A promise that resolves when the model is created.
+   */
   const createModelFn = (model) => offlineStorage
     .getItem("jwtToken")
     .then((token) => {
@@ -33,5 +49,6 @@ export const useCreateModel = (offlineStorage, SERVER, query, modelName) => {
     .catch((err) => {
       return setError(modelName, err);
     });
+
   return [createModelFn, error, isLoading];
 };

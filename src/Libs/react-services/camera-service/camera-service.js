@@ -1,7 +1,7 @@
 import React from "react";
 import Webcam from "react-webcam";
 
-const injectProps = (modelName, capture, child) => {
+const injectProps = (modelName, capture, child, ...props) => {
   let injected = {
     ...props,
     ...child.props
@@ -11,7 +11,7 @@ const injectProps = (modelName, capture, child) => {
 };
 
 //determine the theme here and load the right login information?
-const Camera = ({ modelName, children, width, height, onCapture }) => {
+const Camera = ({ modelName, children, width, height, onCapture, facingMode }) => {
   const videoConstraints = {
     width,
     height,

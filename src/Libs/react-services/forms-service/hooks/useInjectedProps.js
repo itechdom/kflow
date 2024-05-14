@@ -8,6 +8,15 @@ import { useGetForm } from "./useGetForm";
 //   props: any,
 //   query: string
 // ) => any;
+/**
+ * Custom hook that injects props into a component based on the provided model.
+ *
+ * @param {Object} offlineStorage - The offline storage object.
+ * @param {string} SERVER - The server URL.
+ * @param {string} query - The query string.
+ * @param {string} modelName - The name of the model.
+ * @returns {Object} - The injected props object.
+ */
 export const useInjectProps = (
     offlineStorage,
     SERVER,

@@ -14,6 +14,12 @@ export const useDeleteModel = (offlineStorage, SERVER, query, modelName) => {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
+  /**
+   * Deletes a model from the server.
+   *
+   * @param {Object} model - The model to be deleted.
+   * @returns {Promise} A promise that resolves when the model is successfully deleted or rejects with an error.
+   */
   const deleteModelFn = (model) => offlineStorage
     .getItem("jwtToken")
     .then((token) => {
