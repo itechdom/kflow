@@ -8,10 +8,12 @@ import { setModel } from '../features/crudDomainSlice';
 //   SERVER: { host: string; port: string },
 //   query: string,
 //   modelName: string
-// ) => [any, any, any];
+// ) => [any, any, any]
 export const useGetModel = (offlineStorage, SERVER, query, modelName) => {
     const dispatch = useDispatch();
-    const model = useSelector((state) => state.crudDomainStore.model[modelName]);
+    const model = useSelector((state) => {
+        return state && state.crudDomainStore && state.crudDomainStore.model[modelName]
+    });
     /**
      * Custom hook for getting a model.
      *
