@@ -63,11 +63,10 @@ function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
                     knowledgeChat(knowledge, path, (response) => {
                       try {
                         convertObjectToMindmap(
-                          JSON.parse(response),
+                         response,
                           nodeDatum.id,
                           mindmapByKeys,
                           (converted) => {
-                            console.log("CONVERTED", converted);
                             handleNodeAdd(
                               nodeDatum.id,
                               converted,

@@ -171,20 +171,53 @@ export const convertObjectToMindmap = (
   mindmapByKeys,
   setMindmapByKeys
 ) => {
-  traverseAndAddNodes(obj, rootId, mindmapByKeys, setMindmapByKeys);
+  const newMindmapByKeys = { ...mindmapByKeys };
+  bulkTraverseAndAddNodes(newMindmapByKeys, obj, rootId);
+  setMindmapByKeys(newMindmapByKeys);
 };
 
-export const traverseAndAddNodes = (
-  mindmapByKeys,
-  setMindmapByKeys,
-  obj,
-  parentId
-) => {
+// Bulk traversal and addition of nodes
+export const bulkTraverseAndAddNodes = (mindmapByKeys, obj, parentId) => {
+  console.log("OBJ", obj);
   for (const key in obj) {
     if (obj.hasOwnProperty(key)) {
       const newNodeId = v1();
-      handleNodeAdd(mindmapByKeys, setMindmapByKeys, parentId, key, newNodeId);
-      traverseAndAddNodes(mindmapByKeys, setMindmapByKeys, obj[key], newNodeId);
+      console.log("KEY", key);
+      bulkHandleNodeAdd(mindmapByKeys, parentId, key, newNodeId);
+      bulkTraverseAndAddNodes(mindmapByKeys, obj[key], newNodeId);
     }
   }
+};
+
+// Handle node addition without setting state immediately
+export const bulkHandleNodeAdd = (mindmapByKeys, nodeId, title, id) => {
+  const _id = id || v1();
+  const parent = mindmapByKeys[nodeId];
+  let group = parent && parseInt(parent.level.split(".").join(""));
+  let size = 20 / (parent && parent.level.split(".").length);
+  mindmapByKeys[nodeId] = {
+    ...mindmapByKeys[nodeId],
+    children: mindmapByKeys[nodeId]
+      ? [...mindmapByKeys[nodeId].children, _id]
+      : [],
+  };
+  mindmapByKeys[_id] = {
+    _id,
+    id: _id,
+    title,
+    level: mindmapByKeys[nodeId]
+      ? mindmapByKeys[nodeId].level +
+        "." +
+        mindmapByKeys[nodeId].children.length
+      : "0",
+    children: [],
+    parent: nodeId,
+    size,
+    group,
+    links: {
+      source: parent,
+      target: _id,
+      title: title,
+    },
+  };
 };
