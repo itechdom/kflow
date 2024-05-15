@@ -125,7 +125,6 @@ const mindmapSlice = createSlice({
       state.mindmapByKeys[nodeId][key] = value;
     },
     saveNode: (state, action) => {
-      const { model, updateModel } = action.payload;
       let newMindmap = {};
       Object.keys(state.mindmapByKeys).forEach(kn => {
         newMindmap[kn] = {
@@ -137,7 +136,7 @@ const mindmapSlice = createSlice({
           },
         };
       });
-      updateModel(model, { body: newMindmap });
+      state.mindmapByKeys = newMindmap;
     },
     deleteNode: (state, action) => {
       const { nodeId } = action.payload;
@@ -173,7 +172,7 @@ const mindmapSlice = createSlice({
     },
     searchNodes: (state, action) => {
       const regex = new RegExp(action.payload.text.toLowerCase());
-      return Object.keys(state.mindmapByKeys)
+      state.searchResults = Object.keys(state.mindmapByKeys)
         .filter(mk => state.mindmapByKeys[mk].title.toLowerCase().match(regex))
         .map(f => state.mindmapByKeys[f]);
     },

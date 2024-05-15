@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useCallback, useMemo } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import ConfirmDeleteModal from "Libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal";
-import KnowledgeContainer from "./KnowledgeContainer";
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import ConfirmDeleteModal from 'Libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal';
+import KnowledgeContainer from './KnowledgeContainer';
 import {
   addNode,
   editNode,
@@ -9,10 +9,9 @@ import {
   saveNode,
   deleteNode,
   toggleNode,
-  searchNodes,
   isVisible,
-} from "./Model.Preview.feature";
-import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
+} from './Model.Preview.feature';
+import Loading from 'Libs/orbital-templates/Material/_shared/Loading/Loading';
 
 const ModelPreview = ({
   model,
@@ -21,15 +20,12 @@ const ModelPreview = ({
   knowledge_deleteModel,
   knowledge_chat,
   classes,
-  fetchWikipediaPageByTopic,
   history,
   onEdit,
   onDelete,
 }) => {
   const dispatch = useDispatch();
-  const mindmapByKeys = useSelector((state) => {
-    return state.mindmap.mindmapByKeys;
-  });
+  const mindmapByKeys = useSelector((state) => state.mindmap.mindmapByKeys);
   const editedNode = useSelector((state) => state.mindmap.editedNode);
   const [edit, setEdit] = useState(false);
   const [level, setLevel] = useState(0);
@@ -41,7 +37,7 @@ const ModelPreview = ({
   const [visibleNodeKeys, setVisibleNodeByKeys] = useState([]);
 
   useEffect(() => {
-    if (model && model.body) {
+    if (!mindmapByKeys && model && model.body) {
       dispatch(saveNode({ model, updateModel: knowledge_updateModel }));
     }
   }, [model, mindmapByKeys, dispatch, knowledge_updateModel]);
@@ -76,24 +72,21 @@ const ModelPreview = ({
     [mindmapByKeys, visibleNodeKeys]
   );
 
-  const TreeOperations = useMemo(
-    () => ({
-      handleNodeAdd: handleNodeAddCallback,
-      handleNodeEdit: handleNodeEditCallback,
-      handleNodeUpdate: handleNodeUpdateCallback,
-      handleNodeToggle: handleNodeToggleCallback,
-      handleNodeDelete: handleNodeDeleteCallback,
-      isVisible: isVisibleCallback,
-    }),
-    [
-      handleNodeAddCallback,
-      handleNodeEditCallback,
-      handleNodeUpdateCallback,
-      handleNodeToggleCallback,
-      handleNodeDeleteCallback,
-      isVisibleCallback,
-    ]
-  );
+  const TreeOperations = useMemo(() => ({
+    handleNodeAdd: handleNodeAddCallback,
+    handleNodeEdit: handleNodeEditCallback,
+    handleNodeUpdate: handleNodeUpdateCallback,
+    handleNodeToggle: handleNodeToggleCallback,
+    handleNodeDelete: handleNodeDeleteCallback,
+    isVisible: isVisibleCallback,
+  }), [
+    handleNodeAddCallback,
+    handleNodeEditCallback,
+    handleNodeUpdateCallback,
+    handleNodeToggleCallback,
+    handleNodeDeleteCallback,
+    isVisibleCallback
+  ]);
 
   return mindmapByKeys ? (
     <div>
@@ -109,7 +102,7 @@ const ModelPreview = ({
         setReferences={setReferences}
         graphContainer={graphContainer}
         TreeOperations={TreeOperations}
-        onBack={() => history.push("/")}
+        onBack={() => history.push('/')}
         onEdit={onEdit}
         onDelete={onDelete}
         classes={classes}
