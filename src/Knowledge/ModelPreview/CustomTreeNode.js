@@ -75,7 +75,6 @@ const CustomTreeNode = ({
   }, [nodeDatum, pWidth, pHeight, toggleNode]);
 
   useEffect(() => {
-    console.log(nodeDatum, "NODE DATUM");
     if (
       nodeDatum &&
       nodeDatum.name &&

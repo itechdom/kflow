@@ -27,7 +27,6 @@ const KnowledgeDetails = ({ classes, currentUser, tags, selected, ...routeProps 
         query={query}
         render={(props) => {
           let knowledge = props.knowledge && props.knowledge.data[0];
-
           if (!knowledge || props.knowledge_loading) {
             return <Loading></Loading>;
           }

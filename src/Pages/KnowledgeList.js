@@ -26,7 +26,6 @@ const KnowledgeList = ({ classes, currentUser, tags, selected, ...routeProps }) 
       query={query}
       render={(props) => {
         let knowledge = props.knowledge;
-        console.log("KNowldge search model", props);
         if (!knowledge || props.knowledge_loading) {
           return <Loading></Loading>;
         }

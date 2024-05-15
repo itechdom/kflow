@@ -2,7 +2,6 @@ export const MIN_TEXT_LENGTH = 20;
 export const MAX_TEXT_LENGTH = 70;
 
 export function truncateText(text, maxLength) {
-  console.log("text", text);
   //make copy of text to avoid mutation
   let mutatedText = text.slice();
   if (text.length > maxLength) {
