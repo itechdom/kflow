@@ -4,15 +4,18 @@ export const convertToMindmap = (currentNode, mindmapByKeys) => {
     return {}; // or any other fallback object structure
   }
 
-  currentNode.name = currentNode.title || "No title available";
-  currentNode.collapsed = true;
-
-  if (Array.isArray(currentNode.children)) {
-    currentNode.children = currentNode.children.map((childId) => {
+  const newNode = {
+    ...currentNode,
+    name: currentNode.title || "No title available",
+    collapsed: false,
+  };
+  if (Array.isArray(newNode.children)) {
+    newNode.children = newNode.children.map((childId) => {
       let childNode = mindmapByKeys[childId];
-      if(childId._id){
+      if (childId._id) {
         childNode = mindmapByKeys[childId._id];
       }
+      //check if child node is not null and is an object
       if (!childNode) {
         console.error("Missing child node in mindmapByKeys for key:", childId);
         return { name: "Missing Node", children: [] }; // Fallback node structure
@@ -21,10 +24,10 @@ export const convertToMindmap = (currentNode, mindmapByKeys) => {
     });
   } else {
     console.warn("Children not an array or undefined:", currentNode);
-    currentNode.children = [];
+    newNode.children = [];
   }
 
-  return currentNode;
+  return newNode;
 };
 
 export function moveToRoot(nodeId, nodes) {
@@ -53,3 +56,11 @@ export function moveToRoot(nodeId, nodes) {
 
   return path;
 }
+
+export const formatData = (mindmapByKeys) => {
+  const rootKey = Object.keys(mindmapByKeys)[0];
+  const rootNode = { ...mindmapByKeys[rootKey] };
+  delete rootNode.x;
+  const formattedData =  [convertToMindmap(rootNode, mindmapByKeys)];
+  return formattedData;
+};

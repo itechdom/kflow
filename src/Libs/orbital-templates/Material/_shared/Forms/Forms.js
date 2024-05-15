@@ -73,7 +73,6 @@ const Fields = enhance(
     onRefDelete,
     ...rest
   }) => {
-    console.log(form);
     if (form) {
       let fieldsView = form.fields.map((field, index) => {
         let falseDecisions = visibleWhenFilter(

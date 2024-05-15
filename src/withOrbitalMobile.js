@@ -105,8 +105,6 @@ const withOrbitalMobile = ({
     render() {
       const { isLoggedIn } = this.state;
       const { classes } = this.props;
-      console.log("WITH ORBITAL CLASSES", classes);
-      console.log("WITH ORBITAL THEME", theme);
       const currentRouteList = isLoggedIn ? routeList : routeListLoggedOut;
       return (
         <ThemeProvider theme={theme}>
@@ -115,7 +113,6 @@ const withOrbitalMobile = ({
               <Route
                 path="/auth/login"
                 render={({ location, history, match }) => {
-                  console.log("LOGIN PAGE");
                   return (
                     <LoginWrapper backgroundImage={loginBG}>
                       <LoginWithAuth

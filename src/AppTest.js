@@ -58,7 +58,6 @@ const KnowledgeCrud = prop => <Wikipedia
     SERVER={config.SERVER}
     offlineStorage={offlineStorage}
     render={(props) => {
-      console.log("PROPS", props);
       return <>
         <Another fetchTopicByPage={props.fetchWikipediaPageByTopic} {...props} />
       </>

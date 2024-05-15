@@ -35,16 +35,19 @@ export const useML = (offlineStorage, SERVER, query, modelName) => {
       .then((token) => {
         return axios
           .post(`${SERVER.host}:${SERVER.port}/${modelName}/chat`, {
-            prompt: `complete this object with four levels of knowledge ${JSON.stringify(
+            prompt: `complete this object with four levels of knowledge. only return output in json. don't include \`\`\`json in your response. don't include original object in your response. ${JSON.stringify(
               path
             )}`,
             token,
           })
           .then((res) => {
-            dispatch(createModel({ data: model, modelName }));
             //check nulls
             if (res.data && res.data.choices[0] && res.data.choices[0].message.content) {
-              onResponse(res.data.choices[0].message.content);
+              let response = res.data.choices[0].message.content;
+              //strip all \n and \
+              response = response.replace(/\\n/g, "").replace(/\\/g, "");
+              console.log("PARSED RESPONSE", JSON.parse(response));
+              onResponse(JSON.parse(response));
             }
             setIsLoading(false);
           })
