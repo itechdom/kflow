@@ -23,6 +23,10 @@ function Tree({ mindmapByKeys, knowledge, knowledgeChat }) {
     }
   }, [mindmapByKeys]);
 
+  useEffect(() => {
+    console.log("DATA", data);
+  }, [data]);
+
   const handleNodeClick = useCallback((nodeData, { hierarchyPointNode }) => {
     const x = -hierarchyPointNode.x + window.innerWidth / 2;
     const y = -hierarchyPointNode.y + window.innerHeight / 8;
@@ -56,9 +60,7 @@ function Tree({ mindmapByKeys, knowledge, knowledgeChat }) {
                           nodeDatum.id,
                           mindmapByKeys
                         );
-                        dispatch(
-                          setModel({ model: { body: converted } })
-                        );
+                        dispatch(setModel({ model: { body: converted } }));
                       } catch (e) {
                         console.log("ERROR", e);
                       }
