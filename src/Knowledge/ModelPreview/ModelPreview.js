@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ConfirmDeleteModal from "Libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal";
-import { withState, compose } from "recompose";
 import KnowledgeContainer from "./KnowledgeContainer"; // Import MindmapContainer
 import { Grid } from "@material-ui/core";
 import {
@@ -16,54 +15,42 @@ import {
 } from "./Model.Preview.state";
 import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 
-const enhance = compose(
-  withState("edit", "setEdit", false),
-  withState("level", "setLevel", 0),
-  withState("editedNode", "setEditedNode", ""),
-  withState("mindmapByKeys", "setMindmapByKeys"),
-  withState("viewOption", "setViewOption", 0),
-  withState("deleting", "setDeleting", false),
-  withState("references", "setReferences"),
-  withState("graphContainer", "setGraphContainer"),
-  withState("listContainer", "setListContainer")
-);
-
 const ModelPreview = (props) => {
-  let {
+  const {
     model,
-    edit,
-    setEdit,
-    editedNode,
-    setEditedNode,
-    visibleNodeKeys,
-    setVisibleNodeByKeys,
-    mindmapByKeys,
-    setMindmapByKeys,
-    level,
-    setLevel,
     knowledge,
     knowledge_updateModel,
     knowledge_deleteModel,
     knowledge_chat,
     knowledge_loading,
-    viewOption,
     classes,
-    deleting,
-    setDeleting,
-    setReferences,
-    graphContainer,
-    onEdit,
-    onDelete,
     fetchWikipediaPageByTopic,
     history,
+    onEdit,
+    onDelete
   } = props;
-  React.useEffect(() => {
+
+  const [edit, setEdit] = useState(false);
+  const [level, setLevel] = useState(0);
+  const [editedNode, setEditedNode] = useState("");
+  const [mindmapByKeys, setMindmapByKeys] = useState(null);
+  const [viewOption, setViewOption] = useState(0);
+  const [deleting, setDeleting] = useState(false);
+  const [references, setReferences] = useState(null);
+  const [graphContainer, setGraphContainer] = useState(null);
+  const [listContainer, setListContainer] = useState(null);
+  const [visibleNodeKeys, setVisibleNodeByKeys] = useState([]);
+
+  useEffect(() => {
     fetchWikipediaPageByTopic(model.title);
-  }, []);
-  if (!mindmapByKeys && model && model.body) {
-    setMindmapByKeys(model.body);
-  }
-  // Operations passed to MindmapContainer
+  }, [model.title, fetchWikipediaPageByTopic]);
+
+  useEffect(() => {
+    if (!mindmapByKeys && model && model.body) {
+      setMindmapByKeys(model.body);
+    }
+  }, [model, mindmapByKeys]);
+
   const TreeOperations = {
     handleNodeAdd: handleNodeAdd.bind(null, mindmapByKeys, setMindmapByKeys),
     handleNodeEdit: handleNodeEdit.bind(null, mindmapByKeys, setEditedNode),
@@ -88,15 +75,7 @@ const ModelPreview = (props) => {
     isVisible: isVisible.bind(null, mindmapByKeys, visibleNodeKeys),
   };
 
-  React.useEffect(() => {
-    fetchWikipediaPageByTopic(model.title);
-  }, [model.title]);
-
-  if (!mindmapByKeys && model && model.body) {
-    setMindmapByKeys(model.body);
-  }
-
-  return mindmapByKeys? (
+  return mindmapByKeys ? (
     <div>
       <KnowledgeContainer
         model={model}
@@ -126,6 +105,9 @@ const ModelPreview = (props) => {
         }}
       />
     </div>
-  ):(<Loading></Loading>);
+  ) : (
+    <Loading />
+  );
 };
-export default enhance(ModelPreview);
+
+export default ModelPreview;
