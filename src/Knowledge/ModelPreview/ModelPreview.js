@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import ConfirmDeleteModal from "Libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal";
 import KnowledgeContainer from "./KnowledgeContainer"; // Import MindmapContainer
 import { Grid } from "@material-ui/core";
@@ -15,21 +15,19 @@ import {
 } from "./Model.Preview.state";
 import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 
-const ModelPreview = (props) => {
-  const {
-    model,
-    knowledge,
-    knowledge_updateModel,
-    knowledge_deleteModel,
-    knowledge_chat,
-    knowledge_loading,
-    classes,
-    fetchWikipediaPageByTopic,
-    history,
-    onEdit,
-    onDelete
-  } = props;
-
+const ModelPreview = ({
+  model,
+  knowledge,
+  knowledge_updateModel,
+  knowledge_deleteModel,
+  knowledge_chat,
+  knowledge_loading,
+  classes,
+  fetchWikipediaPageByTopic,
+  history,
+  onEdit,
+  onDelete,
+}) => {
   const [edit, setEdit] = useState(false);
   const [level, setLevel] = useState(0);
   const [editedNode, setEditedNode] = useState("");
@@ -51,29 +49,52 @@ const ModelPreview = (props) => {
     }
   }, [model, mindmapByKeys]);
 
-  const TreeOperations = {
-    handleNodeAdd: handleNodeAdd.bind(null, mindmapByKeys, setMindmapByKeys),
-    handleNodeEdit: handleNodeEdit.bind(null, mindmapByKeys, setEditedNode),
-    handleNodeUpdate: handleNodeUpdate.bind(
-      null,
-      mindmapByKeys,
-      setMindmapByKeys,
-      setEditedNode,
-      knowledge_updateModel,
-      model
-    ),
-    handleNodeToggle: handleNodeToggle.bind(
-      null,
-      mindmapByKeys,
-      setMindmapByKeys
-    ),
-    handleNodeDelete: handleNodeDelete.bind(
-      null,
-      mindmapByKeys,
-      setMindmapByKeys
-    ),
-    isVisible: isVisible.bind(null, mindmapByKeys, visibleNodeKeys),
-  };
+  const handleNodeAddCallback = useCallback(
+    (nodeId, title, id) => handleNodeAdd(mindmapByKeys, setMindmapByKeys, nodeId, title, id),
+    [mindmapByKeys, setMindmapByKeys]
+  );
+
+  const handleNodeEditCallback = useCallback(
+    (nodeId, title) => handleNodeEdit(mindmapByKeys, setEditedNode, nodeId, title),
+    [mindmapByKeys, setEditedNode]
+  );
+
+  const handleNodeUpdateCallback = useCallback(
+    (nodeId, title) =>
+      handleNodeUpdate(mindmapByKeys, setMindmapByKeys, setEditedNode, knowledge_updateModel, model, nodeId, title),
+    [mindmapByKeys, setMindmapByKeys, setEditedNode, knowledge_updateModel, model]
+  );
+
+  const handleNodeToggleCallback = useCallback(
+    (nodeId) => handleNodeToggle(mindmapByKeys, setMindmapByKeys, nodeId),
+    [mindmapByKeys, setMindmapByKeys]
+  );
+
+  const handleNodeDeleteCallback = useCallback(
+    (nodeId) => handleNodeDelete(mindmapByKeys, setMindmapByKeys, nodeId),
+    [mindmapByKeys, setMindmapByKeys]
+  );
+
+  const isVisibleCallback = useCallback(
+    (nodeId) => isVisible(mindmapByKeys, visibleNodeKeys, nodeId),
+    [mindmapByKeys, visibleNodeKeys]
+  );
+
+  const TreeOperations = useMemo(() => ({
+    handleNodeAdd: handleNodeAddCallback,
+    handleNodeEdit: handleNodeEditCallback,
+    handleNodeUpdate: handleNodeUpdateCallback,
+    handleNodeToggle: handleNodeToggleCallback,
+    handleNodeDelete: handleNodeDeleteCallback,
+    isVisible: isVisibleCallback,
+  }), [
+    handleNodeAddCallback,
+    handleNodeEditCallback,
+    handleNodeUpdateCallback,
+    handleNodeToggleCallback,
+    handleNodeDeleteCallback,
+    isVisibleCallback
+  ]);
 
   return mindmapByKeys ? (
     <div>
@@ -110,4 +131,4 @@ const ModelPreview = (props) => {
   );
 };
 
-export default ModelPreview;
+export default React.memo(ModelPreview);
