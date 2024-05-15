@@ -35,7 +35,10 @@ export const useML = (offlineStorage, SERVER, query, modelName) => {
       .then((token) => {
         return axios
           .post(`${SERVER.host}:${SERVER.port}/${modelName}/chat`, {
-            prompt: `complete this object with four levels of knowledge. only return output in json. don't include \`\`\`json in your response. don't include original object in your response. ${JSON.stringify(
+            prompt: `complete this object with four levels of knowledge. only return output in json. 
+            don't include \`\`\`json in your response. omit ${JSON.stringify(path)} in your response and only include new additions.
+            here is the object:
+            ${JSON.stringify(
               path
             )}`,
             token,
