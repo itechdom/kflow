@@ -49,8 +49,9 @@ export const useML = (offlineStorage, SERVER, query, modelName) => {
               let response = res.data.choices[0].message.content;
               //strip all \n and \
               response = response.replace(/\\n/g, "").replace(/\\/g, "");
-              console.log("PARSED RESPONSE", JSON.parse(response));
-              onResponse(JSON.parse(response));
+              const parsedResponse = JSON.parse(response);
+              //remove path from response and only include new additions
+              onResponse(parsedResponse);
             }
             setIsLoading(false);
           })
