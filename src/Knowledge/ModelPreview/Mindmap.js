@@ -14,6 +14,7 @@ function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
   const treeContainerRef = useRef(null);
 
   useEffect(() => {
+    console.log("mindmapByKeys", mindmapByKeys);
     const formatData = () => {
       const rootKey = Object.keys(mindmapByKeys)[0];
       const rootNode = { ...mindmapByKeys[rootKey] };
@@ -57,14 +58,12 @@ function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
                     const path = moveToRoot(nodeDatum.id, mindmapByKeys);
                     knowledgeChat(knowledge, path, (response) => {
                       try {
-                        convertObjectToMindmap(
+                        const converted = convertObjectToMindmap(
                           response,
                           nodeDatum.id,
-                          mindmapByKeys,
-                          (converted) => {
-                            handleNodeAdd(nodeDatum.id, converted, mindmapByKeys);
-                          }
+                          mindmapByKeys
                         );
+                        handleNodeAdd(nodeDatum.id, converted, mindmapByKeys);
                       } catch (e) {
                         console.log("ERROR", e);
                       }

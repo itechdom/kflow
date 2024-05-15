@@ -4,13 +4,16 @@ export const convertToMindmap = (currentNode, mindmapByKeys) => {
     return {}; // or any other fallback object structure
   }
 
-  currentNode.name = currentNode.title || "No title available";
-  currentNode.collapsed = true;
+  const newNode = {
+    ...currentNode,
+    name: currentNode.title || "No title available",
+    collapsed: true,
+  };
 
-  if (Array.isArray(currentNode.children)) {
-    currentNode.children = currentNode.children.map((childId) => {
+  if (Array.isArray(newNode.children)) {
+    newNode.children = newNode.children.map((childId) => {
       let childNode = mindmapByKeys[childId];
-      if(childId._id){
+      if (childId._id) {
         childNode = mindmapByKeys[childId._id];
       }
       if (!childNode) {
@@ -21,10 +24,10 @@ export const convertToMindmap = (currentNode, mindmapByKeys) => {
     });
   } else {
     console.warn("Children not an array or undefined:", currentNode);
-    currentNode.children = [];
+    newNode.children = [];
   }
 
-  return currentNode;
+  return newNode;
 };
 
 export function moveToRoot(nodeId, nodes) {

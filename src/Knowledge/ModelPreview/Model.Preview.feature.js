@@ -3,7 +3,6 @@ import { v1 as uuidv1 } from 'uuid';
 
 // Helper functions
 
-// Initial function to convert the whole object
 export const convertObjectToMindmap = (obj, rootId, mindmapByKeys) => {
   const nodesToAdd = bulkTraverseAndAddNodes(mindmapByKeys, obj, rootId);
   nodesToAdd.forEach((node) => {
@@ -12,7 +11,6 @@ export const convertObjectToMindmap = (obj, rootId, mindmapByKeys) => {
   return mindmapByKeys;
 };
 
-// Bulk traversal and addition of nodes
 export const bulkTraverseAndAddNodes = (mindmapByKeys, obj, parentId) => {
   let nodesToAdd = [];
 
@@ -29,7 +27,6 @@ export const bulkTraverseAndAddNodes = (mindmapByKeys, obj, parentId) => {
   return nodesToAdd;
 };
 
-// Handle node addition without setting state immediately
 export const bulkHandleNodeAdd = (mindmapByKeys, nodeId, title) => {
   const _id = uuidv1();
   const parent = mindmapByKeys[nodeId];
@@ -47,7 +44,6 @@ export const bulkHandleNodeAdd = (mindmapByKeys, nodeId, title) => {
   };
 };
 
-// Helper function to add node to mindmap without directly modifying state
 export const addNodeToMindmap = (mindmapByKeys, nodeId, title) => {
   const _id = uuidv1();
   const parent = mindmapByKeys[nodeId];
@@ -81,14 +77,12 @@ export const addNodeToMindmap = (mindmapByKeys, nodeId, title) => {
   };
 };
 
-// Compare paths for visibility
 export const comparePath = (currentLevel, visibleLevel) => {
   const visibleArray = visibleLevel.split('.');
   const currentArray = currentLevel.split('.');
   return currentArray.map((lev, index) => visibleArray[index] === lev);
 };
 
-// Check if a node is visible
 export const isVisible = (mindmapByKeys, visibleNodeKeys, nodeId) => {
   const currentLevel = mindmapByKeys[nodeId].level;
   if (visibleNodeKeys[currentLevel] === false) return false;
@@ -102,17 +96,19 @@ export const isVisible = (mindmapByKeys, visibleNodeKeys, nodeId) => {
   });
 };
 
-// Initial state for the mindmap slice
 const initialState = {
   mindmapByKeys: {},
   editedNode: '',
 };
 
-// Redux slice for mindmap operations
 const mindmapSlice = createSlice({
   name: 'mindmap',
   initialState,
   reducers: {
+    setModel: (state, action) => {
+      state.model = action.payload.model;
+      state.mindmapByKeys = action.payload.model.body;
+    },
     addNode: (state, action) => {
       const { nodeId, title } = action.payload;
       state.mindmapByKeys = addNodeToMindmap(state.mindmapByKeys, nodeId, title);
@@ -124,7 +120,7 @@ const mindmapSlice = createSlice({
       const { nodeId, key, value } = action.payload;
       state.mindmapByKeys[nodeId][key] = value;
     },
-    saveNode: (state, action) => {
+    saveNode: (state) => {
       let newMindmap = {};
       Object.keys(state.mindmapByKeys).forEach(kn => {
         newMindmap[kn] = {
@@ -136,7 +132,7 @@ const mindmapSlice = createSlice({
           },
         };
       });
-      state.mindmapByKeys = newMindmap;
+      state.model.body = newMindmap;
     },
     deleteNode: (state, action) => {
       const { nodeId } = action.payload;
@@ -180,6 +176,7 @@ const mindmapSlice = createSlice({
 });
 
 export const {
+  setModel,
   addNode,
   editNode,
   updateNode,

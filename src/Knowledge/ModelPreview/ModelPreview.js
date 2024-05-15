@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import ConfirmDeleteModal from 'Libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal';
-import KnowledgeContainer from './KnowledgeContainer';
+import React, { useState, useEffect, useCallback, useMemo } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import ConfirmDeleteModal from "Libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal";
+import KnowledgeContainer from "./KnowledgeContainer";
 import {
   addNode,
   editNode,
@@ -10,8 +10,9 @@ import {
   deleteNode,
   toggleNode,
   isVisible,
-} from './Model.Preview.feature';
-import Loading from 'Libs/orbital-templates/Material/_shared/Loading/Loading';
+  setModel,
+} from "./Model.Preview.feature";
+import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 
 const ModelPreview = ({
   model,
@@ -37,9 +38,7 @@ const ModelPreview = ({
   const [visibleNodeKeys, setVisibleNodeByKeys] = useState([]);
 
   useEffect(() => {
-    if (!mindmapByKeys && model && model.body) {
-      dispatch(saveNode({ model, updateModel: knowledge_updateModel }));
-    }
+    dispatch(setModel({ model }));
   }, [model, mindmapByKeys, dispatch, knowledge_updateModel]);
 
   const handleNodeAddCallback = useCallback(
@@ -72,21 +71,24 @@ const ModelPreview = ({
     [mindmapByKeys, visibleNodeKeys]
   );
 
-  const TreeOperations = useMemo(() => ({
-    handleNodeAdd: handleNodeAddCallback,
-    handleNodeEdit: handleNodeEditCallback,
-    handleNodeUpdate: handleNodeUpdateCallback,
-    handleNodeToggle: handleNodeToggleCallback,
-    handleNodeDelete: handleNodeDeleteCallback,
-    isVisible: isVisibleCallback,
-  }), [
-    handleNodeAddCallback,
-    handleNodeEditCallback,
-    handleNodeUpdateCallback,
-    handleNodeToggleCallback,
-    handleNodeDeleteCallback,
-    isVisibleCallback
-  ]);
+  const TreeOperations = useMemo(
+    () => ({
+      handleNodeAdd: handleNodeAddCallback,
+      handleNodeEdit: handleNodeEditCallback,
+      handleNodeUpdate: handleNodeUpdateCallback,
+      handleNodeToggle: handleNodeToggleCallback,
+      handleNodeDelete: handleNodeDeleteCallback,
+      isVisible: isVisibleCallback,
+    }),
+    [
+      handleNodeAddCallback,
+      handleNodeEditCallback,
+      handleNodeUpdateCallback,
+      handleNodeToggleCallback,
+      handleNodeDeleteCallback,
+      isVisibleCallback,
+    ]
+  );
 
   return mindmapByKeys ? (
     <div>
@@ -102,7 +104,7 @@ const ModelPreview = ({
         setReferences={setReferences}
         graphContainer={graphContainer}
         TreeOperations={TreeOperations}
-        onBack={() => history.push('/')}
+        onBack={() => history.push("/")}
         onEdit={onEdit}
         onDelete={onDelete}
         classes={classes}
