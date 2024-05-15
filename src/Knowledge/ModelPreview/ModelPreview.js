@@ -34,15 +34,15 @@ const ModelPreview = ({
   const [listContainer, setListContainer] = useState(null);
   const [visibleNodeKeys, setVisibleNodeByKeys] = useState([]);
 
-  useEffect(() => {
-    fetchWikipediaPageByTopic(model.title);
-  }, [model.title, fetchWikipediaPageByTopic]);
+  // useEffect(() => {
+  //   fetchWikipediaPageByTopic(model.title);
+  // }, [model, fetchWikipediaPageByTopic]);
 
   useEffect(() => {
     if (!mindmapByKeys && model && model.body) {
       setMindmapByKeys(model.body);
     }
-  }, [model]);
+  }, [model, mindmapByKeys]);
 
   const handleNodeAddCallback = useCallback(
     (nodeId, title, id) => handleNodeAdd(mindmapByKeys, setMindmapByKeys, nodeId, title, id),
