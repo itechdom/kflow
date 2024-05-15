@@ -1,17 +1,61 @@
 import { v1 as uuidv1 } from "uuid";
 
-// Helper functions
-export const convertObjectToMindmap = (obj, rootId, mindmapByKeys) => {
-  // Add root node first
-  console.log("ROOT ID", rootId);
-  mindmapByKeys = addNodeToMindmap(mindmapByKeys, null, rootId);
+// Centralized function to create a new node
+const createNode = (nodeId, title, mindmapByKeys) => {
+  const _id = uuidv1();
+  let group = null;
+  let size = null;
+  let level = "0";
+  let parent = null;
 
-  const nodesToAdd = bulkTraverseAndAddNodes(mindmapByKeys, obj, rootId);
+  if (nodeId) {
+    parent = mindmapByKeys[nodeId];
+    if (!parent) {
+      throw new Error(`Parent not found for nodeId: ${nodeId}`);
+    }
+    group = null;
+    size = null;
+    level = `${parent.level}.${parent.children.length}`;
+  }
+
+  const node = {
+    _id,
+    id: _id,
+    title,
+    level,
+    children: [],
+    parent: nodeId,
+    size,
+    group,
+    links: parent ? { source: parent._id, target: _id, title } : {},
+  };
+
+  return { _id, node };
+};
+
+// Function to convert object to mindmap
+export const convertObjectToMindmap = (obj, rootId, mindmapByKeys) => {
+  const { _id: rootNodeId, node: rootNode } = createNode(
+    null,
+    rootId,
+    mindmapByKeys
+  );
+  let newMindmapByKeys = {
+    ...mindmapByKeys,
+    [rootNodeId]: rootNode,
+  };
+
+  const nodesToAdd = bulkTraverseAndAddNodes(newMindmapByKeys, obj, rootNodeId);
   nodesToAdd.forEach((node) => {
-    mindmapByKeys = addNodeToMindmap(mindmapByKeys, node.parent, node.title);
+    newMindmapByKeys = addNodeToMindmap(
+      newMindmapByKeys,
+      node.parent,
+      node.title,
+      node._id
+    );
   });
 
-  return mindmapByKeys;
+  return newMindmapByKeys;
 };
 
 export const bulkTraverseAndAddNodes = (mindmapByKeys, obj, parentId) => {
@@ -20,90 +64,70 @@ export const bulkTraverseAndAddNodes = (mindmapByKeys, obj, parentId) => {
   if (typeof obj !== "object") return nodesToAdd;
 
   Object.keys(obj).forEach((key) => {
-    const node = bulkHandleNodeAdd(mindmapByKeys, parentId, key);
+    const { _id, node } = createNode(parentId, key, mindmapByKeys);
     nodesToAdd.push(node);
-    mindmapByKeys = addNodeToMindmap(mindmapByKeys, parentId, key);
+    mindmapByKeys = addNodeToMindmap(mindmapByKeys, parentId, key, _id);
     nodesToAdd = nodesToAdd.concat(
-      bulkTraverseAndAddNodes(mindmapByKeys, obj[key], node._id)
+      bulkTraverseAndAddNodes(mindmapByKeys, obj[key], _id)
     );
   });
 
   return nodesToAdd;
 };
 
-export const bulkHandleNodeAdd = (mindmapByKeys, nodeId, title) => {
-  const _id = uuidv1();
-  let group = 0;
-  let size = 20;
+export const addNodeToMindmap = (mindmapByKeys, nodeId, title, _id = null) => {
+  if (!_id) {
+    const nodeCreation = createNode(nodeId, title, mindmapByKeys);
+    _id = nodeCreation._id;
+    const node = nodeCreation.node;
 
-  if (nodeId) {
-    const parent = mindmapByKeys[nodeId];
-    if (!parent) {
-      throw new Error(
-        `Parent not found during bulkHandleNodeAdd for nodeId: ${nodeId}`
-      );
+    const newMindmapByKeys = {
+      ...mindmapByKeys,
+      [_id]: node,
+    };
+
+    if (nodeId) {
+      newMindmapByKeys[nodeId] = {
+        ...mindmapByKeys[nodeId],
+        children: [...mindmapByKeys[nodeId].children, _id],
+      };
     }
-    group = parseInt(parent.level.split(".").join(""));
-    size = 20 / parent.level.split(".").length;
-  }
 
-  return {
-    _id,
-    id: _id,
-    title,
-    name: title,
-    parent: nodeId,
-    size,
-    group,
-  };
-};
-
-export const addNodeToMindmap = (mindmapByKeys, nodeId, title) => {
-  const _id = uuidv1();
-  let parent = null;
-  let group = 0;
-  let size = 20;
-
-  if (nodeId) {
-    parent = mindmapByKeys[nodeId];
+    return newMindmapByKeys;
+  } else {
+    const parent = mindmapByKeys[nodeId];
     if (!parent) {
       throw new Error(
         `Parent not found during addNodeToMindmap for nodeId: ${nodeId}`
       );
     }
-    group = parseInt(parent.level.split(".").join(""));
-    size = 20 / parent.level.split(".").length;
-  }
-
-  const newMindmapByKeys = {
-    ...mindmapByKeys,
-    [_id]: {
+    const group = null;
+    const size = null;
+    const level = `${parent.level}.${parent.children.length}`;
+    const node = {
       _id,
       id: _id,
       title,
-      level: parent ? `${parent.level}.${parent.children.length}` : "0",
+      level,
       children: [],
       parent: nodeId,
       size,
       group,
-      links: parent
-        ? {
-            source: parent,
-            target: _id,
-            title,
-          }
-        : {},
-    },
-  };
+      links: { source: nodeId, target: _id, title },
+    };
 
-  if (nodeId) {
+    const newMindmapByKeys = {
+      ...mindmapByKeys,
+      [_id]: node,
+    };
+
     newMindmapByKeys[nodeId] = {
       ...mindmapByKeys[nodeId],
       children: [...mindmapByKeys[nodeId].children, _id],
     };
-  }
 
-  return newMindmapByKeys;
+    return newMindmapByKeys;
+  }
 };
 
 // Compare paths for visibility

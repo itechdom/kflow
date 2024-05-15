@@ -15,6 +15,7 @@ function Tree({ mindmapByKeys, knowledge, knowledgeChat }) {
   const [translate, setTranslate] = useState({ x: 450, y: 450 });
   const [scale, setScale] = useState(0.1);
   const treeContainerRef = useRef(null);
+  console.log("DATA", data);
 
   useEffect(() => {
     const formatData = () => {
@@ -60,9 +61,7 @@ function Tree({ mindmapByKeys, knowledge, knowledgeChat }) {
                         const converted = convertObjectToMindmap(
                           response,
                           nodeDatum.id,
-                          mindmapByKeys,
-                          (nodeId, title) =>
-                            dispatch(addNode({ nodeId, title }))
+                          mindmapByKeys
                         );
                         setData([converted]);
                       } catch (e) {

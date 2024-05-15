@@ -1,9 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-// Helper functions
 import {
-  addNodeToMindmap
-} from './Model.Preview.feature.helper'; // Adjust import path accordingly
-
+  convertObjectToMindmap,
+  addNodeToMindmap,
+} from "./Model.Preview.feature.helper"; // Adjust import path accordingly
 // Initial state for the mindmap slice
 const initialState = {
   mindmapByKeys: {},
@@ -20,11 +19,7 @@ const mindmapSlice = createSlice({
     },
     addNode: (state, action) => {
       const { nodeId, title } = action.payload;
-      state.mindmapByKeys = addNodeToMindmap(
-        state.mindmapByKeys,
-        nodeId,
-        title
-      );
+      state.mindmapByKeys = addNodeToMindmap(state.mindmapByKeys, nodeId, title);
     },
     editNode: (state, action) => {
       state.editedNode = action.payload.nodeId;
@@ -36,13 +31,13 @@ const mindmapSlice = createSlice({
     saveNode: (state) => {
       let newMindmap = {};
       Object.keys(state.mindmapByKeys).forEach((kn) => {
+        const node = state.mindmapByKeys[kn];
         newMindmap[kn] = {
-          ...state.mindmapByKeys[kn],
+          ...node,
           links: {
-            source:
-              state.mindmapByKeys[kn].parent || state.mindmapByKeys[kn]._id,
-            target: state.mindmapByKeys[kn]._id,
-            title: state.mindmapByKeys[kn].title,
+            source: node.parent || node._id,
+            target: node._id,
+            title: node.title,
           },
         };
       });
@@ -51,16 +46,13 @@ const mindmapSlice = createSlice({
     deleteNode: (state, action) => {
       const { nodeId } = action.payload;
       const parent = state.mindmapByKeys[nodeId].parent;
-      const { [nodeId]: _, ...mindmapByKeysWithoutNodeId } =
-        state.mindmapByKeys;
+      const { [nodeId]: _, ...mindmapByKeysWithoutNodeId } = state.mindmapByKeys;
 
       state.mindmapByKeys = {
         ...mindmapByKeysWithoutNodeId,
         [parent]: {
           ...state.mindmapByKeys[parent],
-          children: state.mindmapByKeys[parent].children.filter(
-            (id) => id !== nodeId
-          ),
+          children: state.mindmapByKeys[parent].children.filter(id => id !== nodeId),
         },
       };
     },
@@ -89,9 +81,7 @@ const mindmapSlice = createSlice({
     searchNodes: (state, action) => {
       const regex = new RegExp(action.payload.text.toLowerCase());
       state.searchResults = Object.keys(state.mindmapByKeys)
-        .filter((mk) =>
-          state.mindmapByKeys[mk].title.toLowerCase().match(regex)
-        )
+        .filter((mk) => state.mindmapByKeys[mk].title.toLowerCase().match(regex))
         .map((f) => state.mindmapByKeys[f]);
     },
   },
