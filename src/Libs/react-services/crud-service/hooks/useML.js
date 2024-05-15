@@ -41,7 +41,6 @@ export const useML = (offlineStorage, SERVER, query, modelName) => {
             token,
           })
           .then((res) => {
-            dispatch(createModel({ data: model, modelName }));
             //check nulls
             if (res.data && res.data.choices[0] && res.data.choices[0].message.content) {
               let response = res.data.choices[0].message.content;

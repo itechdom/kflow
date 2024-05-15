@@ -7,7 +7,7 @@ export const convertToMindmap = (currentNode, mindmapByKeys) => {
   const newNode = {
     ...currentNode,
     name: currentNode.title || "No title available",
-    collapsed: true,
+    collapsed: false,
   };
   if (Array.isArray(newNode.children)) {
     newNode.children = newNode.children.map((childId) => {

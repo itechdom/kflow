@@ -15,7 +15,7 @@ const mindmapSlice = createSlice({
   reducers: {
     setModel: (state, action) => {
       state.model = action.payload.model;
-      state.mindmapByKeys = action.payload.model.body;
+      state.mindmapByKeys = {...state.mindmapByKeys, ...action.payload.model.body};
     },
     addNode: (state, action) => {
       const { nodeId, title } = action.payload;

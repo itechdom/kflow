@@ -39,7 +39,7 @@ const ModelPreview = ({
 
   useEffect(() => {
     dispatch(setModel({ model }));
-  }, [model, mindmapByKeys, dispatch, knowledge_updateModel]);
+  }, []);
 
   const handleNodeAddCallback = useCallback(
     (nodeId, title) => dispatch(addNode({ nodeId, title })),

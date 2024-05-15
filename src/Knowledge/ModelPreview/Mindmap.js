@@ -18,14 +18,10 @@ function Tree({ mindmapByKeys, knowledge, knowledgeChat }) {
 
   useEffect(() => {
     if (Object.keys(mindmapByKeys).length) {
-      console.log("Mindmap by keys", mindmapByKeys);
-      setData(formatData(mindmapByKeys));
+      const formattedData = formatData(mindmapByKeys);
+      setData(formattedData);
     }
   }, [mindmapByKeys]);
-
-  useEffect(() => {
-    console.log("DATA", data);
-  }, [data]);
 
   const handleNodeClick = useCallback((nodeData, { hierarchyPointNode }) => {
     const x = -hierarchyPointNode.x + window.innerWidth / 2;
@@ -60,6 +56,7 @@ function Tree({ mindmapByKeys, knowledge, knowledgeChat }) {
                           nodeDatum.id,
                           mindmapByKeys
                         );
+                        console.log("CONVERTED", converted);
                         dispatch(setModel({ model: { body: converted } }));
                       } catch (e) {
                         console.log("ERROR", e);
@@ -83,4 +80,4 @@ function Tree({ mindmapByKeys, knowledge, knowledgeChat }) {
   );
 }
 
-export default React.memo(Tree);
+export default Tree;

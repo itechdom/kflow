@@ -3,8 +3,8 @@ import { v1 as uuidv1 } from "uuid";
 // Centralized function to create a new node
 const createNode = (nodeId, title, mindmapByKeys) => {
   const _id = uuidv1();
-  let group = null;
-  let size = null;
+  let group = 0;
+  let size = "20";
   let level = "0";
   let parent = null;
 
