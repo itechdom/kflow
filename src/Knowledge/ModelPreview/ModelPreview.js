@@ -1,16 +1,12 @@
 import React, { useState, useEffect, useCallback, useMemo } from "react";
 import ConfirmDeleteModal from "Libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal";
-import KnowledgeContainer from "./KnowledgeContainer"; // Import MindmapContainer
-import { Grid } from "@material-ui/core";
+import KnowledgeContainer from "./KnowledgeContainer";
 import {
   handleNodeAdd,
   handleNodeDelete,
   handleNodeEdit,
-  handleNodeSave,
-  handleNodeSwap,
-  handleNodeToggle,
   handleNodeUpdate,
-  handleNodeSearch,
+  handleNodeToggle,
   isVisible,
 } from "./Model.Preview.state";
 import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
@@ -21,7 +17,6 @@ const ModelPreview = ({
   knowledge_updateModel,
   knowledge_deleteModel,
   knowledge_chat,
-  knowledge_loading,
   classes,
   fetchWikipediaPageByTopic,
   history,
@@ -47,32 +42,32 @@ const ModelPreview = ({
     if (!mindmapByKeys && model && model.body) {
       setMindmapByKeys(model.body);
     }
-  }, [model, mindmapByKeys]);
+  }, [model]);
 
   const handleNodeAddCallback = useCallback(
     (nodeId, title, id) => handleNodeAdd(mindmapByKeys, setMindmapByKeys, nodeId, title, id),
-    [mindmapByKeys, setMindmapByKeys]
+    [mindmapByKeys]
   );
 
   const handleNodeEditCallback = useCallback(
     (nodeId, title) => handleNodeEdit(mindmapByKeys, setEditedNode, nodeId, title),
-    [mindmapByKeys, setEditedNode]
+    [mindmapByKeys]
   );
 
   const handleNodeUpdateCallback = useCallback(
     (nodeId, title) =>
       handleNodeUpdate(mindmapByKeys, setMindmapByKeys, setEditedNode, knowledge_updateModel, model, nodeId, title),
-    [mindmapByKeys, setMindmapByKeys, setEditedNode, knowledge_updateModel, model]
+    [mindmapByKeys, knowledge_updateModel, model]
   );
 
   const handleNodeToggleCallback = useCallback(
     (nodeId) => handleNodeToggle(mindmapByKeys, setMindmapByKeys, nodeId),
-    [mindmapByKeys, setMindmapByKeys]
+    [mindmapByKeys]
   );
 
   const handleNodeDeleteCallback = useCallback(
     (nodeId) => handleNodeDelete(mindmapByKeys, setMindmapByKeys, nodeId),
-    [mindmapByKeys, setMindmapByKeys]
+    [mindmapByKeys]
   );
 
   const isVisibleCallback = useCallback(

@@ -29,7 +29,6 @@ const KnowledgeContainer = ({
   onBack,
   onEdit,
   onDelete,
-  onAdd,
   classes,
 }) => {
   return (
@@ -55,7 +54,6 @@ const KnowledgeContainer = ({
       <Grid container spacing={2} className={classes.viewContainer}>
         <Grid item xs={12} md={6}>
           <Paper>
-            {/* Mindmap or GraphTree depending on tab selection */}
             {viewOption === 0 ? (
               <Mindmap
                 knowledge={knowledge}
@@ -67,7 +65,7 @@ const KnowledgeContainer = ({
                 width={graphContainer && graphContainer.width}
                 height={graphContainer && graphContainer.height}
                 {...TreeOperations}
-              ></Mindmap>
+              />
             ) : (
               <GraphTree
                 knowledge={knowledge}
@@ -84,7 +82,6 @@ const KnowledgeContainer = ({
         </Grid>
         <Grid item xs={12} md={6}>
           <Paper>
-            {/* ListTree or additional details panel */}
             <ListTree
               knowledge={knowledge}
               mindmapByKeys={mindmapByKeys}
@@ -104,4 +101,4 @@ const KnowledgeContainer = ({
   );
 };
 
-export default KnowledgeContainer;
+export default React.memo(KnowledgeContainer);

@@ -1,16 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Tree as DTree } from "react-d3-tree";
 import CustomTreeNode from "./CustomTreeNode";
 import { theme3Light } from "./Themes";
-import { convertToMindmap, moveToRoot } from "./Mindmap.utils"; // Replace "./utils" with the correct path to the module containing the convertToMindmap function
+import { convertToMindmap, moveToRoot } from "./Mindmap.utils";
 import { convertObjectToMindmap } from "./Model.Preview.state";
 
-// Constants for themes, you can uncomment any theme you want to use
-// const { background, baseStyle, textColor } = theme1Light;
-// const { background, baseStyle, textColor } = theme1Dark;
-// const { background, baseStyle, textColor } = theme2Light;
-// const { background, baseStyle, textColor } = theme2Dark;
-const { background, baseStyle, textColor } = theme3Light; // Using theme3Light for example
+const { background, baseStyle, textColor } = theme3Light;
 
 function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
   const [data, setData] = useState([]);
@@ -31,13 +26,13 @@ function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
     }
   }, [mindmapByKeys]);
 
-  const handleNodeClick = (nodeData, { hierarchyPointNode }) => {
+  const handleNodeClick = useCallback((nodeData, { hierarchyPointNode }) => {
     const x = -hierarchyPointNode.x + window.innerWidth / 2;
     const y = -hierarchyPointNode.y + window.innerHeight / 8;
-    const newScale = 0.5; // Adjust scale as needed
+    const newScale = 0.5;
     setTranslate({ x, y });
     setScale(newScale);
-  };
+  }, []);
 
   return (
     <div
@@ -63,15 +58,11 @@ function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
                     knowledgeChat(knowledge, path, (response) => {
                       try {
                         convertObjectToMindmap(
-                         response,
+                          response,
                           nodeDatum.id,
                           mindmapByKeys,
                           (converted) => {
-                            handleNodeAdd(
-                              nodeDatum.id,
-                              converted,
-                              mindmapByKeys
-                            );
+                            handleNodeAdd(nodeDatum.id, converted, mindmapByKeys);
                           }
                         );
                       } catch (e) {
@@ -88,6 +79,7 @@ function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
           orientation="vertical"
           pathFunc="straight"
           translate={translate}
+          scale={scale}
           ref={treeContainerRef}
         />
       )}
@@ -95,4 +87,4 @@ function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
   );
 }
 
-export default Tree;
+export default React.memo(Tree);

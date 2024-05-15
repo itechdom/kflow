@@ -144,4 +144,4 @@ const Knowledge = ({
   );
 };
 
-export default withStyles(styles, { defaultTheme: theme })(Knowledge);
+export default React.memo(withStyles(styles, { defaultTheme: theme })(Knowledge));
