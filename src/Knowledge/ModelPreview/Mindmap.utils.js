@@ -61,5 +61,6 @@ export const formatData = (mindmapByKeys) => {
   const rootKey = Object.keys(mindmapByKeys)[0];
   const rootNode = { ...mindmapByKeys[rootKey] };
   delete rootNode.x;
-  return [convertToMindmap(rootNode, mindmapByKeys)];
+  const formattedData =  [convertToMindmap(rootNode, mindmapByKeys)];
+  return formattedData;
 };
