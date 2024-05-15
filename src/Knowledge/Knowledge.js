@@ -6,6 +6,7 @@ import ModelList from "Libs/orbital-templates/Material/_shared/ModelList/ModelLi
 import ModelListItem from "./ModelList/ModelListItemFP";
 import ModelPreview from "./ModelPreview/ModelPreview";
 import { withStyles, Button } from "@material-ui/core";
+
 const ModelListActions = ({ onAdd }) => {
   return (
     <Button
@@ -20,6 +21,7 @@ const ModelListActions = ({ onAdd }) => {
     </Button>
   );
 };
+
 const Knowledge = ({
   knowledge,
   knowledge_fetchModel,
@@ -57,10 +59,13 @@ const Knowledge = ({
   ...rest
 }) => {
   console.log(knowledge, "here");
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  match.path = "/";
+
+  const matchPath = "/";
+
   return (
     <ModelList
       modelArray={knowledge}
@@ -105,7 +110,7 @@ const Knowledge = ({
       knowledgeSearch={knowledge_searchKnowledge}
       knowledgeChat={knowledge_chat}
       location={location}
-      match={match}
+      match={{ ...match, path: matchPath }}
       history={history}
       classes={classes}
       form={form}
@@ -120,19 +125,19 @@ const Knowledge = ({
       loading={loading}
       getUnsplash={getUnsplash}
       onAdd={() => {
-        history.push(`${match.path}add`);
+        history.push(`${matchPath}add`);
       }}
       onView={(model) => {
-        history.push(`${match.path}knowledge/view/${model._id}`);
+        history.push(`${matchPath}knowledge/view/${model._id}`);
       }}
       onCreateSubmit={(model) => {
-        history.push(`${match.path}knowledge/view/${model._id}`);
+        history.push(`${matchPath}knowledge/view/${model._id}`);
       }}
       page={knowledge_page}
       setPage={knowledge_setPage}
       enableSearch={true}
       onSearchSelect={(model) => {
-        history.push(`${match.path}knowledge/view/${model._id}`);
+        history.push(`${matchPath}knowledge/view/${model._id}`);
       }}
       onChangePage={(page) => {
         knowledge_setPage(page);
