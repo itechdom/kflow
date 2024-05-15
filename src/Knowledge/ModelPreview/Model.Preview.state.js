@@ -7,12 +7,12 @@ export const handleNodeAdd = (
   title
 ) => {
   const _id = uuidv1();
-  if(!mindmapByKeys){
+  if (!mindmapByKeys) {
     console.log("Mindmap not found");
     return;
   }
   const parent = mindmapByKeys[nodeId];
-  if(!parent){
+  if (!parent) {
     console.log("Parent not found");
     return;
   }
@@ -43,7 +43,6 @@ export const handleNodeAdd = (
       },
     },
   };
-  setMindmapByKeys(newState);
   return newState;
 };
 
@@ -67,7 +66,6 @@ export const handleNodeUpdate = (
       [key]: value,
     },
   };
-  setMindmapByKeys(newState);
   handleNodeSave(updateModel, model, newState);
   setEditedNode("");
 };
@@ -97,7 +95,7 @@ export const handleNodeDelete = (mindmapByKeys, setMindmapByKeys, nodeId) => {
       children: mindmapByKeys[parent].children.filter((id) => id !== nodeId),
     },
   };
-  setMindmapByKeys(newState);
+  return newState;
 };
 
 export const handleNodeToggle = (mindmapByKeys, setMindmapByKeys, nodeId) => {
@@ -107,14 +105,15 @@ export const handleNodeToggle = (mindmapByKeys, setMindmapByKeys, nodeId) => {
     parents[currentParent] = { ...mindmapByKeys[currentParent], visible: true };
     currentParent = mindmapByKeys[currentParent].parent;
   }
-  setMindmapByKeys((prevState) => ({
-    ...prevState,
+  const newState = {
+    ...mindmapByKeys,
     ...parents,
     [nodeId]: {
-      ...prevState[nodeId],
+      ...mindmapByKeys[nodeId],
       visible: !mindmapByKeys[nodeId].visible,
     },
-  }));
+  };
+  return newState;
 };
 
 export const handleNodeSearch = (mindmapByKeys, text) => {
@@ -147,15 +146,13 @@ export const isVisible = (mindmapByKeys, visibleNodeKeys, nodeId) => {
 export const convertObjectToMindmap = (
   obj,
   rootId,
-  mindmapByKeys,
-  setMindmapByKeys
+  mindmapByKeys
 ) => {
   const nodesToAdd = bulkTraverseAndAddNodes(mindmapByKeys, obj, rootId);
-  let newState = { ...mindmapByKeys };
   nodesToAdd.forEach((node) => {
-    newState = handleNodeAdd(newState, () => {}, node.parent, node.title);
+    handleNodeAdd(node, () => {}, node.parent, node.title);
   });
-  setMindmapByKeys(newState);
+  return nodesToAdd;
 };
 
 // Bulk traversal and addition of nodes

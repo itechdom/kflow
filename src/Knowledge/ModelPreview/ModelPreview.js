@@ -1,14 +1,17 @@
-import React, { useState, useEffect, useCallback, useMemo } from "react";
+import React, { useEffect, useState, useCallback, useMemo } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import ConfirmDeleteModal from "Libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal";
 import KnowledgeContainer from "./KnowledgeContainer";
 import {
-  handleNodeAdd,
-  handleNodeDelete,
-  handleNodeEdit,
-  handleNodeUpdate,
-  handleNodeToggle,
+  addNode,
+  editNode,
+  updateNode,
+  saveNode,
+  deleteNode,
+  toggleNode,
+  searchNodes,
   isVisible,
-} from "./Model.Preview.state";
+} from "./Model.Preview.feature";
 import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 
 const ModelPreview = ({
@@ -23,10 +26,13 @@ const ModelPreview = ({
   onEdit,
   onDelete,
 }) => {
+  const dispatch = useDispatch();
+  const mindmapByKeys = useSelector((state) => {
+    return state.mindmap.mindmapByKeys;
+  });
+  const editedNode = useSelector((state) => state.mindmap.editedNode);
   const [edit, setEdit] = useState(false);
   const [level, setLevel] = useState(0);
-  const [editedNode, setEditedNode] = useState("");
-  const [mindmapByKeys, setMindmapByKeys] = useState(null);
   const [viewOption, setViewOption] = useState(0);
   const [deleting, setDeleting] = useState(false);
   const [references, setReferences] = useState(null);
@@ -34,40 +40,35 @@ const ModelPreview = ({
   const [listContainer, setListContainer] = useState(null);
   const [visibleNodeKeys, setVisibleNodeByKeys] = useState([]);
 
-  // useEffect(() => {
-  //   fetchWikipediaPageByTopic(model.title);
-  // }, [model, fetchWikipediaPageByTopic]);
-
   useEffect(() => {
-    if (!mindmapByKeys && model && model.body) {
-      setMindmapByKeys(model.body);
+    if (model && model.body) {
+      dispatch(saveNode({ model, updateModel: knowledge_updateModel }));
     }
-  }, [model, mindmapByKeys]);
+  }, [model, mindmapByKeys, dispatch, knowledge_updateModel]);
 
   const handleNodeAddCallback = useCallback(
-    (nodeId, title, id) => handleNodeAdd(mindmapByKeys, setMindmapByKeys, nodeId, title, id),
-    [mindmapByKeys]
+    (nodeId, title) => dispatch(addNode({ nodeId, title })),
+    [dispatch]
   );
 
   const handleNodeEditCallback = useCallback(
-    (nodeId, title) => handleNodeEdit(mindmapByKeys, setEditedNode, nodeId, title),
-    [mindmapByKeys]
+    (nodeId) => dispatch(editNode({ nodeId })),
+    [dispatch]
   );
 
   const handleNodeUpdateCallback = useCallback(
-    (nodeId, title) =>
-      handleNodeUpdate(mindmapByKeys, setMindmapByKeys, setEditedNode, knowledge_updateModel, model, nodeId, title),
-    [mindmapByKeys, knowledge_updateModel, model]
+    (nodeId, key, value) => dispatch(updateNode({ nodeId, key, value })),
+    [dispatch]
   );
 
   const handleNodeToggleCallback = useCallback(
-    (nodeId) => handleNodeToggle(mindmapByKeys, setMindmapByKeys, nodeId),
-    [mindmapByKeys]
+    (nodeId) => dispatch(toggleNode({ nodeId })),
+    [dispatch]
   );
 
   const handleNodeDeleteCallback = useCallback(
-    (nodeId) => handleNodeDelete(mindmapByKeys, setMindmapByKeys, nodeId),
-    [mindmapByKeys]
+    (nodeId) => dispatch(deleteNode({ nodeId })),
+    [dispatch]
   );
 
   const isVisibleCallback = useCallback(
@@ -75,21 +76,24 @@ const ModelPreview = ({
     [mindmapByKeys, visibleNodeKeys]
   );
 
-  const TreeOperations = useMemo(() => ({
-    handleNodeAdd: handleNodeAddCallback,
-    handleNodeEdit: handleNodeEditCallback,
-    handleNodeUpdate: handleNodeUpdateCallback,
-    handleNodeToggle: handleNodeToggleCallback,
-    handleNodeDelete: handleNodeDeleteCallback,
-    isVisible: isVisibleCallback,
-  }), [
-    handleNodeAddCallback,
-    handleNodeEditCallback,
-    handleNodeUpdateCallback,
-    handleNodeToggleCallback,
-    handleNodeDeleteCallback,
-    isVisibleCallback
-  ]);
+  const TreeOperations = useMemo(
+    () => ({
+      handleNodeAdd: handleNodeAddCallback,
+      handleNodeEdit: handleNodeEditCallback,
+      handleNodeUpdate: handleNodeUpdateCallback,
+      handleNodeToggle: handleNodeToggleCallback,
+      handleNodeDelete: handleNodeDeleteCallback,
+      isVisible: isVisibleCallback,
+    }),
+    [
+      handleNodeAddCallback,
+      handleNodeEditCallback,
+      handleNodeUpdateCallback,
+      handleNodeToggleCallback,
+      handleNodeDeleteCallback,
+      isVisibleCallback,
+    ]
+  );
 
   return mindmapByKeys ? (
     <div>
