@@ -1,8 +1,21 @@
 import { v1 as uuidv1 } from "uuid";
 
-export const handleNodeAdd = (mindmapByKeys, setMindmapByKeys, nodeId, title) => {
+export const handleNodeAdd = (
+  mindmapByKeys,
+  setMindmapByKeys,
+  nodeId,
+  title
+) => {
   const _id = uuidv1();
+  if(!mindmapByKeys){
+    console.log("Mindmap not found");
+    return;
+  }
   const parent = mindmapByKeys[nodeId];
+  if(!parent){
+    console.log("Parent not found");
+    return;
+  }
   let group = parent && parseInt(parent.level.split(".").join(""));
   let size = 20 / (parent && parent.level.split(".").length);
   const newState = {
@@ -15,7 +28,10 @@ export const handleNodeAdd = (mindmapByKeys, setMindmapByKeys, nodeId, title) =>
       _id,
       id: _id,
       title: title,
-      level: mindmapByKeys[nodeId].level + "." + mindmapByKeys[nodeId].children.length,
+      level:
+        mindmapByKeys[nodeId].level +
+        "." +
+        mindmapByKeys[nodeId].children.length,
       children: [],
       parent: nodeId,
       size,
@@ -35,7 +51,15 @@ export const handleNodeEdit = (mindmapByKeys, setEditedNode, nodeId) => {
   setEditedNode(nodeId);
 };
 
-export const handleNodeUpdate = (mindmapByKeys, setMindmapByKeys, setEditedNode, updateModel, model, nodeId, { key, value }) => {
+export const handleNodeUpdate = (
+  mindmapByKeys,
+  setMindmapByKeys,
+  setEditedNode,
+  updateModel,
+  model,
+  nodeId,
+  { key, value }
+) => {
   const newState = {
     ...mindmapByKeys,
     [nodeId]: {
@@ -110,13 +134,22 @@ export const isVisible = (mindmapByKeys, visibleNodeKeys, nodeId) => {
   const currentLevel = mindmapByKeys[nodeId].level;
   if (visibleNodeKeys[currentLevel] === false) return false;
   return Object.keys(visibleNodeKeys).some((visibleLevel) => {
-    const res = comparePath(mindmapByKeys[nodeId].level, visibleLevel, visibleNodeKeys[visibleLevel]);
+    const res = comparePath(
+      mindmapByKeys[nodeId].level,
+      visibleLevel,
+      visibleNodeKeys[visibleLevel]
+    );
     return res.every(Boolean);
   });
 };
 
 // Initial function to convert the whole object
-export const convertObjectToMindmap = (obj, rootId, mindmapByKeys, setMindmapByKeys) => {
+export const convertObjectToMindmap = (
+  obj,
+  rootId,
+  mindmapByKeys,
+  setMindmapByKeys
+) => {
   const nodesToAdd = bulkTraverseAndAddNodes(mindmapByKeys, obj, rootId);
   let newState = { ...mindmapByKeys };
   nodesToAdd.forEach((node) => {
@@ -134,7 +167,9 @@ export const bulkTraverseAndAddNodes = (mindmapByKeys, obj, parentId) => {
   Object.keys(obj).forEach((key) => {
     const node = bulkHandleNodeAdd(mindmapByKeys, parentId, key);
     nodesToAdd.push(node);
-    nodesToAdd = nodesToAdd.concat(bulkTraverseAndAddNodes(mindmapByKeys, obj[key], node._id));
+    nodesToAdd = nodesToAdd.concat(
+      bulkTraverseAndAddNodes(mindmapByKeys, obj[key], node._id)
+    );
   });
 
   return nodesToAdd;
