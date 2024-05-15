@@ -9,9 +9,9 @@ import {
   saveNode,
   deleteNode,
   toggleNode,
-  isVisible,
   setModel,
 } from "./Model.Preview.feature";
+import { isVisible } from "./Model.Preview.feature.helper";
 import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 
 const ModelPreview = ({

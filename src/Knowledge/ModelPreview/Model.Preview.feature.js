@@ -1,108 +1,17 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { v1 as uuidv1 } from 'uuid';
-
+import { createSlice } from "@reduxjs/toolkit";
 // Helper functions
+import {
+  addNodeToMindmap
+} from './Model.Preview.feature.helper'; // Adjust import path accordingly
 
-export const convertObjectToMindmap = (obj, rootId, mindmapByKeys) => {
-  const nodesToAdd = bulkTraverseAndAddNodes(mindmapByKeys, obj, rootId);
-  nodesToAdd.forEach((node) => {
-    mindmapByKeys = addNodeToMindmap(mindmapByKeys, node.parent, node.title);
-  });
-  return mindmapByKeys;
-};
-
-export const bulkTraverseAndAddNodes = (mindmapByKeys, obj, parentId) => {
-  let nodesToAdd = [];
-
-  if (typeof obj !== "object") return nodesToAdd;
-
-  Object.keys(obj).forEach((key) => {
-    const node = bulkHandleNodeAdd(mindmapByKeys, parentId, key);
-    nodesToAdd.push(node);
-    nodesToAdd = nodesToAdd.concat(
-      bulkTraverseAndAddNodes(mindmapByKeys, obj[key], node._id)
-    );
-  });
-
-  return nodesToAdd;
-};
-
-export const bulkHandleNodeAdd = (mindmapByKeys, nodeId, title) => {
-  const _id = uuidv1();
-  const parent = mindmapByKeys[nodeId];
-  let group = parent && parseInt(parent.level.split('.').join(''));
-  let size = 20 / (parent && parent.level.split('.').length);
-
-  return {
-    _id,
-    id: _id,
-    title,
-    name: title,
-    parent: nodeId,
-    size,
-    group,
-  };
-};
-
-export const addNodeToMindmap = (mindmapByKeys, nodeId, title) => {
-  const _id = uuidv1();
-  const parent = mindmapByKeys[nodeId];
-
-  if (!parent) return mindmapByKeys;
-
-  let group = parseInt(parent.level.split('.').join(''));
-  let size = 20 / parent.level.split('.').length;
-
-  return {
-    ...mindmapByKeys,
-    [nodeId]: {
-      ...mindmapByKeys[nodeId],
-      children: [...mindmapByKeys[nodeId].children, _id],
-    },
-    [_id]: {
-      _id,
-      id: _id,
-      title,
-      level: `${parent.level}.${parent.children.length}`,
-      children: [],
-      parent: nodeId,
-      size,
-      group,
-      links: {
-        source: parent,
-        target: _id,
-        title,
-      },
-    },
-  };
-};
-
-export const comparePath = (currentLevel, visibleLevel) => {
-  const visibleArray = visibleLevel.split('.');
-  const currentArray = currentLevel.split('.');
-  return currentArray.map((lev, index) => visibleArray[index] === lev);
-};
-
-export const isVisible = (mindmapByKeys, visibleNodeKeys, nodeId) => {
-  const currentLevel = mindmapByKeys[nodeId].level;
-  if (visibleNodeKeys[currentLevel] === false) return false;
-  return Object.keys(visibleNodeKeys).some((visibleLevel) => {
-    const res = comparePath(
-      mindmapByKeys[nodeId].level,
-      visibleLevel,
-      visibleNodeKeys[visibleLevel]
-    );
-    return res.every(Boolean);
-  });
-};
-
+// Initial state for the mindmap slice
 const initialState = {
   mindmapByKeys: {},
-  editedNode: '',
+  editedNode: "",
 };
 
 const mindmapSlice = createSlice({
-  name: 'mindmap',
+  name: "mindmap",
   initialState,
   reducers: {
     setModel: (state, action) => {
@@ -111,7 +20,11 @@ const mindmapSlice = createSlice({
     },
     addNode: (state, action) => {
       const { nodeId, title } = action.payload;
-      state.mindmapByKeys = addNodeToMindmap(state.mindmapByKeys, nodeId, title);
+      state.mindmapByKeys = addNodeToMindmap(
+        state.mindmapByKeys,
+        nodeId,
+        title
+      );
     },
     editNode: (state, action) => {
       state.editedNode = action.payload.nodeId;
@@ -122,11 +35,12 @@ const mindmapSlice = createSlice({
     },
     saveNode: (state) => {
       let newMindmap = {};
-      Object.keys(state.mindmapByKeys).forEach(kn => {
+      Object.keys(state.mindmapByKeys).forEach((kn) => {
         newMindmap[kn] = {
           ...state.mindmapByKeys[kn],
           links: {
-            source: state.mindmapByKeys[kn].parent || state.mindmapByKeys[kn]._id,
+            source:
+              state.mindmapByKeys[kn].parent || state.mindmapByKeys[kn]._id,
             target: state.mindmapByKeys[kn]._id,
             title: state.mindmapByKeys[kn].title,
           },
@@ -137,13 +51,16 @@ const mindmapSlice = createSlice({
     deleteNode: (state, action) => {
       const { nodeId } = action.payload;
       const parent = state.mindmapByKeys[nodeId].parent;
-      const { [nodeId]: _, ...mindmapByKeysWithoutNodeId } = state.mindmapByKeys;
+      const { [nodeId]: _, ...mindmapByKeysWithoutNodeId } =
+        state.mindmapByKeys;
 
       state.mindmapByKeys = {
         ...mindmapByKeysWithoutNodeId,
         [parent]: {
           ...state.mindmapByKeys[parent],
-          children: state.mindmapByKeys[parent].children.filter(id => id !== nodeId),
+          children: state.mindmapByKeys[parent].children.filter(
+            (id) => id !== nodeId
+          ),
         },
       };
     },
@@ -153,7 +70,10 @@ const mindmapSlice = createSlice({
       let parents = {};
 
       while (currentParent) {
-        parents[currentParent] = { ...state.mindmapByKeys[currentParent], visible: true };
+        parents[currentParent] = {
+          ...state.mindmapByKeys[currentParent],
+          visible: true,
+        };
         currentParent = state.mindmapByKeys[currentParent].parent;
       }
 
@@ -169,8 +89,10 @@ const mindmapSlice = createSlice({
     searchNodes: (state, action) => {
       const regex = new RegExp(action.payload.text.toLowerCase());
       state.searchResults = Object.keys(state.mindmapByKeys)
-        .filter(mk => state.mindmapByKeys[mk].title.toLowerCase().match(regex))
-        .map(f => state.mindmapByKeys[f]);
+        .filter((mk) =>
+          state.mindmapByKeys[mk].title.toLowerCase().match(regex)
+        )
+        .map((f) => state.mindmapByKeys[f]);
     },
   },
 });

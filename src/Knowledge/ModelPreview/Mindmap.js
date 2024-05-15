@@ -3,18 +3,20 @@ import { Tree as DTree } from "react-d3-tree";
 import CustomTreeNode from "./CustomTreeNode";
 import { theme3Light } from "./Themes";
 import { convertToMindmap, moveToRoot } from "./Mindmap.utils";
-import { convertObjectToMindmap } from "./Model.Preview.state";
+import { useDispatch } from "react-redux";
+import { addNode } from "./Model.Preview.feature"; // Ensure correct import path
+import { convertObjectToMindmap } from "./Model.Preview.feature.helper";
 
 const { background, baseStyle, textColor } = theme3Light;
 
-function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
+function Tree({ mindmapByKeys, knowledge, knowledgeChat }) {
+  const dispatch = useDispatch();
   const [data, setData] = useState([]);
   const [translate, setTranslate] = useState({ x: 450, y: 450 });
   const [scale, setScale] = useState(0.1);
   const treeContainerRef = useRef(null);
 
   useEffect(() => {
-    console.log("mindmapByKeys", mindmapByKeys);
     const formatData = () => {
       const rootKey = Object.keys(mindmapByKeys)[0];
       const rootNode = { ...mindmapByKeys[rootKey] };
@@ -38,10 +40,7 @@ function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
   return (
     <div
       className="mindmap-container"
-      style={{
-        height: "50em",
-        background: background,
-      }}
+      style={{ height: "50em", background: background }}
     >
       {data.length > 0 && (
         <DTree
@@ -61,9 +60,11 @@ function Tree({ mindmapByKeys, knowledge, handleNodeAdd, knowledgeChat }) {
                         const converted = convertObjectToMindmap(
                           response,
                           nodeDatum.id,
-                          mindmapByKeys
+                          mindmapByKeys,
+                          (nodeId, title) =>
+                            dispatch(addNode({ nodeId, title }))
                         );
-                        handleNodeAdd(nodeDatum.id, converted, mindmapByKeys);
+                        setData([converted]);
                       } catch (e) {
                         console.log("ERROR", e);
                       }
