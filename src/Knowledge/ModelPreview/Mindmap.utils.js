@@ -1,5 +1,4 @@
 export const convertToMindmap = (currentNode, mindmapByKeys) => {
-  console.log("currentNode", currentNode);
   if (!currentNode || typeof currentNode !== "object") {
     console.error("Invalid currentNode:", currentNode);
     return {}; // or any other fallback object structure
@@ -17,7 +16,6 @@ export const convertToMindmap = (currentNode, mindmapByKeys) => {
         childNode = mindmapByKeys[childId._id];
       }
       //check if child node is not null and is an object
-      console.log("CHILD ID", childNode, childId, newNode, newNode.children);
       if (!childNode) {
         console.error("Missing child node in mindmapByKeys for key:", childId);
         return { name: "Missing Node", children: [] }; // Fallback node structure

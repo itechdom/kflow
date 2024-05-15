@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Tree as DTree } from "react-d3-tree";
 import CustomTreeNode from "./CustomTreeNode";
 import { theme3Light } from "./Themes";
-import { convertToMindmap, moveToRoot, formatData } from "./Mindmap.utils";
+import { moveToRoot, formatData } from "./Mindmap.utils";
 import { useDispatch } from "react-redux";
 import { setModel } from "./Model.Preview.feature"; // Ensure correct import path
 import { convertObjectToMindmap } from "./Model.Preview.feature.helper";
@@ -15,10 +15,10 @@ function Tree({ mindmapByKeys, knowledge, knowledgeChat }) {
   const [translate, setTranslate] = useState({ x: 450, y: 450 });
   const [scale, setScale] = useState(0.1);
   const treeContainerRef = useRef(null);
-  console.log("DATA", data);
 
   useEffect(() => {
     if (Object.keys(mindmapByKeys).length) {
+      console.log("Mindmap by keys", mindmapByKeys);
       setData(formatData(mindmapByKeys));
     }
   }, [mindmapByKeys]);
@@ -56,11 +56,8 @@ function Tree({ mindmapByKeys, knowledge, knowledgeChat }) {
                           nodeDatum.id,
                           mindmapByKeys
                         );
-                        let newMindmapByKeys = formatData(converted); 
-                        console.log(converted, "CONVERTED")
-                        console.log(newMindmapByKeys, "NEW ONE");
                         dispatch(
-                          setModel({ model: { body: newMindmapByKeys } })
+                          setModel({ model: { body: converted } })
                         );
                       } catch (e) {
                         console.log("ERROR", e);

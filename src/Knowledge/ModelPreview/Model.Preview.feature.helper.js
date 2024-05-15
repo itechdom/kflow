@@ -35,27 +35,17 @@ const createNode = (nodeId, title, mindmapByKeys) => {
 
 // Function to convert object to mindmap
 export const convertObjectToMindmap = (obj, rootId, mindmapByKeys) => {
-  const { _id: rootNodeId, node: rootNode } = createNode(
-    null,
-    rootId,
-    mindmapByKeys
-  );
-  let newMindmapByKeys = {
-    ...mindmapByKeys,
-    [rootNodeId]: rootNode,
-  };
-
-  const nodesToAdd = bulkTraverseAndAddNodes(newMindmapByKeys, obj, rootNodeId);
+  const nodesToAdd = bulkTraverseAndAddNodes(mindmapByKeys, obj, rootId);
   nodesToAdd.forEach((node) => {
-    newMindmapByKeys = addNodeToMindmap(
-      newMindmapByKeys,
+    mindmapByKeys = addNodeToMindmap(
+      mindmapByKeys,
       node.parent,
       node.title,
       node._id
     );
   });
 
-  return newMindmapByKeys;
+  return mindmapByKeys;
 };
 
 export const bulkTraverseAndAddNodes = (mindmapByKeys, obj, parentId) => {
