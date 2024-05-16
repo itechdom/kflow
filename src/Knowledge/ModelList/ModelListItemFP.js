@@ -31,16 +31,12 @@ const ModelListItemFP = ({
     setPage,
 }) => {
     const [open, setOpen] = React.useState(false);
-    //useState for selectedImage and setSelectedImage
     const [selectedImage, setSelectedImage] = React.useState(0);
-    //useState for fetchedImage and setFetchedImage
     const [fetchedImage, setFetchedImage] = React.useState([]);
-    //useState for isLoading and setIsLoading
     const [isLoading, setIsLoading] = React.useState(false);
-    //useState for actionOpen and setActionOpen
     const [actionOpen, setActionOpen] = React.useState(false);
-    //useState for anchorEl and setAnchorEl
     const [anchorEl, setAnchorEl] = React.useState(null);
+
     const fetchImages = () => {
         if (model) {
             const segments = model.title.split("-");
@@ -51,9 +47,11 @@ const ModelListItemFP = ({
             });
         }
     };
+
     React.useEffect(() => {
         fetchImages();
     }, [page]);
+
     const renderImageGallery = () => {
         return (
             <ImageGallery
@@ -92,11 +90,11 @@ const ModelListItemFP = ({
             />
         );
     };
+
     return (
         <Grid style={{ marginBottom: "10em" }} container justify="center">
-
             <Grid item>
-                <Card className={classes.card}>
+                <Card className={classes.card} style={{ borderRadius: '15px', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)', background: 'rgba(255, 255, 255, 0.7)', backdropFilter: 'blur(10px)' }}>
                     <CardActionArea
                         onClick={() => {
                             onView
@@ -109,27 +107,27 @@ const ModelListItemFP = ({
                                 {model.name || model.title}
                             </Typography>
                         </CardContent>
-                        <Grid container>
+                        <Grid container justify="center">
                             {fetchedImage && fetchedImage.length > 0 ? (
                                 <CardMedia
                                     className={classes.cardImage}
                                     component="img"
                                     alt="Contemplative Reptile"
-                                    style={{ borderRadius: "150px", margin: "10px" }}
+                                    style={{ borderRadius: "50%", margin: "10px", width: "150px", height: "150px" }}
                                     image={fetchedImage[0].small}
                                     title="Contemplative Reptile"
                                 />
                             ) : (
                                 <img
-                                    width="250px"
-                                    height="250px"
-                                    style={{ borderRadius: "150px", margin: "10px" }}
-                                    src="https://picsum.photos/500/500"
+                                    width="150px"
+                                    height="150px"
+                                    style={{ borderRadius: "50%", margin: "10px" }}
+                                    src="https://picsum.photos/150/150"
                                 />
                             )}
                         </Grid>
                         <CardContent>
-                            <Typography variant="body2" color="textSecondary">
+                            <Typography variant="body2" style={{ fontFamily: 'sans-serif', color: '#8D8D8D' }}>
                                 {model.description}
                             </Typography>
                         </CardContent>
@@ -139,7 +137,7 @@ const ModelListItemFP = ({
                             <Chip
                                 key={index}
                                 size="small"
-                                style={{ fontSize: "10px", marginRight: "3px" }}
+                                style={{ fontSize: "10px", marginRight: "3px", backgroundColor: '#F0F0F0', color: '#5B5B5B' }}
                                 variant="outlined"
                                 label={<>{tag}</>}
                             />
@@ -160,6 +158,3 @@ const ModelListItemFP = ({
     );
 };
 export default ModelListItemFP;
-
-
-

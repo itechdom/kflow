@@ -22,7 +22,7 @@ export const styles = (theme) => {
       minHeight: "100vh",
     },
     autocompleteContainer:{
-      marginTop:0,
+      marginTop:"0!important",
       position: "fixed",
       right: "0px",
       top: "0px",
