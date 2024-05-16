@@ -11,24 +11,13 @@ import React, {useState} from "react";
 import { Route, Switch, HashRouter as Router } from "react-router-dom";
 import { styles } from "./ModelList.styles";
 import { withStyles } from "@material-ui/core/styles";
-//recompose
-import { withState, compose, lifecycle } from "recompose";
-//Different template pages
-import ModelAdd from "../ModelAdd/ModelAdd";
-import ModelEdit from "../ModelEdit/ModelEdit";
-import ModelPreview from "../ModelPreview/ModelPreview";
 import ModelListItems from "./ModelListItems";
 import ModelFilterList from "./ModelFilterList";
 //shared components
 import theme from "theme";
 import {
   Grid,
-  Fade,
-  Card,
-  CardContent,
   Button,
-  IconButton,
-  Icon,
   Paper,
   Backdrop,
   useMediaQuery,
