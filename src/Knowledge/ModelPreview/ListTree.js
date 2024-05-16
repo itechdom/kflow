@@ -1,6 +1,7 @@
 import React from "react";
 import { List } from "@material-ui/core";
 import Node from "./Node";
+
 class ListTree extends React.Component {
   constructor(props) {
     super(props);
@@ -13,6 +14,13 @@ class ListTree extends React.Component {
     });
     this.props.onRefs(this.references);
   }
+
+  handleNodeSelect = (nodeId) => {
+    if (this.props.onSelectNode) {
+      this.props.onSelectNode(nodeId);
+    }
+  };
+
   renderNode(nodeId, index, parent) {
     const { mindmapByKeys, title } = this.props;
     const TreeOperations = {
@@ -21,6 +29,7 @@ class ListTree extends React.Component {
       handleNodeUpdate: this.props.handleNodeUpdate.bind(null, nodeId),
       handleNodeToggle: this.props.handleNodeToggle.bind(null, nodeId),
       handleNodeDelete: this.props.handleNodeDelete.bind(null, nodeId),
+      handleNodeSelect: this.handleNodeSelect.bind(null, nodeId), // Add this line
     };
     return mindmapByKeys[nodeId] && (
       <div key={nodeId}>
@@ -73,4 +82,5 @@ class ListTree extends React.Component {
     );
   }
 }
+
 export default ListTree;

@@ -1,15 +1,16 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Tree as DTree } from "react-d3-tree";
 import CustomTreeNode from "./CustomTreeNode";
-import { theme1Dark, theme2Dark, theme3Dark, theme3Light } from "./Themes";
+import { theme3Light } from "./Themes";
 import { moveToRoot, formatData } from "./Mindmap.utils";
 import { useDispatch } from "react-redux";
 import { setModel } from "./Model.Preview.feature"; // Ensure correct import path
 import { convertObjectToMindmap } from "./Model.Preview.feature.helper";
+import { getPrompt } from "./Mindmap.utils";
 
 const { background, baseStyle, textColor } = theme3Light;
 
-function Mindmap({ mindmapByKeys, knowledge, knowledgeChat }) {
+function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
   const dispatch = useDispatch();
   const [data, setData] = useState([]);
   const [translate, setTranslate] = useState({ x: 450, y: 450 });
@@ -23,12 +24,24 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat }) {
     }
   }, [mindmapByKeys]);
 
+  useEffect(() => {
+    if (selectedNode && treeContainerRef.current) {
+      const nodeElement = treeContainerRef.current.querySelector(
+        `[data-node-id="${selectedNode}"]`
+      );
+      if (nodeElement) {
+        const { x, y } = nodeElement.getBoundingClientRect();
+        setTranslate({
+          x: -x + window.innerWidth / 2,
+          y: -y + window.innerHeight / 2,
+        });
+        setScale(1); // Adjust the scale as needed
+      }
+    }
+  }, [selectedNode]);
+
   const handleNodeClick = useCallback((nodeData, { hierarchyPointNode }) => {
-    // const x = -hierarchyPointNode.x + window.innerWidth / 2;
-    // const y = -hierarchyPointNode.y + window.innerHeight / 8;
-    // const newScale = 0.5;
-    // setTranslate({ x, y });
-    // setScale(newScale);
+    // Handle node click events if needed
   }, []);
 
   return (
@@ -49,18 +62,23 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat }) {
                 onChatRequest={(nodeDatum) => {
                   if (nodeDatum.title) {
                     const path = moveToRoot(nodeDatum.id, mindmapByKeys);
-                    knowledgeChat(knowledge, path, (response) => {
-                      try {
-                        const converted = convertObjectToMindmap(
-                          response,
-                          nodeDatum.id,
-                          mindmapByKeys
-                        );
-                        dispatch(setModel({ model: { body: converted } }));
-                      } catch (e) {
-                        console.log("ERROR", e);
+                    knowledgeChat(
+                      knowledge,
+                      path,
+                      getPrompt(path),
+                      (response) => {
+                        try {
+                          const converted = convertObjectToMindmap(
+                            response,
+                            nodeDatum.id,
+                            mindmapByKeys
+                          );
+                          dispatch(setModel({ model: { body: converted } }));
+                        } catch (e) {
+                          console.log("ERROR", e);
+                        }
                       }
-                    });
+                    );
                   }
                 }}
                 {...rd3tProps}
