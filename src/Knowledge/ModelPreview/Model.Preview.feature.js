@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import {
-  convertObjectToMindmap,
   addNodeToMindmap,
 } from "./Model.Preview.feature.helper"; // Adjust import path accordingly
+
 // Initial state for the mindmap slice
 const initialState = {
   mindmapByKeys: {},
@@ -15,7 +15,7 @@ const mindmapSlice = createSlice({
   reducers: {
     setModel: (state, action) => {
       state.model = action.payload.model;
-      state.mindmapByKeys = {...state.mindmapByKeys, ...action.payload.model.body};
+      state.mindmapByKeys = { ...action.payload.model.body };
     },
     addNode: (state, action) => {
       const { nodeId, title } = action.payload;

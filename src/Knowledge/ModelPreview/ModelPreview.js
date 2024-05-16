@@ -15,6 +15,7 @@ import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 
 const ModelPreview = ({
   model,
+  knowledge,
   knowledge_deleteModel,
   knowledge_chat,
   classes,
@@ -36,7 +37,7 @@ const ModelPreview = ({
 
   useEffect(() => {
     dispatch(setModel({ model }));
-  }, [dispatch, model]);
+  }, [dispatch, model, knowledge]);
 
   const handleNodeAddCallback = useCallback(
     (nodeId, title) => dispatch(addNode({ nodeId, title })),
@@ -121,4 +122,4 @@ const ModelPreview = ({
   );
 };
 
-export default React.memo(ModelPreview);
+export default ModelPreview;

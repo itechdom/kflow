@@ -56,7 +56,7 @@ const KnowledgeContainer = ({
           <Paper>
             {viewOption === 0 ? (
               <Mindmap
-                knowledge={knowledge}
+                model={model}
                 mindmapByKeys={mindmapByKeys}
                 editedNode={editedNode}
                 knowledgeChat={knowledgeChat}
