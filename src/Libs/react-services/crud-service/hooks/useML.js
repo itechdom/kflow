@@ -29,7 +29,7 @@ export const useML = (offlineStorage, SERVER, query, modelName) => {
    * @param {Object} model - The model object to be created.
    * @returns {Promise} - A promise that resolves when the model is created.
    */
-  const useMLFn = (model, path, onResponse, prompt) =>
+  const useMLFn = (model, path, prompt, onResponse) =>
     offlineStorage
       .getItem("jwtToken")
       .then((token) => {
