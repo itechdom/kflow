@@ -72,20 +72,18 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
                       (response) => {
                         try {
                           const cleanedResponse = cleanResponse(response, path);
-                          console.log("cleanedResponse", cleanedResponse);
                           const converted = convertObjectToMindmap(
                             cleanedResponse,
                             nodeDatum.id,
                             mindmapByKeys
                           );
-                          console.log("converted", converted);
                           const collapsedConverted = collapseAllNodes(
                             converted,
                             converted[Object.keys(converted)[0]].id,
                             nodeDatum.id
                           );
                           dispatch(
-                            setModel({ model: { body: collapsedConverted[0] } })
+                            setModel({ model: { body: collapsedConverted } })
                           );
                         } catch (e) {
                           console.log("ERROR", e);
