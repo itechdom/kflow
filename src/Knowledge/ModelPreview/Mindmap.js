@@ -68,7 +68,7 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
                     knowledgeChat(
                       knowledge,
                       path,
-                      getPrompt(path),
+                      getPrompt(path, nodeDatum.title),
                       (response) => {
                         try {
                           const cleanedResponse = cleanResponse(response, path);
