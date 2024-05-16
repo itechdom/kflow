@@ -24,11 +24,11 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat }) {
   }, [mindmapByKeys]);
 
   const handleNodeClick = useCallback((nodeData, { hierarchyPointNode }) => {
-    const x = -hierarchyPointNode.x + window.innerWidth / 2;
-    const y = -hierarchyPointNode.y + window.innerHeight / 8;
-    const newScale = 0.5;
-    setTranslate({ x, y });
-    setScale(newScale);
+    // const x = -hierarchyPointNode.x + window.innerWidth / 2;
+    // const y = -hierarchyPointNode.y + window.innerHeight / 8;
+    // const newScale = 0.5;
+    // setTranslate({ x, y });
+    // setScale(newScale);
   }, []);
 
   return (
