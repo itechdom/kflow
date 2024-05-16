@@ -39,11 +39,11 @@ const Knowledge = ({
   knowledge_set_filter,
   knowledge_remove_filter,
   knowledge_chat,
+  knowledge_form,
   location,
   match,
   history,
   classes,
-  form,
   notifications,
   saveNotification,
   removeNotification,
@@ -55,6 +55,7 @@ const Knowledge = ({
   loading,
   ...rest
 }) => {
+  console.log(knowledge_createModel);
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -72,7 +73,7 @@ const Knowledge = ({
         let group = "0";
         let size = 20;
         val.body = {
-          "1": {
+          1: {
             title: val.title,
             id: "1",
             _id: "1",
@@ -108,7 +109,7 @@ const Knowledge = ({
       match={{ ...match, path: matchPath }}
       history={history}
       classes={classes}
-      form={form}
+      form={knowledge_form}
       notifications={notifications}
       saveNotification={saveNotification}
       removeNotification={removeNotification}
@@ -144,4 +145,6 @@ const Knowledge = ({
   );
 };
 
-export default React.memo(withStyles(styles, { defaultTheme: theme })(Knowledge));
+export default React.memo(
+  withStyles(styles, { defaultTheme: theme })(Knowledge)
+);
