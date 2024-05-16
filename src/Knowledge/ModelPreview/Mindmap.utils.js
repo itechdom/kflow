@@ -64,3 +64,10 @@ export const formatData = (mindmapByKeys) => {
   const formattedData =  [convertToMindmap(rootNode, mindmapByKeys)];
   return formattedData;
 };
+
+export const getPrompt = (path) => `complete this object with four levels of knowledge. only return output in json. 
+            don't include \`\`\`json in your response. omit ${JSON.stringify(path)} in your response and only include new additions.
+            here is the object:
+            ${JSON.stringify(
+              path
+            )}`

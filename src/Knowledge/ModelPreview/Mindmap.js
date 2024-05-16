@@ -6,6 +6,7 @@ import { moveToRoot, formatData } from "./Mindmap.utils";
 import { useDispatch } from "react-redux";
 import { setModel } from "./Model.Preview.feature"; // Ensure correct import path
 import { convertObjectToMindmap } from "./Model.Preview.feature.helper";
+import { getPrompt } from "./Mindmap.utils";
 
 const { background, baseStyle, textColor } = theme3Light;
 
@@ -25,7 +26,9 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
 
   useEffect(() => {
     if (selectedNode && treeContainerRef.current) {
-      const nodeElement = treeContainerRef.current.querySelector(`[data-node-id="${selectedNode}"]`);
+      const nodeElement = treeContainerRef.current.querySelector(
+        `[data-node-id="${selectedNode}"]`
+      );
       if (nodeElement) {
         const { x, y } = nodeElement.getBoundingClientRect();
         setTranslate({
@@ -59,18 +62,23 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
                 onChatRequest={(nodeDatum) => {
                   if (nodeDatum.title) {
                     const path = moveToRoot(nodeDatum.id, mindmapByKeys);
-                    knowledgeChat(knowledge, path, (response) => {
-                      try {
-                        const converted = convertObjectToMindmap(
-                          response,
-                          nodeDatum.id,
-                          mindmapByKeys
-                        );
-                        dispatch(setModel({ model: { body: converted } }));
-                      } catch (e) {
-                        console.log("ERROR", e);
+                    knowledgeChat(
+                      knowledge,
+                      path,
+                      getPrompt(path),
+                      (response) => {
+                        try {
+                          const converted = convertObjectToMindmap(
+                            response,
+                            nodeDatum.id,
+                            mindmapByKeys
+                          );
+                          dispatch(setModel({ model: { body: converted } }));
+                        } catch (e) {
+                          console.log("ERROR", e);
+                        }
                       }
-                    });
+                    );
                   }
                 }}
                 {...rd3tProps}
