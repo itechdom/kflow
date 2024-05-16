@@ -6,7 +6,6 @@ import {
   addNode,
   editNode,
   updateNode,
-  saveNode,
   deleteNode,
   toggleNode,
   setModel,
@@ -16,8 +15,6 @@ import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 
 const ModelPreview = ({
   model,
-  knowledge,
-  knowledge_updateModel,
   knowledge_deleteModel,
   knowledge_chat,
   classes,
@@ -39,7 +36,7 @@ const ModelPreview = ({
 
   useEffect(() => {
     dispatch(setModel({ model }));
-  }, []);
+  }, [dispatch, model]);
 
   const handleNodeAddCallback = useCallback(
     (nodeId, title) => dispatch(addNode({ nodeId, title })),
@@ -94,7 +91,6 @@ const ModelPreview = ({
     <div>
       <KnowledgeContainer
         model={model}
-        knowledge={knowledge}
         edit={edit}
         editedNode={editedNode}
         mindmapByKeys={mindmapByKeys}

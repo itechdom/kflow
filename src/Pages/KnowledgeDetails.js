@@ -1,7 +1,6 @@
 import React from "react";
 import MainWrapper from "Libs/orbital-templates/Material/Wrappers/MainWrapper";
 import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
-import { Wikipedia } from "Libs/react-services/wikipedia-service/wikipedia-container";
 import { Crud } from "Libs/react-services/crud-service/crud-container";
 import KnowledgePreview from "../Knowledge/ModelPreview/ModelPreview";
 import { mainRouteList, logoutRoute } from "../Routes";
