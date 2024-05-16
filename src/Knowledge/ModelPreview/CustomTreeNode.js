@@ -3,17 +3,21 @@ import {
   Card,
   CardContent,
   CardActions,
-  IconButton,
-  Tooltip,
+  CardMedia,
   Dialog,
   DialogContent,
   DialogContentText,
   DialogActions,
   Button,
+  IconButton,
+  Tooltip,
 } from "@material-ui/core";
 import { Icon } from "../../Libs/orbital-templates/Material/_shared/Icon/Icon";
 import {
   truncateText,
+  isLargeText,
+  isHttpLink,
+  MIN_TEXT_LENGTH,
   MAX_TEXT_LENGTH,
 } from "./CustomTreeNode.utils";
 
@@ -27,11 +31,13 @@ const CustomTreeNode = ({
   ...rest
 }) => {
   const [openDialog, setOpenDialog] = useState(false);
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-  const hiddenDivRef = useRef(null);
 
   const handleClick = () => {
-    if (nodeDatum?.name?.length > MAX_TEXT_LENGTH) {
+    if (
+      nodeDatum &&
+      nodeDatum.name &&
+      nodeDatum.name.length > MAX_TEXT_LENGTH
+    ) {
       handleOpenDialog();
     }
     onClick(nodeDatum, rest);
@@ -46,32 +52,27 @@ const CustomTreeNode = ({
     setOpenDialog(false);
   };
 
+  const [pWidth, setPWidth] = useState(0);
+  const [pHeight, setPHeight] = useState(0);
+  const pRef = useRef(null);
+
   useEffect(() => {
-    if (hiddenDivRef.current) {
-      const { width, height } = hiddenDivRef.current.getBoundingClientRect();
-      setDimensions({ width, height });
+    if (pRef.current) {
+      setPWidth(pRef.current.getBoundingClientRect().width);
+      setPHeight(pRef.current.getBoundingClientRect().height);
     }
-  }, [nodeDatum]);
+  }, [nodeDatum, pRef]);
 
   return (
     <>
-      <div style={{ position: "absolute", visibility: "hidden", whiteSpace: "nowrap" }} ref={hiddenDivRef}>
-        {truncateText(nodeDatum.name, 15)}
-      </div>
       <g>
-        <foreignObject
-          x={-dimensions.width / 2}
-          y={-dimensions.height / 2}
-          width={dimensions.width}
-          height={dimensions.height}
-        >
+        <foreignObject x="-100" y="-100" width="200" height="250" ref={pRef}>
           <Card
             style={{
               margin: "0 auto",
+              width: "100%",
               boxShadow: "none",
               borderRadius: "10px",
-              width: dimensions.width,
-              height: 'auto',
             }}
           >
             <CardContent>
