@@ -1,8 +1,4 @@
-/**
- * Represents a component for adding a model.
- * @component
- */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Formik } from "formik";
 import {
   Card,
@@ -16,105 +12,94 @@ import Forms from "../Forms/Forms";
 import ClientNotification from "../ClientNotification/ClientNotification";
 import FormsValidate from "../Forms/Forms.Validate";
 
-export default class ModelAdd extends React.Component {
-  state = {
-    initialValues: {},
-  };
-  componentDidMount() {
-    console.log("hello from model add", this);
-    let formKeyVal = {};
-    this.props.form &&
-      this.props.form.fields.map((field) => {
-        formKeyVal[field.name] = field.value;
-      });
-    this.setState({ initialValues: formKeyVal });
-  }
-  componentWillReceiveProps(nextProps) {}
-  render() {
-    let {
-      onSave,
-      onCancel,
-      form,
-      modelSchema,
-      modelName,
-      notifications,
-      removeNotification,
-      ...rest
-    } = this.props;
-    console.log("model add", this.props);
-    return (
-      <Formik
-        onSubmit={(values, actions) => {
-          onSave(values);
-        }}
-        enableReinitialize={true}
-        validate={(values, props) => {
-          let errors;
-          errors = FormsValidate(values, form, modelSchema);
-          return errors;
-        }}
-        initialValues={this.state.initialValues}
-        render={({
-          values,
-          errors,
-          touched,
-          handleBlur,
-          handleSubmit,
-          isSubmitting,
-          setFieldValue,
-          setFieldTouched,
-        }) => {
-          return (
-            <Card>
-              <CardContent>
-                <Typography variant="title">Create {modelName}</Typography>
-                <form id="add-form">
-                  <Forms
-                    id="add-fields"
-                    modelSchema={modelSchema}
-                    form={form}
-                    errors={errors}
-                    isSubmitting={isSubmitting}
-                    setFieldValue={setFieldValue}
-                    setFieldTouched={setFieldTouched}
-                    values={values}
-                    touched={touched}
-                    handleBlur={handleBlur}
-                    {...rest}
-                  />
-                </form>
-              </CardContent>
-              <CardActions style={{ justifyContent: "flex-end" }}>
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  onClick={(event) => {
-                    handleSubmit(event);
-                  }}
-                >
-                  <Icon>save</Icon>
-                  <span style={{ marginLeft: "3px" }}>Save</span>
-                </Button>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  onClick={(event) => {
-                    onCancel(event);
-                  }}
-                >
-                  Cancel
-                </Button>
-              </CardActions>
-              <ClientNotification
-                notifications={notifications}
-                handleClose={(event, reason, notification) => {
-                  removeNotification(notification);
-                }}
+const ModelAdd = ({
+  onSave,
+  onCancel,
+  form,
+  modelSchema,
+  modelName,
+  notifications,
+  removeNotification,
+  ...rest
+}) => {
+  const [initialValues, setInitialValues] = useState({});
+
+  useEffect(() => {
+    const formKeyVal = {};
+    form && form.fields.map((field) => {
+      formKeyVal[field.name] = field.value;
+    });
+    setInitialValues(formKeyVal);
+  }, [form]);
+
+  return (
+    <Formik
+      onSubmit={(values) => {
+        onSave(values);
+      }}
+      enableReinitialize={true}
+      validate={(values) => {
+        const errors = FormsValidate(values, form, modelSchema);
+        return errors;
+      }}
+      initialValues={initialValues}
+    >
+      {({
+        values,
+        errors,
+        touched,
+        handleBlur,
+        handleSubmit,
+        isSubmitting,
+        setFieldValue,
+        setFieldTouched,
+      }) => (
+        <Card>
+          <CardContent>
+            <Typography variant="h6">Create {modelName}</Typography>
+            <form id="add-form">
+              <Forms
+                id="add-fields"
+                modelSchema={modelSchema}
+                form={form}
+                errors={errors}
+                isSubmitting={isSubmitting}
+                setFieldValue={setFieldValue}
+                setFieldTouched={setFieldTouched}
+                values={values}
+                touched={touched}
+                handleBlur={handleBlur}
+                {...rest}
               />
-            </Card>
-          );
-        }}
-      />
-    );
-  }
-}
+            </form>
+          </CardContent>
+          <CardActions style={{ justifyContent: "flex-end" }}>
+            <Button
+              variant="contained"
+              color="secondary"
+              onClick={handleSubmit}
+            >
+              <Icon>save</Icon>
+              <span style={{ marginLeft: "3px" }}>Save</span>
+            </Button>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={onCancel}
+            >
+              Cancel
+            </Button>
+          </CardActions>
+          <ClientNotification
+            notifications={notifications}
+            handleClose={(event, reason, notification) => {
+              removeNotification(notification);
+            }}
+          />
+        </Card>
+      )}
+    </Formik>
+  );
+};
+
+export default ModelAdd;

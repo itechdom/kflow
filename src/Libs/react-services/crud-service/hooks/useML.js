@@ -29,18 +29,13 @@ export const useML = (offlineStorage, SERVER, query, modelName) => {
    * @param {Object} model - The model object to be created.
    * @returns {Promise} - A promise that resolves when the model is created.
    */
-  const useMLFn = (model, path, onResponse) =>
+  const useMLFn = (model, path, prompt, onResponse) =>
     offlineStorage
       .getItem("jwtToken")
       .then((token) => {
         return axios
           .post(`${SERVER.host}:${SERVER.port}/${modelName}/chat`, {
-            prompt: `complete this object with four levels of knowledge. only return output in json. 
-            don't include \`\`\`json in your response. omit ${JSON.stringify(path)} in your response and only include new additions.
-            here is the object:
-            ${JSON.stringify(
-              path
-            )}`,
+            prompt,
             token,
           })
           .then((res) => {

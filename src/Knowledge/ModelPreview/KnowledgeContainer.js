@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   AppBar,
   Toolbar,
@@ -31,6 +31,12 @@ const KnowledgeContainer = ({
   onDelete,
   classes,
 }) => {
+  const [selectedNode, setSelectedNode] = useState(null);
+
+  const handleSelectNode = (nodeId) => {
+    setSelectedNode(nodeId);
+  };
+
   return (
     <>
       <AppBar position="static" color="default" className={classes.header}>
@@ -65,6 +71,7 @@ const KnowledgeContainer = ({
                 width={graphContainer && graphContainer.width}
                 height={graphContainer && graphContainer.height}
                 {...TreeOperations}
+                selectedNode={selectedNode} // Pass selectedNode to Mindmap
               />
             ) : (
               <GraphTree
@@ -92,6 +99,7 @@ const KnowledgeContainer = ({
               onRefs={(references) => {
                 setReferences(references);
               }}
+              onSelectNode={handleSelectNode} // Add onSelectNode prop
               {...TreeOperations}
             />
           </Paper>
