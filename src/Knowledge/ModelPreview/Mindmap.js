@@ -6,7 +6,7 @@ import { moveToRoot, formatData } from "./Mindmap.utils";
 import { useDispatch } from "react-redux";
 import { setModel } from "./Model.Preview.feature"; // Ensure correct import path
 import { convertObjectToMindmap } from "./Model.Preview.feature.helper";
-import { getPrompt } from "./Mindmap.utils";
+import { getPrompt, cleanResponse } from "./Mindmap.utils";
 
 const { background, baseStyle, textColor } = theme3Light;
 
@@ -68,8 +68,10 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
                       getPrompt(path),
                       (response) => {
                         try {
+                          const cleanedResponse = cleanResponse(response, path);
+                          console.log("cleanedResponse", cleanedResponse);
                           const converted = convertObjectToMindmap(
-                            response,
+                            cleanedResponse,
                             nodeDatum.id,
                             mindmapByKeys
                           );

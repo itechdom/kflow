@@ -61,13 +61,33 @@ export const formatData = (mindmapByKeys) => {
   const rootKey = Object.keys(mindmapByKeys)[0];
   const rootNode = { ...mindmapByKeys[rootKey] };
   delete rootNode.x;
-  const formattedData =  [convertToMindmap(rootNode, mindmapByKeys)];
+  const formattedData = [convertToMindmap(rootNode, mindmapByKeys)];
   return formattedData;
 };
 
-export const getPrompt = (path) => `complete this object with four levels of knowledge. only return output in json. 
-            don't include \`\`\`json in your response. omit ${JSON.stringify(path)} in your response and only include new additions.
-            here is the object:
-            ${JSON.stringify(
+export const getPrompt = (
+  path
+) => `complete this object with knowledge to guide someone who is starting to learn this topic. only return output in json. 
+            don't include \`\`\`json in your response. omit ${JSON.stringify(
               path
-            )}`
+            )} in your response and only include new additions.
+            here is the object:
+            ${JSON.stringify(path)}`;
+
+export const cleanResponse = (response, path) => {
+  function removeKeys(obj, keys) {
+    for (let key in obj) {
+      if (keys.hasOwnProperty(key)) {
+        if (typeof obj[key] === "object" && obj[key] !== null) {
+          // Promote children to the parent level
+          Object.assign(obj, obj[key]);
+        }
+        delete obj[key];
+      } else if (typeof obj[key] === "object" && obj[key] !== null) {
+        removeKeys(obj[key], keys);
+      }
+    }
+  }
+  removeKeys(response, path);
+  return response;
+};
