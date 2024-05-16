@@ -1,11 +1,14 @@
 import React from "react";
 import {
   ListItem,
-  Icon,
   IconButton,
   Typography,
   Menu,
   MenuItem,
+  Card,
+  CardContent,
+  CardActions,
+  Tooltip,
 } from "@material-ui/core";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
@@ -14,9 +17,11 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import EditIcon from "@material-ui/icons/Edit";
 import CancelIcon from "@material-ui/icons/Cancel";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
+import DragIndicatorIcon from "@material-ui/icons/DragIndicator";
 import TextField from "Libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.TextFieldInput";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { compose, withState } from "recompose";
+import Icon from '@material-ui/core/Icon';
 
 const enhance = compose(
   withState("showNote", "setShowNote", false),
@@ -33,10 +38,6 @@ class Node extends React.Component {
   componentDidMount() {
     this.props.setNodeValue({ value: this.props.title, key: "title" });
   }
-
-  // shouldComponentUpdate(nextProps) {
-  //   return nextProps.visible !== this.props.visible;
-  // }
 
   testHtml(title) {
     var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
@@ -72,6 +73,7 @@ class Node extends React.Component {
       cursor: "pointer",
     };
   }
+
   renderActions() {
     const { actionOpen, setActionOpen, anchorEl, setAnchorEl } = this.props;
     return (
@@ -91,10 +93,7 @@ class Node extends React.Component {
           open={actionOpen}
           id="fade-menu"
           keepMounted
-          onClose={(event) => {
-            setActionOpen(false);
-            setAnchorEl(event.currentTarget);
-          }}
+          onClose={() => setActionOpen(false)}
           anchorEl={anchorEl}
         >
           <MenuItem
@@ -131,6 +130,7 @@ class Node extends React.Component {
       </>
     );
   }
+
   renderText() {
     if (!this.props.isEditing) {
       return this.testHtml(this.props.title) ? (
@@ -164,56 +164,61 @@ class Node extends React.Component {
   render() {
     const isHighlighted = this.props.level.length <= 6;
     return (
-      <div key={this.props._id} ref={this.props.innerRef} id={this.props._id}>
-        <ListItem
-          className={"list-item"}
-          style={{ ...this.getTextStyle(isHighlighted, this.props.index) }}
-        >
-          {this.renderExpandCollapse()}
-          {this.renderText()}
-          <IconButton
-            onClick={() => {
-              if (this.props.isEditing) {
-                this.props.handleNodeUpdate(this.props.nodeValue);
-              }
-              this.props.handleNodeEdit();
-            }}
-          >
-            {this.props.isEditing ? <CancelIcon /> : <EditIcon />}
-          </IconButton>
-          {this.props.note && (
-            <IconButton
-              onClick={() => {
-                this.props.setShowNote((prevState) => {
-                  return !prevState;
-                });
-              }}
-            >
-              <Icon>note</Icon>
+      <Card key={this.props._id} ref={this.props.innerRef} id={this.props._id} style={{ margin: "10px 0", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
+        <CardContent>
+          <ListItem className={"list-item"} style={{ ...this.getTextStyle(isHighlighted, this.props.index) }}>
+            <IconButton>
+              <DragIndicatorIcon />
             </IconButton>
-          )}
-          {this.renderActions()}
-          {
-            <a
-              href={`https://www.google.com/search?q=${this.props.rootTitle}+${this.props.title}`}
-              target="_blank"
-              style={{ marginRight: "5px" }}
-            >
-              Google
-            </a>
-          }
-          |
-          {
-            <a
-              href={`https://en.wikipedia.org/wiki/Special:Search?search=${this.props.rootTitle}+${this.props.title}`}
-              target="_blank"
-              style={{ marginLeft: "5px" }}
-            >
-              Wikipedia
-            </a>
-          }
-        </ListItem>
-      </div>
+            {this.renderExpandCollapse()}
+            {this.renderText()}
+            <CardActions>
+              <IconButton
+                onClick={() => {
+                  if (this.props.isEditing) {
+                    this.props.handleNodeUpdate(this.props.nodeValue);
+                  }
+                  this.props.handleNodeEdit();
+                }}
+              >
+                {this.props.isEditing ? <CancelIcon /> : <EditIcon />}
+              </IconButton>
+              {this.props.note && (
+                <IconButton
+                  onClick={() => {
+                    this.props.setShowNote((prevState) => {
+                      return !prevState;
+                    });
+                  }}
+                >
+                  <Icon>note</Icon>
+                </IconButton>
+              )}
+              {this.renderActions()}
+              <Tooltip title="Search on Google">
+                <IconButton
+                  component="a"
+                  href={`https://www.google.com/search?q=${this.props.rootTitle}+${this.props.title}`}
+                  target="_blank"
+                  style={{ marginRight: "5px" }}
+                >
+                  <Icon>search</Icon>
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="Search on Wikipedia">
+                <IconButton
+                  component="a"
+                  href={`https://en.wikipedia.org/wiki/Special:Search?search=${this.props.rootTitle}+${this.props.title}`}
+                  target="_blank"
+                  style={{ marginLeft: "5px" }}
+                >
+                  <Icon>wiki</Icon>
+                </IconButton>
+              </Tooltip>
+            </CardActions>
+          </ListItem>
+        </CardContent>
+      </Card>
     );
   }
 }

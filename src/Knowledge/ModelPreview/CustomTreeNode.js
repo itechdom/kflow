@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import SvgCircles from "./SvgCircles";
 import {
+  Card,
+  CardContent,
+  CardActions,
+  CardMedia,
   Dialog,
   DialogContent,
   DialogContentText,
@@ -9,9 +12,7 @@ import {
   IconButton,
   Tooltip,
 } from "@material-ui/core";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import ExpandLessIcon from "@material-ui/icons/ExpandLess";
-import SaveIcon from "@material-ui/icons/Save";
+import { Icon } from "../../Libs/orbital-templates/Material/_shared/Icon/Icon";
 import {
   truncateText,
   isLargeText,
@@ -30,7 +31,6 @@ const CustomTreeNode = ({
   ...rest
 }) => {
   const [openDialog, setOpenDialog] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(true);
 
   const handleClick = () => {
     if (
@@ -42,7 +42,6 @@ const CustomTreeNode = ({
     }
     onClick(nodeDatum, rest);
     toggleNode();
-    setIsExpanded(!isExpanded);
   };
 
   const handleOpenDialog = () => {
@@ -53,41 +52,11 @@ const CustomTreeNode = ({
     setOpenDialog(false);
   };
 
-  const [cx, setCx] = useState(30);
-  const [cy, setCY] = useState(30);
-  const [radius, setRadius] = useState(100);
   const [pWidth, setPWidth] = useState(0);
   const [pHeight, setPHeight] = useState(0);
   const pRef = useRef(null);
 
   useEffect(() => {
-    if (
-      nodeDatum &&
-      nodeDatum.name &&
-      nodeDatum.name.length > MIN_TEXT_LENGTH
-    ) {
-      setRadius(200);
-      setCx(40);
-      setCY(80);
-    } else {
-      setRadius(200);
-      setCx(40);
-      setCY(20);
-    }
-
-    toggleNode();
-  }, [nodeDatum, pWidth, pHeight, toggleNode]);
-
-  useEffect(() => {
-    if (
-      nodeDatum &&
-      nodeDatum.name &&
-      nodeDatum.name.length > MAX_TEXT_LENGTH
-    ) {
-      nodeDatum.label = truncateText(nodeDatum.name, 40);
-    } else {
-      nodeDatum.label = truncateText(nodeDatum.name, nodeDatum.name.length);
-    }
     if (pRef.current) {
       setPWidth(pRef.current.getBoundingClientRect().width);
       setPHeight(pRef.current.getBoundingClientRect().height);
@@ -97,88 +66,51 @@ const CustomTreeNode = ({
   return (
     <>
       <g>
-        <SvgCircles
-          cx={cx}
-          cy={cy}
-          r={radius}
-          fill="white"
-          stroke="black"
-          strokeWidth="1.5"
-          filter="url(#dropshadow)"
-          nodeStyle={nodeStyle}
-          onClick={handleClick}
-        />
-        <foreignObject
-          onClick={handleClick}
-          x="-70"
-          y="-70"
-          width="100%"
-          height="100%"
-          ref={pRef}
-        >
-          {isHttpLink(nodeDatum.name) ? (
-            <a
-              href={nodeDatum.name}
-              target="_blank"
-              rel="noopener noreferrer"
-              xmlns="http://www.w3.org/1999/xhtml"
-            >
-              <p
-                style={{
-                  fontSize: "36px",
-                  width: "300px",
-                  whiteSpace: "wrap",
-                  color: textColor,
-                }}
-              >
-                <Tooltip title={nodeDatum.name} placement="top">
-                  <span>{truncateText(nodeDatum.name, 10)}</span>
-                </Tooltip>
-              </p>
-            </a>
-          ) : isLargeText(nodeDatum.name) ? (
-            <Tooltip title={nodeDatum.name} placement="top">
-              <p
-                style={{
-                  fontSize: "36px",
-                  width: "300px",
-                  whiteSpace: "wrap",
-                  color: textColor,
-                }}
-                xmlns="http://www.w3.org/1999/xhtml"
-              >
-                {nodeDatum.label}
-              </p>
-            </Tooltip>
-          ) : (
-            <p
-              style={{
-                fontSize: "36px",
-                width: "300px",
-                whiteSpace: "wrap",
-                color: textColor,
-              }}
-              xmlns="http://www.w3.org/1999/xhtml"
-            >
-              {nodeDatum.label}
-            </p>
-          )}
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            {nodeDatum.children && (
+        <foreignObject x="-100" y="-100" width="200" height="250" ref={pRef}>
+          <Card
+            style={{
+              maxWidth: 200,
+              margin: "0 auto",
+              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+              borderRadius: "10px",
+            }}
+          >
+            {/* <CardMedia
+              style={{ width: "50%", marginLeft: "25%" }}
+              component="img"
+              alt="Node Image"
+              height="140"
+              image="/images/knowledge-icon.webp"
+              title="Node Image"
+            /> */}
+            <CardContent>
+              <Tooltip title={nodeDatum.name} placement="top">
+                <div
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    color: textColor,
+                  }}
+                >
+                  {truncateText(nodeDatum.name, 15)}
+                </div>
+              </Tooltip>
+            </CardContent>
+            <CardActions style={{ justifyContent: "center" }}>
+              {nodeDatum.children && (
+                <IconButton onClick={toggleNode} style={{ color: "black" }}>
+                  <Icon>{nodeDatum.__rd3t.collapsed ? "expand_more" : "expand_less"}</Icon>
+                </IconButton>
+              )}
               <IconButton
-                onClick={handleClick}
-                style={{ color: "black", zIndex: 99999999999 }}
+                onClick={() => onChatRequest(nodeDatum)}
+                style={{ color: "black" }}
               >
-                {isExpanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                <Icon>search</Icon>
               </IconButton>
-            )}
-            <IconButton
-              onClick={() => onChatRequest(nodeDatum)}
-              style={{ color: "black", zIndex: 99999999999 }}
-            >
-              <SaveIcon />
-            </IconButton>
-          </div>
+            </CardActions>
+          </Card>
         </foreignObject>
       </g>
       <Dialog
