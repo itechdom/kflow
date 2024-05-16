@@ -22,7 +22,8 @@ const ModelAddPage = ({
           form={form}
           modelSchema={modelSchema}
           onSave={(values) => {
-            createModel(values).then((model) => {
+            createModel(values, (model) => {
+              console.log("MODEL", model);
               onCreateSubmit
                 ? onCreateSubmit(model)
                 : history.push(`${match.path}/view/${model._id}`);

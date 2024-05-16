@@ -29,7 +29,7 @@ export const useCreateModel = (offlineStorage, SERVER, query, modelName) => {
    * @param {Object} model - The model object to be created.
    * @returns {Promise} - A promise that resolves when the model is created.
    */
-  const createModelFn = (model) => offlineStorage
+  const createModelFn = (model, onCreate) => offlineStorage
     .getItem("jwtToken")
     .then((token) => {
       return axios
@@ -38,8 +38,9 @@ export const useCreateModel = (offlineStorage, SERVER, query, modelName) => {
           token,
         })
         .then((res) => {
-          dispatch(createModel({ data: model, modelName }));
+          dispatch(createModel({ data: res.data, modelName }));
           setIsLoading(false);
+          if(onCreate) onCreate(res.data);
         })
         .catch((err) => {
           setError(modelName, err);
