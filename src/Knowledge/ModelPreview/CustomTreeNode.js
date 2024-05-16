@@ -1,72 +1,51 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
-  Card,
-  CardContent,
-  CardActions,
-  CardMedia,
-  Dialog,
-  DialogContent,
-  DialogContentText,
-  DialogActions,
-  Button,
-  IconButton,
-  Tooltip,
+  Card, CardContent, CardActions, CardMedia,
+  Dialog, DialogContent, DialogContentText, DialogActions,
+  Button, IconButton, Tooltip
 } from "@material-ui/core";
 import { Icon } from "../../Libs/orbital-templates/Material/_shared/Icon/Icon";
-import {
-  truncateText,
-  isLargeText,
-  isHttpLink,
-  MIN_TEXT_LENGTH,
-  MAX_TEXT_LENGTH,
-} from "./CustomTreeNode.utils";
+
+// Removed unused imports
+// import { truncateText, isLargeText, isHttpLink, MIN_TEXT_LENGTH, MAX_TEXT_LENGTH } from "./CustomTreeNode.utils";
 
 const CustomTreeNode = ({
-  nodeDatum,
-  toggleNode,
-  onClick,
-  nodeStyle,
-  textColor,
-  onChatRequest,
-  ...rest
+  nodeDatum, toggleNode, onClick,
+  nodeStyle, textColor, onChatRequest, ...rest
 }) => {
   const [openDialog, setOpenDialog] = useState(false);
 
   const handleClick = () => {
-    if (
-      nodeDatum &&
-      nodeDatum.name &&
-      nodeDatum.name.length > MAX_TEXT_LENGTH
-    ) {
-      handleOpenDialog();
-    }
     onClick(nodeDatum, rest);
     toggleNode();
   };
 
-  const handleOpenDialog = () => {
-    setOpenDialog(true);
-  };
+  //Removed unnecessary dialog open 
+  // const handleOpenDialog = () => {
+  //   setOpenDialog(true);
+  // };
 
   const handleCloseDialog = () => {
     setOpenDialog(false);
   };
 
-  const [pWidth, setPWidth] = useState(0);
-  const [pHeight, setPHeight] = useState(0);
-  const pRef = useRef(null);
+  // Removed unused state and ref
+  // const [pWidth, setPWidth] = useState(0);
+  // const [pHeight, setPHeight] = useState(0);
+  // const pRef = useRef(null);
 
-  useEffect(() => {
-    if (pRef.current) {
-      setPWidth(pRef.current.getBoundingClientRect().width);
-      setPHeight(pRef.current.getBoundingClientRect().height);
-    }
-  }, [nodeDatum, pRef]);
+  // Removed unused useEffect
+  // useEffect(() => {
+  //   if (pRef.current) {
+  //     setPWidth(pRef.current.getBoundingClientRect().width);
+  //     setPHeight(pRef.current.getBoundingClientRect().height);
+  //   }
+  // }, [nodeDatum, pRef]);
 
   return (
     <>
       <g>
-        <foreignObject x="-100" y="-100" width="200" height="250" ref={pRef}>
+        <foreignObject x="-100" y="-100" width="200" height="250"> {/* Removed ref here */}
           <Card
             style={{
               margin: "0 auto",
@@ -74,6 +53,7 @@ const CustomTreeNode = ({
               boxShadow: "none",
               borderRadius: "10px",
             }}
+            onClick={handleClick} // Added click handler to the Card
           >
             <CardContent>
               <Tooltip title={nodeDatum.name} placement="top">
@@ -83,9 +63,10 @@ const CustomTreeNode = ({
                     fontWeight: "bold",
                     textAlign: "center",
                     color: textColor,
+                    wordWrap: 'break-word'  //Added for text to wrap instead of overflowing
                   }}
                 >
-                  {truncateText(nodeDatum.name, 15)}
+                  {nodeDatum.name} {/* Display the full name */}
                 </div>
               </Tooltip>
             </CardContent>
@@ -105,7 +86,9 @@ const CustomTreeNode = ({
           </Card>
         </foreignObject>
       </g>
-      <Dialog
+
+     {/*Removed dialog as it is not required anymore */} 
+      {/* <Dialog
         style={{ zIndex: 999999999999 }}
         open={openDialog}
         onClose={handleCloseDialog}
@@ -118,7 +101,7 @@ const CustomTreeNode = ({
             Close
           </Button>
         </DialogActions>
-      </Dialog>
+      </Dialog> */}
     </>
   );
 };
