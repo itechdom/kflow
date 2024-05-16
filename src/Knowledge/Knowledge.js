@@ -55,7 +55,6 @@ const Knowledge = ({
   loading,
   ...rest
 }) => {
-  console.log(knowledge_createModel);
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
