@@ -9,7 +9,9 @@ import {
   IconButton,
   Tooltip,
 } from "@material-ui/core";
-import { Icon } from "../../Libs/orbital-templates/Material/_shared/Icon/Icon";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import ExpandLessIcon from "@material-ui/icons/ExpandLess";
+import SaveIcon from "@material-ui/icons/Save";
 import {
   truncateText,
   isLargeText,
@@ -28,6 +30,7 @@ const CustomTreeNode = ({
   ...rest
 }) => {
   const [openDialog, setOpenDialog] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   const handleClick = () => {
     if (
@@ -39,6 +42,7 @@ const CustomTreeNode = ({
     }
     onClick(nodeDatum, rest);
     toggleNode();
+    setIsExpanded(!isExpanded);
   };
 
   const handleOpenDialog = () => {
@@ -159,14 +163,22 @@ const CustomTreeNode = ({
               {nodeDatum.label}
             </p>
           )}
-          {nodeDatum.children && nodeDatum.children.length === 0 && (
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            {nodeDatum.children && (
+              <IconButton
+                onClick={handleClick}
+                style={{ color: "black", zIndex: 99999999999 }}
+              >
+                {isExpanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+              </IconButton>
+            )}
             <IconButton
               onClick={() => onChatRequest(nodeDatum)}
               style={{ color: "black", zIndex: 99999999999 }}
             >
-              <Icon>save</Icon>
+              <SaveIcon />
             </IconButton>
-          )}
+          </div>
         </foreignObject>
       </g>
       <Dialog
