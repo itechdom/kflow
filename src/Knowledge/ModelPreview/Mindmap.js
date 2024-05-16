@@ -56,7 +56,6 @@ function Tree({ mindmapByKeys, knowledge, knowledgeChat }) {
                           nodeDatum.id,
                           mindmapByKeys
                         );
-                        console.log("CONVERTED", converted);
                         dispatch(setModel({ model: { body: converted } }));
                       } catch (e) {
                         console.log("ERROR", e);
