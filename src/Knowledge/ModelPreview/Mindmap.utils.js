@@ -67,7 +67,7 @@ export const formatData = (mindmapByKeys) => {
 
 export const getPrompt = (
   path
-) => `complete this object with knowledge to guide someone who is starting to learn this topic. only return output in json. 
+) => `complete this object with the maximum amount of knowledge. Be a teacher. only return output in json. 
             don't include \`\`\`json in your response. omit ${JSON.stringify(
               path
             )} in your response and only include new additions.
@@ -79,6 +79,7 @@ export const cleanResponse = (response, path) => {
     for (let key in obj) {
       if (keys.hasOwnProperty(key)) {
         if (typeof obj[key] === "object" && obj[key] !== null) {
+          console.log("DETECTED", key, obj[key], obj);
           // Promote children to the parent level
           Object.assign(obj, obj[key]);
         }
