@@ -31,7 +31,6 @@ const KnowledgeContainer = ({
   onDelete,
   classes,
 }) => {
-  console.log("MINDMAP BY KEYS in Knowledge Container", mindmapByKeys);
   return (
     <>
       <AppBar position="static" color="default" className={classes.header}>

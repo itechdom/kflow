@@ -3,21 +3,17 @@ import {
   Card,
   CardContent,
   CardActions,
-  CardMedia,
+  IconButton,
+  Tooltip,
   Dialog,
   DialogContent,
   DialogContentText,
   DialogActions,
   Button,
-  IconButton,
-  Tooltip,
 } from "@material-ui/core";
 import { Icon } from "../../Libs/orbital-templates/Material/_shared/Icon/Icon";
 import {
   truncateText,
-  isLargeText,
-  isHttpLink,
-  MIN_TEXT_LENGTH,
   MAX_TEXT_LENGTH,
 } from "./CustomTreeNode.utils";
 
@@ -31,13 +27,11 @@ const CustomTreeNode = ({
   ...rest
 }) => {
   const [openDialog, setOpenDialog] = useState(false);
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+  const hiddenDivRef = useRef(null);
 
   const handleClick = () => {
-    if (
-      nodeDatum &&
-      nodeDatum.name &&
-      nodeDatum.name.length > MAX_TEXT_LENGTH
-    ) {
+    if (nodeDatum?.name?.length > MAX_TEXT_LENGTH) {
       handleOpenDialog();
     }
     onClick(nodeDatum, rest);
@@ -52,37 +46,34 @@ const CustomTreeNode = ({
     setOpenDialog(false);
   };
 
-  const [pWidth, setPWidth] = useState(0);
-  const [pHeight, setPHeight] = useState(0);
-  const pRef = useRef(null);
-
   useEffect(() => {
-    if (pRef.current) {
-      setPWidth(pRef.current.getBoundingClientRect().width);
-      setPHeight(pRef.current.getBoundingClientRect().height);
+    if (hiddenDivRef.current) {
+      const { width, height } = hiddenDivRef.current.getBoundingClientRect();
+      setDimensions({ width, height });
     }
-  }, [nodeDatum, pRef]);
+  }, [nodeDatum]);
 
   return (
     <>
+      <div style={{ position: "absolute", visibility: "hidden", whiteSpace: "nowrap" }} ref={hiddenDivRef}>
+        {truncateText(nodeDatum.name, 15)}
+      </div>
       <g>
-        <foreignObject x="-100" y="-100" width="200" height="250" ref={pRef}>
+        <foreignObject
+          x={-dimensions.width / 2}
+          y={-dimensions.height / 2}
+          width={dimensions.width}
+          height={dimensions.height}
+        >
           <Card
             style={{
-              maxWidth: 200,
               margin: "0 auto",
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+              boxShadow: "none",
               borderRadius: "10px",
+              width: dimensions.width,
+              height: 'auto',
             }}
           >
-            {/* <CardMedia
-              style={{ width: "50%", marginLeft: "25%" }}
-              component="img"
-              alt="Node Image"
-              height="140"
-              image="/images/knowledge-icon.webp"
-              title="Node Image"
-            /> */}
             <CardContent>
               <Tooltip title={nodeDatum.name} placement="top">
                 <div

@@ -9,7 +9,7 @@ import { convertObjectToMindmap } from "./Model.Preview.feature.helper";
 
 const { background, baseStyle, textColor } = theme3Light;
 
-function Tree({ mindmapByKeys, knowledge, knowledgeChat }) {
+function Mindmap({ mindmapByKeys, knowledge, knowledgeChat }) {
   const dispatch = useDispatch();
   const [data, setData] = useState([]);
   const [translate, setTranslate] = useState({ x: 450, y: 450 });
@@ -79,4 +79,4 @@ function Tree({ mindmapByKeys, knowledge, knowledgeChat }) {
   );
 }
 
-export default Tree;
+export default Mindmap;

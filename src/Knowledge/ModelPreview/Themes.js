@@ -54,7 +54,7 @@ const theme2Dark = {
 const theme3Light = {
   background: "linear-gradient(to top, #B2EBF2 0%, #E0F7FA 100%)", // Soft Blue to Lighter Blue
   baseStyle: { fill: "#E0F7FA", stroke: "#01579B" }, // Lighter Blue with Dark Blue Outline
-  textColor: "#01579B", // Dark Blue
+  textColor: "#424242", // Dark Grey is in hex: #424242 
   nodeStyles: {
     blueNode: { fill: "#2196F3" }, // Blue
     orangeNode: { fill: "#FF9800" }, // Orange

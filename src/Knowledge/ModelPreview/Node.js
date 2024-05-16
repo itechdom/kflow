@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, forwardRef, memo } from "react";
 import {
   ListItem,
   IconButton,
@@ -18,64 +18,56 @@ import EditIcon from "@material-ui/icons/Edit";
 import CancelIcon from "@material-ui/icons/Cancel";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
 import DragIndicatorIcon from "@material-ui/icons/DragIndicator";
-import TextField from "Libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.TextFieldInput";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-import { compose, withState } from "recompose";
 import Icon from '@material-ui/core/Icon';
+import TextField from "Libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.TextFieldInput";
 
-const enhance = compose(
-  withState("showNote", "setShowNote", false),
-  withState("nodeValue", "setNodeValue", ""),
-  withState("actionOpen", "setActionOpen", false),
-  withState("anchorEl", "setAnchorEl")
-);
+const Node = forwardRef((props, ref) => {
+  const [showNote, setShowNote] = useState(false);
+  const [nodeValue, setNodeValue] = useState({ value: props.title, key: "title" });
+  const [actionOpen, setActionOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
 
-class Node extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  useEffect(() => {
+    setNodeValue({ value: props.title, key: "title" });
+  }, [props.title]);
 
-  componentDidMount() {
-    this.props.setNodeValue({ value: this.props.title, key: "title" });
-  }
-
-  testHtml(title) {
+  const testHtml = (title) => {
     var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
     var regex = new RegExp(expression);
     return title && title.match(regex);
-  }
+  };
 
-  renderExpandCollapse() {
-    if (this.props.hasChildren) {
-      return this.props.visible ? (
-        <IconButton onClick={this.props.handleNodeToggle}>
+  const renderExpandCollapse = () => {
+    if (props.hasChildren) {
+      return props.visible ? (
+        <IconButton onClick={props.handleNodeToggle}>
           <KeyboardArrowDownIcon />
         </IconButton>
       ) : (
-        <IconButton onClick={this.props.handleNodeToggle}>
+        <IconButton onClick={props.handleNodeToggle}>
           <KeyboardArrowRightIcon />
         </IconButton>
       );
     }
     return (
-      <IconButton onClick={this.props.handleNodeToggle}>
+      <IconButton onClick={props.handleNodeToggle}>
         <StarRateIcon />
       </IconButton>
     );
-  }
+  };
 
-  getTextStyle(isHighlighted, index) {
+  const getTextStyle = (isHighlighted, index) => {
     return {
-      margin: `10px 0px 10px ${this.props.level.split(".").length * 10}px`,
+      margin: `10px 0px 10px ${props.level.split(".").length * 10}px`,
       borderBottom: "1px solid lightgrey",
       marginTop: isHighlighted ? "30px" : "0",
       fontWeight: isHighlighted ? "bold" : "",
       cursor: "pointer",
     };
-  }
+  };
 
-  renderActions() {
-    const { actionOpen, setActionOpen, anchorEl, setAnchorEl } = this.props;
+  const renderActions = () => {
     return (
       <>
         <IconButton
@@ -98,7 +90,7 @@ class Node extends React.Component {
         >
           <MenuItem
             onClick={() => {
-              this.props.handleNodeAdd("Empty Note ");
+              props.handleNodeAdd("Empty Note ");
             }}
           >
             <IconButton>
@@ -108,19 +100,19 @@ class Node extends React.Component {
           <MenuItem>
             <IconButton
               onClick={() => {
-                if (this.props.isEditing) {
-                  return this.props.handleNodeUpdate(this.props.nodeValue);
+                if (props.isEditing) {
+                  return props.handleNodeUpdate(nodeValue);
                 }
-                this.props.handleNodeEdit();
+                props.handleNodeEdit();
               }}
             >
-              {this.props.isEditing ? <CancelIcon /> : <EditIcon />}
+              {props.isEditing ? <CancelIcon /> : <EditIcon />}
             </IconButton>
           </MenuItem>
           <MenuItem>
             <IconButton
               onClick={() => {
-                this.props.handleNodeDelete();
+                props.handleNodeDelete();
               }}
             >
               <DeleteIcon />
@@ -129,101 +121,94 @@ class Node extends React.Component {
         </Menu>
       </>
     );
-  }
+  };
 
-  renderText() {
-    if (!this.props.isEditing) {
-      return this.testHtml(this.props.title) ? (
-        <a target="_blank" href={this.props.title}>
+  const renderText = () => {
+    if (!props.isEditing) {
+      return testHtml(props.title) ? (
+        <a target="_blank" href={props.title} rel="noopener noreferrer">
           <Typography style={{ whiteSpace: "nowrap" }}>
-            {this.props.title.length > 20 ? this.props.title : this.props.title}
+            {props.title.length > 20 ? props.title : props.title}
           </Typography>
         </a>
       ) : (
         <Typography style={{ whiteSpace: "nowrap" }}>
-          {this.props.title}
+          {props.title}
         </Typography>
       );
     }
     return (
       <TextField
-        id={`input-${this.props._id}`}
+        id={`input-${props._id}`}
         type="text"
-        value={this.props.nodeValue.value}
-        key={this.props.title}
+        value={nodeValue.value}
+        key={props.title}
         field={{ name: "title" }}
         setFieldValue={(key, value) => {
-          this.props.setNodeValue({ key, value });
+          setNodeValue({ key, value });
         }}
         setFieldTouched={(key, value) => {}}
         standAlone={true}
       />
     );
-  }
+  };
 
-  render() {
-    const isHighlighted = this.props.level.length <= 6;
-    return (
-      <Card key={this.props._id} ref={this.props.innerRef} id={this.props._id} style={{ margin: "10px 0", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
-        <CardContent>
-          <ListItem className={"list-item"} style={{ ...this.getTextStyle(isHighlighted, this.props.index) }}>
-            <IconButton>
-              <DragIndicatorIcon />
+  const isHighlighted = props.level.length <= 6;
+  return (
+    <Card key={props._id} ref={ref} id={props._id} style={{ margin: "10px 0" }}>
+      <CardContent>
+        <ListItem className={"list-item"} style={{ ...getTextStyle(isHighlighted, props.index) }}>
+          <IconButton>
+            <DragIndicatorIcon />
+          </IconButton>
+          {renderExpandCollapse()}
+          {renderText()}
+          <CardActions>
+            <IconButton
+              onClick={() => {
+                if (props.isEditing) {
+                  props.handleNodeUpdate(nodeValue);
+                }
+                props.handleNodeEdit();
+              }}
+            >
+              {props.isEditing ? <CancelIcon /> : <EditIcon />}
             </IconButton>
-            {this.renderExpandCollapse()}
-            {this.renderText()}
-            <CardActions>
+            {props.note && (
               <IconButton
                 onClick={() => {
-                  if (this.props.isEditing) {
-                    this.props.handleNodeUpdate(this.props.nodeValue);
-                  }
-                  this.props.handleNodeEdit();
+                  setShowNote((prevState) => !prevState);
                 }}
               >
-                {this.props.isEditing ? <CancelIcon /> : <EditIcon />}
+                <Icon>note</Icon>
               </IconButton>
-              {this.props.note && (
-                <IconButton
-                  onClick={() => {
-                    this.props.setShowNote((prevState) => {
-                      return !prevState;
-                    });
-                  }}
-                >
-                  <Icon>note</Icon>
-                </IconButton>
-              )}
-              {this.renderActions()}
-              <Tooltip title="Search on Google">
-                <IconButton
-                  component="a"
-                  href={`https://www.google.com/search?q=${this.props.rootTitle}+${this.props.title}`}
-                  target="_blank"
-                  style={{ marginRight: "5px" }}
-                >
-                  <Icon>search</Icon>
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="Search on Wikipedia">
-                <IconButton
-                  component="a"
-                  href={`https://en.wikipedia.org/wiki/Special:Search?search=${this.props.rootTitle}+${this.props.title}`}
-                  target="_blank"
-                  style={{ marginLeft: "5px" }}
-                >
-                  <Icon>wiki</Icon>
-                </IconButton>
-              </Tooltip>
-            </CardActions>
-          </ListItem>
-        </CardContent>
-      </Card>
-    );
-  }
-}
-const EnhancedNode = enhance(Node);
-const NodeWithRef = React.forwardRef((props, ref) => {
-  return <EnhancedNode innerRef={ref} {...props} />;
+            )}
+            {renderActions()}
+            <Tooltip title="Search on Google">
+              <IconButton
+                component="a"
+                href={`https://www.google.com/search?q=${props.rootTitle}+${props.title}`}
+                target="_blank"
+                style={{ marginRight: "5px" }}
+              >
+                <Icon>search</Icon>
+              </IconButton>
+            </Tooltip>
+            <Tooltip title="Search on Wikipedia">
+              <IconButton
+                component="a"
+                href={`https://en.wikipedia.org/wiki/Special:Search?search=${props.rootTitle}+${props.title}`}
+                target="_blank"
+                style={{ marginLeft: "5px" }}
+              >
+                <Icon>wiki</Icon>
+              </IconButton>
+            </Tooltip>
+          </CardActions>
+        </ListItem>
+      </CardContent>
+    </Card>
+  );
 });
-export default NodeWithRef;
+
+export default memo(Node);
