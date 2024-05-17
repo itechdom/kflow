@@ -1,0 +1,19 @@
+{
+  "name": "@markab.io/orbital-templates",
+  "version": "10.0.0",
+  "description": "themes for orbital apps",
+  "main": "Template.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markab-io/orbital-templates.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markab-io/orbital-templates/issues"
+  },
+  "homepage": "https://github.com/markab-io/orbital-templates#readme"
+}
