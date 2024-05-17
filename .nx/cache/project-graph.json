@@ -8754,17 +8754,22 @@
     "ui": [
       {
         "source": "ui",
-        "target": "npm:@mui/material",
-        "type": "static"
-      },
-      {
-        "source": "ui",
         "target": "npm:@emotion/react",
         "type": "static"
       },
       {
         "source": "ui",
         "target": "npm:@emotion/styled",
+        "type": "static"
+      },
+      {
+        "source": "ui",
+        "target": "npm:@mui/material",
+        "type": "static"
+      },
+      {
+        "source": "ui",
+        "target": "npm:@mui/styles",
         "type": "static"
       },
       {
@@ -8785,6 +8790,16 @@
       {
         "source": "ui",
         "target": "npm:@mui/icons-material",
+        "type": "static"
+      },
+      {
+        "source": "ui",
+        "target": "npm:@nx/js",
+        "type": "static"
+      },
+      {
+        "source": "ui",
+        "target": "npm:nx",
         "type": "static"
       },
       {
@@ -8820,16 +8835,6 @@
       {
         "source": "ui",
         "target": "npm:worker-loader",
-        "type": "static"
-      },
-      {
-        "source": "ui",
-        "target": "npm:@nx/js",
-        "type": "static"
-      },
-      {
-        "source": "ui",
-        "target": "npm:nx",
         "type": "static"
       }
     ],

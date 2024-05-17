@@ -1,3 +1,4 @@
+const fs = require("fs");
 module.exports = function recurReadFiles(folder, onFile, onError) {
   if (folder.indexOf("build") !== -1 || folder.indexOf("node_modules") !== -1) {
     return;
