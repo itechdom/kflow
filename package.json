@@ -4,17 +4,22 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.18",
+    "@mui/material": "^5.15.18",
+    "@mui/styles": "^5.15.18"
   },
   "devDependencies": {
+    "@nx/js": "19.0.4",
+    "nx": "19.0.4",
     "serverless": "^3.38.0",
     "serverless-apig-s3": "^2.0.0",
     "serverless-finch": "^2.8.0",
     "serverless-http": "^3.2.0",
     "serverless-offline": "^13.5.0",
     "serverless-single-page-app-plugin": "^1.0.4",
-    "worker-loader": "^2.0.0",
-    "@nx/js": "19.0.4",
-    "nx": "19.0.4"
+    "worker-loader": "^2.0.0"
   },
   "scripts": {
     "build:server": "nx build server",

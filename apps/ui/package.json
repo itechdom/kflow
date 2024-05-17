@@ -65,7 +65,6 @@
   },
   "devDependencies": {
     "@mui/icons-material": "^5.0.0",
-    "mobx-react-devtools": "^6.1.1",
     "normalize.css": "^8.0.1",
     "serverless": "^3.38.0",
     "serverless-apig-s3": "^2.0.0",

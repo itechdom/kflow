@@ -1,5 +1,3 @@
-import { fade } from "@mui/material/styles/colorManipulator";
-const drawerWidth = 180;
 const appBarHeight = 64;
 export const styles = (theme) => {
   return {
