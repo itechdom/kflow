@@ -1,0 +1,26 @@
+[2K[1G[2m$ nx serve ui[22m
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mUnable to resolve @nrwl/web:dev-server.[39m
+
+Cannot find module '@nrwl/web/package.json'
+Require stack:
+- /Users/oalghanmi/kflow/node_modules/nx/src/utils/package-json.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/project-graph/plugins/loader.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/project-graph/plugins/index.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/command-line/run/executor-utils.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/devkit-internals.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/utils/assert-workspace-validity.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/project-graph/build-project-graph.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/project-graph/project-graph.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/project-graph/file-utils.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/utils/package-manager.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/utils/child-process.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/command-line/migrate/command-object.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/command-line/nx-commands.js
+- /Users/oalghanmi/kflow/node_modules/nx/bin/init-local.js
+- /Users/oalghanmi/kflow/node_modules/nx/bin/nx.js
+- /Users/oalghanmi/kflow/apps/ui/node_modules/nx/bin/nx.js
+Pass --verbose to see the stacktrace.
+
+[2K[1G[31merror[39m Command failed with exit code 1.
+[2K[1G[34minfo[39m Visit [1mhttps://yarnpkg.com/en/docs/cli/run[22m for documentation about this command.

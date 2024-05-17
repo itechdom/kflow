@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@kflow/*": ["libs/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"],
+  "include": ["**/*"]
+}
