@@ -1,0 +1,4750 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.0.4",
+  "deps": {
+    "@nx/js": "19.0.4",
+    "nx": "19.0.4"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      ".": [
+        {
+          "file": ".babelrc",
+          "hash": "5330787629573791034"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "15207162754670266744"
+        },
+        {
+          "file": ".gitmodules",
+          "hash": "10865203522860523402"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "15542186811534988851"
+        },
+        {
+          "file": "README.md",
+          "hash": "1104206848785677663"
+        },
+        {
+          "file": "apps/server/python/.gitignore",
+          "hash": "965309827566386612"
+        },
+        {
+          "file": "apps/server/python/assets/wiki.txt",
+          "hash": "8040739283673464840"
+        },
+        {
+          "file": "apps/server/python/index.py",
+          "hash": "12026451037176396493"
+        },
+        {
+          "file": "apps/server/python/requirements.txt",
+          "hash": "2164793734228542966"
+        },
+        {
+          "file": "apps/server/python/scripts/install.sh",
+          "hash": "9927891219875383493"
+        },
+        {
+          "file": "apps/server/python/scripts/run.sh",
+          "hash": "14536474836278550653"
+        },
+        {
+          "file": "apps/server/python/scripts/setup-python.sh",
+          "hash": "219069984985103778"
+        },
+        {
+          "file": "apps/server/python/src/gpt-langchain.py",
+          "hash": "12470876429043337613"
+        },
+        {
+          "file": "apps/server/python/src/lanchain.py",
+          "hash": "847805747639934562"
+        },
+        {
+          "file": "apps/server/python/src/mostUniqueWords.py",
+          "hash": "7236663950543428711"
+        },
+        {
+          "file": "apps/server/python/src/server.py",
+          "hash": "7322733374257771364"
+        },
+        {
+          "file": "apps/server/python/src/torch-image-classification.py",
+          "hash": "9881343716916663234"
+        },
+        {
+          "file": "apps/server/python/src/torch-tensors.py",
+          "hash": "16776371345607942195"
+        },
+        {
+          "file": "apps/server/python/src/torch-workflow-summary.py",
+          "hash": "15666404108040677650"
+        },
+        {
+          "file": "apps/server/python/src/torch-workflow.py",
+          "hash": "3354494580319774431"
+        },
+        {
+          "file": "apps/server/python/wiki-res.json",
+          "hash": "18181539555020842391"
+        },
+        {
+          "file": "apps/server/python/wiki-res.txt",
+          "hash": "6387522008351933103"
+        },
+        {
+          "file": "apps/server/src/.babelrc",
+          "hash": "3250086131670327215"
+        },
+        {
+          "file": "apps/server/src/babel.config.js",
+          "hash": "12177898944516416495"
+        },
+        {
+          "file": "apps/server/src/config/custom-environment-variables.json",
+          "hash": "10219113616260798217"
+        },
+        {
+          "file": "apps/server/src/config/db/mongod.conf",
+          "hash": "3182769162687451845"
+        },
+        {
+          "file": "apps/server/src/config/default.json",
+          "hash": "5438657103043773659"
+        },
+        {
+          "file": "apps/server/src/config/production.json",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/src/config/qa.json",
+          "hash": "1026787870855588377"
+        },
+        {
+          "file": "apps/server/src/docs/routes.md",
+          "hash": "14813760444439241896"
+        },
+        {
+          "file": "apps/server/src/docs/routes.txt",
+          "hash": "12676978809711798949"
+        },
+        {
+          "file": "apps/server/src/handler.js",
+          "hash": "14481818349350436656"
+        },
+        {
+          "file": "apps/server/src/index.js",
+          "hash": "11872918847711195659"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/WiredTiger",
+          "hash": "1294684645872229581"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/WiredTiger.lock",
+          "hash": "7045004002381174161"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/WiredTiger.turtle",
+          "hash": "4399430693820586796"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/WiredTiger.wt",
+          "hash": "7372293575177795478"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/WiredTigerHS.wt",
+          "hash": "8796983299916770995"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/_mdb_catalog.wt",
+          "hash": "17127453212982916254"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/collection-0-1258990656970514026.wt",
+          "hash": "12697600905831668795"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/collection-0-7314233670185838370.wt",
+          "hash": "8352933509161072310"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/collection-17-7314233670185838370.wt",
+          "hash": "8637283126603614778"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/collection-2-7314233670185838370.wt",
+          "hash": "2957684246327471845"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/collection-25-7314233670185838370.wt",
+          "hash": "3330649005809046259"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/collection-29-7314233670185838370.wt",
+          "hash": "8796983299916770995"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/collection-30-7314233670185838370.wt",
+          "hash": "14048708824993448690"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/collection-34-7314233670185838370.wt",
+          "hash": "16507876590873048900"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/collection-36-7314233670185838370.wt",
+          "hash": "10708748275953434402"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/collection-4-7314233670185838370.wt",
+          "hash": "11380900676785211371"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/collection-7-7314233670185838370.wt",
+          "hash": "7945875015387853459"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-03-04T13-54-52Z-00000",
+          "hash": "13990856572157316197"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-03-06T04-37-29Z-00000",
+          "hash": "6185434044165436042"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-03-07T15-12-54Z-00000",
+          "hash": "15048346201026108062"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-03-11T17-34-58Z-00000",
+          "hash": "3265299590362497713"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-03-12T05-19-49Z-00000",
+          "hash": "5032158566438262617"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-03-14T13-21-50Z-00000",
+          "hash": "10726915266272677785"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-03-17T07-14-26Z-00000",
+          "hash": "14264158852281237954"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-03-19T14-12-57Z-00000",
+          "hash": "2533452323595047494"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-03-23T13-11-12Z-00000",
+          "hash": "12188690146803539742"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-03-25T07-51-10Z-00000",
+          "hash": "9053017611835008381"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-03-29T06-34-53Z-00000",
+          "hash": "17738945834709616319"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-04-03T02-27-12Z-00000",
+          "hash": "16382793346535743264"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-04-05T13-04-30Z-00000",
+          "hash": "1863486042480834332"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-04-06T18-04-30Z-00000",
+          "hash": "2095536232470872328"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-04-24T05-21-47Z-00000",
+          "hash": "3706486360004062356"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-04-27T14-40-10Z-00000",
+          "hash": "9117844549647949033"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-05-01T03-48-44Z-00000",
+          "hash": "11152390115968466654"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-05-05T11-43-29Z-00000",
+          "hash": "7130473886819060052"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-05-10T21-50-43Z-00000",
+          "hash": "16954911518179925246"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-05-13T07-12-17Z-00000",
+          "hash": "18013240343903259772"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-05-14T15-50-31Z-00000",
+          "hash": "18262653055354078345"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-05-15T22-20-31Z-00000",
+          "hash": "2850959329809032588"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.2024-05-16T18-26-36Z-00000",
+          "hash": "9097025026789622003"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/diagnostic.data/metrics.interim",
+          "hash": "13063428754536421771"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/index-1-1258990656970514026.wt",
+          "hash": "13781308331427829211"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/index-1-7314233670185838370.wt",
+          "hash": "8727546365906024744"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/index-12-7314233670185838370.wt",
+          "hash": "18223413549459337418"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/index-20-7314233670185838370.wt",
+          "hash": "3602238521778826951"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/index-28-7314233670185838370.wt",
+          "hash": "378826454853981856"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/index-3-7314233670185838370.wt",
+          "hash": "7932722802219775915"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/index-31-7314233670185838370.wt",
+          "hash": "8796983299916770995"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/index-32-7314233670185838370.wt",
+          "hash": "8947989862882869294"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/index-33-7314233670185838370.wt",
+          "hash": "8796983299916770995"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/index-35-7314233670185838370.wt",
+          "hash": "16989055047872107666"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/index-37-7314233670185838370.wt",
+          "hash": "8603820589697916332"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/index-5-7314233670185838370.wt",
+          "hash": "11131815139524620755"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/index-6-7314233670185838370.wt",
+          "hash": "3389400102510973452"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/journal/WiredTigerLog.0000000005",
+          "hash": "10816001662073775452"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/journal/WiredTigerPreplog.0000000001",
+          "hash": "9705535327776266990"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/journal/WiredTigerPreplog.0000000002",
+          "hash": "9705535327776266990"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/mongod.lock",
+          "hash": "3383225458521326309"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/sizeStorer.wt",
+          "hash": "7119084117948106711"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/data/storage.bson",
+          "hash": "1679351129780017522"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/docker-compose.yml",
+          "hash": "16711744895861432284"
+        },
+        {
+          "file": "apps/server/src/infra/mongodb/mongo-with-podman.sh",
+          "hash": "16010791547379441046"
+        },
+        {
+          "file": "apps/server/src/nodemon-dev.json",
+          "hash": "15203120882963819572"
+        },
+        {
+          "file": "apps/server/src/nodemon-qa.json",
+          "hash": "12723693002635887930"
+        },
+        {
+          "file": "apps/server/src/nodemon.json",
+          "hash": "15203120882963819572"
+        },
+        {
+          "file": "apps/server/src/package.json",
+          "hash": "11528983497123370266"
+        },
+        {
+          "file": "apps/server/src/scripts/db-backup.js",
+          "hash": "1554611260552150489"
+        },
+        {
+          "file": "apps/server/src/scripts/db-backup.sh",
+          "hash": "5498679999750650168"
+        },
+        {
+          "file": "apps/server/src/scripts/db/db.sh",
+          "hash": "13188305002379888210"
+        },
+        {
+          "file": "apps/server/src/scripts/image-processing/make-spaces-between-images-even.js",
+          "hash": "6769557210810106017"
+        },
+        {
+          "file": "apps/server/src/scripts/image-processing/remove-white-spaces-from-image.js",
+          "hash": "8881189640773712794"
+        },
+        {
+          "file": "apps/server/src/scripts/kernel/kernel.js",
+          "hash": "7880044676085538504"
+        },
+        {
+          "file": "apps/server/src/scripts/kernel/kernel.sh",
+          "hash": "16308589445331983185"
+        },
+        {
+          "file": "apps/server/src/scripts/kernel/save-kernel-to-db.js",
+          "hash": "14362685476816601628"
+        },
+        {
+          "file": "apps/server/src/scripts/kernel/save-kernel-to-db.sh",
+          "hash": "12525687304243414100"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Accounting-mine.mup",
+          "hash": "4896226772033637738"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Entertainment",
+          "hash": "14538541465116062192"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Accounting-Personal Finance.mup",
+          "hash": "16884663266223063271"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Accounting-Tax.mup",
+          "hash": "1468996743083523106"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Alpine linux.mup",
+          "hash": "11219410927886443937"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Amazon AWS.mup",
+          "hash": "10394778387552501630"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Android.mup",
+          "hash": "8097229340673112814"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Angular.js.mup",
+          "hash": "8306276184918603409"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Apache.mup",
+          "hash": "14216230540941396629"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Artificial Intellegence.mup",
+          "hash": "3165365990817931748"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Asmjs.mup",
+          "hash": "10744610245611356687"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Asp.net.mup",
+          "hash": "165342385073684561"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Assembly Language.mup",
+          "hash": "2951144109499654850"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Bash.mup",
+          "hash": "165933114584811983"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Blockchain",
+          "hash": "15526220786272028652"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Browser Engines.mup",
+          "hash": "8261337716395683794"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-C++.mup",
+          "hash": "17042404034269150017"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-C.mup",
+          "hash": "4113331666422221572"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-CGI.mup",
+          "hash": "12680248961051070481"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Clojure-Luminus.mup",
+          "hash": "965465966363475823"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Clojure.mup",
+          "hash": "14600517240192702341"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-ClojureScript.mup",
+          "hash": "7299147254683922832"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Command Line.mup",
+          "hash": "2758484811603406567"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Compiler.mup",
+          "hash": "12558722248318871062"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Cordova.mup",
+          "hash": "13137534850230526468"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Csharp.mup",
+          "hash": "6886679612493915554"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Cycle.js.mup",
+          "hash": "4758861694847080045"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-D.mup",
+          "hash": "6372334698670972741"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-D3.mup",
+          "hash": "18139048093808565651"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-DOM.mup",
+          "hash": "8193577358741475219"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Data Science.mup",
+          "hash": "15889527811434719705"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Data Structures and Algorithms.mup",
+          "hash": "3449407184226864643"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Database.mup",
+          "hash": "8738987435342146124"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Deno.mup",
+          "hash": "5612267994764799324"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Distributed Systems.mup",
+          "hash": "2164993763891281728"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Docker.mup",
+          "hash": "16171110800982422968"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Domain Driven Design(1).mup",
+          "hash": "14075220252214975298"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Domain Driven Design.mup",
+          "hash": "10630248567253203409"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Elastic-Search",
+          "hash": "12123820413826249434"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Electron.mup",
+          "hash": "696816026921773624"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Elixir.mup",
+          "hash": "9317341635461160334"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Elm.mup",
+          "hash": "12310039624419757619"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Erlang.mup",
+          "hash": "6589520564005598834"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Eve.mup",
+          "hash": "4050783052391782405"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Express.mup",
+          "hash": "4843697518387183750"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-F-sharp.mup",
+          "hash": "1580417131047979097"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Falcor.mup",
+          "hash": "12891689341917729668"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Flask.mup",
+          "hash": "16765575714813073881"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Functional Programming JavaScript.mup",
+          "hash": "10193305994149373388"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Functional Programming.mup",
+          "hash": "6726111344655150022"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Game Programming.mup",
+          "hash": "17578035532369472353"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Go.mup",
+          "hash": "14919204032899593667"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Google App Engine",
+          "hash": "4130654789715479575"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Graphics Programming.mup",
+          "hash": "17725667680258821594"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Graphql",
+          "hash": "17759192546029025650"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Graphql.mup",
+          "hash": "17279946527914224350"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Hack.mup",
+          "hash": "3769121620079397741"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Handlebars.mup",
+          "hash": "2832573197057338094"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Haskell.mup",
+          "hash": "17467748196082761277"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Integration Testing.mup",
+          "hash": "999796352570283032"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-JWT.mup",
+          "hash": "3503291797376206959"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Java-Springboot.mup",
+          "hash": "3000003300177046504"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Java.mup",
+          "hash": "1267735867068203678"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-JavaScript.mup",
+          "hash": "8594778201451371642"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Js Challenges.mup",
+          "hash": "8243595548032592329"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-K8.mup",
+          "hash": "6098630875449449920"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Kafka.mup",
+          "hash": "3525577882931073765"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Kotlin.mup",
+          "hash": "15026392090670285729"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Linux.mup",
+          "hash": "17860027039298479320"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Lisp.mup",
+          "hash": "1960935353941084832"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Live Music.mup",
+          "hash": "7412040330876212106"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Logic Programming.mup",
+          "hash": "7735760795538737464"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Machine Learning.mup",
+          "hash": "13268004605062579014"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Matterjs",
+          "hash": "4351501376297923106"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Mobx.mup",
+          "hash": "12855407765947908319"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-MongoDB.mup",
+          "hash": "13996347934225881893"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-NGINX.mup",
+          "hash": "12315545512890353884"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-NPM.mup",
+          "hash": "6784737783331010554"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Natural Language Processing.mup",
+          "hash": "251638551746596203"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Networks.mup",
+          "hash": "933489813736592360"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-No SQL.mup",
+          "hash": "2545904931399308035"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Nodejs.mup",
+          "hash": "7674461743254561423"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-OS.mup",
+          "hash": "8852780608461999951"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-PHP.mup",
+          "hash": "9055651537503165784"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Perl.mup",
+          "hash": "11837139107507951201"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Pixi.mup",
+          "hash": "10347268944516253264"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Polymer.mup",
+          "hash": "14915401591936948217"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Postgres.mup",
+          "hash": "15072839298451186870"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Prediction IO.mup",
+          "hash": "9174794744937470217"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Programming Languages.mup",
+          "hash": "11940079492417434912"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Python.mup",
+          "hash": "10803291141466689106"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-R.mup",
+          "hash": "7172075103436049962"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Rack.mup",
+          "hash": "10908846887270025417"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Ramda.mup",
+          "hash": "5920404461481839750"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-React Native",
+          "hash": "5828421947413427610"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-React Native.mup",
+          "hash": "7901353961317018600"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-React.material-ui.mup",
+          "hash": "12603578667405256645"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-React.mup",
+          "hash": "4843435806143888342"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Reactive Programming(1).mup",
+          "hash": "9289111308859364841"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Reactive Programming.mup",
+          "hash": "9289111308859364841"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Redux.mup",
+          "hash": "12251924322377025581"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Regex.mup",
+          "hash": "16855637988079129193"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Rethinkdb.mup",
+          "hash": "18244369067973141862"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Rollup.mup",
+          "hash": "17403578110400309425"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Rust",
+          "hash": "9553215384937365095"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Rust.mup",
+          "hash": "2646592773490883323"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-RxJS.mup",
+          "hash": "12184852870691098381"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-RxJS.presentation.mup",
+          "hash": "10999087095678267246"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Scala.mup",
+          "hash": "14263326483398340742"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Search-Engines.mup",
+          "hash": "11005272992825443346"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Security",
+          "hash": "1561009716512510841"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Security.mup",
+          "hash": "15509036735502511060"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Semver.mup",
+          "hash": "14280976528563241575"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Serverless",
+          "hash": "7375567612711530237"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Socketio.mup",
+          "hash": "16912361417161555953"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Software Development Career.mup",
+          "hash": "17886637929990611707"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Software Quality.mup",
+          "hash": "14811619255790780352"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Spray.mup",
+          "hash": "10570228663494943443"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Spring.mup",
+          "hash": "8756092615781740951"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Swift.mup",
+          "hash": "9981622340346161206"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-System Programming.mup",
+          "hash": "1586635934255160008"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-System-Archeticture-Dapr.mup",
+          "hash": "7624251669149732681"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-System_Archeticture.mup",
+          "hash": "12470739668013918895"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Three.js.mup",
+          "hash": "10872239306100146889"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-TypeScript.mup",
+          "hash": "11828434903313714690"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-UX.presentation.mup",
+          "hash": "5740127606392905290"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Unit Testing.mup",
+          "hash": "5985234639013132629"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Vim.mup",
+          "hash": "11971222733509064055"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Virtualization.mup",
+          "hash": "4995850600244296194"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Visual Programming.mup",
+          "hash": "12536285234687556865"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Vue.js.mup",
+          "hash": "18421064377207134056"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Web Assembly.mup",
+          "hash": "12697929814289405738"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Web Components.mup",
+          "hash": "5345643997562348575"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Web Design.mup",
+          "hash": "603711685461274324"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Web Programming.mup",
+          "hash": "11656957608894696801"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Webgl.mup",
+          "hash": "9088758423321482737"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Webpack.mup",
+          "hash": "2600806962881051535"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Wordpress.mup",
+          "hash": "14303027613352144180"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Yarn.mup",
+          "hash": "13540598437316042114"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Zookeeper.mup",
+          "hash": "15164988451493447340"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-Zsh.mup",
+          "hash": "11765171424569827307"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-blender",
+          "hash": "16243965073564686610"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-iOS.mup",
+          "hash": "17611418000172397178"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-ionic.mup",
+          "hash": "456485887243471696"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-neural networks.mup",
+          "hash": "13713002684546195528"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-neural-networks.mup",
+          "hash": "3490955559314834079"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer-travis.mup",
+          "hash": "13349983734667089574"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Computer.mup",
+          "hash": "8942736867319248501"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Math-Discrete Math.mup",
+          "hash": "16899554893659722128"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Math-Geometry.mup",
+          "hash": "7935897000223149172"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Math-Graph Theory.mup",
+          "hash": "553372404229616045"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Math-Math.mup",
+          "hash": "14226734339267260622"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Formal-Math-Statistics.mup",
+          "hash": "10411323143839132602"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Natural-Biology",
+          "hash": "6126508660472247857"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Natural-Biology-Neuroscience",
+          "hash": "5582257566309471171"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Natural-Biology-Physiology",
+          "hash": "12714362050977373979"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Natural-Biology.mup",
+          "hash": "14552697942065728261"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Natural-Botany",
+          "hash": "9795720101973017770"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Natural-Chemistry",
+          "hash": "9083716167688804241"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Natural-Chemistry-Cooking.mup",
+          "hash": "1640555731150966051"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Natural-Chemistry.mup",
+          "hash": "2589026143323295756"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Natural-Cognitive Science.mup",
+          "hash": "3821675199804186182"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Natural-Physics",
+          "hash": "14027641778357761872"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Natural-Physics-Astronomy.mup",
+          "hash": "208213091484132527"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Natural-Physics-Nanotechnology.mup",
+          "hash": "4436373742559937366"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Natural-Zoology.mup",
+          "hash": "8694533627862637366"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Art-3D Modeling.mup",
+          "hash": "994463814666527184"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Art-Animation.mup",
+          "hash": "14899991770803583561"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Art-Drawing.mup",
+          "hash": "14097966043420337765"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Art-Graphics Design.mup",
+          "hash": "280577772697546508"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Art-UX.mup",
+          "hash": "1596666689961746659"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Arts.mup",
+          "hash": "11518475308500384324"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Economics-Personal Finance.mup",
+          "hash": "2607833758068381146"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Economy.mup",
+          "hash": "927926535163221231"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Education-Intelligent tutoring system.mup",
+          "hash": "14830769508982188818"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Education-VR.mup",
+          "hash": "4133520174247318169"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Education-Wikipedia.mup",
+          "hash": "1850241053260626223"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Education-mindmaps.mup",
+          "hash": "9376891364972225611"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Education.mup",
+          "hash": "13665527537271147261"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Geography.mup",
+          "hash": "12087217641307476742"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-History.mup",
+          "hash": "4522307000933980653"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Languages-Arabic.mup",
+          "hash": "6727100489781605277"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Languages-English.mup",
+          "hash": "5614896920597496154"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Languages-French.mup",
+          "hash": "8470258530998763229"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Languages-Hebrew.mup",
+          "hash": "9050906877769521070"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Languages-Japanese.mup",
+          "hash": "17902711079643964664"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Languages-Spanish.mup",
+          "hash": "16634388951248327521"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Languages.mup",
+          "hash": "13558663271119429506"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Music.mup",
+          "hash": "9960481757317508636"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Philosophy.mup",
+          "hash": "17961462829504159739"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Providers.mup",
+          "hash": "13455458840132223990"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Psychology.mup",
+          "hash": "14547795088357782968"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Theology-Islam",
+          "hash": "7846297723773128003"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-Theology.mup",
+          "hash": "17508186193333111449"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/data/Social-US Cities.mup",
+          "hash": "2176320817247240086"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/save-knowledge-to-db.js",
+          "hash": "6445893943222667369"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/save-knowledge-to-db.sh",
+          "hash": "15852610324811551045"
+        },
+        {
+          "file": "apps/server/src/scripts/knowledge-base/utils.js",
+          "hash": "8813507797470731057"
+        },
+        {
+          "file": "apps/server/src/scripts/lambda-service/convert-import-to-require.js",
+          "hash": "3342190934637348200"
+        },
+        {
+          "file": "apps/server/src/scripts/lambda-service/convert-import-to-require.sh",
+          "hash": "9401538986821224277"
+        },
+        {
+          "file": "apps/server/src/scripts/lambda-service/convert-to-lambda.js",
+          "hash": "16422960391986656339"
+        },
+        {
+          "file": "apps/server/src/scripts/lambda-service/convert-to-lambda.sh",
+          "hash": "10311538466043118385"
+        },
+        {
+          "file": "apps/server/src/scripts/lambda-service/deploy-lambdas.sh",
+          "hash": "4038145501925973284"
+        },
+        {
+          "file": "apps/server/src/scripts/requests/index.js",
+          "hash": "18047323123517004047"
+        },
+        {
+          "file": "apps/server/src/scripts/requests/request-list.js",
+          "hash": "15678407028374432747"
+        },
+        {
+          "file": "apps/server/src/scripts/requests/requests.js",
+          "hash": "1810951280758025966"
+        },
+        {
+          "file": "apps/server/src/scripts/requests/requests.sh",
+          "hash": "11042624402513337677"
+        },
+        {
+          "file": "apps/server/src/scripts/utils.js",
+          "hash": "8785881257054559616"
+        },
+        {
+          "file": "apps/server/src/server.js",
+          "hash": "7945214947190732084"
+        },
+        {
+          "file": "apps/server/src/serverless.yml",
+          "hash": "1463052394402799257"
+        },
+        {
+          "file": "apps/server/src/src/chat/Chat/index.js",
+          "hash": "6197963612113193388"
+        },
+        {
+          "file": "apps/server/src/src/chat/Settings/index.js",
+          "hash": "1343764670780071013"
+        },
+        {
+          "file": "apps/server/src/src/chat/api.js",
+          "hash": "13176511339242368578"
+        },
+        {
+          "file": "apps/server/src/src/chat/build/README.md",
+          "hash": "3165456549320107121"
+        },
+        {
+          "file": "apps/server/src/src/chat/build/index.js",
+          "hash": "12383630518341233279"
+        },
+        {
+          "file": "apps/server/src/src/chat/build/install.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/src/src/chat/build/nodemon-dev.json",
+          "hash": "15203120882963819572"
+        },
+        {
+          "file": "apps/server/src/src/chat/build/nodemon-qa.json",
+          "hash": "12723693002635887930"
+        },
+        {
+          "file": "apps/server/src/src/chat/build/nodemon.json",
+          "hash": "15203120882963819572"
+        },
+        {
+          "file": "apps/server/src/src/chat/build/package-lock.json",
+          "hash": "14081790113584048094"
+        },
+        {
+          "file": "apps/server/src/src/chat/build/package.json",
+          "hash": "377872427030771733"
+        },
+        {
+          "file": "apps/server/src/src/chat/build/server.js",
+          "hash": "17772331900765215572"
+        },
+        {
+          "file": "apps/server/src/src/chat/build/setupTests.js",
+          "hash": "17569039994981640272"
+        },
+        {
+          "file": "apps/server/src/src/chat/docs/routes.txt",
+          "hash": "17367184027670799628"
+        },
+        {
+          "file": "apps/server/src/src/chat/emails/emailConfirmation.pug",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/src/src/chat/emails/passwordResetConfirmation.pug",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/src/src/chat/scripts/Mongodb/install-mongo.sh",
+          "hash": "9638746048973610114"
+        },
+        {
+          "file": "apps/server/src/src/chat/scripts/Mongodb/mongo-start.sh",
+          "hash": "12390935776659985389"
+        },
+        {
+          "file": "apps/server/src/src/chat/scripts/Mongodb/run-mongo.sh",
+          "hash": "14444885455042187886"
+        },
+        {
+          "file": "apps/server/src/src/chat/scripts/Mongodb/run-seed.sh",
+          "hash": "5213576937829628203"
+        },
+        {
+          "file": "apps/server/src/src/chat/scripts/lambda-service/convert-to-lambda.sh",
+          "hash": "15376217774623637424"
+        },
+        {
+          "file": "apps/server/src/src/chat/scripts/lambda-service/deploy-lambdas.sh",
+          "hash": "5698995550715012825"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/Categories/index.js",
+          "hash": "672493477687511549"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/Events/index.js",
+          "hash": "498636853893025647"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/Forms/index.js",
+          "hash": "2456868822276830066"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/Insights/index.js",
+          "hash": "1077016890943396211"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/Knowledge/index.js",
+          "hash": "7701716019797506611"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/Knowledge/tests/chat.sh",
+          "hash": "1737593578578784337"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/Knowledge/tests/image.sh",
+          "hash": "8447276124199199147"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/Settings/index.js",
+          "hash": "1343764670780071013"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/api.js",
+          "hash": "6613075373680600063"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/build/README.md",
+          "hash": "3165456549320107121"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/build/babel.config.js",
+          "hash": "7516397487247185405"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/build/index.js",
+          "hash": "12383630518341233279"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/build/install.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/build/nodemon-dev.json",
+          "hash": "15203120882963819572"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/build/nodemon-qa.json",
+          "hash": "12723693002635887930"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/build/nodemon.json",
+          "hash": "15203120882963819572"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/build/package-lock.json",
+          "hash": "1664235292788916060"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/build/package.json",
+          "hash": "6979921816318128222"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/build/server.js",
+          "hash": "14499217106051563887"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/build/setupTests.js",
+          "hash": "17569039994981640272"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/docs/routes.txt",
+          "hash": "8281781545316653814"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/emails/emailConfirmation.pug",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/emails/passwordResetConfirmation.pug",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/media/Sam-5d3523a9e0ad8eb64e630a9d-.jpg",
+          "hash": "15499267332348624241"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/media/Sam-5d367daa4ddeee059124fe2a-.jpg",
+          "hash": "15499267332348624241"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/media/Sam-5d3eee74f532a436d97a3041-.jpg",
+          "hash": "15499267332348624241"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/scripts/fetchHm.js",
+          "hash": "10719247107994145933"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/scripts/fetchTest.js",
+          "hash": "17005365275933262125"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/scripts/hm.html",
+          "hash": "15414826616048318307"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/scripts/run.sh",
+          "hash": "16282477668668792852"
+        },
+        {
+          "file": "apps/server/src/src/knowledge-base/wiki.txt",
+          "hash": "8040739283673464840"
+        },
+        {
+          "file": "apps/server/src/src/lambda-service/contacts/.babelrc",
+          "hash": "3250086131670327215"
+        },
+        {
+          "file": "apps/server/src/src/lambda-service/contacts/babel.config.js",
+          "hash": "12177898944516416495"
+        },
+        {
+          "file": "apps/server/src/src/lambda-service/contacts/config/default.json",
+          "hash": "3165014225699288648"
+        },
+        {
+          "file": "apps/server/src/src/lambda-service/contacts/contacts.js",
+          "hash": "13682081192704140189"
+        },
+        {
+          "file": "apps/server/src/src/lambda-service/contacts/forms.js",
+          "hash": "7538986765419125864"
+        },
+        {
+          "file": "apps/server/src/src/lambda-service/contacts/handler.js",
+          "hash": "15248155832952367593"
+        },
+        {
+          "file": "apps/server/src/src/lambda-service/contacts/index.js",
+          "hash": "17791768483921882943"
+        },
+        {
+          "file": "apps/server/src/src/lambda-service/contacts/package-lock.json",
+          "hash": "5464162423188603736"
+        },
+        {
+          "file": "apps/server/src/src/lambda-service/contacts/package.json",
+          "hash": "11837672560616492162"
+        },
+        {
+          "file": "apps/server/src/src/lambda-service/contacts/permissions.js",
+          "hash": "10411043630466955740"
+        },
+        {
+          "file": "apps/server/src/src/lambda-service/contacts/serverless.yml",
+          "hash": "8817352707093610861"
+        },
+        {
+          "file": "apps/server/src/yarn.lock",
+          "hash": "5721283807011278473"
+        },
+        {
+          "file": "apps/ui/.vscode/launch.json",
+          "hash": "1027407930646939121"
+        },
+        {
+          "file": "apps/ui/public/favicon.ico",
+          "hash": "3738105553120787827"
+        },
+        {
+          "file": "apps/ui/public/fonts/MaterialIcons-Regular.eot",
+          "hash": "15058221030612405291"
+        },
+        {
+          "file": "apps/ui/public/fonts/MaterialIcons-Regular.ijmap",
+          "hash": "17884390203630865134"
+        },
+        {
+          "file": "apps/ui/public/fonts/MaterialIcons-Regular.svg",
+          "hash": "1100925612430526544"
+        },
+        {
+          "file": "apps/ui/public/fonts/MaterialIcons-Regular.ttf",
+          "hash": "12021461691492129549"
+        },
+        {
+          "file": "apps/ui/public/fonts/MaterialIcons-Regular.woff",
+          "hash": "328298431520420711"
+        },
+        {
+          "file": "apps/ui/public/fonts/MaterialIcons-Regular.woff2",
+          "hash": "1747638218318632547"
+        },
+        {
+          "file": "apps/ui/public/fonts/README.md",
+          "hash": "9501001633247896567"
+        },
+        {
+          "file": "apps/ui/public/fonts/codepoints",
+          "hash": "4601584272099326886"
+        },
+        {
+          "file": "apps/ui/public/fonts/material-icons.css",
+          "hash": "1769302654020739208"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/alienBeige.png",
+          "hash": "7064434599972580350"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/alienBlue.png",
+          "hash": "1436342157406575407"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/alienGreen.png",
+          "hash": "8480487118415846086"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/alienPink.png",
+          "hash": "2497316116289141049"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/alienYellow.png",
+          "hash": "3869135416286158819"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/bridgeEast.png",
+          "hash": "4342665806854390707"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/bridgeNorth.png",
+          "hash": "10468488410194605588"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/bushAutumn.png",
+          "hash": "16349954696073082039"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/bushDirt.png",
+          "hash": "17293185560289680219"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/bushGrass.png",
+          "hash": "7909426094551893213"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/bushMagic.png",
+          "hash": "9830039182011860284"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/bushSand.png",
+          "hash": "13213521833786242535"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/bushSnow.png",
+          "hash": "9248983536662387130"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/crossroad.png",
+          "hash": "9226982285829281016"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/dirt.png",
+          "hash": "8960332449187235556"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/dirtHigh.png",
+          "hash": "3468166035863713972"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/flowerBlue.png",
+          "hash": "18436494061526408346"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/flowerGreen.png",
+          "hash": "11419547219652912758"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/flowerRed.png",
+          "hash": "16456132668956312454"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/flowerWhite.png",
+          "hash": "4136475552632342127"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/flowerYellow.png",
+          "hash": "16467742982063768698"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/grass.png",
+          "hash": "14865247439636243579"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillAutumn.png",
+          "hash": "18115525240815793168"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillCornerEast.png",
+          "hash": "16329890934864938600"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillCornerNW.png",
+          "hash": "16758294050249068138"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillCornerSE.png",
+          "hash": "2739117656114898981"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillCornerWest.png",
+          "hash": "280639427914224133"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillDirt.png",
+          "hash": "5736850400129173983"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillEast.png",
+          "hash": "7553872252363855089"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillGrass.png",
+          "hash": "12013580176659429214"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillMagic.png",
+          "hash": "17385249376918643963"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillNorth.png",
+          "hash": "13947490897871431193"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillRoadEast.png",
+          "hash": "14915111406934583227"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillRoadNorth.png",
+          "hash": "17842939686620824530"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillRoadSouth.png",
+          "hash": "1381830514336424211"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillRoadWest.png",
+          "hash": "16692407742517270815"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillSand.png",
+          "hash": "17766702308528160361"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillSnow.png",
+          "hash": "2533641286778181591"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillSouth.png",
+          "hash": "8758601412076046200"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/hillWest.png",
+          "hash": "9894807077710011569"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lot.png",
+          "hash": "7215609429982811506"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lotCornerEast.png",
+          "hash": "14086776004763759130"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lotCornerNorth.png",
+          "hash": "9712437956154562566"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lotCornerSouth.png",
+          "hash": "14550137805607988562"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lotCornerWest.png",
+          "hash": "6181864091332554796"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lotEast.png",
+          "hash": "17403374995317883856"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lotExitEast.png",
+          "hash": "15515124950327834384"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lotExitNorth.png",
+          "hash": "3652423250713770041"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lotExitSouth.png",
+          "hash": "6082770542068830313"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lotExitWest.png",
+          "hash": "16507290199750561150"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lotNorth.png",
+          "hash": "5556919302354575419"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lotPark.png",
+          "hash": "13414040090938774305"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lotSouth.png",
+          "hash": "17182314621613204955"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/lotWest.png",
+          "hash": "10974014399747247180"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/pineAutumn_high.png",
+          "hash": "10149769489554122036"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/pineAutumn_low.png",
+          "hash": "3934598863398572824"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/pineAutumn_mid.png",
+          "hash": "7834772739390935162"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/pineBlue_high.png",
+          "hash": "16105152232352402808"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/pineBlue_low.png",
+          "hash": "2160980801827384790"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/pineBlue_mid.png",
+          "hash": "6325700291085027809"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/pineGreen_high.png",
+          "hash": "14440964701344675666"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/pineGreen_low.png",
+          "hash": "8525754805772772147"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/pineGreen_mid.png",
+          "hash": "681012308677292936"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadCornerES.png",
+          "hash": "9030351603163810453"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadCornerNE.png",
+          "hash": "10385929520006479882"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadCornerNW.png",
+          "hash": "5299366475493450776"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadCornerWS.png",
+          "hash": "889494372625896302"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadEast.png",
+          "hash": "12897466299594845188"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadEndEast.png",
+          "hash": "14803991463957276603"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadEndNorth.png",
+          "hash": "9470415451732946431"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadEndSouth.png",
+          "hash": "14784939623038631021"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadEndWest.png",
+          "hash": "6104273985496568594"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadNorth.png",
+          "hash": "6044682597208205555"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadTEast.png",
+          "hash": "12609401237380479703"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadTNorth.png",
+          "hash": "14286242906835055225"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadTSouth.png",
+          "hash": "9552024371470033398"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/roadTWest.png",
+          "hash": "17094441877873911883"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/rockDirt.png",
+          "hash": "15348694308019513246"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/rockDirt_moss1.png",
+          "hash": "9013755098816678830"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/rockDirt_moss2.png",
+          "hash": "9739784515166375277"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/rockDirt_moss3.png",
+          "hash": "10724868730957605769"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/rockSnow_1.png",
+          "hash": "18008436969475774621"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/rockSnow_2.png",
+          "hash": "9054708025341095802"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/rockSnow_3.png",
+          "hash": "3948620227282295194"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/rockStone.png",
+          "hash": "10043296390387541312"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/rockStone_moss1.png",
+          "hash": "11984052734059789323"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/rockStone_moss2.png",
+          "hash": "8002451402124184714"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/rockStone_moss3.png",
+          "hash": "14936437513430945795"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/smallRockDirt.png",
+          "hash": "16106489541243225103"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/smallRockGrass.png",
+          "hash": "4224639946854741308"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/smallRockSnow.png",
+          "hash": "12103068460368586287"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/smallRockStone.png",
+          "hash": "1599321540245670192"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileAutumn.png",
+          "hash": "1916916991804165311"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileAutumn_full.png",
+          "hash": "7465052043870890915"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileAutumn_tile.png",
+          "hash": "5862449033815298966"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileDirt.png",
+          "hash": "15076432103551952275"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileDirt_full.png",
+          "hash": "17415839141848516224"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileDirt_tile.png",
+          "hash": "7800257611246773194"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileGrass.png",
+          "hash": "3629887696459953819"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileGrass_full.png",
+          "hash": "8378376063266520110"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileGrass_tile.png",
+          "hash": "17665680506446422414"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileLava.png",
+          "hash": "6224572781319768775"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileLava_full.png",
+          "hash": "4177374439168303924"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileLava_tile.png",
+          "hash": "10157431984666762713"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileMagic.png",
+          "hash": "6585483709398073154"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileMagic_full.png",
+          "hash": "13853829561070103361"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileMagic_tile.png",
+          "hash": "12300135262709363343"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileRock.png",
+          "hash": "15422472655040463603"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileRock_full.png",
+          "hash": "4092688833736785456"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileRock_tile.png",
+          "hash": "7536236674085461051"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileSand.png",
+          "hash": "6215453907822746342"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileSand_full.png",
+          "hash": "15328609440407478468"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileSand_tile.png",
+          "hash": "16053459493154324664"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileSnow.png",
+          "hash": "7657528941688337911"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileSnow_full.png",
+          "hash": "2596805516957040237"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileSnow_tile.png",
+          "hash": "2232487355037899073"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileStone.png",
+          "hash": "12288479204927440851"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileStone_bridge.png",
+          "hash": "9313404640776622968"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileStone_full.png",
+          "hash": "8835236095683211226"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileStone_tile.png",
+          "hash": "6217293489473438583"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileWater.png",
+          "hash": "10315120953004225357"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileWater_full.png",
+          "hash": "11455280776958609990"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileWater_shadow.png",
+          "hash": "10404843479666436493"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileWater_tile.png",
+          "hash": "7918688540706395499"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/tileWood_bridge.png",
+          "hash": "12521226516677702133"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeAutumn_high.png",
+          "hash": "11155629773178358066"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeAutumn_low.png",
+          "hash": "1686564163487380515"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeAutumn_mid.png",
+          "hash": "6042108894253062741"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeBlue_high.png",
+          "hash": "15970804657957384351"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeBlue_low.png",
+          "hash": "2048624232842856105"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeBlue_mid.png",
+          "hash": "7607488511485860514"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeCactus_1.png",
+          "hash": "11115061250552362663"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeCactus_2.png",
+          "hash": "15112615437909391146"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeCactus_3.png",
+          "hash": "5114603895560170008"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeConiferShort.png",
+          "hash": "12876448974446659586"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeConiferTall.png",
+          "hash": "15781838542917290987"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeGreen_high.png",
+          "hash": "11948449242715424276"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeGreen_low.png",
+          "hash": "4891488711208092001"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeGreen_mid.png",
+          "hash": "9937437072439581949"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeShort.png",
+          "hash": "3549565525116133875"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeShort_autumn.png",
+          "hash": "1348893485640152029"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeTall.png",
+          "hash": "3109690009798799489"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/treeTall_autumn.png",
+          "hash": "13370666298082610761"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/water.png",
+          "hash": "3952339893637802782"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterBeachCornerEast.png",
+          "hash": "8948181881970206897"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterBeachCornerNorth.png",
+          "hash": "8587344239286328290"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterBeachCornerSouth.png",
+          "hash": "13568579932781898548"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterBeachCornerWest.png",
+          "hash": "3794681227731924260"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterBeachEast.png",
+          "hash": "11356920961116126287"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterBeachNorth.png",
+          "hash": "15758142694561380381"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterBeachSouth.png",
+          "hash": "7895624434092892862"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterBeachWest.png",
+          "hash": "14253882293257035691"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterCornerEast.png",
+          "hash": "14803205175908622089"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterCornerNorth.png",
+          "hash": "9792483892400721921"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterCornerSouth.png",
+          "hash": "1580805473511672728"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterCornerWest.png",
+          "hash": "8644845658732468160"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterEast.png",
+          "hash": "16145763616917502054"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterNorth.png",
+          "hash": "18408636173147363591"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterSouth.png",
+          "hash": "2877883025141355672"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waterWest.png",
+          "hash": "10963178509427199166"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waveLava.png",
+          "hash": "3328902383914607844"
+        },
+        {
+          "file": "apps/ui/public/game/Tiles/waveWater.png",
+          "hash": "2000649142858876328"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/FWDL.mp3",
+          "hash": "8668464162497673752"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/FWDL.ogg",
+          "hash": "9386547406207066128"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/README.md",
+          "hash": "16408993984685223419"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/bass.mp3",
+          "hash": "396633150906109331"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/bass.ogg",
+          "hash": "13830138127491882895"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/chords.mp3",
+          "hash": "4313409534410663213"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/chords.ogg",
+          "hash": "12262742668517901993"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/drone.mp3",
+          "hash": "5765521831062124683"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/drone.ogg",
+          "hash": "16803665015228230927"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/drum_loop.png",
+          "hash": "17918687269646525944"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/hh.mp3",
+          "hash": "3605013134202602921"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/hh.ogg",
+          "hash": "1378113888816491308"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/hh.png",
+          "hash": "10842020929570424540"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/kick.mp3",
+          "hash": "11112333801656694414"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/kick.ogg",
+          "hash": "5564987578882010159"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/kick.png",
+          "hash": "9567018614582911719"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/snare.mp3",
+          "hash": "17596521563748005356"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/snare.ogg",
+          "hash": "14473959414274534894"
+        },
+        {
+          "file": "apps/ui/public/game/audio/loop/snare.png",
+          "hash": "11368231104727257770"
+        },
+        {
+          "file": "apps/ui/public/game/background-1x.png",
+          "hash": "13886579165926322966"
+        },
+        {
+          "file": "apps/ui/public/game/background-2x.png",
+          "hash": "17555243348303480339"
+        },
+        {
+          "file": "apps/ui/public/game/background-3x.png",
+          "hash": "7201488343091372886"
+        },
+        {
+          "file": "apps/ui/public/game/background.png",
+          "hash": "13886579165926322966"
+        },
+        {
+          "file": "apps/ui/public/game/license.txt",
+          "hash": "14622231119547955827"
+        },
+        {
+          "file": "apps/ui/public/game/preview.png",
+          "hash": "13110743110699810716"
+        },
+        {
+          "file": "apps/ui/public/game/starry-background.jpg",
+          "hash": "14774068797066709414"
+        },
+        {
+          "file": "apps/ui/public/game/webb.png",
+          "hash": "14204344359417599813"
+        },
+        {
+          "file": "apps/ui/public/images/cloud.jpeg",
+          "hash": "7757285255426544122"
+        },
+        {
+          "file": "apps/ui/public/images/knowledge-icon.webp",
+          "hash": "8776027671670999902"
+        },
+        {
+          "file": "apps/ui/public/images/logo-black.svg",
+          "hash": "7067574356552750091"
+        },
+        {
+          "file": "apps/ui/public/images/logo-color.svg",
+          "hash": "2276342948755143729"
+        },
+        {
+          "file": "apps/ui/public/images/logo-no-background.svg",
+          "hash": "5580410555766268350"
+        },
+        {
+          "file": "apps/ui/public/images/logo-white.svg",
+          "hash": "5512983691231968511"
+        },
+        {
+          "file": "apps/ui/public/images/mindmap-background.webp",
+          "hash": "3007767774640075436"
+        },
+        {
+          "file": "apps/ui/public/images/planets-sprite-sheet-img.png",
+          "hash": "9882352980886054914"
+        },
+        {
+          "file": "apps/ui/public/images/planets-sprite-sheet.png",
+          "hash": "13846200113940105250"
+        },
+        {
+          "file": "apps/ui/public/images/plants-sprite-sheet-icons.webp",
+          "hash": "11190388623299706007"
+        },
+        {
+          "file": "apps/ui/public/images/skill-tree-background-img.webp",
+          "hash": "6539969731579364743"
+        },
+        {
+          "file": "apps/ui/public/images/star-background-img-2.webp",
+          "hash": "6516682022136716037"
+        },
+        {
+          "file": "apps/ui/public/images/star-background-img-3.webp",
+          "hash": "9935707633750949105"
+        },
+        {
+          "file": "apps/ui/public/images/star-background-img.webp",
+          "hash": "9686907143778262661"
+        },
+        {
+          "file": "apps/ui/public/images/star.jpg",
+          "hash": "9111653357960703089"
+        },
+        {
+          "file": "apps/ui/public/images/worth-manifesto.png",
+          "hash": "748598867739648875"
+        },
+        {
+          "file": "apps/ui/public/index.html",
+          "hash": "1375277051646249790"
+        },
+        {
+          "file": "apps/ui/public/logo192.png",
+          "hash": "7585273181698778288"
+        },
+        {
+          "file": "apps/ui/public/logo192.svg",
+          "hash": "5580410555766268350"
+        },
+        {
+          "file": "apps/ui/public/logo512.png",
+          "hash": "9339365414554387981"
+        },
+        {
+          "file": "apps/ui/public/logo512.svg",
+          "hash": "5580410555766268350"
+        },
+        {
+          "file": "apps/ui/public/manifest.json",
+          "hash": "1447645250373428393"
+        },
+        {
+          "file": "apps/ui/public/robots.txt",
+          "hash": "2790380794362165217"
+        },
+        {
+          "file": "apps/ui/scripts/runServer.sh",
+          "hash": "3794653822820557645"
+        },
+        {
+          "file": "apps/ui/scripts/update-submodules.sh",
+          "hash": "5930168103366847117"
+        },
+        {
+          "file": "apps/ui/scripts/utils.js",
+          "hash": "1038150962987760239"
+        },
+        {
+          "file": "apps/ui/src/Admin/Admin.js",
+          "hash": "12798293576365012228"
+        },
+        {
+          "file": "apps/ui/src/Admin/AdminEdit.js",
+          "hash": "6794201464594590463"
+        },
+        {
+          "file": "apps/ui/src/App.js",
+          "hash": "14168042624974901570"
+        },
+        {
+          "file": "apps/ui/src/App.styles.js",
+          "hash": "3885915767745948251"
+        },
+        {
+          "file": "apps/ui/src/App.test.js",
+          "hash": "4170011337625345121"
+        },
+        {
+          "file": "apps/ui/src/AppTest.js",
+          "hash": "12729468751429692546"
+        },
+        {
+          "file": "apps/ui/src/Assets/fonts/MaterialIcons-Regular.eot",
+          "hash": "15058221030612405291"
+        },
+        {
+          "file": "apps/ui/src/Assets/fonts/MaterialIcons-Regular.ijmap",
+          "hash": "17884390203630865134"
+        },
+        {
+          "file": "apps/ui/src/Assets/fonts/MaterialIcons-Regular.svg",
+          "hash": "1100925612430526544"
+        },
+        {
+          "file": "apps/ui/src/Assets/fonts/MaterialIcons-Regular.ttf",
+          "hash": "12021461691492129549"
+        },
+        {
+          "file": "apps/ui/src/Assets/fonts/MaterialIcons-Regular.woff",
+          "hash": "328298431520420711"
+        },
+        {
+          "file": "apps/ui/src/Assets/fonts/MaterialIcons-Regular.woff2",
+          "hash": "1747638218318632547"
+        },
+        {
+          "file": "apps/ui/src/Assets/fonts/README.md",
+          "hash": "9501001633247896567"
+        },
+        {
+          "file": "apps/ui/src/Assets/fonts/codepoints",
+          "hash": "4601584272099326886"
+        },
+        {
+          "file": "apps/ui/src/Assets/fonts/material-icons.css",
+          "hash": "1769302654020739208"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/alienBeige.png",
+          "hash": "7064434599972580350"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/alienBlue.png",
+          "hash": "1436342157406575407"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/alienGreen.png",
+          "hash": "8480487118415846086"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/alienPink.png",
+          "hash": "2497316116289141049"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/alienYellow.png",
+          "hash": "3869135416286158819"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/bridgeEast.png",
+          "hash": "4342665806854390707"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/bridgeNorth.png",
+          "hash": "10468488410194605588"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/bushAutumn.png",
+          "hash": "16349954696073082039"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/bushDirt.png",
+          "hash": "17293185560289680219"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/bushGrass.png",
+          "hash": "7909426094551893213"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/bushMagic.png",
+          "hash": "9830039182011860284"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/bushSand.png",
+          "hash": "13213521833786242535"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/bushSnow.png",
+          "hash": "9248983536662387130"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/crossroad.png",
+          "hash": "9226982285829281016"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/dirt.png",
+          "hash": "8960332449187235556"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/dirtHigh.png",
+          "hash": "3468166035863713972"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/flowerBlue.png",
+          "hash": "18436494061526408346"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/flowerGreen.png",
+          "hash": "11419547219652912758"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/flowerRed.png",
+          "hash": "16456132668956312454"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/flowerWhite.png",
+          "hash": "4136475552632342127"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/flowerYellow.png",
+          "hash": "16467742982063768698"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/grass.png",
+          "hash": "14865247439636243579"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillAutumn.png",
+          "hash": "18115525240815793168"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillCornerEast.png",
+          "hash": "16329890934864938600"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillCornerNW.png",
+          "hash": "16758294050249068138"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillCornerSE.png",
+          "hash": "2739117656114898981"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillCornerWest.png",
+          "hash": "280639427914224133"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillDirt.png",
+          "hash": "5736850400129173983"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillEast.png",
+          "hash": "7553872252363855089"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillGrass.png",
+          "hash": "12013580176659429214"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillMagic.png",
+          "hash": "17385249376918643963"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillNorth.png",
+          "hash": "13947490897871431193"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillRoadEast.png",
+          "hash": "14915111406934583227"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillRoadNorth.png",
+          "hash": "17842939686620824530"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillRoadSouth.png",
+          "hash": "1381830514336424211"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillRoadWest.png",
+          "hash": "16692407742517270815"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillSand.png",
+          "hash": "17766702308528160361"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillSnow.png",
+          "hash": "2533641286778181591"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillSouth.png",
+          "hash": "8758601412076046200"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/hillWest.png",
+          "hash": "9894807077710011569"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lot.png",
+          "hash": "7215609429982811506"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lotCornerEast.png",
+          "hash": "14086776004763759130"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lotCornerNorth.png",
+          "hash": "9712437956154562566"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lotCornerSouth.png",
+          "hash": "14550137805607988562"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lotCornerWest.png",
+          "hash": "6181864091332554796"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lotEast.png",
+          "hash": "17403374995317883856"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lotExitEast.png",
+          "hash": "15515124950327834384"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lotExitNorth.png",
+          "hash": "3652423250713770041"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lotExitSouth.png",
+          "hash": "6082770542068830313"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lotExitWest.png",
+          "hash": "16507290199750561150"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lotNorth.png",
+          "hash": "5556919302354575419"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lotPark.png",
+          "hash": "13414040090938774305"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lotSouth.png",
+          "hash": "17182314621613204955"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/lotWest.png",
+          "hash": "10974014399747247180"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/pineAutumn_high.png",
+          "hash": "10149769489554122036"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/pineAutumn_low.png",
+          "hash": "3934598863398572824"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/pineAutumn_mid.png",
+          "hash": "7834772739390935162"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/pineBlue_high.png",
+          "hash": "16105152232352402808"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/pineBlue_low.png",
+          "hash": "2160980801827384790"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/pineBlue_mid.png",
+          "hash": "6325700291085027809"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/pineGreen_high.png",
+          "hash": "14440964701344675666"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/pineGreen_low.png",
+          "hash": "8525754805772772147"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/pineGreen_mid.png",
+          "hash": "681012308677292936"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadCornerES.png",
+          "hash": "9030351603163810453"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadCornerNE.png",
+          "hash": "10385929520006479882"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadCornerNW.png",
+          "hash": "5299366475493450776"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadCornerWS.png",
+          "hash": "889494372625896302"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadEast.png",
+          "hash": "12897466299594845188"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadEndEast.png",
+          "hash": "14803991463957276603"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadEndNorth.png",
+          "hash": "9470415451732946431"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadEndSouth.png",
+          "hash": "14784939623038631021"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadEndWest.png",
+          "hash": "6104273985496568594"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadNorth.png",
+          "hash": "6044682597208205555"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadTEast.png",
+          "hash": "12609401237380479703"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadTNorth.png",
+          "hash": "14286242906835055225"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadTSouth.png",
+          "hash": "9552024371470033398"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/roadTWest.png",
+          "hash": "17094441877873911883"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/rockDirt.png",
+          "hash": "15348694308019513246"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/rockDirt_moss1.png",
+          "hash": "9013755098816678830"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/rockDirt_moss2.png",
+          "hash": "9739784515166375277"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/rockDirt_moss3.png",
+          "hash": "10724868730957605769"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/rockSnow_1.png",
+          "hash": "18008436969475774621"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/rockSnow_2.png",
+          "hash": "9054708025341095802"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/rockSnow_3.png",
+          "hash": "3948620227282295194"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/rockStone.png",
+          "hash": "10043296390387541312"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/rockStone_moss1.png",
+          "hash": "11984052734059789323"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/rockStone_moss2.png",
+          "hash": "8002451402124184714"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/rockStone_moss3.png",
+          "hash": "14936437513430945795"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/smallRockDirt.png",
+          "hash": "16106489541243225103"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/smallRockGrass.png",
+          "hash": "4224639946854741308"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/smallRockSnow.png",
+          "hash": "12103068460368586287"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/smallRockStone.png",
+          "hash": "1599321540245670192"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileAutumn.png",
+          "hash": "1916916991804165311"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileAutumn_full.png",
+          "hash": "7465052043870890915"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileAutumn_tile.png",
+          "hash": "5862449033815298966"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileDirt.png",
+          "hash": "15076432103551952275"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileDirt_full.png",
+          "hash": "17415839141848516224"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileDirt_tile.png",
+          "hash": "7800257611246773194"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileGrass.png",
+          "hash": "3629887696459953819"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileGrass_full.png",
+          "hash": "8378376063266520110"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileGrass_tile.png",
+          "hash": "17665680506446422414"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileLava.png",
+          "hash": "6224572781319768775"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileLava_full.png",
+          "hash": "4177374439168303924"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileLava_tile.png",
+          "hash": "10157431984666762713"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileMagic.png",
+          "hash": "6585483709398073154"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileMagic_full.png",
+          "hash": "13853829561070103361"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileMagic_tile.png",
+          "hash": "12300135262709363343"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileRock.png",
+          "hash": "15422472655040463603"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileRock_full.png",
+          "hash": "4092688833736785456"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileRock_tile.png",
+          "hash": "7536236674085461051"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileSand.png",
+          "hash": "6215453907822746342"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileSand_full.png",
+          "hash": "15328609440407478468"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileSand_tile.png",
+          "hash": "16053459493154324664"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileSnow.png",
+          "hash": "7657528941688337911"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileSnow_full.png",
+          "hash": "2596805516957040237"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileSnow_tile.png",
+          "hash": "2232487355037899073"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileStone.png",
+          "hash": "12288479204927440851"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileStone_bridge.png",
+          "hash": "9313404640776622968"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileStone_full.png",
+          "hash": "8835236095683211226"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileStone_tile.png",
+          "hash": "6217293489473438583"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileWater.png",
+          "hash": "10315120953004225357"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileWater_full.png",
+          "hash": "11455280776958609990"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileWater_shadow.png",
+          "hash": "10404843479666436493"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileWater_tile.png",
+          "hash": "7918688540706395499"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/tileWood_bridge.png",
+          "hash": "12521226516677702133"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeAutumn_high.png",
+          "hash": "11155629773178358066"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeAutumn_low.png",
+          "hash": "1686564163487380515"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeAutumn_mid.png",
+          "hash": "6042108894253062741"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeBlue_high.png",
+          "hash": "15970804657957384351"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeBlue_low.png",
+          "hash": "2048624232842856105"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeBlue_mid.png",
+          "hash": "7607488511485860514"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeCactus_1.png",
+          "hash": "11115061250552362663"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeCactus_2.png",
+          "hash": "15112615437909391146"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeCactus_3.png",
+          "hash": "5114603895560170008"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeConiferShort.png",
+          "hash": "12876448974446659586"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeConiferTall.png",
+          "hash": "15781838542917290987"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeGreen_high.png",
+          "hash": "11948449242715424276"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeGreen_low.png",
+          "hash": "4891488711208092001"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeGreen_mid.png",
+          "hash": "9937437072439581949"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeShort.png",
+          "hash": "3549565525116133875"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeShort_autumn.png",
+          "hash": "1348893485640152029"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeTall.png",
+          "hash": "3109690009798799489"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/treeTall_autumn.png",
+          "hash": "13370666298082610761"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/water.png",
+          "hash": "3952339893637802782"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterBeachCornerEast.png",
+          "hash": "8948181881970206897"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterBeachCornerNorth.png",
+          "hash": "8587344239286328290"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterBeachCornerSouth.png",
+          "hash": "13568579932781898548"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterBeachCornerWest.png",
+          "hash": "3794681227731924260"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterBeachEast.png",
+          "hash": "11356920961116126287"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterBeachNorth.png",
+          "hash": "15758142694561380381"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterBeachSouth.png",
+          "hash": "7895624434092892862"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterBeachWest.png",
+          "hash": "14253882293257035691"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterCornerEast.png",
+          "hash": "14803205175908622089"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterCornerNorth.png",
+          "hash": "9792483892400721921"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterCornerSouth.png",
+          "hash": "1580805473511672728"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterCornerWest.png",
+          "hash": "8644845658732468160"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterEast.png",
+          "hash": "16145763616917502054"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterNorth.png",
+          "hash": "18408636173147363591"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterSouth.png",
+          "hash": "2877883025141355672"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waterWest.png",
+          "hash": "10963178509427199166"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waveLava.png",
+          "hash": "3328902383914607844"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/Tiles/waveWater.png",
+          "hash": "2000649142858876328"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/FWDL.mp3",
+          "hash": "8668464162497673752"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/FWDL.ogg",
+          "hash": "9386547406207066128"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/README.md",
+          "hash": "16408993984685223419"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/bass.mp3",
+          "hash": "396633150906109331"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/bass.ogg",
+          "hash": "13830138127491882895"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/chords.mp3",
+          "hash": "4313409534410663213"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/chords.ogg",
+          "hash": "12262742668517901993"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/drone.mp3",
+          "hash": "5765521831062124683"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/drone.ogg",
+          "hash": "16803665015228230927"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/drum_loop.png",
+          "hash": "17918687269646525944"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/hh.mp3",
+          "hash": "3605013134202602921"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/hh.ogg",
+          "hash": "1378113888816491308"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/hh.png",
+          "hash": "10842020929570424540"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/kick.mp3",
+          "hash": "11112333801656694414"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/kick.ogg",
+          "hash": "5564987578882010159"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/kick.png",
+          "hash": "9567018614582911719"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/snare.mp3",
+          "hash": "17596521563748005356"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/snare.ogg",
+          "hash": "14473959414274534894"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/audio/loop/snare.png",
+          "hash": "11368231104727257770"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/background-1x.png",
+          "hash": "13886579165926322966"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/background-2x.png",
+          "hash": "17555243348303480339"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/background-3x.png",
+          "hash": "7201488343091372886"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/background.png",
+          "hash": "13886579165926322966"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/license.txt",
+          "hash": "14622231119547955827"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/preview.png",
+          "hash": "13110743110699810716"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/starry-background.jpg",
+          "hash": "14774068797066709414"
+        },
+        {
+          "file": "apps/ui/src/Assets/game/webb.png",
+          "hash": "14204344359417599813"
+        },
+        {
+          "file": "apps/ui/src/Assets/images/cloud.jpeg",
+          "hash": "7757285255426544122"
+        },
+        {
+          "file": "apps/ui/src/Assets/images/knowledge-icon.webp",
+          "hash": "8776027671670999902"
+        },
+        {
+          "file": "apps/ui/src/Assets/images/logo-black.svg",
+          "hash": "7067574356552750091"
+        },
+        {
+          "file": "apps/ui/src/Assets/images/logo-color.svg",
+          "hash": "2276342948755143729"
+        },
+        {
+          "file": "apps/ui/src/Assets/images/logo-no-background.svg",
+          "hash": "5580410555766268350"
+        },
+        {
+          "file": "apps/ui/src/Assets/images/logo-white.svg",
+          "hash": "5512983691231968511"
+        },
+        {
+          "file": "apps/ui/src/Assets/images/skill-tree-background.webp",
+          "hash": "6539969731579364743"
+        },
+        {
+          "file": "apps/ui/src/Assets/images/star-background-img.webp",
+          "hash": "9686907143778262661"
+        },
+        {
+          "file": "apps/ui/src/Assets/images/star.jpg",
+          "hash": "9111653357960703089"
+        },
+        {
+          "file": "apps/ui/src/Assets/images/worth-manifesto.png",
+          "hash": "748598867739648875"
+        },
+        {
+          "file": "apps/ui/src/Camera/Camera.js",
+          "hash": "17770967712940039823"
+        },
+        {
+          "file": "apps/ui/src/Camera/FileSystem.js",
+          "hash": "16410470312326382235"
+        },
+        {
+          "file": "apps/ui/src/Carousel/Carousel.css",
+          "hash": "443196883877444488"
+        },
+        {
+          "file": "apps/ui/src/Config/hosts.js",
+          "hash": "782752247976746193"
+        },
+        {
+          "file": "apps/ui/src/Config/index.js",
+          "hash": "4127552533906890499"
+        },
+        {
+          "file": "apps/ui/src/Config/prod.js",
+          "hash": "15853549228335014971"
+        },
+        {
+          "file": "apps/ui/src/Config/qa.js",
+          "hash": "5353866501011717332"
+        },
+        {
+          "file": "apps/ui/src/ForgotPassword/ForgotPassword.js",
+          "hash": "10119728527176240943"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/Knowledge.js",
+          "hash": "5037437093639975837"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/Knowledge.styles.js",
+          "hash": "1021511986041910613"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelList/ModelListItemFP.js",
+          "hash": "2013230274731120828"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/CustomTreeNode.js",
+          "hash": "8103320578817172605"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/CustomTreeNode.utils.js",
+          "hash": "7173563817519273929"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/GraphTree.js",
+          "hash": "17084916564939573329"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/KnowledgeContainer.js",
+          "hash": "6041632586634784107"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/ListTree.js",
+          "hash": "17647240390229031338"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/Mindmap.js",
+          "hash": "3883168124711354531"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/Mindmap.utils.js",
+          "hash": "3435856404368115373"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/Model.Preview.feature.helper.js",
+          "hash": "7741686842828533226"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/Model.Preview.feature.js",
+          "hash": "11949427131551979291"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/ModelPreview.js",
+          "hash": "9938641719756026492"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/Node.js",
+          "hash": "9157595731855221189"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/PlantsDisplay.js",
+          "hash": "6865103719292624177"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/Reveal.js",
+          "hash": "3911913049677350799"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/SpriteDisplay.js",
+          "hash": "3852796378778192676"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/SvgCircles.js",
+          "hash": "13066622673425984064"
+        },
+        {
+          "file": "apps/ui/src/Knowledge/ModelPreview/Themes.js",
+          "hash": "16795965822511313914"
+        },
+        {
+          "file": "apps/ui/src/Login/Login.js",
+          "hash": "95483721455253550"
+        },
+        {
+          "file": "apps/ui/src/Math/Math.js",
+          "hash": "14086991911835303081"
+        },
+        {
+          "file": "apps/ui/src/Math/Math.styles.js",
+          "hash": "1021511986041910613"
+        },
+        {
+          "file": "apps/ui/src/Mold.js",
+          "hash": "18190349773993873329"
+        },
+        {
+          "file": "apps/ui/src/NotFound/NotFound.js",
+          "hash": "4285815777144403646"
+        },
+        {
+          "file": "apps/ui/src/Notification/Notification.js",
+          "hash": "3030535927558671284"
+        },
+        {
+          "file": "apps/ui/src/Notification/Notification.styles.js",
+          "hash": "8304457148334540700"
+        },
+        {
+          "file": "apps/ui/src/OfflineStorage/index.js",
+          "hash": "8087724960398068703"
+        },
+        {
+          "file": "apps/ui/src/Pages/Admin.js",
+          "hash": "4149780813167312093"
+        },
+        {
+          "file": "apps/ui/src/Pages/KnowledgeDetails.js",
+          "hash": "6408912396954491370"
+        },
+        {
+          "file": "apps/ui/src/Pages/KnowledgeList.js",
+          "hash": "1621578902640045582"
+        },
+        {
+          "file": "apps/ui/src/Pages/Me.js",
+          "hash": "12340948902481069234"
+        },
+        {
+          "file": "apps/ui/src/Pages/Profile.js",
+          "hash": "9532600810322068014"
+        },
+        {
+          "file": "apps/ui/src/Pages/Profile.test.js",
+          "hash": "986309895696392680"
+        },
+        {
+          "file": "apps/ui/src/Profile/Profile.js",
+          "hash": "10045518846460069365"
+        },
+        {
+          "file": "apps/ui/src/Profile/Profile.styles.js",
+          "hash": "8304457148334540700"
+        },
+        {
+          "file": "apps/ui/src/Register/Register.js",
+          "hash": "9356753237749399289"
+        },
+        {
+          "file": "apps/ui/src/ResetPassword/ResetPassword.js",
+          "hash": "10955328457748361964"
+        },
+        {
+          "file": "apps/ui/src/Routes.js",
+          "hash": "17918137858596357111"
+        },
+        {
+          "file": "apps/ui/src/Store/Store.js",
+          "hash": "4180204374252980613"
+        },
+        {
+          "file": "apps/ui/src/Store/index.js",
+          "hash": "14492057887318930663"
+        },
+        {
+          "file": "apps/ui/src/Store/reduxStore.js",
+          "hash": "912802226140132074"
+        },
+        {
+          "file": "apps/ui/src/Store/rootStore.js",
+          "hash": "11948077161632265683"
+        },
+        {
+          "file": "apps/ui/src/Utils/Utils.js",
+          "hash": "619141499748496056"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/GamePhysics.js",
+          "hash": "367761435965744063"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/GamePhysics.state.js",
+          "hash": "1535010414898899559"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Matter/Render.js",
+          "hash": "16510932948463608568"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/MatterOptions.js",
+          "hash": "6673973544662424165"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Simulations/Axes.js",
+          "hash": "11899828676851974518"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Simulations/Camera.js",
+          "hash": "16706758380705745225"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Simulations/FunctionGraph.js",
+          "hash": "7476430127966777581"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Simulations/Gravitation.js",
+          "hash": "17580351643251770462"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Simulations/Math.js",
+          "hash": "3759103337114381452"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Simulations/Pendulum.js",
+          "hash": "9360326441992854397"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Simulations/Primes.js",
+          "hash": "6646157761460994791"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/CarryOver.md",
+          "hash": "1068058967153385428"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/Story.js",
+          "hash": "14854416939596090303"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/Waves-score.xml",
+          "hash": "13257207820485644039"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/Waves.js",
+          "hash": "9740197325409114018"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/Waves.md",
+          "hash": "4151882192207646870"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/FWDL.mp3",
+          "hash": "8668464162497673752"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/FWDL.ogg",
+          "hash": "9386547406207066128"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/README.md",
+          "hash": "16408993984685223419"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/bass.mp3",
+          "hash": "396633150906109331"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/bass.ogg",
+          "hash": "13830138127491882895"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/chords.mp3",
+          "hash": "4313409534410663213"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/chords.ogg",
+          "hash": "12262742668517901993"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/drone.mp3",
+          "hash": "5765521831062124683"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/drone.ogg",
+          "hash": "16803665015228230927"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/drum_loop.png",
+          "hash": "17918687269646525944"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/hh.mp3",
+          "hash": "3605013134202602921"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/hh.ogg",
+          "hash": "1378113888816491308"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/hh.png",
+          "hash": "10842020929570424540"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/kick.mp3",
+          "hash": "11112333801656694414"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/kick.ogg",
+          "hash": "5564987578882010159"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/kick.png",
+          "hash": "9567018614582911719"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/snare.mp3",
+          "hash": "17596521563748005356"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/snare.ogg",
+          "hash": "14473959414274534894"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/2DReality/Stories/loop/snare.png",
+          "hash": "11368231104727257770"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/GameBoard/GameBoard.js",
+          "hash": "10156317488300451177"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/GameBoard/GameBoard.state.js",
+          "hash": "1511012717117825094"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/GameBoard/assets.js",
+          "hash": "13871758347514058953"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/GameBoard/utils.js",
+          "hash": "9058193069698596627"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/GameFighter/GameFighter.js",
+          "hash": "1303768532967282271"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/GameFighter/GameFighter.state.js",
+          "hash": "17264509675062760699"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/GameOfLife/GameOfLife.js",
+          "hash": "9466554238819301586"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/GamePuzzles/GamePuzzles.js",
+          "hash": "2909080047302849592"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/GamePuzzles/GamePuzzles.state.js",
+          "hash": "2299019091118082042"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/GamePuzzles/problems/fractions.js",
+          "hash": "3940315083070909641"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/Reality/ModelLoader/ModelLoader.js",
+          "hash": "16454923509934481036"
+        },
+        {
+          "file": "apps/ui/src/World/Simulations/Reality/Reality.js",
+          "hash": "8276057654174409772"
+        },
+        {
+          "file": "apps/ui/src/World/World.js",
+          "hash": "7829943116419104175"
+        },
+        {
+          "file": "apps/ui/src/World/World.styles.js",
+          "hash": "1021511986041910613"
+        },
+        {
+          "file": "apps/ui/src/global.css",
+          "hash": "2419901790377585283"
+        },
+        {
+          "file": "apps/ui/src/index-v2.js",
+          "hash": "2247195792079615155"
+        },
+        {
+          "file": "apps/ui/src/index.css",
+          "hash": "12044058895265618053"
+        },
+        {
+          "file": "apps/ui/src/index.js",
+          "hash": "9618502135009738800"
+        },
+        {
+          "file": "apps/ui/src/logo.svg",
+          "hash": "5137778160416929466"
+        },
+        {
+          "file": "apps/ui/src/reportWebVitals.js",
+          "hash": "8937667725995285050"
+        },
+        {
+          "file": "apps/ui/src/setupTests.js",
+          "hash": "16903885983588411080"
+        },
+        {
+          "file": "apps/ui/src/theme.js",
+          "hash": "4939989907985404603"
+        },
+        {
+          "file": "apps/ui/src/withOrbitalMobile.js",
+          "hash": "6283648411338362915"
+        },
+        {
+          "file": "cache/file-map.json",
+          "hash": "871086769214204483"
+        },
+        {
+          "file": "cache/lockfile.hash",
+          "hash": "3270212667847010523"
+        },
+        {
+          "file": "cache/nx_files.nxt",
+          "hash": "8295163021701433402"
+        },
+        {
+          "file": "cache/parsed-lock-file.json",
+          "hash": "15734989362211013702"
+        },
+        {
+          "file": "cache/project-graph.json",
+          "hash": "13972182092320512543"
+        },
+        {
+          "file": "jsconfig.json",
+          "hash": "15816244210211118115"
+        },
+        {
+          "file": "libs/node-services/.babelrc",
+          "hash": "3250086131670327215"
+        },
+        {
+          "file": "libs/node-services/.gitignore",
+          "hash": "10323923445659864269"
+        },
+        {
+          "file": "libs/node-services/README.md",
+          "hash": "4594159951041989581"
+        },
+        {
+          "file": "libs/node-services/acl-service/acl-service.js",
+          "hash": "1135285515934867823"
+        },
+        {
+          "file": "libs/node-services/acl-service/acl-service.test.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/node-services/auth-service/auth-service.js",
+          "hash": "16018284877563208542"
+        },
+        {
+          "file": "libs/node-services/auth-service/auth-service.test.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/node-services/babel.config.js",
+          "hash": "12442705542530351934"
+        },
+        {
+          "file": "libs/node-services/crud-service/crud-service.js",
+          "hash": "8170980886722703088"
+        },
+        {
+          "file": "libs/node-services/crud-service/crud-service.test.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/node-services/crud-service/serverless.yml",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/node-services/email-service/email-service.js",
+          "hash": "9322769045216709553"
+        },
+        {
+          "file": "libs/node-services/email-service/email-service.test.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/node-services/event-service/event-service.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/node-services/event-service/event-service.test.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/node-services/forms-service/forms-service.js",
+          "hash": "15362398208800401666"
+        },
+        {
+          "file": "libs/node-services/gpt-service/gpt-service.js",
+          "hash": "4485032429151951153"
+        },
+        {
+          "file": "libs/node-services/hello-service/hello-service.js",
+          "hash": "6890846219555717552"
+        },
+        {
+          "file": "libs/node-services/i18n-service/i18n-service.js",
+          "hash": "10852438105587057641"
+        },
+        {
+          "file": "libs/node-services/i18n-service/locales/ar/ar.json",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/node-services/i18n-service/locales/de/translation.json",
+          "hash": "17583592877941659617"
+        },
+        {
+          "file": "libs/node-services/i18n-service/locales/dev/translation.json",
+          "hash": "15035819451704992183"
+        },
+        {
+          "file": "libs/node-services/i18n-service/locales/en/translation.json",
+          "hash": "15035819451704992183"
+        },
+        {
+          "file": "libs/node-services/index.js",
+          "hash": "12652745485490745356"
+        },
+        {
+          "file": "libs/node-services/job-service/job-service.js",
+          "hash": "6235471628370074132"
+        },
+        {
+          "file": "libs/node-services/jwt-service/jwt-service.js",
+          "hash": "7902320474444978941"
+        },
+        {
+          "file": "libs/node-services/lambda-service/handler.js",
+          "hash": "13751669427641265613"
+        },
+        {
+          "file": "libs/node-services/lambda-service/lambda-service-script.js",
+          "hash": "8704471557375117390"
+        },
+        {
+          "file": "libs/node-services/lambda-service/lambda-service.js",
+          "hash": "2319463699761190070"
+        },
+        {
+          "file": "libs/node-services/lambda-service/package.js",
+          "hash": "15198606614415145019"
+        },
+        {
+          "file": "libs/node-services/lambda-service/serverless.js",
+          "hash": "2147329559637884378"
+        },
+        {
+          "file": "libs/node-services/media-service/media-service.js",
+          "hash": "14720536477695114105"
+        },
+        {
+          "file": "libs/node-services/media-service/media-service.test.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/node-services/notification-service/notification-service.js",
+          "hash": "10992056326380276834"
+        },
+        {
+          "file": "libs/node-services/package.json",
+          "hash": "17064025336349698972"
+        },
+        {
+          "file": "libs/node-services/passport-service/passport-service.js",
+          "hash": "11151369713232307461"
+        },
+        {
+          "file": "libs/node-services/passport-service/passport-service.test.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/node-services/passport-service/strategies/facebook.js",
+          "hash": "8408752289836791881"
+        },
+        {
+          "file": "libs/node-services/passport-service/strategies/google.js",
+          "hash": "6908575858901171523"
+        },
+        {
+          "file": "libs/node-services/passport-service/strategies/local.js",
+          "hash": "1124911613885187293"
+        },
+        {
+          "file": "libs/node-services/passport-service/strategies/twitter.js",
+          "hash": "15478343520276247297"
+        },
+        {
+          "file": "libs/node-services/settings-service/settings-service.js",
+          "hash": "5065205939217687508"
+        },
+        {
+          "file": "libs/node-services/socket-service/socket-service.js",
+          "hash": "651967788379227905"
+        },
+        {
+          "file": "libs/node-services/utils/dbutils.js",
+          "hash": "7077924719197107404"
+        },
+        {
+          "file": "libs/node-services/utils/utils.js",
+          "hash": "10036369121771333566"
+        },
+        {
+          "file": "libs/node-services/viz-service/viz-service.js",
+          "hash": "12966807522289973239"
+        },
+        {
+          "file": "libs/node-services/viz-service/viz-service.test.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/orbital-api/.gitignore",
+          "hash": "10323923445659864269"
+        },
+        {
+          "file": "libs/orbital-api/Acl/index.js",
+          "hash": "1816261933432364340"
+        },
+        {
+          "file": "libs/orbital-api/Auth/index.js",
+          "hash": "9321078452067082134"
+        },
+        {
+          "file": "libs/orbital-api/Forms/index.js",
+          "hash": "5703008585463470528"
+        },
+        {
+          "file": "libs/orbital-api/Jwt/index.js",
+          "hash": "9756531292847274301"
+        },
+        {
+          "file": "libs/orbital-api/Kernel/index.js",
+          "hash": "15519382542834304708"
+        },
+        {
+          "file": "libs/orbital-api/Localization/index.js",
+          "hash": "13004693098284271393"
+        },
+        {
+          "file": "libs/orbital-api/Media/index.js",
+          "hash": "16850229879100984011"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/index.js",
+          "hash": "14741891244264110507"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/auth.js",
+          "hash": "9851823222614931491"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/blogs.js",
+          "hash": "16886318681817773863"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/carts.js",
+          "hash": "1118536949249056244"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/categories.js",
+          "hash": "9399293311321661731"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/chat-log.js",
+          "hash": "14388649928626647828"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/comments.js",
+          "hash": "8187826893162957663"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/contacts.js",
+          "hash": "13682081192704140189"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/events.js",
+          "hash": "18165016036228201167"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/forms.js",
+          "hash": "7538986765419125864"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/game-log.js",
+          "hash": "11897583830064894089"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/index.js",
+          "hash": "8701065344252538354"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/kernel.js",
+          "hash": "9674213177146699782"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/knowledge.js",
+          "hash": "5938166376144095525"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/lambda.js",
+          "hash": "2506102300140162312"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/media.js",
+          "hash": "2815144460272026897"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/notifications.js",
+          "hash": "18080643473135574538"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/orders.js",
+          "hash": "9159532457258156023"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/permissions.js",
+          "hash": "10411043630466955740"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/products.js",
+          "hash": "14643054031440005021"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/reviews.js",
+          "hash": "3533961882127428994"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/ride-log.js",
+          "hash": "10495883043307241222"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/settings.js",
+          "hash": "15323417246848113861"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/tags.js",
+          "hash": "17767423565745490881"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/models/user.js",
+          "hash": "6526606265722570842"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/seed.js",
+          "hash": "17130949419084158997"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/seeds/blogs.js",
+          "hash": "7463870581595443634"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/seeds/categories.js",
+          "hash": "14681710217893888914"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/seeds/events.js",
+          "hash": "13757619115575244804"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/seeds/products.js",
+          "hash": "14250554327673082997"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/seeds/reviews.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/seeds/settings.js",
+          "hash": "17760824035208840578"
+        },
+        {
+          "file": "libs/orbital-api/MongoDb/seeds/users.js",
+          "hash": "17935250083094532636"
+        },
+        {
+          "file": "libs/orbital-api/Notification/index.js",
+          "hash": "2875640677456464585"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/index.js",
+          "hash": "12030951657505627562"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/auth.js",
+          "hash": "9851823222614931491"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/blogs.js",
+          "hash": "16886318681817773863"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/carts.js",
+          "hash": "1118536949249056244"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/categories.js",
+          "hash": "9399293311321661731"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/chat-log.js",
+          "hash": "14388649928626647828"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/comments.js",
+          "hash": "8187826893162957663"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/contacts.js",
+          "hash": "13682081192704140189"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/events.js",
+          "hash": "18165016036228201167"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/forms.js",
+          "hash": "7538986765419125864"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/game-log.js",
+          "hash": "11897583830064894089"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/index.js",
+          "hash": "8701065344252538354"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/kernel.js",
+          "hash": "9674213177146699782"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/knowledge.js",
+          "hash": "5938166376144095525"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/lambda.js",
+          "hash": "2506102300140162312"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/media.js",
+          "hash": "2815144460272026897"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/notifications.js",
+          "hash": "18080643473135574538"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/orders.js",
+          "hash": "9159532457258156023"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/permissions.js",
+          "hash": "10411043630466955740"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/products.js",
+          "hash": "14643054031440005021"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/reviews.js",
+          "hash": "3533961882127428994"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/ride-log.js",
+          "hash": "10495883043307241222"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/settings.js",
+          "hash": "15323417246848113861"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/tags.js",
+          "hash": "17767423565745490881"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/models/user.js",
+          "hash": "6526606265722570842"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/seed.js",
+          "hash": "17130949419084158997"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/seeds/blogs.js",
+          "hash": "7463870581595443634"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/seeds/categories.js",
+          "hash": "14681710217893888914"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/seeds/events.js",
+          "hash": "13757619115575244804"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/seeds/products.js",
+          "hash": "14250554327673082997"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/seeds/reviews.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/seeds/settings.js",
+          "hash": "17760824035208840578"
+        },
+        {
+          "file": "libs/orbital-api/Postgresql/seeds/users.js",
+          "hash": "17935250083094532636"
+        },
+        {
+          "file": "libs/orbital-api/README.md",
+          "hash": "15415743253364021931"
+        },
+        {
+          "file": "libs/orbital-api/Settings/index.js",
+          "hash": "10262644159690070744"
+        },
+        {
+          "file": "libs/orbital-api/User/index.js",
+          "hash": "8342319979422653140"
+        },
+        {
+          "file": "libs/orbital-api/User/on-password-reset.js",
+          "hash": "17399169532382851894"
+        },
+        {
+          "file": "libs/orbital-api/index.js",
+          "hash": "11707227902994592709"
+        },
+        {
+          "file": "libs/orbital-api/package.json",
+          "hash": "5267691533906238831"
+        },
+        {
+          "file": "libs/orbital-templates/Material/Wrappers/LoginWrapper.js",
+          "hash": "12747189606370866784"
+        },
+        {
+          "file": "libs/orbital-templates/Material/Wrappers/MainWrapper.js",
+          "hash": "10532371776687860709"
+        },
+        {
+          "file": "libs/orbital-templates/Material/Wrappers/Routes.js",
+          "hash": "17944695055156785878"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Autocomplete/Autocomplete.js",
+          "hash": "8620151957874165342"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Autocomplete/Autocomplete.styles.js",
+          "hash": "3670833654880010205"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Charts/Charts.js",
+          "hash": "15408070801452728716"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ClientNotification/ClientNotification.js",
+          "hash": "12057668303802911707"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal.js",
+          "hash": "3044203372804649077"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Disclaimer/Disclaimer.js",
+          "hash": "17646736965677119457"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/EmailConfirmation/EmailConfirmation.js",
+          "hash": "14601620798413075398"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/EmailConfirmation/EmailConfirmation.styles.js",
+          "hash": "789339495521893012"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Empty/Empty.js",
+          "hash": "16896590872244757233"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Empty/Empty.styles.js",
+          "hash": "5418986944393640378"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/FloatingAddButton/FloatingAddButton.js",
+          "hash": "4712771284338482538"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPassword.js",
+          "hash": "15729482737486116540"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPassword.styles.js",
+          "hash": "789339495521893012"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPasswordConfirm.js",
+          "hash": "2842291169101088145"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Forms.Validate.js",
+          "hash": "17594303373659687192"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Forms.js",
+          "hash": "4832437992452110398"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Forms.styles.js",
+          "hash": "15442934952747310137"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Forms.test.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.CheckboxInput.js",
+          "hash": "12534717683434750527"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.CodeInput.js",
+          "hash": "951721913578772424"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.EditableArray.js",
+          "hash": "14262533869950383668"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.EditableObjectArray.js",
+          "hash": "2464025754394893880"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.GalleryInput.js",
+          "hash": "2373970025881407313"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.ImageFileInput.js",
+          "hash": "17228060518348114244"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.MarkdownInput.js",
+          "hash": "10402404166116816508"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.SelectInput.js",
+          "hash": "2810372157978906193"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.TextFieldInput.js",
+          "hash": "14510708206520952614"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/index.js",
+          "hash": "14020515536501463906"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/VisibleWhenFilter.js",
+          "hash": "12419566636571934517"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Forms/index.js",
+          "hash": "13637346876074425777"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Icon/Icon.js",
+          "hash": "12994419798433886485"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Loading/Loading.js",
+          "hash": "1438426402911296115"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Loading/Loading.styles.js",
+          "hash": "5418986944393640378"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Login/Login.js",
+          "hash": "17435085085291997144"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelAdd/ModelAdd.js",
+          "hash": "10469593312971239770"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelEdit/ModelEdit.js",
+          "hash": "2869126389697211302"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelEdit/ModelEdit.test.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelList/ModelAddPage.js",
+          "hash": "15147493183033688874"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelList/ModelEditPage.js",
+          "hash": "17355818885461912418"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelList/ModelFilterList.js",
+          "hash": "7873657803363564707"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.js",
+          "hash": "991793821715876603"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.styles.js",
+          "hash": "4944631305331863120"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.test.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListCardItem.js",
+          "hash": "2293526647592361260"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListItem.js",
+          "hash": "7098467004866093770"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListItems.js",
+          "hash": "12981492493831077839"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListViewOptions.js",
+          "hash": "9914995901129067247"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelList/ModelViewPage.js",
+          "hash": "9376766259385353538"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ModelPreview/ModelPreview.js",
+          "hash": "10404966630996001911"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Notifications/Notifications.js",
+          "hash": "21984127748389945"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Pagination/Pagination.js",
+          "hash": "17166988893910117400"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Register/Register.js",
+          "hash": "13262093599840371434"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPassword.js",
+          "hash": "13505738735891545279"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPassword.styles.js",
+          "hash": "789339495521893012"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPasswordConfirm.js",
+          "hash": "7215413566540312923"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Table/Table.js",
+          "hash": "16282739468221282893"
+        },
+        {
+          "file": "libs/orbital-templates/Material/_shared/Table/Table.styles.js",
+          "hash": "4196751777260612569"
+        },
+        {
+          "file": "libs/orbital-templates/Template.js",
+          "hash": "8660996925285536244"
+        },
+        {
+          "file": "libs/orbital-templates/Template.test.js",
+          "hash": "6023584863501812783"
+        },
+        {
+          "file": "libs/orbital-templates/package.json",
+          "hash": "9503038798104964599"
+        },
+        {
+          "file": "libs/orbital-templates/theme.js",
+          "hash": "2796164838002285554"
+        },
+        {
+          "file": "libs/react-services/admin-service/admin-service.js",
+          "hash": "8850783978592947030"
+        },
+        {
+          "file": "libs/react-services/auth-service/auth-service.js",
+          "hash": "13925238338120783019"
+        },
+        {
+          "file": "libs/react-services/camera-service/camera-service.js",
+          "hash": "13557175659581079240"
+        },
+        {
+          "file": "libs/react-services/crud-service/crud-container.js",
+          "hash": "7212099375280107813"
+        },
+        {
+          "file": "libs/react-services/crud-service/crud-container.spec.js",
+          "hash": "8166836480831541467"
+        },
+        {
+          "file": "libs/react-services/crud-service/crud-service.js",
+          "hash": "13445807915742527291"
+        },
+        {
+          "file": "libs/react-services/crud-service/features/crudDomainSlice.js",
+          "hash": "15911066366627335802"
+        },
+        {
+          "file": "libs/react-services/crud-service/hooks/useCreateModel.js",
+          "hash": "6722707270279389270"
+        },
+        {
+          "file": "libs/react-services/crud-service/hooks/useCreateModel.spec.js",
+          "hash": "1788256818344834261"
+        },
+        {
+          "file": "libs/react-services/crud-service/hooks/useDeleteModel.js",
+          "hash": "14649020197679679578"
+        },
+        {
+          "file": "libs/react-services/crud-service/hooks/useDeleteModel.spec.js",
+          "hash": "4814084653635650084"
+        },
+        {
+          "file": "libs/react-services/crud-service/hooks/useGetModel.js",
+          "hash": "5157031318125443472"
+        },
+        {
+          "file": "libs/react-services/crud-service/hooks/useGetModel.spec.js",
+          "hash": "6539672927697880671"
+        },
+        {
+          "file": "libs/react-services/crud-service/hooks/useInjectedProps.js",
+          "hash": "15908592676049769215"
+        },
+        {
+          "file": "libs/react-services/crud-service/hooks/useInjectedProps.spec.js",
+          "hash": "16509345431709911829"
+        },
+        {
+          "file": "libs/react-services/crud-service/hooks/useML.js",
+          "hash": "6430311019525673311"
+        },
+        {
+          "file": "libs/react-services/crud-service/hooks/useSearchModel.js",
+          "hash": "1802334662635013330"
+        },
+        {
+          "file": "libs/react-services/crud-service/hooks/useUpdateModel.js",
+          "hash": "9693878541998769329"
+        },
+        {
+          "file": "libs/react-services/crud-service/hooks/useUpdateModel.spec.js",
+          "hash": "7924023136961788460"
+        },
+        {
+          "file": "libs/react-services/forms-service/features/formDomainSlice.js",
+          "hash": "17790192368168937731"
+        },
+        {
+          "file": "libs/react-services/forms-service/forms-container.js",
+          "hash": "3739934221421907941"
+        },
+        {
+          "file": "libs/react-services/forms-service/forms-service.js",
+          "hash": "4171124241179869236"
+        },
+        {
+          "file": "libs/react-services/forms-service/hooks/useGetForm.js",
+          "hash": "9055284460160368224"
+        },
+        {
+          "file": "libs/react-services/forms-service/hooks/useInjectedProps.js",
+          "hash": "2737818163137152574"
+        },
+        {
+          "file": "libs/react-services/game-service/game-service.js",
+          "hash": "13547367134076227925"
+        },
+        {
+          "file": "libs/react-services/google-service/google-service.js",
+          "hash": "15044173681212190233"
+        },
+        {
+          "file": "libs/react-services/i18n-service/i18n-service.js",
+          "hash": "17685408578774019316"
+        },
+        {
+          "file": "libs/react-services/index.js",
+          "hash": "7592322829386038578"
+        },
+        {
+          "file": "libs/react-services/kb-service/kb-service.js",
+          "hash": "5311431521208538700"
+        },
+        {
+          "file": "libs/react-services/media-service/media-service.js",
+          "hash": "4673438226831479934"
+        },
+        {
+          "file": "libs/react-services/notification-service/notification-service.js",
+          "hash": "12138327481683082584"
+        },
+        {
+          "file": "libs/react-services/offline-service/offline-service.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/react-services/package.json",
+          "hash": "1486950921242947398"
+        },
+        {
+          "file": "libs/react-services/service-service/service-service.js",
+          "hash": "2798208586992569568"
+        },
+        {
+          "file": "libs/react-services/settings-service/settings-service.js",
+          "hash": "6526998583145965150"
+        },
+        {
+          "file": "libs/react-services/socket-service/socket-service.js",
+          "hash": "6336346063265047374"
+        },
+        {
+          "file": "libs/react-services/sql-service/sql-service.js",
+          "hash": "12453641680911122796"
+        },
+        {
+          "file": "libs/react-services/stripe-service/stripe-service.js",
+          "hash": "15417287999950300599"
+        },
+        {
+          "file": "libs/react-services/unsplash-service/unsplash-service.js",
+          "hash": "7849071031593011359"
+        },
+        {
+          "file": "libs/react-services/utils/test-utils.js",
+          "hash": "17969923951899772294"
+        },
+        {
+          "file": "libs/react-services/viz-service/viz-service.js",
+          "hash": "9075390803153005964"
+        },
+        {
+          "file": "libs/react-services/wikipedia-service/features/wikiDomainSlice.js",
+          "hash": "15705697099486059473"
+        },
+        {
+          "file": "libs/react-services/wikipedia-service/hooks/useFetchWikipediaPageByTopic.js",
+          "hash": "4108765907816111891"
+        },
+        {
+          "file": "libs/react-services/wikipedia-service/hooks/useInjectedProps.js",
+          "hash": "4426946098445136047"
+        },
+        {
+          "file": "libs/react-services/wikipedia-service/wikipedia-container.js",
+          "hash": "12996769453614020257"
+        },
+        {
+          "file": "libs/react-services/wikipedia-service/wikipedia-service.js",
+          "hash": "18325487634601797492"
+        },
+        {
+          "file": "nx.json",
+          "hash": "1765564465819899531"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "2318573979732360312"
+        },
+        {
+          "file": "package.json",
+          "hash": "9663376705268120960",
+          "deps": [
+            "npm:@nx/js",
+            "npm:nx"
+          ]
+        },
+        {
+          "file": "project.json",
+          "hash": "8613896934030904585"
+        },
+        {
+          "file": "serverless.yml",
+          "hash": "13912724692687231667"
+        }
+      ]
+    }
+  }
+}
