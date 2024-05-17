@@ -682,6 +682,9 @@
                                 }
                               }
                             }
+                          },
+                          "attr": {
+                            "collapsed": true
                           }
                         },
                         "7": {
@@ -700,6 +703,9 @@
                               "title": "3 blue one brown",
                               "id": "424.2627.a9dbbcf16-638b.92b1518c6"
                             }
+                          },
+                          "attr": {
+                            "collapsed": true
                           }
                         },
                         "8": {
@@ -788,6 +794,19 @@
                   286,
                   1
                 ],
+                "collapsed": true
+              }
+            },
+            "31": {
+              "title": "Tensors",
+              "id": "448.215f.6fba36465-bddc.e93f71bd7",
+              "ideas": {
+                "1": {
+                  "title": "Higher-order tensors become more complex and involve arrays with more than three dimensions.\n\n\n",
+                  "id": "449.215f.6fba36465-bddc.e93f71bd7"
+                }
+              },
+              "attr": {
                 "collapsed": true
               }
             },

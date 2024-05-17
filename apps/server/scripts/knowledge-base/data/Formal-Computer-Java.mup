@@ -1224,6 +1224,19 @@
                   "title": "Don't use for POJOS, Serialization and DTOs",
                   "id": "476.9cb5.40d91079a-badd.7f4b00fcc"
                 }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "29": {
+              "title": "Memory",
+              "id": "477.a6cd.e22979e97-683a.f9a4542f6",
+              "ideas": {
+                "1": {
+                  "title": "https://blog.stackademic.com/how-java-memory-works-c751460e3cbd",
+                  "id": "478.a6cd.e22979e97-683a.f9a4542f6"
+                }
               }
             },
             "6.5": {

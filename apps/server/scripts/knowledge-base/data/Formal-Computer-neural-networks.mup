@@ -29,6 +29,45 @@
                 "collapsed": true
               }
             },
+            "10": {
+              "title": "In Practice",
+              "id": "51.cbc7.56f899a86-6dbd.58fec5b55",
+              "ideas": {
+                "2": {
+                  "title": "RELU",
+                  "id": "53.cbc7.56f899a86-6dbd.58fec5b55",
+                  "ideas": {
+                    "2": {
+                      "title": "Definition",
+                      "id": "56.cbc7.56f899a86-6dbd.58fec5b55",
+                      "ideas": {
+                        "1": {
+                          "title": "The key characteristic of ReLU is that it introduces non-linearity to the network. This non-linearity is important for the training of deep neural networks. The activation of ReLU is zero for negative inputs, which can help in mitigating the vanishing gradient problem during backpropagation, allowing for effective training of deep networks.",
+                          "id": "52.cbc7.56f899a86-6dbd.58fec5b55",
+                          "attr": {}
+                        }
+                      }
+                    },
+                    "3": {
+                      "title": "Pitfalls",
+                      "id": "57.cbc7.56f899a86-6dbd.58fec5b55",
+                      "ideas": {
+                        "1": {
+                          "title": "While ReLU has been widely used and has shown success in many applications, it's worth noting that it can suffer from the \"dying ReLU\" problem, where neurons can become inactive (output zero) for all inputs during training, leading to issues in learning. Variants like Leaky ReLU or Parametric ReLU have been proposed to address this problem by allowing small, non-zero outputs for negative inputs.",
+                          "id": "58.cbc7.56f899a86-6dbd.58fec5b55"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
             "0.5": {
               "title": "Introduction",
               "id": "39.194381793902211f",
@@ -45,8 +84,7 @@
                     "note": {
                       "index": 16,
                       "text": "These systems of simulated neural nets can exhibit learning when based on D.O.Hebb's rule for learning developed in 1949, such that:\n\n\"the connections between cells that are active at the same time will be strengthened, increasing the probability that the first cell will excite the second cell in the future. Connections between cells whose activity is not synchronised will be weakened. Synchronised patterns of firing that occur repeatedly will eventually become stable representations (or memories) of the inputs that give rise to them, and can be reactivated by only partial inputs.\" [Ferry, 1987, p56]."
-                    },
-                    "collapsed": true
+                    }
                   },
                   "ideas": {
                     "1": {
@@ -137,9 +175,6 @@
                       "ideas": {},
                       "id": "50.194381793902211f"
                     }
-                  },
-                  "attr": {
-                    "collapsed": true
                   }
                 },
                 "3": {
@@ -177,9 +212,6 @@
                       "id": "26.237b5b1335e1358f",
                       "attr": {}
                     }
-                  },
-                  "attr": {
-                    "collapsed": true
                   }
                 }
               },
@@ -253,7 +285,13 @@
           }
         }
       },
-      "attr": {}
+      "attr": {
+        "position": [
+          -57,
+          -15,
+          1
+        ]
+      }
     }
   },
   "attr": {},

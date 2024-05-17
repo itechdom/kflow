@@ -41,6 +41,16 @@
                   "id": "208.2a97.d01f86b05-e43f.c175fd024"
                 }
               }
+            },
+            "4": {
+              "title": "Scaling kafka",
+              "id": "234.66f0.3f0283882-e1f8.f842ce0c2",
+              "ideas": {
+                "1": {
+                  "title": "https://catherine-shen.medium.com/scale-kafka-consumers-481be563bf3c",
+                  "id": "235.66f0.3f0283882-e1f8.f842ce0c2"
+                }
+              }
             }
           },
           "attr": {
@@ -51,83 +61,8 @@
           "title": "Concepts",
           "id": 176,
           "ideas": {
-            "1": {
-              "title": "Kafka connect",
-              "id": "178.fff7.ac85fca77-d27f.8b652c95b",
-              "ideas": {
-                "1": {
-                  "title": "integration",
-                  "id": "179.fff7.ac85fca77-d27f.8b652c95b"
-                }
-              }
-            },
-            "2": {
-              "title": "Kafka streaming",
-              "id": "180.fff7.ac85fca77-d27f.8b652c95b"
-            },
-            "4": {
-              "title": "Brokers",
-              "id": "183.fff7.ac85fca77-d27f.8b652c95b",
-              "ideas": {
-                "1": {
-                  "title": "has it's own storage",
-                  "id": "185.fff7.ac85fca77-d27f.8b652c95b"
-                },
-                "2": {
-                  "title": "in between consumers and producers",
-                  "id": "194.fff7.ac85fca77-d27f.8b652c95b"
-                }
-              }
-            },
-            "5": {
-              "title": "Producers",
-              "id": "184.fff7.ac85fca77-d27f.8b652c95b",
-              "ideas": {},
-              "attr": {}
-            },
-            "6": {
-              "title": "used for decoupling",
-              "id": "186.fff7.ac85fca77-d27f.8b652c95b",
-              "ideas": {}
-            },
-            "7": {
-              "title": "event driven ",
-              "id": "188.fff7.ac85fca77-d27f.8b652c95b"
-            },
-            "8": {
-              "title": "pull based",
-              "id": "190.fff7.ac85fca77-d27f.8b652c95b"
-            },
-            "9": {
-              "title": "KSQL db",
-              "id": "192.fff7.ac85fca77-d27f.8b652c95b",
-              "ideas": {
-                "1": {
-                  "title": "SQL like syntax for stream processing",
-                  "id": "206.2a97.d01f86b05-e43f.c175fd024"
-                }
-              }
-            },
-            "10": {
-              "title": "uses zookeeper for managing consensus ",
-              "id": "193.fff7.ac85fca77-d27f.8b652c95b",
-              "ideas": {
-                "1": {
-                  "title": "access control",
-                  "id": "195.fff7.ac85fca77-d27f.8b652c95b"
-                },
-                "2": {
-                  "title": "managing failures",
-                  "id": "196.fff7.ac85fca77-d27f.8b652c95b"
-                },
-                "3": {
-                  "title": "cluster management",
-                  "id": "197.fff7.ac85fca77-d27f.8b652c95b"
-                }
-              }
-            },
             "11": {
-              "title": "related",
+              "title": "Integration",
               "id": "198.fff7.ac85fca77-d27f.8b652c95b",
               "ideas": {
                 "1": {
@@ -145,21 +80,383 @@
                     }
                   }
                 }
+              },
+              "attr": {
+                "collapsed": true
               }
             },
-            "12": {
-              "title": "every event is a key value pair",
-              "id": "202.fff7.ac85fca77-d27f.8b652c95b"
+            "13": {
+              "title": "Products",
+              "id": "211.66f0.3f0283882-e1f8.f842ce0c2",
+              "ideas": {
+                "2": {
+                  "title": "Kafka streams",
+                  "id": "212.66f0.3f0283882-e1f8.f842ce0c2",
+                  "attr": {
+                    "collapsed": true
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "provides ability to aggregate, filter, group, join ... etc",
+                      "id": "259.0ebe.0bc16437a-0525.82e5b7682"
+                    },
+                    "2": {
+                      "title": "preserves state",
+                      "id": "260.0ebe.0bc16437a-0525.82e5b7682"
+                    },
+                    "3": {
+                      "title": "by streams here we refer to a consumer group",
+                      "id": "261.0ebe.0bc16437a-0525.82e5b7682"
+                    },
+                    "4": {
+                      "title": "we can combine different topics together to achieve something?",
+                      "id": "262.0ebe.0bc16437a-0525.82e5b7682"
+                    },
+                    "5": {
+                      "title": "KSQL db",
+                      "id": "192.fff7.ac85fca77-d27f.8b652c95b",
+                      "ideas": {
+                        "1": {
+                          "title": "SQL like syntax for stream processing",
+                          "id": "206.2a97.d01f86b05-e43f.c175fd024"
+                        },
+                        "2": {
+                          "title": "Database optimized for stream processing",
+                          "id": "263.0ebe.0bc16437a-0525.82e5b7682"
+                        },
+                        "3": {
+                          "title": "Store streams",
+                          "id": "264.0ebe.0bc16437a-0525.82e5b7682"
+                        }
+                      },
+                      "attr": {}
+                    }
+                  }
+                },
+                "3": {
+                  "title": "Kafka connect",
+                  "ideas": {
+                    "1": {
+                      "title": "integration with other apis",
+                      "id": "214.66f0.3f0283882-e1f8.f842ce0c2"
+                    },
+                    "2": {
+                      "title": "connectors",
+                      "id": "245.0ebe.0bc16437a-0525.82e5b7682",
+                      "ideas": {
+                        "1": {
+                          "title": "Source",
+                          "id": "246.0ebe.0bc16437a-0525.82e5b7682",
+                          "ideas": {
+                            "1": {
+                              "title": "Producer",
+                              "id": "248.0ebe.0bc16437a-0525.82e5b7682"
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "Sink",
+                          "id": "247.0ebe.0bc16437a-0525.82e5b7682",
+                          "ideas": {
+                            "1": {
+                              "title": "Consumer",
+                              "id": "250.0ebe.0bc16437a-0525.82e5b7682"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "4": {
+                      "title": "Resources",
+                      "id": "252.0ebe.0bc16437a-0525.82e5b7682",
+                      "ideas": {
+                        "1": {
+                          "title": "https://docs.confluent.io/cloud/current/connectors/cc-microsoft-sql-server-sink.html",
+                          "id": "251.0ebe.0bc16437a-0525.82e5b7682",
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "How to install kafka connect",
+                          "id": "253.0ebe.0bc16437a-0525.82e5b7682",
+                          "ideas": {
+                            "1": {
+                              "title": "https://www.youtube.com/watch?v=18gDPSOH3wU",
+                              "id": "254.0ebe.0bc16437a-0525.82e5b7682"
+                            }
+                          },
+                          "attr": {
+                            "collapsed": true
+                          }
+                        },
+                        "3": {
+                          "title": "https://www.confluent.io/hub/confluentinc/kafka-connect-jdbc",
+                          "id": "256.0ebe.0bc16437a-0525.82e5b7682",
+                          "attr": {}
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    }
+                  },
+                  "id": "213.66f0.3f0283882-e1f8.f842ce0c2",
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "4": {
+                  "title": "Schema Registry",
+                  "id": "257.0ebe.0bc16437a-0525.82e5b7682",
+                  "ideas": {
+                    "1": {
+                      "title": "Store Database Schemas inside of Kafka",
+                      "id": "258.0ebe.0bc16437a-0525.82e5b7682"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
             },
-            "5.5": {
-              "title": "Consumers",
-              "id": "191.fff7.ac85fca77-d27f.8b652c95b",
+            "14": {
+              "title": "Deployment and Scalability",
+              "id": "215.66f0.3f0283882-e1f8.f842ce0c2",
+              "ideas": {
+                "1": {
+                  "title": "uses zookeeper for managing consensus ",
+                  "id": "193.fff7.ac85fca77-d27f.8b652c95b",
+                  "ideas": {
+                    "1": {
+                      "title": "access control",
+                      "id": "195.fff7.ac85fca77-d27f.8b652c95b"
+                    },
+                    "2": {
+                      "title": "managing failures",
+                      "id": "196.fff7.ac85fca77-d27f.8b652c95b"
+                    },
+                    "3": {
+                      "title": "cluster management",
+                      "id": "197.fff7.ac85fca77-d27f.8b652c95b"
+                    }
+                  },
+                  "attr": {}
+                },
+                "2": {
+                  "title": "Partition rebalance",
+                  "id": "231.66f0.3f0283882-e1f8.f842ce0c2",
+                  "ideas": {
+                    "1": {
+                      "title": "what will happen if we add a new consumer to the group? The new consumer will start consuming messages from partitions previously consumed by another consumer. If it leaves the group, the partitions it used to consume will be consumed by one of the remaining consumers.",
+                      "id": "232.66f0.3f0283882-e1f8.f842ce0c2",
+                      "attr": {}
+                    },
+                    "2": {
+                      "title": "We call moving partition ownership from one consumer to another a rebalance.",
+                      "id": "233.66f0.3f0283882-e1f8.f842ce0c2",
+                      "attr": {}
+                    }
+                  }
+                },
+                "0.5": {
+                  "title": "It’s also important not to have more consumers in a group than you have partitions. The extra consumers will just sit idle, since all the partitions are taken.\n\n\n\n",
+                  "id": "230.66f0.3f0283882-e1f8.f842ce0c2",
+                  "attr": {}
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            },
+            "5.25": {
+              "title": "Features",
+              "id": "209.66f0.3f0283882-e1f8.f842ce0c2",
+              "ideas": {
+                "1": {
+                  "title": "pull based",
+                  "id": "190.fff7.ac85fca77-d27f.8b652c95b",
+                  "attr": {}
+                },
+                "2": {
+                  "title": "event driven ",
+                  "id": "188.fff7.ac85fca77-d27f.8b652c95b",
+                  "attr": {}
+                },
+                "3": {
+                  "title": "used for decoupling",
+                  "id": "186.fff7.ac85fca77-d27f.8b652c95b",
+                  "ideas": {},
+                  "attr": {}
+                },
+                "4": {
+                  "title": "every event is a key value pair",
+                  "id": "202.fff7.ac85fca77-d27f.8b652c95b",
+                  "attr": {}
+                },
+                "5": {
+                  "title": "collect,store and process event streams",
+                  "id": "236.0ebe.0bc16437a-0525.82e5b7682"
+                }
+              },
               "attr": {
                 "position": [
-                  94,
-                  3,
-                  1
-                ]
+                  79,
+                  -59,
+                  2
+                ],
+                "collapsed": true
+              }
+            },
+            "7.125": {
+              "title": "Components",
+              "id": "210.66f0.3f0283882-e1f8.f842ce0c2",
+              "attr": {
+                "position": [
+                  84,
+                  1,
+                  3
+                ],
+                "collapsed": true
+              },
+              "ideas": {
+                "1": {
+                  "title": "Consumers",
+                  "id": "191.fff7.ac85fca77-d27f.8b652c95b",
+                  "attr": {
+                    "collapsed": true
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "Consumer read data from a topic.",
+                      "id": "225.66f0.3f0283882-e1f8.f842ce0c2",
+                      "attr": {}
+                    },
+                    "2": {
+                      "title": "Consumer group",
+                      "id": "226.66f0.3f0283882-e1f8.f842ce0c2",
+                      "ideas": {
+                        "1": {
+                          "title": "Consumer can be grouped together for a given topic for maximizing read throughput. Each consumer in a group read from mutually exclusive partitions.\n\n\n\n",
+                          "id": "227.66f0.3f0283882-e1f8.f842ce0c2"
+                        }
+                      }
+                    },
+                    "3": {
+                      "title": "when to use different consumer groups?",
+                      "id": "228.66f0.3f0283882-e1f8.f842ce0c2",
+                      "ideas": {
+                        "1": {
+                          "title": "\nWhen the consumers are performing different operations on the same topics, we should use different consumer groups.",
+                          "id": "229.66f0.3f0283882-e1f8.f842ce0c2"
+                        }
+                      }
+                    },
+                    "4": {
+                      "title": "they read from all the different parititions",
+                      "id": "243.0ebe.0bc16437a-0525.82e5b7682"
+                    },
+                    "5": {
+                      "title": "each time you add a new group consumer instance a rebalance happens",
+                      "id": "244.0ebe.0bc16437a-0525.82e5b7682"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Producers",
+                  "id": "184.fff7.ac85fca77-d27f.8b652c95b",
+                  "ideas": {
+                    "1": {
+                      "title": "Producers write data to topics.",
+                      "id": "224.66f0.3f0283882-e1f8.f842ce0c2",
+                      "attr": {}
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "2.75": {
+                  "title": "Topics",
+                  "id": "219.66f0.3f0283882-e1f8.f842ce0c2",
+                  "attr": {
+                    "collapsed": true
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "Similar to a table in database, topics is a particular stream of data. Topics consist of one or more partitions, ordered, immutable sequences of messages to which Kafka appends new messages.",
+                      "id": "220.66f0.3f0283882-e1f8.f842ce0c2"
+                    },
+                    "2": {
+                      "title": "key/value pairs",
+                      "id": "237.0ebe.0bc16437a-0525.82e5b7682",
+                      "ideas": {
+                        "1": {
+                          "title": "topics with the same key land on the same partition",
+                          "id": "238.0ebe.0bc16437a-0525.82e5b7682"
+                        }
+                      }
+                    },
+                    "3": {
+                      "title": "Partitions and offsets",
+                      "id": "217.66f0.3f0283882-e1f8.f842ce0c2",
+                      "attr": {},
+                      "ideas": {
+                        "1": {
+                          "title": "Topics are split in partitions. Each message within a partition gets an incremental id, called offset.",
+                          "id": "218.66f0.3f0283882-e1f8.f842ce0c2",
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "paritions can affect how the data is distributed",
+                          "id": "239.0ebe.0bc16437a-0525.82e5b7682"
+                        },
+                        "3": {
+                          "title": "Brokers",
+                          "id": "183.fff7.ac85fca77-d27f.8b652c95b",
+                          "ideas": {
+                            "1": {
+                              "title": "has it's own storage",
+                              "id": "185.fff7.ac85fca77-d27f.8b652c95b"
+                            },
+                            "2": {
+                              "title": "in between consumers and producers",
+                              "id": "194.fff7.ac85fca77-d27f.8b652c95b"
+                            },
+                            "3": {
+                              "title": "A Kafka cluster consists of one or more brokers. Partitions are spread across these brokers. After connecting to any broker, you will be connected to the entire cluster.",
+                              "id": "216.66f0.3f0283882-e1f8.f842ce0c2",
+                              "attr": {}
+                            },
+                            "4": {
+                              "title": "Replicas",
+                              "id": "221.66f0.3f0283882-e1f8.f842ce0c2",
+                              "ideas": {
+                                "1": {
+                                  "title": "Topics have a replication factor to make sure if one broker is down, another broker can serve the data.",
+                                  "id": "222.66f0.3f0283882-e1f8.f842ce0c2"
+                                },
+                                "2": {
+                                  "title": "Leader Replica",
+                                  "id": "241.0ebe.0bc16437a-0525.82e5b7682"
+                                },
+                                "3": {
+                                  "title": "Follow Replica",
+                                  "id": "242.0ebe.0bc16437a-0525.82e5b7682"
+                                }
+                              }
+                            },
+                            "5": {
+                              "title": "Zookeeper manages brokers, helps in performing leader election for the partition.",
+                              "id": "223.66f0.3f0283882-e1f8.f842ce0c2",
+                              "attr": {}
+                            }
+                          },
+                          "attr": {}
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           },

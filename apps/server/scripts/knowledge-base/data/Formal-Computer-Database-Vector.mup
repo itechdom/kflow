@@ -1,0 +1,56 @@
+{
+  "id": "root",
+  "formatVersion": 3,
+  "ideas": {
+    "1": {
+      "id": 1,
+      "title": "Vector Database",
+      "attr": {
+        "style": {},
+        "position": [
+          -34,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "-2": {
+          "title": "Resources",
+          "id": "21.177b.e9260a13a-672d.357b0e2e2",
+          "ideas": {
+            "1": {
+              "title": "https://medium.com/@abhishekranjandev/vector-databases-exploring-a-new-way-to-revolutionize-search-85cb1b1fc7b",
+              "id": "22.177b.e9260a13a-672d.357b0e2e2"
+            }
+          },
+          "attr": {}
+        },
+        "0.5": {
+          "title": "First you transform text into vector (Word Embedding)",
+          "id": "23.177b.e9260a13a-672d.357b0e2e2",
+          "attr": {
+            "position": [
+              144,
+              -24,
+              1
+            ]
+          }
+        }
+      }
+    }
+  },
+  "links": [
+    {
+      "ideaIdFrom": 93,
+      "ideaIdTo": 94,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    }
+  ],
+  "attr": {},
+  "title": "Database"
+}
