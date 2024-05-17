@@ -10271,6 +10271,11 @@
       },
       {
         "source": "ui",
+        "target": "npm:@nrwl/react",
+        "type": "static"
+      },
+      {
+        "source": "ui",
         "target": "npm:@nx/js",
         "type": "static"
       },
