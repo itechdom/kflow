@@ -1,18 +1,18 @@
 {
   "run": {
-    "command": "nx run ui:serve:ui",
-    "startTime": "2024-05-17T08:26:26.077Z",
-    "endTime": "2024-05-17T08:26:26.775Z",
+    "command": "nx run ui:build:ui",
+    "startTime": "2024-05-17T08:41:21.575Z",
+    "endTime": "2024-05-17T08:41:22.280Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "ui:serve:ui",
-      "target": "serve:ui",
+      "taskId": "ui:build:ui",
+      "target": "build:ui",
       "projectName": "ui",
-      "hash": "13978602589448373973",
-      "startTime": "2024-05-17T08:26:26.081Z",
-      "endTime": "2024-05-17T08:26:26.775Z",
+      "hash": "16762253107448610379",
+      "startTime": "2024-05-17T08:41:21.580Z",
+      "endTime": "2024-05-17T08:41:22.279Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1

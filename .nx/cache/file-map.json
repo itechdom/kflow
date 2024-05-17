@@ -28,188 +28,20 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "libs/node-services/acl-service/acl-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/seeds/reviews.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/lambda.js",
-        "hash": "2506102300140162312"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useSearchModel.js",
-        "hash": "1802334662635013330"
-      },
-      {
-        "file": "libs/react-services/wikipedia-service/wikipedia-container.js",
-        "hash": "12996769453614020257"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Loading/Loading.js",
-        "hash": "15614265202861762110"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/carts.js",
-        "hash": "1118536949249056244"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.EditableObjectArray.js",
-        "hash": "17263353003156427409"
-      },
-      {
-        "file": "libs/node-services/i18n-service/locales/en/translation.json",
-        "hash": "15035819451704992183"
-      },
-      {
-        "file": "libs/node-services/passport-service/strategies/facebook.js",
-        "hash": "8408752289836791881"
-      },
-      {
-        "file": "libs/orbital-api/Settings/index.js",
-        "hash": "10262644159690070744"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useGetModel.spec.js",
-        "hash": "6539672927697880671"
-      },
-      {
-        "file": "apps/ml/requirements.txt",
-        "hash": "2164793734228542966"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/auth.js",
-        "hash": "9851823222614931491"
-      },
-      {
-        "file": "apps/ml/src/lanchain.py",
-        "hash": "847805747639934562"
-      },
-      {
-        "file": "libs/node-services/viz-service/viz-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelEditPage.js",
-        "hash": "9402480715318984553"
+        "file": ".babelrc",
+        "hash": "5330787629573791034"
       },
       {
         "file": ".gitignore",
         "hash": "15207162754670266744"
       },
       {
-        "file": "libs/orbital-api/Postgresql/models/blogs.js",
-        "hash": "16886318681817773863"
-      },
-      {
-        "file": "libs/react-services/forms-service/forms-container.js",
-        "hash": "3739934221421907941"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/seeds/categories.js",
-        "hash": "14681710217893888914"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/seeds/settings.js",
-        "hash": "17760824035208840578"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPassword.styles.js",
-        "hash": "789339495521893012"
-      },
-      {
-        "file": "cache/project-graph.json",
-        "hash": "13972182092320512543"
-      },
-      {
-        "file": "libs/node-services/email-service/email-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/seeds/products.js",
-        "hash": "14250554327673082997"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ClientNotification/ClientNotification.js",
-        "hash": "12044855101493991214"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/kernel.js",
-        "hash": "9674213177146699782"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Disclaimer/Disclaimer.js",
-        "hash": "14537948571988294910"
-      },
-      {
-        "file": "libs/orbital-api/Forms/index.js",
-        "hash": "5703008585463470528"
-      },
-      {
-        "file": "libs/orbital-templates/theme.js",
-        "hash": "14277834133023231583"
-      },
-      {
-        "file": "libs/react-services/auth-service/auth-service.js",
-        "hash": "13925238338120783019"
-      },
-      {
-        "file": "libs/node-services/passport-service/strategies/local.js",
-        "hash": "1124911613885187293"
-      },
-      {
-        "file": "libs/react-services/forms-service/features/formDomainSlice.js",
-        "hash": "17790192368168937731"
-      },
-      {
-        "file": "libs/orbital-templates/package.json",
-        "hash": "9503038798104964599"
-      },
-      {
-        "file": "libs/react-services/utils/test-utils.js",
-        "hash": "17969923951899772294"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useUpdateModel.js",
-        "hash": "9693878541998769329"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/EmailConfirmation/EmailConfirmation.js",
-        "hash": "17792834818319923342"
-      },
-      {
-        "file": "package.json",
-        "hash": "14456386568015950516"
-      },
-      {
-        "file": "libs/react-services/admin-service/admin-service.js",
-        "hash": "8850783978592947030"
-      },
-      {
-        "file": "libs/react-services/notification-service/notification-service.js",
-        "hash": "12138327481683082584"
-      },
-      {
-        "file": "libs/react-services/crud-service/crud-container.spec.js",
-        "hash": "8166836480831541467"
-      },
-      {
-        "file": "libs/node-services/acl-service/acl-service.js",
-        "hash": "1135285515934867823"
-      },
-      {
-        "file": "apps/ml/src/torch-image-classification.py",
-        "hash": "9881343716916663234"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListItem.js",
-        "hash": "8300531475422143121"
-      },
-      {
         "file": ".gitmodules",
         "hash": "10865203522860523402"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "15542186811534988851"
       },
       {
         "file": "README.md",
@@ -220,396 +52,420 @@
         "hash": "965309827566386612"
       },
       {
-        "file": "libs/orbital-api/MongoDb/seeds/settings.js",
-        "hash": "17760824035208840578"
+        "file": "apps/ml/assets/wiki.txt",
+        "hash": "8040739283673464840"
       },
       {
-        "file": "libs/node-services/event-service/event-service.test.js",
-        "hash": "3244421341483603138"
+        "file": "apps/ml/index.py",
+        "hash": "12026451037176396493"
       },
       {
-        "file": "libs/orbital-api/MongoDb/seeds/products.js",
-        "hash": "14250554327673082997"
+        "file": "apps/ml/requirements.txt",
+        "hash": "2164793734228542966"
       },
       {
-        "file": "libs/react-services/crud-service/hooks/useCreateModel.spec.js",
-        "hash": "1788256818344834261"
+        "file": "apps/ml/scripts/install.sh",
+        "hash": "9927891219875383493"
       },
       {
-        "file": "libs/node-services/forms-service/forms-service.js",
-        "hash": "15362398208800401666"
+        "file": "apps/ml/scripts/run.sh",
+        "hash": "14536474836278550653"
       },
       {
-        "file": "libs/orbital-api/Auth/index.js",
-        "hash": "9321078452067082134"
-      },
-      {
-        "file": "libs/orbital-api/Media/index.js",
-        "hash": "16850229879100984011"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useUpdateModel.spec.js",
-        "hash": "7924023136961788460"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Register/Register.js",
-        "hash": "6557158694670713115"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/lambda.js",
-        "hash": "2506102300140162312"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Autocomplete/Autocomplete.js",
-        "hash": "6538703896677060599"
-      },
-      {
-        "file": "libs/node-services/passport-service/strategies/google.js",
-        "hash": "6908575858901171523"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPassword.js",
-        "hash": "16950534780809774090"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/seeds/users.js",
-        "hash": "17935250083094532636"
-      },
-      {
-        "file": "apps/ml/wiki-res.json",
-        "hash": "18181539555020842391"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPassword.js",
-        "hash": "1953002949559648531"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Table/Table.styles.js",
-        "hash": "328203115035249063"
-      },
-      {
-        "file": "yarn.lock",
-        "hash": "3824002566616486642"
-      },
-      {
-        "file": "libs/react-services/stripe-service/stripe-service.js",
-        "hash": "15417287999950300599"
-      },
-      {
-        "file": "libs/node-services/auth-service/auth-service.js",
-        "hash": "16018284877563208542"
+        "file": "apps/ml/scripts/setup-python.sh",
+        "hash": "219069984985103778"
       },
       {
         "file": "apps/ml/src/gpt-langchain.py",
         "hash": "12470876429043337613"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPasswordConfirm.js",
-        "hash": "15296675377240731360"
+        "file": "apps/ml/src/lanchain.py",
+        "hash": "847805747639934562"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/ModelEdit/ModelEdit.js",
-        "hash": "5925550284579252235"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/User/on-password-reset.js",
-        "hash": "17399169532382851894"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Table/Table.js",
-        "hash": "16282739468221282893"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/categories.js",
-        "hash": "9399293311321661731"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/reviews.js",
-        "hash": "3533961882127428994"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.MarkdownInput.js",
-        "hash": "10402404166116816508"
-      },
-      {
-        "file": "libs/node-services/package.json",
-        "hash": "17064025336349698972"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.js",
-        "hash": "17523677745316112167"
-      },
-      {
-        "file": "libs/node-services/.babelrc",
-        "hash": "3250086131670327215"
-      },
-      {
-        "file": "libs/node-services/lambda-service/lambda-service.js",
-        "hash": "2319463699761190070"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/game-log.js",
-        "hash": "11897583830064894089"
-      },
-      {
-        "file": "libs/orbital-api/Jwt/index.js",
-        "hash": "9756531292847274301"
-      },
-      {
-        "file": "libs/node-services/gpt-service/gpt-service.js",
-        "hash": "4485032429151951153"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/knowledge.js",
-        "hash": "5938166376144095525"
-      },
-      {
-        "file": "libs/react-services/i18n-service/i18n-service.js",
-        "hash": "17685408578774019316"
-      },
-      {
-        "file": "libs/node-services/passport-service/passport-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/media.js",
-        "hash": "2815144460272026897"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/seeds/blogs.js",
-        "hash": "7463870581595443634"
-      },
-      {
-        "file": "libs/node-services/README.md",
-        "hash": "4594159951041989581"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/orders.js",
-        "hash": "9159532457258156023"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/seeds/reviews.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/react-services/service-service/service-service.js",
-        "hash": "2798208586992569568"
-      },
-      {
-        "file": "libs/node-services/utils/dbutils.js",
-        "hash": "7077924719197107404"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPassword.styles.js",
-        "hash": "789339495521893012"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "15542186811534988851"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/notifications.js",
-        "hash": "18080643473135574538"
-      },
-      {
-        "file": "libs/react-services/crud-service/crud-service.js",
-        "hash": "13445807915742527291"
-      },
-      {
-        "file": "libs/node-services/email-service/email-service.js",
-        "hash": "9322769045216709553"
-      },
-      {
-        "file": "libs/node-services/i18n-service/i18n-service.js",
-        "hash": "10852438105587057641"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/FloatingAddButton/FloatingAddButton.js",
-        "hash": "8746049215028473335"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelAdd/ModelAdd.js",
-        "hash": "2252608845241376820"
-      },
-      {
-        "file": "libs/react-services/camera-service/camera-service.js",
-        "hash": "13557175659581079240"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/blogs.js",
-        "hash": "16886318681817773863"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/products.js",
-        "hash": "14643054031440005021"
-      },
-      {
-        "file": "libs/node-services/passport-service/strategies/twitter.js",
-        "hash": "15478343520276247297"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/categories.js",
-        "hash": "9399293311321661731"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/knowledge.js",
-        "hash": "5938166376144095525"
-      },
-      {
-        "file": "libs/react-services/index.js",
-        "hash": "7592322829386038578"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/settings.js",
-        "hash": "15323417246848113861"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListCardItem.js",
-        "hash": "8007162109864978534"
-      },
-      {
-        "file": "libs/react-services/wikipedia-service/features/wikiDomainSlice.js",
-        "hash": "15705697099486059473"
-      },
-      {
-        "file": "libs/react-services/kb-service/kb-service.js",
-        "hash": "5311431521208538700"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListItems.js",
-        "hash": "17652969577024187370"
-      },
-      {
-        "file": "libs/node-services/socket-service/socket-service.js",
-        "hash": "651967788379227905"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Empty/Empty.js",
-        "hash": "9927374409733697385"
-      },
-      {
-        "file": "apps/ml/src/torch-workflow-summary.py",
-        "hash": "15666404108040677650"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.styles.js",
-        "hash": "15442934952747310137"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/reviews.js",
-        "hash": "3533961882127428994"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPasswordConfirm.js",
-        "hash": "3731604729067583266"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/contacts.js",
-        "hash": "13682081192704140189"
-      },
-      {
-        "file": "libs/node-services/crud-service/crud-service.js",
-        "hash": "8170980886722703088"
-      },
-      {
-        "file": "libs/react-services/forms-service/hooks/useInjectedProps.js",
-        "hash": "2737818163137152574"
-      },
-      {
-        "file": "libs/node-services/lambda-service/serverless.js",
-        "hash": "2147329559637884378"
-      },
-      {
-        "file": "libs/node-services/hello-service/hello-service.js",
-        "hash": "6890846219555717552"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/index.js",
-        "hash": "13637346876074425777"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useDeleteModel.spec.js",
-        "hash": "4814084653635650084"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/ride-log.js",
-        "hash": "10495883043307241222"
-      },
-      {
-        "file": "libs/node-services/lambda-service/handler.js",
-        "hash": "13751669427641265613"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/user.js",
-        "hash": "6526606265722570842"
+        "file": "apps/ml/src/mostUniqueWords.py",
+        "hash": "7236663950543428711"
       },
       {
         "file": "apps/ml/src/server.py",
         "hash": "7322733374257771364"
       },
       {
+        "file": "apps/ml/src/torch-image-classification.py",
+        "hash": "9881343716916663234"
+      },
+      {
+        "file": "apps/ml/src/torch-tensors.py",
+        "hash": "16776371345607942195"
+      },
+      {
+        "file": "apps/ml/src/torch-workflow-summary.py",
+        "hash": "15666404108040677650"
+      },
+      {
         "file": "apps/ml/src/torch-workflow.py",
         "hash": "3354494580319774431"
       },
       {
-        "file": "libs/orbital-api/MongoDb/models/auth.js",
-        "hash": "9851823222614931491"
+        "file": "apps/ml/wiki-res.json",
+        "hash": "18181539555020842391"
       },
       {
-        "file": "libs/orbital-api/Postgresql/models/settings.js",
-        "hash": "15323417246848113861"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/EmailConfirmation/EmailConfirmation.styles.js",
-        "hash": "789339495521893012"
-      },
-      {
-        "file": "libs/node-services/media-service/media-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/tags.js",
-        "hash": "17767423565745490881"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelFilterList.js",
-        "hash": "10333700014191819368"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useML.js",
-        "hash": "6430311019525673311"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelEdit/ModelEdit.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/forms.js",
-        "hash": "7538986765419125864"
-      },
-      {
-        "file": "libs/node-services/index.js",
-        "hash": "12652745485490745356"
-      },
-      {
-        "file": "libs/orbital-api/index.js",
-        "hash": "11707227902994592709"
+        "file": "apps/ml/wiki-res.txt",
+        "hash": "6387522008351933103"
       },
       {
         "file": "cache/file-map.json",
         "hash": "871086769214204483"
       },
       {
-        "file": "libs/orbital-api/Localization/index.js",
-        "hash": "13004693098284271393"
+        "file": "cache/lockfile.hash",
+        "hash": "3270212667847010523"
+      },
+      {
+        "file": "cache/nx_files.nxt",
+        "hash": "8295163021701433402"
+      },
+      {
+        "file": "cache/parsed-lock-file.json",
+        "hash": "15734989362211013702"
+      },
+      {
+        "file": "cache/project-graph.json",
+        "hash": "13972182092320512543"
       },
       {
         "file": "jsconfig.json",
         "hash": "14761681734850042890"
+      },
+      {
+        "file": "libs/node-services/.babelrc",
+        "hash": "3250086131670327215"
+      },
+      {
+        "file": "libs/node-services/.gitignore",
+        "hash": "10323923445659864269"
+      },
+      {
+        "file": "libs/node-services/README.md",
+        "hash": "4594159951041989581"
+      },
+      {
+        "file": "libs/node-services/acl-service/acl-service.js",
+        "hash": "1135285515934867823"
+      },
+      {
+        "file": "libs/node-services/acl-service/acl-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/auth-service/auth-service.js",
+        "hash": "16018284877563208542"
+      },
+      {
+        "file": "libs/node-services/auth-service/auth-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/babel.config.js",
+        "hash": "12442705542530351934"
+      },
+      {
+        "file": "libs/node-services/crud-service/crud-service.js",
+        "hash": "8170980886722703088"
+      },
+      {
+        "file": "libs/node-services/crud-service/crud-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/crud-service/serverless.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/email-service/email-service.js",
+        "hash": "9322769045216709553"
+      },
+      {
+        "file": "libs/node-services/email-service/email-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/event-service/event-service.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/event-service/event-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/forms-service/forms-service.js",
+        "hash": "15362398208800401666"
+      },
+      {
+        "file": "libs/node-services/gpt-service/gpt-service.js",
+        "hash": "4485032429151951153"
+      },
+      {
+        "file": "libs/node-services/hello-service/hello-service.js",
+        "hash": "6890846219555717552"
+      },
+      {
+        "file": "libs/node-services/i18n-service/i18n-service.js",
+        "hash": "10852438105587057641"
+      },
+      {
+        "file": "libs/node-services/i18n-service/locales/ar/ar.json",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/i18n-service/locales/de/translation.json",
+        "hash": "17583592877941659617"
+      },
+      {
+        "file": "libs/node-services/i18n-service/locales/dev/translation.json",
+        "hash": "15035819451704992183"
+      },
+      {
+        "file": "libs/node-services/i18n-service/locales/en/translation.json",
+        "hash": "15035819451704992183"
+      },
+      {
+        "file": "libs/node-services/index.js",
+        "hash": "12652745485490745356"
+      },
+      {
+        "file": "libs/node-services/job-service/job-service.js",
+        "hash": "6235471628370074132"
+      },
+      {
+        "file": "libs/node-services/jwt-service/jwt-service.js",
+        "hash": "7902320474444978941"
+      },
+      {
+        "file": "libs/node-services/lambda-service/handler.js",
+        "hash": "13751669427641265613"
+      },
+      {
+        "file": "libs/node-services/lambda-service/lambda-service-script.js",
+        "hash": "8704471557375117390"
+      },
+      {
+        "file": "libs/node-services/lambda-service/lambda-service.js",
+        "hash": "2319463699761190070"
+      },
+      {
+        "file": "libs/node-services/lambda-service/package.js",
+        "hash": "15198606614415145019"
+      },
+      {
+        "file": "libs/node-services/lambda-service/serverless.js",
+        "hash": "2147329559637884378"
+      },
+      {
+        "file": "libs/node-services/media-service/media-service.js",
+        "hash": "14720536477695114105"
+      },
+      {
+        "file": "libs/node-services/media-service/media-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/notification-service/notification-service.js",
+        "hash": "10992056326380276834"
+      },
+      {
+        "file": "libs/node-services/package.json",
+        "hash": "17064025336349698972"
+      },
+      {
+        "file": "libs/node-services/passport-service/passport-service.js",
+        "hash": "11151369713232307461"
+      },
+      {
+        "file": "libs/node-services/passport-service/passport-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/passport-service/strategies/facebook.js",
+        "hash": "8408752289836791881"
+      },
+      {
+        "file": "libs/node-services/passport-service/strategies/google.js",
+        "hash": "6908575858901171523"
+      },
+      {
+        "file": "libs/node-services/passport-service/strategies/local.js",
+        "hash": "1124911613885187293"
+      },
+      {
+        "file": "libs/node-services/passport-service/strategies/twitter.js",
+        "hash": "15478343520276247297"
+      },
+      {
+        "file": "libs/node-services/settings-service/settings-service.js",
+        "hash": "5065205939217687508"
+      },
+      {
+        "file": "libs/node-services/socket-service/socket-service.js",
+        "hash": "651967788379227905"
+      },
+      {
+        "file": "libs/node-services/utils/dbutils.js",
+        "hash": "7077924719197107404"
+      },
+      {
+        "file": "libs/node-services/utils/utils.js",
+        "hash": "10036369121771333566"
+      },
+      {
+        "file": "libs/node-services/viz-service/viz-service.js",
+        "hash": "12966807522289973239"
+      },
+      {
+        "file": "libs/node-services/viz-service/viz-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/orbital-api/.gitignore",
+        "hash": "10323923445659864269"
+      },
+      {
+        "file": "libs/orbital-api/Acl/index.js",
+        "hash": "1816261933432364340"
+      },
+      {
+        "file": "libs/orbital-api/Auth/index.js",
+        "hash": "9321078452067082134"
+      },
+      {
+        "file": "libs/orbital-api/Forms/index.js",
+        "hash": "5703008585463470528"
+      },
+      {
+        "file": "libs/orbital-api/Jwt/index.js",
+        "hash": "9756531292847274301"
+      },
+      {
+        "file": "libs/orbital-api/Kernel/index.js",
+        "hash": "15519382542834304708"
+      },
+      {
+        "file": "libs/orbital-api/Localization/index.js",
+        "hash": "13004693098284271393"
+      },
+      {
+        "file": "libs/orbital-api/Media/index.js",
+        "hash": "16850229879100984011"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/index.js",
+        "hash": "14741891244264110507"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/auth.js",
+        "hash": "9851823222614931491"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/blogs.js",
+        "hash": "16886318681817773863"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/carts.js",
+        "hash": "1118536949249056244"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/categories.js",
+        "hash": "9399293311321661731"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/chat-log.js",
+        "hash": "14388649928626647828"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/comments.js",
+        "hash": "8187826893162957663"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/contacts.js",
+        "hash": "13682081192704140189"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/events.js",
+        "hash": "18165016036228201167"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/forms.js",
+        "hash": "7538986765419125864"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/game-log.js",
+        "hash": "11897583830064894089"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/index.js",
+        "hash": "8701065344252538354"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/kernel.js",
+        "hash": "9674213177146699782"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/knowledge.js",
+        "hash": "5938166376144095525"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/lambda.js",
+        "hash": "2506102300140162312"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/media.js",
+        "hash": "2815144460272026897"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/notifications.js",
+        "hash": "18080643473135574538"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/orders.js",
+        "hash": "9159532457258156023"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/permissions.js",
+        "hash": "10411043630466955740"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/products.js",
+        "hash": "14643054031440005021"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/reviews.js",
+        "hash": "3533961882127428994"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/ride-log.js",
+        "hash": "10495883043307241222"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/settings.js",
+        "hash": "15323417246848113861"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/tags.js",
+        "hash": "17767423565745490881"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/user.js",
+        "hash": "6526606265722570842"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/seed.js",
+        "hash": "17130949419084158997"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/seeds/blogs.js",
+        "hash": "7463870581595443634"
       },
       {
         "file": "libs/orbital-api/MongoDb/seeds/categories.js",
@@ -620,499 +476,2098 @@
         "hash": "13757619115575244804"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.CodeInput.js",
-        "hash": "951721913578772424"
+        "file": "libs/orbital-api/MongoDb/seeds/products.js",
+        "hash": "14250554327673082997"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal.js",
-        "hash": "4027885401703460096"
-      },
-      {
-        "file": "libs/node-services/media-service/media-service.js",
-        "hash": "14720536477695114105"
-      },
-      {
-        "file": "apps/ml/scripts/setup-python.sh",
-        "hash": "219069984985103778"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/index.js",
-        "hash": "14020515536501463906"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/contacts.js",
-        "hash": "13682081192704140189"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/index.js",
-        "hash": "8701065344252538354"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.test.js",
+        "file": "libs/orbital-api/MongoDb/seeds/reviews.js",
         "hash": "3244421341483603138"
       },
       {
-        "file": "libs/node-services/jwt-service/jwt-service.js",
-        "hash": "7902320474444978941"
+        "file": "libs/orbital-api/MongoDb/seeds/settings.js",
+        "hash": "17760824035208840578"
       },
       {
-        "file": "libs/orbital-api/MongoDb/seed.js",
-        "hash": "17130949419084158997"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/permissions.js",
-        "hash": "10411043630466955740"
-      },
-      {
-        "file": "libs/react-services/crud-service/crud-container.js",
-        "hash": "7212099375280107813"
-      },
-      {
-        "file": "libs/react-services/package.json",
-        "hash": "1486950921242947398"
-      },
-      {
-        "file": "apps/ml/scripts/run.sh",
-        "hash": "14536474836278550653"
-      },
-      {
-        "file": "libs/node-services/utils/utils.js",
-        "hash": "10036369121771333566"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Login/Login.js",
-        "hash": "2658025214380554039"
-      },
-      {
-        "file": "libs/node-services/lambda-service/lambda-service-script.js",
-        "hash": "8704471557375117390"
-      },
-      {
-        "file": ".babelrc",
-        "hash": "5330787629573791034"
-      },
-      {
-        "file": "libs/react-services/viz-service/viz-service.js",
-        "hash": "9075390803153005964"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "15276358027287501782"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/carts.js",
-        "hash": "1118536949249056244"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/game-log.js",
-        "hash": "11897583830064894089"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.Validate.js",
-        "hash": "17594303373659687192"
-      },
-      {
-        "file": "libs/react-services/sql-service/sql-service.js",
-        "hash": "12453641680911122796"
-      },
-      {
-        "file": "libs/orbital-api/Kernel/index.js",
-        "hash": "15519382542834304708"
-      },
-      {
-        "file": "libs/orbital-templates/Template.test.js",
-        "hash": "6023584863501812783"
-      },
-      {
-        "file": "libs/react-services/game-service/game-service.js",
-        "hash": "13547367134076227925"
-      },
-      {
-        "file": "libs/node-services/lambda-service/package.js",
-        "hash": "15198606614415145019"
-      },
-      {
-        "file": "libs/react-services/wikipedia-service/wikipedia-service.js",
-        "hash": "18325487634601797492"
-      },
-      {
-        "file": "libs/orbital-templates/Template.js",
-        "hash": "9765177728113297847"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Loading/Loading.styles.js",
-        "hash": "5418986944393640378"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/VisibleWhenFilter.js",
-        "hash": "12419566636571934517"
-      },
-      {
-        "file": "libs/node-services/viz-service/viz-service.js",
-        "hash": "12966807522289973239"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/products.js",
-        "hash": "14643054031440005021"
-      },
-      {
-        "file": "apps/ml/src/mostUniqueWords.py",
-        "hash": "7236663950543428711"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/index.js",
-        "hash": "8701065344252538354"
-      },
-      {
-        "file": "libs/node-services/i18n-service/locales/de/translation.json",
-        "hash": "17583592877941659617"
-      },
-      {
-        "file": "libs/orbital-templates/Material/Wrappers/MainWrapper.js",
-        "hash": "10400490931853285275"
-      },
-      {
-        "file": "libs/node-services/auth-service/auth-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/seed.js",
-        "hash": "17130949419084158997"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListViewOptions.js",
-        "hash": "5969466372232176458"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Notifications/Notifications.js",
-        "hash": "641647436625805746"
-      },
-      {
-        "file": "libs/node-services/crud-service/serverless.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/user.js",
-        "hash": "6526606265722570842"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useDeleteModel.js",
-        "hash": "14649020197679679578"
-      },
-      {
-        "file": "cache/nx_files.nxt",
-        "hash": "8295163021701433402"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/notifications.js",
-        "hash": "18080643473135574538"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/media.js",
-        "hash": "2815144460272026897"
-      },
-      {
-        "file": "libs/react-services/settings-service/settings-service.js",
-        "hash": "6526998583145965150"
-      },
-      {
-        "file": "libs/node-services/event-service/event-service.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/kernel.js",
-        "hash": "9674213177146699782"
-      },
-      {
-        "file": "nx.json",
-        "hash": "1765564465819899531"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelPreview/ModelPreview.js",
-        "hash": "2452499849096306518"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useCreateModel.js",
-        "hash": "6722707270279389270"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/tags.js",
-        "hash": "17767423565745490881"
-      },
-      {
-        "file": "libs/react-services/forms-service/forms-service.js",
-        "hash": "4171124241179869236"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.EditableArray.js",
-        "hash": "286301403138014814"
-      },
-      {
-        "file": "cache/lockfile.hash",
-        "hash": "3270212667847010523"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/permissions.js",
-        "hash": "10411043630466955740"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.SelectInput.js",
-        "hash": "365738813331725077"
-      },
-      {
-        "file": "apps/ml/wiki-res.txt",
-        "hash": "6387522008351933103"
-      },
-      {
-        "file": "apps/ml/src/torch-tensors.py",
-        "hash": "16776371345607942195"
-      },
-      {
-        "file": "libs/node-services/i18n-service/locales/ar/ar.json",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/Acl/index.js",
-        "hash": "1816261933432364340"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Charts/Charts.js",
-        "hash": "15408070801452728716"
-      },
-      {
-        "file": "cache/parsed-lock-file.json",
-        "hash": "15734989362211013702"
-      },
-      {
-        "file": "libs/orbital-templates/Material/Wrappers/LoginWrapper.js",
-        "hash": "1017396120657567587"
-      },
-      {
-        "file": "libs/node-services/settings-service/settings-service.js",
-        "hash": "5065205939217687508"
+        "file": "libs/orbital-api/MongoDb/seeds/users.js",
+        "hash": "17935250083094532636"
       },
       {
         "file": "libs/orbital-api/Notification/index.js",
         "hash": "2875640677456464585"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.js",
-        "hash": "8578267660199777909"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelViewPage.js",
-        "hash": "3391667786587941968"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/chat-log.js",
-        "hash": "14388649928626647828"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/forms.js",
-        "hash": "7538986765419125864"
-      },
-      {
-        "file": "libs/orbital-api/User/index.js",
-        "hash": "8342319979422653140"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.CheckboxInput.js",
-        "hash": "15568806604922648038"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelAddPage.js",
-        "hash": "972178972150827095"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Pagination/Pagination.js",
-        "hash": "839901114994115034"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useInjectedProps.js",
-        "hash": "15908592676049769215"
-      },
-      {
-        "file": "libs/react-services/unsplash-service/unsplash-service.js",
-        "hash": "7849071031593011359"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/ride-log.js",
-        "hash": "10495883043307241222"
-      },
-      {
-        "file": "libs/react-services/wikipedia-service/hooks/useInjectedProps.js",
-        "hash": "4426946098445136047"
-      },
-      {
-        "file": "libs/orbital-api/README.md",
-        "hash": "15415743253364021931"
-      },
-      {
-        "file": "libs/node-services/crud-service/crud-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/react-services/media-service/media-service.js",
-        "hash": "4673438226831479934"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.TextFieldInput.js",
-        "hash": "17296363634392936114"
-      },
-      {
-        "file": "libs/react-services/forms-service/hooks/useGetForm.js",
-        "hash": "9055284460160368224"
-      },
-      {
-        "file": "libs/node-services/notification-service/notification-service.js",
-        "hash": "10992056326380276834"
-      },
-      {
-        "file": "libs/react-services/google-service/google-service.js",
-        "hash": "15044173681212190233"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useInjectedProps.spec.js",
-        "hash": "16509345431709911829"
-      },
-      {
-        "file": "libs/react-services/offline-service/offline-service.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/index.js",
-        "hash": "14741891244264110507"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Icon/Icon.js",
-        "hash": "12994419798433886485"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Autocomplete/Autocomplete.styles.js",
-        "hash": "3670833654880010205"
-      },
-      {
         "file": "libs/orbital-api/Postgresql/index.js",
         "hash": "12030951657505627562"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/auth.js",
+        "hash": "9851823222614931491"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/blogs.js",
+        "hash": "16886318681817773863"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/carts.js",
+        "hash": "1118536949249056244"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/categories.js",
+        "hash": "9399293311321661731"
       },
       {
         "file": "libs/orbital-api/Postgresql/models/chat-log.js",
         "hash": "14388649928626647828"
       },
       {
-        "file": "libs/node-services/babel.config.js",
-        "hash": "12442705542530351934"
+        "file": "libs/orbital-api/Postgresql/models/comments.js",
+        "hash": "8187826893162957663"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/contacts.js",
+        "hash": "13682081192704140189"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/events.js",
+        "hash": "18165016036228201167"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/forms.js",
+        "hash": "7538986765419125864"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/game-log.js",
+        "hash": "11897583830064894089"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/index.js",
+        "hash": "8701065344252538354"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/kernel.js",
+        "hash": "9674213177146699782"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/knowledge.js",
+        "hash": "5938166376144095525"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/lambda.js",
+        "hash": "2506102300140162312"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/media.js",
+        "hash": "2815144460272026897"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/notifications.js",
+        "hash": "18080643473135574538"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/orders.js",
+        "hash": "9159532457258156023"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/permissions.js",
+        "hash": "10411043630466955740"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/products.js",
+        "hash": "14643054031440005021"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/reviews.js",
+        "hash": "3533961882127428994"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/ride-log.js",
+        "hash": "10495883043307241222"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/settings.js",
+        "hash": "15323417246848113861"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/tags.js",
+        "hash": "17767423565745490881"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/user.js",
+        "hash": "6526606265722570842"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/seed.js",
+        "hash": "17130949419084158997"
       },
       {
         "file": "libs/orbital-api/Postgresql/seeds/blogs.js",
         "hash": "7463870581595443634"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.styles.js",
-        "hash": "2619356722538799822"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/orders.js",
-        "hash": "9159532457258156023"
-      },
-      {
-        "file": "libs/node-services/i18n-service/locales/dev/translation.json",
-        "hash": "15035819451704992183"
+        "file": "libs/orbital-api/Postgresql/seeds/categories.js",
+        "hash": "14681710217893888914"
       },
       {
         "file": "libs/orbital-api/Postgresql/seeds/events.js",
         "hash": "13757619115575244804"
       },
       {
-        "file": "libs/orbital-api/MongoDb/models/events.js",
-        "hash": "18165016036228201167"
+        "file": "libs/orbital-api/Postgresql/seeds/products.js",
+        "hash": "14250554327673082997"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/seeds/reviews.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/seeds/settings.js",
+        "hash": "17760824035208840578"
       },
       {
         "file": "libs/orbital-api/Postgresql/seeds/users.js",
         "hash": "17935250083094532636"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/Empty/Empty.styles.js",
-        "hash": "5418986944393640378"
+        "file": "libs/orbital-api/README.md",
+        "hash": "15415743253364021931"
       },
       {
-        "file": "apps/ml/index.py",
-        "hash": "12026451037176396493"
+        "file": "libs/orbital-api/Settings/index.js",
+        "hash": "10262644159690070744"
       },
       {
-        "file": "libs/orbital-api/.gitignore",
-        "hash": "10323923445659864269"
+        "file": "libs/orbital-api/User/index.js",
+        "hash": "8342319979422653140"
+      },
+      {
+        "file": "libs/orbital-api/User/on-password-reset.js",
+        "hash": "17399169532382851894"
+      },
+      {
+        "file": "libs/orbital-api/index.js",
+        "hash": "11707227902994592709"
       },
       {
         "file": "libs/orbital-api/package.json",
         "hash": "5267691533906238831"
       },
       {
-        "file": "serverless.yml",
-        "hash": "13912724692687231667"
+        "file": "libs/orbital-templates/Material/Wrappers/LoginWrapper.js",
+        "hash": "1017396120657567587"
       },
       {
-        "file": "libs/orbital-api/Postgresql/models/comments.js",
-        "hash": "8187826893162957663"
-      },
-      {
-        "file": "apps/ml/assets/wiki.txt",
-        "hash": "8040739283673464840"
-      },
-      {
-        "file": "libs/node-services/.gitignore",
-        "hash": "10323923445659864269"
-      },
-      {
-        "file": "libs/node-services/passport-service/passport-service.js",
-        "hash": "11151369713232307461"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.ImageFileInput.js",
-        "hash": "11046304838377834959"
-      },
-      {
-        "file": "apps/ml/scripts/install.sh",
-        "hash": "9927891219875383493"
-      },
-      {
-        "file": "libs/react-services/crud-service/features/crudDomainSlice.js",
-        "hash": "15911066366627335802"
+        "file": "libs/orbital-templates/Material/Wrappers/MainWrapper.js",
+        "hash": "10400490931853285275"
       },
       {
         "file": "libs/orbital-templates/Material/Wrappers/Routes.js",
         "hash": "8748235356312903897"
       },
       {
-        "file": "libs/react-services/crud-service/hooks/useGetModel.js",
-        "hash": "5157031318125443472"
+        "file": "libs/orbital-templates/Material/_shared/Autocomplete/Autocomplete.js",
+        "hash": "6538703896677060599"
       },
       {
-        "file": "libs/orbital-api/MongoDb/models/comments.js",
-        "hash": "8187826893162957663"
+        "file": "libs/orbital-templates/Material/_shared/Autocomplete/Autocomplete.styles.js",
+        "hash": "3670833654880010205"
       },
       {
-        "file": "libs/node-services/job-service/job-service.js",
-        "hash": "6235471628370074132"
+        "file": "libs/orbital-templates/Material/_shared/Charts/Charts.js",
+        "hash": "15408070801452728716"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ClientNotification/ClientNotification.js",
+        "hash": "12044855101493991214"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal.js",
+        "hash": "4027885401703460096"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Disclaimer/Disclaimer.js",
+        "hash": "14537948571988294910"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/EmailConfirmation/EmailConfirmation.js",
+        "hash": "17792834818319923342"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/EmailConfirmation/EmailConfirmation.styles.js",
+        "hash": "789339495521893012"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Empty/Empty.js",
+        "hash": "9927374409733697385"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Empty/Empty.styles.js",
+        "hash": "5418986944393640378"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/FloatingAddButton/FloatingAddButton.js",
+        "hash": "8746049215028473335"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPassword.js",
+        "hash": "16950534780809774090"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPassword.styles.js",
+        "hash": "789339495521893012"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPasswordConfirm.js",
+        "hash": "3731604729067583266"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.Validate.js",
+        "hash": "17594303373659687192"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.js",
+        "hash": "8578267660199777909"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.styles.js",
+        "hash": "15442934952747310137"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.CheckboxInput.js",
+        "hash": "15568806604922648038"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.CodeInput.js",
+        "hash": "951721913578772424"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.EditableArray.js",
+        "hash": "286301403138014814"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.EditableObjectArray.js",
+        "hash": "17263353003156427409"
       },
       {
         "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.GalleryInput.js",
         "hash": "5696078180381170687"
       },
       {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.ImageFileInput.js",
+        "hash": "11046304838377834959"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.MarkdownInput.js",
+        "hash": "10402404166116816508"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.SelectInput.js",
+        "hash": "365738813331725077"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.TextFieldInput.js",
+        "hash": "17296363634392936114"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/index.js",
+        "hash": "14020515536501463906"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/VisibleWhenFilter.js",
+        "hash": "12419566636571934517"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/index.js",
+        "hash": "13637346876074425777"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Icon/Icon.js",
+        "hash": "12994419798433886485"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Loading/Loading.js",
+        "hash": "15614265202861762110"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Loading/Loading.styles.js",
+        "hash": "5418986944393640378"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Login/Login.js",
+        "hash": "2658025214380554039"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelAdd/ModelAdd.js",
+        "hash": "2252608845241376820"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelEdit/ModelEdit.js",
+        "hash": "5925550284579252235"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelEdit/ModelEdit.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelAddPage.js",
+        "hash": "972178972150827095"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelEditPage.js",
+        "hash": "9402480715318984553"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelFilterList.js",
+        "hash": "10333700014191819368"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.js",
+        "hash": "17523677745316112167"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.styles.js",
+        "hash": "2619356722538799822"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListCardItem.js",
+        "hash": "8007162109864978534"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListItem.js",
+        "hash": "8300531475422143121"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListItems.js",
+        "hash": "17652969577024187370"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListViewOptions.js",
+        "hash": "5969466372232176458"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelViewPage.js",
+        "hash": "3391667786587941968"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelPreview/ModelPreview.js",
+        "hash": "2452499849096306518"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Notifications/Notifications.js",
+        "hash": "641647436625805746"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Pagination/Pagination.js",
+        "hash": "839901114994115034"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Register/Register.js",
+        "hash": "6557158694670713115"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPassword.js",
+        "hash": "1953002949559648531"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPassword.styles.js",
+        "hash": "789339495521893012"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPasswordConfirm.js",
+        "hash": "15296675377240731360"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Table/Table.js",
+        "hash": "16282739468221282893"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Table/Table.styles.js",
+        "hash": "328203115035249063"
+      },
+      {
+        "file": "libs/orbital-templates/Template.js",
+        "hash": "9765177728113297847"
+      },
+      {
+        "file": "libs/orbital-templates/Template.test.js",
+        "hash": "6023584863501812783"
+      },
+      {
+        "file": "libs/orbital-templates/package.json",
+        "hash": "9503038798104964599"
+      },
+      {
+        "file": "libs/orbital-templates/theme.js",
+        "hash": "14277834133023231583"
+      },
+      {
+        "file": "libs/react-services/admin-service/admin-service.js",
+        "hash": "8850783978592947030"
+      },
+      {
+        "file": "libs/react-services/auth-service/auth-service.js",
+        "hash": "13925238338120783019"
+      },
+      {
+        "file": "libs/react-services/camera-service/camera-service.js",
+        "hash": "13557175659581079240"
+      },
+      {
+        "file": "libs/react-services/crud-service/crud-container.js",
+        "hash": "7212099375280107813"
+      },
+      {
+        "file": "libs/react-services/crud-service/crud-container.spec.js",
+        "hash": "8166836480831541467"
+      },
+      {
+        "file": "libs/react-services/crud-service/crud-service.js",
+        "hash": "13445807915742527291"
+      },
+      {
+        "file": "libs/react-services/crud-service/features/crudDomainSlice.js",
+        "hash": "15911066366627335802"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useCreateModel.js",
+        "hash": "6722707270279389270"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useCreateModel.spec.js",
+        "hash": "1788256818344834261"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useDeleteModel.js",
+        "hash": "14649020197679679578"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useDeleteModel.spec.js",
+        "hash": "4814084653635650084"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useGetModel.js",
+        "hash": "5157031318125443472"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useGetModel.spec.js",
+        "hash": "6539672927697880671"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useInjectedProps.js",
+        "hash": "15908592676049769215"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useInjectedProps.spec.js",
+        "hash": "16509345431709911829"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useML.js",
+        "hash": "6430311019525673311"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useSearchModel.js",
+        "hash": "1802334662635013330"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useUpdateModel.js",
+        "hash": "9693878541998769329"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useUpdateModel.spec.js",
+        "hash": "7924023136961788460"
+      },
+      {
+        "file": "libs/react-services/forms-service/features/formDomainSlice.js",
+        "hash": "17790192368168937731"
+      },
+      {
+        "file": "libs/react-services/forms-service/forms-container.js",
+        "hash": "3739934221421907941"
+      },
+      {
+        "file": "libs/react-services/forms-service/forms-service.js",
+        "hash": "4171124241179869236"
+      },
+      {
+        "file": "libs/react-services/forms-service/hooks/useGetForm.js",
+        "hash": "9055284460160368224"
+      },
+      {
+        "file": "libs/react-services/forms-service/hooks/useInjectedProps.js",
+        "hash": "2737818163137152574"
+      },
+      {
+        "file": "libs/react-services/game-service/game-service.js",
+        "hash": "13547367134076227925"
+      },
+      {
+        "file": "libs/react-services/google-service/google-service.js",
+        "hash": "15044173681212190233"
+      },
+      {
+        "file": "libs/react-services/i18n-service/i18n-service.js",
+        "hash": "17685408578774019316"
+      },
+      {
+        "file": "libs/react-services/index.js",
+        "hash": "7592322829386038578"
+      },
+      {
+        "file": "libs/react-services/kb-service/kb-service.js",
+        "hash": "5311431521208538700"
+      },
+      {
+        "file": "libs/react-services/media-service/media-service.js",
+        "hash": "4673438226831479934"
+      },
+      {
+        "file": "libs/react-services/notification-service/notification-service.js",
+        "hash": "12138327481683082584"
+      },
+      {
+        "file": "libs/react-services/offline-service/offline-service.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/react-services/package.json",
+        "hash": "1486950921242947398"
+      },
+      {
+        "file": "libs/react-services/service-service/service-service.js",
+        "hash": "2798208586992569568"
+      },
+      {
+        "file": "libs/react-services/settings-service/settings-service.js",
+        "hash": "6526998583145965150"
+      },
+      {
         "file": "libs/react-services/socket-service/socket-service.js",
         "hash": "6336346063265047374"
+      },
+      {
+        "file": "libs/react-services/sql-service/sql-service.js",
+        "hash": "12453641680911122796"
+      },
+      {
+        "file": "libs/react-services/stripe-service/stripe-service.js",
+        "hash": "15417287999950300599"
+      },
+      {
+        "file": "libs/react-services/unsplash-service/unsplash-service.js",
+        "hash": "7849071031593011359"
+      },
+      {
+        "file": "libs/react-services/utils/test-utils.js",
+        "hash": "17969923951899772294"
+      },
+      {
+        "file": "libs/react-services/viz-service/viz-service.js",
+        "hash": "9075390803153005964"
+      },
+      {
+        "file": "libs/react-services/wikipedia-service/features/wikiDomainSlice.js",
+        "hash": "15705697099486059473"
       },
       {
         "file": "libs/react-services/wikipedia-service/hooks/useFetchWikipediaPageByTopic.js",
         "hash": "4108765907816111891"
       },
       {
-        "file": "libs/orbital-api/Postgresql/models/events.js",
-        "hash": "18165016036228201167"
+        "file": "libs/react-services/wikipedia-service/hooks/useInjectedProps.js",
+        "hash": "4426946098445136047"
+      },
+      {
+        "file": "libs/react-services/wikipedia-service/wikipedia-container.js",
+        "hash": "12996769453614020257"
+      },
+      {
+        "file": "libs/react-services/wikipedia-service/wikipedia-service.js",
+        "hash": "18325487634601797492"
+      },
+      {
+        "file": "nx.json",
+        "hash": "1765564465819899531"
+      },
+      {
+        "file": "package.json",
+        "hash": "14456386568015950516"
+      },
+      {
+        "file": "serverless.yml",
+        "hash": "13912724692687231667"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "15276358027287501782"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "3824002566616486642"
       }
     ],
     "projectFileMap": {
+      "server": [
+        {
+          "file": "apps/server/.babelrc",
+          "hash": "3250086131670327215"
+        },
+        {
+          "file": "apps/server/babel.config.js",
+          "hash": "12177898944516416495"
+        },
+        {
+          "file": "apps/server/config/custom-environment-variables.json",
+          "hash": "10219113616260798217"
+        },
+        {
+          "file": "apps/server/config/db/mongod.conf",
+          "hash": "3182769162687451845"
+        },
+        {
+          "file": "apps/server/config/default.json",
+          "hash": "5438657103043773659"
+        },
+        {
+          "file": "apps/server/config/production.json",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/config/qa.json",
+          "hash": "1026787870855588377"
+        },
+        {
+          "file": "apps/server/docs/routes.md",
+          "hash": "14813760444439241896"
+        },
+        {
+          "file": "apps/server/docs/routes.txt",
+          "hash": "12676978809711798949"
+        },
+        {
+          "file": "apps/server/handler.js",
+          "hash": "14481818349350436656"
+        },
+        {
+          "file": "apps/server/index.js",
+          "hash": "11872918847711195659"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/WiredTiger",
+          "hash": "1294684645872229581"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/WiredTiger.lock",
+          "hash": "7045004002381174161"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/WiredTiger.turtle",
+          "hash": "4399430693820586796"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/WiredTiger.wt",
+          "hash": "7372293575177795478"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/WiredTigerHS.wt",
+          "hash": "8796983299916770995"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/_mdb_catalog.wt",
+          "hash": "17127453212982916254"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/collection-0-1258990656970514026.wt",
+          "hash": "12697600905831668795"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/collection-0-7314233670185838370.wt",
+          "hash": "8352933509161072310"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/collection-17-7314233670185838370.wt",
+          "hash": "8637283126603614778"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/collection-2-7314233670185838370.wt",
+          "hash": "2957684246327471845"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/collection-25-7314233670185838370.wt",
+          "hash": "3330649005809046259"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/collection-29-7314233670185838370.wt",
+          "hash": "8796983299916770995"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/collection-30-7314233670185838370.wt",
+          "hash": "14048708824993448690"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/collection-34-7314233670185838370.wt",
+          "hash": "16507876590873048900"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/collection-36-7314233670185838370.wt",
+          "hash": "10708748275953434402"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/collection-4-7314233670185838370.wt",
+          "hash": "11380900676785211371"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/collection-7-7314233670185838370.wt",
+          "hash": "7945875015387853459"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-04T13-54-52Z-00000",
+          "hash": "13990856572157316197"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-06T04-37-29Z-00000",
+          "hash": "6185434044165436042"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-07T15-12-54Z-00000",
+          "hash": "15048346201026108062"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-11T17-34-58Z-00000",
+          "hash": "3265299590362497713"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-12T05-19-49Z-00000",
+          "hash": "5032158566438262617"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-14T13-21-50Z-00000",
+          "hash": "10726915266272677785"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-17T07-14-26Z-00000",
+          "hash": "14264158852281237954"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-19T14-12-57Z-00000",
+          "hash": "2533452323595047494"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-23T13-11-12Z-00000",
+          "hash": "12188690146803539742"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-25T07-51-10Z-00000",
+          "hash": "9053017611835008381"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-29T06-34-53Z-00000",
+          "hash": "17738945834709616319"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-04-03T02-27-12Z-00000",
+          "hash": "16382793346535743264"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-04-05T13-04-30Z-00000",
+          "hash": "1863486042480834332"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-04-06T18-04-30Z-00000",
+          "hash": "2095536232470872328"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-04-24T05-21-47Z-00000",
+          "hash": "3706486360004062356"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-04-27T14-40-10Z-00000",
+          "hash": "9117844549647949033"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-01T03-48-44Z-00000",
+          "hash": "11152390115968466654"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-05T11-43-29Z-00000",
+          "hash": "7130473886819060052"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-10T21-50-43Z-00000",
+          "hash": "16954911518179925246"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-13T07-12-17Z-00000",
+          "hash": "18013240343903259772"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-14T15-50-31Z-00000",
+          "hash": "18262653055354078345"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-15T22-20-31Z-00000",
+          "hash": "2850959329809032588"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-16T18-26-36Z-00000",
+          "hash": "9097025026789622003"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.interim",
+          "hash": "13063428754536421771"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/index-1-1258990656970514026.wt",
+          "hash": "13781308331427829211"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/index-1-7314233670185838370.wt",
+          "hash": "8727546365906024744"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/index-12-7314233670185838370.wt",
+          "hash": "18223413549459337418"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/index-20-7314233670185838370.wt",
+          "hash": "3602238521778826951"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/index-28-7314233670185838370.wt",
+          "hash": "378826454853981856"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/index-3-7314233670185838370.wt",
+          "hash": "7932722802219775915"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/index-31-7314233670185838370.wt",
+          "hash": "8796983299916770995"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/index-32-7314233670185838370.wt",
+          "hash": "8947989862882869294"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/index-33-7314233670185838370.wt",
+          "hash": "8796983299916770995"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/index-35-7314233670185838370.wt",
+          "hash": "16989055047872107666"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/index-37-7314233670185838370.wt",
+          "hash": "8603820589697916332"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/index-5-7314233670185838370.wt",
+          "hash": "11131815139524620755"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/index-6-7314233670185838370.wt",
+          "hash": "3389400102510973452"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/journal/WiredTigerLog.0000000005",
+          "hash": "10816001662073775452"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/journal/WiredTigerPreplog.0000000001",
+          "hash": "9705535327776266990"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/journal/WiredTigerPreplog.0000000002",
+          "hash": "9705535327776266990"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/mongod.lock",
+          "hash": "3383225458521326309"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/sizeStorer.wt",
+          "hash": "7119084117948106711"
+        },
+        {
+          "file": "apps/server/infra/mongodb/data/storage.bson",
+          "hash": "1679351129780017522"
+        },
+        {
+          "file": "apps/server/infra/mongodb/docker-compose.yml",
+          "hash": "16711744895861432284"
+        },
+        {
+          "file": "apps/server/infra/mongodb/mongo-with-podman.sh",
+          "hash": "16010791547379441046"
+        },
+        {
+          "file": "apps/server/nodemon-dev.json",
+          "hash": "15203120882963819572"
+        },
+        {
+          "file": "apps/server/nodemon-qa.json",
+          "hash": "12723693002635887930"
+        },
+        {
+          "file": "apps/server/nodemon.json",
+          "hash": "15203120882963819572"
+        },
+        {
+          "file": "apps/server/package.json",
+          "hash": "11528983497123370266",
+          "deps": [
+            "npm:dotenv",
+            "npm:axios",
+            "npm:regenerator-runtime"
+          ]
+        },
+        {
+          "file": "apps/server/project.json",
+          "hash": "11251614715607328428"
+        },
+        {
+          "file": "apps/server/scripts/db-backup.js",
+          "hash": "1554611260552150489"
+        },
+        {
+          "file": "apps/server/scripts/db-backup.sh",
+          "hash": "5498679999750650168"
+        },
+        {
+          "file": "apps/server/scripts/db/db.sh",
+          "hash": "13188305002379888210"
+        },
+        {
+          "file": "apps/server/scripts/image-processing/make-spaces-between-images-even.js",
+          "hash": "6769557210810106017"
+        },
+        {
+          "file": "apps/server/scripts/image-processing/remove-white-spaces-from-image.js",
+          "hash": "8881189640773712794"
+        },
+        {
+          "file": "apps/server/scripts/kernel/kernel.js",
+          "hash": "7880044676085538504"
+        },
+        {
+          "file": "apps/server/scripts/kernel/kernel.sh",
+          "hash": "16308589445331983185"
+        },
+        {
+          "file": "apps/server/scripts/kernel/save-kernel-to-db.js",
+          "hash": "14362685476816601628"
+        },
+        {
+          "file": "apps/server/scripts/kernel/save-kernel-to-db.sh",
+          "hash": "12525687304243414100"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Accounting-mine.mup",
+          "hash": "4896226772033637738"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Entertainment",
+          "hash": "14538541465116062192"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Accounting-Personal Finance.mup",
+          "hash": "16884663266223063271"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Accounting-Tax.mup",
+          "hash": "1468996743083523106"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Alpine linux.mup",
+          "hash": "11219410927886443937"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Amazon AWS.mup",
+          "hash": "10394778387552501630"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Android.mup",
+          "hash": "8097229340673112814"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Angular.js.mup",
+          "hash": "8306276184918603409"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Apache.mup",
+          "hash": "14216230540941396629"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Artificial Intellegence.mup",
+          "hash": "3165365990817931748"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Asmjs.mup",
+          "hash": "10744610245611356687"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Asp.net.mup",
+          "hash": "165342385073684561"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Assembly Language.mup",
+          "hash": "2951144109499654850"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Bash.mup",
+          "hash": "165933114584811983"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Blockchain",
+          "hash": "15526220786272028652"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Browser Engines.mup",
+          "hash": "8261337716395683794"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-C++.mup",
+          "hash": "17042404034269150017"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-C.mup",
+          "hash": "4113331666422221572"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-CGI.mup",
+          "hash": "12680248961051070481"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Clojure-Luminus.mup",
+          "hash": "965465966363475823"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Clojure.mup",
+          "hash": "14600517240192702341"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-ClojureScript.mup",
+          "hash": "7299147254683922832"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Command Line.mup",
+          "hash": "2758484811603406567"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Compiler.mup",
+          "hash": "12558722248318871062"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Cordova.mup",
+          "hash": "13137534850230526468"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Csharp.mup",
+          "hash": "6886679612493915554"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Cycle.js.mup",
+          "hash": "4758861694847080045"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-D.mup",
+          "hash": "6372334698670972741"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-D3.mup",
+          "hash": "18139048093808565651"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-DOM.mup",
+          "hash": "8193577358741475219"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Data Science.mup",
+          "hash": "15889527811434719705"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Data Structures and Algorithms.mup",
+          "hash": "3449407184226864643"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Database-Vector.mup",
+          "hash": "15723533443656689576"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Database.mup",
+          "hash": "13386898011215607398"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Deno.mup",
+          "hash": "5612267994764799324"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Distributed Systems.mup",
+          "hash": "2164993763891281728"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Docker.mup",
+          "hash": "16171110800982422968"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Domain Driven Design.mup",
+          "hash": "10630248567253203409"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Elastic-Search",
+          "hash": "12123820413826249434"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Electron.mup",
+          "hash": "696816026921773624"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Elixir.mup",
+          "hash": "9317341635461160334"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Elm.mup",
+          "hash": "12310039624419757619"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Erlang.mup",
+          "hash": "6589520564005598834"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Eve.mup",
+          "hash": "4050783052391782405"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Express.mup",
+          "hash": "4843697518387183750"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-F-sharp.mup",
+          "hash": "1580417131047979097"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Falcor.mup",
+          "hash": "12891689341917729668"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Flask.mup",
+          "hash": "16765575714813073881"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Functional Programming JavaScript.mup",
+          "hash": "10193305994149373388"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Functional Programming.mup",
+          "hash": "6726111344655150022"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Game Programming(1).mup",
+          "hash": "17578035532369472353"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Game Programming.mup",
+          "hash": "11564725404611688221"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Go.mup",
+          "hash": "14919204032899593667"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Google App Engine",
+          "hash": "4130654789715479575"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Graphics Programming.mup",
+          "hash": "17725667680258821594"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Graphql",
+          "hash": "17759192546029025650"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Graphql.mup",
+          "hash": "17279946527914224350"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Hack.mup",
+          "hash": "3769121620079397741"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Handlebars.mup",
+          "hash": "2832573197057338094"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Haskell.mup",
+          "hash": "17467748196082761277"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Integration Testing.mup",
+          "hash": "999796352570283032"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-JWT.mup",
+          "hash": "3503291797376206959"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Java-Springboot.mup",
+          "hash": "4929975597231314950"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Java.mup",
+          "hash": "5550821220650987468"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-JavaScript.mup",
+          "hash": "8594778201451371642"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Js Challenges.mup",
+          "hash": "8243595548032592329"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-K8.mup",
+          "hash": "6098630875449449920"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Kafka.mup",
+          "hash": "8467830586734635070"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Kotlin.mup",
+          "hash": "15026392090670285729"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Linux.mup",
+          "hash": "17860027039298479320"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Lisp.mup",
+          "hash": "1960935353941084832"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Live Music.mup",
+          "hash": "7412040330876212106"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Logic Programming.mup",
+          "hash": "7735760795538737464"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Machine Learning",
+          "hash": "16666166847789764178"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Matterjs",
+          "hash": "4351501376297923106"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Mobx.mup",
+          "hash": "12855407765947908319"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-MongoDB.mup",
+          "hash": "13996347934225881893"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-NGINX.mup",
+          "hash": "12315545512890353884"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-NPM.mup",
+          "hash": "6784737783331010554"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Natural Language Processing.mup",
+          "hash": "251638551746596203"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Networks.mup",
+          "hash": "933489813736592360"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-No SQL.mup",
+          "hash": "2545904931399308035"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Nodejs.mup",
+          "hash": "7674461743254561423"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-OS.mup",
+          "hash": "8852780608461999951"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-PHP.mup",
+          "hash": "9055651537503165784"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Perl.mup",
+          "hash": "11837139107507951201"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Pixi.mup",
+          "hash": "10347268944516253264"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Polymer.mup",
+          "hash": "14915401591936948217"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Postgres.mup",
+          "hash": "15072839298451186870"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Prediction IO.mup",
+          "hash": "9174794744937470217"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Programming Languages.mup",
+          "hash": "11940079492417434912"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Python.mup",
+          "hash": "10803291141466689106"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-R.mup",
+          "hash": "7172075103436049962"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Rack.mup",
+          "hash": "10908846887270025417"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Ramda.mup",
+          "hash": "5920404461481839750"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-React Native",
+          "hash": "5828421947413427610"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-React Native.mup",
+          "hash": "7901353961317018600"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-React.material-ui.mup",
+          "hash": "12603578667405256645"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-React.mup",
+          "hash": "4843435806143888342"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Reactive Programming(1).mup",
+          "hash": "9289111308859364841"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Reactive Programming.mup",
+          "hash": "9289111308859364841"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Redux.mup",
+          "hash": "12251924322377025581"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Regex.mup",
+          "hash": "16855637988079129193"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Rethinkdb.mup",
+          "hash": "18244369067973141862"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Rollup.mup",
+          "hash": "17403578110400309425"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Rust",
+          "hash": "9553215384937365095"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-RxJS.mup",
+          "hash": "12184852870691098381"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-RxJS.presentation.mup",
+          "hash": "10999087095678267246"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Scala.mup",
+          "hash": "14263326483398340742"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Search-Engines.mup",
+          "hash": "11005272992825443346"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Security",
+          "hash": "1561009716512510841"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Semver.mup",
+          "hash": "14280976528563241575"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Serverless",
+          "hash": "7375567612711530237"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Socketio.mup",
+          "hash": "16912361417161555953"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Software Development Career.mup",
+          "hash": "17886637929990611707"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Software Quality.mup",
+          "hash": "14811619255790780352"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Spray.mup",
+          "hash": "10570228663494943443"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Spring.mup",
+          "hash": "8756092615781740951"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Swift.mup",
+          "hash": "9981622340346161206"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-System Programming.mup",
+          "hash": "1586635934255160008"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-System-Archeticture-Dapr.mup",
+          "hash": "7624251669149732681"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-System_Archeticture.mup",
+          "hash": "12470739668013918895"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Three.js.mup",
+          "hash": "10872239306100146889"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-TypeScript.mup",
+          "hash": "11828434903313714690"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-UX.presentation.mup",
+          "hash": "5740127606392905290"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Unit Testing.mup",
+          "hash": "5985234639013132629"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Vim.mup",
+          "hash": "11971222733509064055"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Virtualization.mup",
+          "hash": "4995850600244296194"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Visual Programming.mup",
+          "hash": "12536285234687556865"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Vue.js.mup",
+          "hash": "18421064377207134056"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Web Assembly.mup",
+          "hash": "12697929814289405738"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Web Components.mup",
+          "hash": "5345643997562348575"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Web Design.mup",
+          "hash": "603711685461274324"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Web Programming.mup",
+          "hash": "11656957608894696801"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Webgl.mup",
+          "hash": "9088758423321482737"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Webpack.mup",
+          "hash": "2600806962881051535"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Wordpress.mup",
+          "hash": "14303027613352144180"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Yarn.mup",
+          "hash": "13540598437316042114"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Zookeeper.mup",
+          "hash": "15164988451493447340"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Zsh.mup",
+          "hash": "11765171424569827307"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-blender",
+          "hash": "16243965073564686610"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-iOS.mup",
+          "hash": "17611418000172397178"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-ionic.mup",
+          "hash": "456485887243471696"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-neural-networks.mup",
+          "hash": "12512407133313440575"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-travis.mup",
+          "hash": "13349983734667089574"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer.mup",
+          "hash": "8942736867319248501"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Math-Discrete Math.mup",
+          "hash": "1475364199579910681"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Math-Geometry.mup",
+          "hash": "7935897000223149172"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Math-Graph Theory.mup",
+          "hash": "553372404229616045"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Math-Math.mup",
+          "hash": "1654075398419584205"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Formal-Math-Statistics.mup",
+          "hash": "10411323143839132602"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Natural-Biology",
+          "hash": "6126508660472247857"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Natural-Biology-Neuroscience",
+          "hash": "5582257566309471171"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Natural-Biology-Physiology",
+          "hash": "12714362050977373979"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Natural-Biology.mup",
+          "hash": "14552697942065728261"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Natural-Botany",
+          "hash": "9795720101973017770"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Natural-Chemistry",
+          "hash": "9083716167688804241"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Natural-Chemistry-Cooking.mup",
+          "hash": "1640555731150966051"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Natural-Chemistry.mup",
+          "hash": "2589026143323295756"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Natural-Cognitive Science.mup",
+          "hash": "3821675199804186182"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Natural-Physics",
+          "hash": "14027641778357761872"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Natural-Physics-Astronomy.mup",
+          "hash": "208213091484132527"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Natural-Physics-Nanotechnology.mup",
+          "hash": "4436373742559937366"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Natural-Zoology.mup",
+          "hash": "8694533627862637366"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Art-3D Modeling.mup",
+          "hash": "994463814666527184"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Art-Animation.mup",
+          "hash": "14899991770803583561"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Art-Drawing.mup",
+          "hash": "14097966043420337765"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Art-Graphics Design.mup",
+          "hash": "280577772697546508"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Art-UX.mup",
+          "hash": "1596666689961746659"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Arts.mup",
+          "hash": "11518475308500384324"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Economics-Personal Finance.mup",
+          "hash": "2607833758068381146"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Economy.mup",
+          "hash": "927926535163221231"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Education-Intelligent tutoring system.mup",
+          "hash": "14830769508982188818"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Education-VR.mup",
+          "hash": "4133520174247318169"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Education-Wikipedia.mup",
+          "hash": "1850241053260626223"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Education-mindmaps.mup",
+          "hash": "9376891364972225611"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Education.mup",
+          "hash": "13665527537271147261"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Geography.mup",
+          "hash": "12087217641307476742"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-History.mup",
+          "hash": "4522307000933980653"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-Arabic.mup",
+          "hash": "6727100489781605277"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-English.mup",
+          "hash": "5614896920597496154"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-French.mup",
+          "hash": "8470258530998763229"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-Hebrew.mup",
+          "hash": "9050906877769521070"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-Japanese.mup",
+          "hash": "17902711079643964664"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-Slovenian.mup",
+          "hash": "7231983432126718282"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-Spanish.mup",
+          "hash": "16634388951248327521"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Languages.mup",
+          "hash": "13558663271119429506"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Music.mup",
+          "hash": "9960481757317508636"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Philosophy.mup",
+          "hash": "17961462829504159739"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Providers.mup",
+          "hash": "13455458840132223990"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Psychology.mup",
+          "hash": "14547795088357782968"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Theology-Islam",
+          "hash": "7846297723773128003"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-Theology.mup",
+          "hash": "17508186193333111449"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-US Cities.mup",
+          "hash": "2176320817247240086"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/data/Social-cities-Toronto",
+          "hash": "5265685784386241605"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/save-knowledge-to-db.js",
+          "hash": "6445893943222667369"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/save-knowledge-to-db.sh",
+          "hash": "15852610324811551045"
+        },
+        {
+          "file": "apps/server/scripts/knowledge-base/utils.js",
+          "hash": "8813507797470731057"
+        },
+        {
+          "file": "apps/server/scripts/lambda-service/convert-import-to-require.js",
+          "hash": "3342190934637348200"
+        },
+        {
+          "file": "apps/server/scripts/lambda-service/convert-import-to-require.sh",
+          "hash": "9401538986821224277"
+        },
+        {
+          "file": "apps/server/scripts/lambda-service/convert-to-lambda.js",
+          "hash": "16422960391986656339"
+        },
+        {
+          "file": "apps/server/scripts/lambda-service/convert-to-lambda.sh",
+          "hash": "10311538466043118385"
+        },
+        {
+          "file": "apps/server/scripts/lambda-service/deploy-lambdas.sh",
+          "hash": "4038145501925973284"
+        },
+        {
+          "file": "apps/server/scripts/requests/index.js",
+          "hash": "18047323123517004047"
+        },
+        {
+          "file": "apps/server/scripts/requests/request-list.js",
+          "hash": "15678407028374432747"
+        },
+        {
+          "file": "apps/server/scripts/requests/requests.js",
+          "hash": "1810951280758025966"
+        },
+        {
+          "file": "apps/server/scripts/requests/requests.sh",
+          "hash": "11042624402513337677"
+        },
+        {
+          "file": "apps/server/scripts/utils.js",
+          "hash": "8785881257054559616"
+        },
+        {
+          "file": "apps/server/server.js",
+          "hash": "7945214947190732084"
+        },
+        {
+          "file": "apps/server/serverless.yml",
+          "hash": "1463052394402799257"
+        },
+        {
+          "file": "apps/server/src/chat/Chat/index.js",
+          "hash": "6197963612113193388"
+        },
+        {
+          "file": "apps/server/src/chat/Settings/index.js",
+          "hash": "1343764670780071013"
+        },
+        {
+          "file": "apps/server/src/chat/api.js",
+          "hash": "13176511339242368578"
+        },
+        {
+          "file": "apps/server/src/chat/build/README.md",
+          "hash": "3165456549320107121"
+        },
+        {
+          "file": "apps/server/src/chat/build/index.js",
+          "hash": "12383630518341233279"
+        },
+        {
+          "file": "apps/server/src/chat/build/install.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/src/chat/build/nodemon-dev.json",
+          "hash": "15203120882963819572"
+        },
+        {
+          "file": "apps/server/src/chat/build/nodemon-qa.json",
+          "hash": "12723693002635887930"
+        },
+        {
+          "file": "apps/server/src/chat/build/nodemon.json",
+          "hash": "15203120882963819572"
+        },
+        {
+          "file": "apps/server/src/chat/build/package-lock.json",
+          "hash": "14081790113584048094"
+        },
+        {
+          "file": "apps/server/src/chat/build/package.json",
+          "hash": "377872427030771733"
+        },
+        {
+          "file": "apps/server/src/chat/build/server.js",
+          "hash": "17772331900765215572"
+        },
+        {
+          "file": "apps/server/src/chat/build/setupTests.js",
+          "hash": "17569039994981640272"
+        },
+        {
+          "file": "apps/server/src/chat/docs/routes.txt",
+          "hash": "17367184027670799628"
+        },
+        {
+          "file": "apps/server/src/chat/emails/emailConfirmation.pug",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/src/chat/emails/passwordResetConfirmation.pug",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/src/chat/scripts/Mongodb/install-mongo.sh",
+          "hash": "9638746048973610114"
+        },
+        {
+          "file": "apps/server/src/chat/scripts/Mongodb/mongo-start.sh",
+          "hash": "12390935776659985389"
+        },
+        {
+          "file": "apps/server/src/chat/scripts/Mongodb/run-mongo.sh",
+          "hash": "14444885455042187886"
+        },
+        {
+          "file": "apps/server/src/chat/scripts/Mongodb/run-seed.sh",
+          "hash": "5213576937829628203"
+        },
+        {
+          "file": "apps/server/src/chat/scripts/lambda-service/convert-to-lambda.sh",
+          "hash": "15376217774623637424"
+        },
+        {
+          "file": "apps/server/src/chat/scripts/lambda-service/deploy-lambdas.sh",
+          "hash": "5698995550715012825"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/Categories/index.js",
+          "hash": "672493477687511549"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/Events/index.js",
+          "hash": "498636853893025647"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/Forms/index.js",
+          "hash": "2456868822276830066"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/Insights/index.js",
+          "hash": "1077016890943396211"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/Knowledge/index.js",
+          "hash": "7701716019797506611"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/Knowledge/tests/chat.sh",
+          "hash": "1737593578578784337"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/Knowledge/tests/image.sh",
+          "hash": "8447276124199199147"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/Settings/index.js",
+          "hash": "1343764670780071013"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/api.js",
+          "hash": "6613075373680600063"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/build/README.md",
+          "hash": "3165456549320107121"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/build/babel.config.js",
+          "hash": "7516397487247185405"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/build/index.js",
+          "hash": "12383630518341233279"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/build/install.js",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/build/nodemon-dev.json",
+          "hash": "15203120882963819572"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/build/nodemon-qa.json",
+          "hash": "12723693002635887930"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/build/nodemon.json",
+          "hash": "15203120882963819572"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/build/package-lock.json",
+          "hash": "1664235292788916060"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/build/package.json",
+          "hash": "6979921816318128222"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/build/server.js",
+          "hash": "14499217106051563887"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/build/setupTests.js",
+          "hash": "17569039994981640272"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/docs/routes.txt",
+          "hash": "8281781545316653814"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/emails/emailConfirmation.pug",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/emails/passwordResetConfirmation.pug",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/media/Sam-5d3523a9e0ad8eb64e630a9d-.jpg",
+          "hash": "15499267332348624241"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/media/Sam-5d367daa4ddeee059124fe2a-.jpg",
+          "hash": "15499267332348624241"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/media/Sam-5d3eee74f532a436d97a3041-.jpg",
+          "hash": "15499267332348624241"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/scripts/fetchHm.js",
+          "hash": "10719247107994145933"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/scripts/fetchTest.js",
+          "hash": "17005365275933262125"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/scripts/hm.html",
+          "hash": "15414826616048318307"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/scripts/run.sh",
+          "hash": "16282477668668792852"
+        },
+        {
+          "file": "apps/server/src/knowledge-base/wiki.txt",
+          "hash": "8040739283673464840"
+        },
+        {
+          "file": "apps/server/src/lambda-service/contacts/.babelrc",
+          "hash": "3250086131670327215"
+        },
+        {
+          "file": "apps/server/src/lambda-service/contacts/babel.config.js",
+          "hash": "12177898944516416495"
+        },
+        {
+          "file": "apps/server/src/lambda-service/contacts/config/default.json",
+          "hash": "3165014225699288648"
+        },
+        {
+          "file": "apps/server/src/lambda-service/contacts/contacts.js",
+          "hash": "13682081192704140189"
+        },
+        {
+          "file": "apps/server/src/lambda-service/contacts/forms.js",
+          "hash": "7538986765419125864"
+        },
+        {
+          "file": "apps/server/src/lambda-service/contacts/handler.js",
+          "hash": "15248155832952367593"
+        },
+        {
+          "file": "apps/server/src/lambda-service/contacts/index.js",
+          "hash": "17791768483921882943"
+        },
+        {
+          "file": "apps/server/src/lambda-service/contacts/package-lock.json",
+          "hash": "5464162423188603736"
+        },
+        {
+          "file": "apps/server/src/lambda-service/contacts/package.json",
+          "hash": "11837672560616492162"
+        },
+        {
+          "file": "apps/server/src/lambda-service/contacts/permissions.js",
+          "hash": "10411043630466955740"
+        },
+        {
+          "file": "apps/server/src/lambda-service/contacts/serverless.yml",
+          "hash": "8817352707093610861"
+        },
+        {
+          "file": "apps/server/yarn.lock",
+          "hash": "9586944895590105423"
+        }
+      ],
       "ui": [
         {
           "file": "apps/ui/.vscode/launch.json",
@@ -3334,1461 +4789,6 @@
         {
           "file": "apps/ui/yarn.lock",
           "hash": "15524312531965687137"
-        }
-      ],
-      "server": [
-        {
-          "file": "apps/server/.babelrc",
-          "hash": "3250086131670327215"
-        },
-        {
-          "file": "apps/server/babel.config.js",
-          "hash": "12177898944516416495"
-        },
-        {
-          "file": "apps/server/config/custom-environment-variables.json",
-          "hash": "10219113616260798217"
-        },
-        {
-          "file": "apps/server/config/db/mongod.conf",
-          "hash": "3182769162687451845"
-        },
-        {
-          "file": "apps/server/config/default.json",
-          "hash": "5438657103043773659"
-        },
-        {
-          "file": "apps/server/config/production.json",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/server/config/qa.json",
-          "hash": "1026787870855588377"
-        },
-        {
-          "file": "apps/server/docs/routes.md",
-          "hash": "14813760444439241896"
-        },
-        {
-          "file": "apps/server/docs/routes.txt",
-          "hash": "12676978809711798949"
-        },
-        {
-          "file": "apps/server/handler.js",
-          "hash": "14481818349350436656"
-        },
-        {
-          "file": "apps/server/index.js",
-          "hash": "11872918847711195659"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/WiredTiger",
-          "hash": "1294684645872229581"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/WiredTiger.lock",
-          "hash": "7045004002381174161"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/WiredTiger.turtle",
-          "hash": "4399430693820586796"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/WiredTiger.wt",
-          "hash": "7372293575177795478"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/WiredTigerHS.wt",
-          "hash": "8796983299916770995"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/_mdb_catalog.wt",
-          "hash": "17127453212982916254"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/collection-0-1258990656970514026.wt",
-          "hash": "12697600905831668795"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/collection-0-7314233670185838370.wt",
-          "hash": "8352933509161072310"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/collection-17-7314233670185838370.wt",
-          "hash": "8637283126603614778"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/collection-2-7314233670185838370.wt",
-          "hash": "2957684246327471845"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/collection-25-7314233670185838370.wt",
-          "hash": "3330649005809046259"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/collection-29-7314233670185838370.wt",
-          "hash": "8796983299916770995"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/collection-30-7314233670185838370.wt",
-          "hash": "14048708824993448690"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/collection-34-7314233670185838370.wt",
-          "hash": "16507876590873048900"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/collection-36-7314233670185838370.wt",
-          "hash": "10708748275953434402"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/collection-4-7314233670185838370.wt",
-          "hash": "11380900676785211371"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/collection-7-7314233670185838370.wt",
-          "hash": "7945875015387853459"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-04T13-54-52Z-00000",
-          "hash": "13990856572157316197"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-06T04-37-29Z-00000",
-          "hash": "6185434044165436042"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-07T15-12-54Z-00000",
-          "hash": "15048346201026108062"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-11T17-34-58Z-00000",
-          "hash": "3265299590362497713"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-12T05-19-49Z-00000",
-          "hash": "5032158566438262617"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-14T13-21-50Z-00000",
-          "hash": "10726915266272677785"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-17T07-14-26Z-00000",
-          "hash": "14264158852281237954"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-19T14-12-57Z-00000",
-          "hash": "2533452323595047494"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-23T13-11-12Z-00000",
-          "hash": "12188690146803539742"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-25T07-51-10Z-00000",
-          "hash": "9053017611835008381"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-03-29T06-34-53Z-00000",
-          "hash": "17738945834709616319"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-04-03T02-27-12Z-00000",
-          "hash": "16382793346535743264"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-04-05T13-04-30Z-00000",
-          "hash": "1863486042480834332"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-04-06T18-04-30Z-00000",
-          "hash": "2095536232470872328"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-04-24T05-21-47Z-00000",
-          "hash": "3706486360004062356"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-04-27T14-40-10Z-00000",
-          "hash": "9117844549647949033"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-01T03-48-44Z-00000",
-          "hash": "11152390115968466654"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-05T11-43-29Z-00000",
-          "hash": "7130473886819060052"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-10T21-50-43Z-00000",
-          "hash": "16954911518179925246"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-13T07-12-17Z-00000",
-          "hash": "18013240343903259772"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-14T15-50-31Z-00000",
-          "hash": "18262653055354078345"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-15T22-20-31Z-00000",
-          "hash": "2850959329809032588"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.2024-05-16T18-26-36Z-00000",
-          "hash": "9097025026789622003"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/diagnostic.data/metrics.interim",
-          "hash": "13063428754536421771"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/index-1-1258990656970514026.wt",
-          "hash": "13781308331427829211"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/index-1-7314233670185838370.wt",
-          "hash": "8727546365906024744"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/index-12-7314233670185838370.wt",
-          "hash": "18223413549459337418"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/index-20-7314233670185838370.wt",
-          "hash": "3602238521778826951"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/index-28-7314233670185838370.wt",
-          "hash": "378826454853981856"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/index-3-7314233670185838370.wt",
-          "hash": "7932722802219775915"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/index-31-7314233670185838370.wt",
-          "hash": "8796983299916770995"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/index-32-7314233670185838370.wt",
-          "hash": "8947989862882869294"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/index-33-7314233670185838370.wt",
-          "hash": "8796983299916770995"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/index-35-7314233670185838370.wt",
-          "hash": "16989055047872107666"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/index-37-7314233670185838370.wt",
-          "hash": "8603820589697916332"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/index-5-7314233670185838370.wt",
-          "hash": "11131815139524620755"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/index-6-7314233670185838370.wt",
-          "hash": "3389400102510973452"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/journal/WiredTigerLog.0000000005",
-          "hash": "10816001662073775452"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/journal/WiredTigerPreplog.0000000001",
-          "hash": "9705535327776266990"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/journal/WiredTigerPreplog.0000000002",
-          "hash": "9705535327776266990"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/mongod.lock",
-          "hash": "3383225458521326309"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/sizeStorer.wt",
-          "hash": "7119084117948106711"
-        },
-        {
-          "file": "apps/server/infra/mongodb/data/storage.bson",
-          "hash": "1679351129780017522"
-        },
-        {
-          "file": "apps/server/infra/mongodb/docker-compose.yml",
-          "hash": "16711744895861432284"
-        },
-        {
-          "file": "apps/server/infra/mongodb/mongo-with-podman.sh",
-          "hash": "16010791547379441046"
-        },
-        {
-          "file": "apps/server/nodemon-dev.json",
-          "hash": "15203120882963819572"
-        },
-        {
-          "file": "apps/server/nodemon-qa.json",
-          "hash": "12723693002635887930"
-        },
-        {
-          "file": "apps/server/nodemon.json",
-          "hash": "15203120882963819572"
-        },
-        {
-          "file": "apps/server/package.json",
-          "hash": "11528983497123370266",
-          "deps": [
-            "npm:dotenv",
-            "npm:axios",
-            "npm:regenerator-runtime"
-          ]
-        },
-        {
-          "file": "apps/server/project.json",
-          "hash": "11251614715607328428"
-        },
-        {
-          "file": "apps/server/scripts/db-backup.js",
-          "hash": "1554611260552150489"
-        },
-        {
-          "file": "apps/server/scripts/db-backup.sh",
-          "hash": "5498679999750650168"
-        },
-        {
-          "file": "apps/server/scripts/db/db.sh",
-          "hash": "13188305002379888210"
-        },
-        {
-          "file": "apps/server/scripts/image-processing/make-spaces-between-images-even.js",
-          "hash": "6769557210810106017"
-        },
-        {
-          "file": "apps/server/scripts/image-processing/remove-white-spaces-from-image.js",
-          "hash": "8881189640773712794"
-        },
-        {
-          "file": "apps/server/scripts/kernel/kernel.js",
-          "hash": "7880044676085538504"
-        },
-        {
-          "file": "apps/server/scripts/kernel/kernel.sh",
-          "hash": "16308589445331983185"
-        },
-        {
-          "file": "apps/server/scripts/kernel/save-kernel-to-db.js",
-          "hash": "14362685476816601628"
-        },
-        {
-          "file": "apps/server/scripts/kernel/save-kernel-to-db.sh",
-          "hash": "12525687304243414100"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Accounting-mine.mup",
-          "hash": "4896226772033637738"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Entertainment",
-          "hash": "14538541465116062192"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Accounting-Personal Finance.mup",
-          "hash": "16884663266223063271"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Accounting-Tax.mup",
-          "hash": "1468996743083523106"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Alpine linux.mup",
-          "hash": "11219410927886443937"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Amazon AWS.mup",
-          "hash": "10394778387552501630"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Android.mup",
-          "hash": "8097229340673112814"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Angular.js.mup",
-          "hash": "8306276184918603409"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Apache.mup",
-          "hash": "14216230540941396629"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Artificial Intellegence.mup",
-          "hash": "3165365990817931748"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Asmjs.mup",
-          "hash": "10744610245611356687"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Asp.net.mup",
-          "hash": "165342385073684561"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Assembly Language.mup",
-          "hash": "2951144109499654850"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Bash.mup",
-          "hash": "165933114584811983"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Blockchain",
-          "hash": "15526220786272028652"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Browser Engines.mup",
-          "hash": "8261337716395683794"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-C++.mup",
-          "hash": "17042404034269150017"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-C.mup",
-          "hash": "4113331666422221572"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-CGI.mup",
-          "hash": "12680248961051070481"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Clojure-Luminus.mup",
-          "hash": "965465966363475823"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Clojure.mup",
-          "hash": "14600517240192702341"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-ClojureScript.mup",
-          "hash": "7299147254683922832"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Command Line.mup",
-          "hash": "2758484811603406567"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Compiler.mup",
-          "hash": "12558722248318871062"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Cordova.mup",
-          "hash": "13137534850230526468"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Csharp.mup",
-          "hash": "6886679612493915554"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Cycle.js.mup",
-          "hash": "4758861694847080045"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-D.mup",
-          "hash": "6372334698670972741"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-D3.mup",
-          "hash": "18139048093808565651"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-DOM.mup",
-          "hash": "8193577358741475219"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Data Science.mup",
-          "hash": "15889527811434719705"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Data Structures and Algorithms.mup",
-          "hash": "3449407184226864643"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Database-Vector.mup",
-          "hash": "15723533443656689576"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Database.mup",
-          "hash": "13386898011215607398"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Deno.mup",
-          "hash": "5612267994764799324"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Distributed Systems.mup",
-          "hash": "2164993763891281728"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Docker.mup",
-          "hash": "16171110800982422968"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Domain Driven Design.mup",
-          "hash": "10630248567253203409"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Elastic-Search",
-          "hash": "12123820413826249434"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Electron.mup",
-          "hash": "696816026921773624"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Elixir.mup",
-          "hash": "9317341635461160334"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Elm.mup",
-          "hash": "12310039624419757619"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Erlang.mup",
-          "hash": "6589520564005598834"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Eve.mup",
-          "hash": "4050783052391782405"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Express.mup",
-          "hash": "4843697518387183750"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-F-sharp.mup",
-          "hash": "1580417131047979097"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Falcor.mup",
-          "hash": "12891689341917729668"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Flask.mup",
-          "hash": "16765575714813073881"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Functional Programming JavaScript.mup",
-          "hash": "10193305994149373388"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Functional Programming.mup",
-          "hash": "6726111344655150022"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Game Programming(1).mup",
-          "hash": "17578035532369472353"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Game Programming.mup",
-          "hash": "11564725404611688221"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Go.mup",
-          "hash": "14919204032899593667"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Google App Engine",
-          "hash": "4130654789715479575"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Graphics Programming.mup",
-          "hash": "17725667680258821594"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Graphql",
-          "hash": "17759192546029025650"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Graphql.mup",
-          "hash": "17279946527914224350"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Hack.mup",
-          "hash": "3769121620079397741"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Handlebars.mup",
-          "hash": "2832573197057338094"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Haskell.mup",
-          "hash": "17467748196082761277"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Integration Testing.mup",
-          "hash": "999796352570283032"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-JWT.mup",
-          "hash": "3503291797376206959"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Java-Springboot.mup",
-          "hash": "4929975597231314950"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Java.mup",
-          "hash": "5550821220650987468"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-JavaScript.mup",
-          "hash": "8594778201451371642"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Js Challenges.mup",
-          "hash": "8243595548032592329"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-K8.mup",
-          "hash": "6098630875449449920"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Kafka.mup",
-          "hash": "8467830586734635070"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Kotlin.mup",
-          "hash": "15026392090670285729"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Linux.mup",
-          "hash": "17860027039298479320"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Lisp.mup",
-          "hash": "1960935353941084832"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Live Music.mup",
-          "hash": "7412040330876212106"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Logic Programming.mup",
-          "hash": "7735760795538737464"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Machine Learning",
-          "hash": "16666166847789764178"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Matterjs",
-          "hash": "4351501376297923106"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Mobx.mup",
-          "hash": "12855407765947908319"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-MongoDB.mup",
-          "hash": "13996347934225881893"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-NGINX.mup",
-          "hash": "12315545512890353884"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-NPM.mup",
-          "hash": "6784737783331010554"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Natural Language Processing.mup",
-          "hash": "251638551746596203"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Networks.mup",
-          "hash": "933489813736592360"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-No SQL.mup",
-          "hash": "2545904931399308035"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Nodejs.mup",
-          "hash": "7674461743254561423"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-OS.mup",
-          "hash": "8852780608461999951"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-PHP.mup",
-          "hash": "9055651537503165784"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Perl.mup",
-          "hash": "11837139107507951201"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Pixi.mup",
-          "hash": "10347268944516253264"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Polymer.mup",
-          "hash": "14915401591936948217"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Postgres.mup",
-          "hash": "15072839298451186870"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Prediction IO.mup",
-          "hash": "9174794744937470217"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Programming Languages.mup",
-          "hash": "11940079492417434912"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Python.mup",
-          "hash": "10803291141466689106"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-R.mup",
-          "hash": "7172075103436049962"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Rack.mup",
-          "hash": "10908846887270025417"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Ramda.mup",
-          "hash": "5920404461481839750"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-React Native",
-          "hash": "5828421947413427610"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-React Native.mup",
-          "hash": "7901353961317018600"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-React.material-ui.mup",
-          "hash": "12603578667405256645"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-React.mup",
-          "hash": "4843435806143888342"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Reactive Programming(1).mup",
-          "hash": "9289111308859364841"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Reactive Programming.mup",
-          "hash": "9289111308859364841"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Redux.mup",
-          "hash": "12251924322377025581"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Regex.mup",
-          "hash": "16855637988079129193"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Rethinkdb.mup",
-          "hash": "18244369067973141862"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Rollup.mup",
-          "hash": "17403578110400309425"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Rust",
-          "hash": "9553215384937365095"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-RxJS.mup",
-          "hash": "12184852870691098381"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-RxJS.presentation.mup",
-          "hash": "10999087095678267246"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Scala.mup",
-          "hash": "14263326483398340742"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Search-Engines.mup",
-          "hash": "11005272992825443346"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Security",
-          "hash": "1561009716512510841"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Semver.mup",
-          "hash": "14280976528563241575"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Serverless",
-          "hash": "7375567612711530237"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Socketio.mup",
-          "hash": "16912361417161555953"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Software Development Career.mup",
-          "hash": "17886637929990611707"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Software Quality.mup",
-          "hash": "14811619255790780352"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Spray.mup",
-          "hash": "10570228663494943443"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Spring.mup",
-          "hash": "8756092615781740951"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Swift.mup",
-          "hash": "9981622340346161206"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-System Programming.mup",
-          "hash": "1586635934255160008"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-System-Archeticture-Dapr.mup",
-          "hash": "7624251669149732681"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-System_Archeticture.mup",
-          "hash": "12470739668013918895"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Three.js.mup",
-          "hash": "10872239306100146889"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-TypeScript.mup",
-          "hash": "11828434903313714690"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-UX.presentation.mup",
-          "hash": "5740127606392905290"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Unit Testing.mup",
-          "hash": "5985234639013132629"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Vim.mup",
-          "hash": "11971222733509064055"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Virtualization.mup",
-          "hash": "4995850600244296194"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Visual Programming.mup",
-          "hash": "12536285234687556865"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Vue.js.mup",
-          "hash": "18421064377207134056"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Web Assembly.mup",
-          "hash": "12697929814289405738"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Web Components.mup",
-          "hash": "5345643997562348575"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Web Design.mup",
-          "hash": "603711685461274324"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Web Programming.mup",
-          "hash": "11656957608894696801"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Webgl.mup",
-          "hash": "9088758423321482737"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Webpack.mup",
-          "hash": "2600806962881051535"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Wordpress.mup",
-          "hash": "14303027613352144180"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Yarn.mup",
-          "hash": "13540598437316042114"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Zookeeper.mup",
-          "hash": "15164988451493447340"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-Zsh.mup",
-          "hash": "11765171424569827307"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-blender",
-          "hash": "16243965073564686610"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-iOS.mup",
-          "hash": "17611418000172397178"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-ionic.mup",
-          "hash": "456485887243471696"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-neural-networks.mup",
-          "hash": "12512407133313440575"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer-travis.mup",
-          "hash": "13349983734667089574"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Computer.mup",
-          "hash": "8942736867319248501"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Math-Discrete Math.mup",
-          "hash": "1475364199579910681"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Math-Geometry.mup",
-          "hash": "7935897000223149172"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Math-Graph Theory.mup",
-          "hash": "553372404229616045"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Math-Math.mup",
-          "hash": "1654075398419584205"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Formal-Math-Statistics.mup",
-          "hash": "10411323143839132602"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Natural-Biology",
-          "hash": "6126508660472247857"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Natural-Biology-Neuroscience",
-          "hash": "5582257566309471171"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Natural-Biology-Physiology",
-          "hash": "12714362050977373979"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Natural-Biology.mup",
-          "hash": "14552697942065728261"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Natural-Botany",
-          "hash": "9795720101973017770"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Natural-Chemistry",
-          "hash": "9083716167688804241"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Natural-Chemistry-Cooking.mup",
-          "hash": "1640555731150966051"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Natural-Chemistry.mup",
-          "hash": "2589026143323295756"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Natural-Cognitive Science.mup",
-          "hash": "3821675199804186182"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Natural-Physics",
-          "hash": "14027641778357761872"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Natural-Physics-Astronomy.mup",
-          "hash": "208213091484132527"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Natural-Physics-Nanotechnology.mup",
-          "hash": "4436373742559937366"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Natural-Zoology.mup",
-          "hash": "8694533627862637366"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Art-3D Modeling.mup",
-          "hash": "994463814666527184"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Art-Animation.mup",
-          "hash": "14899991770803583561"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Art-Drawing.mup",
-          "hash": "14097966043420337765"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Art-Graphics Design.mup",
-          "hash": "280577772697546508"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Art-UX.mup",
-          "hash": "1596666689961746659"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Arts.mup",
-          "hash": "11518475308500384324"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Economics-Personal Finance.mup",
-          "hash": "2607833758068381146"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Economy.mup",
-          "hash": "927926535163221231"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Education-Intelligent tutoring system.mup",
-          "hash": "14830769508982188818"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Education-VR.mup",
-          "hash": "4133520174247318169"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Education-Wikipedia.mup",
-          "hash": "1850241053260626223"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Education-mindmaps.mup",
-          "hash": "9376891364972225611"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Education.mup",
-          "hash": "13665527537271147261"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Geography.mup",
-          "hash": "12087217641307476742"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-History.mup",
-          "hash": "4522307000933980653"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-Arabic.mup",
-          "hash": "6727100489781605277"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-English.mup",
-          "hash": "5614896920597496154"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-French.mup",
-          "hash": "8470258530998763229"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-Hebrew.mup",
-          "hash": "9050906877769521070"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-Japanese.mup",
-          "hash": "17902711079643964664"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-Slovenian.mup",
-          "hash": "7231983432126718282"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Languages-Spanish.mup",
-          "hash": "16634388951248327521"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Languages.mup",
-          "hash": "13558663271119429506"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Music.mup",
-          "hash": "9960481757317508636"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Philosophy.mup",
-          "hash": "17961462829504159739"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Providers.mup",
-          "hash": "13455458840132223990"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Psychology.mup",
-          "hash": "14547795088357782968"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Theology-Islam",
-          "hash": "7846297723773128003"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-Theology.mup",
-          "hash": "17508186193333111449"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-US Cities.mup",
-          "hash": "2176320817247240086"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/data/Social-cities-Toronto",
-          "hash": "5265685784386241605"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/save-knowledge-to-db.js",
-          "hash": "6445893943222667369"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/save-knowledge-to-db.sh",
-          "hash": "15852610324811551045"
-        },
-        {
-          "file": "apps/server/scripts/knowledge-base/utils.js",
-          "hash": "8813507797470731057"
-        },
-        {
-          "file": "apps/server/scripts/lambda-service/convert-import-to-require.js",
-          "hash": "3342190934637348200"
-        },
-        {
-          "file": "apps/server/scripts/lambda-service/convert-import-to-require.sh",
-          "hash": "9401538986821224277"
-        },
-        {
-          "file": "apps/server/scripts/lambda-service/convert-to-lambda.js",
-          "hash": "16422960391986656339"
-        },
-        {
-          "file": "apps/server/scripts/lambda-service/convert-to-lambda.sh",
-          "hash": "10311538466043118385"
-        },
-        {
-          "file": "apps/server/scripts/lambda-service/deploy-lambdas.sh",
-          "hash": "4038145501925973284"
-        },
-        {
-          "file": "apps/server/scripts/requests/index.js",
-          "hash": "18047323123517004047"
-        },
-        {
-          "file": "apps/server/scripts/requests/request-list.js",
-          "hash": "15678407028374432747"
-        },
-        {
-          "file": "apps/server/scripts/requests/requests.js",
-          "hash": "1810951280758025966"
-        },
-        {
-          "file": "apps/server/scripts/requests/requests.sh",
-          "hash": "11042624402513337677"
-        },
-        {
-          "file": "apps/server/scripts/utils.js",
-          "hash": "8785881257054559616"
-        },
-        {
-          "file": "apps/server/server.js",
-          "hash": "7945214947190732084"
-        },
-        {
-          "file": "apps/server/serverless.yml",
-          "hash": "1463052394402799257"
-        },
-        {
-          "file": "apps/server/src/chat/Chat/index.js",
-          "hash": "6197963612113193388"
-        },
-        {
-          "file": "apps/server/src/chat/Settings/index.js",
-          "hash": "1343764670780071013"
-        },
-        {
-          "file": "apps/server/src/chat/api.js",
-          "hash": "13176511339242368578"
-        },
-        {
-          "file": "apps/server/src/chat/build/README.md",
-          "hash": "3165456549320107121"
-        },
-        {
-          "file": "apps/server/src/chat/build/index.js",
-          "hash": "12383630518341233279"
-        },
-        {
-          "file": "apps/server/src/chat/build/install.js",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/server/src/chat/build/nodemon-dev.json",
-          "hash": "15203120882963819572"
-        },
-        {
-          "file": "apps/server/src/chat/build/nodemon-qa.json",
-          "hash": "12723693002635887930"
-        },
-        {
-          "file": "apps/server/src/chat/build/nodemon.json",
-          "hash": "15203120882963819572"
-        },
-        {
-          "file": "apps/server/src/chat/build/package-lock.json",
-          "hash": "14081790113584048094"
-        },
-        {
-          "file": "apps/server/src/chat/build/package.json",
-          "hash": "377872427030771733"
-        },
-        {
-          "file": "apps/server/src/chat/build/server.js",
-          "hash": "17772331900765215572"
-        },
-        {
-          "file": "apps/server/src/chat/build/setupTests.js",
-          "hash": "17569039994981640272"
-        },
-        {
-          "file": "apps/server/src/chat/docs/routes.txt",
-          "hash": "17367184027670799628"
-        },
-        {
-          "file": "apps/server/src/chat/emails/emailConfirmation.pug",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/server/src/chat/emails/passwordResetConfirmation.pug",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/server/src/chat/scripts/Mongodb/install-mongo.sh",
-          "hash": "9638746048973610114"
-        },
-        {
-          "file": "apps/server/src/chat/scripts/Mongodb/mongo-start.sh",
-          "hash": "12390935776659985389"
-        },
-        {
-          "file": "apps/server/src/chat/scripts/Mongodb/run-mongo.sh",
-          "hash": "14444885455042187886"
-        },
-        {
-          "file": "apps/server/src/chat/scripts/Mongodb/run-seed.sh",
-          "hash": "5213576937829628203"
-        },
-        {
-          "file": "apps/server/src/chat/scripts/lambda-service/convert-to-lambda.sh",
-          "hash": "15376217774623637424"
-        },
-        {
-          "file": "apps/server/src/chat/scripts/lambda-service/deploy-lambdas.sh",
-          "hash": "5698995550715012825"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/Categories/index.js",
-          "hash": "672493477687511549"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/Events/index.js",
-          "hash": "498636853893025647"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/Forms/index.js",
-          "hash": "2456868822276830066"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/Insights/index.js",
-          "hash": "1077016890943396211"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/Knowledge/index.js",
-          "hash": "7701716019797506611"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/Knowledge/tests/chat.sh",
-          "hash": "1737593578578784337"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/Knowledge/tests/image.sh",
-          "hash": "8447276124199199147"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/Settings/index.js",
-          "hash": "1343764670780071013"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/api.js",
-          "hash": "6613075373680600063"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/build/README.md",
-          "hash": "3165456549320107121"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/build/babel.config.js",
-          "hash": "7516397487247185405"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/build/index.js",
-          "hash": "12383630518341233279"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/build/install.js",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/build/nodemon-dev.json",
-          "hash": "15203120882963819572"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/build/nodemon-qa.json",
-          "hash": "12723693002635887930"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/build/nodemon.json",
-          "hash": "15203120882963819572"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/build/package-lock.json",
-          "hash": "1664235292788916060"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/build/package.json",
-          "hash": "6979921816318128222"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/build/server.js",
-          "hash": "14499217106051563887"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/build/setupTests.js",
-          "hash": "17569039994981640272"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/docs/routes.txt",
-          "hash": "8281781545316653814"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/emails/emailConfirmation.pug",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/emails/passwordResetConfirmation.pug",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/media/Sam-5d3523a9e0ad8eb64e630a9d-.jpg",
-          "hash": "15499267332348624241"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/media/Sam-5d367daa4ddeee059124fe2a-.jpg",
-          "hash": "15499267332348624241"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/media/Sam-5d3eee74f532a436d97a3041-.jpg",
-          "hash": "15499267332348624241"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/scripts/fetchHm.js",
-          "hash": "10719247107994145933"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/scripts/fetchTest.js",
-          "hash": "17005365275933262125"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/scripts/hm.html",
-          "hash": "15414826616048318307"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/scripts/run.sh",
-          "hash": "16282477668668792852"
-        },
-        {
-          "file": "apps/server/src/knowledge-base/wiki.txt",
-          "hash": "8040739283673464840"
-        },
-        {
-          "file": "apps/server/src/lambda-service/contacts/.babelrc",
-          "hash": "3250086131670327215"
-        },
-        {
-          "file": "apps/server/src/lambda-service/contacts/babel.config.js",
-          "hash": "12177898944516416495"
-        },
-        {
-          "file": "apps/server/src/lambda-service/contacts/config/default.json",
-          "hash": "3165014225699288648"
-        },
-        {
-          "file": "apps/server/src/lambda-service/contacts/contacts.js",
-          "hash": "13682081192704140189"
-        },
-        {
-          "file": "apps/server/src/lambda-service/contacts/forms.js",
-          "hash": "7538986765419125864"
-        },
-        {
-          "file": "apps/server/src/lambda-service/contacts/handler.js",
-          "hash": "15248155832952367593"
-        },
-        {
-          "file": "apps/server/src/lambda-service/contacts/index.js",
-          "hash": "17791768483921882943"
-        },
-        {
-          "file": "apps/server/src/lambda-service/contacts/package-lock.json",
-          "hash": "5464162423188603736"
-        },
-        {
-          "file": "apps/server/src/lambda-service/contacts/package.json",
-          "hash": "11837672560616492162"
-        },
-        {
-          "file": "apps/server/src/lambda-service/contacts/permissions.js",
-          "hash": "10411043630466955740"
-        },
-        {
-          "file": "apps/server/src/lambda-service/contacts/serverless.yml",
-          "hash": "8817352707093610861"
-        },
-        {
-          "file": "apps/server/yarn.lock",
-          "hash": "9586944895590105423"
         }
       ]
     }
