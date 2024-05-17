@@ -33,7 +33,7 @@ const createNode = (nodeId, title, mindmapByKeys) => {
   return { _id, node };
 };
 
-// Function to convert object to mindmap
+// Function to convert object to mindmap and collapse all nodes
 export const convertObjectToMindmap = (obj, rootId, mindmapByKeys) => {
   const nodesToAdd = bulkTraverseAndAddNodes(mindmapByKeys, obj, rootId);
   nodesToAdd.forEach((node) => {
@@ -43,6 +43,11 @@ export const convertObjectToMindmap = (obj, rootId, mindmapByKeys) => {
       node.title,
       node._id
     );
+  });
+
+  const rootNodes = Object.values(mindmapByKeys).filter(node => !node.parent);
+  rootNodes.forEach(node => {
+    mindmapByKeys = collapseAllNodes(mindmapByKeys, node._id);
   });
 
   return mindmapByKeys;
@@ -118,6 +123,21 @@ export const addNodeToMindmap = (mindmapByKeys, nodeId, title, _id = null) => {
 
     return newMindmapByKeys;
   }
+};
+
+// Function to collapse all nodes except the specified one
+export const collapseAllNodes = (mindmapByKeys, nodeId, exceptionNodeId) => {
+  const node = mindmapByKeys[nodeId];
+  if (node) {
+    mindmapByKeys[nodeId] = {
+      ...node,
+      __rd3t: { collapsed: nodeId !== exceptionNodeId },
+    };
+    node.children.forEach(childId => {
+      mindmapByKeys = collapseAllNodes(mindmapByKeys, childId, exceptionNodeId);
+    });
+  }
+  return mindmapByKeys;
 };
 
 // Compare paths for visibility

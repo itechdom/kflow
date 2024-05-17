@@ -5,7 +5,10 @@ import { theme3Light } from "./Themes";
 import { moveToRoot, formatData } from "./Mindmap.utils";
 import { useDispatch } from "react-redux";
 import { setModel } from "./Model.Preview.feature"; // Ensure correct import path
-import { convertObjectToMindmap } from "./Model.Preview.feature.helper";
+import {
+  convertObjectToMindmap,
+  collapseAllNodes,
+} from "./Model.Preview.feature.helper";
 import { getPrompt, cleanResponse } from "./Mindmap.utils";
 
 const { background, baseStyle, textColor } = theme3Light;
@@ -65,17 +68,23 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
                     knowledgeChat(
                       knowledge,
                       path,
-                      getPrompt(path),
+                      getPrompt(path, nodeDatum.title),
                       (response) => {
                         try {
                           const cleanedResponse = cleanResponse(response, path);
-                          console.log("cleanedResponse", cleanedResponse);
                           const converted = convertObjectToMindmap(
                             cleanedResponse,
                             nodeDatum.id,
                             mindmapByKeys
                           );
-                          dispatch(setModel({ model: { body: converted } }));
+                          const collapsedConverted = collapseAllNodes(
+                            converted,
+                            converted[Object.keys(converted)[0]].id,
+                            nodeDatum.id
+                          );
+                          dispatch(
+                            setModel({ model: { body: collapsedConverted } })
+                          );
                         } catch (e) {
                           console.log("ERROR", e);
                         }

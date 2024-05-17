@@ -66,13 +66,17 @@ export const formatData = (mindmapByKeys) => {
 };
 
 export const getPrompt = (
-  path
-) => `complete this object with the maximum amount of knowledge. Be a teacher. only return output in json. 
+  path,
+  currentNodeKey
+) => `complete this object with the maximum amount of knowledge.
+            only return output in json. 
+            don't repeat keyse except ${currentNodeKey}.
             don't include \`\`\`json in your response. omit ${JSON.stringify(
               path
             )} in your response and only include new additions.
-            here is the object:
+            here is my input:
             ${JSON.stringify(path)}`;
+
 
 export const cleanResponse = (response, path) => {
   function removeKeys(obj, keys) {
@@ -80,8 +84,12 @@ export const cleanResponse = (response, path) => {
       if (keys.hasOwnProperty(key)) {
         if (typeof obj[key] === "object" && obj[key] !== null) {
           console.log("DETECTED", key, obj[key], obj);
-          // Promote children to the parent level
-          Object.assign(obj, obj[key]);
+          // Promote children of the duplicate to the current level
+          for (let childKey in obj[key]) {
+            if (obj[key].hasOwnProperty(childKey)) {
+              obj[childKey] = obj[key][childKey];
+            }
+          }
         }
         delete obj[key];
       } else if (typeof obj[key] === "object" && obj[key] !== null) {
