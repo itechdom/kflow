@@ -3,7 +3,7 @@ import { withCrud, Forms, Notification } from "Libs/react-services";
 import { Route, withRouter } from "react-router-dom";
 import { MainWrapper } from "Libs/orbital-templates/Material/Wrappers/MainWrapper";
 import { compose, withPropsOnChange } from "recompose";
-import { CircularProgress } from "@material-ui/core";
+import { CircularProgress } from "@mui/material";
 import ModelList from "Libs/orbital-templates/Material/_shared/ModelList/ModelList";
 
 const AdminDetail = ({

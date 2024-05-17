@@ -5,7 +5,7 @@ import theme from "Libs/orbital-templates/theme";
 import ModelList from "Libs/orbital-templates/Material/_shared/ModelList/ModelList";
 import ModelListItem from "./ModelList/ModelListItemFP.js";
 import ModelPreview from "./ModelPreview/ModelPreview.js";
-import { withStyles, Button } from "@material-ui/core";
+import { withStyles, Button } from "@mui/material";
 
 const ModelListActions = ({ onAdd }) => {
   return (

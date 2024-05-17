@@ -12,7 +12,7 @@ import {
   Icon,
   Button,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
 import KeyboardEventHandler from "react-keyboard-event-handler";
 let fpsInterval = 1000 / 60,
   then = Date.now();

@@ -6,7 +6,7 @@ import {
   Typography,
   Paper,
   Grid,
-} from "@material-ui/core";
+} from "@mui/material";
 import BackIcon from "@material-ui/icons/ArrowBack";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";

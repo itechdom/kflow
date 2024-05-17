@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, HashRouter as Router } from "react-router-dom";
 import { Route } from "react-router-dom";
-import { withStyles } from "@material-ui/core/styles";
+import { withStyles } from "@mui/material/styles";
 import Profile from "./Profile/Profile";
 import Admin from "./Admin/Admin";
 import theme from "./theme";

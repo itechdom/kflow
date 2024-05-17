@@ -13,7 +13,7 @@ import {
     Typography,
     IconButton,
     Grid
-} from "@material-ui/core";
+} from "@mui/material";
 
 const ModelListItemFP = ({
     classes,

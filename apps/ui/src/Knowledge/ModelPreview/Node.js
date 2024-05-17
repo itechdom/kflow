@@ -9,7 +9,7 @@ import {
   CardContent,
   CardActions,
   Tooltip,
-} from "@material-ui/core";
+} from "@mui/material";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 import StarRateIcon from "@material-ui/icons/StarRate";
@@ -19,7 +19,7 @@ import CancelIcon from "@material-ui/icons/Cancel";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
 import DragIndicatorIcon from "@material-ui/icons/DragIndicator";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-import Icon from '@material-ui/core/Icon';
+import Icon from '@mui/material/Icon';
 import TextField from "Libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.TextFieldInput";
 
 const Node = forwardRef((props, ref) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import Matter from "matter-js";
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 const origin = 100 * 5;
 const factor = 100;
 let rangeX;

@@ -1,10 +1,10 @@
 import React from "react";
 import { styles } from "./World.styles.js";
 import theme from "Libs/orbital-templates/theme";
-import { withStyles, Button } from "@material-ui/core";
+import { withStyles, Button } from "@mui/material";
 import { Game as PhysicsGame } from "./Simulations/2DReality/GamePhysics.js";
 import { GameState as PhysicsGameState } from "./Simulations/2DReality/GamePhysics.state.js";
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 import Reality from "./Simulations/Reality/Reality.js";
 const World = ({
   knowledge,

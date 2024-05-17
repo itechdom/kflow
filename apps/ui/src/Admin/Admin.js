@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Link } from "react-router-dom";
 import AdminEdit from "./AdminEdit";
 import MainWrapper from "Libs/orbital-templates/Material/Wrappers/MainWrapper";
-import { CircularProgress } from "@material-ui/core";
+import { CircularProgress } from "@mui/material";
 
 //this will take Admin from "admin-service"
 //and pass in the MODALS that will be used to edit the resource

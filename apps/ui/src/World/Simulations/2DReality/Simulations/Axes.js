@@ -1,6 +1,6 @@
 import React from "react";
 import Matter from "matter-js";
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 import { zoom } from "./Camera";
 import Render from "../Matter/Render";
 export const onGridResize = ({ grid, myEngine }) => {

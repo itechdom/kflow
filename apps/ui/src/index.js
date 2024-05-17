@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { Route, HashRouter as Router } from "react-router-dom";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import MomentUtils from "@date-io/moment";
-import { withStyles, ThemeProvider } from "@material-ui/core/styles";
+import { withStyles, ThemeProvider } from "@mui/material/styles";
 import { createRoot } from "react-dom/client";
 import './index.css';
 import theme from "./theme";

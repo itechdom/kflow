@@ -3,7 +3,7 @@ import {
   Card, CardContent, CardActions, CardMedia,
   Dialog, DialogContent, DialogContentText, DialogActions,
   Button, IconButton, Tooltip
-} from "@material-ui/core";
+} from "@mui/material";
 import { Icon } from "../../Libs/orbital-templates/Material/_shared/Icon/Icon";
 
 // Removed unused imports

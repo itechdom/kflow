@@ -1,4 +1,4 @@
-import { fade } from "@material-ui/core/styles/colorManipulator";
+import { fade } from "@mui/material/styles/colorManipulator";
 export const styles = theme => ({
   "@global": {
     ".image-gallery img": {

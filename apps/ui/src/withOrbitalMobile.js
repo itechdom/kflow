@@ -18,7 +18,7 @@ import {
 import config from "Config";
 import ReactGA from "react-ga";
 import { compose } from "recompose";
-import { withStyles, ThemeProvider } from "@material-ui/core/styles";
+import { withStyles, ThemeProvider } from "@mui/material/styles";
 import { styles } from "Styles";
 // import MainWrapper from "Libs/orbital-templates/Material/Wrappers/MainWrapper";
 // import LoginWrapper from "Libs/orbital-templates/Material/Wrappers/LoginWrapper";

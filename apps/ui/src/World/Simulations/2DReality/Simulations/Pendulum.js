@@ -1,6 +1,6 @@
 import React from "react";
 import Matter from "matter-js";
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 
 const Pendulum = ({ engine, x, y, direction, initMatter }) => {
   const [myEngine, setMyEngine] = React.useState();

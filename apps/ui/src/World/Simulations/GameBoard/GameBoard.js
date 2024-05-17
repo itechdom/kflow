@@ -12,7 +12,7 @@ import {
   Icon,
   Button,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
 import TextField from "Libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.TextFieldInput";
 import assets from "./Assets";
 import KeyboardEventHandler from "react-keyboard-event-handler";

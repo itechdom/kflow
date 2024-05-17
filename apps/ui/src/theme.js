@@ -1,5 +1,5 @@
-import { red } from "@material-ui/core/colors";
-import { createMuiTheme } from "@material-ui/core/styles";
+import { red } from "@mui/material/colors";
+import { createMuiTheme } from "@mui/material/styles";
 
 const tertiary = "#1ABCFE";
 
