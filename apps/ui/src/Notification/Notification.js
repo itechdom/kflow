@@ -1,6 +1,6 @@
 import React from "react";
 import ModelList from "Libs/orbital-templates/Material/_shared/ModelList/ModelList";
-import { withStyles } from "@mui/material/styles";
+import { withStyles } from "@mui/styles";
 import { styles } from "./Notification.styles";
 
 const Notification = ({
