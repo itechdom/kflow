@@ -36,9 +36,35 @@
       "data": {
         "root": "apps/ui",
         "name": "ui",
-        "sourceRoot": "apps/ui/src",
-        "projectType": "application",
         "targets": {
+          "build:server": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:server"
+            },
+            "configurations": {}
+          },
+          "serve:server": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "serve:server"
+            },
+            "configurations": {}
+          },
+          "build:ui": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:ui"
+            },
+            "configurations": {}
+          },
+          "serve:ui": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "serve:ui"
+            },
+            "configurations": {}
+          },
           "build": {
             "executor": "@nrwl/web:build",
             "options": {
@@ -66,6 +92,8 @@
             "configurations": {}
           }
         },
+        "sourceRoot": "apps/ui/src",
+        "projectType": "application",
         "implicitDependencies": [],
         "tags": []
       }
@@ -3306,7 +3334,18 @@
   },
   "dependencies": {
     "server": [],
-    "ui": [],
+    "ui": [
+      {
+        "source": "ui",
+        "target": "npm:@nx/js",
+        "type": "static"
+      },
+      {
+        "source": "ui",
+        "target": "npm:nx",
+        "type": "static"
+      }
+    ],
     "npm:@ampproject/remapping": [
       {
         "source": "npm:@ampproject/remapping",
