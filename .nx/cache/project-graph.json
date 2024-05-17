@@ -6,9 +6,42 @@
       "data": {
         "root": "apps/server",
         "name": "server",
-        "sourceRoot": "apps/server/src",
-        "projectType": "application",
         "targets": {
+          "start": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "start"
+            },
+            "configurations": {}
+          },
+          "start:qa": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "start:qa"
+            },
+            "configurations": {}
+          },
+          "forever:qa": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "forever:qa"
+            },
+            "configurations": {}
+          },
+          "start:mongo": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "start:mongo"
+            },
+            "configurations": {}
+          },
+          "start:mongo:cloud9": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "start:mongo:cloud9"
+            },
+            "configurations": {}
+          },
           "build": {
             "executor": "@nrwl/node:build",
             "options": {
@@ -24,8 +57,39 @@
               "buildTarget": "server:build"
             },
             "configurations": {}
+          },
+          "seed": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "seed"
+            },
+            "configurations": {}
+          },
+          "kernel": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "kernel"
+            },
+            "configurations": {}
+          },
+          "test": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "test"
+            },
+            "configurations": {}
+          },
+          "nx-release-publish": {
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "executor": "@nx/js:release-publish",
+            "options": {},
+            "configurations": {}
           }
         },
+        "sourceRoot": "apps/server/src",
+        "projectType": "application",
         "implicitDependencies": [],
         "tags": []
       }
@@ -3333,7 +3397,23 @@
     }
   },
   "dependencies": {
-    "server": [],
+    "server": [
+      {
+        "source": "server",
+        "target": "npm:dotenv",
+        "type": "static"
+      },
+      {
+        "source": "server",
+        "target": "npm:axios",
+        "type": "static"
+      },
+      {
+        "source": "server",
+        "target": "npm:regenerator-runtime",
+        "type": "static"
+      }
+    ],
     "ui": [
       {
         "source": "ui",

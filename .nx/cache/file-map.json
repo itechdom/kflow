@@ -22,656 +22,424 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "libs/react-services/forms-service/features/formDomainSlice.js",
-        "hash": "17790192368168937731"
-      },
-      {
-        "file": "libs/node-services/lambda-service/package.js",
-        "hash": "15198606614415145019"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/auth.js",
-        "hash": "9851823222614931491"
-      },
-      {
-        "file": "libs/node-services/auth-service/auth-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/knowledge.js",
-        "hash": "5938166376144095525"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/seeds/events.js",
-        "hash": "13757619115575244804"
-      },
-      {
-        "file": "cache/nx_files.nxt",
-        "hash": "8295163021701433402"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/ride-log.js",
-        "hash": "10495883043307241222"
-      },
-      {
-        "file": "libs/react-services/wikipedia-service/wikipedia-service.js",
-        "hash": "18325487634601797492"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/ride-log.js",
-        "hash": "10495883043307241222"
-      },
-      {
-        "file": "cache/project-graph.json",
-        "hash": "13972182092320512543"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "2318573979732360312"
-      },
-      {
-        "file": "libs/node-services/crud-service/serverless.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useUpdateModel.spec.js",
-        "hash": "7924023136961788460"
-      },
-      {
-        "file": "libs/node-services/i18n-service/locales/en/translation.json",
-        "hash": "15035819451704992183"
-      },
-      {
-        "file": "libs/orbital-api/Forms/index.js",
-        "hash": "5703008585463470528"
-      },
-      {
-        "file": "libs/node-services/README.md",
-        "hash": "4594159951041989581"
-      },
-      {
-        "file": "libs/react-services/forms-service/forms-service.js",
-        "hash": "4171124241179869236"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useDeleteModel.spec.js",
-        "hash": "4814084653635650084"
-      },
-      {
-        "file": "package.json",
-        "hash": "10698324662924608223"
-      },
-      {
-        "file": "libs/node-services/email-service/email-service.js",
-        "hash": "9322769045216709553"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/forms.js",
-        "hash": "7538986765419125864"
-      },
-      {
-        "file": "libs/node-services/passport-service/passport-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/node-services/socket-service/socket-service.js",
-        "hash": "651967788379227905"
-      },
-      {
-        "file": "libs/node-services/i18n-service/locales/de/translation.json",
-        "hash": "17583592877941659617"
-      },
-      {
-        "file": "libs/node-services/media-service/media-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Pagination/Pagination.js",
-        "hash": "17166988893910117400"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/index.js",
-        "hash": "8701065344252538354"
-      },
-      {
-        "file": "libs/react-services/stripe-service/stripe-service.js",
-        "hash": "15417287999950300599"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/lambda.js",
-        "hash": "2506102300140162312"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/carts.js",
-        "hash": "1118536949249056244"
-      },
-      {
-        "file": "libs/orbital-api/README.md",
-        "hash": "15415743253364021931"
-      },
-      {
-        "file": "libs/node-services/passport-service/strategies/twitter.js",
-        "hash": "15478343520276247297"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useGetModel.js",
-        "hash": "5157031318125443472"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/permissions.js",
-        "hash": "10411043630466955740"
-      },
-      {
-        "file": "libs/react-services/i18n-service/i18n-service.js",
-        "hash": "17685408578774019316"
-      },
-      {
-        "file": "libs/node-services/utils/utils.js",
-        "hash": "10036369121771333566"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/kernel.js",
-        "hash": "9674213177146699782"
-      },
-      {
-        "file": "libs/node-services/auth-service/auth-service.js",
-        "hash": "16018284877563208542"
-      },
-      {
-        "file": "libs/node-services/email-service/email-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Login/Login.js",
-        "hash": "17435085085291997144"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useML.js",
-        "hash": "6430311019525673311"
-      },
-      {
-        "file": "libs/node-services/acl-service/acl-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/react-services/wikipedia-service/features/wikiDomainSlice.js",
-        "hash": "15705697099486059473"
-      },
-      {
-        "file": "libs/orbital-api/.gitignore",
-        "hash": "10323923445659864269"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelEdit/ModelEdit.js",
-        "hash": "2869126389697211302"
-      },
-      {
-        "file": "libs/react-services/socket-service/socket-service.js",
-        "hash": "6336346063265047374"
-      },
-      {
-        "file": "libs/node-services/.babelrc",
-        "hash": "3250086131670327215"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/seed.js",
-        "hash": "17130949419084158997"
-      },
-      {
-        "file": "libs/react-services/settings-service/settings-service.js",
-        "hash": "6526998583145965150"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListItem.js",
-        "hash": "7098467004866093770"
-      },
-      {
-        "file": "libs/node-services/lambda-service/lambda-service-script.js",
-        "hash": "8704471557375117390"
-      },
-      {
-        "file": "cache/parsed-lock-file.json",
-        "hash": "15734989362211013702"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelAdd/ModelAdd.js",
-        "hash": "10469593312971239770"
-      },
-      {
-        "file": "cache/lockfile.hash",
-        "hash": "3270212667847010523"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/carts.js",
-        "hash": "1118536949249056244"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelViewPage.js",
-        "hash": "9376766259385353538"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Autocomplete/Autocomplete.styles.js",
-        "hash": "3670833654880010205"
-      },
-      {
-        "file": "libs/react-services/game-service/game-service.js",
-        "hash": "13547367134076227925"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/comments.js",
-        "hash": "8187826893162957663"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useUpdateModel.js",
-        "hash": "9693878541998769329"
-      },
-      {
-        "file": "libs/react-services/index.js",
-        "hash": "7592322829386038578"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/seeds/users.js",
-        "hash": "17935250083094532636"
-      },
-      {
-        "file": "libs/orbital-templates/Material/Wrappers/LoginWrapper.js",
-        "hash": "12747189606370866784"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/settings.js",
-        "hash": "15323417246848113861"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/seeds/products.js",
+        "file": "libs/orbital-api/MongoDb/seeds/products.js",
         "hash": "14250554327673082997"
       },
       {
-        "file": "libs/node-services/i18n-service/locales/dev/translation.json",
-        "hash": "15035819451704992183"
+        "file": "libs/orbital-api/MongoDb/models/blogs.js",
+        "hash": "16886318681817773863"
       },
       {
-        "file": "libs/orbital-templates/Template.js",
-        "hash": "8660996925285536244"
+        "file": "libs/orbital-api/Postgresql/models/tags.js",
+        "hash": "17767423565745490881"
       },
       {
-        "file": "libs/node-services/event-service/event-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/kernel.js",
-        "hash": "9674213177146699782"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/seeds/reviews.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/react-services/forms-service/forms-container.js",
-        "hash": "3739934221421907941"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/game-log.js",
-        "hash": "11897583830064894089"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/seeds/users.js",
-        "hash": "17935250083094532636"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Autocomplete/Autocomplete.js",
-        "hash": "8620151957874165342"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPassword.styles.js",
-        "hash": "789339495521893012"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/index.js",
-        "hash": "12030951657505627562"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Table/Table.js",
-        "hash": "16282739468221282893"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.TextFieldInput.js",
-        "hash": "14510708206520952614"
-      },
-      {
-        "file": "libs/react-services/camera-service/camera-service.js",
-        "hash": "13557175659581079240"
-      },
-      {
-        "file": "libs/orbital-api/index.js",
-        "hash": "11707227902994592709"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelEdit/ModelEdit.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/seeds/settings.js",
-        "hash": "17760824035208840578"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Loading/Loading.styles.js",
-        "hash": "5418986944393640378"
-      },
-      {
-        "file": "serverless.yml",
-        "hash": "13912724692687231667"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListItems.js",
-        "hash": "12981492493831077839"
-      },
-      {
-        "file": "libs/orbital-api/Localization/index.js",
-        "hash": "13004693098284271393"
-      },
-      {
-        "file": "libs/node-services/i18n-service/i18n-service.js",
-        "hash": "10852438105587057641"
-      },
-      {
-        "file": "libs/react-services/notification-service/notification-service.js",
-        "hash": "12138327481683082584"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-templates/Material/Wrappers/Routes.js",
-        "hash": "17944695055156785878"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/orders.js",
-        "hash": "9159532457258156023"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/seeds/settings.js",
-        "hash": "17760824035208840578"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ClientNotification/ClientNotification.js",
-        "hash": "12057668303802911707"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/events.js",
-        "hash": "18165016036228201167"
-      },
-      {
-        "file": "libs/react-services/kb-service/kb-service.js",
-        "hash": "5311431521208538700"
-      },
-      {
-        "file": "README.md",
-        "hash": "1104206848785677663"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelFilterList.js",
-        "hash": "7873657803363564707"
-      },
-      {
-        "file": "libs/node-services/passport-service/strategies/facebook.js",
-        "hash": "8408752289836791881"
-      },
-      {
-        "file": "nx.json",
-        "hash": "1765564465819899531"
+        "file": ".vscode/extensions.json",
+        "hash": "15542186811534988851"
       },
       {
         "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPassword.js",
         "hash": "13505738735891545279"
       },
       {
-        "file": "libs/react-services/forms-service/hooks/useGetForm.js",
-        "hash": "9055284460160368224"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useInjectedProps.js",
-        "hash": "15908592676049769215"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "15207162754670266744"
-      },
-      {
-        "file": "libs/node-services/passport-service/strategies/google.js",
-        "hash": "6908575858901171523"
-      },
-      {
-        "file": "libs/node-services/package.json",
-        "hash": "17064025336349698972"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelEditPage.js",
-        "hash": "17355818885461912418"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useCreateModel.spec.js",
-        "hash": "1788256818344834261"
-      },
-      {
-        "file": "libs/node-services/crud-service/crud-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/reviews.js",
-        "hash": "3533961882127428994"
-      },
-      {
-        "file": "libs/orbital-api/Notification/index.js",
-        "hash": "2875640677456464585"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Table/Table.styles.js",
-        "hash": "4196751777260612569"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/media.js",
-        "hash": "2815144460272026897"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPassword.styles.js",
-        "hash": "789339495521893012"
-      },
-      {
         "file": "libs/orbital-api/Postgresql/models/reviews.js",
         "hash": "3533961882127428994"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.MarkdownInput.js",
-        "hash": "10402404166116816508"
+        "file": "serverless.yml",
+        "hash": "13912724692687231667"
       },
       {
-        "file": "libs/orbital-api/Postgresql/models/contacts.js",
-        "hash": "13682081192704140189"
+        "file": "libs/react-services/forms-service/forms-service.js",
+        "hash": "4171124241179869236"
       },
       {
-        "file": "libs/orbital-templates/Template.test.js",
-        "hash": "6023584863501812783"
+        "file": "libs/node-services/email-service/email-service.js",
+        "hash": "9322769045216709553"
+      },
+      {
+        "file": "libs/orbital-templates/Material/Wrappers/MainWrapper.js",
+        "hash": "10532371776687860709"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListItems.js",
+        "hash": "12981492493831077839"
       },
       {
         "file": "libs/react-services/google-service/google-service.js",
         "hash": "15044173681212190233"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelAddPage.js",
-        "hash": "15147493183033688874"
+        "file": "libs/orbital-templates/Material/_shared/Table/Table.js",
+        "hash": "16282739468221282893"
       },
       {
-        "file": "libs/orbital-api/Postgresql/models/permissions.js",
-        "hash": "10411043630466955740"
+        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.styles.js",
+        "hash": "15442934952747310137"
       },
       {
-        "file": "libs/orbital-templates/package.json",
-        "hash": "9503038798104964599"
+        "file": "libs/react-services/crud-service/crud-container.spec.js",
+        "hash": "8166836480831541467"
       },
       {
-        "file": "workspace.json",
-        "hash": "7268279352816617354"
+        "file": "libs/orbital-api/Postgresql/models/comments.js",
+        "hash": "8187826893162957663"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/Notifications/Notifications.js",
-        "hash": "21984127748389945"
+        "file": "libs/node-services/lambda-service/handler.js",
+        "hash": "13751669427641265613"
       },
       {
-        "file": "libs/orbital-api/User/on-password-reset.js",
-        "hash": "17399169532382851894"
-      },
-      {
-        "file": "libs/react-services/admin-service/admin-service.js",
-        "hash": "8850783978592947030"
-      },
-      {
-        "file": "libs/node-services/settings-service/settings-service.js",
-        "hash": "5065205939217687508"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/chat-log.js",
-        "hash": "14388649928626647828"
-      },
-      {
-        "file": "libs/react-services/crud-service/features/crudDomainSlice.js",
-        "hash": "15911066366627335802"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/seeds/blogs.js",
-        "hash": "7463870581595443634"
-      },
-      {
-        "file": "libs/react-services/viz-service/viz-service.js",
-        "hash": "9075390803153005964"
-      },
-      {
-        "file": "libs/react-services/service-service/service-service.js",
-        "hash": "2798208586992569568"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.GalleryInput.js",
-        "hash": "2373970025881407313"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/media.js",
-        "hash": "2815144460272026897"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/user.js",
-        "hash": "6526606265722570842"
-      },
-      {
-        "file": "libs/node-services/babel.config.js",
-        "hash": "12442705542530351934"
-      },
-      {
-        "file": "libs/react-services/wikipedia-service/wikipedia-container.js",
-        "hash": "12996769453614020257"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/notifications.js",
-        "hash": "18080643473135574538"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useGetModel.spec.js",
-        "hash": "6539672927697880671"
-      },
-      {
-        "file": "libs/node-services/hello-service/hello-service.js",
-        "hash": "6890846219555717552"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/FloatingAddButton/FloatingAddButton.js",
-        "hash": "4712771284338482538"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useSearchModel.js",
-        "hash": "1802334662635013330"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/EmailConfirmation/EmailConfirmation.styles.js",
-        "hash": "789339495521893012"
-      },
-      {
-        "file": "libs/node-services/passport-service/strategies/local.js",
-        "hash": "1124911613885187293"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelPreview/ModelPreview.js",
-        "hash": "10404966630996001911"
+        "file": "libs/orbital-api/MongoDb/models/index.js",
+        "hash": "8701065344252538354"
       },
       {
         "file": "libs/orbital-api/Postgresql/models/blogs.js",
         "hash": "16886318681817773863"
       },
       {
-        "file": "libs/orbital-api/MongoDb/index.js",
-        "hash": "14741891244264110507"
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.GalleryInput.js",
+        "hash": "2373970025881407313"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.EditableArray.js",
-        "hash": "14262533869950383668"
+        "file": "libs/node-services/lambda-service/package.js",
+        "hash": "15198606614415145019"
       },
       {
-        "file": "libs/orbital-api/MongoDb/seeds/categories.js",
-        "hash": "14681710217893888914"
+        "file": "libs/orbital-templates/Material/_shared/ModelPreview/ModelPreview.js",
+        "hash": "10404966630996001911"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useDeleteModel.js",
+        "hash": "14649020197679679578"
+      },
+      {
+        "file": "libs/node-services/passport-service/passport-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/react-services/service-service/service-service.js",
+        "hash": "2798208586992569568"
+      },
+      {
+        "file": "libs/react-services/admin-service/admin-service.js",
+        "hash": "8850783978592947030"
+      },
+      {
+        "file": "libs/node-services/media-service/media-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPasswordConfirm.js",
+        "hash": "7215413566540312923"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/knowledge.js",
+        "hash": "5938166376144095525"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/media.js",
+        "hash": "2815144460272026897"
+      },
+      {
+        "file": "libs/node-services/viz-service/viz-service.js",
+        "hash": "12966807522289973239"
+      },
+      {
+        "file": "libs/react-services/notification-service/notification-service.js",
+        "hash": "12138327481683082584"
+      },
+      {
+        "file": "libs/orbital-api/Forms/index.js",
+        "hash": "5703008585463470528"
       },
       {
         "file": "cache/file-map.json",
         "hash": "871086769214204483"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.SelectInput.js",
-        "hash": "2810372157978906193"
+        "file": "libs/orbital-templates/Material/_shared/ModelAdd/ModelAdd.js",
+        "hash": "10469593312971239770"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/Forms/VisibleWhenFilter.js",
-        "hash": "12419566636571934517"
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.TextFieldInput.js",
+        "hash": "14510708206520952614"
+      },
+      {
+        "file": "libs/node-services/media-service/media-service.js",
+        "hash": "14720536477695114105"
+      },
+      {
+        "file": "libs/react-services/wikipedia-service/wikipedia-container.js",
+        "hash": "12996769453614020257"
+      },
+      {
+        "file": "cache/parsed-lock-file.json",
+        "hash": "15734989362211013702"
+      },
+      {
+        "file": "libs/orbital-templates/package.json",
+        "hash": "9503038798104964599"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/lambda.js",
+        "hash": "2506102300140162312"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.Validate.js",
+        "hash": "17594303373659687192"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPassword.js",
+        "hash": "15729482737486116540"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/settings.js",
+        "hash": "15323417246848113861"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/contacts.js",
+        "hash": "13682081192704140189"
+      },
+      {
+        "file": "libs/react-services/game-service/game-service.js",
+        "hash": "13547367134076227925"
+      },
+      {
+        "file": "libs/node-services/lambda-service/lambda-service.js",
+        "hash": "2319463699761190070"
+      },
+      {
+        "file": "libs/node-services/auth-service/auth-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/react-services/forms-service/hooks/useInjectedProps.js",
+        "hash": "2737818163137152574"
+      },
+      {
+        "file": "libs/node-services/job-service/job-service.js",
+        "hash": "6235471628370074132"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/seeds/blogs.js",
+        "hash": "7463870581595443634"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/game-log.js",
+        "hash": "11897583830064894089"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/EmailConfirmation/EmailConfirmation.styles.js",
+        "hash": "789339495521893012"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal.js",
+        "hash": "3044203372804649077"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListItem.js",
+        "hash": "7098467004866093770"
+      },
+      {
+        "file": "libs/node-services/crud-service/serverless.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Empty/Empty.styles.js",
+        "hash": "5418986944393640378"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useInjectedProps.js",
+        "hash": "15908592676049769215"
+      },
+      {
+        "file": "libs/orbital-api/Acl/index.js",
+        "hash": "1816261933432364340"
+      },
+      {
+        "file": "libs/node-services/passport-service/strategies/twitter.js",
+        "hash": "15478343520276247297"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/seeds/products.js",
+        "hash": "14250554327673082997"
+      },
+      {
+        "file": "libs/react-services/wikipedia-service/features/wikiDomainSlice.js",
+        "hash": "15705697099486059473"
+      },
+      {
+        "file": "libs/orbital-api/Media/index.js",
+        "hash": "16850229879100984011"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/media.js",
+        "hash": "2815144460272026897"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/seeds/categories.js",
+        "hash": "14681710217893888914"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.EditableArray.js",
+        "hash": "14262533869950383668"
+      },
+      {
+        "file": "libs/react-services/offline-service/offline-service.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/forms.js",
+        "hash": "7538986765419125864"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Disclaimer/Disclaimer.js",
+        "hash": "17646736965677119457"
+      },
+      {
+        "file": "libs/node-services/forms-service/forms-service.js",
+        "hash": "15362398208800401666"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelEdit/ModelEdit.js",
+        "hash": "2869126389697211302"
+      },
+      {
+        "file": "libs/node-services/.babelrc",
+        "hash": "3250086131670327215"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/kernel.js",
+        "hash": "9674213177146699782"
+      },
+      {
+        "file": "libs/react-services/index.js",
+        "hash": "7592322829386038578"
+      },
+      {
+        "file": "libs/react-services/i18n-service/i18n-service.js",
+        "hash": "17685408578774019316"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "15207162754670266744"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.styles.js",
+        "hash": "4944631305331863120"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/seeds/users.js",
+        "hash": "17935250083094532636"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelAddPage.js",
+        "hash": "15147493183033688874"
+      },
+      {
+        "file": "libs/orbital-api/package.json",
+        "hash": "5267691533906238831"
+      },
+      {
+        "file": "libs/node-services/settings-service/settings-service.js",
+        "hash": "5065205939217687508"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/knowledge.js",
+        "hash": "5938166376144095525"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/comments.js",
+        "hash": "8187826893162957663"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useML.js",
+        "hash": "6430311019525673311"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.EditableObjectArray.js",
+        "hash": "2464025754394893880"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useCreateModel.js",
+        "hash": "6722707270279389270"
+      },
+      {
+        "file": "libs/react-services/media-service/media-service.js",
+        "hash": "4673438226831479934"
+      },
+      {
+        "file": "libs/node-services/auth-service/auth-service.js",
+        "hash": "16018284877563208542"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useGetModel.js",
+        "hash": "5157031318125443472"
+      },
+      {
+        "file": "libs/orbital-api/User/index.js",
+        "hash": "8342319979422653140"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useUpdateModel.spec.js",
+        "hash": "7924023136961788460"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/kernel.js",
+        "hash": "9674213177146699782"
+      },
+      {
+        "file": "libs/orbital-api/Settings/index.js",
+        "hash": "10262644159690070744"
       },
       {
         "file": "libs/orbital-templates/Material/_shared/Loading/Loading.js",
         "hash": "1438426402911296115"
       },
       {
-        "file": "libs/orbital-api/MongoDb/models/tags.js",
-        "hash": "17767423565745490881"
+        "file": "libs/orbital-templates/Material/_shared/ClientNotification/ClientNotification.js",
+        "hash": "12057668303802911707"
       },
       {
-        "file": "libs/orbital-api/MongoDb/models/chat-log.js",
-        "hash": "14388649928626647828"
+        "file": "libs/orbital-api/Postgresql/models/user.js",
+        "hash": "6526606265722570842"
       },
       {
-        "file": "libs/orbital-api/MongoDb/models/contacts.js",
-        "hash": "13682081192704140189"
+        "file": "libs/orbital-api/MongoDb/models/settings.js",
+        "hash": "15323417246848113861"
       },
       {
-        "file": "libs/orbital-templates/theme.js",
-        "hash": "2796164838002285554"
+        "file": "libs/react-services/camera-service/camera-service.js",
+        "hash": "13557175659581079240"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPasswordConfirm.js",
-        "hash": "2842291169101088145"
+        "file": "libs/node-services/lambda-service/serverless.js",
+        "hash": "2147329559637884378"
       },
       {
-        "file": ".gitmodules",
-        "hash": "10865203522860523402"
+        "file": "libs/orbital-templates/Material/Wrappers/Routes.js",
+        "hash": "17944695055156785878"
       },
       {
-        "file": "libs/react-services/crud-service/crud-service.js",
-        "hash": "13445807915742527291"
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.CheckboxInput.js",
+        "hash": "12534717683434750527"
       },
       {
-        "file": ".babelrc",
-        "hash": "5330787629573791034"
+        "file": "libs/node-services/i18n-service/locales/en/translation.json",
+        "hash": "15035819451704992183"
       },
       {
-        "file": "libs/react-services/crud-service/crud-container.js",
-        "hash": "7212099375280107813"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.js",
-        "hash": "991793821715876603"
+        "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPassword.styles.js",
+        "hash": "789339495521893012"
       },
       {
         "file": "libs/react-services/wikipedia-service/hooks/useFetchWikipediaPageByTopic.js",
@@ -682,356 +450,588 @@
         "hash": "14020515536501463906"
       },
       {
-        "file": "libs/react-services/package.json",
-        "hash": "1486950921242947398"
+        "file": "libs/node-services/crud-service/crud-service.js",
+        "hash": "8170980886722703088"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.CodeInput.js",
-        "hash": "951721913578772424"
+        "file": "libs/node-services/crud-service/crud-service.test.js",
+        "hash": "3244421341483603138"
       },
       {
-        "file": "libs/orbital-api/MongoDb/seeds/products.js",
-        "hash": "14250554327673082997"
+        "file": "libs/orbital-api/Postgresql/seeds/events.js",
+        "hash": "13757619115575244804"
+      },
+      {
+        "file": "libs/react-services/wikipedia-service/wikipedia-service.js",
+        "hash": "18325487634601797492"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Notifications/Notifications.js",
+        "hash": "21984127748389945"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelViewPage.js",
+        "hash": "9376766259385353538"
       },
       {
         "file": "libs/node-services/passport-service/passport-service.js",
         "hash": "11151369713232307461"
       },
       {
-        "file": "libs/node-services/lambda-service/lambda-service.js",
-        "hash": "2319463699761190070"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useCreateModel.js",
-        "hash": "6722707270279389270"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/seed.js",
-        "hash": "17130949419084158997"
-      },
-      {
-        "file": "libs/node-services/utils/dbutils.js",
-        "hash": "7077924719197107404"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPassword.js",
-        "hash": "15729482737486116540"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useInjectedProps.spec.js",
-        "hash": "16509345431709911829"
-      },
-      {
-        "file": "libs/node-services/index.js",
-        "hash": "12652745485490745356"
-      },
-      {
-        "file": "libs/react-services/forms-service/hooks/useInjectedProps.js",
-        "hash": "2737818163137152574"
-      },
-      {
-        "file": "libs/node-services/acl-service/acl-service.js",
-        "hash": "1135285515934867823"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.js",
-        "hash": "4832437992452110398"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/products.js",
-        "hash": "14643054031440005021"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListViewOptions.js",
-        "hash": "9914995901129067247"
-      },
-      {
-        "file": "libs/node-services/jwt-service/jwt-service.js",
-        "hash": "7902320474444978941"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/index.js",
-        "hash": "13637346876074425777"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.CheckboxInput.js",
-        "hash": "12534717683434750527"
-      },
-      {
-        "file": "libs/node-services/viz-service/viz-service.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/react-services/utils/test-utils.js",
-        "hash": "17969923951899772294"
-      },
-      {
-        "file": "libs/orbital-api/Acl/index.js",
-        "hash": "1816261933432364340"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/lambda.js",
-        "hash": "2506102300140162312"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Icon/Icon.js",
-        "hash": "12994419798433886485"
-      },
-      {
-        "file": "libs/orbital-api/Settings/index.js",
-        "hash": "10262644159690070744"
-      },
-      {
-        "file": "libs/node-services/viz-service/viz-service.js",
-        "hash": "12966807522289973239"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/seeds/reviews.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/User/index.js",
-        "hash": "8342319979422653140"
-      },
-      {
-        "file": "libs/react-services/wikipedia-service/hooks/useInjectedProps.js",
-        "hash": "4426946098445136047"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.Validate.js",
-        "hash": "17594303373659687192"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Register/Register.js",
-        "hash": "13262093599840371434"
-      },
-      {
-        "file": "libs/react-services/unsplash-service/unsplash-service.js",
-        "hash": "7849071031593011359"
+        "file": "libs/react-services/crud-service/features/crudDomainSlice.js",
+        "hash": "15911066366627335802"
       },
       {
         "file": "libs/node-services/gpt-service/gpt-service.js",
         "hash": "4485032429151951153"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/Empty/Empty.styles.js",
-        "hash": "5418986944393640378"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.test.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/products.js",
-        "hash": "14643054031440005021"
-      },
-      {
-        "file": "libs/node-services/.gitignore",
-        "hash": "10323923445659864269"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.styles.js",
-        "hash": "15442934952747310137"
-      },
-      {
-        "file": "libs/orbital-api/Kernel/index.js",
-        "hash": "15519382542834304708"
-      },
-      {
-        "file": "libs/orbital-api/Auth/index.js",
-        "hash": "9321078452067082134"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/categories.js",
-        "hash": "9399293311321661731"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/user.js",
-        "hash": "6526606265722570842"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Empty/Empty.js",
-        "hash": "16896590872244757233"
-      },
-      {
-        "file": "libs/react-services/auth-service/auth-service.js",
-        "hash": "13925238338120783019"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/EmailConfirmation/EmailConfirmation.js",
-        "hash": "14601620798413075398"
-      },
-      {
-        "file": "libs/orbital-api/package.json",
-        "hash": "5267691533906238831"
-      },
-      {
-        "file": "libs/orbital-api/Media/index.js",
-        "hash": "16850229879100984011"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/seeds/categories.js",
-        "hash": "14681710217893888914"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/notifications.js",
-        "hash": "18080643473135574538"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/blogs.js",
-        "hash": "16886318681817773863"
-      },
-      {
-        "file": "libs/node-services/media-service/media-service.js",
-        "hash": "14720536477695114105"
-      },
-      {
-        "file": "libs/node-services/job-service/job-service.js",
-        "hash": "6235471628370074132"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/knowledge.js",
-        "hash": "5938166376144095525"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/categories.js",
-        "hash": "9399293311321661731"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/comments.js",
-        "hash": "8187826893162957663"
-      },
-      {
-        "file": "libs/react-services/media-service/media-service.js",
-        "hash": "4673438226831479934"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/tags.js",
-        "hash": "17767423565745490881"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ResetPassword/ResetPasswordConfirm.js",
-        "hash": "7215413566540312923"
-      },
-      {
-        "file": "libs/node-services/i18n-service/locales/ar/ar.json",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/react-services/crud-service/hooks/useDeleteModel.js",
-        "hash": "14649020197679679578"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/settings.js",
-        "hash": "15323417246848113861"
-      },
-      {
-        "file": "libs/orbital-templates/Material/Wrappers/MainWrapper.js",
-        "hash": "10532371776687860709"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/events.js",
-        "hash": "18165016036228201167"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Charts/Charts.js",
-        "hash": "15408070801452728716"
-      },
-      {
-        "file": "libs/node-services/forms-service/forms-service.js",
-        "hash": "15362398208800401666"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/forms.js",
-        "hash": "7538986765419125864"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal.js",
-        "hash": "3044203372804649077"
-      },
-      {
-        "file": "libs/react-services/crud-service/crud-container.spec.js",
-        "hash": "8166836480831541467"
-      },
-      {
-        "file": "libs/node-services/lambda-service/serverless.js",
-        "hash": "2147329559637884378"
-      },
-      {
-        "file": "libs/react-services/offline-service/offline-service.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/orbital-api/Postgresql/models/index.js",
-        "hash": "8701065344252538354"
-      },
-      {
-        "file": "libs/node-services/crud-service/crud-service.js",
-        "hash": "8170980886722703088"
-      },
-      {
-        "file": "libs/node-services/event-service/event-service.js",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/node-services/lambda-service/handler.js",
-        "hash": "13751669427641265613"
-      },
-      {
-        "file": "libs/react-services/sql-service/sql-service.js",
-        "hash": "12453641680911122796"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.styles.js",
-        "hash": "4944631305331863120"
-      },
-      {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.EditableObjectArray.js",
-        "hash": "2464025754394893880"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/orders.js",
-        "hash": "9159532457258156023"
-      },
-      {
-        "file": "libs/orbital-api/MongoDb/models/auth.js",
+        "file": "libs/orbital-api/Postgresql/models/auth.js",
         "hash": "9851823222614931491"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/Disclaimer/Disclaimer.js",
-        "hash": "17646736965677119457"
+        "file": "libs/react-services/crud-service/hooks/useGetModel.spec.js",
+        "hash": "6539672927697880671"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListCardItem.js",
-        "hash": "2293526647592361260"
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.CodeInput.js",
+        "hash": "951721913578772424"
       },
       {
-        "file": "libs/orbital-api/Jwt/index.js",
-        "hash": "9756531292847274301"
+        "file": "libs/orbital-api/.gitignore",
+        "hash": "10323923445659864269"
       },
       {
-        "file": "libs/orbital-api/Postgresql/models/game-log.js",
-        "hash": "11897583830064894089"
+        "file": "libs/react-services/forms-service/forms-container.js",
+        "hash": "3739934221421907941"
       },
       {
-        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.ImageFileInput.js",
-        "hash": "17228060518348114244"
+        "file": "libs/react-services/socket-service/socket-service.js",
+        "hash": "6336346063265047374"
       },
       {
-        "file": "libs/orbital-api/MongoDb/seeds/blogs.js",
-        "hash": "7463870581595443634"
+        "file": "libs/orbital-api/Postgresql/seeds/users.js",
+        "hash": "17935250083094532636"
       },
       {
-        "file": "libs/node-services/notification-service/notification-service.js",
-        "hash": "10992056326380276834"
+        "file": "libs/react-services/viz-service/viz-service.js",
+        "hash": "9075390803153005964"
       },
       {
         "file": "libs/orbital-api/MongoDb/seeds/events.js",
         "hash": "13757619115575244804"
       },
       {
-        "file": ".vscode/extensions.json",
-        "hash": "15542186811534988851"
+        "file": "libs/node-services/.gitignore",
+        "hash": "10323923445659864269"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/index.js",
+        "hash": "14741891244264110507"
+      },
+      {
+        "file": "libs/react-services/utils/test-utils.js",
+        "hash": "17969923951899772294"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Loading/Loading.styles.js",
+        "hash": "5418986944393640378"
+      },
+      {
+        "file": "nx.json",
+        "hash": "1765564465819899531"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/carts.js",
+        "hash": "1118536949249056244"
+      },
+      {
+        "file": "libs/node-services/utils/utils.js",
+        "hash": "10036369121771333566"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/user.js",
+        "hash": "6526606265722570842"
+      },
+      {
+        "file": "libs/orbital-templates/Material/Wrappers/LoginWrapper.js",
+        "hash": "12747189606370866784"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/FloatingAddButton/FloatingAddButton.js",
+        "hash": "4712771284338482538"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/lambda.js",
+        "hash": "2506102300140162312"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/index.js",
+        "hash": "12030951657505627562"
+      },
+      {
+        "file": "libs/react-services/crud-service/crud-service.js",
+        "hash": "13445807915742527291"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelFilterList.js",
+        "hash": "7873657803363564707"
+      },
+      {
+        "file": "libs/node-services/acl-service/acl-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/passport-service/strategies/google.js",
+        "hash": "6908575858901171523"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelEdit/ModelEdit.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/i18n-service/locales/dev/translation.json",
+        "hash": "15035819451704992183"
+      },
+      {
+        "file": "libs/node-services/lambda-service/lambda-service-script.js",
+        "hash": "8704471557375117390"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/chat-log.js",
+        "hash": "14388649928626647828"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/products.js",
+        "hash": "14643054031440005021"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/seeds/reviews.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/email-service/email-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelList.js",
+        "hash": "991793821715876603"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/index.js",
+        "hash": "8701065344252538354"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/categories.js",
+        "hash": "9399293311321661731"
+      },
+      {
+        "file": "libs/node-services/package.json",
+        "hash": "17064025336349698972"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/seed.js",
+        "hash": "17130949419084158997"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/events.js",
+        "hash": "18165016036228201167"
+      },
+      {
+        "file": "libs/react-services/kb-service/kb-service.js",
+        "hash": "5311431521208538700"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Charts/Charts.js",
+        "hash": "15408070801452728716"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useSearchModel.js",
+        "hash": "1802334662635013330"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useDeleteModel.spec.js",
+        "hash": "4814084653635650084"
+      },
+      {
+        "file": "libs/orbital-api/Jwt/index.js",
+        "hash": "9756531292847274301"
+      },
+      {
+        "file": "libs/node-services/i18n-service/locales/de/translation.json",
+        "hash": "17583592877941659617"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Forms.js",
+        "hash": "4832437992452110398"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/categories.js",
+        "hash": "9399293311321661731"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/seed.js",
+        "hash": "17130949419084158997"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListCardItem.js",
+        "hash": "2293526647592361260"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/carts.js",
+        "hash": "1118536949249056244"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.ImageFileInput.js",
+        "hash": "17228060518348114244"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.MarkdownInput.js",
+        "hash": "10402404166116816508"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/notifications.js",
+        "hash": "18080643473135574538"
+      },
+      {
+        "file": "libs/react-services/forms-service/features/formDomainSlice.js",
+        "hash": "17790192368168937731"
+      },
+      {
+        "file": "libs/orbital-templates/Template.js",
+        "hash": "8660996925285536244"
+      },
+      {
+        "file": "libs/node-services/notification-service/notification-service.js",
+        "hash": "10992056326380276834"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/chat-log.js",
+        "hash": "14388649928626647828"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/contacts.js",
+        "hash": "13682081192704140189"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Login/Login.js",
+        "hash": "17435085085291997144"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/forms.js",
+        "hash": "7538986765419125864"
+      },
+      {
+        "file": "cache/lockfile.hash",
+        "hash": "3270212667847010523"
+      },
+      {
+        "file": "libs/react-services/auth-service/auth-service.js",
+        "hash": "13925238338120783019"
+      },
+      {
+        "file": "libs/node-services/hello-service/hello-service.js",
+        "hash": "6890846219555717552"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/ride-log.js",
+        "hash": "10495883043307241222"
+      },
+      {
+        "file": "libs/orbital-api/Localization/index.js",
+        "hash": "13004693098284271393"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/seeds/blogs.js",
+        "hash": "7463870581595443634"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/seeds/settings.js",
+        "hash": "17760824035208840578"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Autocomplete/Autocomplete.styles.js",
+        "hash": "3670833654880010205"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/reviews.js",
+        "hash": "3533961882127428994"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Table/Table.styles.js",
+        "hash": "4196751777260612569"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Register/Register.js",
+        "hash": "13262093599840371434"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/permissions.js",
+        "hash": "10411043630466955740"
+      },
+      {
+        "file": "cache/project-graph.json",
+        "hash": "13972182092320512543"
+      },
+      {
+        "file": "libs/node-services/socket-service/socket-service.js",
+        "hash": "651967788379227905"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelListViewOptions.js",
+        "hash": "9914995901129067247"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useInjectedProps.spec.js",
+        "hash": "16509345431709911829"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/game-log.js",
+        "hash": "11897583830064894089"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/notifications.js",
+        "hash": "18080643473135574538"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/permissions.js",
+        "hash": "10411043630466955740"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/seeds/reviews.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/orders.js",
+        "hash": "9159532457258156023"
+      },
+      {
+        "file": "libs/node-services/utils/dbutils.js",
+        "hash": "7077924719197107404"
+      },
+      {
+        "file": "libs/node-services/babel.config.js",
+        "hash": "12442705542530351934"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/auth.js",
+        "hash": "9851823222614931491"
+      },
+      {
+        "file": "libs/orbital-api/README.md",
+        "hash": "15415743253364021931"
+      },
+      {
+        "file": "libs/orbital-api/Notification/index.js",
+        "hash": "2875640677456464585"
+      },
+      {
+        "file": "libs/orbital-api/Kernel/index.js",
+        "hash": "15519382542834304708"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPassword.styles.js",
+        "hash": "789339495521893012"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useUpdateModel.js",
+        "hash": "9693878541998769329"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Autocomplete/Autocomplete.js",
+        "hash": "8620151957874165342"
+      },
+      {
+        "file": "libs/node-services/event-service/event-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "2318573979732360312"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/orders.js",
+        "hash": "9159532457258156023"
+      },
+      {
+        "file": "libs/node-services/jwt-service/jwt-service.js",
+        "hash": "7902320474444978941"
+      },
+      {
+        "file": "libs/react-services/sql-service/sql-service.js",
+        "hash": "12453641680911122796"
+      },
+      {
+        "file": "libs/react-services/forms-service/hooks/useGetForm.js",
+        "hash": "9055284460160368224"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/models/tags.js",
+        "hash": "17767423565745490881"
+      },
+      {
+        "file": "libs/orbital-api/User/on-password-reset.js",
+        "hash": "17399169532382851894"
+      },
+      {
+        "file": "libs/react-services/package.json",
+        "hash": "1486950921242947398"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ForgotPassword/ForgotPasswordConfirm.js",
+        "hash": "2842291169101088145"
+      },
+      {
+        "file": "README.md",
+        "hash": "1104206848785677663"
+      },
+      {
+        "file": "libs/node-services/viz-service/viz-service.test.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/passport-service/strategies/local.js",
+        "hash": "1124911613885187293"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/products.js",
+        "hash": "14643054031440005021"
+      },
+      {
+        "file": ".babelrc",
+        "hash": "5330787629573791034"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/EmailConfirmation/EmailConfirmation.js",
+        "hash": "14601620798413075398"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/Inputs/Forms.SelectInput.js",
+        "hash": "2810372157978906193"
+      },
+      {
+        "file": "libs/node-services/event-service/event-service.js",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/node-services/i18n-service/i18n-service.js",
+        "hash": "10852438105587057641"
+      },
+      {
+        "file": "libs/node-services/README.md",
+        "hash": "4594159951041989581"
+      },
+      {
+        "file": "libs/react-services/crud-service/crud-container.js",
+        "hash": "7212099375280107813"
+      },
+      {
+        "file": "libs/orbital-api/MongoDb/seeds/categories.js",
+        "hash": "14681710217893888914"
+      },
+      {
+        "file": "libs/node-services/acl-service/acl-service.js",
+        "hash": "1135285515934867823"
+      },
+      {
+        "file": "libs/react-services/settings-service/settings-service.js",
+        "hash": "6526998583145965150"
+      },
+      {
+        "file": "workspace.json",
+        "hash": "7268279352816617354"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/ModelList/ModelEditPage.js",
+        "hash": "17355818885461912418"
+      },
+      {
+        "file": "libs/orbital-api/Auth/index.js",
+        "hash": "9321078452067082134"
+      },
+      {
+        "file": "libs/node-services/passport-service/strategies/facebook.js",
+        "hash": "8408752289836791881"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/seeds/settings.js",
+        "hash": "17760824035208840578"
+      },
+      {
+        "file": "libs/react-services/unsplash-service/unsplash-service.js",
+        "hash": "7849071031593011359"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/index.js",
+        "hash": "13637346876074425777"
+      },
+      {
+        "file": "libs/react-services/stripe-service/stripe-service.js",
+        "hash": "15417287999950300599"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Forms/VisibleWhenFilter.js",
+        "hash": "12419566636571934517"
+      },
+      {
+        "file": "libs/react-services/wikipedia-service/hooks/useInjectedProps.js",
+        "hash": "4426946098445136047"
+      },
+      {
+        "file": "libs/react-services/crud-service/hooks/useCreateModel.spec.js",
+        "hash": "1788256818344834261"
+      },
+      {
+        "file": "libs/orbital-api/index.js",
+        "hash": "11707227902994592709"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Icon/Icon.js",
+        "hash": "12994419798433886485"
+      },
+      {
+        "file": "cache/nx_files.nxt",
+        "hash": "8295163021701433402"
+      },
+      {
+        "file": "libs/orbital-templates/Template.test.js",
+        "hash": "6023584863501812783"
+      },
+      {
+        "file": "libs/node-services/index.js",
+        "hash": "12652745485490745356"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/ride-log.js",
+        "hash": "10495883043307241222"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Empty/Empty.js",
+        "hash": "16896590872244757233"
+      },
+      {
+        "file": "libs/node-services/i18n-service/locales/ar/ar.json",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/orbital-templates/Material/_shared/Pagination/Pagination.js",
+        "hash": "17166988893910117400"
+      },
+      {
+        "file": ".gitmodules",
+        "hash": "10865203522860523402"
+      },
+      {
+        "file": "libs/orbital-templates/theme.js",
+        "hash": "2796164838002285554"
+      },
+      {
+        "file": "libs/orbital-api/Postgresql/models/events.js",
+        "hash": "18165016036228201167"
+      },
+      {
+        "file": "package.json",
+        "hash": "10698324662924608223"
       }
     ],
     "projectFileMap": {
@@ -3247,6 +3247,34 @@
       ],
       "server": [
         {
+          "file": "apps/server/.babelrc",
+          "hash": "3250086131670327215"
+        },
+        {
+          "file": "apps/server/babel.config.js",
+          "hash": "12177898944516416495"
+        },
+        {
+          "file": "apps/server/handler.js",
+          "hash": "14481818349350436656"
+        },
+        {
+          "file": "apps/server/index.js",
+          "hash": "11872918847711195659"
+        },
+        {
+          "file": "apps/server/nodemon-dev.json",
+          "hash": "15203120882963819572"
+        },
+        {
+          "file": "apps/server/nodemon-qa.json",
+          "hash": "12723693002635887930"
+        },
+        {
+          "file": "apps/server/nodemon.json",
+          "hash": "15203120882963819572"
+        },
+        {
           "file": "apps/server/project.json",
           "hash": "11251614715607328428"
         },
@@ -4761,6 +4789,27 @@
         {
           "file": "apps/server/src/yarn.lock",
           "hash": "5721283807011278473"
+        },
+        {
+          "file": "apps/server/server.js",
+          "hash": "7945214947190732084"
+        },
+        {
+          "file": "apps/server/yarn.lock",
+          "hash": "5721283807011278473"
+        },
+        {
+          "file": "apps/server/package.json",
+          "hash": "11528983497123370266",
+          "deps": [
+            "npm:dotenv",
+            "npm:axios",
+            "npm:regenerator-runtime"
+          ]
+        },
+        {
+          "file": "apps/server/serverless.yml",
+          "hash": "1463052394402799257"
         }
       ]
     }
