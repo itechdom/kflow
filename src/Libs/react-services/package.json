@@ -1,0 +1,19 @@
+{
+  "name": "react-services",
+  "version": "10.0.0",
+  "description": "orbital plugins to the backend equivalent (node-services).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markab-io/react-services.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markab-io/react-services/issues"
+  },
+  "homepage": "https://github.com/markab-io/react-services#readme"
+}

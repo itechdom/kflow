@@ -1,3 +1,9 @@
 [submodule "app/react-services"]
 	path = app/react-services
 	url = https://github.com/markab-io/react-services
+[submodule "server/Libs/node-services"]
+	path = server/Libs/node-services
+	url = https://github.com/markab-io/node-services
+[submodule "src/Libs/orbital"]
+	path = src/Libs/orbital
+	url = https://github.com/markab-io/orbital
