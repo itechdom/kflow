@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx run ui:serve:ui",
-    "startTime": "2024-05-17T08:14:55.514Z",
-    "endTime": "2024-05-17T08:14:56.368Z",
+    "startTime": "2024-05-17T08:20:44.376Z",
+    "endTime": "2024-05-17T08:20:45.365Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "ui:serve:ui",
       "target": "serve:ui",
       "projectName": "ui",
-      "hash": "8792116154969003761",
-      "startTime": "2024-05-17T08:14:55.520Z",
-      "endTime": "2024-05-17T08:14:56.367Z",
+      "hash": "1130545292250593968",
+      "startTime": "2024-05-17T08:20:44.383Z",
+      "endTime": "2024-05-17T08:20:45.364Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1

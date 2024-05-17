@@ -1,0 +1,37 @@
+[2K[1G[2m$ nx serve ui[22m
+
+[2m> [22m[2mnx run[22m ui:serve
+
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mCannot find module 'nx/src/config/workspaces'[39m
+
+Require stack:
+- /Users/oalghanmi/kflow/apps/ui/node_modules/@nrwl/devkit/index.js
+- /Users/oalghanmi/kflow/apps/ui/node_modules/@nrwl/js/src/utils/typescript/load-ts-transformers.js
+- /Users/oalghanmi/kflow/apps/ui/node_modules/@nrwl/js/src/index.js
+- /Users/oalghanmi/kflow/apps/ui/node_modules/@nrwl/webpack/src/utils/config.js
+- /Users/oalghanmi/kflow/apps/ui/node_modules/@nrwl/webpack/index.js
+- /Users/oalghanmi/kflow/apps/ui/node_modules/@nrwl/web/src/executors/dev-server/dev-server.impl.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/config/schema-utils.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/command-line/run/executor-utils.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/devkit-internals.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/utils/assert-workspace-validity.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/project-graph/build-project-graph.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/project-graph/project-graph.js
+- /Users/oalghanmi/kflow/node_modules/nx/src/command-line/run/run.js
+- /Users/oalghanmi/kflow/node_modules/nx/bin/run-executor.js
+Pass --verbose to see the stacktrace.
+
+
+[2m[31m———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————[39m[22m
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mRunning target serve for project ui failed[39m
+
+[2mFailed tasks:[22m
+
+[2m-[22m ui:serve
+
+[2mHint: run the command with[22m --verbose [2mfor more details.[22m
+
+[2K[1G[31merror[39m Command failed with exit code 1.
+[2K[1G[34minfo[39m Visit [1mhttps://yarnpkg.com/en/docs/cli/run[22m for documentation about this command.
