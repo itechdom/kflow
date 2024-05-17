@@ -1,43 +1,69 @@
 {
   "nodes": {
-    ".": {
-      "name": ".",
-      "type": "lib",
+    "server": {
+      "name": "server",
+      "type": "app",
       "data": {
-        "root": ".",
-        "name": ".",
-        "targets": {},
-        "version": 2,
-        "projects": {
-          "server": {
-            "root": "apps/server",
-            "sourceRoot": "apps/server/src",
-            "projectType": "application",
-            "targets": {
-              "build": {
-                "executor": "@nrwl/node:build",
-                "options": {
-                  "outputPath": "dist/apps/server",
-                  "main": "apps/server/src/main.ts",
-                  "tsConfig": "apps/server/tsconfig.app.json"
-                }
-              }
-            }
+        "root": "apps/server",
+        "name": "server",
+        "sourceRoot": "apps/server/src",
+        "projectType": "application",
+        "targets": {
+          "build": {
+            "executor": "@nrwl/node:build",
+            "options": {
+              "outputPath": "dist/apps/server",
+              "main": "apps/server/src/index.js",
+              "tsConfig": "apps/server/tsconfig.app.json"
+            },
+            "configurations": {}
           },
-          "ui": {
-            "root": "apps/ui",
-            "sourceRoot": "apps/ui/src",
-            "projectType": "application",
-            "targets": {
-              "build": {
-                "executor": "@nrwl/web:build",
-                "options": {
-                  "outputPath": "dist/apps/ui",
-                  "main": "apps/ui/src/main.tsx",
-                  "tsConfig": "apps/ui/tsconfig.app.json"
-                }
-              }
-            }
+          "serve": {
+            "executor": "@nrwl/node:execute",
+            "options": {
+              "buildTarget": "server:build"
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": [],
+        "tags": []
+      }
+    },
+    "ui": {
+      "name": "ui",
+      "type": "app",
+      "data": {
+        "root": "apps/ui",
+        "name": "ui",
+        "sourceRoot": "apps/ui/src",
+        "projectType": "application",
+        "targets": {
+          "build": {
+            "executor": "@nrwl/web:build",
+            "options": {
+              "outputPath": "dist/apps/ui",
+              "index": "apps/ui/src/index.html",
+              "main": "apps/ui/src/index.js",
+              "polyfills": "apps/ui/src/polyfills.ts",
+              "tsConfig": "apps/ui/tsconfig.app.json",
+              "assets": [
+                "apps/ui/src/favicon.ico",
+                "apps/ui/src/assets"
+              ],
+              "styles": [
+                "apps/ui/src/styles.css"
+              ],
+              "scripts": []
+            },
+            "configurations": {}
+          },
+          "serve": {
+            "executor": "@nrwl/web:dev-server",
+            "options": {
+              "buildTarget": "ui:build"
+            },
+            "configurations": {}
           }
         },
         "implicitDependencies": [],
@@ -3279,18 +3305,8 @@
     }
   },
   "dependencies": {
-    ".": [
-      {
-        "source": ".",
-        "target": "npm:@nx/js",
-        "type": "static"
-      },
-      {
-        "source": ".",
-        "target": "npm:nx",
-        "type": "static"
-      }
-    ],
+    "server": [],
+    "ui": [],
     "npm:@ampproject/remapping": [
       {
         "source": "npm:@ampproject/remapping",

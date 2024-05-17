@@ -1,0 +1,26 @@
+{
+  "root": "apps/ui",
+  "sourceRoot": "apps/ui/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:build",
+      "options": {
+        "outputPath": "dist/apps/ui",
+        "index": "apps/ui/src/index.html",
+        "main": "apps/ui/src/index.js",
+        "polyfills": "apps/ui/src/polyfills.ts",
+        "tsConfig": "apps/ui/tsconfig.app.json",
+        "assets": ["apps/ui/src/favicon.ico", "apps/ui/src/assets"],
+        "styles": ["apps/ui/src/styles.css"],
+        "scripts": []
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "ui:build"
+      }
+    }
+  }
+}
