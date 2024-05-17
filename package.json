@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "@nrwl/node": "^19.0.4",
-    "@nrwl/web": "^19.0.4"
+    "@nrwl/react": "^19.0.4"
   },
   "devDependencies": {
     "@nx/js": "19.0.4",

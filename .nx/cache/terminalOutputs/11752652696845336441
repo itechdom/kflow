@@ -1,0 +1,9 @@
+[2K[1G[2m$ nx serve ui[22m
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mUnable to resolve @nrwl/web:dev-server.[39m
+
+Cannot find executor 'dev-server' in /Users/oalghanmi/kflow/node_modules/@nrwl/web/executors.json.
+Pass --verbose to see the stacktrace.
+
+[2K[1G[31merror[39m Command failed with exit code 1.
+[2K[1G[34minfo[39m Visit [1mhttps://yarnpkg.com/en/docs/cli/run[22m for documentation about this command.

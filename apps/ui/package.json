@@ -66,7 +66,7 @@
   },
   "devDependencies": {
     "@mui/icons-material": "^5.15.18",
-    "@nrwl/web": "15.4.5",
+    "@nrwl/react": "^15.0.0",
     "@nx/js": "19.0.4",
     "normalize.css": "^8.0.1",
     "nx": "19.0.4",

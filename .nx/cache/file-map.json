@@ -3,7 +3,7 @@
   "nxVersion": "19.0.4",
   "deps": {
     "@nrwl/node": "^19.0.4",
-    "@nrwl/web": "^19.0.4",
+    "@nrwl/react": "^19.0.4",
     "@nx/js": "19.0.4",
     "nx": "19.0.4",
     "serverless": "^3.38.0",
@@ -1097,7 +1097,7 @@
       },
       {
         "file": "package.json",
-        "hash": "16037380700993264436"
+        "hash": "14456386568015950516"
       },
       {
         "file": "serverless.yml",
@@ -1109,7 +1109,7 @@
       },
       {
         "file": "yarn.lock",
-        "hash": "10484323076458269537"
+        "hash": "3824002566616486642"
       }
     ],
     "projectFileMap": {
@@ -1120,7 +1120,7 @@
         },
         {
           "file": "apps/ui/package.json",
-          "hash": "4975776102858664905",
+          "hash": "17846783824702846975",
           "deps": [
             "npm:uuid",
             "npm:@nx/js",
@@ -3332,7 +3332,7 @@
         },
         {
           "file": "apps/ui/yarn.lock",
-          "hash": "6863227914732314972"
+          "hash": "15524312531965687137"
         }
       ],
       "server": [
