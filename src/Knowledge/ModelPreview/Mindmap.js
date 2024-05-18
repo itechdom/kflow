@@ -64,11 +64,11 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
                 onClick={handleNodeClick}
                 onChatRequest={(nodeDatum) => {
                   if (nodeDatum.title) {
-                    const path = moveToRoot(nodeDatum.id, mindmapByKeys);
+                    const {path, track} = moveToRoot(nodeDatum.id, mindmapByKeys);
                     knowledgeChat(
                       knowledge,
                       path,
-                      getPrompt(path, nodeDatum.title),
+                      getPrompt(path, nodeDatum.title, track),
                       (response) => {
                         try {
                           const cleanedResponse = cleanResponse(response, path);

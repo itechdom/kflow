@@ -54,7 +54,7 @@ export function moveToRoot(nodeId, nodes) {
     console.error("Invalid nodeId or nodes structure:", nodeId, nodes);
   }
 
-  return path;
+  return {path, track};
 }
 
 export const formatData = (mindmapByKeys) => {
@@ -67,15 +67,18 @@ export const formatData = (mindmapByKeys) => {
 
 export const getPrompt = (
   path,
-  currentNodeKey
-) => `complete this object with the maximum amount of knowledge.
+  currentNodeKey,
+  track
+) => {
+  //flatten the object path to a string
+  const p = track.join(".");
+  return `complete this object with the maximum amount of knowledge.
             only return output in json. 
             don't repeat keyse except ${currentNodeKey}.
-            don't include \`\`\`json in your response. omit ${JSON.stringify(
-              path
-            )} in your response and only include new additions.
+            don't include \`\`\`json in your response. omit ${p} in your response and only include new additions.
             here is my input:
-            ${JSON.stringify(path)}`;
+            ${p}`
+}
 
 
 export const cleanResponse = (response, path) => {
