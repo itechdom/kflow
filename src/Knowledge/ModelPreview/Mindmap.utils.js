@@ -66,8 +66,7 @@ export const formatData = (mindmapByKeys) => {
 };
 
 export const getPrompt = (
-  currentNodeKey,
-  root
+  currentNodeKey
 ) => `complete this object with the maximum amount of knowledge.
             only return output in json. 
             don't repeat keys 

@@ -70,8 +70,6 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
                     );
                     let removedSecondTimeDuplicateKeys = track.filter((key,index) => {
                       const firstIndexOfKey = track.indexOf(key);
-                      //first index of key
-                      const lastIndexOfKey = track.lastIndexOf(key);
                       return firstIndexOfKey === index;
                     });
                     console.log(removedSecondTimeDuplicateKeys);
