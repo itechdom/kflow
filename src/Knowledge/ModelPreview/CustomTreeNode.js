@@ -1,13 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import {
-  Card, CardContent, CardActions, CardMedia,
+  Card, CardContent, CardActions,
   Dialog, DialogContent, DialogContentText, DialogActions,
   Button, IconButton, Tooltip
 } from "@material-ui/core";
 import { Icon } from "../../Libs/orbital-templates/Material/_shared/Icon/Icon";
-
-// Removed unused imports
-// import { truncateText, isLargeText, isHttpLink, MIN_TEXT_LENGTH, MAX_TEXT_LENGTH } from "./CustomTreeNode.utils";
 
 const CustomTreeNode = ({
   nodeDatum, toggleNode, onClick,
@@ -20,27 +17,9 @@ const CustomTreeNode = ({
     toggleNode();
   };
 
-  //Removed unnecessary dialog open 
-  // const handleOpenDialog = () => {
-  //   setOpenDialog(true);
-  // };
-
   const handleCloseDialog = () => {
     setOpenDialog(false);
   };
-
-  // Removed unused state and ref
-  // const [pWidth, setPWidth] = useState(0);
-  // const [pHeight, setPHeight] = useState(0);
-  // const pRef = useRef(null);
-
-  // Removed unused useEffect
-  // useEffect(() => {
-  //   if (pRef.current) {
-  //     setPWidth(pRef.current.getBoundingClientRect().width);
-  //     setPHeight(pRef.current.getBoundingClientRect().height);
-  //   }
-  // }, [nodeDatum, pRef]);
 
   return (
     <>
@@ -86,9 +65,7 @@ const CustomTreeNode = ({
           </Card>
         </foreignObject>
       </g>
-
-     {/*Removed dialog as it is not required anymore */} 
-      {/* <Dialog
+      <Dialog
         style={{ zIndex: 999999999999 }}
         open={openDialog}
         onClose={handleCloseDialog}
@@ -101,7 +78,7 @@ const CustomTreeNode = ({
             Close
           </Button>
         </DialogActions>
-      </Dialog> */}
+      </Dialog>
     </>
   );
 };
