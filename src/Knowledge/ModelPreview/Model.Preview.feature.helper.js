@@ -45,8 +45,8 @@ export const convertObjectToMindmap = (obj, rootId, mindmapByKeys) => {
     );
   });
 
-  const rootNodes = Object.values(mindmapByKeys).filter(node => !node.parent);
-  rootNodes.forEach(node => {
+  const rootNodes = Object.values(mindmapByKeys).filter((node) => !node.parent);
+  rootNodes.forEach((node) => {
     mindmapByKeys = collapseAllNodes(mindmapByKeys, node._id);
   });
 
@@ -56,7 +56,22 @@ export const convertObjectToMindmap = (obj, rootId, mindmapByKeys) => {
 export const bulkTraverseAndAddNodes = (mindmapByKeys, obj, parentId) => {
   let nodesToAdd = [];
 
-  if (typeof obj !== "object") return nodesToAdd;
+  if (obj instanceof Array) {
+    obj.forEach((item, index) => {
+      const { _id, node } = createNode(parentId, item, mindmapByKeys);
+      nodesToAdd.push(node);
+      mindmapByKeys = addNodeToMindmap(mindmapByKeys, parentId, index, _id);
+      nodesToAdd = nodesToAdd.concat(
+        bulkTraverseAndAddNodes(mindmapByKeys, item, _id)
+      );
+    });
+    console.log("NODES TO ADD", nodesToAdd);
+
+    return nodesToAdd;
+  }
+  if (typeof obj !== "object") {
+    return nodesToAdd;
+  }
 
   Object.keys(obj).forEach((key) => {
     const { _id, node } = createNode(parentId, key, mindmapByKeys);
@@ -66,7 +81,6 @@ export const bulkTraverseAndAddNodes = (mindmapByKeys, obj, parentId) => {
       bulkTraverseAndAddNodes(mindmapByKeys, obj[key], _id)
     );
   });
-
   return nodesToAdd;
 };
 
@@ -133,7 +147,7 @@ export const collapseAllNodes = (mindmapByKeys, nodeId, exceptionNodeId) => {
       ...node,
       __rd3t: { collapsed: nodeId !== exceptionNodeId },
     };
-    node.children.forEach(childId => {
+    node.children.forEach((childId) => {
       mindmapByKeys = collapseAllNodes(mindmapByKeys, childId, exceptionNodeId);
     });
   }

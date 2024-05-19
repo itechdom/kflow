@@ -68,12 +68,11 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
                     knowledgeChat(
                       knowledge,
                       path,
-                      getPrompt(path, nodeDatum.title, track),
+                      getPrompt(nodeDatum.title),
                       (response) => {
                         try {
-                          const cleanedResponse = cleanResponse(response, path);
                           const converted = convertObjectToMindmap(
-                            cleanedResponse,
+                            response,
                             nodeDatum.id,
                             mindmapByKeys
                           );

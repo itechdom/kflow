@@ -66,16 +66,13 @@ export const formatData = (mindmapByKeys) => {
 };
 
 export const getPrompt = (
-  path,
   currentNodeKey
 ) => `complete this object with the maximum amount of knowledge.
             only return output in json. 
-            don't repeat keyse except ${currentNodeKey}.
-            don't include \`\`\`json in your response. omit ${JSON.stringify(
-              path
-            )} in your response and only include new additions.
+            don't repeat keys 
+            don't include \`\`\`json in your response. 
             here is my input:
-            ${JSON.stringify(path)}`;
+            {${currentNodeKey}:{}}`;
 
 
 export const cleanResponse = (response, path) => {
