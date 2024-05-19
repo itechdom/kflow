@@ -64,11 +64,21 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
                 onClick={handleNodeClick}
                 onChatRequest={(nodeDatum) => {
                   if (nodeDatum.title) {
-                    const {path, track} = moveToRoot(nodeDatum.id, mindmapByKeys);
+                    const { path, track } = moveToRoot(
+                      nodeDatum.id,
+                      mindmapByKeys
+                    );
+                    let removedSecondTimeDuplicateKeys = track.filter((key,index) => {
+                      const firstIndexOfKey = track.indexOf(key);
+                      //first index of key
+                      const lastIndexOfKey = track.lastIndexOf(key);
+                      return firstIndexOfKey === index;
+                    });
+                    console.log(removedSecondTimeDuplicateKeys);
                     knowledgeChat(
                       knowledge,
                       path,
-                      getPrompt(nodeDatum.title),
+                      getPrompt(nodeDatum.title, track[0] ? track[0] : ""),
                       (response) => {
                         try {
                           const converted = convertObjectToMindmap(

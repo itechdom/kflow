@@ -54,7 +54,7 @@ export function moveToRoot(nodeId, nodes) {
     console.error("Invalid nodeId or nodes structure:", nodeId, nodes);
   }
 
-  return path;
+  return { path, track };
 }
 
 export const formatData = (mindmapByKeys) => {
@@ -66,14 +66,14 @@ export const formatData = (mindmapByKeys) => {
 };
 
 export const getPrompt = (
-  currentNodeKey
+  currentNodeKey,
+  root
 ) => `complete this object with the maximum amount of knowledge.
             only return output in json. 
             don't repeat keys 
             don't include \`\`\`json in your response. 
             here is my input:
             {${currentNodeKey}:{}}`;
-
 
 export const cleanResponse = (response, path) => {
   function removeKeys(obj, keys) {
