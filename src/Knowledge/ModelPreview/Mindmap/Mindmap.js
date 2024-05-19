@@ -9,7 +9,7 @@ import {
   convertObjectToMindmap,
   collapseAllNodes,
 } from "../ModelPreview/Model.Preview.feature.helper";
-import { getPrompt, cleanResponse } from "./Mindmap.utils";
+import { getPrompt } from "./Mindmap.utils";
 
 const { background, baseStyle, textColor } = theme3Light;
 
@@ -43,10 +43,6 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
     }
   }, [selectedNode]);
 
-  const handleNodeClick = useCallback((nodeData, { hierarchyPointNode }) => {
-    // Handle node click events if needed
-  }, []);
-
   return (
     <div
       className="mindmap-container"
@@ -61,7 +57,6 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
               <CustomTreeNode
                 nodeStyle={baseStyle}
                 textColor={textColor}
-                onClick={handleNodeClick}
                 onTopicDetails={(nodeDatum) => {
                   // knowledge chat with a prompt
                   if (nodeDatum.title) {
