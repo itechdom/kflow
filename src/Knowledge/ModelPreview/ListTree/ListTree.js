@@ -1,6 +1,6 @@
 import React from "react";
 import { List } from "@material-ui/core";
-import Node from "./Node";
+import Node from "../Node/Node";
 
 class ListTree extends React.Component {
   constructor(props) {

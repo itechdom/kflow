@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addNodeToMindmap } from "./Model.Preview.feature.helper"; // Adjust import path accordingly
-import KnowledgeGraph from "./KnowledgeGraph"; // Import the graph management utility
+import { addNodeToMindmap } from "../ModelPreview/Model.Preview.feature.helper"; // Adjust import path accordingly
+import KnowledgeGraph from "../KnowledgeGraph/KnowledgeGraph"; // Import the graph management utility
 
 // Initial state for the mindmap slice
 const initialState = {

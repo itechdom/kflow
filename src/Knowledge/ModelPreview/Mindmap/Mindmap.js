@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Tree as DTree } from "react-d3-tree";
-import CustomTreeNode from "./CustomTreeNode";
-import { theme3Light } from "./Themes";
+import CustomTreeNode from "../CustomTreeNode/CustomTreeNode";
+import { theme3Light } from "../Themes/Themes";
 import { moveToRoot, formatData, getDetailsPrompt } from "./Mindmap.utils";
 import { useDispatch } from "react-redux";
-import { setModel } from "./Model.Preview.feature"; // Ensure correct import path
+import { setModel } from "../ModelPreview/Model.Preview.feature";
 import {
   convertObjectToMindmap,
   collapseAllNodes,
-} from "./Model.Preview.feature.helper";
+} from "../ModelPreview/Model.Preview.feature.helper";
 import { getPrompt, cleanResponse } from "./Mindmap.utils";
 
 const { background, baseStyle, textColor } = theme3Light;

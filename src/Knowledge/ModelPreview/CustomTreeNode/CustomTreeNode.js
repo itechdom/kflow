@@ -4,7 +4,7 @@ import {
   Dialog, DialogContent, DialogContentText, DialogActions,
   Button, IconButton, Tooltip
 } from "@material-ui/core";
-import { Icon } from "../../Libs/orbital-templates/Material/_shared/Icon/Icon";
+import { Icon } from "../../../Libs/orbital-templates/Material/_shared/Icon/Icon";
 
 const CustomTreeNode = ({
   nodeDatum, toggleNode, onClick,

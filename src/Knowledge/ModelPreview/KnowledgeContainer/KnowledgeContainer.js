@@ -10,9 +10,9 @@ import {
 import BackIcon from "@material-ui/icons/ArrowBack";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
-import ListTree from "./ListTree.js";
-import GraphTree from "./GraphTree.js";
-import Mindmap from "./Mindmap.js";
+import ListTree from "../ListTree/ListTree";
+import GraphTree from "../GraphTree/GraphTree.js";
+import Mindmap from "../Mindmap/Mindmap";
 
 const KnowledgeContainer = ({
   model,
