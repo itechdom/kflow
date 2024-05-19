@@ -71,6 +71,7 @@ export const getPrompt = (
             only return output in json. 
             don't repeat keys 
             don't include \`\`\`json in your response. 
+            stick to only this knowledge domain: ${currentNodeKey}
             here is my input:
             {${currentNodeKey}:{}}`;
 
