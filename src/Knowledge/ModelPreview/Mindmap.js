@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Tree as DTree } from "react-d3-tree";
 import CustomTreeNode from "./CustomTreeNode";
 import { theme3Light } from "./Themes";
-import { moveToRoot, formatData } from "./Mindmap.utils";
+import { moveToRoot, formatData, getDetailsPrompt } from "./Mindmap.utils";
 import { useDispatch } from "react-redux";
 import { setModel } from "./Model.Preview.feature"; // Ensure correct import path
 import {
@@ -62,16 +62,51 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
                 nodeStyle={baseStyle}
                 textColor={textColor}
                 onClick={handleNodeClick}
+                onTopicDetails={(nodeDatum) => {
+                  // knowledge chat with a prompt
+                  if (nodeDatum.title) {
+                    const { path, track } = moveToRoot(
+                      nodeDatum.id,
+                      mindmapByKeys
+                    );
+                    knowledgeChat(
+                      knowledge,
+                      path,
+                      getDetailsPrompt(nodeDatum.title),
+                      (response) => {
+                        try {
+                          const converted = convertObjectToMindmap(
+                            response,
+                            nodeDatum.id,
+                            mindmapByKeys
+                          );
+                          const collapsedConverted = collapseAllNodes(
+                            converted,
+                            converted[Object.keys(converted)[0]].id,
+                            nodeDatum.id
+                          );
+                          dispatch(
+                            setModel({ model: { body: collapsedConverted } })
+                          );
+                        } catch (e) {
+                          console.log("ERROR", e);
+                        }
+                      }
+                    );
+                  }
+                }}
                 onChatRequest={(nodeDatum) => {
                   if (nodeDatum.title) {
                     const { path, track } = moveToRoot(
                       nodeDatum.id,
                       mindmapByKeys
                     );
-                    let removedSecondTimeDuplicateKeys = track.filter((key,index) => {
-                      const firstIndexOfKey = track.indexOf(key);
-                      return firstIndexOfKey === index;
-                    });
+                    let removedSecondTimeDuplicateKeys = track.filter(
+                      (key, index) => {
+                        const firstIndexOfKey = track.indexOf(key);
+                        return firstIndexOfKey === index;
+                      }
+                    );
                     console.log(removedSecondTimeDuplicateKeys);
                     knowledgeChat(
                       knowledge,

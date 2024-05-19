@@ -8,7 +8,7 @@ import { Icon } from "../../Libs/orbital-templates/Material/_shared/Icon/Icon";
 
 const CustomTreeNode = ({
   nodeDatum, toggleNode, onClick,
-  nodeStyle, textColor, onChatRequest, ...rest
+  nodeStyle, textColor, onChatRequest, onTopicDetails, ...rest
 }) => {
   const [openDialog, setOpenDialog] = useState(false);
 
@@ -60,6 +60,12 @@ const CustomTreeNode = ({
                 style={{ color: "black" }}
               >
                 <Icon>search</Icon>
+              </IconButton>
+              <IconButton
+                onClick={() => onTopicDetails(nodeDatum)}
+                style={{ color: "black" }}
+              >
+                <Icon>details</Icon>
               </IconButton>
             </CardActions>
           </Card>

@@ -65,6 +65,19 @@ export const formatData = (mindmapByKeys) => {
   return formattedData;
 };
 
+
+export const getDetailsPrompt = (
+  currentNodeKey
+) => `Provide one Explaination to me like I am a 5 year old, what is ${currentNodeKey}?
+      Provide one example of ${currentNodeKey} in action.
+      Provide one benefit of ${currentNodeKey}.
+      Provide one drawback of ${currentNodeKey}.
+      Provide one use case of ${currentNodeKey}.
+      Provide one analogy of ${currentNodeKey}.
+      Provide one metaphor of ${currentNodeKey}.
+      Provide one simile of ${currentNodeKey}.
+`;
+
 export const getPrompt = (
   currentNodeKey
 ) => `complete this object with the maximum amount of knowledge.
