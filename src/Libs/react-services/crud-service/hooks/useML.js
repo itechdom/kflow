@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useSelector, useDispatch } from "react-redux";
-import { createModel } from "../features/crudDomainSlice";
+import { useDispatch } from "react-redux";
 //create typescript type for the React hook useGetModel
 // type UseGetModel = (
 //   offlineStorage: OfflineStorage,

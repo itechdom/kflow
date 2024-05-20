@@ -1,5 +1,5 @@
 import React from "react";
-import NodeEl from "./Node";
+import NodeEl from "../Node/Node";
 const Reveal = ({ Node }) => {
   if (typeof Node === "undefined") {
     return <h5>-</h5>;

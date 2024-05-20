@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import ConfirmDeleteModal from "Libs/orbital-templates/Material/_shared/ConfirmDeleteModal/ConfirmDeleteModal";
-import KnowledgeContainer from "./KnowledgeContainer";
+import KnowledgeContainer from "../KnowledgeContainer/KnowledgeContainer";
 import {
   addNode,
   editNode,
