@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 class KnowledgeGraph {
   constructor() {
@@ -223,6 +223,32 @@ class KnowledgeGraph {
     };
 
     addTreeToGraph(key, elaborationTree);
+  }
+
+  serialize() {
+    const serializedNodes = {};
+    this.nodes.forEach((node, key) => {
+      serializedNodes[key] = {
+        value: node.value,
+        edges: Array.from(node.edges),
+      };
+    });
+    return serializedNodes;
+  }
+
+  static deserialize(serializedData) {
+    const graph = new KnowledgeGraph();
+    if (!serializedData || typeof serializedData !== 'object') {
+      console.warn("Invalid serialized data for deserialization", serializedData);
+      return graph;
+    }
+    Object.keys(serializedData).forEach((key) => {
+      graph.addNode(key, serializedData[key].value);
+      serializedData[key].edges.forEach((edge) => {
+        graph.addEdge(key, edge);
+      });
+    });
+    return graph;
   }
 }
 
