@@ -1,15 +1,43 @@
-service: knowledgeflow-api
+service: express-app
 
 provider:
   name: aws
-  runtime: nodejs14.x
-  stage: dev
+  runtime: nodejs16.x
   region: us-east-1
+  stage: dev
+  environment:
+    NODE_ENV: dev
+    DB_URI: ${ssm:/path/to/your/db/uri} # Use SSM Parameter Store for sensitive data
+    SERVER_PORT: 3000
 
 functions:
   app:
-    handler: handler.run
+    handler: handler.handler
     events:
-      - http:
-          path: /
-          method: get
+      - http: 
+          path: /{proxy+}
+          method: any
+
+plugins:
+  - serverless-offline
+  - serverless-dotenv-plugin
+
+custom:
+  serverless-offline:
+    port: 3000
+
+resources:
+  Resources:
+    ApiGatewayRestApi:
+      Type: AWS::ApiGateway::RestApi
+      Properties:
+        Name: ExpressApi
+
+package:
+  exclude:
+    - node_modules/**
+    - .git/**
+    - docs/**
+    - scripts/**
+    - tests/**
+    - coverage/**
