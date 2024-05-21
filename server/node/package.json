@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/itechdom/playground#readme",
   "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.580.0",
     "@google/maps": "^1.0.2",
     "@markab.io/node": "^7.0.0",
     "@markab.io/orbital-api": "^3.0.0",
