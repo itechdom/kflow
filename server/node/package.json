@@ -73,8 +73,9 @@
     "nodemon": "^1.11.0",
     "regenerator-runtime": "^0.13.3",
     "serverless": "^3.38.0",
+    "serverless-dotenv-plugin": "^6.0.0",
     "serverless-http": "^2.3.0",
-    "serverless-offline": "^5.11.0",
+    "serverless-offline": "^13.5.1",
     "supertest": "^3.4.2"
   },
   "jest": {
