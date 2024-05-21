@@ -7,8 +7,13 @@ provider:
   stage: dev
   environment:
     NODE_ENV: dev
-    DB_URI: ${ssm:/path/to/your/db/uri} # Use SSM Parameter Store for sensitive data
+    DB_URI: ${ssm:/kflow/DB_URI} # Use SSM Parameter Store for sensitive data
     SERVER_PORT: 3000
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "secretsmanager:GetSecretValue"
+      Resource: "arn:aws:secretsmanager:${self:provider.region}:*:secret:/kflow/DB_URI"
 
 functions:
   app:
