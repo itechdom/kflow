@@ -68,7 +68,7 @@
     "normalize.css": "^8.0.1",
     "serverless": "^3.38.0",
     "serverless-apig-s3": "^2.0.0",
-    "serverless-finch": "^2.8.0",
+    "serverless-finch": "^4.0.4",
     "serverless-http": "^3.2.0",
     "serverless-offline": "^13.5.0",
     "serverless-single-page-app-plugin": "^1.0.4",
