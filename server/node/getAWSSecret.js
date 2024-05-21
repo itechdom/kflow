@@ -1,7 +1,7 @@
 const AWS = require('aws-sdk');
 const mongoose = require('mongoose');
 
-const secretName = "/myapp/DB_URI";
+const secretName = "/kflow/DB_URI";
 let dbUri;
 
 // Create a Secrets Manager client
@@ -32,3 +32,5 @@ getSecretValue().then(() => {
           console.error('MongoDB connection error:', err);
       });
 });
+
+module.exports = getSecretValue;

@@ -13,8 +13,8 @@ provider:
     - Effect: "Allow"
       Action:
         - "secretsmanager:GetSecretValue"
-      Resource: "arn:aws:secretsmanager:${self:provider.region}:*:secret:/kflow/DB_URI"
-
+      Resource: 
+        - "arn:aws:secretsmanager:${self:provider.region}:${aws:accountId}:secret:/kflow/DB_URI*"
 functions:
   app:
     handler: handler.handler
