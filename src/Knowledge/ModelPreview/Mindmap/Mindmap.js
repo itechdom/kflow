@@ -107,7 +107,6 @@ function Mindmap({ mindmapByKeys, knowledge, knowledgeChat, selectedNode }) {
                         return firstIndexOfKey === index;
                       }
                     );
-                    console.log(removedSecondTimeDuplicateKeys);
                     knowledgeChat(
                       knowledge,
                       path,

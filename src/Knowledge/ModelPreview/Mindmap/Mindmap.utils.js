@@ -79,12 +79,13 @@ export const getDetailsPrompt = (
 `;
 
 export const getPrompt = (
-  currentNodeKey
+  currentNodeKey,
+  rootKey
 ) => `complete this object with the maximum amount of knowledge.
             only return output in json. 
             don't repeat keys 
             don't include \`\`\`json in your response. 
-            stick to only this knowledge domain: ${currentNodeKey}
+            stick to only this knowledge domain: ${rootKey}
             here is my input:
             {${currentNodeKey}:{}}`;
 
@@ -93,7 +94,6 @@ export const cleanResponse = (response, path) => {
     for (let key in obj) {
       if (keys.hasOwnProperty(key)) {
         if (typeof obj[key] === "object" && obj[key] !== null) {
-          console.log("DETECTED", key, obj[key], obj);
           // Promote children of the duplicate to the current level
           for (let childKey in obj[key]) {
             if (obj[key].hasOwnProperty(childKey)) {
