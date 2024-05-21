@@ -8,8 +8,8 @@ const appConfig = config; // Customize this if you need different configurations
 
 const initApp = async () => {
     // Fetch the AWS Secret and connect to MongoDB
-    await getAWSSecret();
-
+    const DB_URI = await getAWSSecret();
+    config.set('db.host', DB_URI);
     // Initialize Express app
     const { app, server } = getExpressApp(appConfig);
 
