@@ -32,16 +32,14 @@ const Knowledge = ({
       };
     },
     read: (user, req) => {
-      console.log("request here ", req.query.query);
+      const query = req.query && req.query.query;
       return {
         isPermitted: isPermitted({ key: `${modelName}_read`, user }),
         criteria: {
-          query: req.query && req.query.query ,
+          query,
         },
         exclude:
-          req.query && req.query.query && req.query.query._id
-            ? []
-            : ["body"],
+          query && query._id ? [] : ["body"],
       };
     },
     update: (user, req) => {
