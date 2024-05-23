@@ -1,6 +1,7 @@
-const knowledgeModel = require("@markab.io/orbital-api/MongoDb/models/knowledge");
+const knowledgeSchema = require("@markab.io/orbital-api/MongoDb/models/knowledges");
 const knowledgeApi = require("./Knowledge");
 const lambdaModel = require("@markab.io/orbital-api/MongoDb/models/lambda");
+const mongoose = require("mongoose");
 
 const Api = ({
   config,
@@ -11,6 +12,7 @@ const Api = ({
   kernelModel,
   notificationsModel
 }) => {
+  const knowledgeModel = mongoose.model("knowledges", knowledgeSchema);
   const defaultProps = {
     kernelModel,
     permissionsModel,
