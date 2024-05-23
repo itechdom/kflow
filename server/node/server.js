@@ -156,20 +156,20 @@ const registerAllRoutes = ({
   mediaApiRoutes,
   ...defaultProps
 }) => {
-  const { disableChat, disableRides, disableNotifications } = exceptions;
-  // Register all end points
-  // Markab routes
-  app.use("/", authApiRoutes);
-  app.use("/jwt", jwtApiRoutes);
-  app.use("/users", ...userApiRoutes);
-  app.use("/media", ...mediaApiRoutes);
-  app.use("/settings", ...settingsApiRoutes);
-  app.use("/acl", jwtApiRoutes, ...aclApiRoutes);
-  app.use("/forms", ...formsApiRoutes);
-  app.use("/kernel", ...kernelApiRoutes);
-  if (!disableNotifications) {
-    app.use("/notifications", ...notificationsApiRoutes);
-  }
+  // const { disableChat, disableRides, disableNotifications } = exceptions;
+  // // Register all end points
+  // // Markab routes
+  // app.use("/", authApiRoutes);
+  // app.use("/jwt", jwtApiRoutes);
+  // app.use("/users", ...userApiRoutes);
+  // app.use("/media", ...mediaApiRoutes);
+  // app.use("/settings", ...settingsApiRoutes);
+  // app.use("/acl", jwtApiRoutes, ...aclApiRoutes);
+  // app.use("/forms", ...formsApiRoutes);
+  // app.use("/kernel", ...kernelApiRoutes);
+  // if (!disableNotifications) {
+  //   app.use("/notifications", ...notificationsApiRoutes);
+  // }
  // Markab kb
   app.use("/knowledge", ...knowledgeApiRoutes);
 };
@@ -221,14 +221,14 @@ const main = ({ exceptions }) => {
     onError: (err) => onError({ app, err }),
   });
   const {
-    authApiRoutes,
-    userApiRoutes,
-    jwtApiRoutes,
-    aclApiRoutes,
-    formsApiRoutes,
-    settingsApiRoutes,
-    kernelApiRoutes,
-    notificationsApiRoutes,
+    // authApiRoutes,
+    // userApiRoutes,
+    // jwtApiRoutes,
+    // aclApiRoutes,
+    // formsApiRoutes,
+    // settingsApiRoutes,
+    // kernelApiRoutes,
+    // notificationsApiRoutes,
     knowledgeApiRoutes,
     ...defaultProps
   } = getAllApis({ app, server, exceptions });
@@ -236,14 +236,14 @@ const main = ({ exceptions }) => {
     app,
     server,
     exceptions,
-    authApiRoutes,
-    userApiRoutes,
-    jwtApiRoutes,
-    aclApiRoutes,
-    formsApiRoutes,
-    settingsApiRoutes,
-    kernelApiRoutes,
-    notificationsApiRoutes,
+    // authApiRoutes,
+    // userApiRoutes,
+    // jwtApiRoutes,
+    // aclApiRoutes,
+    // formsApiRoutes,
+    // settingsApiRoutes,
+    // kernelApiRoutes,
+    // notificationsApiRoutes,
     knowledgeApiRoutes,
     ...defaultProps,
   });
