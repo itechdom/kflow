@@ -18,7 +18,7 @@ const formsSchema = require("@markab.io/orbital-api/MongoDb/models/forms");
 const notificationsSchema = require("@markab.io/orbital-api/MongoDb/models/notifications");
 const notificationsModel = mongoose.model("Notification", notificationsSchema);
 const formsModel = mongoose.model("Forms", formsSchema);
-const orbitalApi = require("@markab.io/orbital-api");
+// const orbitalApi = require("@markab.io/orbital-api");
 const Kb = require("./src/knowledge-base/api");
 const expressPrintRoutes = require("express-print-routes");
 const path = require("path");
@@ -111,29 +111,29 @@ const getAllApis = ({
   const { knowledgeApiRoutes } = Kb({
     ...defaultProps,
   });
-  const {
-    authApiRoutes,
-    userApiRoutes,
-    jwtApiRoutes,
-    aclApiRoutes,
-    formsApiRoutes,
-    settingsApiRoutes,
-    kernelApiRoutes,
-    notificationsApiRoutes,
-    mediaApiRoutes,
-  } = orbitalApi({
-    ...defaultProps,
-  });
+  // const {
+  //   authApiRoutes,
+  //   userApiRoutes,
+  //   jwtApiRoutes,
+  //   aclApiRoutes,
+  //   formsApiRoutes,
+  //   settingsApiRoutes,
+  //   kernelApiRoutes,
+  //   notificationsApiRoutes,
+  //   mediaApiRoutes,
+  // } = orbitalApi({
+  //   ...defaultProps,
+  // });
  return {
-    authApiRoutes,
-    userApiRoutes,
-    jwtApiRoutes,
-    aclApiRoutes,
-    mediaApiRoutes,
-    formsApiRoutes,
-    settingsApiRoutes,
-    kernelApiRoutes,
-    notificationsApiRoutes,
+    // authApiRoutes,
+    // userApiRoutes,
+    // jwtApiRoutes,
+    // aclApiRoutes,
+    // mediaApiRoutes,
+    // formsApiRoutes,
+    // settingsApiRoutes,
+    // kernelApiRoutes,
+    // notificationsApiRoutes,
     knowledgeApiRoutes,
     ...defaultProps,
   };
