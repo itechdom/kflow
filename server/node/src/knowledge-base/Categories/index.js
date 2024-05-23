@@ -3,16 +3,17 @@ const crudService = require("@markab.io/node/crud-service/crud-service");
 const vizService = require("@markab.io/node/viz-service/viz-service.js");
 const {
   formsService,
-  registerForms
+  registerForms,
 } = require("@markab.io/node/forms-service/forms-service");
 const {
   registerAction,
-  isPermitted
+  isPermitted,
 } = require("@markab.io/node/acl-service/acl-service.js");
 const Categories = ({
   categoriesModel,
   permissionsModel,
-  formsModel
+  formsModel,
+  autoPopulateDB = false,
 }) => {
   let modelName = "categories";
   let crudDomainLogic = {
@@ -20,37 +21,37 @@ const Categories = ({
       //we need to include is permitted in here
       return {
         isPermitted: isPermitted({ key: `${modelName}_create`, user }),
-        criteria: {}
+        criteria: {},
       };
     },
     read: (user, req) => {
       return {
         isPermitted: isPermitted({ key: `${modelName}_read`, user }),
-        criteria: {}
+        criteria: {},
       };
     },
     update: (user, req) => {
       return {
         isPermitted: isPermitted({ key: `${modelName}_update`, user }),
-        criteria: {}
+        criteria: {},
       };
     },
     del: (user, req) => {
       return {
         isPermitted: isPermitted({ key: `${modelName}_delete`, user }),
-        criteria: {}
+        criteria: {},
       };
     },
     search: (user, req) => {
       return {
         isPermitted: isPermitted({ key: `${modelName}_search`, user }),
-        criteria: {}
+        criteria: {},
       };
-    }
+    },
   };
   const categoriesApi = crudService({
     Model: categoriesModel,
-    crudDomainLogic
+    crudDomainLogic,
   });
 
   /* Zee:
@@ -75,41 +76,44 @@ const Categories = ({
     },
     distinct: (user, req, res) => {
       return {};
-    }
+    },
   };
   const vizApi = vizService({
     Model: categoriesModel,
-    domainLogic: vizDomainLogic
+    domainLogic: vizDomainLogic,
   });
 
   //forms api
   let formsDomainLogic = {
-    read: user => {
+    read: (user) => {
       return { criteria: { key: modelName }, isPermitted: true };
-    }
+    },
   };
   const formsApi = formsService({
     Model: formsModel,
-    formsDomainLogic
+    formsDomainLogic,
   });
 
-  registerAction({
-    key: modelName,
-    domainLogic: crudDomainLogic,
-    permissionsModel,
-    defaultPermission: false
-  });
-  registerForms({
-    key: modelName,
-    fields: [
-      {
-        type: "text",
-        name: "title",
-        placeholder: "Category Title"
-      }
-    ],
-    formsModel
-  });
+  if (autoPopulateDB) {
+    registerAction({
+      key: modelName,
+      domainLogic: crudDomainLogic,
+      permissionsModel,
+      defaultPermission: false,
+    });
+    registerForms({
+      key: modelName,
+      fields: [
+        {
+          type: "text",
+          name: "title",
+          placeholder: "Category Title",
+        },
+      ],
+      formsModel,
+    });
+  }
+
   return [categoriesApi, vizApi, formsApi];
 };
 

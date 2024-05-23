@@ -1,24 +1,27 @@
 //the crud service creates [create, read, update, del] endpoints for a mongoose model
-const { formsService } = require("@markab.io/node/forms-service/forms-service")
-const crudService = require("@markab.io/node/crud-service/crud-service")
+const { formsService } = require("@markab.io/node/forms-service/forms-service");
+const crudService = require("@markab.io/node/crud-service/crud-service");
 const {
   registerAction,
-  isPermitted
-} = require("@markab.io/node/acl-service/acl-service.js")
+  isPermitted,
+} = require("@markab.io/node/acl-service/acl-service.js");
 
-const Forms = ({ config, permissionsModel, formsModel }) => {
-
+const Forms = ({
+  config,
+  permissionsModel,
+  formsModel,
+  autoPopulateDB = false,
+}) => {
   /* Zee:
     the only action here is 'read'. When are we reading the user information? 
   */
   let formsDomainLogic = {
-    read: user => {
+    read: (user) => {
       return { criteria: {}, isPermitted: true };
-    }
+    },
   };
 
-  const formsApi = formsService({ Model: formsModel, formsDomainLogic });
-
+  const formsApi = formsService({ Model: formsModel, formsDomainLogic, autoPopulateDB });
 
   //create a crud here too
   let crudDomainLogic = {
@@ -26,44 +29,46 @@ const Forms = ({ config, permissionsModel, formsModel }) => {
       //we need to include is permitted in here
       return {
         isPermitted: isPermitted({ key: "forms_create", user }),
-        criteria: {}
+        criteria: {},
       };
     },
     read: (user, req) => {
       return {
         isPermitted: isPermitted({ key: "forms_read", user }),
-        criteria: {}
+        criteria: {},
       };
     },
     update: (user, req) => {
       return {
         isPermitted: isPermitted({ key: "forms_update", user }),
-        criteria: {}
+        criteria: {},
       };
     },
     del: (user, req) => {
       return {
         isPermitted: isPermitted({ key: "forms_delete", user }),
-        criteria: {}
+        criteria: {},
       };
     },
     search: (user, req) => {
       return {
         isPermitted: isPermitted({ key: "forms_search", user }),
-        criteria: {}
+        criteria: {},
       };
-    }
+    },
   };
   const crudApi = crudService({ Model: formsModel, crudDomainLogic });
 
+  if (autoPopulateDB) {
+    registerAction({
+      key: "forms",
+      domainLogic: crudDomainLogic,
+      permissionsModel,
+      defaultPermission: false,
+    });
+  }
 
-  registerAction({
-    key: "forms",
-    domainLogic: crudDomainLogic,
-    permissionsModel,
-    defaultPermission: false
-  });
   return [crudApi, formsApi];
 };
 
-module.exports =  Forms;
+module.exports = Forms;

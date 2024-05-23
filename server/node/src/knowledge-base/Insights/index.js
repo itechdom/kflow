@@ -1,50 +1,56 @@
 //the crud service creates [create, read, update, del] endpoints for a mongoose model
-const crudService = require("@markab.io/node/crud-service/crud-service")
-const mediaService = require("@markab.io/node/media-service/media-service.js")
-const vizService = require("@markab.io/node/viz-service/viz-service.js")
+const crudService = require("@markab.io/node/crud-service/crud-service");
+const mediaService = require("@markab.io/node/media-service/media-service.js");
+const vizService = require("@markab.io/node/viz-service/viz-service.js");
 const {
   formsService,
-  registerForms
-} = require("@markab.io/node/forms-service/forms-service")
+  registerForms,
+} = require("@markab.io/node/forms-service/forms-service");
 const {
   registerAction,
-  isPermitted
-} = require("@markab.io/node/acl-service/acl-service.js")
+  isPermitted,
+} = require("@markab.io/node/acl-service/acl-service.js");
 
-const Insight = ({ config, knowledgeModel, permissionsModel, formsModel }) => {
+const Insight = ({
+  config,
+  knowledgeModel,
+  permissionsModel,
+  formsModel,
+  autoPopulateDB = false,
+}) => {
   let modelName = "insight";
   let crudDomainLogic = {
     create: (user, req) => {
       //we need to include is permitted in here
       return {
         isPermitted: isPermitted({ key: `${modelName}_create`, user }),
-        criteria: {}
+        criteria: {},
       };
     },
     read: (user, req) => {
       return {
         isPermitted: isPermitted({ key: `${modelName}_read`, user }),
-        criteria: {}
+        criteria: {},
       };
     },
     update: (user, req) => {
       return {
         isPermitted: isPermitted({ key: `${modelName}_update`, user }),
-        criteria: {}
+        criteria: {},
       };
     },
     del: (user, req) => {
       return {
         isPermitted: isPermitted({ key: `${modelName}_delete`, user }),
-        criteria: {}
+        criteria: {},
       };
     },
     search: (user, req) => {
       return {
         isPermitted: isPermitted({ key: `${modelName}_search`, user }),
-        criteria: {}
+        criteria: {},
       };
-    }
+    },
   };
   const knowledgeApi = crudService({ Model: knowledgeModel, crudDomainLogic });
 
@@ -70,11 +76,11 @@ const Insight = ({ config, knowledgeModel, permissionsModel, formsModel }) => {
     },
     distinct: (user, req, res) => {
       return {};
-    }
+    },
   };
   const vizApi = vizService({
     Model: knowledgeModel,
-    domainLogic: vizDomainLogic
+    domainLogic: vizDomainLogic,
   });
 
   //file upload api
@@ -84,38 +90,38 @@ const Insight = ({ config, knowledgeModel, permissionsModel, formsModel }) => {
         criteria: {
           tag: user._id,
           token: user.jwtToken,
-          query: { _id: req.query.query }
+          query: { _id: req.query.query },
         },
-        isPermitted: true
+        isPermitted: true,
       };
     },
     saveMedia: (user, req, res) => {
       return {
         criteria: {
           token: user.jwtToken,
-          query: { _id: req.query.query, fileName: req.query.fileName }
+          query: { _id: req.query.query, fileName: req.query.fileName },
         },
-        isPermitted: true
+        isPermitted: true,
       };
-    }
+    },
   };
   const fileUploadApi = mediaService({
     fileName: "knowledge",
     modelName,
     mediaDomainLogic,
     Model: knowledgeModel,
-    fileExtension: ".jpg"
+    fileExtension: ".jpg",
   });
 
   //forms api
   let formsDomainLogic = {
-    read: knowledge => {
+    read: (knowledge) => {
       return { criteria: { key: `${modelName}` }, isPermitted: true };
-    }
+    },
   };
   const formsApi = formsService({
     Model: formsModel,
-    formsDomainLogic
+    formsDomainLogic,
   });
 
   /* Zee:
@@ -127,48 +133,50 @@ const Insight = ({ config, knowledgeModel, permissionsModel, formsModel }) => {
 
   //register actions to configure acls in the future (namespace is knowledge here and it will register every action into a permissions table)
   // TODO call this registerDomainAction
-  registerAction({
-    key: `${modelName}`,
-    domainLogic: crudDomainLogic,
-    permissionsModel,
-    defaultPermission: false
-  });
-  registerAction({
-    key: `${modelName}`,
-    domainLogic: mediaDomainLogic,
-    permissionsModel
-  });
-  // TODO translate here
-  // Intialize the form in the database when the server runs
-  registerForms({
-    key: `${modelName}`,
-    fields: [
-      {
-        type: "text",
-        name: "title",
-        placeholder: "Insight Title",
-        value: "",
-        required: true
-      },
-      {
-        type: "text",
-        name: "body",
-        placeholder: "Body",
-        value: "",
-        required: true
-      },
-      {
-        type: "array",
-        name: "tags",
-        placeholder: "Tags",
-        value: [],
-        required: false
-      }
-    ],
-    formsModel
-  });
+  if (autoPopulateDB) {
+    registerAction({
+      key: `${modelName}`,
+      domainLogic: crudDomainLogic,
+      permissionsModel,
+      defaultPermission: false,
+    });
+    registerAction({
+      key: `${modelName}`,
+      domainLogic: mediaDomainLogic,
+      permissionsModel,
+    });
+    // TODO translate here
+    // Intialize the form in the database when the server runs
+    registerForms({
+      key: `${modelName}`,
+      fields: [
+        {
+          type: "text",
+          name: "title",
+          placeholder: "Insight Title",
+          value: "",
+          required: true,
+        },
+        {
+          type: "text",
+          name: "body",
+          placeholder: "Body",
+          value: "",
+          required: true,
+        },
+        {
+          type: "array",
+          name: "tags",
+          placeholder: "Tags",
+          value: [],
+          required: false,
+        },
+      ],
+      formsModel,
+    });
+  }
 
   return [knowledgeApi, fileUploadApi, vizApi, formsApi];
 };
 
-module.exports =  Insight;
+module.exports = Insight;

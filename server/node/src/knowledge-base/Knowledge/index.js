@@ -17,7 +17,7 @@ const Knowledge = ({
   permissionsModel,
   lambdaModel,
   formsModel,
-  enableAutoPopulateDB=false,
+  autoPopulateDB=false,
 }) => {
   let modelName = "knowledge";
   let crudDomainLogic = {
@@ -133,7 +133,7 @@ const Knowledge = ({
     Model: formsModel,
     formsDomainLogic,
   });
-  if (enableAutoPopulateDB) {
+  if (autoPopulateDB) {
     registerAction({
       key: `${modelName}`,
       domainLogic: crudDomainLogic,
