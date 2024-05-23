@@ -2622,10 +2622,10 @@
     semver "^7.3.5"
     tar "^6.1.11"
 
-"@markab.io/node@^11.0.0":
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/@markab.io/node/-/node-11.0.0.tgz#ab5c05f4720e2d1a5f9c3bd6f6a177b1433749d5"
-  integrity sha512-1yayrm0yGfiEIYaDdsJD8kMIKHEvnmKOQWL0+Yg5e78LN8X09mlaxQP+7sjWB9z61Cy/Qarg36hs6OQUBu/93w==
+"@markab.io/node@^12.0.0":
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/@markab.io/node/-/node-12.0.0.tgz#52b6b642e6e0f6567e5aff391d60eb46a1125be3"
+  integrity sha512-5TXXSat4t+KIGYwODqQBeW9PFoezMGe9snQS1KznA5kX7Vi4l5X7wZ52b4JhdH7vX78ESYWDkmV/Or/eJBwO8g==
   dependencies:
     "@aws-sdk/client-ses" "^3.582.0"
     "@aws-sdk/client-sns" "^3.582.0"

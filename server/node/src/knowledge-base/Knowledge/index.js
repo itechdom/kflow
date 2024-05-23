@@ -1,8 +1,8 @@
 //the crud service creates [create, read, update, del] endpoints for a mongoose model
-const crudService = require("../../../Libs/node-services/crud-service/crud-service");
+const crudService = require("@markab.io/node/crud-service/crud-service");
 const mediaService = require("@markab.io/node/media-service/media-service");
 const vizService = require("@markab.io/node/viz-service/viz-service");
-const gptService = require("../../../Libs/node-services/gpt-service/gpt-service");
+const gptService = require("@markab.io/node/gpt-service/gpt-service");
 const {
   formsService,
   registerForms,

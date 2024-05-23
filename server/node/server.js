@@ -221,6 +221,6 @@ const main = async ({ exceptions }) => {
   return { app, exceptions };
 };
 module.exports = main;
-export const getAllApis = getAllApis;
-export const registerAllRoutes = registerAllRoutes;
-export const getExpressApp = getExpressApp;
+module.exports.getAllApis = getAllApis;
+module.exports.registerAllRoutes = registerAllRoutes;
+module.exports.getExpressApp = getExpressApp;
