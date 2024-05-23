@@ -16,16 +16,19 @@ provider:
         - "arn:aws:secretsmanager:${self:provider.region}:${aws:accountId}:secret:/kflow/DB_URI*"
 functions:
   app:
-    handler: dist/bundle.handler
+    handler: index.handler
     events:
       - http: 
           path: /{proxy+}
           method: any
 plugins:
-  - serverless-webpack
+  - serverless-bundle
   - serverless-offline
   - serverless-dotenv-plugin
 custom:
+  bundle:
+    linting: false
+    externals: all
   serverless-offline:
     port: 3000
 resources:
@@ -36,6 +39,7 @@ resources:
         Name: ExpressApi
 package:
   exclude:
+    - node_modules/**
     - .git/**
     - docs/**
     - scripts/**
