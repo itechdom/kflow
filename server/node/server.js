@@ -23,6 +23,10 @@ const Kb = require("./src/knowledge-base/api");
 const expressPrintRoutes = require("express-print-routes");
 const path = require("path");
 const cors = require("cors");
+require('@babel/register')({
+  extensions: ['.js', '.jsx', '.ts', '.tsx'],
+});
+
 
 const getExpressApp = (config, isServerless) => {
   // =================================================================
@@ -213,9 +217,9 @@ const onDisconnect = ({ app }) => {
   });
 };
 
-const main = ({ exceptions }) => {
+const main = async ({ exceptions }) => {
   const { app, server } = getExpressApp(config);
-  const dbConnection = MongoDb({
+  const dbConnection = await MongoDb({
     config,
     onDBInit: (models, schemas) => onDBInit({ app, server, models, schemas }),
     onError,

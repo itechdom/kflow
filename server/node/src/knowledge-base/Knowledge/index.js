@@ -19,7 +19,7 @@ const Knowledge = ({
   formsModel,
   autoPopulateDB=false,
 }) => {
-  let modelName = "knowledge";
+  let modelName = "knowledges";
   let crudDomainLogic = {
     create: (user, req) => {
       return {
@@ -116,7 +116,7 @@ const Knowledge = ({
     },
   };
   const fileUploadApi = mediaService({
-    fileName: "knowledge",
+    fileName: "knowledges",
     modelName,
     mediaDomainLogic,
     Model: knowledgeModel,

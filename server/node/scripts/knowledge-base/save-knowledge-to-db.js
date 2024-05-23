@@ -4,19 +4,22 @@ const {
   formatMindmap,
   flattenMindmap,
 } = require("./utils");
-const knowledgeModel = require("@markab.io/orbital-api/MongoDb/models/knowledge");
+const mongoose = require("mongoose");
+const knowledgeSchema = require("@markab.io/orbital-api/MongoDb/models/knowledges");
+
+const knowledgeModel = mongoose.model("knowledges", knowledgeSchema);
+
 const getDiff = (existing, newData) => {
   let tmp = {};
-  Object.keys(existing).map((k, index) => {
+  Object.keys(existing).forEach((k) => {
     let ob = existing[k];
     tmp = {
       ...tmp,
       [ob.title]: ob,
     };
-    return;
   });
   let tmp2 = { ...newData };
-  Object.keys(newData).map((id, index) => {
+  Object.keys(newData).forEach((id) => {
     let newOb = newData[id];
     if (tmp[newOb.title]) {
       tmp2 = {
@@ -31,57 +34,52 @@ const getDiff = (existing, newData) => {
   });
   return tmp2;
 };
-connectToDb((err, data) => {
-  if (err) {
-    return console.error(err);
-  }
-  readFiles(
-    "./data/",
-    (filename, content) => {
-      let formattedNodeList = JSON.parse(content).ideas;
-      let level = 0;
-      formattedNodeList && formatMindmap(formattedNodeList, level);
-      const flatMindmap = {};
-      flattenMindmap(formattedNodeList, null, flatMindmap);
-      const titleSections = filename.split("-");
-      let knowledgeData = {
-        title: filename.replace(".mup", "").split("-")[
-          titleSections.length - 1
-        ],
-        tags: titleSections.slice(0, titleSections.length - 1),
-        body: flatMindmap,
-      };
-      knowledgeModel.findOne({ title: knowledgeData.title }, (err, res) => {
-        if (err) {
-          return console.error(err);
-        }
-        if (res) {
-          //merge to existing mindmaps
-          const diff = getDiff(res.body, knowledgeData.body);
-          res.body = diff;
-          res.save((err) => {
-            if (err) {
-              console.log("err saving knowledge", err);
-              return;
-            }
-            console.log(`${titleSections} saved!`);
-          });
-        } else {
-          let knowledge = new knowledgeModel(knowledgeData);
-          return knowledge.save((err) => {
-            if (err) {
-              console.log("err creating knowledge", err);
-              return;
-            }
-            console.log(`${titleSections} saved!`);
-          });
-        }
-      });
-    },
-    (err) => {
-      console.log("err", err);
+
+const processFile = async (filename, content) => {
+  let formattedNodeList = JSON.parse(content).ideas;
+  let level = 0;
+  formattedNodeList && formatMindmap(formattedNodeList, level);
+  const flatMindmap = {};
+  flattenMindmap(formattedNodeList, null, flatMindmap);
+  const titleSections = filename.split("-");
+  let knowledgeData = {
+    title: filename.replace(".mup", "").split("-")[titleSections.length - 1],
+    tags: titleSections.slice(0, titleSections.length - 1),
+    body: flatMindmap,
+  };
+
+  try {
+    const res = await knowledgeModel.findOne({ title: knowledgeData.title }).exec();
+    if (res) {
+      const diff = getDiff(res.body, knowledgeData.body);
+      res.body = diff;
+      await res.save();
+      console.log(`${titleSections} saved!`);
+    } else {
+      let knowledge = new knowledgeModel(knowledgeData);
+      await knowledge.save();
+      console.log(`${titleSections} saved!`);
     }
-  );
-  console.log("DONE");
-  return;
-});
+  } catch (err) {
+    console.error("Error processing file:", err);
+  }
+};
+
+const main = async () => {
+  try {
+    const db = await connectToDb();
+    console.log('Connected to DB');
+
+    await readFiles('./data/', async (filename, content) => {
+      await processFile(filename, content);
+    }, (err) => {
+      console.error('Error reading files:', err);
+    });
+
+    console.log('Files processed');
+  } catch (err) {
+    console.error('Error:', err);
+  }
+};
+
+main();
