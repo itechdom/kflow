@@ -21,7 +21,7 @@ const Forms = ({
     },
   };
 
-  const formsApi = formsService({ Model: formsModel, formsDomainLogic, autoPopulateDB });
+  const formsApi = formsService({ Model: formsModel, formsDomainLogic });
 
   //create a crud here too
   let crudDomainLogic = {

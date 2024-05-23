@@ -15,7 +15,7 @@ const Settings = ({
   settingsModel,
   permissionsModel,
   formsModel,
-  autoPopulateDB,
+  autoPopulateDB=false,
 }) => {
   let crudDomainLogic = {
     create: (user, req) => {
