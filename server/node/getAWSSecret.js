@@ -14,4 +14,4 @@ const getAWSSecret = async () => {
     }
 };
 
-module.exports = getAWSSecret;
+export default getAWSSecret; // If you're exporting a single function/value

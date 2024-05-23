@@ -1,4 +1,4 @@
-service: markab-backend 
+service: markab-backend
 org: itechdom
 provider:
   name: aws
@@ -13,13 +13,13 @@ provider:
     - Effect: "Allow"
       Action:
         - "secretsmanager:GetSecretValue"
-      Resource: 
+      Resource:
         - "arn:aws:secretsmanager:${self:provider.region}:${aws:accountId}:secret:/kflow/DB_URI*"
 functions:
   app:
-    handler: index.handler
+    handler: handler.handler 
     events:
-      - http: 
+      - http:
           path: /{proxy+}
           method: any
 plugins:

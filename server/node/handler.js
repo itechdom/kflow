@@ -25,4 +25,4 @@ const handler = async (event, context) => {
     return serverlessHandler(event, context);
 };
 
-module.exports.handler = handler;
+export const handler = handler;

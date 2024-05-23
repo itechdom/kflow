@@ -27,4 +27,4 @@ const customConfig = {
     // Add more methods as required
 };
 
-module.exports = customConfig;
+export default customConfig;

@@ -3,7 +3,7 @@ const config = require("config");
 const fs = require("fs");
 const { v4 } = require("uuid");
 const path = require("path");
-module.exports.readFiles = function readFiles(dirname, onFileContent, onError) {
+export const readFiles = function readFiles(dirname, onFileContent, onError) {
   return fs.readdir(path.join(__dirname, dirname), function (err, filenames) {
     if (err) {
       onError(err);
@@ -24,7 +24,7 @@ module.exports.readFiles = function readFiles(dirname, onFileContent, onError) {
     });
   });
 };
-module.exports.connectToDb = async function connectToDb(cb) {
+export const connectToDb = async function connectToDb(cb) {
   const dbConnection = await MongoDb({
     config,
     onDBInit: (data) => cb(null, data),
@@ -33,7 +33,7 @@ module.exports.connectToDb = async function connectToDb(cb) {
   });
   return dbConnection;
 };
-module.exports.formatMindmap = function formatMindmap(node, path) {
+export const formatMindmap = function formatMindmap(node, path) {
   if (node) {
     Object.keys(node).map((key, index) => {
       let currentPath = path ? path + "." + `${index}` : "0";
@@ -46,7 +46,7 @@ module.exports.formatMindmap = function formatMindmap(node, path) {
 };
 
 //TODO: flatten mindmap prior to saving and add links for graph viz
-module.exports.flattenMindmap = function flattenMindmap(
+export const flattenMindmap = function flattenMindmap(
   node,
   parent,
   mindmapByKeys
