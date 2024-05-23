@@ -39,6 +39,8 @@ resources:
       Properties:
         Name: ExpressApi
 package:
+  include:
+    - config/**
   exclude:
     - node_modules/**
     - .git/**
