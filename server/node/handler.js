@@ -10,8 +10,6 @@ const initApp = async () => {
     // Initialize Express app
     const { app, server } = getExpressApp(customConfig);
 
-    const dbHost = customConfig.get("db.host");
-
     const exceptions = { disableChat: false, disableRides: false };
     const apiRoutes = getAllApis({ app, server, exceptions });
     registerAllRoutes({ app, server, exceptions, ...apiRoutes });
