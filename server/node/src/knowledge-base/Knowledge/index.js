@@ -17,6 +17,7 @@ const Knowledge = ({
   permissionsModel,
   lambdaModel,
   formsModel,
+  enableAutoPopulateDB=false,
 }) => {
   let modelName = "knowledge";
   let crudDomainLogic = {
@@ -33,8 +34,7 @@ const Knowledge = ({
         criteria: {
           query,
         },
-        exclude:
-          query && query._id ? [] : ["body"],
+        exclude: query && query._id ? [] : ["body"],
       };
     },
     update: (user, req) => {
@@ -133,37 +133,39 @@ const Knowledge = ({
     Model: formsModel,
     formsDomainLogic,
   });
-  registerAction({
-    key: `${modelName}`,
-    domainLogic: crudDomainLogic,
-    permissionsModel,
-    defaultPermission: false,
-  });
-  registerAction({
-    key: `${modelName}`,
-    domainLogic: mediaDomainLogic,
-    permissionsModel,
-  });
-  registerForms({
-    key: `${modelName}`,
-    fields: [
-      {
-        type: "text",
-        name: "title",
-        placeholder: "Knowledge Title",
-        value: "",
-        required: true,
-      },
-      {
-        type: "array",
-        name: "tags",
-        placeholder: "Tags",
-        value: [],
-        required: false,
-      },
-    ],
-    formsModel,
-  });
+  if (enableAutoPopulateDB) {
+    registerAction({
+      key: `${modelName}`,
+      domainLogic: crudDomainLogic,
+      permissionsModel,
+      defaultPermission: false,
+    });
+    registerAction({
+      key: `${modelName}`,
+      domainLogic: mediaDomainLogic,
+      permissionsModel,
+    });
+    registerForms({
+      key: `${modelName}`,
+      fields: [
+        {
+          type: "text",
+          name: "title",
+          placeholder: "Knowledge Title",
+          value: "",
+          required: true,
+        },
+        {
+          type: "array",
+          name: "tags",
+          placeholder: "Tags",
+          value: [],
+          required: false,
+        },
+      ],
+      formsModel,
+    });
+  }
 
   return [knowledgeApi, fileUploadApi, vizApi, formsApi, gptApi];
 };
