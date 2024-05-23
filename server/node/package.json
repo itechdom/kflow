@@ -28,8 +28,8 @@
 	"dependencies": {
 		"@aws-sdk/client-secrets-manager": "^3.580.0",
 		"@google/maps": "^1.0.2",
-		"@markab.io/node": "^9.5.0",
-		"@markab.io/orbital-api": "^4.10.0",
+		"@markab.io/node": "^10.0.0",
+		"@markab.io/orbital-api": "^5.0.0",
 		"aws-sdk": "^2.403.0",
 		"config": "^3.3.11",
 		"cors": "^2.8.5",
@@ -76,7 +76,7 @@
 		"serverless": "^4.0.24",
 		"serverless-dotenv-plugin": "^6.0.0",
 		"serverless-http": "^3.2.0",
-		"serverless-offline": "^13.5.1",
+		"serverless-offline": "^13.6.0",
 		"supertest": "^7.0.0"
 	},
 	"jest": {
