@@ -8,7 +8,6 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const config = require("config"); // get our config require(file)
 const session = require("express-session"); // we remove this require(later)
-const MongoDb = require("@markab.io/orbital-api/MongoDb");
 const userModel = require("@markab.io/orbital-api/MongoDb/models/user");
 const settingsModel = require("@markab.io/orbital-api/MongoDb/models/settings");
 const permissionsSchema = require("@markab.io/orbital-api/MongoDb/models/permissions");
@@ -18,13 +17,14 @@ const formsSchema = require("@markab.io/orbital-api/MongoDb/models/forms");
 const notificationsSchema = require("@markab.io/orbital-api/MongoDb/models/notifications");
 const notificationsModel = mongoose.model("Notification", notificationsSchema);
 const formsModel = mongoose.model("Forms", formsSchema);
-const orbitalApi = require("@markab.io/orbital-api");
+// const orbitalApi = require("@markab.io/orbital-api");
 const Kb = require("./src/knowledge-base/api");
 const expressPrintRoutes = require("express-print-routes");
 const path = require("path");
 const cors = require("cors");
+const { connectToDb } = require("./utils/utils");
 
-const getExpressApp = (config) => {
+const getExpressApp = async (config, isServerless) => {
   // =================================================================
   // starting the server ================================================
   // =================================================================
@@ -33,15 +33,17 @@ const getExpressApp = (config) => {
   // App =============================================================
   // =================================================================
   const app = express();
-  const port = config.get("server.port"); // used to create, sign, and verify tokens
-  const ip = config.get("server.host");
-  var server = http.createServer(app);
-  server.listen(port);
-  console.log(`Magic happens at ${ip}:${port}`);
+  app.set("superSecret", config.secret); // secret variable
+  if (!isServerless) {
+    const port = config.get("server.port"); // used to create, sign, and verify tokens
+    const ip = config.get("server.host");
+    var server = http.createServer(app);
+    server.listen(port);
+    console.log(`Magic happens at ${ip}:${port}`);
+  }
   // =================================================================
   // configuration ===================================================
   // =================================================================
-  app.set("superSecret", config.secret); // secret variable
 
   const whitelist = config.get("cors.whitelist");
   const corsOptions = {
@@ -62,6 +64,7 @@ const getExpressApp = (config) => {
   };
 
   // required for passport session auth
+  //TODO: store in amazon ssm and retrieve using getAWSSecret()
   app.use(
     session({
       secret: "thecatwentoverthefencebutfoundafoxsosheranaway",
@@ -74,7 +77,7 @@ const getExpressApp = (config) => {
   app.options("*", cors(corsOptions)); // enable pre-flight request for DELETE request
   app.use(cors(corsOptions));
   //CORS
-  app.use(function(req, res, next) {
+  app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
     res.header(
@@ -110,35 +113,35 @@ const getAllApis = ({
   const { knowledgeApiRoutes } = Kb({
     ...defaultProps,
   });
-  const {
-    authApiRoutes,
-    userApiRoutes,
-    jwtApiRoutes,
-    aclApiRoutes,
-    formsApiRoutes,
-    settingsApiRoutes,
-    kernelApiRoutes,
-    notificationsApiRoutes,
-    mediaApiRoutes,
-  } = orbitalApi({
-    ...defaultProps,
-  });
- return {
-    authApiRoutes,
-    userApiRoutes,
-    jwtApiRoutes,
-    aclApiRoutes,
-    mediaApiRoutes,
-    formsApiRoutes,
-    settingsApiRoutes,
-    kernelApiRoutes,
-    notificationsApiRoutes,
+  // const {
+  //   authApiRoutes,
+  //   userApiRoutes,
+  //   jwtApiRoutes,
+  //   aclApiRoutes,
+  //   formsApiRoutes,
+  //   settingsApiRoutes,
+  //   kernelApiRoutes,
+  //   notificationsApiRoutes,
+  //   mediaApiRoutes,
+  // } = orbitalApi({
+  //   ...defaultProps,
+  // });
+  return {
+    // authApiRoutes,
+    // userApiRoutes,
+    // jwtApiRoutes,
+    // aclApiRoutes,
+    // mediaApiRoutes,
+    // formsApiRoutes,
+    // settingsApiRoutes,
+    // kernelApiRoutes,
+    // notificationsApiRoutes,
     knowledgeApiRoutes,
     ...defaultProps,
   };
 };
 
-const registerAllRoutes = ({
+const registerAllRoutes = async ({
   app,
   server,
   exceptions,
@@ -155,21 +158,21 @@ const registerAllRoutes = ({
   mediaApiRoutes,
   ...defaultProps
 }) => {
-  const { disableChat, disableRides, disableNotifications } = exceptions;
-  // Register all end points
-  // Markab routes
-  app.use("/", authApiRoutes);
-  app.use("/jwt", jwtApiRoutes);
-  app.use("/users", ...userApiRoutes);
-  app.use("/media", ...mediaApiRoutes);
-  app.use("/settings", ...settingsApiRoutes);
-  app.use("/acl", jwtApiRoutes, ...aclApiRoutes);
-  app.use("/forms", ...formsApiRoutes);
-  app.use("/kernel", ...kernelApiRoutes);
-  if (!disableNotifications) {
-    app.use("/notifications", ...notificationsApiRoutes);
-  }
- // Markab kb
+  // const { disableChat, disableRides, disableNotifications } = exceptions;
+  // // Register all end points
+  // // Markab routes
+  // app.use("/", authApiRoutes);
+  // app.use("/jwt", jwtApiRoutes);
+  // app.use("/users", ...userApiRoutes);
+  // app.use("/media", ...mediaApiRoutes);
+  // app.use("/settings", ...settingsApiRoutes);
+  // app.use("/acl", jwtApiRoutes, ...aclApiRoutes);
+  // app.use("/forms", ...formsApiRoutes);
+  // app.use("/kernel", ...kernelApiRoutes);
+  // if (!disableNotifications) {
+  //   app.use("/notifications", ...notificationsApiRoutes);
+  // }
+  // Markab kb
   app.use("/knowledge", ...knowledgeApiRoutes);
 };
 
@@ -185,68 +188,37 @@ const printAllRoutes = (app) => {
 // Setting up the database =========================================
 // =================================================================
 
-//models: mongoose models
-//schemas: the schema of each model
-// on DB initalization
-const onDBInit = ({ app, server, models, schemas }) => {
-  app.use("/schemas", (req, res, next) => {
-    res.send(schemas);
-  });
-  printAllRoutes(app);
-};
-
-//if there is an error connecting to db, send an error back to the user
-const onError = ({ app, err }) => {
-  //routes that don't require db connection
-  app.use("/", (req, res, next) => {
-    return res.status(500).send(err);
-  });
-};
-
-const onDisconnect = ({ app }) => {
-  console.log("db disconnected");
-  app.use("/", (req, res, next) => {
-    return res.status(500).send("err: db disconnected");
-  });
-};
-
-const main = ({ exceptions }) => {
-  const { app, server } = getExpressApp(config);
-  const dbConnection = MongoDb({
-    config,
-    onDBInit: (models, schemas) => onDBInit({ app, server, models, schemas }),
-    onError,
-    onDisconnect: () => onDisconnect({ app }),
-    onError: (err) => onError({ app, err }),
-  });
+const main = async ({ exceptions }) => {
+  const { app, server } = await getExpressApp(config);
+  await connectToDb((con) => console.log("connected to db" + con));
   const {
-    authApiRoutes,
-    userApiRoutes,
-    jwtApiRoutes,
-    aclApiRoutes,
-    formsApiRoutes,
-    settingsApiRoutes,
-    kernelApiRoutes,
-    notificationsApiRoutes,
+    // authApiRoutes,
+    // userApiRoutes,
+    // jwtApiRoutes,
+    // aclApiRoutes,
+    // formsApiRoutes,
+    // settingsApiRoutes,
+    // kernelApiRoutes,
+    // notificationsApiRoutes,
     knowledgeApiRoutes,
     ...defaultProps
   } = getAllApis({ app, server, exceptions });
-  registerAllRoutes({
+  await registerAllRoutes({
     app,
     server,
     exceptions,
-    authApiRoutes,
-    userApiRoutes,
-    jwtApiRoutes,
-    aclApiRoutes,
-    formsApiRoutes,
-    settingsApiRoutes,
-    kernelApiRoutes,
-    notificationsApiRoutes,
+    // authApiRoutes,
+    // userApiRoutes,
+    // jwtApiRoutes,
+    // aclApiRoutes,
+    // formsApiRoutes,
+    // settingsApiRoutes,
+    // kernelApiRoutes,
+    // notificationsApiRoutes,
     knowledgeApiRoutes,
     ...defaultProps,
   });
-  return { dbConnection, app, exceptions };
+  return { app, exceptions };
 };
 module.exports = main;
 module.exports.getAllApis = getAllApis;

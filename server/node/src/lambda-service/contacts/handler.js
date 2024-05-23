@@ -31,7 +31,7 @@ exports.handler = async function(event, context) {
     console.log("connected to db");
   }
   contactsModel = conn.model("Contacts", model);
-  formsModel = conn.model("Forms", formsSchema);
+  const formsModel = conn.model("Forms", formsSchema);
   permissionsModel = conn.model("Permissions", permissionsSchema);
   handler = serverless(
     app.use(

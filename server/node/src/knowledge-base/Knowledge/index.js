@@ -11,19 +11,15 @@ const {
   registerAction,
   isPermitted,
 } = require("@markab.io/node/acl-service/acl-service");
-const {
-  registerLambdaFunction,
-} = require("@markab.io/node/lambda-service/lambda-service");
 const Knowledge = ({
   config,
   knowledgeModel,
   permissionsModel,
   lambdaModel,
   formsModel,
+  autoPopulateDB=false,
 }) => {
-  let modelName = "knowledge";
-  let path = "src/knowledge-base/";
-  registerLambdaFunction({ modelname: modelName, path, lambdaModel });
+  let modelName = "knowledges";
   let crudDomainLogic = {
     create: (user, req) => {
       return {
@@ -32,16 +28,13 @@ const Knowledge = ({
       };
     },
     read: (user, req) => {
-      console.log("request here ", req.query.query);
+      const query = req.query && req.query.query;
       return {
         isPermitted: isPermitted({ key: `${modelName}_read`, user }),
         criteria: {
-          query: req.query && req.query.query ,
+          query,
         },
-        exclude:
-          req.query && req.query.query && req.query.query._id
-            ? []
-            : ["body"],
+        exclude: query && query._id ? [] : ["body"],
       };
     },
     update: (user, req) => {
@@ -123,7 +116,7 @@ const Knowledge = ({
     },
   };
   const fileUploadApi = mediaService({
-    fileName: "knowledge",
+    fileName: "knowledges",
     modelName,
     mediaDomainLogic,
     Model: knowledgeModel,
@@ -140,37 +133,39 @@ const Knowledge = ({
     Model: formsModel,
     formsDomainLogic,
   });
-  registerAction({
-    key: `${modelName}`,
-    domainLogic: crudDomainLogic,
-    permissionsModel,
-    defaultPermission: false,
-  });
-  registerAction({
-    key: `${modelName}`,
-    domainLogic: mediaDomainLogic,
-    permissionsModel,
-  });
-  registerForms({
-    key: `${modelName}`,
-    fields: [
-      {
-        type: "text",
-        name: "title",
-        placeholder: "Knowledge Title",
-        value: "",
-        required: true,
-      },
-      {
-        type: "array",
-        name: "tags",
-        placeholder: "Tags",
-        value: [],
-        required: false,
-      },
-    ],
-    formsModel,
-  });
+  if (autoPopulateDB) {
+    registerAction({
+      key: `${modelName}`,
+      domainLogic: crudDomainLogic,
+      permissionsModel,
+      defaultPermission: false,
+    });
+    registerAction({
+      key: `${modelName}`,
+      domainLogic: mediaDomainLogic,
+      permissionsModel,
+    });
+    registerForms({
+      key: `${modelName}`,
+      fields: [
+        {
+          type: "text",
+          name: "title",
+          placeholder: "Knowledge Title",
+          value: "",
+          required: true,
+        },
+        {
+          type: "array",
+          name: "tags",
+          placeholder: "Tags",
+          value: [],
+          required: false,
+        },
+      ],
+      formsModel,
+    });
+  }
 
   return [knowledgeApi, fileUploadApi, vizApi, formsApi, gptApi];
 };

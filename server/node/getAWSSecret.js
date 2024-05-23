@@ -1,36 +1,17 @@
-const AWS = require('aws-sdk');
-const mongoose = require('mongoose');
+const { SecretsManagerClient, GetSecretValueCommand } = require('@aws-sdk/client-secrets-manager');
 
-const secretName = "/kflow/DB_URI";
-let dbUri;
+const client = new SecretsManagerClient({ region: 'us-east-1' }); // Specify the correct region
 
-// Create a Secrets Manager client
-const client = new AWS.SecretsManager({
-    region: "us-east-1"
-});
-
-async function getSecretValue() {
+const getAWSSecret = async () => {
+    const command = new GetSecretValueCommand({ SecretId: 'arn:aws:secretsmanager:us-east-1:035958020148:secret:kflow-OcEMIB' }); // Use your ARN here
     try {
-        const data = await client.getSecretValue({ SecretId: secretName }).promise();
-        if ('SecretString' in data) {
-            const secret = JSON.parse(data.SecretString);
-            dbUri = secret.DB_URI;
-        } else {
-            console.error('SecretString is not found in the secret value.');
-        }
+        const data = await client.send(command);
+        const secret = JSON.parse(data.SecretString); // Parse the secret string to get the key-value pairs
+        return secret.DB_URI; // Return the DB_URI value
     } catch (err) {
-        console.error('Error retrieving the secret:', err);
+        console.error(err);
+        throw err;
     }
-}
+};
 
-getSecretValue().then(() => {
-    mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
-      .then(() => {
-          console.log('MongoDB connected successfully');
-      })
-      .catch(err => {
-          console.error('MongoDB connection error:', err);
-      });
-});
-
-module.exports = getSecretValue;
+module.exports = getAWSSecret;

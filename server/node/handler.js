@@ -1,21 +1,20 @@
 'use strict';
 const serverless = require('serverless-http');
-const config = require('config');
-const getAWSSecret = require('./getAWSSecret');
+const customConfig = require('./customConfig');
 const { getExpressApp, getAllApis, registerAllRoutes } = require('./server');
-
-const appConfig = config; // Customize this if you need different configurations
+const { connectToDb } = require('./utils/utils');
 
 const initApp = async () => {
-    // Fetch the AWS Secret and connect to MongoDB
-    await getAWSSecret();
+    // Initialize customConfig to fetch DB_URI
+    await customConfig.initialize();
 
-    // Initialize Express app
-    const { app, server } = getExpressApp(appConfig);
+    await connectToDb((con) => console.log("connected to db" + con));
+
+    const { app, server } = await getExpressApp(customConfig, true);
 
     const exceptions = { disableChat: false, disableRides: false };
-    const apiRoutes = getAllApis({ app, server, exceptions });
-    registerAllRoutes({ app, server, exceptions, ...apiRoutes });
+    const apiRoutes = await getAllApis({ app, server, exceptions });
+    await registerAllRoutes({ app, server, exceptions, ...apiRoutes });
 
     return app;
 };
