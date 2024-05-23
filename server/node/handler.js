@@ -7,11 +7,11 @@ const initApp = async () => {
     // Initialize customConfig to fetch DB_URI
     await customConfig.initialize();
 
-    const { app, server } = getExpressApp(customConfig, true);
+    const { app, server } = await getExpressApp(customConfig, true);
 
     const exceptions = { disableChat: false, disableRides: false };
-    const apiRoutes = getAllApis({ app, server, exceptions });
-    registerAllRoutes({ app, server, exceptions, ...apiRoutes });
+    const apiRoutes = await getAllApis({ app, server, exceptions });
+    await registerAllRoutes({ app, server, exceptions, ...apiRoutes });
 
     return app;
 };

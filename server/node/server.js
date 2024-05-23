@@ -8,7 +8,6 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const config = require("config"); // get our config require(file)
 const session = require("express-session"); // we remove this require(later)
-const MongoDb = require("../node/Libs/orbital-api/MongoDb");
 const userModel = require("@markab.io/orbital-api/MongoDb/models/user");
 const settingsModel = require("@markab.io/orbital-api/MongoDb/models/settings");
 const permissionsSchema = require("@markab.io/orbital-api/MongoDb/models/permissions");
@@ -23,8 +22,9 @@ const Kb = require("./src/knowledge-base/api");
 const expressPrintRoutes = require("express-print-routes");
 const path = require("path");
 const cors = require("cors");
+const { connectToDb } = require("./utils/utils");
 
-const getExpressApp = (config, isServerless) => {
+const getExpressApp = async (config, isServerless) => {
   // =================================================================
   // starting the server ================================================
   // =================================================================
@@ -141,7 +141,7 @@ const getAllApis = ({
   };
 };
 
-const registerAllRoutes = ({
+const registerAllRoutes = async ({
   app,
   server,
   exceptions,
@@ -188,40 +188,9 @@ const printAllRoutes = (app) => {
 // Setting up the database =========================================
 // =================================================================
 
-//models: mongoose models
-//schemas: the schema of each model
-// on DB initalization
-const onDBInit = ({ app, server, models, schemas }) => {
-  app.use("/schemas", (req, res, next) => {
-    res.send(schemas);
-  });
-  printAllRoutes(app);
-};
-
-//if there is an error connecting to db, send an error back to the user
-const onError = ({ app, err }) => {
-  //routes that don't require db connection
-  app.use("/", (req, res, next) => {
-    return res.status(500).send(err);
-  });
-};
-
-const onDisconnect = ({ app }) => {
-  console.log("db disconnected");
-  app.use("/", (req, res, next) => {
-    return res.status(500).send("err: db disconnected");
-  });
-};
-
 const main = async ({ exceptions }) => {
-  const { app, server } = getExpressApp(config);
-  const dbConnection = await MongoDb({
-    config,
-    onDBInit: (models, schemas) => onDBInit({ app, server, models, schemas }),
-    onError,
-    onDisconnect: () => onDisconnect({ app }),
-    onError: (err) => onError({ app, err }),
-  });
+  const { app, server } = await getExpressApp(config);
+  await connectToDb((con) => console.log("connected to db" + con));
   const {
     // authApiRoutes,
     // userApiRoutes,
@@ -234,7 +203,7 @@ const main = async ({ exceptions }) => {
     knowledgeApiRoutes,
     ...defaultProps
   } = getAllApis({ app, server, exceptions });
-  registerAllRoutes({
+  await registerAllRoutes({
     app,
     server,
     exceptions,
@@ -249,7 +218,7 @@ const main = async ({ exceptions }) => {
     knowledgeApiRoutes,
     ...defaultProps,
   });
-  return { dbConnection, app, exceptions };
+  return { app, exceptions };
 };
 module.exports = main;
 module.exports.getAllApis = getAllApis;

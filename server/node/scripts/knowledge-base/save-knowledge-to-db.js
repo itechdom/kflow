@@ -49,7 +49,9 @@ const processFile = async (filename, content) => {
   };
 
   try {
-    const res = await knowledgeModel.findOne({ title: knowledgeData.title }).exec();
+    const res = await knowledgeModel
+      .findOne({ title: knowledgeData.title })
+      .exec();
     if (res) {
       const diff = getDiff(res.body, knowledgeData.body);
       res.body = diff;
@@ -67,18 +69,22 @@ const processFile = async (filename, content) => {
 
 const main = async () => {
   try {
-    const db = await connectToDb();
-    console.log('Connected to DB');
+    const db = await connectToDb((con) => console.log("CONNECTION", con));
+    console.log("Connected to DB");
 
-    await readFiles('./data/', async (filename, content) => {
-      await processFile(filename, content);
-    }, (err) => {
-      console.error('Error reading files:', err);
-    });
+    await readFiles(
+      "./data/",
+      async (filename, content) => {
+        await processFile(filename, content);
+      },
+      (err) => {
+        console.error("Error reading files:", err);
+      }
+    );
 
-    console.log('Files processed');
+    console.log("Files processed");
   } catch (err) {
-    console.error('Error:', err);
+    console.error("Error:", err);
   }
 };
 
