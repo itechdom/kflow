@@ -23,10 +23,6 @@ const Kb = require("./src/knowledge-base/api");
 const expressPrintRoutes = require("express-print-routes");
 const path = require("path");
 const cors = require("cors");
-require('@babel/register')({
-  extensions: ['.js', '.jsx', '.ts', '.tsx'],
-});
-
 
 const getExpressApp = (config, isServerless) => {
   // =================================================================

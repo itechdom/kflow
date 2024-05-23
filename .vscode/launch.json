@@ -36,6 +36,18 @@
       "name": "Python: Current File",
       "program": "${file}",
       "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Node.js App",
+      "program": "${workspaceFolder}/server/node/index.js", // Change this to the entry point of your Node.js application
+      "cwd": "${workspaceFolder}/server/node/",
+      "console": "integratedTerminal",
+      "protocol": "inspector",
+      "runtimeExecutable": "node",
+      "skipFiles": ["<node_internals>/**"],
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"] // Adjust if necessary for transpiled files
     }
   ]
 }
