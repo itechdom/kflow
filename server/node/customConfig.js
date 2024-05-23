@@ -15,7 +15,7 @@ const customConfig = {
         await fetchDbHost();
     },
     get(key) {
-        if (key === 'test') {
+        if (key === 'db.host') {
             return DB_URI;
         } else {
             return config.get(key);

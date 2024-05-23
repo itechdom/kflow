@@ -2,10 +2,13 @@
 const serverless = require('serverless-http');
 const customConfig = require('./customConfig');
 const { getExpressApp, getAllApis, registerAllRoutes } = require('./server');
+const { connectToDb } = require('./utils/utils');
 
 const initApp = async () => {
     // Initialize customConfig to fetch DB_URI
     await customConfig.initialize();
+
+    await connectToDb((con) => console.log("connected to db" + con));
 
     const { app, server } = await getExpressApp(customConfig, true);
 

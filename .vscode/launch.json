@@ -17,7 +17,7 @@
       "type": "node",
       "request": "launch",
       "name": "Debug Serverless Offline",
-      "program": "${workspaceFolder}/server/node/node_modules/serverless/bin/serverless",
+      "program": "${workspaceFolder}/server/node/node_modules/.bin/serverless",
       "args": ["offline", "--noTimeout"],
       "cwd": "${workspaceFolder}/server/node",
       "console": "integratedTerminal",
