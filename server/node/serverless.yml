@@ -40,9 +40,11 @@ resources:
 
 package:
   exclude:
-    - node_modules/**
     - .git/**
     - docs/**
     - scripts/**
     - tests/**
     - coverage/**
+    - Libs/**
+    - media/**
+    - docs/**
