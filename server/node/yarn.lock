@@ -2686,13 +2686,13 @@
     socket.io "^1.7.3"
     stripe "^6.25.1"
 
-"@markab.io/orbital-api@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@markab.io/orbital-api/-/orbital-api-6.0.0.tgz#74b1d7439cc25085d2b81ae5cc1fb5ee889977a5"
-  integrity sha512-TvMNoueC0eT++3XZFTeqW0KPP1Bz7FYDpRsiSGfzfUrWh0i603Z3et2DL6qCTG9A+Jv6y020kICTq0RcW0IkIA==
+"@markab.io/orbital-api@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@markab.io/orbital-api/-/orbital-api-6.1.0.tgz#8b06bef61850bb035757c4827ba7782162802c2a"
+  integrity sha512-d6oWZV4ZlWYtzpXIoCl4cph9e5vL1B8LZThjMcY4+NwLF+/cFM8ug7ns5s6yuiLZ6w7tfgIU3bIPLRU/6bd5Tg==
   dependencies:
     "@markab.io/node" "^9.5.0"
-    bcrypt "^5.1.0"
+    bcryptjs "^2.4.3"
     config "^3.3.11"
     express "^4.14.1"
     joi "^17.6.0"
@@ -4592,13 +4592,18 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bcrypt@^5.1.0, bcrypt@^5.1.1:
+bcrypt@^5.1.1:
   version "5.1.1"
   resolved "https://registry.npmjs.org/bcrypt/-/bcrypt-5.1.1.tgz"
   integrity sha512-AGBHOG5hPYZ5Xl9KXzU5iKq9516yEmvCKDg3ecP5kX2aB6UqTeXZxk2ELnDgDm6BQSMlLt9rDB4LoSMx0rYwww==
   dependencies:
     "@mapbox/node-pre-gyp" "^1.0.11"
     node-addon-api "^5.0.0"
+
+bcryptjs@^2.4.3:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/bcryptjs/-/bcryptjs-2.4.3.tgz#9ab5627b93e60621ff7cdac5da9733027df1d0cb"
+  integrity sha512-V/Hy/X9Vt7f3BbPJEi8BdVFMByHi+jNXrYkW3huaybV/kQ0KJg0Y6PkEMbn+zeT+i+SiKZ/HMqJGIIt4LZDqNQ==
 
 better-assert@~1.0.0:
   version "1.0.2"
@@ -14859,6 +14864,7 @@ wordwrap@~0.0.2:
   integrity sha512-1tMA907+V4QmxV7dbRvb4/8MaRALK6q9Abid3ndMYnbyo8piisCmeONVqVSXqQA3KaP4SLt5b7ud6E2sqP8TFw==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
