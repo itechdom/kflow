@@ -11,9 +11,6 @@ const {
   registerAction,
   isPermitted,
 } = require("@markab.io/node/acl-service/acl-service");
-const {
-  registerLambdaFunction,
-} = require("@markab.io/node/lambda-service/lambda-service");
 const Knowledge = ({
   config,
   knowledgeModel,
@@ -22,8 +19,6 @@ const Knowledge = ({
   formsModel,
 }) => {
   let modelName = "knowledge";
-  let path = "src/knowledge-base/";
-  registerLambdaFunction({ modelname: modelName, path, lambdaModel });
   let crudDomainLogic = {
     create: (user, req) => {
       return {
