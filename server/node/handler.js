@@ -24,7 +24,7 @@ const initApp = async () => {
     });
 
     // Initialize Express app
-    const { app, server } = getExpressApp(customConfig);
+    const { app, server } = getExpressApp(customConfig, true);
 
     const exceptions = { disableChat: false, disableRides: false };
     const apiRoutes = getAllApis({ app, server, exceptions });

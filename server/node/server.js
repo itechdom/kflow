@@ -24,7 +24,7 @@ const expressPrintRoutes = require("express-print-routes");
 const path = require("path");
 const cors = require("cors");
 
-const getExpressApp = (config) => {
+const getExpressApp = (config, isServerless) => {
   // =================================================================
   // starting the server ================================================
   // =================================================================
@@ -33,15 +33,17 @@ const getExpressApp = (config) => {
   // App =============================================================
   // =================================================================
   const app = express();
-  const port = config.get("server.port"); // used to create, sign, and verify tokens
-  const ip = config.get("server.host");
-  var server = http.createServer(app);
-  server.listen(port);
-  console.log(`Magic happens at ${ip}:${port}`);
+  app.set("superSecret", config.secret); // secret variable
+  if (!isServerless) {
+    const port = config.get("server.port"); // used to create, sign, and verify tokens
+    const ip = config.get("server.host");
+    var server = http.createServer(app);
+    server.listen(port);
+    console.log(`Magic happens at ${ip}:${port}`);
+  }
   // =================================================================
   // configuration ===================================================
   // =================================================================
-  app.set("superSecret", config.secret); // secret variable
 
   const whitelist = config.get("cors.whitelist");
   const corsOptions = {
@@ -75,7 +77,7 @@ const getExpressApp = (config) => {
   app.options("*", cors(corsOptions)); // enable pre-flight request for DELETE request
   app.use(cors(corsOptions));
   //CORS
-  app.use(function(req, res, next) {
+  app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
     res.header(
@@ -124,7 +126,7 @@ const getAllApis = ({
   // } = orbitalApi({
   //   ...defaultProps,
   // });
- return {
+  return {
     // authApiRoutes,
     // userApiRoutes,
     // jwtApiRoutes,
@@ -170,7 +172,7 @@ const registerAllRoutes = ({
   // if (!disableNotifications) {
   //   app.use("/notifications", ...notificationsApiRoutes);
   // }
- // Markab kb
+  // Markab kb
   app.use("/knowledge", ...knowledgeApiRoutes);
 };
 
