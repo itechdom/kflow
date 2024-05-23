@@ -62,6 +62,7 @@ const getExpressApp = (config) => {
   };
 
   // required for passport session auth
+  //TODO: store in amazon ssm and retrieve using getAWSSecret()
   app.use(
     session({
       secret: "thecatwentoverthefencebutfoundafoxsosheranaway",
