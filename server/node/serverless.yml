@@ -1,5 +1,4 @@
 service: markab-backend 
-
 provider:
   name: aws
   runtime: nodejs20.x
@@ -17,27 +16,24 @@ provider:
         - "arn:aws:secretsmanager:${self:provider.region}:${aws:accountId}:secret:/kflow/DB_URI*"
 functions:
   app:
-    handler: handler.handler
+    handler: dist/bundle.handler
     events:
       - http: 
           path: /{proxy+}
           method: any
-
 plugins:
+  - serverless-webpack
   - serverless-offline
   - serverless-dotenv-plugin
-
 custom:
   serverless-offline:
     port: 3000
-
 resources:
   Resources:
     ApiGatewayRestApi:
       Type: AWS::ApiGateway::RestApi
       Properties:
         Name: ExpressApi
-
 package:
   exclude:
     - .git/**
