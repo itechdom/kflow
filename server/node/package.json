@@ -28,7 +28,7 @@
 	"dependencies": {
 		"@aws-sdk/client-secrets-manager": "^3.580.0",
 		"@google/maps": "^1.0.2",
-		"@markab.io/node": "^9.0.0",
+		"@markab.io/node": "^9.1.0",
 		"@markab.io/orbital-api": "^4.4.0",
 		"aws-sdk": "^2.403.0",
 		"config": "^1.25.1",

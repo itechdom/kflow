@@ -1381,10 +1381,10 @@
     stripe "^6.25.1"
     uuid "^3.3.2"
 
-"@markab.io/node@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@markab.io/node/-/node-9.0.0.tgz#53a2648cb1a4d843a843cddcba5cc1fb4ba25dfb"
-  integrity sha512-Osrn4UYn3DaGhLXWvZZcX48fWIKfZwjiQdX8gwKGe5PpeYPs8Vv8Xi38RlTMJdQ710UPOETYDv0fowKhHxuvXA==
+"@markab.io/node@^9.1.0":
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/@markab.io/node/-/node-9.1.0.tgz#267c1ca9820abfe8aeeb6741bc00d89a46036137"
+  integrity sha512-5feyhdjGOjTu75AiIUPRZPEj2Fd4Db3sZmwrKjkRVErN3eG+fzyR/GCaoq10btxuAtuc00PddlJAf/5g5CWAkQ==
   dependencies:
     amazon-cognito-identity-js "^3.0.15"
     aws-sdk "^2.544.0"
