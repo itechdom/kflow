@@ -1,4 +1,4 @@
-import MongoDb from '@markab.io/orbital-api/MongoDb.js';
+import MongoDb from '@markab.io/orbital-api/MongoDb/index.js';
 import config from 'config';
 import fs from 'fs';
 import {  v4  } from 'uuid';
