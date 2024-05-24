@@ -6703,6 +6703,13 @@ esbuild-loader@^2.18.0:
     tapable "^2.2.0"
     webpack-sources "^1.4.3"
 
+esbuild-register@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/esbuild-register/-/esbuild-register-3.5.0.tgz#449613fb29ab94325c722f560f800dd946dc8ea8"
+  integrity sha512-+4G/XmakeBAsvJuDugJvtyF1x+XJT4FMocynNpxrvEBViirpfUn2PgNpCHedfWhF4WokNsO/OvMKrmJOIJsI5A==
+  dependencies:
+    debug "^4.3.4"
+
 esbuild@^0.16.17:
   version "0.16.17"
   resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.16.17.tgz"

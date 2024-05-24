@@ -44,14 +44,15 @@
     "x-ray": "^2.3.4"
   },
   "devDependencies": {
+    "esbuild-register": "^3.5.0",
+    "forever": "^4.0.3",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
     "serverless": "3.38.0",
     "serverless-bundle": "^6.1.0",
     "serverless-dotenv-plugin": "^6.0.0",
     "serverless-http": "^3.2.0",
-    "serverless-offline": "^13.6.0",
-    "forever": "^4.0.3",
-    "jest": "^29.7.0",
-    "nodemon": "^3.1.0"
+    "serverless-offline": "^13.6.0"
   },
   "jest": {
     "setupFiles": [
