@@ -7,6 +7,8 @@ DIRECTORY=${1:-.}
 convert_exports() {
   local file="$1"
 
+  echo "Processing file: $file"
+
   # Use sed to find and replace module.exports statements with export statements
   sed -i.bak -E "
   s|module\.exports\s*=\s*|export default |g;
@@ -14,7 +16,11 @@ convert_exports() {
   s|module\.exports\.([a-zA-Z0-9_]+)\s*=\s*|export const \1 = |g;
   " "$file"
 
-  echo "Converted: $file"
+  if [ $? -eq 0 ]; then
+    echo "Converted: $file"
+  else
+    echo "Failed to convert: $file"
+  fi
 }
 
 # Export the function to use in find's -exec option
