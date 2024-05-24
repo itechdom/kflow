@@ -1,4 +1,5 @@
 import uuid from 'uuid/v1';
+import fs from 'fs';
 const SERVICES = [
   "Media",
   "Crud",
@@ -13,8 +14,8 @@ const SERVICES = [
   "KB",
   "EventWithCrud"
 ];
-import fs from 'fs';
-module.exports = function(file, api, options, callback) {
+
+const Kernel = function(file, api, options, callback) {
   let tree = {};
   const j = api.jscodeshift;
   let root = j(file.source);
@@ -79,3 +80,5 @@ function findNextJSXElement(j, root, tree, routeName) {
   });
   return newRoot;
 }
+
+export default Kernel;

@@ -146,4 +146,4 @@ const Settings = ({
   return [settingsApi, fileUploadApi, formsApi];
 };
 
-module.exports = Settings;
+export default Settings;

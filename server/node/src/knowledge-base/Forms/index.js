@@ -71,4 +71,4 @@ const Forms = ({
   return [crudApi, formsApi];
 };
 
-module.exports = Forms;
+export default Forms;

@@ -231,4 +231,4 @@ const Events = ({
   return [eventsApi, previewImageUploadApi, galleryUploadApi, vizApi, formsApi];
 };
 
-module.exports = Events;
+export default Events;

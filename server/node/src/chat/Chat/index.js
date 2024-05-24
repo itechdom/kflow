@@ -116,4 +116,4 @@ const Chat = ({ config, userModel, chatLogModel, server }) => {
   return [chatLogApi];
 };
 
-module.exports = Chat;
+export default Chat;

@@ -10,4 +10,4 @@ let contactsSchema = new Schema({
   createdAt: { type: Date, default: Date.now },
   resource: { type: String, default: "contacts" }
 });
-module.exports = contactsSchema;
+export default contactsSchema;

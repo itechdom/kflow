@@ -117,4 +117,4 @@ const Categories = ({
   return [categoriesApi, vizApi, formsApi];
 };
 
-module.exports = Categories;
+export default Categories;

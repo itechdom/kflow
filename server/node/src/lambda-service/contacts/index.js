@@ -98,4 +98,4 @@ const Contacts = ({ contactsModel, formsModel }) => {
   return [contactsApi, vizApi, formsApi];
 };
 
-module.exports = Contacts;
+export default Contacts;

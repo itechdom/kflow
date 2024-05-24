@@ -179,4 +179,4 @@ const Insight = ({
   return [knowledgeApi, fileUploadApi, vizApi, formsApi];
 };
 
-module.exports = Insight;
+export default Insight;

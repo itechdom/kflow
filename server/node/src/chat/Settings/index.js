@@ -138,4 +138,4 @@ const Settings = ({ config, settingsModel, permissionsModel, formsModel }) => {
   return [settingsApi, fileUploadApi, formsApi];
 };
 
-module.exports =  Settings;
+export default Settings;

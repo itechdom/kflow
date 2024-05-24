@@ -8,4 +8,4 @@ let permissionsSchema = new Schema({
   createdAt: { type: Date, default: Date.now },
   resource: { type: String, default: "acl" }
 });
-module.exports = permissionsSchema;
+export default permissionsSchema;

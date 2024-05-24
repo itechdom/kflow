@@ -170,4 +170,4 @@ const Knowledge = ({
   return [knowledgeApi, fileUploadApi, vizApi, formsApi, gptApi];
 };
 
-module.exports = Knowledge;
+export default Knowledge;

@@ -23,4 +23,4 @@ const makeARequest = (modelName, criteria, model) => {
   });
 };
 
-module.exports = makeARequest;
+export default makeARequest;
