@@ -17,19 +17,23 @@ provider:
         - "arn:aws:secretsmanager:${self:provider.region}:${aws:accountId}:secret:/kflow/DB_URI*"
 functions:
   app:
-    handler: handler.handler 
+    handler: handler.default 
     events:
       - http:
           path: /{proxy+}
           method: any
 plugins:
-  - serverless-bundle
+  - serverless-esbuild
   - serverless-offline
   - serverless-dotenv-plugin
 custom:
-  bundle:
-    linting: false
-    externals: all
+  esbuild:
+    bundle: true
+    minify: false
+    sourcemap: true
+    target: node20
+    platform: node
+    concurrency: 10
   serverless-offline:
     port: 3000
 resources:

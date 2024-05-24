@@ -4,7 +4,7 @@ import {
   formatMindmap,
   flattenMindmap
 } from "../utils";
-import kernelModel from '../../src/Orbital/MongoDb/models/kernel';
+import kernelModel from '../../src/Orbital/MongoDb/models/kernel.js';
 connectToDb((err, data) => {
   readFiles(
     "../../data/",

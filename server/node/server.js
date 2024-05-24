@@ -14,7 +14,7 @@ import permissionsSchema from "@markab.io/orbital-api/MongoDb/models/permissions
 import kernelModel from "@markab.io/orbital-api/MongoDb/models/kernel.js";
 import formsSchema from "@markab.io/orbital-api/MongoDb/models/forms.js";
 import notificationsSchema from "@markab.io/orbital-api/MongoDb/models/notifications.js";
-import Kb from "./src/knowledge-base/api.js";
+import Kb from "./src/knowledge-base/Knowledge/index.js";
 import expressPrintRoutes from "express-print-routes";
 import path from "path";
 import cors from "cors";
