@@ -1,7 +1,7 @@
 import knowledgeSchema from '@markab.io/orbital-api/MongoDb/models/knowledges.js';
-import knowledgeApi from './Knowledge.js';
 import lambdaModel from '@markab.io/orbital-api/MongoDb/models/lambda.js';
 import mongoose from 'mongoose';
+import knowledgeApi from './Knowledge/index.js';
 
 const Api = ({
   config,
