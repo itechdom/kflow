@@ -1,6 +1,5 @@
 "use strict";
-
-var Xray = require("x-ray");
+import Xray from "x-ray";
 import fs from 'fs';
 var x = Xray();
 

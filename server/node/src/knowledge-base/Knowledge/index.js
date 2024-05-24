@@ -3,14 +3,14 @@ import crudService from '@markab.io/node/crud-service/crud-service.js';
 import mediaService from '@markab.io/node/media-service/media-service.js';
 import vizService from '@markab.io/node/viz-service/viz-service.js';
 import gptService from '@markab.io/node/gpt-service/gpt-service.js';
-const {
+import {
   formsService,
   registerForms,
-} = require("@markab.io/node/forms-service/forms-service");
-const {
+} from "@markab.io/node/forms-service/forms-service.js";
+import {
   registerAction,
   isPermitted,
-} = require("@markab.io/node/acl-service/acl-service");
+} from "@markab.io/node/acl-service/acl-service.js";
 const Knowledge = ({
   config,
   knowledgeModel,

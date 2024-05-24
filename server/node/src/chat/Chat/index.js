@@ -1,9 +1,9 @@
 import crudService from '@markab.io/node/crud-service/crud-service.js';
 import socketService from '@markab.io/node/socket-service/socket-service.js';
-const {
-  registerAction,
-  isPermitted
-} = require("@markab.io/node/acl-service/acl-service.js");
+import {
+registerAction,
+isPermitted}
+from "@markab.io/node/acl-service/acl-service.js";
 import uuidv1 from 'uuid/v1';
 
 const Chat = ({ config, userModel, chatLogModel, server }) => {

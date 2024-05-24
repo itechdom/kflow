@@ -1,9 +1,9 @@
-const {
+import {
   readFiles,
   connectToDb,
   formatMindmap,
   flattenMindmap
-} = require("../utils");
+} from "../utils";
 import kernelModel from '../../src/Orbital/MongoDb/models/kernel';
 connectToDb((err, data) => {
   readFiles(
