@@ -1,14 +1,8 @@
 //the crud service creates [create, read, update, del] endpoints for a mongoose model
-const crudService = require("@markab.io/node/crud-service/crud-service");
-const mediaService = require("@markab.io/node/media-service/media-service.js");
-const {
-  formsService,
-  registerForms,
-} = require("@markab.io/node/forms-service/forms-service");
-const {
-  registerAction,
-  isPermitted,
-} = require("@markab.io/node/acl-service/acl-service.js.js");
+import crudService from '@markab.io/node/crud-service/crud-service.js';
+import mediaService from '@markab.io/node/media-service/media-service.js';
+import { formsService, registerForms } from "@markab.io/node/forms-service/forms-service.js";
+import { registerAction, isPermitted } from "@markab.io/node/acl-service/acl-service.js.js";
 
 const Settings = ({
   config,
@@ -146,4 +140,4 @@ const Settings = ({
   return [settingsApi, fileUploadApi, formsApi];
 };
 
-module.exports = Settings;
+export default Settings;

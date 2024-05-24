@@ -1,7 +1,7 @@
-const knowledgeSchema = require("@markab.io/orbital-api/MongoDb/models/knowledges");
-const knowledgeApi = require("./Knowledge");
-const lambdaModel = require("@markab.io/orbital-api/MongoDb/models/lambda");
-const mongoose = require("mongoose");
+import knowledgeSchema from '@markab.io/orbital-api/MongoDb/models/knowledges.js';
+import lambdaModel from '@markab.io/orbital-api/MongoDb/models/lambda.js';
+import mongoose from 'mongoose';
+import knowledgeApi from './Knowledge/index.js';
 
 const Api = ({
   config,
@@ -31,4 +31,4 @@ const Api = ({
   };
 };
 
-module.exports = Api;
+export default Api;

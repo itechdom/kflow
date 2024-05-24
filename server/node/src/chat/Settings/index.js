@@ -1,14 +1,14 @@
 //the crud service creates [create, read, update, del] endpoints for a mongoose model
-const crudService = require("@markab.io/node/crud-service/crud-service")
-const mediaService = require("@markab.io/node/media-service/media-service.js")
-const {
+import crudService from "@markab.io/node/crud-service/crud-service.js";
+import mediaService from "@markab.io/node/media-service/media-service.js";
+import {
   formsService,
-  registerForms
-} = require("@markab.io/node/forms-service/forms-service")
-const {
+  registerForms,
+} from "@markab.io/node/forms-service/forms-service";
+import {
   registerAction,
-  isPermitted
-} = require("@markab.io/node/acl-service/acl-service.js.js")
+  isPermitted,
+} from "@markab.io/node/acl-service/acl-service.js.js";
 
 const Settings = ({ config, settingsModel, permissionsModel, formsModel }) => {
   let crudDomainLogic = {
@@ -16,33 +16,33 @@ const Settings = ({ config, settingsModel, permissionsModel, formsModel }) => {
       //we need to include is permitted in here
       return {
         isPermitted: isPermitted({ key: "settings_create", user }),
-        criteria: {}
+        criteria: {},
       };
     },
     read: (user, req) => {
       return {
         isPermitted: isPermitted({ key: "settings_read", user }),
-        criteria: {}
+        criteria: {},
       };
     },
     update: (user, req) => {
       return {
         isPermitted: isPermitted({ key: "settings_update", user }),
-        criteria: {}
+        criteria: {},
       };
     },
     del: (user, req) => {
       return {
         isPermitted: isPermitted({ key: "settings_delete", user }),
-        criteria: {}
+        criteria: {},
       };
     },
     search: (user, req) => {
       return {
         isPermitted: isPermitted({ key: "settings_search", user }),
-        criteria: {}
+        criteria: {},
       };
-    }
+    },
   };
   const settingsApi = crudService({ Model: settingsModel, crudDomainLogic });
 
@@ -53,9 +53,9 @@ const Settings = ({ config, settingsModel, permissionsModel, formsModel }) => {
         criteria: {
           tag: user._id,
           token: user.jwtToken,
-          query: { _id: user._id }
+          query: { _id: user._id },
         },
-        isPermitted: true
+        isPermitted: true,
       };
     },
     saveMedia: (user, req, res) => {
@@ -63,11 +63,11 @@ const Settings = ({ config, settingsModel, permissionsModel, formsModel }) => {
         criteria: {
           tag: user._id,
           token: user.jwtToken,
-          query: { _id: user._id }
+          query: { _id: user._id },
         },
-        isPermitted: true
+        isPermitted: true,
       };
-    }
+    },
   };
   const fileUploadApi = mediaService({
     fileName: "logo",
@@ -75,18 +75,18 @@ const Settings = ({ config, settingsModel, permissionsModel, formsModel }) => {
     mediaDomainLogic,
     isMultiple: false,
     Model: settingsModel,
-    fileExtension: ".jpg"
+    fileExtension: ".jpg",
   });
 
   //forms api
   let formsDomainLogic = {
-    read: user => {
+    read: (user) => {
       return { criteria: { key: "settings" }, isPermitted: true };
-    }
+    },
   };
   const formsApi = formsService({
     Model: formsModel,
-    formsDomainLogic
+    formsDomainLogic,
   });
 
   //register actions to configure acls in the future (namespace is user here and it will register every action into a permissions table)
@@ -95,12 +95,12 @@ const Settings = ({ config, settingsModel, permissionsModel, formsModel }) => {
     key: "settings",
     domainLogic: crudDomainLogic,
     permissionsModel,
-    defaultPermission: false
+    defaultPermission: false,
   });
   registerAction({
     key: "settings",
     domainLogic: mediaDomainLogic,
-    permissionsModel
+    permissionsModel,
   });
   // TODO translate here
   // Intialize the form in the database when the server runs
@@ -110,32 +110,32 @@ const Settings = ({ config, settingsModel, permissionsModel, formsModel }) => {
       {
         type: "image",
         name: "image",
-        placeholder: "Site Logo"
+        placeholder: "Site Logo",
       },
       {
         type: "gallery",
         name: "gallery",
-        placeholder: "Site Images"
+        placeholder: "Site Images",
       },
       {
         type: "text",
         name: "title",
         placeholder: "Site Title",
         value: "",
-        required: true
+        required: true,
       },
       {
         type: "text",
         name: "serverLocation",
         placeholder: "Server Location",
         value: "",
-        required: true
-      }
+        required: true,
+      },
     ],
-    formsModel
+    formsModel,
   });
 
   return [settingsApi, fileUploadApi, formsApi];
 };
 
-module.exports =  Settings;
+export default Settings;

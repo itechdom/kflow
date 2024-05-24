@@ -1,1 +1,1 @@
-require("./request-list");
+import { Request } from "./request.js"; 

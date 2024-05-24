@@ -1,8 +1,8 @@
 'use strict';
-const serverless = require('serverless-http');
-const customConfig = require('./customConfig');
-const { getExpressApp, getAllApis, registerAllRoutes } = require('./server');
-const { connectToDb } = require('./utils/utils');
+import serverless from 'serverless-http';
+import customConfig from './customConfig.js';
+import { getExpressApp, getAllApis, registerAllRoutes } from './server.js';
+import { connectToDb } from './utils/utils.js';
 
 const initApp = async () => {
     // Initialize customConfig to fetch DB_URI
@@ -19,10 +19,8 @@ const initApp = async () => {
     return app;
 };
 
-const handler = async (event, context) => {
+export const handler = async (event, context) => {
     const app = await initApp();
     const serverlessHandler = serverless(app);
     return serverlessHandler(event, context);
 };
-
-module.exports.handler = handler;

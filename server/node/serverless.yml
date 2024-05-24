@@ -1,5 +1,5 @@
-service: markab-backend 
-
+service: markab-backend
+org: itechdom
 provider:
   name: aws
   runtime: nodejs20.x
@@ -13,33 +13,38 @@ provider:
     - Effect: "Allow"
       Action:
         - "secretsmanager:GetSecretValue"
-      Resource: 
+      Resource:
         - "arn:aws:secretsmanager:${self:provider.region}:${aws:accountId}:secret:/kflow/DB_URI*"
 functions:
   app:
-    handler: handler.handler
+    handler: handler.default 
     events:
-      - http: 
+      - http:
           path: /{proxy+}
           method: any
-
 plugins:
+  - serverless-esbuild
   - serverless-offline
   - serverless-dotenv-plugin
-
 custom:
+  esbuild:
+    sourcemap: true
+    target: node20
+    platform: node
+    concurrency: 10
   serverless-offline:
     port: 3000
-
 resources:
   Resources:
     ApiGatewayRestApi:
       Type: AWS::ApiGateway::RestApi
       Properties:
         Name: ExpressApi
-
 package:
+  include:
+    - config/**
   exclude:
+    - node_modules/**
     - .git/**
     - docs/**
     - scripts/**

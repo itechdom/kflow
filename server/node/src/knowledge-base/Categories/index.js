@@ -1,14 +1,14 @@
 //the crud service creates [create, read, update, del] endpoints for a mongoose model
-const crudService = require("@markab.io/node/crud-service/crud-service");
-const vizService = require("@markab.io/node/viz-service/viz-service.js");
-const {
+import crudService from '@markab.io/node/crud-service/crud-service.js';
+import vizService from '@markab.io/node/viz-service/viz-service.js';
+import {
   formsService,
   registerForms,
-} = require("@markab.io/node/forms-service/forms-service");
-const {
+} from "@markab.io/node/forms-service/forms-service";
+import {
   registerAction,
   isPermitted,
-} = require("@markab.io/node/acl-service/acl-service.js");
+} from "@markab.io/node/acl-service/acl-service.js";
 const Categories = ({
   categoriesModel,
   permissionsModel,
@@ -117,4 +117,4 @@ const Categories = ({
   return [categoriesApi, vizApi, formsApi];
 };
 
-module.exports = Categories;
+export default Categories;

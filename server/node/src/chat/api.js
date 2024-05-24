@@ -1,5 +1,5 @@
-const chatLogModel = require("@markab.io/orbital-api/MongoDb/models/chat-log");
-const chatApi = require("./Chat");
+import chatLogModel from '@markab.io/orbital-api/MongoDb/models/chat-log.js';
+import chatApi from './Chat.js';
 
 //api
 const Api = ({
@@ -27,4 +27,4 @@ const Api = ({
   };
 };
 
-module.exports = Api;
+export default Api;

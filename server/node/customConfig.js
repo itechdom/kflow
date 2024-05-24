@@ -1,6 +1,5 @@
-'use strict';
-const config = require('config');
-const getAWSSecret = require('./getAWSSecret');
+import config from 'config';
+import getAWSSecret from './getAWSSecret.js';
 
 let DB_URI;
 
@@ -27,4 +26,4 @@ const customConfig = {
     // Add more methods as required
 };
 
-module.exports = customConfig;
+export default customConfig;

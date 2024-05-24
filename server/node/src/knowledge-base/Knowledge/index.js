@@ -1,16 +1,16 @@
 //the crud service creates [create, read, update, del] endpoints for a mongoose model
-const crudService = require("../../../Libs/node-services/crud-service/crud-service");
-const mediaService = require("@markab.io/node/media-service/media-service");
-const vizService = require("@markab.io/node/viz-service/viz-service");
-const gptService = require("../../../Libs/node-services/gpt-service/gpt-service");
-const {
+import crudService from '@markab.io/node/crud-service/crud-service.js';
+import mediaService from '@markab.io/node/media-service/media-service.js';
+import vizService from '@markab.io/node/viz-service/viz-service.js';
+import gptService from '@markab.io/node/gpt-service/gpt-service.js';
+import {
   formsService,
   registerForms,
-} = require("@markab.io/node/forms-service/forms-service");
-const {
+} from "@markab.io/node/forms-service/forms-service.js";
+import {
   registerAction,
   isPermitted,
-} = require("@markab.io/node/acl-service/acl-service");
+} from "@markab.io/node/acl-service/acl-service.js";
 const Knowledge = ({
   config,
   knowledgeModel,
@@ -170,4 +170,4 @@ const Knowledge = ({
   return [knowledgeApi, fileUploadApi, vizApi, formsApi, gptApi];
 };
 
-module.exports = Knowledge;
+export default Knowledge;

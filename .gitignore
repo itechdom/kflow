@@ -31,3 +31,9 @@ server/node/data/
 .serverless
 node_modules/
 /server/node/infra/mongodb/data
+
+# Webpack
+.webpack/
+
+*.bak
+.esbuild/

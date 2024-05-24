@@ -1,5 +1,5 @@
-const config = require("config");
-const { exec } = require("child_process");
+import config from 'config';
+import {  exec  } from 'child_process';
 
 exec(
   `mongodump --host Cluster0-shard-0/cluster0-shard-00-00-a3c8j.mongodb.net:27017,cluster0-shard-00-01-a3c8j.mongodb.net:27017,cluster0-shard-00-02-a3c8j.mongodb.net:27017 --ssl --username ${config.get(

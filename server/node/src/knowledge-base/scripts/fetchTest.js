@@ -1,6 +1,6 @@
 "use strict";
 
-const scrapeIt = require("scrape-it");
+import scrapeIt from 'scrape-it';
 
 // Promise interface
 scrapeIt("https://ionicabizau.net", {

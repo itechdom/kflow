@@ -1,9 +1,9 @@
-const MongoDb = require("@markab.io/orbital-api/MongoDb");
-const config = require("config");
-const fs = require("fs");
-const { v4 } = require("uuid");
-const path = require("path");
-module.exports.readFiles = function readFiles(dirname, onFileContent, onError) {
+import MongoDb from "@markab.io/orbital-api/MongoDb/index.js";
+import config from "config";
+import fs from "fs";
+import { v4 } from "uuid";
+import path from "path";
+export const readFiles = function readFiles(dirname, onFileContent, onError) {
   return fs.readdir(path.join(__dirname, dirname), function (err, filenames) {
     if (err) {
       onError(err);
@@ -24,16 +24,17 @@ module.exports.readFiles = function readFiles(dirname, onFileContent, onError) {
     });
   });
 };
-module.exports.connectToDb = async function connectToDb(cb) {
+export const connectToDb = async function connectToDb(cb) {
   const dbConnection = await MongoDb({
     config,
-    onDBInit: (data) => cb(null, data),
-    onError: (err) => cb("err", err),
-    onDisconnect: (err) => cb("disconnect", err),
+    onDBInit: (data) => (cb ? cb(null, data) : console.log("ON DB INIT", data)),
+    onError: (err) => (cb ? cb("err", err) : console.log("ON ERROR", err)),
+    onDisconnect: (err) =>
+      cb ? cb("disconnect", err) : console.log("ON DISCONNECT", err),
   });
   return dbConnection;
 };
-module.exports.formatMindmap = function formatMindmap(node, path) {
+export const formatMindmap = function formatMindmap(node, path) {
   if (node) {
     Object.keys(node).map((key, index) => {
       let currentPath = path ? path + "." + `${index}` : "0";
@@ -46,7 +47,7 @@ module.exports.formatMindmap = function formatMindmap(node, path) {
 };
 
 //TODO: flatten mindmap prior to saving and add links for graph viz
-module.exports.flattenMindmap = function flattenMindmap(
+export const flattenMindmap = function flattenMindmap(
   node,
   parent,
   mindmapByKeys

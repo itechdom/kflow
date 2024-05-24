@@ -1,6 +1,6 @@
 //request any endpoint (for testing)
-const axios = require("axios");
-const config = require("config");
+import axios from 'axios';
+import config from 'config';
 const makeARequest = (modelName, criteria, model) => {
   let checkedCriteria = criteria ? criteria : {};
   const { query } = checkedCriteria;
@@ -23,4 +23,4 @@ const makeARequest = (modelName, criteria, model) => {
   });
 };
 
-module.exports = makeARequest;
+export default makeARequest;
