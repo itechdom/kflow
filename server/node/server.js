@@ -1,28 +1,28 @@
 // =================================================================
 // get the packages we need ========================================
 // =================================================================
-const express = require("express");
-const http = require("http");
-const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
-const morgan = require("morgan");
-const config = require("config"); // get our config require(file)
-const session = require("express-session"); // we remove this require(later)
-const userModel = require("@markab.io/orbital-api/MongoDb/models/user");
-const settingsModel = require("@markab.io/orbital-api/MongoDb/models/settings");
-const permissionsSchema = require("@markab.io/orbital-api/MongoDb/models/permissions");
+import express from "express";
+import http from "http";
+import mongoose from "mongoose";
+import bodyParser from "body-parser";
+import morgan from "morgan";
+import config from "config"; // get our config import(file)
+import session from "express-session"; // we remove this import(later)
+import userModel from "@markab.io/orbital-api/MongoDb/models/user.js";
+import settingsModel from "@markab.io/orbital-api/MongoDb/models/settings.js";
+import permissionsSchema from "@markab.io/orbital-api/MongoDb/models/permissions.js";
+import kernelModel from "@markab.io/orbital-api/MongoDb/models/kernel.js";
+import formsSchema from "@markab.io/orbital-api/MongoDb/models/forms.js";
+import notificationsSchema from "@markab.io/orbital-api/MongoDb/models/notifications.js";
+import Kb from "./src/knowledge-base/api.js";
+import expressPrintRoutes from "express-print-routes";
+import path from "path";
+import cors from "cors";
+import { connectToDb } from "./utils/utils.js";
+
 const permissionsModel = mongoose.model("Permissions", permissionsSchema);
-const kernelModel = require("@markab.io/orbital-api/MongoDb/models/kernel");
-const formsSchema = require("@markab.io/orbital-api/MongoDb/models/forms");
-const notificationsSchema = require("@markab.io/orbital-api/MongoDb/models/notifications");
 const notificationsModel = mongoose.model("Notification", notificationsSchema);
 const formsModel = mongoose.model("Forms", formsSchema);
-// const orbitalApi = require("@markab.io/orbital-api");
-const Kb = require("./src/knowledge-base/api");
-const expressPrintRoutes = require("express-print-routes");
-const path = require("path");
-const cors = require("cors");
-const { connectToDb } = require("./utils/utils");
 
 const getExpressApp = async (config, isServerless) => {
   // =================================================================
@@ -220,4 +220,5 @@ const main = async ({ exceptions }) => {
   });
   return { app, exceptions };
 };
+
 export { getAllApis, getExpressApp, registerAllRoutes, printAllRoutes, main };

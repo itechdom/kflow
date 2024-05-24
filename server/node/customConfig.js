@@ -1,4 +1,3 @@
-'use strict';
 import config from 'config';
 import getAWSSecret from './getAWSSecret.js';
 
