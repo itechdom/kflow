@@ -1,6 +1,6 @@
 'use strict';
-const config = require('config');
-const getAWSSecret = require('./getAWSSecret');
+import config from 'config';
+import getAWSSecret from './getAWSSecret';
 
 let DB_URI;
 

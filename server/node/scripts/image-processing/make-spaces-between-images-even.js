@@ -1,5 +1,5 @@
-const sharp = require('sharp');
-const path = require('path');
+import sharp from 'sharp';
+import path from 'path';
 
 async function addIconSpacing(inputSheet, outputSheet, spacing = 10) {
   try {

@@ -2622,10 +2622,10 @@
     semver "^7.3.5"
     tar "^6.1.11"
 
-"@markab.io/node@^12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@markab.io/node/-/node-12.0.0.tgz#52b6b642e6e0f6567e5aff391d60eb46a1125be3"
-  integrity sha512-5TXXSat4t+KIGYwODqQBeW9PFoezMGe9snQS1KznA5kX7Vi4l5X7wZ52b4JhdH7vX78ESYWDkmV/Or/eJBwO8g==
+"@markab.io/node@^12.0.1":
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/@markab.io/node/-/node-12.0.1.tgz#afea6564c885f916ddf53450b26f0d47aa845429"
+  integrity sha512-f5C3dvhtpvExxO3T6pVGPXP3IqAgB0SOaoNhJ2Rv8TufBM+PfwkfUREM28Dgno29EJ5CY3GhemP1izTtE51P3g==
   dependencies:
     "@aws-sdk/client-ses" "^3.582.0"
     "@aws-sdk/client-sns" "^3.582.0"
@@ -2686,10 +2686,10 @@
     socket.io "^1.7.3"
     stripe "^6.25.1"
 
-"@markab.io/orbital-api@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@markab.io/orbital-api/-/orbital-api-6.1.0.tgz#8b06bef61850bb035757c4827ba7782162802c2a"
-  integrity sha512-d6oWZV4ZlWYtzpXIoCl4cph9e5vL1B8LZThjMcY4+NwLF+/cFM8ug7ns5s6yuiLZ6w7tfgIU3bIPLRU/6bd5Tg==
+"@markab.io/orbital-api@^6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@markab.io/orbital-api/-/orbital-api-6.1.1.tgz#71c962db9d5afc537b8ff5e792285c9ac20d8612"
+  integrity sha512-pbi7/B8Vf4jEf40GhLZWQngroIUOvZ/YYYRMTW+t4txAmuh2HNaJyPOYP/f6cuObIkSS+q4+P3tYuWtdJNpleg==
   dependencies:
     "@markab.io/node" "^9.5.0"
     bcryptjs "^2.4.3"
