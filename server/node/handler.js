@@ -1,8 +1,8 @@
 'use strict';
 import serverless from 'serverless-http';
-import customConfig from './customConfig';
-import {  getExpressApp, getAllApis, registerAllRoutes  } from './server';
-import {  connectToDb  } from './utils/utils';
+import customConfig from './customConfig.js';
+import {  getExpressApp, getAllApis, registerAllRoutes  } from './server.js';
+import {  connectToDb  } from './utils/utils.js';
 
 const initApp = async () => {
     // Initialize customConfig to fetch DB_URI

@@ -1,6 +1,6 @@
 'use strict';
 import config from 'config';
-import getAWSSecret from './getAWSSecret';
+import getAWSSecret from './getAWSSecret.js';
 
 let DB_URI;
 
