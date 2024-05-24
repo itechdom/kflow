@@ -1,8 +1,8 @@
-const MongoDb = require("../src/Orbital/MongoDb");
-const config = require("config");
-const fs = require("fs");
-const uuidv1 = require("uuid/v1");
-const path = require("path");
+import MongoDb from '../src/Orbital/MongoDb.js';
+import config from 'config';
+import fs from 'fs';
+import uuidv1 from 'uuid/v1';
+import path from 'path';
 module.exports.readFiles = function readFiles(dirname, onFileContent, onError) {
   fs.readdir(path.join(__dirname, dirname), function(err, filenames) {
     if (err) {

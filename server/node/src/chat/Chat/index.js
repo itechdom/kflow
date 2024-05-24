@@ -1,10 +1,10 @@
-const crudService = require("@markab.io/node/crud-service/crud-service");
-const socketService = require("@markab.io/node/socket-service/socket-service.js");
+import crudService from '@markab.io/node/crud-service/crud-service.js';
+import socketService from '@markab.io/node/socket-service/socket-service.js';
 const {
   registerAction,
   isPermitted
 } = require("@markab.io/node/acl-service/acl-service.js");
-const uuidv1 = require("uuid/v1");
+import uuidv1 from 'uuid/v1';
 
 const Chat = ({ config, userModel, chatLogModel, server }) => {
   const channel = "chat";

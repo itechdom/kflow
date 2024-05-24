@@ -1,6 +1,6 @@
 //the crud service creates [create, read, update, del] endpoints for a mongoose model
-const { formsService } = require("@markab.io/node/forms-service/forms-service");
-const crudService = require("@markab.io/node/crud-service/crud-service");
+import {  formsService  } from '@markab.io/node/forms-service/forms-service.js';
+import crudService from '@markab.io/node/crud-service/crud-service.js';
 const {
   registerAction,
   isPermitted,

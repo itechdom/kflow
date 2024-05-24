@@ -1,7 +1,7 @@
-const lambdaModel = require("@markab.io/orbital-api/MongoDb/models/lambda");
-const lambdaService = require("@markab.io/node/lambda-service/lambda-service-script");
-const MongoDb = require("@markab.io/orbital-api/MongoDb/index");
-const config = require("config");
+import lambdaModel from '@markab.io/orbital-api/MongoDb/models/lambda.js';
+import lambdaService from '@markab.io/node/lambda-service/lambda-service-script.js';
+import MongoDb from '@markab.io/orbital-api/MongoDb/index.js';
+import config from 'config';
 lambdaService({
   lambdaModel,
   APP_PATH: "./src/",

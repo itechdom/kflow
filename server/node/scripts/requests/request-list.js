@@ -1,2 +1,2 @@
-const makeARequest = require("./requests");
+import makeARequest from './requests.js';
 makeARequest("volunteerings", { query: {} }, { _id: "1" });

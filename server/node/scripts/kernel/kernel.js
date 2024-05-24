@@ -1,4 +1,4 @@
-const uuid = require("uuid/v1");
+import uuid from 'uuid/v1';
 const SERVICES = [
   "Media",
   "Crud",
@@ -13,7 +13,7 @@ const SERVICES = [
   "KB",
   "EventWithCrud"
 ];
-const fs = require("fs");
+import fs from 'fs';
 module.exports = function(file, api, options, callback) {
   let tree = {};
   const j = api.jscodeshift;

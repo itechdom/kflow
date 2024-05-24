@@ -1,7 +1,7 @@
 "use strict";
 
 var Xray = require("x-ray");
-const fs = require("fs");
+import fs from 'fs';
 var x = Xray();
 
 function stripHtml(html) {

@@ -1,14 +1,14 @@
-const mongoose = require("mongoose");
-const config = require("config");
+import mongoose from 'mongoose';
+import config from 'config';
 let conn = null;
 const uri = config.get("db.remote");
-const serverless = require("serverless-http");
-const express = require("express");
-const contactsApi = require("./index.js");
+import serverless from 'serverless-http';
+import express from 'express';
+import contactsApi from './index.js';
 const app = express();
-const model = require("./contacts");
-const formsSchema = require("./forms");
-const permissionsSchema = require("./permissions");
+import model from './contacts.js';
+import formsSchema from './forms.js';
+import permissionsSchema from './permissions.js';
 let handler, contactsModel, permissionsModel;
 exports.handler = async function(event, context) {
   console.log(uri);

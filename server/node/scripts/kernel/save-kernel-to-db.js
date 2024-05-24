@@ -4,7 +4,7 @@ const {
   formatMindmap,
   flattenMindmap
 } = require("../utils");
-const kernelModel = require("../../src/Orbital/MongoDb/models/kernel");
+import kernelModel from '../../src/Orbital/MongoDb/models/kernel';
 connectToDb((err, data) => {
   readFiles(
     "../../data/",

@@ -1,6 +1,6 @@
-const crudService = require("@markab.io/node/crud-service/crud-service");
-const mediaService = require("@markab.io/node/media-service/media-service.js");
-const vizService = require("@markab.io/node/viz-service/viz-service.js");
+import crudService from '@markab.io/node/crud-service/crud-service.js';
+import mediaService from '@markab.io/node/media-service/media-service.js';
+import vizService from '@markab.io/node/viz-service/viz-service.js';
 const {
   formsService,
   registerForms,
