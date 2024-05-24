@@ -110,7 +110,7 @@ const getAllApis = ({
     // mediaModel,
     config,
   };
-  const { knowledgeApiRoutes } = Kb({
+  const knowledgeApiRoutes = Kb({
     ...defaultProps,
   });
   // const {
@@ -190,7 +190,8 @@ const printAllRoutes = (app) => {
 
 const main = async ({ exceptions }) => {
   const { app, server } = await getExpressApp(config);
-  await connectToDb((con) => console.log("connected to db" + con));
+  const con = await connectToDb();
+  console.log("CON", con);
   const {
     // authApiRoutes,
     // userApiRoutes,

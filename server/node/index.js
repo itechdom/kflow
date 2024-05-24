@@ -1,2 +1,2 @@
-import main from "./server.js";
+import { main } from "./server.js";
 main({ exceptions: {} });
