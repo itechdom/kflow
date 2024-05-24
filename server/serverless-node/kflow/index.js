@@ -20,4 +20,5 @@ app.use((req, res, next) => {
   });
 });
 
-module.exports.handler = serverless(app);
+const handler = serverless(app);
+export default handler;
