@@ -7,11 +7,10 @@ convert_require_to_import() {
   # Read the content of the file
   file_content=$(<"$file_path")
 
-  # Use sed to replace the require statements with the import statements
-  converted_content=$(echo "$file_content" | sed -E '
-    s/const ([a-zA-Z0-9_]+) = require\("([^"]+)"\)/import \1 from "\2"/;
-    s/const \{ ([a-zA-Z0-9_]+) \} = require\("([^"]+)"\)/import \{ \1 \} from "\2"/
-  ')
+  # Use sed to replace different patterns of require statements with import statements
+  converted_content=$(echo "$file_content" | sed -E \
+    -e 's/const ([a-zA-Z0-9_]+) = require\("([^"]+)"\)/import \1 from "\2"/' \
+    -e 's/const \{ ([a-zA-Z0-9_, \n]+) \} = require\("([^"]+)"\)/import \{ \1 \} from "\2"/')
 
   # Write the converted content back to the file
   echo "$converted_content" > "$file_path"
