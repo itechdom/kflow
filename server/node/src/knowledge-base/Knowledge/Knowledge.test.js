@@ -26,7 +26,7 @@ class MockModel {
   static joiValidate = jest.fn();
   static findOneAndUpdate = mockFindOneAndUpdate;
   static deleteOne = mockDeleteOne;
-  static create = jest.fn(); 
+  static create = jest.fn().mockResolvedValue({ _id: '12345', title: 'Test Knowledge' }); // Mock the create method
 }
 
 const config = {};
@@ -66,13 +66,12 @@ describe("Knowledge Function", () => {
       MockModel.create.mockResolvedValueOnce({ _id: '12345', title: 'Test Knowledge' });
 
       const res = await request(app)
-        .post('/knowledge')
-        .send({ title: 'Test Knowledge' });
-
+        .post('/knowledge/create')
+        .send({ model: { title: 'Test Knowledge' } });
+      console.error("RES", res.body);
       expect(res.status).toBe(200);
       expect(res.body).toHaveProperty('_id', '12345');
     });
-
     it("should read knowledge entries", async () => {
       mockCrudDomainLogic.read.mockReturnValueOnce({ isPermitted: true, criteria: {} });
       mockExec.mockResolvedValueOnce([{ _id: '12345', title: 'Knowledge' }]);
