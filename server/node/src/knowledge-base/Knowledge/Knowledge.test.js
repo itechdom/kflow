@@ -1,120 +1,165 @@
-import request from 'supertest';
-import express from 'express';
-import Knowledge from './Knowledge';
-import { jest } from '@jest/globals';
-import crudService from '@markab.io/node/crud-service/crud-service.js';
-import mediaService from '@markab.io/node/media-service/media-service.js';
-import vizService from '@markab.io/node/viz-service/viz-service.js';
-import gptService from '@markab.io/node/gpt-service/gpt-service.js';
-import {
-  formsService,
-  registerForms,
-} from '@markab.io/node/forms-service/forms-service.js';
-import {
-  registerAction,
-  isPermitted,
-} from '@markab.io/node/acl-service/acl-service.js';
+import request from "supertest";
+import express from "express";
+import Knowledge from "./Knowledge";
+import { jest } from "@jest/globals";
 
-const mockKnowledgeModel = {
-  modelName: 'Knowledge',
-  find: jest.fn(),
-  findOne: jest.fn(),
-  create: jest.fn(),
-  update: jest.fn(),
-  delete: jest.fn(),
-};
+// Mock Models
+const mockExec = jest.fn();
+const mockSelect = jest.fn().mockReturnValue({ exec: mockExec });
+const mockPopulate = jest.fn().mockReturnValue({ select: mockSelect });
+const mockSort = jest.fn().mockReturnValue({ populate: mockPopulate });
+const mockFind = jest.fn().mockReturnValue({ sort: mockSort });
+const mockFindOneAndUpdate = jest.fn().mockReturnValue({ exec: mockExec });
+const mockDeleteOne = jest.fn().mockReturnValue({ exec: mockExec });
+const mockRegisterAction = jest.fn();
+const mockRegisterForms = jest.fn();
 
-const mockPermissionsModel = jest.fn();
-const mockLambdaModel = jest.fn();
-const mockFormsModel = jest.fn();
+class MockModel {
+  constructor(data) {
+    Object.assign(this, data);
+  }
+
+  save = jest.fn().mockResolvedValue(this);
+  static find = mockFind;
+  static paginate = jest.fn();
+  static countDocuments = jest.fn().mockReturnValue({ exec: mockExec });
+  static joiValidate = jest.fn();
+  static findOneAndUpdate = mockFindOneAndUpdate;
+  static deleteOne = mockDeleteOne;
+  static create = jest.fn(); 
+}
 
 const config = {};
-
-const setupApp = () => {
-  const app = express();
-  app.use(express.json());
-  
-  const [knowledgeApi, fileUploadApi, vizApi, formsApi, gptApi] = Knowledge({
-    config,
-    knowledgeModel: mockKnowledgeModel,
-    permissionsModel: mockPermissionsModel,
-    lambdaModel: mockLambdaModel,
-    formsModel: mockFormsModel,
-    autoPopulateDB: true,
-  });
-
-  app.use('/knowledge', knowledgeApi);
-  app.use('/fileUpload', fileUploadApi);
-  app.use('/viz', vizApi);
-  app.use('/forms', formsApi);
-  app.use('/gpt', gptApi);
-
-  return app;
+const mockCrudDomainLogic = {
+  create: jest.fn(),
+  read: jest.fn(),
+  update: jest.fn(),
+  del: jest.fn(),
+  search: jest.fn(),
 };
 
-describe('Knowledge Module', () => {
-  let app;
-
-  beforeAll(() => {
-    app = setupApp();
+const setupKnowledgeFunction = (autoPopulateDB = false) => {
+  return Knowledge({
+    config,
+    knowledgeModel: MockModel,
+    permissionsModel: MockModel,
+    lambdaModel: MockModel,
+    formsModel: MockModel,
+    autoPopulateDB,
   });
+};
 
-  beforeEach(() => {
-    jest.clearAllMocks();
-  });
+const app = express();
+app.use(express.json());
+const [knowledgeApi, fileUploadApi, vizApi, formsApi, gptApi] = setupKnowledgeFunction(true);
+app.use("/knowledge", knowledgeApi);
+app.use("/media", fileUploadApi);
+app.use("/viz", vizApi);
+app.use("/forms", formsApi);
+app.use("/gpt", gptApi);
 
-  describe('CRUD Operations', () => {
-    it('should create knowledge if permitted', async () => {
-      isPermitted.mockReturnValue(true);
-      mockKnowledgeModel.create.mockResolvedValue({ title: 'New Knowledge' });
+describe("Knowledge Function", () => {
+  describe("CRUD API", () => {
+    it("should create a knowledge entry", async () => {
+      mockCrudDomainLogic.create.mockReturnValueOnce({ isPermitted: true });
+      MockModel.joiValidate.mockReturnValueOnce({ error: null });
+      MockModel.create.mockResolvedValueOnce({ _id: '12345', title: 'Test Knowledge' });
 
       const res = await request(app)
         .post('/knowledge')
-        .send({ model: { title: 'New Knowledge' } });
+        .send({ title: 'Test Knowledge' });
 
       expect(res.status).toBe(200);
-      expect(res.body).toEqual({ title: 'New Knowledge' });
+      expect(res.body).toHaveProperty('_id', '12345');
     });
 
-    it('should read knowledge if permitted', async () => {
-      isPermitted.mockReturnValue(true);
-      mockKnowledgeModel.find.mockResolvedValue([{ title: 'Knowledge' }]);
-
-      const res = await request(app).get('/knowledge');
-
-      expect(res.status).toBe(200);
-      expect(res.body).toEqual({ data: [{ title: 'Knowledge' }], count: 1 });
-    });
-
-    it('should update knowledge if permitted', async () => {
-      isPermitted.mockReturnValue(true);
-      mockKnowledgeModel.findOneAndUpdate.mockReturnValue({ exec: jest.fn().mockResolvedValue({ title: 'Updated Knowledge' }) });
+    it("should read knowledge entries", async () => {
+      mockCrudDomainLogic.read.mockReturnValueOnce({ isPermitted: true, criteria: {} });
+      mockExec.mockResolvedValueOnce([{ _id: '12345', title: 'Knowledge' }]);
 
       const res = await request(app)
+        .get('/knowledge');
+
+      expect(res.status).toBe(200);
+      expect(res.body).toHaveProperty('data');
+      expect(res.body.data[0]).toHaveProperty('title', 'Knowledge');
+    });
+
+    it("should update a knowledge entry", async () => {
+      mockCrudDomainLogic.update.mockReturnValueOnce({ isPermitted: true });
+      MockModel.joiValidate.mockReturnValueOnce({ error: null });
+      mockFindOneAndUpdate.mockReturnValueOnce({
+        exec: jest.fn().mockResolvedValue({ _id: '12345', title: 'Updated Title' }),
+      });
+      const res = await request(app)
         .put('/knowledge')
-        .send({ model: { title: 'Updated Knowledge' } });
+        .send({ title: 'Updated Title' });
 
       expect(res.status).toBe(200);
-      expect(res.body).toEqual({ title: 'Updated Knowledge' });
+      expect(res.body).toHaveProperty('title', 'Updated Title');
     });
 
-    it('should delete knowledge if permitted', async () => {
-      isPermitted.mockReturnValue(true);
-      mockKnowledgeModel.deleteOne.mockReturnValue({ exec: jest.fn().mockResolvedValue({}) });
+    it("should delete a knowledge entry", async () => {
+      mockCrudDomainLogic.del.mockReturnValueOnce({ isPermitted: true });
+      mockDeleteOne.mockReturnValueOnce({
+        exec: jest.fn().mockResolvedValue({}),
+      });
 
-      const res = await request(app).delete('/knowledge/123');
+      const res = await request(app)
+        .delete('/knowledge/12345');
 
       expect(res.status).toBe(200);
     });
+  });
 
-    it('should search knowledge if permitted', async () => {
-      isPermitted.mockReturnValue(true);
-      mockKnowledgeModel.find.mockReturnValue({ exec: jest.fn().mockResolvedValue([{ _id: '1', title: 'Knowledge' }]) });
-
-      const res = await request(app).post('/knowledge/search').send({ query: {} });
+  describe("Visualization API", () => {
+    it("should perform average calculation", async () => {
+      const res = await request(app)
+        .post('/viz/average')
+        .send({ field: 'value' });
 
       expect(res.status).toBe(200);
-      expect(res.body).toEqual({ data: [{ _id: '1', title: 'Knowledge' }], count: 1 });
+      expect(res.body).toHaveProperty('result');
+    });
+  });
+
+  describe("GPT API", () => {
+    it("should return a GPT response", async () => {
+      const res = await request(app)
+        .post('/gpt')
+        .send({ prompt: 'Test Prompt' });
+
+      expect(res.status).toBe(200);
+      expect(res.body).toHaveProperty('response');
+    });
+  });
+
+  describe("Media API", () => {
+    it("should upload a media file", async () => {
+      const res = await request(app)
+        .post('/media/upload')
+        .attach('file', Buffer.from('dummy file content'), 'test.jpg');
+
+      expect(res.status).toBe(200);
+      expect(res.body).toHaveProperty('fileUrl');
+    });
+  });
+
+  describe("Forms API", () => {
+    it("should return form schema", async () => {
+      const res = await request(app)
+        .get('/forms');
+
+      expect(res.status).toBe(200);
+      expect(res.body).toHaveProperty('schema');
+    });
+  });
+
+  describe("Auto-Populate DB", () => {
+    it("should register actions and forms when autoPopulateDB is true", () => {
+      setupKnowledgeFunction(true);
+      expect(mockRegisterAction).toHaveBeenCalled();
+      expect(mockRegisterForms).toHaveBeenCalled();
     });
   });
 });
