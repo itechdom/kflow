@@ -1,34 +1,76 @@
 ```mermaid
-flowchart TD
-    A[Start] --> B[Import Required Modules]
-    B --> C[Define ModelListActions Component]
-    C --> D[Define Knowledge Component]
+graph TB
+    A[Orbital Unit Framework] -->|uses| B[CRUD Service]
+    A -->|uses| C[Forms Service]
+    A -->|uses| D[Media Service]
 
-    D --> E[useEffect Hook]
-    E --> F[Scroll to Top on Mount]
-    F --> G[Define matchPath]
+    B --> E[Create Route]
+    B --> F[Read Route]
+    B --> G[Update Route]
+    B --> H[Delete Route]
 
-    G --> H[Return ModelList Component]
-    H --> I[Pass Props to ModelList]
+    C --> I[Form Storage]
+    C --> J[Form Serving]
 
-    I --> J[ModelList Configuration]
-    J1[modelArray, disableViewPage, modelKey, modelName] --> J2[columns, createModel, fetchModel, updateModel]
-    J2 --> J3[getModel, deleteModel, searchModel, uploadMedia, uploadGallery]
-    J3 --> J4[deleteMedia, setFilter, removeFilter, modelCount]
-    J4 --> J5[knowledgeSearch, knowledgeChat, location, match, history, classes]
-    J5 --> J6[form, notifications, saveNotification, removeNotification]
-    J6 --> J7[ModelPreviewPage, ModelListItemComponent, gridSizes]
-    J7 --> J8[ModelListActions, justify, loading, getUnsplash]
+    D --> K[File Storage]
+    D --> L[File Retrieval]
 
-    J8 --> K[ModelList Event Handlers]
-    K1[onAdd: Navigate to Add Page] --> K2[onView: Navigate to Knowledge Details]
-    K2 --> K3[onCreateSubmit: Navigate to Knowledge Details]
-    K3 --> K4[onSearchSelect: Navigate to Knowledge Details]
-    K4 --> K5[onChangePage: Update Page and Fetch Models]
+    subgraph UI
+        M[React App]
+        M --> N[Knowledge Component]
+        N --> O[ModelList]
+        N --> P[ModelListItem]
+        N --> Q[ModelPreview]
+    end
 
-    K5 --> L[Export Knowledge Component]
-    L --> M[End]
+    subgraph Backend
+        R[Node.js Backend]
+        R --> S[knowledge_fetchModel]
+        R --> T[knowledge_createModel]
+        R --> U[knowledge_getModel]
+        R --> V[knowledge_updateModel]
+        R --> W[knowledge_deleteModel]
+        R --> X[knowledge_searchModel]
+        R --> Y[knowledge_media_upload]
+        R --> Z[knowledge_gallery_upload]
+        R --> AA[knowledge_media_delete]
+        R --> AB[knowledge_count]
+        R --> AC[knowledge_setPage]
+        R --> AD[knowledge_set_filter]
+        R --> AE[knowledge_remove_filter]
+        R --> AF[knowledge_chat]
+        R --> AG[knowledge_form]
+        R --> AH[notifications]
+        R --> AI[saveNotification]
+        R --> AJ[removeNotification]
+        R --> AK[getUnsplash]
+        R --> AL[deleting]
+        R --> AM[setDeleting]
+        R --> AN[knowledge_loading]
+        R --> AO[loading]
+    end
 
-    style A fill:#f9f,stroke:#333,stroke-width:4px
-    style M fill:#f9f,stroke:#333,stroke-width:4px
+    N -->|fetches data| S
+    N -->|creates data| T
+    N -->|gets data| U
+    N -->|updates data| V
+    N -->|deletes data| W
+    N -->|searches data| X
+    N -->|uploads media| Y
+    N -->|uploads gallery| Z
+    N -->|deletes media| AA
+    N -->|gets count| AB
+    N -->|sets page| AC
+    N -->|sets filter| AD
+    N -->|removes filter| AE
+    N -->|chat functionality| AF
+    N -->|form handling| AG
+    N -->|manages notifications| AH
+    N -->|saves notification| AI
+    N -->|removes notification| AJ
+    N -->|uses Unsplash API| AK
+    N -->|handles deleting state| AL
+    N -->|sets deleting state| AM
+    N -->|handles loading state| AN
+    N -->|sets loading state| AO
 ```
