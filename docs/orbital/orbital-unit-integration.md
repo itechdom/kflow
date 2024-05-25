@@ -30,83 +30,130 @@ flowchart TB
         E --> E6
     end
 
+    subgraph CRUDServiceFrontend [CRUD Service UI]
+        direction TB
+        CRUD_UI[CRUD UI]
+        CRUD_UI --> F[CrudDomainStore]
+        F --> G[Model Data]
+        CRUD_UI --> H[CRUD Container]
+        H --> I[Create Model]
+        H --> J[Read Model]
+        H --> K[Update Model]
+        H --> L[Delete Model]
+        H --> M[Search Model]
+        H --> N[NotificationDomainStore]
+        H --> O[OfflineStorage]
+        H --> P[SERVER Configuration]
+    end
+
     subgraph FormsService [Forms Service]
         direction TB
-        F[Define Forms Routes]
-        F1[GET /forms]
-        F2[POST /forms]
-        F3[PUT /forms/:id]
-        F4[DELETE /forms/:id]
+        F1[Define Forms Routes]
+        F2[GET /forms]
+        F3[POST /forms]
+        F4[PUT /forms/:id]
+        F5[DELETE /forms/:id]
         
-        F --> F1
-        F --> F2
-        F --> F3
-        F --> F4
+        F1 --> F2
+        F1 --> F3
+        F1 --> F4
+        F1 --> F5
+    end
+
+    subgraph FormsServiceFrontend [Forms Service UI]
+        direction TB
+        FORMS_UI[Forms UI]
+        FORMS_UI --> Q[FormsDomainStore]
+        Q --> R[Form Data]
+        FORMS_UI --> S[Forms Container]
+        S --> T[Get Model]
+        S --> U[Set Error]
+        S --> V[OfflineStorage]
+        S --> W[SERVER Configuration]
     end
 
     subgraph MediaService [Media Service]
         direction TB
-        G[Define Media Routes]
-        G1[GET /media]
-        G2[POST /media]
-        G3[POST /gallery]
-        G4[PUT /media]
-        G5[PUT /gallery]
-        G6[DELETE /remove/media]
+        G1[Define Media Routes]
+        G2[GET /media]
+        G3[POST /media]
+        G4[POST /gallery]
+        G5[PUT /media]
+        G6[PUT /gallery]
+        G7[DELETE /remove/media]
         
-        G --> G1
-        G --> G2
-        G --> G3
-        G --> G4
-        G --> G5
-        G --> G6
+        G1 --> G2
+        G1 --> G3
+        G1 --> G4
+        G1 --> G5
+        G1 --> G6
+        G1 --> G7
+    end
+
+    subgraph MediaServiceFrontend [Media Service UI]
+        direction TB
+        MEDIA_UI[Media UI]
+        MEDIA_UI --> X[MediaDomainStore]
+        X --> Y[Gallery Data]
+        X --> Z[Media Data]
+        MEDIA_UI --> AA[Upload Media]
+        MEDIA_UI --> AB[Delete Media]
+        MEDIA_UI --> AC[OfflineStorage]
+        MEDIA_UI --> AD[SERVER Configuration]
     end
 
     subgraph ExternalServices [External Services]
         direction TB
-        H[Database]
-        I[Authentication Service]
-        J[External APIs]
-        K[File Storage]
+        H1[Database]
+        H2[Authentication Service]
+        H3[External APIs]
+        H4[File Storage]
     end
 
     subgraph APIGateway [API Gateway]
         direction TB
-        L[Route Requests to Orbital Unit]
-        M[Load Balancing]
-        N[Security Checks]
+        I1[Route Requests to Orbital Unit]
+        I2[Load Balancing]
+        I3[Security Checks]
     end
 
     subgraph Clients [Clients]
         direction TB
-        O[Web Frontend]
-        P[Mobile App]
-        Q[External Systems]
+        J1[Web Frontend]
+        J2[Mobile App]
+        J3[External Systems]
     end
+
+    Clients --> CRUDServiceFrontend
+    Clients --> FormsServiceFrontend
+    Clients --> MediaServiceFrontend
+    CRUDServiceFrontend --> APIGateway
+    FormsServiceFrontend --> APIGateway
+    MediaServiceFrontend --> APIGateway
 
     OrbitalUnit --> CRUDService
     OrbitalUnit --> FormsService
     OrbitalUnit --> MediaService
     
-    CRUDService --> H
-    CRUDService --> I
-    CRUDService --> J
-    CRUDService --> K
+    CRUDService --> H1
+    CRUDService --> H2
+    CRUDService --> H3
+    CRUDService --> H4
 
-    FormsService --> H
-    FormsService --> I
-    FormsService --> J
-    FormsService --> K
+    FormsService --> H1
+    FormsService --> H2
+    FormsService --> H3
+    FormsService --> H4
 
-    MediaService --> H
-    MediaService --> I
-    MediaService --> J
-    MediaService --> K
+    MediaService --> H1
+    MediaService --> H2
+    MediaService --> H3
+    MediaService --> H4
 
     Clients --> APIGateway
     APIGateway --> OrbitalUnit
 
     style A fill:#f9f,stroke:#333,stroke-width:4px
-    style O fill:#9f9,stroke:#333,stroke-width:4px
-    style Q fill:#9f9,stroke:#333,stroke-width:4px
+    style J1 fill:#9f9,stroke:#333,stroke-width:4px
+    style J3 fill:#9f9,stroke:#333,stroke-width:4px
 ```
