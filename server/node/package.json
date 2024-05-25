@@ -7,9 +7,6 @@
   "scripts": {
     "start": "nodemon --exec node index.js",
     "start:qa": "nodemon --exec node index.js --config nodemon-qa.json",
-    "build": "webpack",
-    "forever:qa": "./node_modules/.bin/forever start -c \"npm run start:qa\" ./",
-    "serve": "node dist/index.js",
     "seed": "node ./App/MongoDb/seed.js",
     "kernel": "./scripts/kernel/kernel.sh",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
@@ -53,7 +50,6 @@
     "serverless-offline": "^13.6.0",
     "@babel/core": "^7.24.5",
     "@babel/preset-env": "^7.24.5",
-    "axios": "^1.7.2",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
     "supertest": "^7.0.0"
