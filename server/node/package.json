@@ -7,12 +7,9 @@
   "scripts": {
     "start": "nodemon --exec node index.js",
     "start:qa": "nodemon --exec node index.js --config nodemon-qa.json",
-    "build": "webpack",
-    "forever:qa": "./node_modules/.bin/forever start -c \"npm run start:qa\" ./",
-    "serve": "node dist/index.js",
     "seed": "node ./App/MongoDb/seed.js",
     "kernel": "./scripts/kernel/kernel.sh",
-    "test": "./node_modules/.bin/jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +23,7 @@
   "homepage": "https://github.com/itechdom/playground#readme",
   "dependencies": {
     "@aws-sdk/client-secrets-manager": "^3.580.0",
-    "@markab.io/node": "^13.0.1",
+    "@markab.io/node": "^13.0.2",
     "@markab.io/orbital-api": "^7.0.1",
     "axios": "^1.7.2",
     "body-parser": "^1.20.2",
@@ -39,27 +36,22 @@
     "mongoose": "^8.4.0",
     "morgan": "^1.8.0",
     "scrape-it": "^6.1.2",
-    "sharp": "^0.32.1",
+    "sharp": "^0.33.4",
     "uuid": "^9.0.1",
     "winston": "^3.13.0",
     "x-ray": "^2.3.4"
   },
   "devDependencies": {
-    "esbuild": "^0.21.3",
-    "esbuild-register": "^3.5.0",
-    "forever": "^4.0.3",
-    "jest": "^29.7.0",
     "nodemon": "^3.1.0",
     "serverless": "3.38.0",
     "serverless-dotenv-plugin": "^6.0.0",
     "serverless-esbuild": "^1.52.1",
     "serverless-http": "^3.2.0",
     "serverless-offline": "^13.6.0",
-    "webpack-cli": "^5.1.4"
-  },
-  "jest": {
-    "setupFiles": [
-      "./setupTests.js"
-    ]
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
   }
 }
