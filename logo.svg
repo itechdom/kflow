@@ -1,0 +1,25 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .orbital {
+        fill: rgba(30, 144, 255, 0.7);
+        stroke: #1E90FF;
+        stroke-width: 2;
+      }
+      .electron {
+        fill: #1E90FF;
+      }
+    </style>
+    
+    <!-- P Orbital Lobes -->
+    <ellipse cx="100" cy="60" rx="30" ry="50" class="orbital"/>
+    <ellipse cx="100" cy="140" rx="30" ry="50" class="orbital"/>
+  
+    <!-- Electron Animation -->
+    <circle cx="100" cy="40" r="5" class="electron">
+      <animateMotion path="M 0,0 C 0,40 0,120 0,160" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="160" r="5" class="electron">
+      <animateMotion path="M 0,0 C 0,-40 0,-120 0,-160" dur="4s" repeatCount="indefinite" />
+    </circle>
+  </svg>
+  
