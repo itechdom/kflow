@@ -1,9 +1,15 @@
-import MongoDb from '@markab.io/orbital-api/MongoDb.js';
+import MongoDb from '@markab.io/orbital-api/MongoDb/index.js';
 import config from 'config';
 import fs from 'fs';
 import {  v4  } from 'uuid';
-import path from 'path';
-module.exports.readFiles = function readFiles(dirname, onFileContent, onError) {
+import path, {dirname} from 'path';
+import { fileURLToPath } from 'url';
+
+// Get the directory name
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+export const readFiles = function readFiles(dirname, onFileContent, onError) {
   return fs.readdir(path.join(__dirname, dirname), function (err, filenames) {
     if (err) {
       onError(err);
@@ -24,7 +30,7 @@ module.exports.readFiles = function readFiles(dirname, onFileContent, onError) {
     });
   });
 };
-module.exports.connectToDb = async function connectToDb(cb) {
+export const connectToDb = async function connectToDb(cb) {
   const dbConnection = await MongoDb({
     config,
     onDBInit: (data) => cb(null, data),
@@ -33,7 +39,7 @@ module.exports.connectToDb = async function connectToDb(cb) {
   });
   return dbConnection;
 };
-module.exports.formatMindmap = function formatMindmap(node, path) {
+export const formatMindmap = function formatMindmap(node, path) {
   if (node) {
     Object.keys(node).map((key, index) => {
       let currentPath = path ? path + "." + `${index}` : "0";
@@ -46,7 +52,7 @@ module.exports.formatMindmap = function formatMindmap(node, path) {
 };
 
 //TODO: flatten mindmap prior to saving and add links for graph viz
-module.exports.flattenMindmap = function flattenMindmap(
+export const flattenMindmap = function flattenMindmap(
   node,
   parent,
   mindmapByKeys

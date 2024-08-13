@@ -4,7 +4,7 @@ import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 import { Crud } from "Libs/react-services/crud-service/crud-container";
 import KnowledgePreview from "../Knowledge/ModelPreview/ModelPreview";
 import { mainRouteList, logoutRoute } from "../Routes";
-import config from "../Config";
+import config from "../config";
 import { offlineStorage } from "../OfflineStorage";
 import rootStore from "../Store/reduxStore";
 const logo = "images/logo-no-background.svg";
