@@ -1,0 +1,176 @@
+{
+  "id": "root",
+  "formatVersion": 3,
+  "ideas": {
+    "1": {
+      "id": 1,
+      "title": "Kafka",
+      "attr": {
+        "style": {},
+        "position": [
+          -19,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "-1": {
+          "title": "Resources",
+          "id": 177,
+          "ideas": {
+            "1": {
+              "title": "https://kafka.apache.org/documentation/#introduction",
+              "id": "203.fff7.ac85fca77-d27f.8b652c95b"
+            },
+            "2": {
+              "title": "https://www.confluent.io/en-gb/blog/developers-guide-confluent-community-license/",
+              "id": "204.a25c.6282e2b9-2895.091c6dbe3",
+              "ideas": {
+                "1": {
+                  "title": "confluent community licenses",
+                  "id": "205.a25c.6282e2b9-2895.091c6dbe3"
+                }
+              }
+            },
+            "3": {
+              "title": "Deploying Kafka",
+              "id": "207.2a97.d01f86b05-e43f.c175fd024",
+              "ideas": {
+                "1": {
+                  "title": "https://docs.confluent.io/platform/current/kafka/deployment.html#running-ak-in-production",
+                  "id": "208.2a97.d01f86b05-e43f.c175fd024"
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {}
+          }
+        },
+        "7.5": {
+          "title": "Concepts",
+          "id": 176,
+          "ideas": {
+            "1": {
+              "title": "Kafka connect",
+              "id": "178.fff7.ac85fca77-d27f.8b652c95b",
+              "ideas": {
+                "1": {
+                  "title": "integration",
+                  "id": "179.fff7.ac85fca77-d27f.8b652c95b"
+                }
+              }
+            },
+            "2": {
+              "title": "Kafka streaming",
+              "id": "180.fff7.ac85fca77-d27f.8b652c95b"
+            },
+            "4": {
+              "title": "Brokers",
+              "id": "183.fff7.ac85fca77-d27f.8b652c95b",
+              "ideas": {
+                "1": {
+                  "title": "has it's own storage",
+                  "id": "185.fff7.ac85fca77-d27f.8b652c95b"
+                },
+                "2": {
+                  "title": "in between consumers and producers",
+                  "id": "194.fff7.ac85fca77-d27f.8b652c95b"
+                }
+              }
+            },
+            "5": {
+              "title": "Producers",
+              "id": "184.fff7.ac85fca77-d27f.8b652c95b",
+              "ideas": {},
+              "attr": {}
+            },
+            "6": {
+              "title": "used for decoupling",
+              "id": "186.fff7.ac85fca77-d27f.8b652c95b",
+              "ideas": {}
+            },
+            "7": {
+              "title": "event driven ",
+              "id": "188.fff7.ac85fca77-d27f.8b652c95b"
+            },
+            "8": {
+              "title": "pull based",
+              "id": "190.fff7.ac85fca77-d27f.8b652c95b"
+            },
+            "9": {
+              "title": "KSQL db",
+              "id": "192.fff7.ac85fca77-d27f.8b652c95b",
+              "ideas": {
+                "1": {
+                  "title": "SQL like syntax for stream processing",
+                  "id": "206.2a97.d01f86b05-e43f.c175fd024"
+                }
+              }
+            },
+            "10": {
+              "title": "uses zookeeper for managing consensus ",
+              "id": "193.fff7.ac85fca77-d27f.8b652c95b",
+              "ideas": {
+                "1": {
+                  "title": "access control",
+                  "id": "195.fff7.ac85fca77-d27f.8b652c95b"
+                },
+                "2": {
+                  "title": "managing failures",
+                  "id": "196.fff7.ac85fca77-d27f.8b652c95b"
+                },
+                "3": {
+                  "title": "cluster management",
+                  "id": "197.fff7.ac85fca77-d27f.8b652c95b"
+                }
+              }
+            },
+            "11": {
+              "title": "related",
+              "id": "198.fff7.ac85fca77-d27f.8b652c95b",
+              "ideas": {
+                "1": {
+                  "title": "JMS",
+                  "id": "199.fff7.ac85fca77-d27f.8b652c95b",
+                  "ideas": {
+                    "1": {
+                      "title": "The Java Message Service (JMS) API is a messaging standard that allows application components based on the Java Platform Enterprise Edition (Java EE) to create, send, receive, and read messages. It enables distributed communication that is loosely coupled, reliable, and asynchronous.",
+                      "id": "200.fff7.ac85fca77-d27f.8b652c95b"
+                    },
+                    "2": {
+                      "title": "https://www.oracle.com/java/technologies/java-message-service.html",
+                      "id": "201.fff7.ac85fca77-d27f.8b652c95b",
+                      "attr": {}
+                    }
+                  }
+                }
+              }
+            },
+            "12": {
+              "title": "every event is a key value pair",
+              "id": "202.fff7.ac85fca77-d27f.8b652c95b"
+            },
+            "5.5": {
+              "title": "Consumers",
+              "id": "191.fff7.ac85fca77-d27f.8b652c95b",
+              "attr": {
+                "position": [
+                  94,
+                  3,
+                  1
+                ]
+              }
+            }
+          },
+          "attr": {
+            "style": {}
+          }
+        }
+      }
+    }
+  },
+  "links": [],
+  "attr": {},
+  "title": "Java"
+}

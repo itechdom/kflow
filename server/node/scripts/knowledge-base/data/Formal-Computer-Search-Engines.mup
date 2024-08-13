@@ -1,0 +1,214 @@
+{
+  "id": "root",
+  "formatVersion": 3,
+  "ideas": {
+    "1": {
+      "id": 1,
+      "title": "Search engines",
+      "attr": {
+        "position": [
+          -67,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "2": {
+          "title": "Concepts",
+          "id": "25.1e6b.8c814d29f-6582.82f3cd39",
+          "ideas": {
+            "4": {
+              "title": "Apache Lucene",
+              "id": "29.9d89.97c860686-ac35.7ac16d208",
+              "ideas": {
+                "1": {
+                  "title": "Solr",
+                  "id": "28.9d89.97c860686-ac35.7ac16d208",
+                  "ideas": {
+                    "1": {
+                      "title": "ConfigSet",
+                      "id": "30.9d89.97c860686-ac35.7ac16d208",
+                      "ideas": {
+                        "1": {
+                          "title": "to configure schemas",
+                          "id": "31.9d89.97c860686-ac35.7ac16d208"
+                        }
+                      }
+                    },
+                    "3": {
+                      "title": "Document",
+                      "id": "35.9d89.97c860686-ac35.7ac16d208",
+                      "ideas": {
+                        "1": {
+                          "title": "Basic unit of information",
+                          "id": "36.9d89.97c860686-ac35.7ac16d208"
+                        }
+                      }
+                    },
+                    "4": {
+                      "title": "Tips and Guidelines",
+                      "id": "39.9d89.97c860686-ac35.7ac16d208",
+                      "ideas": {
+                        "1": {
+                          "title": "think about the type of data you have before you index them",
+                          "id": "40.9d89.97c860686-ac35.7ac16d208"
+                        }
+                      }
+                    },
+                    "5": {
+                      "title": "Apache Tika can be used to index PDFs, Word documents .. etc",
+                      "id": "41.9d89.97c860686-ac35.7ac16d208"
+                    },
+                    "6": {
+                      "title": "Uploading data to SOLR",
+                      "id": "43.9d89.97c860686-ac35.7ac16d208",
+                      "ideas": {
+                        "1": {
+                          "title": "Post command",
+                          "id": "32.9d89.97c860686-ac35.7ac16d208",
+                          "ideas": {
+                            "1": {
+                              "title": "to upload data to SOLR to be indexed",
+                              "id": "33.9d89.97c860686-ac35.7ac16d208"
+                            },
+                            "2": {
+                              "title": "https://solr.apache.org/guide/solr/latest/getting-started/documents-fields-schema-design.html",
+                              "id": "34.9d89.97c860686-ac35.7ac16d208"
+                            }
+                          },
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "SOLR cell and apache tika",
+                          "id": "44.9d89.97c860686-ac35.7ac16d208",
+                          "ideas": {}
+                        },
+                        "3": {
+                          "title": "Custom java client implementation",
+                          "id": "46.9d89.97c860686-ac35.7ac16d208"
+                        }
+                      }
+                    },
+                    "7": {
+                      "title": "Searching in SOLR",
+                      "id": "47.9d89.97c860686-ac35.7ac16d208",
+                      "ideas": {
+                        "4": {
+                          "title": "Steps",
+                          "id": "53.9d89.97c860686-ac35.7ac16d208",
+                          "ideas": {
+                            "1": {
+                              "title": "Request handler",
+                              "id": "54.9d89.97c860686-ac35.7ac16d208",
+                              "ideas": {
+                                "1": {
+                                  "title": "Standard Query Parser",
+                                  "id": "48.9d89.97c860686-ac35.7ac16d208",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "https://solr.apache.org/guide/solr/latest/query-guide/standard-query-parser.html",
+                                      "id": "49.9d89.97c860686-ac35.7ac16d208"
+                                    },
+                                    "2": {
+                                      "title": "https://solr.apache.org/guide/solr/latest/query-guide/common-query-parameters.html",
+                                      "id": "58.9d89.97c860686-ac35.7ac16d208"
+                                    }
+                                  },
+                                  "attr": {}
+                                },
+                                "2": {
+                                  "title": "faceting",
+                                  "id": "50.9d89.97c860686-ac35.7ac16d208",
+                                  "ideas": {},
+                                  "attr": {
+                                    "note": {
+                                      "index": 21,
+                                      "text": "Faceting is the arrangement of search results into categories (which are based on indexed terms). Within each category, Solr reports on the number of hits for relevant term, which is called a facet constraint. Faceting makes it easy for users to explore search results on sites such as movie sites and product review sites, where there are many categories and many items within a category."
+                                    }
+                                  }
+                                },
+                                "3": {
+                                  "title": "more like this",
+                                  "id": "52.9d89.97c860686-ac35.7ac16d208",
+                                  "attr": {
+                                    "note": {
+                                      "index": 22,
+                                      "text": "Solr also supports a feature called MoreLikeThis, which enables users to submit new queries that focus on particular terms returned in an earlier query. MoreLikeThis queries can make use of faceting or clustering to provide additional aid to users."
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "2": {
+                              "title": "Response Writer",
+                              "id": "55.9d89.97c860686-ac35.7ac16d208",
+                              "ideas": {},
+                              "attr": {
+                                "note": {
+                                  "index": 25,
+                                  "text": "A Solr component called a response writer manages the final presentation of the query response. Solr includes a variety of response writers, including an XML Response Writer and a JSON Response Writer."
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "8": {
+                      "title": "Scaling",
+                      "id": "59.9d89.97c860686-ac35.7ac16d208",
+                      "ideas": {
+                        "1": {
+                          "title": "scaling SOLR on Kubernetes",
+                          "id": "60.9d89.97c860686-ac35.7ac16d208",
+                          "ideas": {
+                            "1": {
+                              "title": "https://aws.amazon.com/blogs/opensource/deploying-and-scaling-apache-solr-on-kubernetes/",
+                              "id": "61.9d89.97c860686-ac35.7ac16d208"
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "When SOLR is deployed in a cluster, it's called SOLR Cloud",
+                          "id": "62.9d89.97c860686-ac35.7ac16d208"
+                        },
+                        "3": {
+                          "title": "SOLR Operator",
+                          "id": "64.9d89.97c860686-ac35.7ac16d208",
+                          "ideas": {
+                            "1": {
+                              "title": "https://solr.apache.org/operator/",
+                              "id": "65.9d89.97c860686-ac35.7ac16d208"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "9": {
+                      "title": "Sharding",
+                      "id": "66.74fa.be04a40f1-53a0.0fcb2db78"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Elastic Search",
+                  "id": "27.9d89.97c860686-ac35.7ac16d208",
+                  "attr": {}
+                }
+              }
+            }
+          },
+          "attr": {}
+        },
+        "-1": {
+          "title": "Resources",
+          "id": "3.7b8f637586df806d",
+          "ideas": {}
+        }
+      }
+    }
+  },
+  "attr": {},
+  "title": "System Archeticture",
+  "links": []
+}

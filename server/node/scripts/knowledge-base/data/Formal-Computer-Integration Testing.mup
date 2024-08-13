@@ -1,0 +1,27 @@
+{
+  "id": "root",
+  "formatVersion": 3,
+  "ideas": {
+    "1": {
+      "id": 1,
+      "title": "Integration Testing",
+      "attr": {
+        "style": {},
+        "position": [
+          -64,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "e2e",
+          "id": "2.2bde.e1d04526c-733e.159f3039d"
+        }
+      }
+    }
+  },
+  "links": [],
+  "attr": {},
+  "title": "Integration Testing"
+}
