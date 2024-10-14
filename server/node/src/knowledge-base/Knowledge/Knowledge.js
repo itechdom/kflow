@@ -8,8 +8,7 @@ import {
   registerForms,
 } from "../../../Libs/node/forms-service/forms-service.js";
 import {
-  registerAction,
-  isPermitted,
+  registerAction
 } from "../../../Libs/node/acl-service/acl-service.js";
 const Knowledge = ({
   config,
@@ -23,14 +22,14 @@ const Knowledge = ({
   let crudDomainLogic = {
     create: (user, req) => {
       return {
-        isPermitted: isPermitted({ key: `${modelName}_create`, user }),
+        isPermitted: true,
         criteria: {},
       };
     },
-    read: (user, req) => {
-      const query = req.query && req.query.query;
+    read: (req, res) => {
+      const query = req.query;
       return {
-        isPermitted: isPermitted({ key: `${modelName}_read`, user }),
+        isPermitted:true,
         criteria: {
           query,
         },
@@ -39,19 +38,19 @@ const Knowledge = ({
     },
     update: (user, req) => {
       return {
-        isPermitted: isPermitted({ key: `${modelName}_update`, user }),
+        isPermitted: true,
         criteria: {},
       };
     },
     del: (user, req) => {
       return {
-        isPermitted: isPermitted({ key: `${modelName}_delete`, user }),
+        isPermitted: true,
         criteria: {},
       };
     },
     search: (user, req) => {
       return {
-        isPermitted: isPermitted({ key: `${modelName}_search`, user }),
+        isPermitted: true,
         criteria: {},
         onResponse: (data, req, res) => {
           let formattedData = data.map((d) => {

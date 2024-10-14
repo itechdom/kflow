@@ -48,13 +48,6 @@
       "runtimeExecutable": "node",
       "skipFiles": ["<node_internals>/**"],
       "outFiles": ["${workspaceFolder}/dist/**/*.js"] // Adjust if necessary for transpiled files
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Debug Node",
-      "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/server/node" // Change this to the entry point of your app
     }
   ]
 }
