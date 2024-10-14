@@ -1,6 +1,4 @@
-import knowledgeSchema from '@markab.io/orbital-api/MongoDb/models/knowledges.js';
 import lambdaModel from '@markab.io/orbital-api/MongoDb/models/lambda.js';
-import mongoose from 'mongoose';
 import knowledgeApi from './Knowledge/index.js';
 
 const Api = ({
@@ -10,9 +8,9 @@ const Api = ({
   formsModel,
   permissionsModel,
   kernelModel,
-  notificationsModel
+  notificationsModel,
+  knowledgeModel
 }) => {
-  const knowledgeModel = mongoose.model("knowledges", knowledgeSchema);
   const defaultProps = {
     kernelModel,
     permissionsModel,
@@ -20,10 +18,10 @@ const Api = ({
     formsModel,
     notificationsModel,
     lambdaModel,
+    knowledgeModel
   };
   let knowledgeApiRoutes = knowledgeApi({
     config,
-    knowledgeModel,
     ...defaultProps,
   });
   return {
