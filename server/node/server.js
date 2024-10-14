@@ -8,13 +8,13 @@ import bodyParser from "body-parser";
 import morgan from "morgan";
 import config from "config"; // get our config import(file)
 import session from "express-session"; // we remove this import(later)
-import userModel from "/Libs/orbital-apiMongoDb/models/user.js";
+import userModel from "./Libs/orbital-api/MongoDb/models/user.js";
 import settingsModel from "./Libs/orbital-api/MongoDb/models/settings.js";
-import permissionsSchema from "/Libs/orbital-apiMongoDb/models/permissions.js";
-import kernelModel from "/Libs/orbital-apiMongoDb/models/kernel.js";
-import formsSchema from "/Libs/orbital-apiMongoDb/models/forms.js";
-import notificationsSchema from "/Libs/orbital-apiMongoDb/models/notifications.js";
-import knowledgeSchema from '/Libs/orbital-apiMongoDb/models/knowledges.js';
+import permissionsSchema from "./Libs/orbital-api/MongoDb/models/permissions.js";
+import kernelModel from "./Libs/orbital-api/MongoDb/models/kernel.js";
+import formsSchema from "./Libs/orbital-api/MongoDb/models/forms.js";
+import notificationsSchema from "./Libs/orbital-api/MongoDb/models/notifications.js";
+import knowledgeSchema from './Libs/orbital-api/MongoDb/models/knowledges.js';
 import Kb from "./src/knowledge-base/Knowledge/index.js";
 import expressPrintRoutes from "express-print-routes";
 import path from "path";
