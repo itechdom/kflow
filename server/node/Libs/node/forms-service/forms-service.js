@@ -1,5 +1,5 @@
 import express from 'express';
-import {  executeDomain  } from '../utils/utils.js';
+import { executeDomain } from '../utils/utils.js';
 
 export const formsService = function formsService({
   Model,
@@ -15,7 +15,6 @@ export const formsService = function formsService({
           message: `You are not authorized to read ${Model.modelName}s`,
         });
       }
-  
       const data = await Model.findOne(criteria).sort("-date");
       if (onResponse) {
         onResponse(data, req, res);
@@ -37,18 +36,18 @@ export const registerForms = ({ key, fields, formsModel }) => {
   setForms(lookUpKey, fields, formsModel);
 };
 
-const setForms = (lookUpKey, fields, formsModel, autoPopulateDB) => {
+export const setForms = async (lookUpKey, fields, formsModel, autoPopulateDB = true) => {
   if (autoPopulateDB) {
-    formsModel.update(
-      { key: lookUpKey },
-      { fields },
-      { multi: true, upsert: true },
-      (err, user) => {
-        if (err) {
-          console.error(err);
-        }
-        console.info("forms set!");
-      }
-    );
+    try {
+      const result = await formsModel.findOneAndUpdate(
+        { key: lookUpKey },
+        { $set:fields },
+        { new: true, upsert: true }
+      );
+      return result;
+    } catch (error) {
+      console.error('Error updating form:', error);
+      throw error;
+    }
   }
 };

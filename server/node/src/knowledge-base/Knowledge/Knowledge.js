@@ -16,7 +16,7 @@ const Knowledge = ({
   permissionsModel,
   lambdaModel,
   formsModel,
-  autoPopulateDB=false,
+  autoPopulateDB=true,
 }) => {
   let modelName = "knowledges";
   let crudDomainLogic = {

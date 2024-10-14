@@ -45,7 +45,7 @@
       "cwd": "${workspaceFolder}/server/node/",
       "console": "integratedTerminal",
       "protocol": "inspector",
-      "runtimeExecutable": "node",
+      "runtimeExecutable": "nodemon",
       "skipFiles": ["<node_internals>/**"],
       "outFiles": ["${workspaceFolder}/dist/**/*.js"] // Adjust if necessary for transpiled files
     }
