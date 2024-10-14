@@ -1,0 +1,778 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Formal-Computer-Blockchain",
+      "id": 1,
+      "attr": {
+        "position": [
+          -79,
+          -24,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Concepts",
+          "id": "2.5052.3bd1b30e1-cb67.0fd3fb4e2",
+          "ideas": {
+            "7": {
+              "title": "DEX",
+              "id": "28.0d1f.3018a5b6b-c06e.8d912bb23",
+              "ideas": {
+                "1": {
+                  "title": "decenteralized exhanges",
+                  "id": "29.0d1f.3018a5b6b-c06e.8d912bb23",
+                  "ideas": {
+                    "1": {
+                      "title": "uniswap",
+                      "id": "30.0d1f.3018a5b6b-c06e.8d912bb23"
+                    },
+                    "2": {
+                      "title": "AAve",
+                      "id": "32.0d1f.3018a5b6b-c06e.8d912bb23"
+                    },
+                    "3": {
+                      "title": "Maker",
+                      "id": "33.0d1f.3018a5b6b-c06e.8d912bb23"
+                    }
+                  }
+                }
+              }
+            },
+            "8": {
+              "title": "Stable Coins",
+              "id": "41.0d1f.3018a5b6b-c06e.8d912bb23",
+              "ideas": {
+                "1": {
+                  "title": "Tether",
+                  "id": "42.0d1f.3018a5b6b-c06e.8d912bb23"
+                },
+                "2": {
+                  "title": "USDT",
+                  "id": "43.0d1f.3018a5b6b-c06e.8d912bb23"
+                },
+                "3": {
+                  "title": "Peg to Dollar",
+                  "id": "44.0d1f.3018a5b6b-c06e.8d912bb23"
+                }
+              },
+              "attr": {
+                "position": [
+                  79,
+                  -289,
+                  1
+                ]
+              }
+            },
+            "21": {
+              "title": "Uknowing terms",
+              "id": "99.0ec4.6ff8eac63-529b.20c5444",
+              "ideas": {
+                "1": {
+                  "title": "Defi",
+                  "id": "100.0ec4.6ff8eac63-529b.20c5444",
+                  "attr": {},
+                  "ideas": {
+                    "1": {
+                      "title": "Same as",
+                      "id": "220.142c.f4a41f1ce-4d9f.9939553b8",
+                      "ideas": {
+                        "1": {
+                          "title": "p2p",
+                          "id": "221.142c.f4a41f1ce-4d9f.9939553b8"
+                        }
+                      }
+                    }
+                  }
+                },
+                "2": {
+                  "title": "p2p",
+                  "id": "101.0ec4.6ff8eac63-529b.20c5444",
+                  "attr": {}
+                },
+                "3": {
+                  "title": "IPFS",
+                  "id": "105.0ec4.6ff8eac63-529b.20c5444"
+                }
+              },
+              "attr": {
+                "position": [
+                  87,
+                  211,
+                  3
+                ]
+              }
+            },
+            "7.5": {
+              "title": "General Blockchain concepts",
+              "id": "116.0ec4.6ff8eac63-529b.20c5444",
+              "attr": {
+                "position": [
+                  76,
+                  -523,
+                  2
+                ]
+              },
+              "ideas": {
+                "1": {
+                  "title": "Data Structure of a block",
+                  "id": "47.352c.f5dd88053-eee8.c58ca86b8",
+                  "ideas": {
+                    "1": {
+                      "title": "Block#",
+                      "id": "48.352c.f5dd88053-eee8.c58ca86b8"
+                    },
+                    "2": {
+                      "title": "Nonce",
+                      "id": "50.352c.f5dd88053-eee8.c58ca86b8"
+                    },
+                    "3": {
+                      "title": "Data",
+                      "id": "51.352c.f5dd88053-eee8.c58ca86b8"
+                    },
+                    "4": {
+                      "title": "Prev",
+                      "id": "52.352c.f5dd88053-eee8.c58ca86b8",
+                      "ideas": {
+                        "1": {
+                          "title": "previous block",
+                          "id": "53.352c.f5dd88053-eee8.c58ca86b8"
+                        }
+                      }
+                    },
+                    "5": {
+                      "title": "Hash",
+                      "id": "54.352c.f5dd88053-eee8.c58ca86b8"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Data Structures",
+                  "id": "38.0d1f.3018a5b6b-c06e.8d912bb23",
+                  "attr": {}
+                },
+                "3": {
+                  "title": "Merkle tree",
+                  "id": "35.0d1f.3018a5b6b-c06e.8d912bb23",
+                  "attr": {}
+                },
+                "4": {
+                  "title": "hashes",
+                  "id": "36.0d1f.3018a5b6b-c06e.8d912bb23",
+                  "attr": {}
+                },
+                "5": {
+                  "title": "Cryptography",
+                  "id": "37.0d1f.3018a5b6b-c06e.8d912bb23",
+                  "attr": {}
+                },
+                "6": {
+                  "title": "NFTs",
+                  "id": "45.0d1f.3018a5b6b-c06e.8d912bb23",
+                  "attr": {}
+                },
+                "7": {
+                  "title": "Nonce",
+                  "id": "46.352c.f5dd88053-eee8.c58ca86b8",
+                  "ideas": {
+                    "1": {
+                      "title": "a unique number/hash attached to each block",
+                      "id": "104.0ec4.6ff8eac63-529b.20c5444"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "8": {
+                  "title": "Proof of Work",
+                  "id": "57.352c.f5dd88053-eee8.c58ca86b8",
+                  "ideas": {
+                    "1": {
+                      "title": "find a nonce that generates a correct hash to be add a new block to the chain",
+                      "id": "58.352c.f5dd88053-eee8.c58ca86b8"
+                    },
+                    "2": {
+                      "title": "Consensus",
+                      "id": "59.352c.f5dd88053-eee8.c58ca86b8"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "9": {
+                  "title": "Proof of Stake",
+                  "id": "60.352c.f5dd88053-eee8.c58ca86b8",
+                  "ideas": {
+                    "1": {
+                      "title": "https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/",
+                      "id": "61.352c.f5dd88053-eee8.c58ca86b8"
+                    },
+                    "2": {
+                      "title": "Ouroboros Protocol\n https://en.wikipedia.org/wiki/Ouroboros_(protocol)",
+                      "id": "133.64cf.20041265c-c7de.76c7a5713"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "10": {
+                  "title": "WEI",
+                  "id": "117.64cf.20041265c-c7de.76c7a5713",
+                  "ideas": {
+                    "1": {
+                      "title": "10^18 Wei = 1 ETH",
+                      "id": "118.64cf.20041265c-c7de.76c7a5713"
+                    }
+                  }
+                },
+                "11": {
+                  "title": "Gas",
+                  "id": "119.64cf.20041265c-c7de.76c7a5713"
+                }
+              }
+            },
+            "3.5": {
+              "title": "Popular blockchains",
+              "id": "134.64cf.20041265c-c7de.76c7a5713",
+              "attr": {
+                "position": [
+                  103,
+                  -580,
+                  4
+                ]
+              },
+              "ideas": {
+                "1": {
+                  "title": "Ethereum",
+                  "ideas": {
+                    "1": {
+                      "title": "Smart Contracts",
+                      "ideas": {
+                        "1": {
+                          "title": "Solidity",
+                          "ideas": {
+                            "1": {
+                              "title": "Programming language",
+                              "id": "138.64cf.20041265c-c7de.76c7a5713"
+                            },
+                            "2": {
+                              "title": "Data Types",
+                              "ideas": {
+                                "1": {
+                                  "title": "integer",
+                                  "id": "140.64cf.20041265c-c7de.76c7a5713"
+                                },
+                                "2": {
+                                  "title": "struct",
+                                  "ideas": {},
+                                  "id": "141.64cf.20041265c-c7de.76c7a5713"
+                                },
+                                "3": {
+                                  "title": "address",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "ethereuem address for example",
+                                      "id": "143.64cf.20041265c-c7de.76c7a5713"
+                                    }
+                                  },
+                                  "id": "142.64cf.20041265c-c7de.76c7a5713"
+                                },
+                                "4": {
+                                  "title": "boolean",
+                                  "id": "144.64cf.20041265c-c7de.76c7a5713"
+                                },
+                                "5": {
+                                  "title": "string",
+                                  "id": "145.64cf.20041265c-c7de.76c7a5713"
+                                }
+                              },
+                              "id": "139.64cf.20041265c-c7de.76c7a5713"
+                            },
+                            "3": {
+                              "title": "Contract",
+                              "ideas": {
+                                "1": {
+                                  "title": "a package or software that runs on the blockchain",
+                                  "id": "147.64cf.20041265c-c7de.76c7a5713"
+                                },
+                                "2": {
+                                  "title": "can't be changed once deployed",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "can we release updates?",
+                                      "id": "149.64cf.20041265c-c7de.76c7a5713"
+                                    }
+                                  },
+                                  "id": "148.64cf.20041265c-c7de.76c7a5713"
+                                }
+                              },
+                              "id": "146.64cf.20041265c-c7de.76c7a5713"
+                            },
+                            "4": {
+                              "title": "Storage & Memory",
+                              "ideas": {
+                                "1": {
+                                  "title": "Storage: where all the contract state variables reside. Every contract has its own storage and it is persistent between function calls\n\n\n",
+                                  "id": "151.64cf.20041265c-c7de.76c7a5713"
+                                },
+                                "2": {
+                                  "title": "Memory: hold temporary values and gets erased between (external) function calls and is cheaper to use",
+                                  "id": "152.64cf.20041265c-c7de.76c7a5713"
+                                },
+                                "3": {
+                                  "title": "Stack: hold small local variables and is almost free to use, but can only hold a limited amount of values",
+                                  "id": "153.64cf.20041265c-c7de.76c7a5713"
+                                }
+                              },
+                              "id": "150.64cf.20041265c-c7de.76c7a5713"
+                            },
+                            "5": {
+                              "title": "WEI",
+                              "id": "154.64cf.20041265c-c7de.76c7a5713"
+                            },
+                            "6": {
+                              "title": "Transactions",
+                              "attr": {
+                                "note": {
+                                  "index": 23,
+                                  "text": "transaction: The transaction object has a few aspects we need to specify\nto: This is the address we want to send ETH to. In this case, we are sending ETH back to the Rinkeby faucet we initially requested from.\nvalue: This is the amount we wish to send, specified in Wei where 10^18 Wei = 1 ETH\ngas: There are many ways to determine the right amount of gas to include with your transaction. Alchemy even has a gas price webhook to notify you when the gas price falls within a certain threshold. For Mainnet transactions, it's good practice to check a gas estimator like ETH Gas Station to determine the right amount of gas to include. 21000 is the minimum amount of gas an operation on Ethereum will use, so to ensure our transaction will be executed we put 30000 here.\nnonce: see above nonce definition. Nonce starts counting from zero.\n[OPTIONAL] data: Used for sending additional information with your transfer, or calling a smart contract, not required for balance transfers, check out the note below."
+                                }
+                              },
+                              "ideas": {
+                                "1": {
+                                  "title": "https://ethereum.org/en/developers/tutorials/sending-transactions-using-web3-and-alchemy/",
+                                  "id": "156.64cf.20041265c-c7de.76c7a5713"
+                                },
+                                "2": {
+                                  "title": "https://ethereum.org/en/developers/tutorials/sending-transactions-using-web3-and-alchemy/#create-sendtx-js",
+                                  "id": "157.64cf.20041265c-c7de.76c7a5713"
+                                },
+                                "3": {
+                                  "title": "each transaction contains",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "nonce",
+                                      "id": "159.64cf.20041265c-c7de.76c7a5713"
+                                    },
+                                    "2": {
+                                      "title": "value",
+                                      "id": "160.64cf.20041265c-c7de.76c7a5713"
+                                    },
+                                    "3": {
+                                      "title": "gas",
+                                      "id": "161.64cf.20041265c-c7de.76c7a5713"
+                                    },
+                                    "4": {
+                                      "title": "to",
+                                      "attr": {
+                                        "style": {
+                                          "width": 13
+                                        }
+                                      },
+                                      "id": "162.64cf.20041265c-c7de.76c7a5713"
+                                    },
+                                    "5": {
+                                      "title": "data",
+                                      "ideas": {
+                                        "1": {
+                                          "title": "this contains the smart contact code that gets executed",
+                                          "id": "164.64cf.20041265c-c7de.76c7a5713"
+                                        }
+                                      },
+                                      "id": "163.64cf.20041265c-c7de.76c7a5713"
+                                    }
+                                  },
+                                  "id": "158.64cf.20041265c-c7de.76c7a5713"
+                                }
+                              },
+                              "id": "155.64cf.20041265c-c7de.76c7a5713"
+                            },
+                            "7": {
+                              "title": "Resources",
+                              "ideas": {
+                                "1": {
+                                  "title": "basics",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "https://www.edureka.co/blog/solidity-tutorial/#Solidity",
+                                      "id": "167.64cf.20041265c-c7de.76c7a5713"
+                                    }
+                                  },
+                                  "id": "166.64cf.20041265c-c7de.76c7a5713"
+                                },
+                                "2": {
+                                  "title": "examples",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "https://docs.soliditylang.org/en/latest/solidity-by-example.html#voting",
+                                      "id": "169.64cf.20041265c-c7de.76c7a5713"
+                                    }
+                                  },
+                                  "id": "168.64cf.20041265c-c7de.76c7a5713"
+                                },
+                                "3": {
+                                  "title": "Alchemy",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "create test ethereum nodes",
+                                      "ideas": {
+                                        "1": {
+                                          "title": "https://dashboard.alchemyapi.io/apps/ufrg3azs79s660x4",
+                                          "id": "172.64cf.20041265c-c7de.76c7a5713"
+                                        }
+                                      },
+                                      "id": "171.64cf.20041265c-c7de.76c7a5713"
+                                    }
+                                  },
+                                  "id": "170.64cf.20041265c-c7de.76c7a5713"
+                                },
+                                "4": {
+                                  "title": "Making your first smart contact",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "stopped here",
+                                      "ideas": {
+                                        "1": {
+                                          "title": "https://ethereum.org/en/developers/tutorials/hello-world-smart-contract/#step-15-write-our-deploy-scripts",
+                                          "id": "175.64cf.20041265c-c7de.76c7a5713"
+                                        }
+                                      },
+                                      "id": "174.64cf.20041265c-c7de.76c7a5713"
+                                    }
+                                  },
+                                  "id": "173.64cf.20041265c-c7de.76c7a5713"
+                                },
+                                "5": {
+                                  "title": "How to make your own currency",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "https://abhibvp003.medium.com/how-to-create-your-own-ethereum-currency-abe63f7137f6",
+                                      "id": "177.64cf.20041265c-c7de.76c7a5713"
+                                    }
+                                  },
+                                  "id": "176.64cf.20041265c-c7de.76c7a5713"
+                                }
+                              },
+                              "id": "165.64cf.20041265c-c7de.76c7a5713"
+                            }
+                          },
+                          "id": "137.64cf.20041265c-c7de.76c7a5713",
+                          "attr": {
+                            "collapsed": true
+                          }
+                        }
+                      },
+                      "id": "136.64cf.20041265c-c7de.76c7a5713"
+                    },
+                    "2": {
+                      "title": "Resources",
+                      "ideas": {
+                        "1": {
+                          "title": "Building on top of ethereum",
+                          "ideas": {
+                            "1": {
+                              "title": "https://hackernoon.com/ethereum-blockchain-in-a-real-project-with-500k-users-f85ee4821b12",
+                              "id": "180.64cf.20041265c-c7de.76c7a5713"
+                            }
+                          },
+                          "id": "179.64cf.20041265c-c7de.76c7a5713"
+                        },
+                        "2": {
+                          "title": "web3.js",
+                          "ideas": {
+                            "1": {
+                              "title": "https://web3js.readthedocs.io/en/v1.2.4/",
+                              "id": "182.64cf.20041265c-c7de.76c7a5713"
+                            }
+                          },
+                          "id": "181.64cf.20041265c-c7de.76c7a5713"
+                        },
+                        "3": {
+                          "title": "smart contracts",
+                          "ideas": {
+                            "1": {
+                              "title": "https://ethereum.org/build/",
+                              "id": "184.64cf.20041265c-c7de.76c7a5713"
+                            }
+                          },
+                          "id": "183.64cf.20041265c-c7de.76c7a5713"
+                        },
+                        "4": {
+                          "title": "Ethereum API",
+                          "ideas": {
+                            "1": {
+                              "title": "https://docs.alchemy.com/alchemy/apis/ethereum",
+                              "id": "186.64cf.20041265c-c7de.76c7a5713"
+                            }
+                          },
+                          "id": "185.64cf.20041265c-c7de.76c7a5713"
+                        }
+                      },
+                      "id": "178.64cf.20041265c-c7de.76c7a5713"
+                    },
+                    "3": {
+                      "title": "Eth2.0",
+                      "id": "196.64cf.20041265c-c7de.76c7a5713",
+                      "ideas": {
+                        "1": {
+                          "title": "Proof of stake",
+                          "id": "197.64cf.20041265c-c7de.76c7a5713"
+                        }
+                      }
+                    }
+                  },
+                  "id": "135.64cf.20041265c-c7de.76c7a5713",
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "2": {
+                  "title": "Polkadot",
+                  "id": "187.64cf.20041265c-c7de.76c7a5713",
+                  "ideas": {
+                    "2": {
+                      "title": "Parachains",
+                      "id": "193.64cf.20041265c-c7de.76c7a5713"
+                    },
+                    "3": {
+                      "title": "Scalable",
+                      "id": "194.64cf.20041265c-c7de.76c7a5713"
+                    },
+                    "4": {
+                      "title": "Proof of stake",
+                      "id": "195.64cf.20041265c-c7de.76c7a5713"
+                    },
+                    "5": {
+                      "title": "Parachain auction",
+                      "id": "198.64cf.20041265c-c7de.76c7a5713",
+                      "ideas": {
+                        "1": {
+                          "title": "https://parachains.info/auctions",
+                          "id": "200.64cf.20041265c-c7de.76c7a5713"
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "6": {
+                      "title": "Parachain crowdloan",
+                      "id": "199.64cf.20041265c-c7de.76c7a5713",
+                      "ideas": {
+                        "1": {
+                          "title": "how to participate in crowdloans",
+                          "id": "208.64cf.20041265c-c7de.76c7a5713",
+                          "ideas": {
+                            "1": {
+                              "title": "https://polkadot.network/crowdloans/#participate",
+                              "id": "209.64cf.20041265c-c7de.76c7a5713"
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "7": {
+                      "title": "Relay chain",
+                      "id": "204.64cf.20041265c-c7de.76c7a5713"
+                    },
+                    "17": {
+                      "title": "Resources",
+                      "id": "189.64cf.20041265c-c7de.76c7a5713",
+                      "ideas": {
+                        "1": {
+                          "title": "https://en.wikipedia.org/wiki/Polkadot_(cryptocurrency)",
+                          "id": "190.64cf.20041265c-c7de.76c7a5713"
+                        },
+                        "2": {
+                          "title": "https://polkadot.network/technology/",
+                          "id": "207.64cf.20041265c-c7de.76c7a5713"
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "18": {
+                      "title": "Kusama",
+                      "id": "210.64cf.20041265c-c7de.76c7a5713",
+                      "ideas": {
+                        "1": {
+                          "title": "https://guide.kusama.network/",
+                          "id": "211.64cf.20041265c-c7de.76c7a5713"
+                        },
+                        "2": {
+                          "title": "Experiment with Polkadot?",
+                          "id": "212.64cf.20041265c-c7de.76c7a5713"
+                        }
+                      },
+                      "attr": {
+                        "collapsed": true
+                      }
+                    },
+                    "19": {
+                      "title": "Substrate",
+                      "id": "213.142c.f4a41f1ce-4d9f.9939553b8",
+                      "ideas": {
+                        "1": {
+                          "title": "Framework for creating parachains",
+                          "id": "214.142c.f4a41f1ce-4d9f.9939553b8"
+                        }
+                      }
+                    },
+                    "20": {
+                      "title": "\"The runtime\"",
+                      "id": "215.142c.f4a41f1ce-4d9f.9939553b8",
+                      "ideas": {
+                        "1": {
+                          "title": "it's how a block's state transition from one place to the next",
+                          "id": "216.142c.f4a41f1ce-4d9f.9939553b8"
+                        }
+                      }
+                    },
+                    "21": {
+                      "title": "Uknown terms",
+                      "id": "217.142c.f4a41f1ce-4d9f.9939553b8",
+                      "ideas": {
+                        "1": {
+                          "title": "GRANDPA",
+                          "id": "218.142c.f4a41f1ce-4d9f.9939553b8"
+                        }
+                      }
+                    },
+                    "22": {
+                      "title": "Parachain slots",
+                      "id": "219.142c.f4a41f1ce-4d9f.9939553b8"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "Cordano",
+                  "id": "188.64cf.20041265c-c7de.76c7a5713",
+                  "ideas": {
+                    "1": {
+                      "title": "Resources",
+                      "id": "191.64cf.20041265c-c7de.76c7a5713",
+                      "ideas": {
+                        "1": {
+                          "title": "https://en.wikipedia.org/wiki/Cardano_(blockchain_platform)",
+                          "id": "192.64cf.20041265c-c7de.76c7a5713"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                },
+                "4": {
+                  "title": "Astar",
+                  "id": "201.64cf.20041265c-c7de.76c7a5713",
+                  "ideas": {
+                    "1": {
+                      "title": "https://astar.network/",
+                      "id": "202.64cf.20041265c-c7de.76c7a5713"
+                    },
+                    "2": {
+                      "title": "Connect multiple blockchains to Polkadot",
+                      "id": "203.64cf.20041265c-c7de.76c7a5713"
+                    }
+                  },
+                  "attr": {
+                    "collapsed": true
+                  }
+                }
+              }
+            }
+          },
+          "attr": {}
+        },
+        "-1": {
+          "title": "Resources",
+          "id": "11.5052.3bd1b30e1-cb67.0fd3fb4e2",
+          "ideas": {
+            "1": {
+              "title": "Great Visual Tutorial",
+              "id": "55.352c.f5dd88053-eee8.c58ca86b8",
+              "ideas": {
+                "1": {
+                  "title": "https://www.youtube.com/watch?v=_160oMzblY8",
+                  "id": "56.352c.f5dd88053-eee8.c58ca86b8"
+                }
+              }
+            },
+            "2": {
+              "title": "blockchain",
+              "ideas": {
+                "1": {
+                  "title": "building a blockchain nodejs",
+                  "ideas": {
+                    "1": {
+                      "title": "https://dev.to/sadarshannaiynar/blockchain-using-nodejs-and-socketio-5gbe",
+                      "id": "108.0ec4.6ff8eac63-529b.20c5444"
+                    }
+                  },
+                  "id": "107.0ec4.6ff8eac63-529b.20c5444"
+                },
+                "2": {
+                  "title": "https://github.com/bcoin-org/bcoin",
+                  "id": "109.0ec4.6ff8eac63-529b.20c5444"
+                },
+                "3": {
+                  "title": "creating a private blockchain network",
+                  "ideas": {
+                    "1": {
+                      "title": "https://hackernoon.com/heres-how-i-built-a-private-blockchain-network-and-you-can-too-62ca7db556c0",
+                      "id": "111.0ec4.6ff8eac63-529b.20c5444"
+                    }
+                  },
+                  "id": "110.0ec4.6ff8eac63-529b.20c5444"
+                },
+                "4": {
+                  "title": "https://ethereum.org/javascript/#getting-started-with-smart-contracts-and-solidity",
+                  "id": "112.0ec4.6ff8eac63-529b.20c5444"
+                }
+              },
+              "id": "106.0ec4.6ff8eac63-529b.20c5444",
+              "attr": {}
+            },
+            "3": {
+              "title": "how to convert a webapp into a dapp",
+              "ideas": {
+                "1": {
+                  "title": "https://www.devteam.space/blog/how-to-convert-web-app-into-a-dapp/",
+                  "id": "114.0ec4.6ff8eac63-529b.20c5444"
+                }
+              },
+              "id": "113.0ec4.6ff8eac63-529b.20c5444",
+              "attr": {}
+            },
+            "4": {
+              "title": "Interesting projects",
+              "id": "102.0ec4.6ff8eac63-529b.20c5444",
+              "ideas": {
+                "1": {
+                  "title": "filecoin\n distributed file system network",
+                  "id": "103.0ec4.6ff8eac63-529b.20c5444"
+                }
+              },
+              "attr": {
+                "collapsed": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "",
+  "attr": {},
+  "links": []
+}

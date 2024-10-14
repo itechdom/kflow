@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from 'react-redux';
 import { setModel } from '../features/crudDomainSlice';
+import qs from 'qs';
 
 // TypeScript types
 // type UseGetModel = (
@@ -29,7 +30,8 @@ export const useGetModel= (offlineStorage, SERVER, query, modelName) => {
         const token = await offlineStorage.getItem("jwtToken");
         const response = await axios.get(
           `${SERVER.host}:${SERVER.port}/${modelName}`,
-          { params: { token, query } }
+          { params: { token,_id: query && query._id? query._id : null },
+        }
         );
         dispatch(setModel({ data: response.data, modelName }));
       } catch (err) {

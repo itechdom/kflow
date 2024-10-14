@@ -1,0 +1,92 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Entertainment",
+      "id": 1,
+      "attr": {
+        "position": [
+          -50,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Concepts",
+          "id": "2.b963.2ba6ef695-cfc3.0523c5bad",
+          "ideas": {
+            "1": {
+              "title": "Manga",
+              "id": "6.b963.2ba6ef695-cfc3.0523c5bad",
+              "ideas": {
+                "1": {
+                  "title": "Gantz",
+                  "id": "7.b963.2ba6ef695-cfc3.0523c5bad"
+                },
+                "2": {
+                  "title": "Gunnm",
+                  "id": "8.b963.2ba6ef695-cfc3.0523c5bad",
+                  "ideas": {
+                    "2": {
+                      "title": "https://mangarock.com/manga/mrs-serie-24827/chapter/mrs-chapter-24829",
+                      "id": "12.b963.2ba6ef695-cfc3.0523c5bad"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "right to left reading",
+                  "id": "10.b963.2ba6ef695-cfc3.0523c5bad",
+                  "attr": {},
+                  "ideas": {
+                    "1": {
+                      "title": "start from top right",
+                      "id": "11.b963.2ba6ef695-cfc3.0523c5bad"
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Games",
+              "id": "13.5520.ab01aac9e-439e.97a49c2ca",
+              "ideas": {
+                "3": {
+                  "title": "PS1",
+                  "id": "16.5520.ab01aac9e-439e.97a49c2ca",
+                  "ideas": {
+                    "1": {
+                      "title": "Galerians",
+                      "id": "14.5520.ab01aac9e-439e.97a49c2ca",
+                      "attr": {}
+                    },
+                    "2": {
+                      "title": "Parasite Eve",
+                      "id": "15.5520.ab01aac9e-439e.97a49c2ca",
+                      "attr": {}
+                    },
+                    "3": {
+                      "title": "Silent Bomber",
+                      "id": "17.5520.ab01aac9e-439e.97a49c2ca"
+                    },
+                    "4": {
+                      "title": "Soul of the Samurai",
+                      "id": "18.5520.ab01aac9e-439e.97a49c2ca"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "-1": {
+          "title": "Resources",
+          "id": "3.b963.2ba6ef695-cfc3.0523c5bad"
+        }
+      }
+    }
+  },
+  "title": "",
+  "links": []
+}

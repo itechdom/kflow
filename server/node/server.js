@@ -8,12 +8,13 @@ import bodyParser from "body-parser";
 import morgan from "morgan";
 import config from "config"; // get our config import(file)
 import session from "express-session"; // we remove this import(later)
-import userModel from "@markab.io/orbital-api/MongoDb/models/user.js";
-import settingsModel from "@markab.io/orbital-api/MongoDb/models/settings.js";
-import permissionsSchema from "@markab.io/orbital-api/MongoDb/models/permissions.js";
-import kernelModel from "@markab.io/orbital-api/MongoDb/models/kernel.js";
-import formsSchema from "@markab.io/orbital-api/MongoDb/models/forms.js";
-import notificationsSchema from "@markab.io/orbital-api/MongoDb/models/notifications.js";
+import userModel from "./Libs/orbital-api/MongoDb/models/user.js";
+import settingsModel from "./Libs/orbital-api/MongoDb/models/settings.js";
+import permissionsSchema from "./Libs/orbital-api/MongoDb/models/permissions.js";
+import kernelModel from "./Libs/orbital-api/MongoDb/models/kernel.js";
+import formsSchema from "./Libs/orbital-api/MongoDb/models/forms.js";
+import notificationsSchema from "./Libs/orbital-api/MongoDb/models/notifications.js";
+import knowledgeSchema from './Libs/orbital-api/MongoDb/models/knowledges.js';
 import Kb from "./src/knowledge-base/Knowledge/index.js";
 import expressPrintRoutes from "express-print-routes";
 import path from "path";
@@ -23,6 +24,8 @@ import { connectToDb } from "./utils/utils.js";
 const permissionsModel = mongoose.model("Permissions", permissionsSchema);
 const notificationsModel = mongoose.model("Notification", notificationsSchema);
 const formsModel = mongoose.model("Forms", formsSchema);
+const knowledgeModel = mongoose.model("knowledges", knowledgeSchema);
+
 
 const getExpressApp = async (config, isServerless) => {
   // =================================================================
@@ -107,6 +110,7 @@ const getAllApis = ({
     kernelModel,
     notificationsModel,
     userModel,
+    knowledgeModel,
     // mediaModel,
     config,
   };

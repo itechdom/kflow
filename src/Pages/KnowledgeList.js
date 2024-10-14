@@ -6,7 +6,7 @@ import Loading from "Libs/orbital-templates/Material/_shared/Loading/Loading";
 import { Wikipedia } from "Libs/react-services/wikipedia-service/wikipedia-container";
 import { mainRouteList, logoutRoute } from "../Routes";
 import Knowledge from "../Knowledge/Knowledge";
-import config from "../Config/index";
+import config from "../config/index";
 import { offlineStorage } from "../OfflineStorage";
 import rootStore from "../Store/reduxStore";
 const logo = "images/logo-no-background.svg";

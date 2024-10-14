@@ -1,36 +1,35 @@
 //the crud service creates [create, read, update, del] endpoints for a mongoose model
-import crudService from '@markab.io/node/crud-service/crud-service.js';
-import mediaService from '@markab.io/node/media-service/media-service.js';
-import vizService from '@markab.io/node/viz-service/viz-service.js';
-import gptService from '@markab.io/node/gpt-service/gpt-service.js';
+import crudService from '../../../Libs/node/crud-service/crud-service.js';
+import mediaService from '../../../Libs/node/media-service/media-service.js';
+import vizService from '../../../Libs/node/viz-service/viz-service.js';
+import gptService from '../../../Libs/node/gpt-service/gpt-service.js';
 import {
   formsService,
   registerForms,
-} from "@markab.io/node/forms-service/forms-service.js";
+} from "../../../Libs/node/forms-service/forms-service.js";
 import {
-  registerAction,
-  isPermitted,
-} from "@markab.io/node/acl-service/acl-service.js";
+  registerAction
+} from "../../../Libs/node/acl-service/acl-service.js";
 const Knowledge = ({
   config,
   knowledgeModel,
   permissionsModel,
   lambdaModel,
   formsModel,
-  autoPopulateDB=false,
+  autoPopulateDB=true,
 }) => {
   let modelName = "knowledges";
   let crudDomainLogic = {
     create: (user, req) => {
       return {
-        isPermitted: isPermitted({ key: `${modelName}_create`, user }),
+        isPermitted: true,
         criteria: {},
       };
     },
-    read: (user, req) => {
-      const query = req.query && req.query.query;
+    read: (req, res) => {
+      const query = req.query;
       return {
-        isPermitted: isPermitted({ key: `${modelName}_read`, user }),
+        isPermitted:true,
         criteria: {
           query,
         },
@@ -39,21 +38,21 @@ const Knowledge = ({
     },
     update: (user, req) => {
       return {
-        isPermitted: isPermitted({ key: `${modelName}_update`, user }),
+        isPermitted: true,
         criteria: {},
       };
     },
     del: (user, req) => {
       return {
-        isPermitted: isPermitted({ key: `${modelName}_delete`, user }),
+        isPermitted: true,
         criteria: {},
       };
     },
     search: (user, req) => {
       return {
-        isPermitted: isPermitted({ key: `${modelName}_search`, user }),
+        isPermitted: true,
         criteria: {},
-        onResponse: (data, req, res) => {
+        onResponse: (data, _, res) => {
           let formattedData = data.map((d) => {
             return { _id: d._id, title: d.title };
           });

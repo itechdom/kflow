@@ -1,0 +1,210 @@
+{
+  "id": "root",
+  "formatVersion": 3,
+  "ideas": {
+    "1": {
+      "id": 1,
+      "title": ".NET",
+      "attr": {
+        "style": {},
+        "position": [
+          -29,
+          -15,
+          1
+        ]
+      },
+      "ideas": {
+        "14": {
+          "title": "Concepts",
+          "id": 176,
+          "ideas": {
+            "3": {
+              "title": ".NET",
+              "id": "306.a5d9.6cf52ab9e-f2b1.9d2db43d2",
+              "ideas": {
+                "1": {
+                  "title": "Runtime",
+                  "id": "293.a5d9.6cf52ab9e-f2b1.9d2db43d2",
+                  "ideas": {
+                    "1": {
+                      "title": "CLR",
+                      "id": "295.a5d9.6cf52ab9e-f2b1.9d2db43d2"
+                    },
+                    "3": {
+                      "title": "runs",
+                      "id": "298.a5d9.6cf52ab9e-f2b1.9d2db43d2",
+                      "ideas": {
+                        "1": {
+                          "title": "Managed Code",
+                          "id": "297.a5d9.6cf52ab9e-f2b1.9d2db43d2",
+                          "attr": {},
+                          "ideas": {
+                            "1": {
+                              "title": "adds security",
+                              "id": "299.a5d9.6cf52ab9e-f2b1.9d2db43d2"
+                            },
+                            "2": {
+                              "title": "https://docs.microsoft.com/en-us/dotnet/standard/managed-code",
+                              "id": "300.a5d9.6cf52ab9e-f2b1.9d2db43d2"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "5": {
+                      "title": "intermediate language",
+                      "id": "302.a5d9.6cf52ab9e-f2b1.9d2db43d2",
+                      "ideas": {
+                        "1": {
+                          "title": "C sharp for example, is compiled to an intermediate language",
+                          "id": "301.a5d9.6cf52ab9e-f2b1.9d2db43d2",
+                          "attr": {}
+                        },
+                        "2": {
+                          "title": "JIT",
+                          "id": "303.a5d9.6cf52ab9e-f2b1.9d2db43d2",
+                          "attr": {},
+                          "ideas": {
+                            "1": {
+                              "title": "then this intermediate language is compiled to run on a machine",
+                              "id": "304.a5d9.6cf52ab9e-f2b1.9d2db43d2"
+                            },
+                            "2": {
+                              "title": "the contrast is AOT compiled",
+                              "id": "305.a5d9.6cf52ab9e-f2b1.9d2db43d2"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "6": {
+                      "title": "Garbage Collection",
+                      "id": "307.a5d9.6cf52ab9e-f2b1.9d2db43d2",
+                      "attr": {
+                        "position": [
+                          84,
+                          160,
+                          1
+                        ]
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "it ensures memory safety",
+                          "id": "308.a5d9.6cf52ab9e-f2b1.9d2db43d2"
+                        },
+                        "2": {
+                          "title": "unmanaged resources",
+                          "id": "309.a5d9.6cf52ab9e-f2b1.9d2db43d2",
+                          "ideas": {
+                            "1": {
+                              "title": "those you need to release yourself. they implement IDisposable ",
+                              "id": "310.a5d9.6cf52ab9e-f2b1.9d2db43d2"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "7": {
+                      "title": "Libraries",
+                      "id": "311.a5d9.6cf52ab9e-f2b1.9d2db43d2",
+                      "ideas": {
+                        "1": {
+                          "title": "https://github.com/dotnet/runtime/tree/master/src/libraries",
+                          "id": "312.a5d9.6cf52ab9e-f2b1.9d2db43d2"
+                        }
+                      }
+                    }
+                  }
+                },
+                "2": {
+                  "title": "SDK",
+                  "id": "294.a5d9.6cf52ab9e-f2b1.9d2db43d2",
+                  "ideas": {
+                    "1": {
+                      "title": "MVC",
+                      "id": "318.29c4.59230a83a-fc4b.d5e80f495",
+                      "ideas": {
+                        "1": {
+                          "title": "Db Context",
+                          "id": "319.29c4.59230a83a-fc4b.d5e80f495",
+                          "ideas": {
+                            "1": {
+                              "title": "https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application",
+                              "id": "321.29c4.59230a83a-fc4b.d5e80f495"
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "ORMs",
+                          "id": "322.a4c4.9333d8052-e08b.2393416dd",
+                          "ideas": {
+                            "1": {
+                              "title": "Entity Framework",
+                              "id": "323.a4c4.9333d8052-e08b.2393416dd",
+                              "ideas": {
+                                "1": {
+                                  "title": "it supports linq",
+                                  "id": "324.a4c4.9333d8052-e08b.2393416dd"
+                                },
+                                "2": {
+                                  "title": "Code first approach",
+                                  "id": "327.a4c4.9333d8052-e08b.2393416dd",
+                                  "ideas": {
+                                    "1": {
+                                      "title": "at runtime EF will determine how to map your Models to an actual database table",
+                                      "id": "328.a4c4.9333d8052-e08b.2393416dd"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {}
+          }
+        },
+        "-7": {
+          "title": "Resources",
+          "id": "314.a5d9.6cf52ab9e-f2b1.9d2db43d2",
+          "attr": {},
+          "ideas": {
+            "3": {
+              "title": "Examples",
+              "id": "316.a5d9.6cf52ab9e-f2b1.9d2db43d2",
+              "ideas": {
+                "1": {
+                  "title": "https://github.com/ssshekhawat/ASP.NET-Core-MVC-Example",
+                  "id": "317.a5d9.6cf52ab9e-f2b1.9d2db43d2"
+                }
+              }
+            },
+            "4": {
+              "title": "C#",
+              "id": 237,
+              "attr": {
+                "style": {}
+              },
+              "ideas": {
+                "1": {
+                  "title": "https://drive.mindmup.com/map/1B7RwFCA9tlCflB0tPryH3MMg4TPtnmwi",
+                  "id": "315.a5d9.6cf52ab9e-f2b1.9d2db43d2"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "links": [],
+  "attr": {},
+  "title": "Asp.net"
+}
