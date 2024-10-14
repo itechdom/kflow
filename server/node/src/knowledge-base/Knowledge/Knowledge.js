@@ -52,7 +52,7 @@ const Knowledge = ({
       return {
         isPermitted: true,
         criteria: {},
-        onResponse: (data, req, res) => {
+        onResponse: (data, _, res) => {
           let formattedData = data.map((d) => {
             return { _id: d._id, title: d.title };
           });
